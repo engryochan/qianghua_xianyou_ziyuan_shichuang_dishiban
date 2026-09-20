@@ -103,6 +103,32 @@ C:\work\envs\ds\Scripts\python.exe -m ipykernel install --user --name ds --displ
 
 **教訓：復原用的鎖版檔本身也要進版控。** 它原本只躺在 `C:\work` 裡，等於復原能力沒有備份。
 
+## 日常工作專案：`C:\work\projects\lab`
+
+不在 OneDrive、純 ASCII 路徑，附帶專屬 `.venv`（Python 3.13.15、176 套件，版本與 `env/python-ds-requirements.lock.txt` 一致）。`templates/r-python-template.qmd` 是已實測 render 成功的 R+Python 混用範本。
+
+**uv 以硬連結共用快取**：再建一份 176 套件的環境，磁碟實際只多佔約 **24 MB**，不是再複製一份 1 GB。所以「每個專案一個 `.venv`」在這台機器上是負擔得起的。
+
+### Positron 的「A dedicated Python environment is available ❌」不是錯誤
+
+它是設定檢查清單，字面意思就是「沒有開啟任何資料夾，所以找不到專屬環境」。實測確認：`storage.json` 的 `backupWorkspaces` 顯示 `"workspaces":[]`、`"folders":[]`，只有 `emptyWindows`——Positron 從未開過資料夾。
+
+開啟一個含 `.venv` 的資料夾即可滿足。**但開啟後會遇到第二關：Restricted Mode。**
+
+### Restricted Mode 會停用 Python／R 擴充
+
+Positron 沿用 VS Code 的工作區信任機制。未信任的資料夾會顯示：
+
+```
+The Python extension is not available.
+The R extension is not available.
+Cannot start consoles in Restricted Mode.
+```
+
+看起來像環境壞掉，其實只是沒按信任。點橫幅的 **Manage → Trust**。
+
+**這是安全決定，AI 不該代按。** 工作區信任的用途正是防止開啟他人來源的資料夾時自動執行其中的設定。
+
 ## 地雷：R 的 `arrow` 與 Python 的 `pyarrow` 不能在同一個行程裡共存
 
 2026-09-20 實測隔離：

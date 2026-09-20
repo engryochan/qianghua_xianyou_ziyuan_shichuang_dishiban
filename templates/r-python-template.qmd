@@ -1,0 +1,70 @@
+---
+title: "R + Python 混用範本"
+format: html
+execute:
+  echo: true
+  warning: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+# reticulate 只認 RETICULATE_PYTHON。沒設的話它會自己臨時下載一個乾淨的
+# Python（實測看過它抓 cpython-3.12.14 + numpy），於是你的套件全都不在，
+# 錯誤訊息是 ModuleNotFoundError，極容易誤判成環境壞掉。
+Sys.setenv(RETICULATE_PYTHON = file.path(getwd(), ".venv/Scripts/python.exe"))
+```
+
+## R 端：用 duckdb 讀寫 Parquet
+
+刻意**不**載入 R 的 `arrow`。R 的 `arrow` 與 Python 的 `pyarrow` 各自夾帶一份 Arrow C++ 二進位，
+在同一個行程裡先載入 R `arrow`，之後 `import pyarrow` 就會 `DLL load failed`。
+而 `.qmd` 同時有 R 與 Python chunk 時，knitr 走 reticulate，正是同一個行程。
+
+```{r}
+library(data.table)
+library(duckdb)
+library(DBI)
+
+dt <- data.table(g = rep(c("a", "b"), each = 5e4), v = 1:1e5)
+pq <- gsub("\\\\", "/", file.path(tempdir(), "demo.parquet"))
+
+con <- dbConnect(duckdb())
+duckdb_register(con, "dt", dt)
+dbExecute(con, sprintf("copy dt to '%s' (format parquet)", pq))
+dbGetQuery(con, sprintf(
+  "select g, count(*) n, sum(v) s from read_parquet('%s') group by g order by g", pq))
+```
+
+## Python 端：讀同一份 Parquet
+
+`r.pq` 可以直接取到 R 環境裡的變數。
+
+```{python}
+import sys, polars as pl, duckdb, pyarrow
+
+print("python", sys.version.split()[0],
+      "| polars", pl.__version__,
+      "| duckdb", duckdb.__version__,
+      "| pyarrow", pyarrow.__version__)
+
+pq = r.pq
+print(duckdb.sql(
+    f"select g, count(*) n from read_parquet('{pq}') group by g order by g").fetchall())
+```
+
+## CPU 路線的建模
+
+本機顯示卡是 GT 730（Kepler），現行 CUDA 不支援，模型訓練一律走 CPU：
+XGBoost / LightGBM 用 `hist` 演算法搭配多執行緒即可。
+
+```{python}
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+import xgboost as xgb
+
+X, y = make_classification(n_samples=20000, n_features=20, random_state=0)
+Xtr, Xte, ytr, yte = train_test_split(X, y, random_state=0)
+m = xgb.XGBClassifier(tree_method="hist", n_estimators=60, n_jobs=10).fit(Xtr, ytr)
+print("xgboost acc:", round(m.score(Xte, yte), 4))
+```
