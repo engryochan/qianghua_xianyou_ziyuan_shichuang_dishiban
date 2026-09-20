@@ -272,7 +272,11 @@ if ($injRows.Count -gt 0) {
         if ($g.Count -lt 2) { continue }
         $mx = ($g | Measure-Object DLP模組數 -Maximum).Maximum
         foreach ($o in @($g | Where-Object { $_.DLP模組數 -lt $mx })) {
-            Add-Finding '警告' '管控' ($o.Process + ' 只被注入 ' + $o.DLP模組數 + ' 個管控模組，同組（' + $grp + '）其他應用有 ' + $mx + ' 個。半套掛鉤常導致該應用行為異常（黑屏、功能失效）。正解是請 IT 把該執行檔加入受支援清單，不是改名或停用資安軟體。')
+            # 注意措辭：模組數落差是「線索」，不是「原因」。
+            # 2026-09-20 實測反證：Positron 與 Comet 拿到完全相同的 13 個通用模組，
+            # Positron 渲染正常、Comet 全黑。所以落差本身不足以解釋故障，
+            # 只能當成「這支應用不在管控軟體的支援清單上」的佐證。
+            Add-Finding '資訊' '管控' ($o.Process + ' 被注入 ' + $o.DLP模組數 + ' 個管控模組，同組（' + $grp + '）其他應用有 ' + $mx + ' 個。這代表它可能不在管控軟體的支援清單上。這是線索而非結論——模組數落差本身不足以證明故障（已有反例）。若該應用確有異常，請連同此差異一併回報 IT。')
         }
     }
     if (@($injRows | Where-Object { $_.模組清單 -match 'Ld|Browser' }).Count -gt 0) {

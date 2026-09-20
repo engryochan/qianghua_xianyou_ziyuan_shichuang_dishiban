@@ -40,13 +40,27 @@
 | `msedge.exe` | **18** |
 | `comet.exe` | **13** |
 
-Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`BrowerInject64.dll`、`LdBrowserMonitor64.dll`、`LdBrowserDataFlow64.dll`、`LdSendFileLimit64.dll`、`EstBrowserUrl64.dll`、`SQLiteDB64.dll`。但通用掛鉤照樣注入，其中包含攔截繪製路徑的 **`LdWaterMarkHook64.dll`**。
+Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`BrowerInject64.dll`、`LdBrowserMonitor64.dll`、`LdBrowserDataFlow64.dll`、`LdSendFileLimit64.dll`、`EstBrowserUrl64.dll`、`SQLiteDB64.dll`。
 
-**結論：天锐绿盾（Tipray）認得 `chrome.exe` / `msedge.exe`，不認得 `comet.exe`，於是只套了半套掛鉤——浮水印掛鉤進去了，讓它正常運作的配套模組沒進去，合成器輸出因此全黑。**
+**但這不足以解釋黑屏。** 同日稍後的反例推翻了「半套掛鉤 = 黑屏」這個推論：
 
-佐證（皆已實測）：`--disable-gpu` 無效、全新 `--user-data-dir` 無效、連分頁列與網址列都沒畫出來（代表黑在 UI 層而非網頁層）。
+> **Positron 拿到的 13 個通用模組，與 Comet 的 13 個完全相同**（連攔截繪製路徑的 `LdWaterMarkHook64.dll` 都一樣），**而 Positron 渲染完全正常**（近黑 1.3%、平均亮度 236.4）。
 
-**這不是使用者能修的，正解是請 IT 在綠盾主控台把 `comet.exe` 加入受支援瀏覽器清單。** 不要嘗試把 `comet.exe` 改名成 `chrome.exe` 去騙過掛鉤——那是規避資安管控。
+所以模組數落差只是「這支應用不在管控軟體支援清單上」的**線索**，不是黑屏的**原因**。
+
+### Comet 黑屏：已排除的假設（全部實測）
+
+| 假設 | 結果 |
+|---|---|
+| GT 730 的 391.35 舊驅動 | **排除**——Chrome（近黑 0%）、Positron（1.3%）同為 Chromium 底，都正常 |
+| 設定檔損壞 | **排除**——全新 `--user-data-dir` 仍全黑 |
+| 硬體加速 | **排除**——`--disable-gpu` 仍全黑 |
+| DLP 模組數較少 | **排除**——Positron 同樣 13 個模組卻正常 |
+| 系統層級安裝損壞 | **排除**——更新程式遷移到使用者層級後重測，仍全黑 |
+
+關鍵觀察：**Comet 連無頭截圖（`--headless --disable-gpu --screenshot`）都產不出檔案，而 Chrome 在同條件下正常產出 800x600。** 這代表失敗不在螢幕合成層，而是整個瀏覽器在這個環境裡產不出任何輸出。
+
+**目前沒有確立的正因。** 現有結論只到「Comet 在這台機器上無法渲染，且不是上述任何一個原因」。這需要 IT（管控軟體端）或 Perplexity（廠商端）進一步診斷。不要嘗試把 `comet.exe` 改名成 `chrome.exe` 去騙過掛鉤——那是規避資安管控。
 
 **另一套先前沒被盤點到的 DLP：天锐绿盾**，裝在 `C:\Inetpub\ftproot\Tipray\LdTerm\`（行程 `LdTerm.exe`、`LdApproval.exe`），沒有標準解除安裝登錄項，所以只比對「已安裝程式」清單會**完全漏掉**。偵測管控代理必須同時列舉**行程載入的模組**，不能只看已安裝程式。
 
