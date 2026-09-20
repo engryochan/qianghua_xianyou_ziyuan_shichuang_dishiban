@@ -334,11 +334,14 @@ lines <- c(
   sprintf('options(Ncpus = %d)                 # 併發安裝，安裝數百個套件時差別很大', ncpu),
   'options(install.packages.check.source = "no")  # 有二進位就別去編譯原始碼',
   'options(timeout = 600)                        # 大套件下載不要中途斷線',
-  'options(warnPartialMatchArgs = TRUE)',
-  'options(stringsAsFactors = FALSE)',
-  'Sys.setenv(TZ = Sys.timezone())',
-  '# data.table / arrow 的執行緒數：留 2 核給系統與 IDE',
-  sprintf('Sys.setenv(OMP_NUM_THREADS = %d)', ncpu),
+  '',
+  '# 刻意「不」在這裡設定會影響分析結果或執行緒數的選項',
+  '# （例如 warnPartialMatchArgs / OMP_NUM_THREADS / TZ / 語系）。',
+  '# 理由：.Rprofile 是這台機器獨有的。凡是會改變程式行為的設定放在這裡，',
+  '# 同一份腳本在同事機器或 CI 上就會跑出不同結果，而且極難追查。',
+  '# 上面這幾行只影響「套件怎麼裝」，不影響「程式怎麼跑」——這是安全的分界線。',
+  '# 要控制執行緒請在腳本內明示：data.table::setDTthreads()、arrow::set_cpu_count()。',
+  '# 要鎖定套件版本請用 renv::init()，不要靠全域套件庫。',
   '# --- end managed block ---------------------------------------------------'
 )
 writeLines(lines, prof, useBytes = TRUE)
