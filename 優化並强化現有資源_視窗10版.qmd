@@ -1,0 +1,85 @@
+
+
+## Claude（第四輪：升上 Windows 11 之後的實測）
+
+系統已就地升級到 **Windows 11 Pro 25H2（26200.9457）**。這一輪回答兩個問題：Comet 為什麼黑屏、其餘軟體是否還活著。
+
+### Comet 黑屏：根因不是顯示卡
+
+先說我自己被推翻的推論。我一開始認定是 GT 730 配 2018 年驅動（實際版本 **391.35**，由 `23.21.13.9135` 末五碼反解）在 Windows 11 上算繪失敗。**三個實測把它否決了**：
+
+- `--disable-gpu` → 仍然 97.8% 全黑
+- 全新 `--user-data-dir` → 仍然 97.8% 全黑
+- 連分頁列與網址列都沒畫出來 → 黑在瀏覽器 UI 層，不是網頁層
+
+然後用**同一套像素判據**做對照，答案就出來了：
+
+| 瀏覽器 | 內容區近黑 | 平均亮度 | 相異色 | 結果 |
+|---|---|---|---|---|
+| Chrome | **0%** | 243.3 | 730 | 正常 |
+| Comet | **97.8%** | — | 160 | **黑屏** |
+
+同一台機器、同一顆顯卡、同一個驅動。**顯示路徑是好的。**
+
+### 真正的根因：DLP 只認得它名單上的瀏覽器
+
+列舉行程載入的模組，差別立刻現形：
+
+| 行程 | 被注入的 DLP 模組數 |
+|---|---|
+| `chrome.exe` | **18** |
+| `msedge.exe` | **18** |
+| `comet.exe` | **13** |
+
+Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`BrowerInject64.dll`、`LdBrowserMonitor64.dll`、`LdBrowserDataFlow64.dll`、`LdSendFileLimit64.dll`、`EstBrowserUrl64.dll`、`SQLiteDB64.dll`。但通用掛鉤照樣注入，其中包含攔截繪製路徑的 **`LdWaterMarkHook64.dll`**（螢幕浮水印）。
+
+**天锐绿盾認得 `chrome.exe` / `msedge.exe`，不認得 `comet.exe`，於是只套了半套掛鉤——浮水印掛鉤進去了，讓它正常運作的配套模組沒進去，合成器輸出因此全黑。**
+
+這不是使用者能修的。正解是**請 IT 在綠盾主控台把 `comet.exe` 加入受支援瀏覽器清單**。不要把 `comet.exe` 改名成 `chrome.exe` 去騙過掛鉤——那是規避資安管控。
+
+### 順帶抓到一套先前完全漏掉的管控代理
+
+**天锐绿盾（Tipray）**裝在 `C:\Inetpub\ftproot\Tipray\LdTerm\`（行程 `LdTerm.exe`、`LdApproval.exe`），**沒有標準的解除安裝登錄項**。先前三輪診斷只比對「已安裝程式」清單，因此完全沒發現它。
+
+教訓：偵測管控代理必須同時列舉**行程實際載入的模組**，只看已安裝程式會漏。
+
+### 升級後的軟體存活狀況
+
+唯一傷亡：**`%APPDATA%\uv\python` 整個目錄消失**，`C:\work\envs\ds` 的 site-packages 還在但底層直譯器沒了，venv 成為孤兒（`Windows.old` 裡也找不到）。
+
+能救回來是因為當初產生了 `requirements.lock.txt`。但那個檔案只躺在 `C:\work` 裡、不在版控內——**等於復原能力本身沒有備份**。已收進 `env/python-ds-requirements.lock.txt`。
+
+重建後實測，數字與升級前一致：
+
+```
+Python 3.13.15 | Windows-11-10.0.26200-SP0   176 套件
+duckdb 12 執行緒、parquet 30 萬列往返 OK
+xgboost 0.8884   lightgbm 0.8928   econml LinearDML ATE 2.03（真值 2.0）
+Jupyter kernel 實跑一個 cell -> kernel ok 1.44.2 1.5.5
+```
+
+其餘**全部存活**：R 4.6.1（348 套件、關鍵套件零缺口、rugarch 收斂、reticulate 接上重建後的環境）、git 2.55.0、quarto 1.10.18、duckdb CLI 1.5.5、pwsh 7.6.6、uv 0.12.17、PATH 完整。
+
+### 版本現況
+
+已升級：全域 Python 3.14.0 → **3.14.7**（工作環境的 3.13.15 不受影響）。
+
+仍可升級、**需系統管理員**（腳本無法提權）：
+
+```powershell
+winget upgrade --id Microsoft.Edge --exact
+winget upgrade --id Microsoft.Teams --exact
+winget upgrade --id Microsoft.VCRedist.2015+.x64 --exact
+winget upgrade --id Microsoft.VCRedist.2015+.x86 --exact
+```
+
+### 待先生決定的磁碟問題
+
+C: 只剩 **61.6 GB（26%）**，低於健康線。兩個可回收的目標：
+
+| 目標 | 大小 | 說明 |
+|---|---|---|
+| `C:\Windows.old` | **40.17 GB** | 回退 Windows 10 的唯一依據。一旦刪除就回不去了，且系統約 10 天後會自動清理 |
+| `C:\work\envs\ds_orphaned_20260920` | 1.22 GB | 升級後失效的舊 venv，已由 lock 檔重建，確認無誤即可刪 |
+
+我沒有自行刪除任何一個——刪掉 `Windows.old` 等於放棄回退 Windows 10 的能力，那是先生的決定，不是我的。
