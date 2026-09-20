@@ -4073,3 +4073,94 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Win10_Diagnose_v2.ps1
 - `Microsoft.PowerShell`、`DuckDB.cli`、`Posit.Quarto`、`RProject.Rtools` 四個 winget ID 已在本機查證存在。其餘 ID（ODBC 驅動）未查證，腳本找不到時會給官方下載連結，不會硬幹。
 - 「最強」不等於「裝最多、調最激進」。這台機器真正的上限來自企業管控政策與 Windows 10 已停止一般支援，那兩件事不是腳本能解決的。
 - 硬體還有一個高報酬升級：加一顆 NVMe SSD 專放 `data/` 與 TEMP，把資料集 IO 與系統碟分開。
+
+
+## Claude（第三輪：實際施工記錄）
+
+這一輪不是建議，是**在這台機器上實際執行**的記錄。施工前先打了回溯標籤 `pre-datastack-20260920` 並推送。
+
+**結果：診斷發現數 27 → 21，R 關鍵套件缺口 75 → 0，Python 分析環境 0 → 176 個套件。**
+
+### 施工途中發現並修正的五個真實 bug
+
+**1. R 堆疊第一次整批 74 個套件，一個都沒裝成。**
+
+根因不是網路、不是權限，也不是防毒：清單裡的 `qs`、`fastshap`、`vip` 已從 CRAN 封存。而 **pak 的求解器是全域的**——只要清單裡有一個套件找不到，它會把整批 74 個全部標成 `dependency conflict`。錯誤訊息長得像「所有套件都有依賴衝突」，很容易誤判成 R 版本太新或鏡像壞掉。
+
+修法：換成 `qs2` / `shapviz` + `kernelshap`；**安裝前用 `available.packages()` 重新核對**，不相信寫死的清單；改成每批 12 個、整批失敗退回逐一安裝。重跑後 78/78 全裝成——第 1、3 批在 pak 下仍失敗，逐一退回機制把它們補上了。
+
+**2. `.Rprofile` 不該改變分析行為。**
+
+我上一輪寫入的 `.Rprofile` 含 `OMP_NUM_THREADS`、`TZ`、`warnPartialMatchArgs`。`.Rprofile` 是單機獨有的檔案，把行為設定放進去，等於讓同一份腳本在本機與同事機器跑出不同結果，且極難追查。改為只保留影響「套件怎麼裝」的設定。執行緒請在腳本內明示 `setDTthreads()`、`arrow::set_cpu_count()`；版本鎖定用 `renv::init()`。
+
+**3. Rtools 偵測路徑錯了，而且根本不該進 PATH。**
+
+Rtools4x 的 gcc 在 `x86_64-w64-mingw32.static.posix\bin`，不在 `usr\bin`（那裡只有 make / sh），所以原本的探測把「已安裝」誤報成「沒安裝」。改以登錄機碼 `HKLM\SOFTWARE\R-core\Rtools` 為準。
+
+同時停止把 Rtools 加進 PATH：R 是靠登錄機碼找工具鏈的——實測 `R CMD SHLIB` 在 PATH 沒有 Rtools 的情況下編譯成功（gcc 14.3.0）。而 `rtools\usr\bin` 內含 `sh.exe` / `find.exe` / `sort.exe`，排進 PATH 會蓋掉同名 Windows 內建指令。
+
+另記一項容易誤判的事實：**Rtools 版本號不等於 R 次版本**。R 4.6 用的就是 Rtools45，CRAN 並未發行 rtools46。能不能編譯要用 `R CMD SHLIB` 實測，不能由版本號推論。
+
+**4. PATH 判定看錯對象。**
+
+原本用 `Get-Command` 查目前行程的 `$env:PATH`，但那是行程啟動時複製的快照。剛改過 PATH 的機器，舊 session 會把已經修好的項目報成「不在 PATH 上」，讓人白忙一場。改為讀登錄檔中持久化的 Machine + User PATH，也就是「重開視窗後」的真實狀態。
+
+**5. uv 建立的 venv 讀不到套件清單。**
+
+uv 的 venv **刻意不安裝 pip**，所以 `python -m pip list` 回空清單，把 149 個套件的完整環境誤報成空環境。改用標準庫 `importlib.metadata`。附帶一個 Windows 特有的坑：這段 Python 程式碼內不能有引號——PowerShell 5.1 把參數傳給原生程式時會把引號吃掉，`d.metadata["Name"]` 會變成 `d.metadata[Name]` 而拋 `NameError`。用不需引號的 `d.name`。
+
+還有一個誤報：把 `uv` 和 `pip` 列進 venv 的「應有套件」清單。uv 是獨立執行檔，pip 本就不該在 uv venv 裡。
+
+### 端到端實測（不是「安裝成功」，是真的跑出結果）
+
+Python（`C:\work\envs\ds`，Python 3.13.15，176 套件，已鎖版）：
+
+```
+polars 1.44.2 → duckdb 1.5.5 (12 threads) → parquet 30 萬列讀回 OK
+xgboost 3.4.1 (hist, CPU) acc 0.8884    lightgbm 4.7.0 acc 0.8928
+econml 0.17.0 LinearDML 還原 ATE 2.028（真值 2.0）
+dowhy 0.14 / clickhouse-connect 1.8.0 / shap 0.52 / lifelines 0.30 可用
+```
+
+R（R 4.6.1，319 個套件 / 855 MB）：
+
+```
+data.table 1.18.6.1  10 threads      arrow 25.0.1 parquet 往返 OK
+duckdb 1.5.5 over parquet, 12 threads
+xgboost 3.2.1.1 (hist, CPU) acc 0.9886
+rugarch 1.5.6 sGARCH(1,1) 收斂，persistence 0.999
+reticulate 1.47.0 → 直接讀到 uv 環境的 polars / duckdb
+R CMD SHLIB 編譯 C 擴充成功（gcc 14.3.0，Rtools45）
+```
+
+工具鏈：PowerShell 7.6.6、DuckDB CLI 1.5.5、Quarto CLI 1.10.18、Rtools 4.5.6768，皆已在持久化 PATH 上（Rtools 除外，理由見上）。
+
+### 一個做不到的項目，以及為什麼
+
+`scikit-survival` 裝不起來。它的相依 `ecos` 沒有 Windows wheel，必須用 **MSVC C++ Build Tools** 從原始碼編譯，而本機沒有——**Rtools 的 gcc 只服務 R，不服務 Python**，這兩條編譯鏈完全獨立。
+
+R 端的 `survival` / `survminer` / `grf` 已涵蓋生存分析與因果森林，所以這不是缺口，是選擇。真要 Python 版，得先裝 `Microsoft.VisualStudio.2022.BuildTools`（數 GB），在公司資產上建議先問過 IT。
+
+### 已變更的系統設定與其還原依據
+
+| 變更 | 還原依據 |
+|---|---|
+| 使用者 PATH（加 R bin / DuckDB，真 Python 提到 WindowsApps 之前） | `~\PATH_user_backup_20260920_114754.txt` |
+| git 全域 9 項設定 | `~\gitconfig_backup_20260920_114754.txt` |
+| R 套件庫（319 套件） | `~\R_packages_backup_*.csv` |
+| Python 環境 `C:\work\envs\ds` | `requirements.lock.txt`（176 筆）；整個目錄可直接刪除重建 |
+| 電源計畫 → 高性能 | `powercfg /setactive SCHEME_BALANCED` |
+| `C:\work` 工作區骨架 | 直接刪除即可，原資料未動 |
+| `~\.duckdb` | 直接刪除；建立它是為了讓 DuckDB 擴充不必每次重下載 |
+
+**git 保護的是倉庫，不是作業系統。** 上面這些都不在版控裡，`pre-datastack-20260920` 這個 tag 回溯不到它們。能回溯系統的是系統還原點，而它需要管理員權限。
+
+### 剩下的 21 項發現，沒有一項是腳本能解決的
+
+- **企業管控代理**（亿赛通 CDG + Kaspersky + Defender 三層即時檔案攔截）——只能由 IT 加白名單。這台機器最大的效能稅在這裡。
+- **Defender 與 Kaspersky 同時 Normal 模式**——只能由 IT 決定是否轉 Passive。
+- **專案仍在 OneDrive 內**——`C:\work` 骨架已建好，但搬移必須在 IDE 關閉、OneDrive 暫停同步時手動做，腳本不該代勞。
+- **Windows 10 已結束一般支援**——ESU 或遷移，屬採購與政策。
+- **長路徑 / 分頁檔 / Defender 排除**——需管理員身分，腳本無法自行提權。
+
+這正是第一輪就講過的那句話的實證：這台機器的上限來自企業政策與作業系統生命週期，不來自「有沒有把設定調到最激進」。
