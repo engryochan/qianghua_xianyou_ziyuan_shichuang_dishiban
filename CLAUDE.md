@@ -103,6 +103,33 @@ C:\work\envs\ds\Scripts\python.exe -m ipykernel install --user --name ds --displ
 
 **教訓：復原用的鎖版檔本身也要進版控。** 它原本只躺在 `C:\work` 裡，等於復原能力沒有備份。
 
+## 地雷：R 的 `arrow` 與 Python 的 `pyarrow` 不能在同一個行程裡共存
+
+2026-09-20 實測隔離：
+
+| 先載入的 R 套件 | 之後 `reticulate::import("pyarrow")` |
+|---|---|
+| 無 | OK |
+| `duckdb` | OK |
+| **`arrow`** | **FAIL: ImportError: DLL load failed while importing lib** |
+
+兩者都夾帶各自的 Arrow C++ 二進位，先載入的會讓後載入的找不到符號。
+
+**在 `.qmd` 裡混用 R 與 Python chunk 時，knitr 走 reticulate，兩者同行程，必炸。**
+
+可行寫法（已實測 `quarto render` 成功產出 HTML）：**R 端改用 `duckdb` 讀寫 Parquet，不要 `library(arrow)`**：
+
+```r
+con <- dbConnect(duckdb()); duckdb_register(con, "dt", dt)
+dbExecute(con, sprintf("copy dt to '%s' (format parquet)", pq))
+```
+
+其他相關事項：
+
+- **reticulate 不認 `QUARTO_PYTHON`，只認 `RETICULATE_PYTHON`。** 沒設的話它會自己臨時下載一個乾淨的 Python（實測看到它抓 cpython-3.12.14 + numpy），於是你的套件全都不在，錯誤訊息是 `ModuleNotFoundError`，很容易誤判成環境壞掉。
+- 正確設定：`Sys.setenv(RETICULATE_PYTHON = "C:/work/envs/ds/Scripts/python.exe")`
+- 單獨用 `Rscript` + reticulate 時，12 個常用 Python 套件（含 polars、pyarrow）全部載入正常——**衝突只在載入 R `arrow` 之後才出現**。
+
 ## 比對式診斷（本倉庫最有效的一招）
 
 單看一個應用「不正常」，很難知道原因。**找一個同類但正常的應用當對照組**，比對兩者的差異，答案通常立刻浮現：
