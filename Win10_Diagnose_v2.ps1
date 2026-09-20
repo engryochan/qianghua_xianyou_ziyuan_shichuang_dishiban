@@ -304,7 +304,13 @@ if ($power -match 'Power saver|節能|节能') {
 Section '6. 資料分析工具鏈'
 $probe = @(
     @{ N = 'Rscript'; E = 'Rscript'; A = @('--version'); F = @("$env:ProgramFiles\R\R-*\bin\x64\Rscript.exe", "$env:LOCALAPPDATA\Programs\R\R-*\bin\x64\Rscript.exe") },
-    @{ N = 'Rtools'; E = 'gcc'; A = @('--version'); F = @("C:\rtools*\usr\bin\gcc.exe", "$env:ProgramFiles\Rtools*\usr\bin\gcc.exe") },
+    # Rtools 的 gcc 不在 usr\bin，而在 x86_64-w64-mingw32.static.posix\bin（Rtools4x 佈局）。
+    # usr\bin 只有 make / sh 等 msys2 工具。找錯路徑會把「已安裝」誤報成「沒安裝」。
+    @{ N = 'Rtools'; E = 'gcc'; A = @('--version'); F = @(
+            "C:\rtools*\x86_64-w64-mingw32.static.posix\bin\gcc.exe",
+            "C:\rtools*\ucrt64\bin\gcc.exe",
+            "C:\rtools*\mingw64\bin\gcc.exe",
+            "$env:ProgramFiles\Rtools*\x86_64-w64-mingw32.static.posix\bin\gcc.exe") },
     @{ N = 'python'; E = 'python'; A = @('--version'); F = @() },
     @{ N = 'py'; E = 'py'; A = @('--version'); F = @() },
     @{ N = 'uv'; E = 'uv'; A = @('--version'); F = @("$env:USERPROFILE\.local\bin\uv.exe") },
@@ -345,9 +351,19 @@ if ($pyTool -and $pyTool.Path -like '*\WindowsApps\*') {
 }
 $rsTool = $tools | Where-Object { $_.Tool -eq 'Rscript' } | Select-Object -First 1
 $rtTool = $tools | Where-Object { $_.Tool -eq 'Rtools' } | Select-Object -First 1
-if ($rsTool.Found -and -not $rtTool.Found) {
+# R 靠登錄機碼 HKLM\SOFTWARE\R-core\Rtools 找工具鏈，不是靠 PATH。
+# 所以這裡以登錄機碼為準，檔案探測只當輔助。
+$rtReg = @(Get-ItemProperty 'HKLM:\SOFTWARE\R-core\Rtools\*', 'HKCU:\SOFTWARE\R-core\Rtools\*' -ErrorAction SilentlyContinue |
+        Where-Object { $_.InstallPath -and (Test-Path -LiteralPath $_.InstallPath) })
+if ($rtReg.Count -gt 0) {
+    Write-Host ('Rtools（登錄機碼）：' + (($rtReg | ForEach-Object { $_.PSChildName + ' -> ' + $_.InstallPath }) -join '; '))
+    Save-Csv ($rtReg | Select-Object PSChildName, InstallPath) '06_Rtools.csv'
+}
+if ($rsTool.Found -and $rtReg.Count -eq 0 -and -not $rtTool.Found) {
     Add-Finding '警告' 'R' '已安裝 R 但沒有 Rtools。任何需要編譯的套件（大量 GitHub 套件、部分 CRAN 套件的最新版）都會安裝失敗，也無法用 Rcpp 自行寫 C++ 加速。'
     Add-Action '-InstallRtools'
+} elseif ($rtReg.Count -gt 0) {
+    Add-Finding '資訊' 'R' ('Rtools 已註冊（' + (($rtReg | ForEach-Object { $_.PSChildName }) -join ', ') + '）。注意：Rtools 的版本號不必然等於 R 的次版本——R 4.6 使用的就是 Rtools45，CRAN 並沒有發行 rtools46。是否真的能編譯，請以 R CMD SHLIB 實測為準，不要靠版本號推論。')
 }
 if (-not ($tools | Where-Object { $_.Tool -eq 'duckdb' -and $_.Found })) {
     Add-Finding '資訊' '資料庫' '沒有 DuckDB CLI。以 32 GB 記憶體 / 單 SSD 的配置，DuckDB 是處理千萬列級資料最划算的引擎：可直接對 Parquet 下 SQL，不必先把整份資料讀進記憶體。'

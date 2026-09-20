@@ -30,7 +30,7 @@ param(
     [switch]$UpdateApps,            # winget：升級已安裝的資料分析相關軟體
 
     # ---- 環境設定 ----
-    [switch]$FixPath,               # 把 R / Quarto / Rtools 加入使用者 PATH，並把真 Python 排到 WindowsApps 之前
+    [switch]$FixPath,               # 把 R / Quarto 加入使用者 PATH，並把真 Python 排到 WindowsApps 之前
     [switch]$ConfigureGit,          # git 全域設定：longpaths / autocrlf / fscache / credential / 效能參數
     [switch]$PrepareWorkspace,      # 建立 C:\work 純 ASCII、未同步的工作區骨架
     [switch]$PowerPlanHigh,         # 切到高效能電源計畫
@@ -150,7 +150,9 @@ if ($InstallToolchain) {
 if ($InstallRtools) {
     Step '安裝 Rtools（R 的 C/C++/Fortran 編譯工具鏈）'
     Install-WingetId -Id 'RProject.Rtools' -Why '沒有它就無法安裝需編譯的套件，也無法用 Rcpp 自行加速' -ManualUrl 'https://cran.r-project.org/bin/windows/Rtools/'
-    Write-Host '安裝後請重開 PowerShell，並用 -FixPath 把 Rtools 的 usr\bin 加進 PATH。'
+    Write-Host '安裝後不需要改 PATH：R 透過登錄機碼 HKLM\SOFTWARE\R-core\Rtools 尋找工具鏈。'
+    Write-Host 'Rtools 的版本號不必然等於 R 的次版本——R 4.6 用的就是 Rtools45，CRAN 沒有 rtools46。'
+    Write-Host '要確認能不能編譯，用實測而非版本號： R CMD SHLIB 一支小 C 檔。'
 }
 
 if ($InstallODBC) {
@@ -189,10 +191,16 @@ if ($FixPath) {
         Sort-Object Name -Descending | Select-Object -First 1
     if ($rbin) { [void](Add-UserPathEntry -Entry $rbin.FullName) } else { Write-Host '  找不到 R 的 bin\x64。' }
 
-    # Rtools
-    $rtools = Get-ChildItem 'C:\rtools*\usr\bin', "$env:ProgramFiles\Rtools*\usr\bin" -Directory -ErrorAction SilentlyContinue |
-        Sort-Object FullName -Descending | Select-Object -First 1
-    if ($rtools) { [void](Add-UserPathEntry -Entry $rtools.FullName) }
+    # Rtools 刻意「不」加進 PATH。
+    # 理由一：R 是透過登錄機碼 HKLM\SOFTWARE\R-core\Rtools 找工具鏈的，加 PATH 沒有必要——
+    #         本機已實測 R CMD SHLIB 在 PATH 沒有 Rtools 的情況下編譯成功。
+    # 理由二：rtools\usr\bin 是 msys2 工具集，內含 sh.exe / find.exe / sort.exe，
+    #         一旦排進 PATH 會蓋掉同名的 Windows 內建指令，讓其他腳本出現極難追查的怪異行為。
+    $rtReg = @(Get-ItemProperty 'HKLM:\SOFTWARE\R-core\Rtools\*', 'HKCU:\SOFTWARE\R-core\Rtools\*' -ErrorAction SilentlyContinue |
+            Where-Object { $_.InstallPath -and (Test-Path -LiteralPath $_.InstallPath) })
+    if ($rtReg.Count -gt 0) {
+        Write-Host ('  Rtools 已註冊，不加入 PATH（R 靠登錄機碼尋找）：' + (($rtReg | ForEach-Object { $_.InstallPath }) -join '; '))
+    }
 
     # Quarto
     $q = Get-Item "$env:LOCALAPPDATA\Programs\Quarto\bin", "$env:ProgramFiles\Quarto\bin" -ErrorAction SilentlyContinue | Select-Object -First 1
