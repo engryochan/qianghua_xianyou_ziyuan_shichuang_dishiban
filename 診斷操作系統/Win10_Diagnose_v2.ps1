@@ -159,7 +159,11 @@ foreach ($g in @($gpus)) {
             $nvVer = [double]($tail.Substring(0, 3) + '.' + $tail.Substring(3, 2))
             Add-Finding '資訊' 'GPU' ($g.Name + ' 的 NVIDIA 驅動實際版本為 ' + $nvVer + '（Windows 版本字串 ' + $g.DriverVersion + '，日期 ' + $g.DriverDate + '）。')
             if ($nvVer -lt 470) {
-                Add-Finding '嚴重' 'GPU' ('驅動 ' + $nvVer + ' 低於 Kepler 最後支援分支 472.xx，且從未針對 Windows 11 發行。這會讓 Chromium 系瀏覽器的 DirectComposition 呈現路徑失敗，症狀為黑屏。請用 Win11_App_RealTest.ps1 做像素級實測確認。')
+                # 2026-09-20 實測修正：本機驅動確實是 391.35，但它「不是」黑屏的原因。
+                # 同一台機器上 Chrome 內容區近黑 0%、平均亮度 243.3，渲染完全正常；
+                # 只有不在 DLP 支援清單上的 Comet 黑屏。原本斷言「Chromium 系的
+                # DirectComposition 會失敗」屬過度推論，已降級並改寫。
+                Add-Finding '警告' 'GPU' ('驅動 ' + $nvVer + ' 低於 Kepler 最後支援分支 472.xx，且從未針對 Windows 11 發行，屬長期風險（無安全修補、新版瀏覽器可能逐步停止支援）。但請注意：本機實測顯示 Chromium 系渲染在此驅動下正常運作，**不要直接把應用黑屏歸因於它**——先用對照組（另一個正常的同類應用）與 Win11_App_RealTest.ps1 做像素級實測。')
                 Add-Action '升級 NVIDIA 驅動至 472.12（需管理員）'
             }
         }
@@ -223,11 +227,58 @@ $agents = @($programs | Where-Object { $_.DisplayName -match $agentPattern })
 Show-Table ($agents | Select-Object DisplayName, DisplayVersion, Publisher)
 Save-Csv $agents '03_管控代理.csv'
 
-$agentProcPattern = '^Cdg|^CDG|esafe|docguard|^avp$|klnagent|ksde|^360|sfdesk|Sangfor|qaxsafe|SentinelAgent|CSFalcon|MsMpEng'
+# 天锐绿盾 Tipray 裝在 C:\Inetpub\ftproot\Tipray\LdTerm\，沒有標準解除安裝登錄項，
+# 只比對「已安裝程式」清單會完全漏掉（2026-09-20 實測踩到）。必須靠行程名與模組補抓。
+$agentProcPattern = '^Cdg|^CDG|esafe|docguard|^avp$|klnagent|ksde|^360|sfdesk|Sangfor|qaxsafe|SentinelAgent|CSFalcon|MsMpEng|^LdTerm|^LdApproval|Tipray'
 $agentProcs = Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.Name -match $agentProcPattern } |
     Select-Object Name, Id, @{n = 'WS_MB'; e = { [math]::Round($_.WorkingSet64 / 1MB) } } | Sort-Object Name
 Show-Table $agentProcs
 Save-Csv $agentProcs '03_管控代理行程.csv'
+
+# 最可靠的偵測：看管控代理實際把哪些 DLL 注入到一般應用程式裡。
+# 已安裝程式清單可以漏、行程名可以改，但要攔截就一定得注入模組。
+# 順便量出「哪個應用被注入的模組比較少」——那往往就是它不在支援清單上、
+# 只套到半套掛鉤而行為異常的原因（2026-09-20 Comet 黑屏即為此）。
+$injRows = @()
+# 只在「同一類」應用之間比較，否則沒有意義（explorer 本來就比瀏覽器多）。
+# 且必須抓「有主視窗的那個行程」：Chromium 的 renderer 子行程在沙箱裡，
+# 本來就不會被注入，用記憶體最大的那個會抓到 renderer 而量出 0，造成誤判。
+$groups = @{ '瀏覽器' = @('chrome', 'msedge', 'firefox', 'comet'); 'IDE' = @('rstudio', 'positron', 'pycharm64') }
+foreach ($grp in $groups.Keys) {
+    foreach ($pn in $groups[$grp]) {
+        $cands = @(Get-Process $pn -ErrorAction SilentlyContinue)
+        if ($cands.Count -eq 0) { continue }
+        $pp = @($cands | Where-Object { $_.MainWindowHandle -ne 0 }) | Select-Object -First 1
+        if (-not $pp) { $pp = @($cands | Sort-Object StartTime) | Select-Object -First 1 }   # 退而求其次：最早啟動的通常是主行程
+        if (-not $pp) { continue }
+        $dlp = @()
+        try { $dlp = @($pp.Modules | Where-Object { $_.FileName -match 'Tipray|EsafeNet|Cobra|Kaspersky|Sangfor|360' }) } catch { continue }
+        $injRows += [pscustomobject]@{
+            Group     = $grp
+            Process   = $pn
+            HasWindow = ($pp.MainWindowHandle -ne 0)
+            DLP模組數 = $dlp.Count
+            模組清單  = (($dlp | ForEach-Object { Split-Path $_.FileName -Leaf } | Sort-Object) -join ' ')
+        }
+    }
+}
+if ($injRows.Count -gt 0) {
+    Write-Host '同類應用被注入的管控模組數（同組內落差通常代表某支不在支援清單上）：'
+    Show-Table ($injRows | Select-Object Group, Process, HasWindow, DLP模組數)
+    Save-Csv $injRows '03_管控模組注入比對.csv'
+    foreach ($grp in $groups.Keys) {
+        # 只比對「有主視窗」的行程，數字才是同一個基準
+        $g = @($injRows | Where-Object { $_.Group -eq $grp -and $_.DLP模組數 -gt 0 -and $_.HasWindow })
+        if ($g.Count -lt 2) { continue }
+        $mx = ($g | Measure-Object DLP模組數 -Maximum).Maximum
+        foreach ($o in @($g | Where-Object { $_.DLP模組數 -lt $mx })) {
+            Add-Finding '警告' '管控' ($o.Process + ' 只被注入 ' + $o.DLP模組數 + ' 個管控模組，同組（' + $grp + '）其他應用有 ' + $mx + ' 個。半套掛鉤常導致該應用行為異常（黑屏、功能失效）。正解是請 IT 把該執行檔加入受支援清單，不是改名或停用資安軟體。')
+        }
+    }
+    if (@($injRows | Where-Object { $_.模組清單 -match 'Ld|Browser' }).Count -gt 0) {
+        Add-Finding '資訊' '管控' '偵測到天锐绿盾 (Tipray) 的注入模組。它安裝於 C:\Inetpub\ftproot\Tipray\，沒有標準解除安裝登錄項，僅比對已安裝程式清單會漏掉。'
+    }
+}
 
 if (@($agents).Count -gt 0 -or @($agentProcs).Count -gt 0) {
     $names = @()
@@ -372,6 +423,13 @@ function Test-OnPersistedPath {
     if (-not $dir) { return $false }
     $dir = $dir.TrimEnd('\')
     foreach ($d in $script:PersistedPathDirs) { if ($d -ieq $dir) { return $true } }
+    # 有些程式是透過 PATH 上的「應用程式執行別名」啟動的（Store 應用最常見，
+    # 例如 pwsh 的別名在 WindowsApps，但 Get-Command 會解析成套件實際目錄）。
+    # 只比對目錄會把「其實叫得到」誤判成「不在 PATH 上」，所以再用檔名找一次。
+    $leaf = Split-Path $ExePath -Leaf
+    foreach ($d in $script:PersistedPathDirs) {
+        if (Test-Path -LiteralPath (Join-Path $d $leaf)) { return $true }
+    }
     return $false
 }
 

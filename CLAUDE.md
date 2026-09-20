@@ -63,15 +63,39 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 
 ## 腳本
 
+**全部位於 `診斷操作系統/` 子目錄**（2026-09-20 重整過，別再用倉庫根目錄的舊路徑）。
+
 | 檔案 | 用途 |
 |---|---|
-| `Win10_Diagnose_v2.ps1` | 唯讀診斷，產出 `00_摘要.txt` 與 `99_建議指令.txt` |
-| `Setup_DataStack.ps1` | 補齊工具鏈與 R/Python 堆疊，全部開關獨立、支援 `-WhatIf` |
-| `Win10_Optimize.ps1` | 只負責「更新已安裝的東西」 |
-| `Win10_Diagnose_v3.ps1` / `Setup_DataStack_v2.ps1` / `Win10_Optimize_v2.ps1` | 另一輪作者的版本，設計更保守（不改全域 `.Rprofile`、不動 PATH） |
-| `Win11_App_RealTest.ps1` | **驗證應用是否真的畫得出畫面**（不是「有沒有裝」）。像素級黑屏判定 + 渲染旗標逐一實測 + winget 版本落差 |
+| `診斷操作系統/Win10_Diagnose_v2.ps1` | 唯讀診斷，產出 `00_摘要.txt` 與 `99_建議指令.txt` |
+| `診斷操作系統/Setup_DataStack.ps1` | 補齊工具鏈與 R/Python 堆疊，全部開關獨立、支援 `-WhatIf` |
+| `診斷操作系統/Win10_Optimize.ps1` | 只負責「更新已安裝的東西」 |
+| `診斷操作系統/Win10_Diagnose_v3.ps1` / `Setup_DataStack_v2.ps1` / `Win10_Optimize_v2.ps1` | 另一輪作者的版本，設計更保守（不改全域 `.Rprofile`、不動 PATH） |
+| `診斷操作系統/Win11_App_RealTest.ps1` | **驗證應用是否真的畫得出畫面**（不是「有沒有裝」）。像素級黑屏判定 + 渲染旗標逐一實測 |
+| `env/python-ds-requirements.lock.txt` | Python 工作環境的鎖版檔，**重建環境的唯一依據** |
 
 流程：先 `Win10_Diagnose_v2.ps1`，再照 `99_建議指令.txt` 選 `Setup_DataStack.ps1` 的開關，第一次一律加 `-WhatIf`。
+
+## 環境重建
+
+升級 Windows 11 時 `%APPDATA%\uv\python` 整個目錄消失，`C:\work\envs\ds` 的套件還在但底層直譯器沒了。重建：
+
+```powershell
+uv python install 3.13
+uv venv --python 3.13 C:\work\envs\ds
+uv pip install --python C:\work\envs\ds\Scripts\python.exe -r env/python-ds-requirements.lock.txt
+C:\work\envs\ds\Scripts\python.exe -m ipykernel install --user --name ds --display-name "Python 3.13 (ds)"
+```
+
+**教訓：復原用的鎖版檔本身也要進版控。** 它原本只躺在 `C:\work` 裡，等於復原能力沒有備份。
+
+## 比對式診斷（本倉庫最有效的一招）
+
+單看一個應用「不正常」，很難知道原因。**找一個同類但正常的應用當對照組**，比對兩者的差異，答案通常立刻浮現：
+
+- Comet 黑屏 vs Chrome 正常 → 比對注入模組 → 15 vs 20 → DLP 支援清單問題。
+- 比對時務必抓**有主視窗的那個行程**。Chromium 的 renderer 子行程在沙箱裡本來就不被注入，抓錯行程會量到 0 而誤判。
+- 不同類的應用不能互比（`explorer` 被注入的模組本來就比瀏覽器多）。
 
 ## 工作方式的硬性要求
 
