@@ -363,26 +363,55 @@ core <- c("renv", "here", "conflicted", "sessioninfo",
           "arrow", "duckdb", "DBI", "RSQLite", "odbc", "dbplyr",
           "ggplot2", "scales", "knitr", "rmarkdown", "quarto")
 full <- c(core,
-          "dtplyr", "collapse", "stringi", "fst", "qs", "vroom",
+          "dtplyr", "collapse", "stringi", "fst", "qs2", "vroom", "nanoparquet",
           "RPostgres", "RMariaDB", "pool",
           "xts", "zoo", "tsibble", "fable", "forecast", "TTR", "quantmod",
           "PerformanceAnalytics", "rugarch",
           "tidymodels", "xgboost", "lightgbm", "ranger", "glmnet",
           "survival", "survminer", "grf", "depmixS4",
-          "DALEX", "iml", "fastshap", "vip", "pdp",
+          "DALEX", "iml", "shapviz", "kernelshap", "pdp",
           "gt", "gtsummary", "flextable", "officer",
           "plotly", "ggiraph", "patchwork", "ggrepel",
           "future", "furrr", "parallelly", "Rcpp", "bench", "profvis",
           "shiny", "bslib", "shinyWidgets", "shinyjs", "DT", "reactable",
           "targets", "testthat", "lintr", "styler", "logger", "reticulate")
 want <- if (identical(grp, "core")) core else full
+
+## 3a. 先剔除「CRAN 上已經沒有」的套件
+##     理由：pak 的求解器是全域的。只要清單裡有一個找不到的套件，
+##     它會把整批 70+ 個套件全部標成 dependency conflict，一個都裝不成。
+##     套件被 CRAN 封存（qs -> qs2、fastshap/vip -> shapviz/kernelshap）是常態，
+##     所以這裡每次都重新核對，而不是相信寫死的清單。
+ap <- tryCatch(rownames(available.packages()), error = function(e) character(0))
+if (length(ap)) {
+  gone <- setdiff(want, ap)
+  gone <- setdiff(gone, rownames(installed.packages()))
+  if (length(gone)) {
+    cat("NOT ON CRAN (skipped):", paste(gone, collapse = ", "), "\n")
+    want <- setdiff(want, gone)
+  }
+}
+
 todo <- setdiff(want, rownames(installed.packages()))
 cat("to install:", length(todo), "\n")
+
+## 3b. 分批安裝：一批失敗不會拖垮其他批次，且進度看得見
 if (length(todo)) {
-  if (has_pak) {
-    pak::pkg_install(todo, lib = lib, ask = FALSE)
-  } else {
-    install.packages(todo, lib = lib, Ncpus = ncpu)
+  chunks <- split(todo, ceiling(seq_along(todo) / 12))
+  for (i in seq_along(chunks)) {
+    cat("=== chunk", i, "of", length(chunks), ":", paste(chunks[[i]], collapse = " "), "\n")
+    ok <- tryCatch({
+      if (has_pak) pak::pkg_install(chunks[[i]], lib = lib, ask = FALSE)
+      else install.packages(chunks[[i]], lib = lib, Ncpus = ncpu)
+      TRUE
+    }, error = function(e) { cat("chunk", i, "failed:", conditionMessage(e), "\n"); FALSE })
+    ## 該批整批失敗時退回逐一安裝，把能裝的先裝起來
+    if (!ok) {
+      for (p in chunks[[i]]) {
+        tryCatch(install.packages(p, lib = lib, Ncpus = ncpu),
+                 error = function(e) cat("  ", p, "failed:", conditionMessage(e), "\n"))
+      }
+    }
   }
 }
 
