@@ -123,7 +123,16 @@ $sys = [pscustomobject]@{
 $sys | Format-List | Out-String -Width 240 | Write-Host
 Save-Csv $sys '01_系統.csv'
 
-if ($os.Caption -match 'Windows 10') {
+# 判 OS 一律用 Build，不要用字串比對：
+# Win10 就地升級到 Win11 之後，註冊表 ProductName 仍會留著 "Windows 10"，
+# 只有 CurrentBuild 會誠實地跳到 22000 以上。
+$buildNum = 0
+[void][int]::TryParse(('' + (Get-RegValue $cv 'CurrentBuild')), [ref]$buildNum)
+if ($buildNum -ge 22000) {
+    Add-Finding '資訊' '系統' ('已在 Windows 11（Build ' + $buildNum + '）。註冊表 ProductName 若仍顯示 Windows 10 屬就地升級的已知現象，以 Build 為準。')
+    Add-Finding '注意' '系統' '剛完成大版本升級：顯示卡、音效、網路卡驅動有可能被保留成升級前的舊版本，或被回退成微軟通用驅動。請先確認 GPU 一節的驅動版本再下任何結論。'
+}
+elseif ($buildNum -gt 0) {
     Add-Finding '警告' '系統' 'Windows 10 一般支援已於 2025-10-14 結束。請確認公司是否已購買 ESU；否則作業系統層級的「最強化」上限就在這裡（以 Microsoft 官方公告與貴公司 IT 政策為準）。'
 }
 # 這支腳本本身跑在 5.1（為了相容性），所以不能用「我是什麼版本」來判斷機器上有沒有 7。
@@ -139,7 +148,21 @@ Show-Table $gpus
 Save-Csv $gpus '01_GPU.csv'
 foreach ($g in @($gpus)) {
     if ($g.Name -match 'GT (7|6|5)\d\d|GTX (6|7)\d\d|Quadro K|NVS ') {
-        Add-Finding '資訊' 'GPU' ($g.Name + ' 屬舊世代 NVIDIA（Kepler/Fermi 級）。現行 CUDA / PyTorch / XGBoost-GPU 都已不支援這種運算能力。請把它當「只負責顯示」，模型訓練一律走 CPU 路線（XGBoost/LightGBM 的 hist 演算法 + 多執行緒）。')
+        Add-Finding '資訊' 'GPU' ($g.Name + ' 屬舊世代 NVIDIA（Kepler/Fermi 級）。現行 CUDA / PyTorch / XGBoost-GPU 都已不支援這種運算能力。模型訓練一律走 CPU 路線（XGBoost/LightGBM 的 hist 演算法 + 多執行緒）。')
+        # 2026-09-20 修正：原本這裡寫「請把它當只負責顯示」，已被實機推翻。
+        # 舊世代顯卡配上舊驅動，在 Windows 11 上「連顯示都不一定做得到」——
+        # Chromium 系瀏覽器（Comet/Chrome/Edge）會出現「視窗開得出來、內容區全黑」。
+        # 驅動年齡必須實測，不能因為「有顯卡」就假設顯示沒問題。
+        $digits = ($g.DriverVersion -replace '\.', '')
+        if ($digits.Length -ge 5) {
+            $tail = $digits.Substring($digits.Length - 5, 5)
+            $nvVer = [double]($tail.Substring(0, 3) + '.' + $tail.Substring(3, 2))
+            Add-Finding '資訊' 'GPU' ($g.Name + ' 的 NVIDIA 驅動實際版本為 ' + $nvVer + '（Windows 版本字串 ' + $g.DriverVersion + '，日期 ' + $g.DriverDate + '）。')
+            if ($nvVer -lt 470) {
+                Add-Finding '嚴重' 'GPU' ('驅動 ' + $nvVer + ' 低於 Kepler 最後支援分支 472.xx，且從未針對 Windows 11 發行。這會讓 Chromium 系瀏覽器的 DirectComposition 呈現路徑失敗，症狀為黑屏。請用 Win11_App_RealTest.ps1 做像素級實測確認。')
+                Add-Action '升級 NVIDIA 驅動至 472.12（需管理員）'
+            }
+        }
     }
 }
 if ($cpu.Name -match 'i\d-\d+F') {
