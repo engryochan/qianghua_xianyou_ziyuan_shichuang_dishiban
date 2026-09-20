@@ -23,6 +23,7 @@
 [CmdletBinding()]
 param(
     [string]$OutDir = (Join-Path $env:USERPROFILE ('Win10_Diag2_' + (Get-Date -Format 'yyyyMMdd_HHmmss'))),
+    [string]$WorkRoot = 'C:\work',   # 工作區根目錄；用來尋找專案虛擬環境（需與 Setup_DataStack.ps1 一致）
     [switch]$Fast,
     [switch]$SkipWinget,
     [switch]$SkipRPackages,
@@ -125,8 +126,11 @@ Save-Csv $sys '01_系統.csv'
 if ($os.Caption -match 'Windows 10') {
     Add-Finding '警告' '系統' 'Windows 10 一般支援已於 2025-10-14 結束。請確認公司是否已購買 ESU；否則作業系統層級的「最強化」上限就在這裡（以 Microsoft 官方公告與貴公司 IT 政策為準）。'
 }
-if ($PSVersionTable.PSVersion.Major -lt 7) {
-    Add-Finding '注意' '工具' ('目前只有 Windows PowerShell ' + $PSVersionTable.PSVersion + '。PowerShell 7 有 ForEach-Object -Parallel、更正確的 UTF-8 與 JSON 處理，對資料前處理腳本幫助很大，且可與 5.1 並存。')
+# 這支腳本本身跑在 5.1（為了相容性），所以不能用「我是什麼版本」來判斷機器上有沒有 7。
+# 要看的是機器上裝了沒有。
+$pwshInstalled = [bool](Find-Exe 'pwsh' @("$env:ProgramFiles\PowerShell\7\pwsh.exe", "$env:ProgramFiles\PowerShell\*\pwsh.exe"))
+if (-not $pwshInstalled) {
+    Add-Finding '注意' '工具' '機器上只有 Windows PowerShell 5.1。PowerShell 7 有 ForEach-Object -Parallel、更正確的 UTF-8 與 JSON 處理，對資料前處理腳本幫助很大，且可與 5.1 並存。'
     Add-Action '-InstallToolchain'
 }
 
@@ -327,26 +331,69 @@ $probe = @(
     @{ N = 'code'; E = 'code'; A = @('--version'); F = @() },
     @{ N = 'positron'; E = 'positron'; A = @('--version'); F = @("$env:LOCALAPPDATA\Programs\Positron\bin\positron.cmd") }
 )
+# PATH 判定必須看「登錄檔裡持久化的 PATH」，而不是目前這個行程的 $env:PATH。
+# 行程的 PATH 是啟動當下複製的快照：剛改過 PATH 的機器，舊 session 看到的是舊值，
+# 會把已經修好的項目誤報成「不在 PATH 上」，讓人白忙一場。
+$script:PersistedPathDirs = @()
+foreach ($scope in @('Machine', 'User')) {
+    $raw = [Environment]::GetEnvironmentVariable('Path', $scope)
+    if (-not $raw) { continue }
+    foreach ($e in ($raw -split ';')) {
+        if ($e.Trim()) { $script:PersistedPathDirs += ([Environment]::ExpandEnvironmentVariables($e.Trim())).TrimEnd('\') }
+    }
+}
+function Test-OnPersistedPath {
+    param([string]$ExePath)
+    if (-not $ExePath) { return $false }
+    $dir = (Split-Path $ExePath -Parent)
+    if (-not $dir) { return $false }
+    $dir = $dir.TrimEnd('\')
+    foreach ($d in $script:PersistedPathDirs) { if ($d -ieq $dir) { return $true } }
+    return $false
+}
+
 $tools = @()
 foreach ($d in $probe) {
     $p = Find-Exe $d.E $d.F
     $ver = ''
     if ($p) { $ver = (((Invoke-Native $p $d.A) -split "`n") | Select-Object -First 1).Trim() }
-    $onPath = [bool](Get-Command $d.E -ErrorAction SilentlyContinue | Where-Object { $_.CommandType -eq 'Application' })
-    $tools += [pscustomobject]@{ Tool = $d.N; Found = [bool]$p; OnPATH = $onPath; Version = $ver; Path = $p }
+    $tools += [pscustomobject]@{
+        Tool    = $d.N
+        Found   = [bool]$p
+        OnPATH  = (Test-OnPersistedPath $p)   # 指「新開的視窗看不看得到」
+        Version = $ver
+        Path    = $p
+    }
 }
 Show-Table ($tools | Select-Object Tool, Found, OnPATH, Version)
 Save-Csv $tools '06_工具鏈.csv'
+Write-Host 'OnPATH 欄位的判定依據是登錄檔中持久化的 PATH，也就是「重開視窗後」的狀態，不是目前這個 session。'
 
+# Rtools 不列入 PATH 檢查：R 是透過登錄機碼找它的，刻意不進 PATH
+# （rtools\usr\bin 的 sh/find/sort 會蓋掉 Windows 內建同名指令）。
+$pathExempt = @('Rtools')
 foreach ($t in $tools) {
-    if ($t.Found -and -not $t.OnPATH) {
-        Add-Finding '警告' 'PATH' ($t.Tool + ' 已安裝於 ' + $t.Path + ' 但不在 PATH 上。代表你只能在 IDE 內使用它，命令列、quarto render、排程工作、CI 都會找不到。')
+    if ($t.Found -and -not $t.OnPATH -and ($pathExempt -notcontains $t.Tool)) {
+        Add-Finding '警告' 'PATH' ($t.Tool + ' 已安裝於 ' + $t.Path + ' 但不在持久化的 PATH 上。代表你只能在 IDE 內使用它，命令列、quarto render、排程工作、CI 都會找不到。')
         Add-Action '-FixPath'
     }
 }
-$pyTool = $tools | Where-Object { $_.Tool -eq 'python' } | Select-Object -First 1
-if ($pyTool -and $pyTool.Path -like '*\WindowsApps\*') {
-    Add-Finding '警告' 'Python' ('PATH 上的 python 指向 Microsoft Store 應用程式執行別名 (' + $pyTool.Path + ')，不是真正的直譯器。任何 python xxx.py 都可能被導去 Store 而失敗。請到「設定 > 應用程式 > 應用程式執行別名」關閉 python.exe / python3.exe，或讓真正的 Python 目錄排在 PATH 前面。')
+# python 是否被 Store 別名攔截：要看持久化 PATH 的「先後順序」，
+# 而不是目前 session 解析到哪一個。
+$realPyDir = $null
+$storeIdx = -1
+$realIdx = -1
+for ($i = 0; $i -lt $script:PersistedPathDirs.Count; $i++) {
+    $d = $script:PersistedPathDirs[$i]
+    if ($storeIdx -lt 0 -and $d -like '*\WindowsApps') { $storeIdx = $i }
+    if ($realIdx -lt 0 -and (Test-Path -LiteralPath (Join-Path $d 'python.exe')) -and $d -notlike '*\WindowsApps') {
+        $realIdx = $i; $realPyDir = $d
+    }
+}
+if ($realIdx -ge 0 -and ($storeIdx -lt 0 -or $realIdx -lt $storeIdx)) {
+    Add-Finding '資訊' 'Python' ('PATH 上的 python 會解析到真正的直譯器：' + $realPyDir + '（已排在 WindowsApps 別名之前）。')
+} elseif ($storeIdx -ge 0) {
+    Add-Finding '警告' 'Python' 'PATH 上的 python 會先命中 Microsoft Store 應用程式執行別名，不是真正的直譯器。任何 python xxx.py 都可能被導去 Store 而失敗。請到「設定 > 應用程式 > 應用程式執行別名」關閉 python.exe / python3.exe，或讓真正的 Python 目錄排在 PATH 前面。'
     Add-Action '-FixPath'
 }
 $rsTool = $tools | Where-Object { $_.Tool -eq 'Rscript' } | Select-Object -First 1
@@ -394,11 +441,11 @@ write.csv(data.frame(Package = ip[, "Package"], Version = ip[, "Version"], LibPa
 groups <- list(
   "01_env"      = c("renv", "pak", "here", "conflicted", "sessioninfo"),
   "02_wrangle"  = c("tidyverse", "data.table", "dtplyr", "collapse", "janitor", "lubridate", "stringi"),
-  "03_bigdata"  = c("arrow", "duckdb", "fst", "qs", "vroom"),
+  "03_bigdata"  = c("arrow", "duckdb", "fst", "qs2", "vroom", "nanoparquet"),
   "04_database" = c("DBI", "RSQLite", "odbc", "RPostgres", "RMariaDB", "dbplyr", "pool"),
   "05_timeser"  = c("xts", "zoo", "tsibble", "fable", "forecast", "TTR", "quantmod", "PerformanceAnalytics", "rugarch"),
   "06_model"    = c("tidymodels", "xgboost", "lightgbm", "ranger", "glmnet", "survival", "survminer", "grf", "depmixS4"),
-  "07_explain"  = c("DALEX", "iml", "fastshap", "vip", "pdp"),
+  "07_explain"  = c("DALEX", "iml", "shapviz", "kernelshap", "pdp"),
   "08_report"   = c("quarto", "rmarkdown", "knitr", "gt", "gtsummary", "flextable", "officer"),
   "09_viz"      = c("ggplot2", "plotly", "ggiraph", "patchwork", "scales", "ggrepel"),
   "10_perf"     = c("future", "furrr", "parallelly", "Rcpp", "RcppArmadillo", "bench", "profvis"),
@@ -462,7 +509,9 @@ if ($SkipPython) {
         Save-Text $pipJson '08_pip_已安裝.json'
 
         $pyGroups = [ordered]@{
-            '01_env'      = @('uv', 'pip', 'ruff', 'pytest')
+            # 不把 uv / pip 列進來：uv 是獨立執行檔（已在第 6 節的工具鏈盤點），
+            # 而 uv 建立的 venv 刻意不安裝 pip。把它們當成「缺的套件」是誤報。
+            '01_env'      = @('ruff', 'pytest')
             '02_wrangle'  = @('pandas', 'polars', 'numpy', 'pyarrow', 'duckdb')
             '03_database' = @('sqlalchemy', 'psycopg', 'pymysql', 'clickhouse-connect', 'pyodbc')
             '04_model'    = @('scikit-learn', 'xgboost', 'lightgbm', 'statsmodels', 'scipy')
@@ -482,9 +531,48 @@ if ($SkipPython) {
         }
         Show-Table $pyRows
         Save-Csv $pyRows '08_Python_堆疊差距.csv'
-        if ($pyMiss -gt 0) {
-            Add-Finding '警告' 'Python' ('Python 分析堆疊缺少 ' + $pyMiss + ' 個關鍵套件（見 08_Python_堆疊差距.csv）。')
+
+        # 只看全域直譯器會嚴重誤判：正確做法就是把套件裝在專案環境裡，
+        # 所以全域「缺一堆套件」往往代表做對了，而不是做錯了。
+        # 這裡把工作區裡的虛擬環境一併納入，再決定要不要示警。
+        $venvRoots = @("$WorkRoot\envs", "$env:USERPROFILE\.virtualenvs")
+        $venvPys = @()
+        foreach ($r in $venvRoots) {
+            if (-not (Test-Path -LiteralPath $r)) { continue }
+            $venvPys += @(Get-ChildItem -LiteralPath $r -Directory -ErrorAction SilentlyContinue |
+                    ForEach-Object { Join-Path $_.FullName 'Scripts\python.exe' } |
+                    Where-Object { Test-Path -LiteralPath $_ })
+        }
+        $bestMiss = $pyMiss
+        $bestName = '全域直譯器'
+        # uv 建立的 venv 預設「不安裝 pip」——uv 自己管套件。
+        # 所以不能用 python -m pip list 去問，那會回空清單，把完整環境誤報成空環境。
+        # 改用標準庫的 importlib.metadata，對 pip / uv / venv 一律有效。
+        # 刻意不在這段 Python 裡用任何引號：Windows PowerShell 5.1 把參數傳給原生程式時
+        # 會把內嵌的引號吃掉，d.metadata["Name"] 會變成 d.metadata[Name] 而拋 NameError。
+        # d.name 是 Python 3.10+ 的等效屬性，不需要引號。
+        $listCode = 'import json,importlib.metadata as m;print(json.dumps([d.name for d in m.distributions() if d.name]))'
+        foreach ($vp in $venvPys) {
+            $vjson = Invoke-Native $vp @('-c', $listCode) -StdoutOnly
+            $vinst = @()
+            try { $vinst = ($vjson | ConvertFrom-Json) | ForEach-Object { "$_".ToLower() } } catch { }
+            $vmiss = 0
+            $vrows = @()
+            foreach ($g in $pyGroups.Keys) {
+                $pk = $pyGroups[$g]
+                $mm = @($pk | Where-Object { $vinst -notcontains $_.ToLower() })
+                $vmiss += $mm.Count
+                $vrows += [pscustomobject]@{ Env = $vp; Group = $g; Total = $pk.Count; Have = ($pk.Count - $mm.Count); Missing = ($mm -join ' ') }
+            }
+            Write-Host ('虛擬環境 ' + $vp + '：' + @($vinst).Count + ' 套件，關鍵套件缺 ' + $vmiss + ' 個')
+            Save-Csv $vrows ('08_Python_堆疊差距_' + (Split-Path (Split-Path $vp -Parent) -Leaf) + '.csv')
+            if ($vmiss -lt $bestMiss) { $bestMiss = $vmiss; $bestName = $vp }
+        }
+        if ($bestMiss -gt 0) {
+            Add-Finding '警告' 'Python' ('最完整的 Python 環境（' + $bestName + '）仍缺少 ' + $bestMiss + ' 個關鍵套件（見 08_Python_堆疊差距*.csv）。')
             Add-Action '-SetupPython'
+        } else {
+            Add-Finding '資訊' 'Python' ('分析堆疊完整的環境：' + $bestName + '。全域直譯器缺 ' + $pyMiss + ' 個套件是正常且正確的——套件本來就該待在專案環境裡。')
         }
         if ($pyVer -match '^3\.(1[4-9]|2\d)') {
             Add-Finding '注意' 'Python' ('目前預設 Python 為 ' + $pyVer + '。最新版常有部分科學計算套件尚未提供 Windows wheel，只能退回原始碼編譯（本機沒有 C++ 編譯器就會失敗）。建議「工作用」環境鎖在次新的穩定版（3.13 或 3.12），由 uv 管理，與系統 Python 並存。')

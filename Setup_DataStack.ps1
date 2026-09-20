@@ -456,13 +456,18 @@ if ($SetupPython) {
         $envDir = Join-Path $WorkRoot 'envs\ds'
         $pkgs = @(
             'pandas', 'polars', 'numpy', 'pyarrow', 'duckdb',
-            'sqlalchemy', 'pymysql', 'psycopg[binary]', 'pyodbc',
+            'sqlalchemy', 'pymysql', 'psycopg[binary]', 'pyodbc', 'clickhouse-connect',
             'scikit-learn', 'scipy', 'statsmodels', 'xgboost', 'lightgbm',
-            'shap', 'lifelines',
+            'shap', 'lime', 'lifelines', 'econml', 'dowhy',
             'matplotlib', 'seaborn', 'plotly', 'great-tables',
             'jupyterlab', 'ipykernel', 'papermill',
             'ruff', 'pytest'
         )
+        # 刻意不放 scikit-survival：它的相依 ecos 沒有 Windows wheel，必須用
+        # MSVC C++ Build Tools 從原始碼編譯（本機實測失敗）。Rtools 的 gcc 只服務 R，
+        # 不服務 Python。R 端的 survival / survminer / grf 已涵蓋生存分析與因果森林；
+        # 真的需要 Python 版，請先裝 Microsoft.VisualStudio.2022.BuildTools（數 GB，
+        # 在公司資產上建議先問過 IT）。
         if ($PSCmdlet.ShouldProcess($envDir, 'uv venv + 安裝 ' + $pkgs.Count + ' 個套件')) {
             $null = New-Item -ItemType Directory -Path (Split-Path $envDir -Parent) -Force
             & $uv python install $PythonVersion
