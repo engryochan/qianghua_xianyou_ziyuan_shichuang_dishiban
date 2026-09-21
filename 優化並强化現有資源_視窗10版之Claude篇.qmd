@@ -68,7 +68,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Win10_Diagnose_v2.ps1
 
 - `Microsoft.PowerShell`、`DuckDB.cli`、`Posit.Quarto`、`RProject.Rtools` 這四個 winget ID **已在本機查證存在**；ODBC 驅動的 ID 未查證，腳本找不到會給官方下載連結，不硬幹。
 - `-PrepareWorkspace` 只建 `C:\work` 骨架，**不自動搬專案**——搬移要在 IDE 關閉、OneDrive 暫停同步時手動做，腳本會印出 robocopy 指令。
-- GT 730 是 Kepler 級，現行 CUDA/PyTorch/XGBoost-GPU 都不支援。**模型訓練一律走 CPU**（XGBoost/LightGBM 的 hist + 多執行緒），別為了 GPU 加速浪費時間。
+- GT 730 ~~是 Kepler 級~~ **【2026-09-21 斧正：實讀 PCI ID `VEN_10DE&DEV_0F02`，屬 Fermi（GF108）。GT 730 有 Kepler 與 Fermi 兩種版本，不能依卡名推定。詳見附錄 I】**，現行 CUDA/PyTorch/XGBoost-GPU 都不支援。**模型訓練一律走 CPU**（XGBoost/LightGBM 的 hist + 多執行緒），別為了 GPU 加速浪費時間。
 
 報告已產在 `C:\Users\PPCCpcpc\Win10_Diag2_20260920_104717\`，另外我把這一輪的實機結果補進了 [.qmd](優化並强化現有資源_視窗10版.qmd) 末尾，與前五份答案並列。檔案都還沒 commit。
 
@@ -862,3 +862,112 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 ---
 
 **本文件所有數據均為本機實際執行所得，可依附錄 E 逐項複驗。**
+
+---
+
+# 附錄 I：驅動程式全機盤點（2026-09-21 實測）
+
+## I.1 硬體基礎
+
+| 項目 | 實讀值 |
+|---|---|
+| 主機板 | ASUSTeK **PRIME H610M-R D4**（Rev 1.xx） |
+| BIOS | American Megatrends **3801**，發行日 **2025-05-14** |
+| 晶片組 | Intel 600 系列（H610，Alder Lake-S 平台） |
+| 顯示卡 | NVIDIA GeForce GT 730，PCI ID **`VEN_10DE&DEV_0F02`** |
+| 作業系統 | Windows 11 Build 26200 |
+
+## I.2 顯示卡：沒有「最强版」可更新，391.35 就是最後一版
+
+這是本附錄最重要的一項，也推翻了本文件先前兩處說法。
+
+**實讀 PCI ID 為 `VEN_10DE&DEV_0F02` = GF108 核心，屬 Fermi 世代，不是 Kepler。** GT 730 這個型號同時有 Kepler（GK208）與 Fermi（GF108）兩種版本，**不能依卡名推定世代**。
+
+NVIDIA 對 Fermi 的支援狀態（已查證公開資料）：
+
+| 時間 | 事件 |
+|---|---|
+| 2018-03 | 發布 **391.35**，這是 Fermi 的最後一版 Game Ready 驅動 |
+| 2018-04 | Fermi 轉入 legacy 狀態 |
+| 2019-01 | legacy 支援期結束，**此後連安全性修補都沒有再發布** |
+
+**所以本機的 391.35（2018-03-23）不是「疏於更新」，而是「已無新版可更新」。**
+
+這連帶推翻兩件事：
+
+1. 本文件先前記載的「升級 NVIDIA 驅動至 472.12」**是錯的**——472.xx 是 Kepler 分支，對 Fermi 不適用，安裝只會失敗或不認卡。
+2. 「驅動太舊導致黑屏」這個假設，先前已被 Chrome（近黑 0 %）與 Positron（1.3 %）的對照實測推翻；現在又多一層：**即使想更新也無從更新**。
+
+**對「更新至最强版」的誠實回答：這張卡在軟體層面已經到頂。** 唯一能再往上的途徑是更換顯示卡硬體，那屬於採購決策，不是我能執行的範圍。
+
+作業上維持原判：**模型訓練一律走 CPU**（i5-12400F 6C/12T，XGBoost/LightGBM 的 `hist` 演算法 + 多執行緒），顯示卡只負責顯示。本機 28 項驗收中 xgboost 與 lightgbm 皆在 CPU 路線下通過，不受此限制影響。
+
+## I.3 四個驅動缺失的裝置（狀態 Error / `CM_PROB_FAILED_INSTALL`）
+
+這是本次盤點**真正找到的可修補缺口**：
+
+| 硬體 ID | 類別碼 | 位置 | 實際裝置 |
+|---|---|---|---|
+| `PCI\VEN_8086&DEV_7AA3&SUBSYS_86941043` | `CC_0C0500` | 匯流排 0／裝置 31／功能 4 | Intel 600 系列 **SMBus 控制器** |
+| `PCI\VEN_8086&DEV_7AA4&SUBSYS_86941043` | `CC_0C8000` | 匯流排 0／裝置 31／功能 5 | Intel **SPI 控制器** |
+| `PCI\VEN_8086&DEV_7ACC&SUBSYS_86941043` | `CC_0C8000` | 匯流排 0／裝置 21／功能 0 | Intel **Serial IO** 控制器 |
+| `ACPI\INTC1056` | — | — | Intel **動態調校（DPTF）** |
+
+四者皆為 Intel 晶片組週邊，一般由 **Intel Chipset Device Software（INF Update Utility）** 與 **Intel Dynamic Tuning 驅動**提供，可自 ASUS PRIME H610M-R D4 支援頁或 Intel 官方取得。
+
+**影響評估**：這四個裝置不影響資料分析運算（CPU、記憶體、磁碟、網路皆正常，28 項驗收全過）。SMBus 與 DPTF 缺失主要影響感測器讀值與電源/散熱調校的精細度。**屬於「該補但不急」。**
+
+## I.4 其他驅動現況
+
+| 裝置 | 版本 | 日期 | 評估 |
+|---|---|---|---|
+| Realtek PCIe GBE Family Controller | 10.10.714.2016 | **2016-07-14** | 可更新（Realtek／ASUS 有新版），目前功能正常 |
+| NVIDIA High Definition Audio ×4 | 1.3.38.35 | 2020 | 隨顯卡驅動提供，同樣受 Fermi EOL 限制 |
+| Intel Management Engine Interface | 2406.5.5.0 | 2024 | 尚新 |
+| Intel RST VMD Controller | 20.2.6.1025 | 2025 | 尚新 |
+| System Firmware（BIOS） | 3801 | 2025-05-14 | 尚新 |
+
+## I.5 Windows Update 的實測結果
+
+以唯讀方式查詢 Windows Update（`Microsoft.Update.Session` COM API，`IsInstalled=0`）：
+
+```
+驅動更新：0 筆
+所有更新：0 筆
+```
+
+**Windows Update 認為系統已是最新，不會自動補上 I.3 那四個缺失的驅動。** 這類晶片組 INF 驅動通常不經 Windows Update 派送，必須由主機板廠或 Intel 官方安裝。
+
+首次查詢曾回傳 `0x80244011`，重試後正常，判定為暫時性錯誤——已確認本機**沒有** WSUS 設定（`WUServer` 與 `UseWUServer` 皆為空）。
+
+## I.6 順帶發現：一條殘留的舊政策
+
+```
+HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+  TargetReleaseProductVersion = "Windows 10"
+```
+
+這條政策原意是把機器鎖在 Windows 10，**但機器已經是 Windows 11 Build 26200**。政策已經名實不符，且可能影響後續功能更新的取得。
+
+**建議交由 IT 確認是否清除**——這屬於群組原則層級的設定，且可能是公司統一派送的，我不會自行更動。
+
+## I.7 對「一律更新至最强版」的結論
+
+| 對象 | 能不能更新到更新版？ | 誰能做 |
+|---|---|---|
+| 顯示卡驅動 | **不能——391.35 已是 Fermi 的最後一版**，唯一出路是換顯示卡 | 採購決策 |
+| Intel 晶片組四項（SMBus / SPI / Serial IO / DPTF） | **能**，需 Intel INF 與 DPTF 驅動 | 需管理員權限；建議經 IT |
+| Realtek 網卡 | **能**，現為 2016 年版 | 需管理員權限；建議經 IT |
+| BIOS 3801（2025-05） | 尚新，無急迫性 | IT |
+| 其餘 Intel 驅動 | 已是近期版本 | — |
+| Windows Update 派送的更新 | **已是最新（0 筆待裝）** | — |
+
+**我沒有安裝任何驅動程式**，理由有三，缺一不可：
+
+1. **權限**：驅動安裝需要系統管理員，本工作階段以一般使用者執行，無法提權。
+2. **來源**：安裝驅動必須自廠商網站下載並執行安裝程式。在一台有 DLP 與端點防護的公司資產上，下載並執行外部安裝程式應當事先取得同意，不該由我逕行決定。
+3. **政策**：驅動與韌體屬於 IT 管理範圍，貿然更新可能與公司的標準映像或資產管理衝突。
+
+**已備妥的東西**：`診斷操作系統/Driver_Report.ps1` 會重新產生本附錄的全部數據（唯讀），輸出可直接附在給 IT 的工單上。
+
+---
