@@ -1,0 +1,14 @@
+﻿# 根據本次診斷，建議用 Setup_DataStack.ps1 執行的開關
+# 第一次一律先加 -WhatIf 預演，確認沒問題再拿掉。
+
+# --- 一般使用者身分 ---
+.\Setup_DataStack.ps1 升級 NVIDIA 驅動至 472.12（需管理員） -WhatIf
+.\Setup_DataStack.ps1 -PrepareWorkspace -WhatIf
+.\Setup_DataStack.ps1 -SetupPython -WhatIf
+.\Setup_DataStack.ps1 -InstallODBC -WhatIf
+
+# --- 需要系統管理員身分 ---
+.\Setup_DataStack.ps1 -SetPageFile -WhatIf
+.\Setup_DataStack.ps1 -AddDefenderExclusions -WhatIf
+.\Setup_DataStack.ps1 -EnableLongPaths -WhatIf
+

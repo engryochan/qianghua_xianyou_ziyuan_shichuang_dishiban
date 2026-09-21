@@ -1,0 +1,7 @@
+﻿"Name","Location","Command"
+"Snipaste","Startup","Snipaste.lnk"
+"Mozilla-Firefox-308046B0AF4A39CB","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","""C:\Program Files\Mozilla Firefox\firefox.exe"" -os-autostart"
+"GoogleChromeAutoLaunch_BB347D1503165DD0861E8C7EEA929BEA","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","""C:\Program Files\Google\Chrome\Application\chrome.exe"" --startup-foreground-launch"
+"MicrosoftEdgeAutoLaunch_45F2C36DEFA40954163E6E4890A144CE","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --win-session-start"
+"OneDrive","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","""C:\Program Files\Microsoft OneDrive\OneDrive.exe"" /background"
+"SecurityHealth","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run","%windir%\system32\SecurityHealthSystray.exe"

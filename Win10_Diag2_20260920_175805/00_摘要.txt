@@ -1,0 +1,70 @@
+﻿Windows 10 資料分析工作站診斷 v2   2026-09-20 17:58:10
+主機：SHJ-H0647-RYOCH   Microsoft Windows 11 专业版 25H2 (Build 26200.9457)
+CPU：12th Gen Intel(R) Core(TM) i5-12400F  6C/12T    RAM：31.8 GB
+管理員身分：False
+
+--- 發現 (21) ---
+[嚴重] 管控 - 不要自行停用或解除安裝這些代理：一來多半被策略鎖定，二來在公司資產上這通常違反資安規範。正確做法是向 IT 申請「開發目錄排除」（R 套件庫、Python venv、專案 data 目錄、TEMP），由 IT 在管理主控台加白名單。
+[警告] GPU - 驅動 391.35 低於 Kepler 最後支援分支 472.xx，且從未針對 Windows 11 發行，屬長期風險（無安全修補、新版瀏覽器可能逐步停止支援）。但請注意：本機實測顯示 Chromium 系渲染在此驅動下正常運作，**不要直接把應用黑屏歸因於它**——先用對照組（另一個正常的同類應用）與 Win11_App_RealTest.ps1 做像素級實測。
+[警告] 安全 - 安全中心同時註冊了 Kaspersky Endpoint Security for Windows 與 Microsoft Defender，而 Defender 目前是 Normal 模式且即時保護開啟。兩套即時掃描同時掛在檔案系統上，會讓「安裝數百個 R 套件 / pip 解壓 wheel」這類小檔案密集操作慢上數倍。請回報 IT，由他們決定是否讓 Defender 轉為 Passive。
+[警告] 工作區 - 在雲端同步資料夾中發現 2 個專案/環境標記（見 04_雲端同步內的專案.csv）。同步用戶端會在 .git、renv/library、.venv、*.parquet 上造成檔案鎖定與版本衝突，輕則變慢，重則 repo 或環境毀損。建議把程式與資料移到未同步的本機路徑（例如 C:\work），只讓文件與報告留在雲端。
+[警告] 管控 - 偵測到企業管控／防毒／透明加密用戶端：Kaspersky Security Center 网络代理, Kaspersky Endpoint Security for Windows, 亿赛通电子文档安全管理系统-客户端, CDGRegedit, CdgTwin32, CdgTwin64, CdgUpGrade, klnagent, LdApproval, LdTerm, LdTermDaemon, LdTermPlug, LdTermPlug64, MsMpEng。這類代理會攔截每一次檔案讀寫，是 R/Python 套件安裝變慢或失敗、git 操作卡住、Parquet 檔讀寫異常的頭號原因。
+[警告] 管控 - comet 只被注入 15 個管控模組，同組（瀏覽器）其他應用有 20 個。半套掛鉤常導致該應用行為異常（黑屏、功能失效）。正解是請 IT 把該執行檔加入受支援清單，不是改名或停用資安軟體。
+[注意] 編碼 - 系統 ANSI 碼頁為 936（非 UTF-8）。中文 CSV 在 Excel / R / Python 之間來回時的亂碼多半來自這裡。比起切換「UTF-8 Beta」（會讓部分舊程式亂碼），更安全的做法是在程式碼一律明示編碼：R 用 readr::read_csv(locale = locale(encoding = "UTF-8"))，Python 用 encoding="utf-8-sig"。
+[注意] 磁碟 - 全機只有一顆磁碟、一個分割區：系統、套件庫、資料集、暫存檔、spill 檔全部互搶空間與 IO。若要再往上強化，加一顆 NVMe SSD 專放 data/ 與 TEMP 是本機投資報酬率最高的硬體升級。
+[注意] 記憶體 - 分頁檔僅 5120 MB，不到實體記憶體 (31.8 GB) 的一半。R 的 rugarch/回測、Python 的大表 join 一旦超過實體記憶體，會直接被系統終止而不是變慢。建議固定 16282～32563 MB。
+[注意] 路徑 - 目前工作目錄 含非 ASCII 字元：C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\診斷操作系統。R 從原始碼編譯、部分 Python C 擴充、LaTeX/Quarto 產 PDF 時，遇到中文路徑仍有機率出錯。純 ASCII 的工作路徑（如 C:\work）最安全。
+[注意] 設定 - Windows 長路徑未啟用 (LongPathsEnabled=0)。R 套件（尤其 tidyverse 系）與 node_modules 的巢狀路徑很容易超過 260 字元而安裝失敗。
+[注意] 系統 - 剛完成大版本升級：顯示卡、音效、網路卡驅動有可能被保留成升級前的舊版本，或被回退成微軟通用驅動。請先確認 GPU 一節的驅動版本再下任何結論。
+[資訊] CPU - 12th Gen Intel(R) Core(TM) i5-12400F 為 F 版（無內顯），顯示完全依賴獨立顯卡；不影響 CPU 運算效能。
+[資訊] Git - 已啟用 Git LFS。放大型資料集（Parquet/CSV）時請務必走 LFS，或乾脆不進版控。
+[資訊] GPU - NVIDIA GeForce GT 730 屬舊世代 NVIDIA（Kepler/Fermi 級）。現行 CUDA / PyTorch / XGBoost-GPU 都已不支援這種運算能力。模型訓練一律走 CPU 路線（XGBoost/LightGBM 的 hist 演算法 + 多執行緒）。
+[資訊] GPU - NVIDIA GeForce GT 730 的 NVIDIA 驅動實際版本為 391.35（Windows 版本字串 23.21.13.9135，日期 03/23/2018 04:00:00）。
+[資訊] Python - PATH 上的 python 會解析到真正的直譯器：C:\Users\PPCCpcpc\AppData\Local\Programs\Python\Python314（已排在 WindowsApps 別名之前）。
+[資訊] R - Rtools 已註冊（4.5.6768）。注意：Rtools 的版本號不必然等於 R 的次版本——R 4.6 使用的就是 Rtools45，CRAN 並沒有發行 rtools46。是否真的能編譯，請以 R CMD SHLIB 實測為準，不要靠版本號推論。
+[資訊] 管控 - 偵測到天锐绿盾 (Tipray) 的注入模組。它安裝於 C:\Inetpub\ftproot\Tipray\，沒有標準解除安裝登錄項，僅比對已安裝程式清單會漏掉。
+[資訊] 系統 - 已在 Windows 11（Build 26200）。註冊表 ProductName 若仍顯示 Windows 10 屬就地升級的已知現象，以 Build 為準。
+[資訊] 資料庫 - 未安裝以下 ODBC 驅動：PostgreSQL, MySQL/StarRocks/Doris, ClickHouse, SQLite。若要用 R 的 odbc/DBI 或 Python 的 pyodbc 直連倉庫（StarRocks / Doris 走 MySQL 協定），需要先裝對應驅動。
+
+--- 工具鏈 ---
+
+Tool     Found OnPATH Version                                                 
+----     ----- ------ -------                                                 
+Rscript   True   True Rscript (R) version 4.6.1 (2026-06-24)                  
+Rtools    True  False gcc.exe (GCC) 14.3.0                                    
+python    True   True Python 3.14.7                                           
+py        True   True Python 3.14.7                                           
+uv        True   True uv 0.12.17 (635500036 2026-09-18 x86_64-pc-windows-msvc)
+conda    False  False                                                         
+git       True   True git version 2.55.0.windows.5                            
+quarto    True   True 1.10.18                                                 
+pandoc   False  False                                                         
+duckdb    True   True v1.5.5 (Variegata) d8cdaa33fd                           
+psql     False  False                                                         
+pwsh      True   True PowerShell 7.6.6                                        
+node     False  False                                                         
+java     False  False                                                         
+docker   False  False                                                         
+code     False  False                                                         
+positron  True   True Positron: 2026.09.1 build 2
+
+--- 產出檔案 ---
+  01_系統.csv
+  01_GPU.csv
+  02_磁碟區.csv
+  02_實體磁碟.csv
+  02_分頁檔.csv
+  03_已安裝軟體.csv
+  03_管控代理.csv
+  03_管控代理行程.csv
+  03_管控模組注入比對.csv
+  03_防毒註冊.csv
+  03_防火牆.csv
+  04_雲端同步內的專案.csv
+  05_設定.csv
+  06_工具鏈.csv
+  06_Rtools.csv
+  09_ODBC驅動.csv
+  10_git設定.txt
+  12_啟動項目.csv
+

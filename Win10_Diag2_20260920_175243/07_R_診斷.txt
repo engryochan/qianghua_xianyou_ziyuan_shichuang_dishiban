@@ -1,0 +1,20 @@
+﻿R.version.string: R version 4.6.1 (2026-06-24 ucrt) 
+R_HOME: C:/PROGRA~1/R/R-46~1.1 
+libPath:C:/Users/PPCCpcpc/AppData/Local/R/win-library/4.6 writable=TRUE
+libPath:C:/Program Files/R/R-4.6.1/library writable=FALSE
+Ncpus option: 10 
+repos: https://cloud.r-project.org 
+installed count: 348 
+01_env        5/ 5  missing: 
+02_wrangle    7/ 7  missing: 
+03_bigdata    6/ 6  missing: 
+04_database   7/ 7  missing: 
+05_timeser    9/ 9  missing: 
+06_model      9/ 9  missing: 
+07_explain    5/ 5  missing: 
+08_report     7/ 7  missing: 
+09_viz        6/ 6  missing: 
+10_perf       7/ 7  missing: 
+11_shiny      6/ 6  missing: 
+12_pipeline   5/ 5  missing: 
+TOTAL_MISSING: 0

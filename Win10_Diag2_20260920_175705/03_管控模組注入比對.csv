@@ -1,0 +1,5 @@
+﻿"Process","DLP模組數","模組清單"
+"chrome","0",""
+"msedge","18","LdUserInjectDLL64.dll HookDataInteractionx64.dll LdSendFileLimit64.dll LdHook64.dll ghhlp64.dll MonFileOp64.dll BrowserGuardx64.dll LdSmartEnc64.dll BrowerInject64.dll LdWaterMarkHook64.dll LdPrintMonitor64.dll LdBrowserDataFlow64.dll SQLiteDB64.dll LdBrowserMonitor64.dll Hook64.dll DynamicDll64.dll EstBrowserUrl64.dll msghijt64.dll"
+"comet","15","ghijt64.DLL LdSmartEnc64.dll LdUserInjectDll64.dll HookDataInteractionx64.dll LdHook64.dll ghhlp64.dll MonFileOp64.dll LdWaterMarkHook64.dll LdPrintMonitor64.dll DynamicDll64.dll FileLock64.dll msghijt64.dll Hook64.dll com_antivirus.dll product_info.dll"
+"explorer","22","ghijt64.DLL LdSmartEnc64.dll LdUserInjectDll64.dll HookDataInteractionx64.dll LdHook64.dll ghhlp64.dll LdExplorerIcon.dll msghijt64.dll MonFileOp64.dll LdWaterMarkHook64.dll LdPrintMonitor64.dll DynamicDll64.dll FileLock64.dll Hook64.dll CDGMenu64.dll DGDecrypt64.dll DllImpHelper64.dll LdMenuExt.dll shellex.dll product_info.dll remote_eka_prague_loader.dll prremote.dll"

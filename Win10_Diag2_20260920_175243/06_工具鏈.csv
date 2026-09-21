@@ -1,0 +1,18 @@
+﻿"Tool","Found","OnPATH","Version","Path"
+"Rscript","True","True","Rscript (R) version 4.6.1 (2026-06-24)","C:\Program Files\R\R-4.6.1\bin\x64\Rscript.exe"
+"Rtools","True","False","gcc.exe (GCC) 14.3.0","C:\rtools45\x86_64-w64-mingw32.static.posix\bin\gcc.exe"
+"python","True","True","Python 3.14.7","C:\Users\PPCCpcpc\AppData\Local\Programs\Python\Python314\python.exe"
+"py","True","True","Python 3.14.7","C:\Users\PPCCpcpc\AppData\Local\Programs\Python\Launcher\py.exe"
+"uv","True","True","uv 0.12.17 (635500036 2026-09-18 x86_64-pc-windows-msvc)","C:\Users\PPCCpcpc\.local\bin\uv.exe"
+"conda","False","False","",
+"git","True","True","git version 2.55.0.windows.5","C:\Program Files\Git\cmd\git.exe"
+"quarto","True","True","1.10.18","C:\Program Files\Quarto\bin\quarto.exe"
+"pandoc","False","False","",
+"duckdb","True","True","v1.5.5 (Variegata) d8cdaa33fd","C:\Users\PPCCpcpc\AppData\Local\Microsoft\WinGet\Packages\DuckDB.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\duckdb.exe"
+"psql","False","False","",
+"pwsh","True","False","PowerShell 7.6.6","C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.exe"
+"node","False","False","",
+"java","False","False","",
+"docker","False","False","",
+"code","False","False","",
+"positron","True","True","Positron: 2026.09.1 build 2","C:\Users\PPCCpcpc\AppData\Local\Programs\Positron\bin\positron.cmd"

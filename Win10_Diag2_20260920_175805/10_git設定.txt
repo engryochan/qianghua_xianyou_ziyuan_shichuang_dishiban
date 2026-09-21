@@ -1,0 +1,15 @@
+﻿filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+user.name=Ryochan Eng
+user.email=engryochan@gmail.com
+core.longpaths=true
+core.autocrlf=input
+core.fscache=true
+core.preloadindex=true
+credential.helper=manager
+init.defaultbranch=main
+pull.rebase=false
+fetch.prune=true
+diff.renames=true
