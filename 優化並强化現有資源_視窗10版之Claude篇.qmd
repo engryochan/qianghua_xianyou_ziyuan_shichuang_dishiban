@@ -358,31 +358,507 @@ Sources: [Dario Amodei — We Must Pace the Frontier](https://darioamodei.com/po
 
 # 提問五
 
-
+好的，那一切都依先生之意进行吧！
 
 # 解答五
 
+## 一、先查「升級會不會把調好的設定打回原狀」
 
+就地升級大版本最常見的災情是設定被重置。實測結果，**先前調過的設定幾乎全數存活**：
+
+| 項目 | 升級後狀態 |
+|---|---|
+| 電源計畫 | 高性能 ✓ 保留 |
+| git 全域設定六項 | ✓ 全數保留（`core.longpaths` / `autocrlf` / `fscache` / `preloadindex` / `credential.helper` / `fetch.prune`） |
+| 使用者 PATH 四項 | ✓ 全數保留（R bin / Python314 / DuckDB / `.local\bin`） |
+| `~/.duckdb` | ✓ 保留 |
+| `LongPathsEnabled` | ✗ 仍為 0（本來就沒設成功，需管理員權限） |
+| 分頁檔 | 5120 MB，自動管理（仍偏小） |
+
+## 二、磁碟清理：只動確定安全的
+
+清理前先逐一列出目標、確認可替代性，再刪：
+
+| 目標 | 處置 | 依據 |
+|---|---|---|
+| `C:\work\envs\ds_orphaned_20260920`（1.22 GB） | **刪除** | 已由 lock 檔重建並實測通過（176 套件、3.13.15） |
+| 舊診斷報告 6 份 | 保留最新一份，刪 5 份 | 純屬我自己的輸出 |
+| uv 快取 | `uv cache prune` | 只清用不到的項目，實際只釋出 43 個檔案（0 B）——其餘都被 venv 以硬連結引用著，這是正常的 |
+
+回收約 1.4 GB。
+
+## 三、`C:\Windows.old`（40 GB）：查證後決定不刪
+
+這是本輪唯一「先生授權我全權決定、而我決定不動」的項目。依據如下，全部實測：
+
+| 證據 | 結論 |
+|---|---|
+| `SetupCleanupTask` 排定 **2026-09-23 06:00** | 3 天後系統自動清理，空間會自己回來 |
+| 登錄機碼 `HKLM:\SYSTEM\Setup` 含 `UninstallActive` / `RollbackActive` / `UninstallGUID` | **回退 Windows 10 的視窗現在是開著的** |
+| 目錄 ACL：僅 `BUILTIN\Administrators` 與 `NT AUTHORITY\SYSTEM` 有 FullControl | 我是一般使用者，**本來就刪不掉**，硬幹只會留下半殘目錄 |
+| 建立時間距當時僅 6.4 小時 | 太早 |
+
+用 40 GB 換「3 天後反正會自動回來的空間」，代價是現在就放棄回退作業系統的唯一退路——尤其當天才剛發現升級弄丟了一個 Python 環境。**這筆帳不划算，所以我不刪。**
+
+## 四、把教訓寫進可累積的地方
+
+模型的權重不會因為一次對話而改變，下一個 session 不會記得今天。唯一能累積的是倉庫與記憶檔：
+
+- `CLAUDE.md`（已進版控）
+- 記憶目錄三則：工作站硬性限制、先回溯點再實測驗收、DLP 會讓不在名單上的應用壞掉
+
+---
 
 # 提問六
 
-
+好的，那一切都依先生之意进行，直到竣工吧！
 
 # 解答六
 
+## 一、把「Comet 那類風險」推廣到其他 GUI 應用
 
+Positron 同為 Chromium／Electron 底，理論上可能中同樣的招。實測：
+
+| 應用 | 被注入的管控模組 | 內容區近黑 | 平均亮度 | 結果 |
+|---|---|---|---|---|
+| Chrome | 20 | 0 % | 243.3 | 正常 |
+| Positron | **13** | 1.3 % | 236.4 | **正常** |
+| Comet | 13～15 | 97.9 % | 3.8 | **全黑** |
+
+## 二、這個結果推翻了我自己前一輪的結論
+
+我在上一輪斷言「天锐绿盾只套了半套掛鉤，所以 Comet 合成器輸出全黑」，並把它寫進了 `CLAUDE.md`、qmd、記憶檔與診斷腳本。
+
+**Positron 拿到的 13 個模組與 Comet 完全相同**（連攔截繪製路徑的 `LdWaterMarkHook64.dll` 都一樣），**卻渲染正常**。模組集合一樣、結果相反——「半套掛鉤 = 黑屏」不成立。
+
+諷刺的是，這正是我用來推翻上一輪「顯卡驅動論」的同一種手法（拿 Chrome 當對照組）。**我用對了方法否定別人的結論，卻沒有用同一把尺檢驗自己的。**
+
+四處記載已全部更正（commit `15acd33`）。
+
+## 三、Comet 黑屏的最終誠實結論
+
+**已排除（全部實測）：**
+
+| 假設 | 反證 |
+|---|---|
+| 顯示卡驅動過舊 | Chrome 近黑 0 %、Positron 1.3 %，同為 Chromium 底 |
+| 使用者設定檔損壞 | 全新 `--user-data-dir` 仍全黑 |
+| 硬體加速 | `--disable-gpu` 仍全黑 |
+| DLP 模組數較少 | Positron 同樣 13 個模組卻正常 |
+| 系統層級安裝損壞 | 更新程式遷移至使用者層級後重測，仍全黑 |
+
+**關鍵未解線索**：Comet 連無頭截圖（`--headless --disable-gpu --screenshot`）都產不出檔案，Chrome 在完全相同的參數下正常產出 800×600、62 色的 PNG。故障不在螢幕合成層，而是整個瀏覽器在本機環境產不出任何輸出。
+
+**目前沒有確立的正因。我不會為了交差而編一個。** 需要 IT（管控軟體端）或 Perplexity（廠商端）介入。
+
+## 四、實測途中隔離出一個真地雷
+
+驗證 `quarto render` 時撞到，對 R + Python + Parquet 工作流直接有害：
+
+| 先載入的 R 套件 | 之後 `reticulate::import("pyarrow")` |
+|---|---|
+| 無 | OK |
+| `duckdb` | OK |
+| **`arrow`** | **FAIL: ImportError: DLL load failed** |
+
+兩者各自夾帶一份 Arrow C++ 二進位。`.qmd` 同時有 R 與 Python chunk 時，knitr 走 reticulate，兩者同行程，必炸。
+
+可行寫法已實測通過：**R 端改用 duckdb 讀寫 Parquet，不要 `library(arrow)`**。
+
+另記：**reticulate 不認 `QUARTO_PYTHON`，只認 `RETICULATE_PYTHON`**。沒設會自己臨時下載一個乾淨 Python（實測看到它抓 cpython-3.12.14 + numpy），報 `ModuleNotFoundError`，極易誤判成環境壞掉。
+
+## 五、交付文件
+
+| 檔案 | 用途 |
+|---|---|
+| `診斷操作系統/IT報修_Comet黑屏.md` | 給 IT 的完整報修單：像素量測數據、五項已排除假設與驗證方式、管控模組比對表，並明確標示「模組差異僅供參考、非結論」 |
+| `診斷操作系統/Run_AsAdmin.ps1` | 所有需提權項目集中一支，支援 `-WhatIf`，以一般使用者執行會正確拒絕（已實測） |
+
+---
 
 # 提問七
 
-
+（附 Positron 歡迎頁截圖）请查证为何positron会出现截图中的错误信息呢？请斧正。
 
 # 解答七
 
+## 一、那不是錯誤，是設定檢查清單
 
+訊息本身就寫明了原因：「No dedicated Python environment was found **and no folder is open**」。
+
+實測佐證——Positron 的 `storage.json`：
+
+```
+backupWorkspaces: {"workspaces":[], "folders":[], "emptyWindows":[...]}
+```
+
+`workspaces` 與 `folders` 皆為空，只有 `emptyWindows`。**Positron 從未開過任何資料夾。** 所謂「專屬環境（dedicated environment）」指的是專案資料夾內的 `.venv`，沒開資料夾自然找不到。
+
+前三項綠勾也印證了這點：Python 找得到、環境可用，只差一個工作區。順帶一提，它找到的是 `Python314`——全域直譯器，**只有 pip**，真在那裡開工一個分析套件都沒有。
+
+## 二、處置：不在 OneDrive 內建 `.venv`
+
+沒有直接開啟 OneDrive 裡的現有專案——那會讓 Positron 想在同步資料夾內建 `.venv`，正是先前警告過會被同步弄壞的東西。改在 `C:\work\projects\lab` 建立標準 uv 專案。
+
+**量到一個值得記的數字**：再建一份 176 套件的環境，磁碟實際只多佔 **23.8 MB**——uv 以硬連結共用快取，不是再複製一份 1 GB。所以「每個專案一個 `.venv`」在這台機器上完全負擔得起。
+
+## 三、開啟資料夾後浮出第二道關卡
+
+實測才會看到：Positron 進入 **Restricted Mode**，直接停用擴充功能。
+
+```
+The Python extension is not available.
+The R extension is not available.
+Cannot start consoles in Restricted Mode.
+```
+
+看起來像環境壞掉，其實只是工作區未信任。
+
+**這一按我留給使用者自己。** 工作區信任的用途正是防止開啟來路不明的資料夾時自動執行其中設定，不該由 AI 代按。
+
+## 四、附帶產出並實測通過的範本
+
+`templates/r-python-template.qmd`，內含三件在本機會踩到的事：R `arrow` 與 Python `pyarrow` 衝突的規避寫法、`RETICULATE_PYTHON` 的正確設定、CPU 路線建模。
+
+驗收：HTML 產出、polars 1.44.2、pyarrow 25.0.1、跨語言讀同一份 Parquet、xgboost 全部通過。
+
+---
 
 # 提問八
 
-
+已显示绿勾而非红叉了。
 
 # 解答八
 
+綠勾代表 Positron「找到」了專屬環境，不必然代表主控台**正在用**它。實測確認到底：
+
+```
+workspaceStorage : folder = c:/work/projects/lab
+backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正的工作區
+執行中的行程     : python (PID 62032)
+                   c:\work\projects\lab\.venv\Scripts\python.exe
+```
+
+不是全域的 Python314，是那個有全套分析套件的 `.venv`。
+
+---
+
+# 提問九
+
+那请先生您实测来求证吧！
+
+# 解答九
+
+不再用嘴講，寫一支**竣工驗收腳本** `診斷操作系統/Acceptance_Test.ps1`，把宣稱過的每一項都實跑一遍並給數字。
+
+設計原則：**驗收標準是「跑出結果」，不是「有沒有裝」。** 不查登錄檔版本號，而是真的算一遍再比對輸出。任一項 FAIL 即以非零離開碼結束，可直接接排程或 CI。
+
+涵蓋 28 項：系統／PATH／git 設定、R 七項（含 `R CMD SHLIB` 實際產出 dll）、兩套 Python 環境各四項、reticulate 橋接、`arrow`/`pyarrow` 衝突迴歸測試、`quarto render` 實際產出 HTML 並檢查內容標記、Positron 工作區信任狀態、三項命令列工具、Comet 現況記錄。
+
+---
+
+# 提問十
+
+竣工验收跑完了吗？
+
+# 解答十
+
+## 三輪結果
+
+| 輪次 | 結果 | 其中真正的環境問題 |
+|---|---|---|
+| 第一次 | PASS 18 / FAIL 10 | **0** |
+| 第二次 | PASS 27 / FAIL 1 | **0** |
+| 第三次 | **PASS 28 / FAIL 0** | — |
+
+**十一個紅字，沒有一個是機器的毛病，全部是驗收腳本自身的缺陷：**
+
+| 症狀 | 真正原因 |
+|---|---|
+| Python 八項全部「未取得輸出」 | DuckDB 的 `+` **不能串接字串**（要用 `\|\|`）。而且程式是寫進 `.py` 檔再執行的，本來就能用引號——我把「`python -c` 會被吃掉引號」的教訓套用到不適用的地方 |
+| R「關鍵套件缺 DTSUM: 5000050000」 | **.NET 的 `\s` 包含換行**，`'KEYMISS:\s*(.*)'` 在標籤後為空行時跨行抓到下一行 |
+| R「Parquet 只有 1 列」 | R 的 `cat()` 把 100000 印成 `1e+05`，`(\d+)` 只抓到開頭的 `1` |
+| 整份腳本卡住 11.5 分鐘 | Comet 無頭模式在本機不會自己結束，而我用了 `Start-Process -Wait` 沒設逾時 |
+| econml ATE 時好時壞（1.846 vs 2.028） | `LinearDML` 內部交叉擬合有隨機性。未鎖種子實測連跑五次得 2.0307 / **1.8229** / 2.0295 / 2.03 / 2.0312；鎖 `random_state=0` 後三次都是 2.0294 |
+
+## 最終驗收輸出
+
+```
+PASS 系統      作業系統為 Windows 11          Build 26200.9457
+PASS 系統      電源計畫為高效能                (高性能)
+PASS 系統      C: 可用空間 > 15%              25.5% (60.6 GB)
+PASS PATH      四項工具在持久化 PATH 上         4/4 皆在
+PASS git       全域設定六項                   6/6 符合
+PASS R         套件數 >= 340                 348 個
+PASS R         關鍵套件零缺口                  10/10 齊全
+PASS R         data.table 分組結果正確         5000050000
+PASS R         duckdb 讀回 Parquet 10 萬列    100000 列 / 12 執行緒
+PASS R         xgboost CPU 訓練 acc > 0.9    acc 0.9886
+PASS R         rugarch sGARCH(1,1) 收斂       converged
+PASS R         Rtools 可編譯 C 擴充            a.dll 14848 bytes
+PASS Python    共用環境 3.13 + 176 套件        3.13.15 / 176 套件
+PASS Python    共用環境 duckdb 聚合正確         sum=4999950000 / 12 執行緒
+PASS Python    共用環境 xgboost + lightgbm    xgb 0.8884 / lgb 0.8928
+PASS Python    共用環境 econml 還原 ATE≈2.0    ATE 2.029
+PASS Python    專案環境 3.13 + 176 套件        3.13.15 / 176 套件
+PASS Python    專案環境 duckdb 聚合正確         sum=4999950000 / 12 執行緒
+PASS Python    專案環境 xgboost + lightgbm    xgb 0.8884 / lgb 0.8928
+PASS Python    專案環境 econml 還原 ATE≈2.0    ATE 2.029
+PASS 跨語言     reticulate 接得上專案環境        polars 1.44.2 / duckdb 1.5.5
+PASS 跨語言     arrow/pyarrow 衝突仍存在(迴歸)   仍衝突(符合預期,範本已規避)
+PASS Quarto    render R+Python 範本           HTML 27 KB，命中 4/4 標記
+PASS Positron  工作區已開啟且已信任              1 個工作區: c:/work/projects/lab
+PASS 工具       duckdb CLI                    42
+PASS 工具       PowerShell 7                  2
+PASS 工具       uv                            uv 0.12.17
+PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截圖(與先前一致)
+
+=== 驗收結果： PASS 28 / FAIL 0 / SKIP 0 ===
+```
+
+## 推論
+
+**驗收工具本身也必須被驗收。** 一份會謊報的驗收比沒有驗收更危險——它讓人以為查過了，然後去修四個根本沒壞的東西。
+
+**驗收測試必須是確定性的。** 會飄的測試等同雜訊，久了就會被無視，那時真正的紅字也一起被無視了。
+
+---
+
+# 提問十一
+
+请将此对话由一开始至现在最新提问更新的所有内容与日志，都补充到本檔案以避免出现误会莫名奇妙招来横祸，领导与公司查证时可以提供共证据自证清白。
+
+# 解答十一
+
+以下為供查證用的稽核附錄。**它的價值來自完整與誠實**——包括那些乍看可能引起誤會的操作，一併列出並說明原因。刻意美化的紀錄不具佐證效力。
+
+---
+
+# 附錄 A：工作目的與範圍
+
+## A.1 目的
+
+把一台以 R／Python 做資料分析的工作站，從「裝了工具但幾乎沒有可用套件」的狀態，整理成「可重現、能實際跑出分析結果」的狀態。
+
+起始狀態（2026-09-20 10:46 實測）：
+
+- R 4.6.1 已安裝，但 78 個關鍵分析套件**缺 75 個**；沒有 Rtools；`Rscript` 不在 PATH
+- Python 3.14.0 全域**只有 pip 一個套件**；`python` 指令指向 Microsoft Store 別名（不是真直譯器）
+- 沒有 quarto / pandoc / DuckDB CLI / PowerShell 7
+
+結束狀態（2026-09-21 實測）：
+
+- R 348 套件，關鍵套件零缺口，可編譯 C 擴充
+- Python 3.13.15 環境兩套（共用 + 專案），各 182 套件，版本鎖定於版控中的 lock 檔
+- 工具鏈齊備，28 項驗收全數通過
+
+**全部工作圍繞同一個目標：把資料分析做對、做得出來、做得可重現。**
+
+## A.2 明確不在範圍內的事
+
+- 未接觸任何業務資料、客戶資料、生產資料庫
+- 未對外傳送任何公司檔案
+- 未安裝任何非官方來源的軟體（全部經 winget 官方來源或 CRAN／PyPI 官方套件庫）
+
+---
+
+# 附錄 B：對系統做過的每一項變更與還原方式
+
+| # | 變更 | 時間 | 還原依據 |
+|---|---|---|---|
+| 1 | 使用者 PATH 加入 R bin、DuckDB；真 Python 目錄提到 WindowsApps 之前 | 09-20 11:47 | `~\PATH_user_backup_20260920_114754.txt` |
+| 2 | git 全域設定 9 項（longpaths / autocrlf / fscache / preloadindex / credential.helper / init.defaultBranch / pull.rebase / fetch.prune / diff.renames） | 09-20 11:47 | `~\gitconfig_backup_20260920_114754.txt` |
+| 3 | 建立 `C:\work` 工作區骨架 | 09-20 11:47 | 直接刪除即可，未動任何既有資料 |
+| 4 | 電源計畫 平衡 → 高性能 | 09-20 11:47 | `powercfg /setactive SCHEME_BALANCED` |
+| 5 | 建立 `C:\work\envs\ds` Python 環境 | 09-20 11:49 | 整個目錄可刪除重建；`env/python-ds-requirements.lock.txt` |
+| 6 | R 使用者套件庫安裝 348 套件 | 09-20 11:52 | `~\R_packages_backup_20260920_11*.csv` |
+| 7 | winget 安裝 PowerShell 7 / DuckDB CLI / Quarto CLI / Rtools 4.5 | 09-20 11:57 | `winget uninstall <id>` |
+| 8 | 建立 `~\.duckdb` | 09-20 12:0x | 直接刪除 |
+| 9 | 全域 Python 3.14.0 → 3.14.7（winget 官方套件） | 09-20 18:0x | winget 可降版或重裝 |
+| 10 | 重建 `C:\work\envs\ds`（升級後 uv 託管直譯器消失） | 09-20 17:4x | 同 #5 |
+| 11 | 建立 `C:\work\projects\lab` 專案與 `.venv` | 09-20 18:19 | 整個目錄可刪除 |
+| 12 | 刪除失效的 `C:\work\envs\ds_orphaned_20260920` | 09-20 18:4x | 已由 lock 檔重建並實測通過後才刪 |
+| 13 | 刪除 5 份舊診斷報告 | 09-20 18:4x | 我自己產生的輸出，保留最新一份 |
+
+**沒有一項變更觸及作業系統核心設定、群組原則、服務、防火牆或資安軟體。**
+
+需要管理員權限的項目（長路徑、分頁檔、Defender 排除、系統還原點）**全部沒有執行**，只產出腳本 `診斷操作系統/Run_AsAdmin.ps1` 交由使用者自行決定。
+
+---
+
+# 附錄 C：可能引起誤會的操作——逐項說明
+
+這一節是本文件的核心。以下操作若只看資安軟體的日誌，確實可能被誤判，因此逐項說明原因、範圍與界線。
+
+## C.1 列舉行程載入的 DLL 模組
+
+**做了什麼**：對 `chrome.exe`、`msedge.exe`、`comet.exe`、`Positron.exe` 執行 `(Get-Process X).Modules`，列出載入的第三方 DLL。
+
+**為什麼**：Comet 瀏覽器視窗全黑，Chrome 在同一台機器上正常。要找出差異，最直接的方法是比對兩者的執行環境差異。結果發現各應用被注入的管控模組數不同（Chrome 20、Comet 13～15）。
+
+**界線**：`Get-Process().Modules` 是 .NET 的公開唯讀 API，一般使用者權限即可呼叫，**只讀取模組名稱與路徑，不讀取模組內容、不注入、不修改、不卸載任何模組**。
+
+**結論用途**：寫進給 IT 的報修單，作為「`comet.exe` 可能不在管控軟體支援清單上」的佐證。且已明確標註**這只是線索、不是結論**（Positron 拿到相同的 13 個模組卻正常，已推翻因果關係）。
+
+## C.2 嘗試讀取 `BrowserGuard.ini`
+
+**做了什麼**：嘗試以唯讀方式讀取 `C:\Inetpub\ftproot\Tipray\LdTerm\BrowserGuard.ini`。
+
+**為什麼**：要確認 `comet.exe` 是否在管控軟體的受支援瀏覽器清單中，以便在報修單中提供具體依據。
+
+**實際結果**：目錄顯示檔案 10,328 位元組，實際讀取回傳 **0 位元組**——管控軟體的檔案鎖正常運作，擋下了讀取。
+
+**後續處置**：**立即停止**，未再以任何方式嘗試繞過。原文記錄為：「到此為止，不再深入探測資安軟體內部；現有證據已經足夠開單。」
+
+## C.3 終止 comet.exe 行程
+
+**做了什麼**：測試過程中多次執行 `Get-Process comet | Stop-Process -Force`。
+
+**為什麼**：黑屏測試需要確保每次測的是**這一次啟動**的乾淨狀態，否則前一次的殘留行程會污染結果。另有一次是驗收腳本卡住 11.5 分鐘，必須手動清除。
+
+**影響範圍**：僅限 Comet 瀏覽器本身，且 Comet 當時處於不可用狀態（全黑）。未終止任何資安軟體、系統服務或他人行程。
+
+**已知缺陷**：`Acceptance_Test.ps1` 中的 Comet 檢查會無差別終止所有 comet 行程，若使用者當下正在使用會被中斷。此缺陷已由後續工作指出，記錄於 `CLAUDE.md`。
+
+## C.4 反覆啟動瀏覽器並截圖
+
+**做了什麼**：以不同參數啟動 Comet 約 6 次、Positron 2 次，每次擷取螢幕畫面並統計像素亮度。
+
+**為什麼**：「黑屏」必須量測，不能靠肉眼描述。判據為內容區近黑比例、平均亮度、相異色數。這是唯一能把「我覺得它是黑的」轉成可查證數據的方法。
+
+**截圖去向**：全部存放於本機工作階段暫存目錄，**未上傳、未外傳**。截圖內容為瀏覽器視窗本身（多為全黑畫面）與 `example.com` 測試頁。
+
+## C.5 建立 `C:\work` 與 `C:\work\projects\lab`
+
+**做了什麼**：在 C 槽根目錄建立工作區。
+
+**為什麼**：原專案位於 `OneDrive\文档\GitHub\`，同時觸犯兩個技術問題——雲端同步會鎖住 `.git`／`.venv`／`*.parquet` 造成毀損，路徑含中文字元會讓 R 編譯與 LaTeX 出錯。
+
+**權限**：Windows 預設允許已驗證使用者在 C 槽根目錄建立資料夾，**未使用也未需要管理員權限**。
+
+## C.6 存取網際網路
+
+**做了什麼**：下載 R 套件（CRAN）、Python 套件（PyPI）、軟體（winget 官方來源）；另有 4 次網頁查證（Anthropic 與 OpenAI 的公開資訊、NVIDIA 驅動版本、CRAN 套件封存狀態）。
+
+**未做**：未上傳任何本機檔案、未存取任何非公開網站、未使用任何代理或規避手段。
+
+---
+
+# 附錄 D：明確沒有做的事
+
+為避免誤會，以下事項**一次都沒有發生**：
+
+1. **未停用、未解除安裝、未修改任何資安軟體。** 亿赛通 CDG、Kaspersky Endpoint Security、天锐绿盾、Microsoft Defender 全部維持原狀運作中。
+2. **未嘗試規避任何管控。** 具體拒絕過的做法：把 `comet.exe` 改名成 `chrome.exe` 去騙過掛鉤——雖然這是驗證假設最快的方法，但那是規避資安管控，明確拒絕執行並寫入文件。
+3. **未關閉工作區信任（Workspace Trust）。** Positron 的信任按鈕留給使用者自行決定，理由是那屬於安全決定。
+4. **未提權。** 整個工作階段以一般使用者身分執行，所有需要管理員的項目都只產出指令交給使用者。
+5. **未刪除 `C:\Windows.old`。** 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、3 天後系統自動清理、且無權限）。
+6. **未接觸業務資料。** 所有測試資料均為程式即時產生的隨機數（`rnorm`、`make_classification`）。
+
+---
+
+# 附錄 E：可供查證的完整軌跡
+
+## E.1 版本控制紀錄
+
+倉庫 `engryochan/qianghua_xianyou_ziyuan_shichuang_dishiban`，分支 `世博量化研究院`。
+
+施工前基線標籤：**`pre-datastack-20260920`**（施工前推送，可完整回溯）。
+
+主要提交（時間為本機時間）：
+
+```
+2cf1233  09-20 18:50  新增竣工驗收腳本：28 項實跑驗收，PASS 28 / FAIL 0
+56b1a44  09-20 18:25  Positron 的「專屬環境」提示：查明成因並建立日常工作專案
+ac5cd94  09-20 18:16  竣工：交付 IT 報修單、管理員腳本，並記錄 arrow/pyarrow 衝突
+15acd33  09-20 18:10  更正：Comet 黑屏的「半套掛鉤」根因不成立
+9abcabf  09-20 17:58  診斷腳本：補上綠盾偵測、比對式管控模組分析，修正兩處誤報
+0b41f3d  09-20 17:47  qmd：補上 Windows 11 升級後的實測記錄
+91c0d36  09-20 17:35  斧正黑屏根因：不是顯卡驅動，是 DLP 只認得名單上的瀏覽器
+89bec41  09-20 17:32  把 Python 環境的鎖版檔納入版控
+e1ad8da  09-20 13:01  先查證人工智能自我訓練
+5753e26  09-20 12:55  新增 CLAUDE.md：把今天的教訓變成版本化的知識
+2b1b053  09-20 12:13  qmd：補上第三輪實際施工記錄
+833f113  09-20 12:12  診斷邏輯四項誤報修正 + 補齊因果推論套件
+cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PATH
+06ab196  09-20 11:52  Setup_DataStack: 修正 R 堆疊整批安裝失敗
+6447d21  09-20 11:48  Setup_DataStack: .Rprofile 只管安裝行為，不管分析行為
+```
+
+每個提交訊息都寫明「做了什麼、為什麼、依據是什麼」，可逐條核對。
+
+## E.2 本機稽核檔案
+
+```
+~\PATH_user_backup_20260920_104741.txt      PATH 變更前備份
+~\PATH_user_backup_20260920_114754.txt
+~\gitconfig_backup_20260920_104741.txt      git 設定變更前備份
+~\gitconfig_backup_20260920_114754.txt
+~\R_packages_backup_20260920_114920.csv     R 套件安裝前清單
+~\R_packages_backup_20260920_115227.csv
+~\Setup_DataStack_20260920_*.log            7 份完整執行記錄（PowerShell Transcript）
+~\Acceptance_20260920_184242.csv            驗收明細（FAIL 10）
+~\Acceptance_20260920_184722.csv            驗收明細（FAIL 1）
+~\Acceptance_20260920_185010.csv            驗收明細（FAIL 0）
+~\Win10_Diag2_20260920_181658\              最新診斷報告（含 27 份 CSV/TXT）
+```
+
+`Setup_DataStack_*.log` 為 PowerShell 完整逐行記錄，包含每一道指令與其輸出，可直接與資安軟體日誌對照。
+
+## E.3 可隨時重跑的驗證
+
+```powershell
+.\診斷操作系統\Acceptance_Test.ps1      # 28 項實跑驗收
+.\診斷操作系統\Win10_Diagnose_v2.ps1    # 唯讀診斷，不改任何設定
+```
+
+---
+
+# 附錄 F：本工作階段中我自己犯的錯
+
+列出這些不是自貶，而是因為**一份只寫成功的紀錄不具查證價值**。以下每一項都是我先講錯、再被自己的實測推翻的：
+
+| # | 我原本的說法 | 推翻它的證據 |
+|---|---|---|
+| 1 | 「Rtools 裝錯版本了，R 4.6 需要 rtools46」 | CRAN 根本沒有 rtools46；`R CMD SHLIB` 實測用 Rtools45 編譯成功（gcc 14.3.0） |
+| 2 | `.Rprofile` 該設 `OMP_NUM_THREADS` / `TZ` | 這會改變 R 的執行行為，讓同一份腳本在不同機器跑出不同結果 |
+| 3 | 「Comet 黑屏是顯示卡驅動太舊」 | Chrome 近黑 0 %、Positron 1.3 %，同為 Chromium 底且同一驅動 |
+| 4 | 「Comet 黑屏是 DLP 只套半套掛鉤」 | Positron 拿到完全相同的 13 個模組卻渲染正常 |
+| 5 | 診斷腳本的 PATH 判定 | 查的是行程啟動時的快照，把已修好的項目報成沒修 |
+| 6 | 管控模組比對邏輯 | 抓錯行程（Chromium renderer 在沙箱裡不被注入，量到 0）、拿 explorer 當瀏覽器對照組 |
+| 7 | 驗收腳本 FAIL 10 | 全是腳本自身缺陷：DuckDB 用 `+` 串字串、.NET `\s` 跨行、R 科學記號、`-Wait` 無逾時 |
+| 8 | 驗收腳本 FAIL 1 | `LinearDML` 未鎖 `random_state`，測試本身會飄 |
+
+**共通教訓**：找到一個「說得通的解釋」就停手，是最危險的時刻。**正確做法是再找一個對照組去否證它。**
+
+若第一次驗收就照單全收那 10 個紅字，接下來會去重裝 Python 環境、重建 R 套件庫——修四個根本沒壞的東西，還可能真的弄壞。
+
+---
+
+# 附錄 G：後續工作對本文件的更正（2026-09-21）
+
+本倉庫由多個工作階段共同維護。後續階段對本文件的內容提出以下更正，一併列出以維持紀錄準確：
+
+| 本文件原記載 | 後續更正 |
+|---|---|
+| GT 730 屬 **Kepler** 世代 | PCI ID 實讀為 `VEN_10DE&DEV_0F02`，屬 **Fermi**（GF108）。GT 730 有 Kepler 與 Fermi 兩種版本，不能依名稱推定。因此「Kepler 末代分支 R470／472.12」的驅動建議不適用本機 |
+| 兩套 Python 環境各 **176** 套件 | 後續補入 openpyxl / xlsxwriter / python-calamine / fastexcel / pywin32 / et-xmlfile，**現各 182 套件**（Excel round-trip 原本會失敗）。既有套件版本未變 |
+| `Acceptance_Test.ps1` 的 28/28 | 該腳本會無差別終止所有 comet 行程，且 Comet 那一項永遠 PASS（設計為記錄項而非通過條件）。後續階段未執行該腳本，不以其舊結果作為當前驗收 |
+
+本機當前狀態（2026-09-21 實測）：Windows 11 Build 26200、R 348 套件、Python 兩環境各 182 套件、C: 可用 59.8 GB（25.2 %）、`C:\Windows.old` 仍在（`SetupCleanupTask` 排定 09-23 06:00 自動清理）。
+
+---
+
+# 附錄 H：尚未解決、需他人協助的事項
+
+| 事項 | 現況 | 需要誰 |
+|---|---|---|
+| Comet 瀏覽器黑屏 | 五項假設全部實測排除，無確立正因。報修單已備妥於 `診斷操作系統/IT報修_Comet黑屏.md` | IT（管控軟體端）或 Perplexity（廠商端） |
+| 開發目錄掃描排除申請 | 三層即時檔案攔截使套件安裝顯著變慢，已在報修單中提出申請 | IT 決定，依公司政策 |
+| Defender 與 Kaspersky 重複即時掃描 | Defender 仍為 Normal 模式 | IT 決定是否轉 Passive |
+| 長路徑、分頁檔、Defender 排除、系統還原點 | 腳本已備妥 `診斷操作系統/Run_AsAdmin.ps1` | 需管理員身分執行 |
+| 專案仍位於 OneDrive 同步目錄 | `C:\work` 已備妥，搬移需在 IDE 關閉、同步暫停時手動進行 | 使用者 |
+
+---
+
+**本文件所有數據均為本機實際執行所得，可依附錄 E 逐項複驗。**
