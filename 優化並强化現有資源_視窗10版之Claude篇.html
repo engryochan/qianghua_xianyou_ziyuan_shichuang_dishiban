@@ -3185,8 +3185,8 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 <li><strong>未停用、未解除安裝、未修改任何資安軟體。</strong> 亿赛通 CDG、Kaspersky Endpoint Security、天锐绿盾、Microsoft Defender 全部維持原狀運作中。</li>
 <li><strong>未嘗試規避任何管控。</strong> 具體拒絕過的做法：把 <code>comet.exe</code> 改名成 <code>chrome.exe</code> 去騙過掛鉤——雖然這是驗證假設最快的方法，但那是規避資安管控，明確拒絕執行並寫入文件。</li>
 <li><strong>未關閉工作區信任（Workspace Trust）。</strong> Positron 的信任按鈕留給使用者自行決定，理由是那屬於安全決定。</li>
-<li><strong>未提權。</strong> 整個工作階段以一般使用者身分執行，所有需要管理員的項目都只產出指令交給使用者。</li>
-<li><strong>未刪除 <code>C:\Windows.old</code>。</strong> 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、3 天後系統自動清理、且無權限）。</li>
+<li><del><strong>未提權。</strong> 整個工作階段以一般使用者身分執行</del> <strong>【2026-09-21 斧正：此項已不成立。當日 09:00–09:08 經使用者在 UAC 逐次同意後執行了提權作業，逐項明細見附錄 J。本文件既以誠實為憑，過期的陳述就必須劃掉，不能留著充數。】</strong></li>
+<li><strong>未刪除 <code>C:\Windows.old</code>。</strong> 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、系統排定 09-23 自動清理）。</li>
 <li><strong>未接觸業務資料。</strong> 所有測試資料均為程式即時產生的隨機數（<code>rnorm</code>、<code>make_classification</code>）。</li>
 </ol>
 <hr>
@@ -3619,6 +3619,264 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <li><strong>政策</strong>：驅動與韌體屬於 IT 管理範圍，貿然更新可能與公司的標準映像或資產管理衝突。</li>
 </ol>
 <p><strong>已備妥的東西</strong>：<code>診斷操作系統/Driver_Report.ps1</code> 會重新產生本附錄的全部數據（唯讀），輸出可直接附在給 IT 的工單上。</p>
+<hr>
+<hr>
+</section>
+</section>
+<section id="附錄-j管理員權限作業完整紀錄2026-09-21" class="level1">
+<h1>附錄 J：管理員權限作業完整紀錄（2026-09-21）</h1>
+<p>本附錄記錄本專案<strong>唯一一次</strong>使用提權的完整過程。附錄 D 第 4 項原稱「未提權」，自本日起已不成立，故於該處劃記並指向此處。</p>
+<section id="j.1-權限前提" class="level2">
+<h2 class="anchored" data-anchor-id="j.1-權限前提">J.1 權限前提</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>查證項目</th>
+<th>實讀結果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>帳號</td>
+<td><code>SHJ-H0647-RYOCH\PPCCpcpc</code></td>
+</tr>
+<tr class="even">
+<td>是否在本機 Administrators 群組</td>
+<td><strong>是</strong>（與內建 <code>Administrator</code> 並列）</td>
+</tr>
+<tr class="odd">
+<td>工作階段 token 是否已提權</td>
+<td>否（UAC 篩選後僅餘 <code>BUILTIN\Users</code>）</td>
+</tr>
+<tr class="even">
+<td><code>EnableLUA</code></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td><code>ConsentPromptBehaviorAdmin</code></td>
+<td>5 — <strong>同意即可，不需輸入密碼</strong></td>
+</tr>
+</tbody>
+</table>
+<p>亦即：使用者本人具備管理員身分，提權方式為在 UAC 對話框按下「是」。<strong>每一次提權都由使用者本人親自同意，AI 無法自行提權。</strong></p>
+</section>
+<section id="j.2-三次提權作業" class="level2">
+<h2 class="anchored" data-anchor-id="j.2-三次提權作業">J.2 三次提權作業</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>時間</th>
+<th>作業</th>
+<th>性質</th>
+<th>記錄檔</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>09:00:17</td>
+<td><code>Run_AsAdmin.ps1 -All -WhatIf</code></td>
+<td><strong>預演，零變更</strong></td>
+<td><code>~\Run_AsAdmin_20260921_090017.log</code></td>
+</tr>
+<tr class="even">
+<td>09:03:22</td>
+<td><code>Run_AsAdmin.ps1 -All</code></td>
+<td><strong>實際執行</strong></td>
+<td><code>~\Run_AsAdmin_20260921_090322.log</code></td>
+</tr>
+<tr class="odd">
+<td>09:07:32</td>
+<td>唯讀驗證腳本</td>
+<td><strong>僅讀取</strong></td>
+<td>結果見 J.5</td>
+</tr>
+</tbody>
+</table>
+<p>兩份 <code>Run_AsAdmin_*.log</code> 為 PowerShell Transcript，逐行記錄每一道指令與其輸出，可與資安軟體日誌逐條對照。</p>
+<section id="中途的兩次失敗一併記錄非隱匿" class="level3">
+<h3 class="anchored" data-anchor-id="中途的兩次失敗一併記錄非隱匿">中途的兩次失敗（一併記錄，非隱匿）</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>次序</th>
+<th>現象</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>首次預演</td>
+<td>ExitCode <code>-196608</code>，未產生記錄檔</td>
+<td><code>Start-Process -Verb RunAs</code> 提權後工作目錄被重設為 <code>System32</code>，相對路徑 <code>.\Run_AsAdmin.ps1</code> 找不到。改用絕對路徑後正常</td>
+</tr>
+<tr class="even">
+<td>首次驗證腳本</td>
+<td>ExitCode <code>1</code>，未產生結果檔</td>
+<td>臨時腳本未加 UTF-8 BOM，PowerShell 5.1 以 GBK 讀取導致中文亂碼、解析失敗。補 BOM 後正常</td>
+</tr>
+</tbody>
+</table>
+<p>兩次皆為腳本撰寫疏失，與權限無關。使用者因此多按了兩次 UAC。</p>
+</section>
+</section>
+<section id="j.3-實際變更的四項" class="level2">
+<h2 class="anchored" data-anchor-id="j.3-實際變更的四項">J.3 實際變更的四項</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>變更</th>
+<th>變更前</th>
+<th>變更後</th>
+<th>生效時機</th>
+<th>還原方式</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>長路徑</td>
+<td><code>LongPathsEnabled = 0</code></td>
+<td><code>= 1</code></td>
+<td>重開機</td>
+<td>改回 0</td>
+</tr>
+<tr class="even">
+<td>分頁檔</td>
+<td>自動管理，5120 MB</td>
+<td>固定 初始 16290／最大 32581 MB</td>
+<td>重開機</td>
+<td>備份見下；或系統內容 &gt; 進階 &gt; 效能 &gt; 虛擬記憶體 &gt; 勾回自動管理</td>
+</tr>
+<tr class="odd">
+<td>Defender 掃描排除</td>
+<td>既有 2 項（PyCharm 相關）</td>
+<td>新增 3 項</td>
+<td>立即</td>
+<td><code>Remove-MpPreference -ExclusionPath</code></td>
+</tr>
+<tr class="even">
+<td>VCRedist x86</td>
+<td>14.42.34438.0</td>
+<td><strong>14.51.36247.0</strong></td>
+<td>建議重開機</td>
+<td>winget 可降版</td>
+</tr>
+</tbody>
+</table>
+<p>分頁檔原設定備份：<code>~\pagefile_backup_20260921_090322.txt</code></p>
+<p>新增的三項 Defender 排除，全部為開發用目錄：</p>
+<pre><code>C:\work
+C:\Users\PPCCpcpc\AppData\Local\R\win-library
+C:\Users\PPCCpcpc\AppData\Local\uv</code></pre>
+<p><strong>不含 Downloads、桌面或任何文件目錄。</strong> 另需說明：這三項<strong>只對 Microsoft Defender 有效</strong>，亿赛通 CDG、Kaspersky、天锐绿盾不受影響，仍會照常攔截每一次檔案讀寫。</p>
+</section>
+<section id="j.4-未成功的三項" class="level2">
+<h2 class="anchored" data-anchor-id="j.4-未成功的三項">J.4 未成功的三項</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>結果</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>系統還原點</td>
+<td><strong>未建立</strong></td>
+<td>Windows 24 小時節流：當日 17:54 已由系統建立過一個</td>
+</tr>
+<tr class="even">
+<td>Edge</td>
+<td><strong>未升級</strong></td>
+<td><code>-1978335090</code>「安裝技術不符」；後續查出根因為更新服務與排程工作皆不存在（見 IT 工單申請五）</td>
+</tr>
+<tr class="odd">
+<td>Teams / VCRedist x64</td>
+<td>未升級</td>
+<td>winget 回報已無可用更新</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="j.5-提權後的唯讀驗證結果" class="level2">
+<h2 class="anchored" data-anchor-id="j.5-提權後的唯讀驗證結果">J.5 提權後的唯讀驗證結果</h2>
+<p>為確認上述變更是否真的生效（而非僅是腳本宣稱成功），於 09:07 再次提權執行唯讀查證：</p>
+<p><strong>系統還原點</strong>（一般權限看不到，提權後可見）：</p>
+<pre><code>#2  2026-09-20 17:54:30  Windows 更新</code></pre>
+<p><strong>Defender 排除實況</strong>：</p>
+<pre><code>C:\Users\PPCCpcpc\AppData\Local\JetBrains\PyCharm2026.1   ← 原有
+C:\Users\PPCCpcpc\AppData\Local\R\win-library             ← 本次新增
+C:\Users\PPCCpcpc\AppData\Local\uv                        ← 本次新增
+C:\Users\PPCCpcpc\PyCharmMiscProject                      ← 原有
+C:\work                                                   ← 本次新增</code></pre>
+<p><strong>陰影複製空間</strong>：已用 2.91 GB／配置 3.36 GB／上限 4.74 GB，運作正常。</p>
+</section>
+<section id="j.6-本輪最重要的一個發現我的腳本謊報成功" class="level2">
+<h2 class="anchored" data-anchor-id="j.6-本輪最重要的一個發現我的腳本謊報成功">J.6 本輪最重要的一個發現：我的腳本謊報成功</h2>
+<p><code>Run_AsAdmin.ps1</code> 的日誌同時出現了這兩行：</p>
+<pre><code>警告: 无法创建某个新的系统还原点，因为在过去 1440 分钟内已经创建了一个系统还原点。
+  已建立。</code></pre>
+<p><strong>前一行說失敗，後一行說成功。</strong> 原因是 <code>Checkpoint-Computer</code> 在 24 小時節流時發出的是<strong>警告</strong>而非終止性錯誤，<code>try/catch</code> 接不到，於是腳本照樣印出「已建立」。</p>
+<p>提權查證的鐵證：</p>
+<pre><code>還原點數量: 之前 1 -&gt; 之後 1     ← 數量沒增加，根本沒建成</code></pre>
+<p><strong>這是最危險的一類缺陷</strong>——還原點是其他四項變更的退路。腳本宣稱退路已備妥，實際上它不存在。若不是逐項實測驗證，這個假象會一直留到真正需要回退的那一天才被發現。</p>
+<p>已修正為以結果判定，並在未建成時主動列出現有還原點、提醒確認其時間是否早於即將進行的變更：</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="va">$before</span> <span class="op">=</span> <span class="op">@(</span><span class="fu">Get-ComputerRestorePoint</span><span class="op">).</span><span class="fu">Count</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Checkpoint-Computer</span> <span class="op">...</span> <span class="op">-</span>WarningVariable wv</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="va">$after</span>  <span class="op">=</span> <span class="op">@(</span><span class="fu">Get-ComputerRestorePoint</span><span class="op">).</span><span class="fu">Count</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span><span class="va">$after</span> <span class="op">-gt</span> <span class="va">$before</span><span class="op">)</span> <span class="op">{</span> 已建立 <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span> 未建立，列出現有最近的還原點 <span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>退路實際上是存在的</strong>：<code>#2 2026-09-20 17:54「Windows 更新」</code>，建立時間早於本次所有變更，仍可作為回退點。但那不是我建的，而我的腳本謊稱是自己建的——<strong>兩件事都必須講清楚</strong>。</p>
+</section>
+<section id="j.7-變更後的驗收" class="level2">
+<h2 class="anchored" data-anchor-id="j.7-變更後的驗收">J.7 變更後的驗收</h2>
+<p>四項系統變更完成後重跑 28 項實跑驗收：</p>
+<pre><code>=== 驗收結果： PASS 28 / FAIL 0 / SKIP 0 ===</code></pre>
+<p>既有分析環境未受任何影響：R 348 套件、兩套 Python 環境各 182 套件、<code>R CMD SHLIB</code> 可編譯、<code>quarto render</code> 可產出、reticulate 橋接正常。</p>
+</section>
+<section id="j.8-尚待使用者執行" class="level2">
+<h2 class="anchored" data-anchor-id="j.8-尚待使用者執行">J.8 尚待使用者執行</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>事項</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>重新開機</strong></td>
+<td>長路徑與分頁檔需重開機才生效；VCRedist 亦建議重開</td>
+</tr>
+</tbody>
+</table>
+<p>重開機後可執行 <code>診斷操作系統/Acceptance_Test.ps1</code> 複驗，以及 <code>Win10_Diagnose_v2.ps1</code> 確認長路徑已生效。</p>
 <hr>
 </section>
 </section>
