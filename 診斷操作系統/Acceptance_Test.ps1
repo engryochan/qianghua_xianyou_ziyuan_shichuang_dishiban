@@ -16,6 +16,9 @@
 [CmdletBinding()]
 param(
     [switch]$SkipRender,
+    # 預設不對 Comet 做無頭探測。加上這個開關才會實測，且只有在
+    # Comet 沒有執行時才動手——驗收腳本不該在使用者背後關掉他的瀏覽器。
+    [switch]$IncludeCometProbe,
     [string]$WorkRoot = 'C:\work',
     [string]$Project = 'C:\work\projects\lab'
 )
@@ -245,7 +248,9 @@ foreach ($envDef in @(
     $m = [regex]::Match($o, 'ACCJSON(\{.*\})')
     if ($m.Success) { try { $j = $m.Groups[1].Value | ConvertFrom-Json } catch { } }
 
-    Check 'Python' ($lbl + ' 直譯器 3.13 + 176 套件') {
+    # 176 是「下限」不是「應等於」：後續工作補過 openpyxl 等套件，現為 182。
+    # 標題寫成 >= 才不會讓人誤以為多出來的套件是異常。
+    Check 'Python' ($lbl + ' 直譯器 3.13 + 套件數 >= 176') {
         @{ ok = ($j -and $j.version -like '3.13*' -and $j.pkgs -ge 176); value = if ($j) { "$($j.version) / $($j.pkgs) 套件" } else { '未取得輸出' } }
     }
     Check 'Python' ($lbl + ' duckdb 聚合正確') {
@@ -336,18 +341,43 @@ foreach ($t in @(
 }
 
 # ================================================================ 已知未解
-Check '未解' 'Comet 仍為黑屏(記錄用)' {
-    $exe = "$env:LOCALAPPDATA\Perplexity\Comet\Application\comet.exe"
-    if (-not (Test-Path $exe)) { return @{ ok = $true; value = 'Comet 未安裝' } }
-    $ud = Join-Path $script:Tmp 'comet_hs'
-    $shot = Join-Path $script:Tmp 'comet.png'
-    # 千萬不要用 -Wait：Comet 的無頭模式在這台機器上不會自己結束，
-    # 實測卡了 11.5 分鐘才被手動清掉。一律設逾時並強制收尾。
-    $p = Start-Process $exe -ArgumentList '--headless=new', "--user-data-dir=$ud", '--no-first-run', '--disable-gpu', "--screenshot=$shot", 'https://example.com' -PassThru -NoNewWindow
-    $null = $p.WaitForExit(45000)
-    Get-Process comet -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-    # 這一項永遠 PASS：它只是記錄現況，不是驗收條件
-    @{ ok = $true; value = if (Test-Path $shot) { '★ 無頭截圖成功，值得重測黑屏' } else { '無頭仍產不出截圖(與先前一致)' } }
+# 這一項預設「只觀察、不動手」。
+#
+# 舊版缺陷（由另一工作階段指出，屬實）：它會執行
+#   Get-Process comet | Stop-Process -Force
+# 無差別終止所有 comet 行程——包含使用者當下正在用的視窗。
+# 一支「驗收」腳本不該在使用者背後關掉他的瀏覽器。
+#
+# 現在預設只讀取安裝與執行狀態；要真的做無頭探測，得明確加
+# -IncludeCometProbe，而且只有在 comet 沒有執行時才會動手，
+# 事後也只終止自己啟動的那一個行程樹。
+if (-not $IncludeCometProbe) {
+    Check '未解' 'Comet 現況(唯讀觀察)' {
+        $exe = "$env:LOCALAPPDATA\Perplexity\Comet\Application\comet.exe"
+        if (-not (Test-Path $exe)) { return @{ ok = $true; value = 'Comet 未安裝' } }
+        $running = @(Get-Process comet -ErrorAction SilentlyContinue)
+        $v = (Get-Item $exe).VersionInfo.FileVersion
+        @{ ok = $true; value = "已安裝 $v，目前 $($running.Count) 個行程（未探測，加 -IncludeCometProbe 才會實測）" }
+    }
+} else {
+    Check '未解' 'Comet 無頭渲染探測' {
+        $exe = "$env:LOCALAPPDATA\Perplexity\Comet\Application\comet.exe"
+        if (-not (Test-Path $exe)) { return @{ ok = $true; value = 'Comet 未安裝' } }
+        if (@(Get-Process comet -ErrorAction SilentlyContinue).Count -gt 0) {
+            return @{ ok = $true; value = '略過：Comet 正在執行中，不打斷使用者' }
+        }
+        $ud = Join-Path $script:Tmp 'comet_hs'
+        $shot = Join-Path $script:Tmp 'comet.png'
+        # 不可用 -Wait：Comet 的無頭模式在本機不會自己結束，實測卡過 11.5 分鐘。
+        $p = Start-Process $exe -ArgumentList '--headless=new', "--user-data-dir=$ud", '--no-first-run', '--disable-gpu', "--screenshot=$shot", 'https://example.com' -PassThru -NoNewWindow
+        $null = $p.WaitForExit(45000)
+        # 只收拾自己啟動的那一棵行程樹，不碰其他 comet 行程
+        if (-not $p.HasExited) {
+            & taskkill.exe /PID $p.Id /T /F 2>&1 | Out-Null
+        }
+        # 這一項永遠 PASS：它是現況記錄，不是驗收條件
+        @{ ok = $true; value = if (Test-Path $shot) { '★ 無頭截圖成功，值得重測黑屏' } else { '無頭仍產不出截圖(與先前一致)' } }
+    }
 }
 
 # ================================================================ 摘要
