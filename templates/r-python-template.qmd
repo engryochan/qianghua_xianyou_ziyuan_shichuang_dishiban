@@ -55,7 +55,7 @@ print(duckdb.sql(
 
 ## CPU 路線的建模
 
-本機顯示卡是 GT 730（Kepler），現行 CUDA 不支援，模型訓練一律走 CPU：
+本機 GT 730 的硬體 ID 為 10DE:0F02（Fermi 舊型），此工作流程使用 CPU：
 XGBoost / LightGBM 用 `hist` 演算法搭配多執行緒即可。
 
 ```{python}

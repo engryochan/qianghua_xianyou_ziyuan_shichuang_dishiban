@@ -213,13 +213,7 @@ foreach ($g in @($gpus)) {
         $nv = [double]($tail.Substring(0,3) + '.' + $tail.Substring(3,2))
         Write-Host ('  NVIDIA 驱动实际版本：' + $nv + '   （Windows 版本字串 ' + $g.DriverVersion + '）')
 
-        if ($g.Name -match 'GT 7\d\d|GTX 6\d\d|GTX 7[0-5]\d|GT 6\d\d') {
-            Add-Finding '警告' 'GPU' ($g.Name + ' 属 Kepler 世代。NVIDIA 对 Kepler 的最后驱动分支是 R470（472.xx），且该世代早已停止新功能更新。')
-        }
-        if ($nv -lt 470) {
-            Add-Finding '严重' 'GPU' ('驱动版本 ' + $nv + ' 远低于 Kepler 可用的最高分支 472.xx。这是一个 2018 年的驱动，从未针对 Windows 11 发布过。Windows 11 的 DWM 合成路径 + Chromium 的 DirectComposition 呈现路径在此驱动上无法正确 present，症状正是「窗口开得出来、外框正常、内容区全黑」。这是 Comet 黑屏的第一顺位根因。')
-            Add-Finding '注意' 'GPU' '修复方向：升级到 Kepler 最后支援的 472.12（2022-11 WHQL）。此动作需要管理员权限，本脚本不代跑，指令见报告末端。'
-        }
+        Add-Finding '注意' 'GPU' ('驱动版本 ' + $nv + '；仅凭显卡名称或驱动年份不能确定架构、可用驱动或黑屏原因。GT 730 有不同硬件版本；本机 2026-09-21 实读 PCI ID 10DE:0F02，不能套用 Kepler 472.xx 更新建议。由 IT 按 PCI ID 和厂商支持清单核对。')
     }
 }
 
@@ -358,9 +352,9 @@ foreach ($lv in @('严重','警告','注意','资讯')) {
     [void]$sb.AppendLine('')
 }
 [void]$sb.AppendLine('--- 需要管理员权限、请自行手动执行 ---')
-[void]$sb.AppendLine('1) 升级 NVIDIA 驱动到 Kepler 最后支援版本 472.12：')
-[void]$sb.AppendLine('   从 nvidia.com 手动下载 472.12 WHQL（产品选 GeForce GT 730，系统选 Windows 11 64-bit），')
-[void]$sb.AppendLine('   安装时勾选「执行乾净安装」。切勿使用 Windows Update 推送的旧版。')
+[void]$sb.AppendLine('1) 先由 IT 核对显卡 PCI 硬件 ID、架构及 Windows 11 驱动支持；不可仅凭 GT 730 名称选择 472.xx。')
+[void]$sb.AppendLine('   本机 10DE:0F02 为旧型 Fermi；不要强装其他架构驱动。')
+[void]$sb.AppendLine('   黑屏根因仍需对照应用、日志及厂商诊断，不能单凭驱动年份下结论。')
 [void]$sb.AppendLine('2) 若需请 IT 加白名单，提供下列资讯：')
 [void]$sb.AppendLine('   程式路径：' + $(if ($exe) { $exe } else { '(未定位)' }))
 [void]$sb.AppendLine('   需放行：GPU 行程建立、DirectComposition 呈现、本机 user-data-dir 读写')

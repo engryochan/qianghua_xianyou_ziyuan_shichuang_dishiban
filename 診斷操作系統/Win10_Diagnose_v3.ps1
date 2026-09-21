@@ -1,4 +1,4 @@
-#Requires -Version 5.1
+﻿#Requires -Version 5.1
 <#
 .SYNOPSIS
 Windows 10/11 與資料分析工具鏈的唯讀、離線盤點。
@@ -68,6 +68,10 @@ function Invoke-BoundedProcess {
         $info.EnvironmentVariables['PYTHONUTF8'] = '1'
         $info.EnvironmentVariables['PYTHONIOENCODING'] = 'utf-8'
         $info.EnvironmentVariables['PIP_DISABLE_PIP_VERSION_CHECK'] = '1'
+        if ($FilePath -eq $script:PowerShellExe) {
+            # A pwsh parent can pass incompatible PS7 modules to Windows PowerShell.
+            $info.EnvironmentVariables['PSModulePath'] = "$env:WINDIR\System32\WindowsPowerShell\v1.0\Modules;$env:ProgramFiles\WindowsPowerShell\Modules"
+        }
         $process.StartInfo = $info
         $null = $process.Start()
         $outTask = $process.StandardOutput.ReadToEndAsync()
@@ -153,7 +157,7 @@ Invoke-Probe '01_system' {
 }
 Invoke-Probe '02_cpu' { Get-CimInstance Win32_Processor -OperationTimeoutSec 15 | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors,MaxClockSpeed,AddressWidth,VirtualizationFirmwareEnabled,SecondLevelAddressTranslationExtensions,VMMonitorModeExtensions }
 Invoke-Probe '03_memory' { Get-CimInstance Win32_PhysicalMemory -OperationTimeoutSec 15 | Select-Object Manufacturer,PartNumber,@{n='Capacity_GB';e={[math]::Round($_.Capacity/1GB,2)}},Speed,ConfiguredClockSpeed }
-Invoke-Probe '04_gpu' { Get-CimInstance Win32_VideoController -OperationTimeoutSec 15 | Select-Object Name,DriverVersion,DriverDate,VideoProcessor,Status,AdapterRAM }
+Invoke-Probe '04_gpu' { Get-CimInstance Win32_VideoController -OperationTimeoutSec 15 | Select-Object Name,PNPDeviceID,DriverVersion,DriverDate,VideoProcessor,Status,AdapterRAM }
 Invoke-Probe '05_bios' { Get-CimInstance Win32_BIOS -OperationTimeoutSec 15 | Select-Object Manufacturer,SMBIOSBIOSVersion,ReleaseDate }
 Invoke-Probe '06_volumes' { Get-CimInstance Win32_LogicalDisk -Filter 'DriveType=3' -OperationTimeoutSec 15 | Select-Object DeviceID,FileSystem,@{n='Size_GB';e={[math]::Round($_.Size/1GB,2)}},@{n='Free_GB';e={[math]::Round($_.FreeSpace/1GB,2)}},@{n='Free_Percent';e={if ($_.Size) {[math]::Round(100*$_.FreeSpace/$_.Size,1)}}} }
 Invoke-Probe '07_disks' { Get-PhysicalDisk | Select-Object FriendlyName,@{n='MediaType';e={$_.MediaType.ToString()}},@{n='BusType';e={$_.BusType.ToString()}},@{n='HealthStatus';e={$_.HealthStatus.ToString()}},@{n='OperationalStatus';e={$_.OperationalStatus -join ';'}},@{n='Size_GB';e={[math]::Round($_.Size/1GB,2)}} }
@@ -168,6 +172,7 @@ Invoke-Probe '11_software' {
         if (Test-Path $root) {
             Get-ChildItem $root | ForEach-Object { $p=Get-ItemProperty $_.PSPath; if ($p.DisplayName) { [pscustomobject]@{Name=$p.DisplayName;Version=$p.DisplayVersion;Publisher=$p.Publisher;InstallDate=$p.InstallDate;InstallLocation=$p.InstallLocation;SystemComponent=[bool]$p.SystemComponent;Scope=if ($root -like 'HKCU*') {'CurrentUser'} else {'Machine'};RegistryView=if ($root -like '*WOW6432Node*') {'32bit'} else {'Native'}} } }
     }
+}
 }
 Invoke-Probe '12_appx_current_user' { Get-AppxPackage | Select-Object Name,@{n='Version';e={$_.Version.ToString()}},@{n='Architecture';e={$_.Architecture.ToString()}},IsFramework,SignatureKind,Status }
 Invoke-Probe '13_startup' { Get-CimInstance Win32_StartupCommand -OperationTimeoutSec 15 | Select-Object Name,Location }
@@ -242,6 +247,7 @@ Invoke-Probe '34_registered_interpreters' {
     foreach ($base in @('HKCU:\SOFTWARE\R-core\R','HKLM:\SOFTWARE\R-core\R','HKLM:\SOFTWARE\WOW6432Node\R-core\R')) {
         if (Test-Path $base) { foreach ($key in @((Get-Item $base)) + @(Get-ChildItem $base)) { $p=Get-ItemProperty $key.PSPath; if ($p.InstallPath) { [pscustomobject]@{Runtime='Rscript';Path=(Join-Path $p.InstallPath 'bin\Rscript.exe')} } }
     }
+}
 }
 $runtimeRows=New-Object System.Collections.Generic.List[object]
 $pythonPaths=@(); $rPaths=@()
@@ -318,7 +324,9 @@ if ($SkipPackages) { Add-Status 'RPackages' 'Skipped' '-SkipPackages' } elseif (
     $index=0
     foreach ($path in $rPaths) {
         $index++; $pkgFile=Join-Path $OutputDirectory ('_r_packages_'+$index+'.csv'); $envFile=Join-Path $OutputDirectory ('_r_environment_'+$index+'.csv')
-        $result=Invoke-Tool ('RPackages/'+$path) $path @('--vanilla',$rFile,$pkgFile,$envFile)
+        # The child already runs in OutputDirectory. ASCII relative arguments avoid
+        # Rscript's Windows command-line conversion corrupting non-ASCII paths.
+        $result=Invoke-Tool ('RPackages/'+$path) $path @('--vanilla','_probe_r.R',([IO.Path]::GetFileName($pkgFile)),([IO.Path]::GetFileName($envFile)))
         if ($result.ExitCode -eq 0 -and (Test-Path -LiteralPath $pkgFile) -and (Test-Path -LiteralPath $envFile)) {
             foreach ($row in (Import-Csv -LiteralPath $envFile -Encoding UTF8)) { $rEnvs.Add([pscustomobject]@{Interpreter=$path;Version=$row.Version;Library=$row.Library;Writable=$row.Writable;Scope='--vanilla; no project .Rprofile/.Renviron executed'}) }
             foreach ($row in (Import-Csv -LiteralPath $pkgFile -Encoding UTF8)) { $rPackages.Add([pscustomobject]@{Interpreter=$path;Name=$row.Package;Version=$row.Version;Built=$row.Built;Library=$row.Library}) }

@@ -1,5 +1,13 @@
 # 專案說明（給接手的人與 AI）
 
+## 2026-09-21 更正（優先於下方歷史紀錄）
+
+- 本機 GT 730 的 PCI ID 已實讀為 `VEN_10DE&DEV_0F02`，屬 Fermi 舊型版本；不能按「GT 730」名稱推定 Kepler，也不能套用下文 472.xx 驅動建議。NVIDIA 官方支援討論：https://forums.developer.nvidia.com/t/450-57-driver-version-for-geforce-gt-730/144948 。目前保持 CPU 分析，驅動與硬體更新交由 IT 核對。
+- 兩個 Python 3.13.15 環境原有 176 套件，但缺 openpyxl/XlsxWriter，真實 Excel round-trip 失敗。本輪補入 openpyxl、xlsxwriter、python-calamine、fastexcel、pywin32 及 et-xmlfile，現各 182 套件，既有版本未變。版本快照已更新至 env/python-ds-requirements.lock.txt（不含雜湊）。
+- R 有 348 套件；Win10_Diagnose_v3.ps1 原有兩處缺括號，且 Rscript 絕對中文路徑參數會亂碼，已改用子行程工作目錄下的 ASCII 相對路徑。Windows PowerShell 子程序另隔離 PS7 模組搜尋路徑。
+- 本機報告在 reports/2026-09-21；未納入版控。新增 Start_Analytics.ps1 作為已驗證環境入口，CPU 設定僅作用於此工作階段；模型與 Notebook 驗收使用 Analytics_Model_Check.py。
+- 歷史 Acceptance_Test.ps1 會終止所有 comet 行程，且部分檢查永遠 PASS；本輪未執行該腳本，不將它的舊 28/28 當作當前驗收。
+
 本倉庫是一場**多模型對照實驗**：同一個問題（「診斷 Windows 10 並強化資料分析環境」）交給 Claude、ChatGPT、Perplexity、Grok、深度求索回答，答案全部收在 `優化並强化現有資源_視窗10版.qmd`（約 4,000 行）。
 
 ## 最重要的一課

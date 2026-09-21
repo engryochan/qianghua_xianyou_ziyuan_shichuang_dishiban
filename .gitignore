@@ -47,3 +47,11 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Local machine inventories and generated validation data
+/reports/
+/診斷操作系統/reports/
+
+# Python bytecode（語法檢查等會產生）
+__pycache__/
+*.py[cod]

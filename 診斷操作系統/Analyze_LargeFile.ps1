@@ -30,7 +30,7 @@ $inputFile=Get-Item -LiteralPath $InputPath
 if ($inputFile.PSIsContainer -or $inputFile.Extension -notin @('.csv','.parquet')) { throw 'InputPath must be one CSV or Parquet file.' }
 if ($ValueColumn -and -not $GroupBy) { throw 'ValueColumn requires GroupBy.' }
 if (-not $PythonExe) {
-    foreach ($relative in @('python-extended\Scripts\python.exe','python-core\Scripts\python.exe')) {
+    foreach ($relative in @('python-env\Scripts\python.exe','python-extended\Scripts\python.exe','python-core\Scripts\python.exe')) {
         $candidate=Join-Path $WorkRoot $relative
         if (Test-Path -LiteralPath $candidate -PathType Leaf) { $PythonExe=$candidate; break }
     }
