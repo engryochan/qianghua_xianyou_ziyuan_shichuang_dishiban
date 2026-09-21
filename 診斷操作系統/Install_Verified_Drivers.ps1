@@ -1,9 +1,11 @@
 #Requires -Version 5.1
 [CmdletBinding()]
-param([switch]$Apply,[string]$Root=(Join-Path $PSScriptRoot '..\reports\2026-09-21\update-round2\drivers'))
+param([switch]$Apply,[string]$Root)
 $ErrorActionPreference='Stop'
+if(-not $Root){$Root=Join-Path $PSScriptRoot '..\reports\2026-09-21\update-round2\drivers'}
 $Root=[IO.Path]::GetFullPath($Root)
-$plan=@(Get-Content (Join-Path $Root 'compatible-plan.json') -Raw -Encoding UTF8 | ConvertFrom-Json | Where-Object Decision -eq 'Eligible')
+$candidates=Get-Content (Join-Path $Root 'compatible-plan.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$plan=@($candidates | Where-Object Decision -eq 'Eligible')
 if($plan.Count -eq 0){throw 'No verified candidates'}
 if(-not $Apply){$plan | Select-Object Inf,Version,Decision;return}
 $run=Join-Path $Root ('installation-'+(Get-Date -Format 'yyyyMMdd-HHmmss'))
