@@ -60,10 +60,29 @@ if ($RestorePoint) {
     if ($PSCmdlet.ShouldProcess($env:COMPUTERNAME, '建立還原點 DataStack_' + $ts)) {
         try {
             Enable-ComputerRestore -Drive 'C:\' -ErrorAction SilentlyContinue
-            Checkpoint-Computer -Description ('DataStack_' + $ts) -RestorePointType 'MODIFY_SETTINGS' -ErrorAction Stop
-            Write-Host '  已建立。'
+            # 關鍵：Checkpoint-Computer 在「24 小時內已建立過」時發的是【警告】，
+            # 不是終止性錯誤，try/catch 接不到。舊版因此印出假的「已建立」。
+            # 2026-09-21 實測：警告照發，還原點數量 1 -> 1，根本沒建成。
+            # 所以一律用「數量有沒有增加」來判定，不相信「沒擲出例外 = 成功」。
+            $before = @(Get-ComputerRestorePoint -ErrorAction SilentlyContinue).Count
+            $wv = $null
+            Checkpoint-Computer -Description ('DataStack_' + $ts) -RestorePointType 'MODIFY_SETTINGS' -ErrorAction Stop -WarningVariable wv
+            $after = @(Get-ComputerRestorePoint -ErrorAction SilentlyContinue).Count
+            if ($after -gt $before) {
+                Write-Host ('  已建立（還原點 ' + $before + ' -> ' + $after + '）。')
+            } else {
+                Write-Warning ('  未建立：還原點數量仍為 ' + $after + '。' + $(if ($wv) { '系統訊息：' + ($wv -join ' ') } else { '' }))
+                $latest = @(Get-ComputerRestorePoint -ErrorAction SilentlyContinue | Sort-Object CreationTime -Descending)[0]
+                if ($latest) {
+                    Write-Host ('  現有最近的還原點：#' + $latest.SequenceNumber + '  ' +
+                        $latest.ConvertToDateTime($latest.CreationTime).ToString('yyyy-MM-dd HH:mm:ss') + '  ' + $latest.Description) -ForegroundColor Yellow
+                    Write-Host '  ↑ 這個仍可作為退路，但它不是本次建立的，請確認其時間早於你即將做的變更。' -ForegroundColor Yellow
+                } else {
+                    Write-Warning '  ★ 系統上沒有任何還原點，後續變更將沒有系統層級的退路。'
+                }
+            }
         } catch {
-            Write-Warning ('  未能建立（系統保護可能未啟用，或 24 小時內已建立過）：' + $_.Exception.Message)
+            Write-Warning ('  未能建立（系統保護可能未啟用，或權限不足）：' + $_.Exception.Message)
         }
     }
 }
