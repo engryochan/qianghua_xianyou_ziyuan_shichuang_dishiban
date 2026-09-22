@@ -63,7 +63,17 @@ try {
   $after | Select-Object DeviceID,DeviceName,DriverVersion,DriverProviderName,InfName | Export-Csv (Join-Path $run 'after.csv') -NoTypeInformation -Encoding UTF8
   $problems=@(Get-PnpDevice -PresentOnly | Where-Object Status -ne 'OK' | Select-Object FriendlyName,Problem,InstanceId)
   ConvertTo-Json -InputObject $problems -Depth 4 | Set-Content (Join-Path $run 'problems-after.json') -Encoding UTF8
-  $lower=@(foreach($old in $before){$new=$after | Where-Object DeviceID -eq $old.DeviceID | Select-Object -First 1;if($old.DriverVersion -and $new.DriverVersion -and [version]$new.DriverVersion -lt [version]$old.DriverVersion){$old.DeviceID}})
+  $lower=@(foreach($old in $before){
+    $new=$after | Where-Object DeviceID -eq $old.DeviceID | Select-Object -First 1
+    if([string]$old.DriverVersion -eq [string]$new.DriverVersion){continue}
+    if($old.DriverVersion -and $new.DriverVersion){
+      $oldVersion=$null;$newVersion=$null
+      if(-not [version]::TryParse([string]$old.DriverVersion,[ref]$oldVersion) -or -not [version]::TryParse([string]$new.DriverVersion,[ref]$newVersion)){
+        throw ('Changed nonnumeric driver version requires review: '+$old.DeviceID)
+      }
+      if($newVersion -lt $oldVersion){$old.DeviceID}
+    }
+  })
   if($lower.Count){throw ('Lower installed version detected; retain backups and review: '+($lower -join ', '))}
   $status.State=if($problems.Count){'InstalledNeedsDeviceReview'}else{'InstalledDeviceChecksPassed'}
   $status.RemainingDeviceProblems=$problems.Count
