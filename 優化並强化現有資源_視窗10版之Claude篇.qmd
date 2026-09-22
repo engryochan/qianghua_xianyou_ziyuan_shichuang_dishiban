@@ -1,6 +1,7 @@
 ---
 title: "優化並强化現有資源_視窗10版"
 subtitle: "Claude初步診斷"
+author: "Ryo Eng（雷欧）"
 format: html
 ---
 
