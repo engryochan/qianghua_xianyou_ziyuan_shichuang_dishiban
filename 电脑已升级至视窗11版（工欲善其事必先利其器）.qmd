@@ -1503,15 +1503,377 @@ cd "$env:USERPROFILE\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_di
 
 ### 提问
 
+```
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\system32> cleanmgr /sagerun:1
+>> # 4. 启动 Windows 内置磁盘清理工具 (全选安全项目后清理)
+>>
+>> Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
+>> # 3. 使用 DISM 清理 WinSxS 组件库中被替换的旧版 Windows 更新 (可释放 5G-10G)
+>>
+>> Remove-Item -Path "C:\Windows\SoftwareDistribution\Download\*" -Recurse -Force -ErrorAction SilentlyContinue
+>> Remove-Item -Path "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
+>> Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+>> # 2. 清理系统临时文件与 Windows 更新下载缓存
+>>
+>> powercfg -h off
+>> # 1. 关闭休眠功能 (直接删除 hiberfil.sys，瞬间释放 8G-16G 空间)
+
+部署映像服务和管理工具
+版本: 10.0.26100.9549
+
+映像版本: 10.0.26200.9550
+
+[==========================100.0%==========================]
+操作成功完成。
+PS C:\WINDOWS\system32> # Disk-Inventory.ps1
+PS C:\WINDOWS\system32> $ErrorActionPreference = 'SilentlyContinue'
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> Write-Host "=== 磁碟 ==="
+=== 磁碟 ===
+PS C:\WINDOWS\system32> Get-Volume | Where-Object DriveLetter |
+>>   Select-Object DriveLetter, FileSystemLabel,
+>>     @{n='SizeGB';e={[math]::Round($_.Size/1GB,2)}},
+>>     @{n='FreeGB';e={[math]::Round($_.SizeRemaining/1GB,2)}},
+>>     @{n='Free%';e={[math]::Round($_.SizeRemaining/$_.Size*100,1)}} |
+>>   Format-Table -AutoSize
+
+DriveLetter FileSystemLabel SizeGB FreeGB Free%
+----------- --------------- ------ ------ -----
+          C 系统            237.21  50.29  21.2
+
+
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> Write-Host "`n=== 使用者大檔 (>200MB) ==="
+
+=== 使用者大檔 (>200MB) ===
+PS C:\WINDOWS\system32> Get-ChildItem "$env:USERPROFILE" -Recurse -File -Force |
+>>   Where-Object Length -gt 200MB |
+>>   Sort-Object Length -Descending |
+>>   Select-Object -First 100 FullName,
+>>     @{n='SizeGB';e={[math]::Round($_.Length/1GB,2)}}, LastWriteTime |
+>>   Export-Csv "$env:USERPROFILE\Desktop\LargeFiles.csv" -NoTypeInformation -Encoding UTF8
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> Write-Host "已導出：$env:USERPROFILE\Desktop\LargeFiles.csv"
+已導出：C:\Users\PPCCpcpc\Desktop\LargeFiles.csv
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> Write-Host "`n=== 常見快取大小 ==="
+
+=== 常見快取大小 ===
+PS C:\WINDOWS\system32> $paths = @(
+>>   "$env:TEMP",
+>>   "C:\Windows\Temp",
+>>   "C:\Windows\SoftwareDistribution\Download",
+>>   "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Cache",
+>>   "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Default\Cache",
+>>   "$env:USERPROFILE\.cache",
+>>   "$env:USERPROFILE\.conda",
+>>   "$env:USERPROFILE\AppData\Local\Docker",
+>>   "$env:USERPROFILE\AppData\Local\Packages"
+>> )
+PS C:\WINDOWS\system32> foreach ($p in $paths) {
+>>   if (Test-Path $p) {
+>>     $s = (Get-ChildItem $p -Recurse -File -Force | Measure-Object Length -Sum).Sum
+>>     "{0,-60} {1,10:N2} GB" -f $p, ($s/1GB)
+>>   }
+>> }
+C:\Users\PPCCpcpc\AppData\Local\Temp                               0.01 GB
+C:\Windows\Temp                                                    0.00 GB
+C:\Windows\SoftwareDistribution\Download                           0.00 GB                                        C:\Users\PPCCpcpc\AppData\Local\Google\Chrome\User Data\Default\Cache       0.00 GB                               C:\Users\PPCCpcpc\AppData\Local\Microsoft\Edge\User Data\Default\Cache       0.15 GB                              C:\Users\PPCCpcpc\.cache                                           1.90 GB                                        C:\Users\PPCCpcpc\AppData\Local\Packages                           1.23 GB                                        PS C:\WINDOWS\system32> # 1. 使用者與 Windows 暫存
+PS C:\WINDOWS\system32> Remove-Item "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> Remove-Item "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 2. Windows Update 下載快取
+PS C:\WINDOWS\system32> Stop-Service wuauserv -Force
+PS C:\WINDOWS\system32> Remove-Item "C:\Windows\SoftwareDistribution\Download\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> Start-Service wuauserv
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 3. Delivery Optimization
+PS C:\WINDOWS\system32> Delete-DeliveryOptimizationCache -Force
+Deleting...
+Successfully deleted Delivery Optimization cache
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 4. 資源回收筒
+PS C:\WINDOWS\system32> Clear-RecycleBin -Force
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 5. 瀏覽器快取（Chrome / Edge）
+PS C:\WINDOWS\system32> Remove-Item "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> Remove-Item "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Code Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> Remove-Item "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 6. 開發套件快取
+PS C:\WINDOWS\system32> pip cache purge
+WARNING: No matching packages
+Files removed: 0 (0 bytes)
+Directories removed: 0
+PS C:\WINDOWS\system32> conda clean --all -y
+PS C:\WINDOWS\system32> npm cache clean --force
+PS C:\WINDOWS\system32> yarn cache clean
+PS C:\WINDOWS\system32> dotnet nuget locals all --clear
+The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'nuget' does not exist.
+  * You intended to execute a .NET SDK command:
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet/download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 7. DISM 元件清理
+PS C:\WINDOWS\system32> Dism.exe /Online /Cleanup-Image /AnalyzeComponentStore
+
+部署映像服务和管理工具
+版本: 10.0.26100.9549
+
+映像版本: 10.0.26200.9550
+
+[==========================100.0%==========================]
+
+组件存储(WinSxS)信息:
+
+Windows 资源管理器报告的组件存储大小 : 12.33 GB
+
+组件存储的实际大小 : 12.01 GB
+
+    已与 Windows 共享 : 8.50 GB
+    备份和已禁用的功能 : 3.50 GB
+    缓存和临时数据 :  0 bytes
+
+上次清理的日期 : 2026-09-23 14:14:53
+
+可回收的程序包数 : 2
+推荐使用组件存储清理 : 是
+
+操作成功完成。
+PS C:\WINDOWS\system32> Dism.exe /Online /Cleanup-Image /StartComponentCleanup /ResetBase
+
+部署映像服务和管理工具
+版本: 10.0.26100.9549
+
+映像版本: 10.0.26200.9550
+
+[===========================70.0%========                  ]
+操作成功完成。
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 8. 關休眠（會刪 hiberfil.sys，關快速啟動）
+PS C:\WINDOWS\system32> powercfg /h off
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 9. 縮小系統還原空間
+PS C:\WINDOWS\system32> vssadmin resize shadowstorage /for=C: /on=C: /maxsize=5%
+vssadmin 1.1 - 卷影复制服务管理命令行工具
+(C) 版权所有 2001-2013 Microsoft Corp.
+
+成功地调整了卷影副本存储关联的大小
+PS C:\WINDOWS\system32> vssadmin delete shadows /for=C: /oldest
+vssadmin 1.1 - 卷影复制服务管理命令行工具
+(C) 版权所有 2001-2013 Microsoft Corp.
+
+找不到满足查询的项目。
+PS C:\WINDOWS\system32>
+PS C:\WINDOWS\system32> # 10. 系統磁碟清理（互動）
+PS C:\WINDOWS\system32> cleanmgr /sageset:1
+PS C:\WINDOWS\system32> cleanmgr /sagerun:1
+PS C:\WINDOWS\system32> Remove-Item "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\WINDOWS\system32> Get-ChildItem C:\ -Directory -ErrorAction SilentlyContinue |
+>>     ForEach-Object {
+>>         $size = (Get-ChildItem $_.FullName -Recurse -ErrorAction SilentlyContinue |
+>>                  Measure-Object -Property Length -Sum).Sum
+>>         [PSCustomObject]@{
+>>             Folder = $_.FullName
+>>             SizeGB = [math]::Round($size / 1GB, 2)
+>>         }
+>>     } | Sort-Object SizeGB -Descending | Format-Table -AutoSize
+
+Folder                   SizeGB
+------                   ------
+C:\Windows.old            37.69
+C:\Windows                26.19
+C:\work                   23.67
+C:\Program Files          15.17
+C:\Program Files (x86)    12.61
+C:\Users                   8.33
+C:\rtools45                3.08
+C:\Telegram                0.81
+C:\inetpub                 0.76
+C:\Snipaste-截图软件-x64   0.04
+C:\FlashCenter                0
+C:\Forensic                   0
+C:\PerfLogs                   0
+
+
+PS C:\WINDOWS\system32>
+```
+
 ### 解答
+
+先生动手清了不少,已经从 ~38 GB 腾到 50.29 GB。我实测核一下现状,再指出最大的一块还没落地。
+
+58.6 GB 可用了(比你贴的 50 GB 还多——DISM 和 cleanmgr 收尾后又释放了一些)。核一下 `C:\work` 里那块,好给你准数。
+
+现状核完了。先生这一轮清理干得漂亮,我给你一份对账 + 指出**唯一一块大的还没落地**。
+
+## 已经生效的(实测确认)
+
+| 动作 | 结果 |
+|---|---|
+| `powercfg /h off` 删休眠档 | ✅ `hiberfil.sys` 已不在(约省 12 GB) |
+| DISM `StartComponentCleanup /ResetBase` | ✅ 完成,WinSxS 备份已压 |
+| 清 Temp / SoftwareDistribution / Delivery Optimization / 回收站 / 浏览器缓存 | ✅ |
+| **可用空间** | **38 → 58.6 GB(24.7%)** |
+
+**一个附带好处你可能没意识到**:`powercfg /h off` 同时关掉了「快速启动」。按本仓库 CLAUDE.md 记的教训,快速启动会**把升级前的旧驱动状态带进下一次开机**——正是「升级后黑屏」那类问题的根源之一。关掉它,对这台机器是好事,不是损失。
+
+## 唯一一块大的,还躺在那没动:Windows.old = 37.69 GB
+
+你跑了 `cleanmgr /sagerun:1`,但 Windows.old **还在**。原因:`sageset` 那个勾选对话框里,如果没勾中「**以前的 Windows 安装**(Previous Windows installation)」,`sagerun` 就不会碰它。这一块占 37.69 GB,是目前**最大的一笔**——清掉它,可用空间能到约 95 GB。
+
+**先讲清楚代价(这一步不可逆)**:删掉 Windows.old = 永久失去「设置 → 恢复 → 返回 Windows 10」这个回退选项。你 9-20 升级,今天第 3 天,系统会在**约 9-30 自动回收**它。所以你有两个选择:
+
+- **等它自动删**(9-30 前后,什么都不用做,但这几天占着 37 GB);
+- **现在手动删**(立刻腾出,前提是你确定不回退 Win10)。
+
+**要现在删,请用正确的方式**(千万别 `rm -rf C:\Windows.old`——手删会留下损坏的 servicing 状态)。最稳的两条,任选:
+
+设置界面(最安全):
+```
+设置 → 系统 → 存储 → 临时文件 → 勾「以前的 Windows 安装」→ 删除文件
+```
+
+或 cleanmgr,这次把框勾对:
+```powershell
+cleanmgr /sageset:1
+```
+弹出的对话框里**勾上「以前的 Windows 安装」和「Windows 更新清理」**,确定后再:
+```powershell
+cleanmgr /sagerun:1
+```
+
+## 顺带:一块 4.7 GB 的安全回收(我造成的)
+
+`C:\work\envs` 现在 12.23 GB,里面有两个 Python 环境:
+- `ds`(3.13.15,742 包)——**主力,留**
+- `ds314`(3.14.7)——我上周建的备选,实测比 ds **少 9 个包、核心版本还相同**,是纯冗余
+
+不想留 3.14 的话,删 `ds314` 约省 4.7 GB。但**别单独删 `uvcache`(9.17 GB)**——它和两个环境是硬链接共享,环境还在时删它腾不出多少空间,反而可能拖慢以后重建。正确顺序是:先删 `ds314`,再 `uv cache prune` 收掉失去引用的部分。
+
+我上周写的 [Optimize_Disk.ps1](診斷操作系統/Optimize_Disk.ps1) 里 `-Ds314` 开关就是干这个的,它会自动帮你「先删环境、再 prune」,并带沙箱检测和回收站保护。
+
+## 一句话
+
+**最大的一块是 Windows.old(37.69 GB)——要嘛等 9-30 自动删,要嘛现在用 cleanmgr 勾对框删,但删了就回不去 Win10 了。** 这是不可逆的决定,得你拍板,我不替你按。
+
+要我把上面这份「已清 / 待清 / 风险」整理成一页清单存进仓库,方便你或 IT 日后对账吗?
 
 ## 提问十二
 
 ### 提问
 
+请先生继续吧！已升级至视窗11版就别退化或降级为视窗10版了。最主要是工欲善其事必先利其器，务必将数据分析的所需装备与配置最优化。
+
 ### 解答
 
-## 提问六
+先生已定:留 Win11、Windows.old 可删。方向明确——把重心放回「利其器」:让数据分析这套装备真正到最优。我先实测现在**装备到底优化到哪一步了**,再告诉你还差哪几刀。
+
+câ
+
+Python 这边**已经是最优了**——numpy 用 OpenBLAS、12 线程,2000×2000 矩阵乘 0.079 秒,无可再调。真正的差距在两处:**IDE 还没接线**(RStudio 仍指向 1 个包的 Python314、Positron 未设),以及 **R 的多线程配置**。我把 R 这块的配置做到最优,并当场测。
+
+R 的画像清楚了:数据操作(data.table)已用 6 线程(=物理核数,合理);唯一真短板是**线性代数走单线程参考 BLAS**。我把「最优会话配置」写成可复用的启动片段(按本仓库铁律:线程设定放脚本、**不放 `.Rprofile`**,否则同一脚本换机器出不同结果),两端都写,并当场测。
+
+两端配置片段都测通。确认接线脚本指向的是最终选定的 `ds`(3.13),不是备选 ds314。
+
+实测完毕。给你一份「利其器」的完整对账——**装备本身已经调到最优,剩下的都是「连接」和「需要你的手/管理员」的事。**
+
+## 已经最优(本会话实测确认)
+
+| 装备 | 状态 | 证据 |
+|---|---|---|
+| **Python `ds` 环境** | ✅ 满配 | 742 包,OpenBLAS **12 线程**,2000² 矩阵乘 **0.079 秒** |
+| **R 库** | ✅ 到位 | 700 包,data.table **6 线程**(=物理核数,正确) |
+| **reticulate / R_LIBS 接线** | ✅ 已通 | `.Renviron` 已固定,实测生效 |
+| **会话最优配置片段** | ✅ 新增并测通 | `session_setup.R` / `.py`,两端都跑出正确线程数 |
+| **磁盘** | ✅ 58.6 GB 可用 | 休眠档已删、缓存已清、DISM 已压 |
+
+新交付、已测的两个片段在 `templates/信号分析/`:[session_setup.R](templates/信号分析/session_setup.R)、[session_setup.py](templates/信号分析/session_setup.py)——任何分析脚本开头 `source()`/`import` 一下,线程与随机种子就自动设成最优。按本仓库铁律,它们放脚本里、**不写进 `.Rprofile`**(否则同一脚本换机器出不同结果)。
+
+## 还差的三刀,全都要你亲手(我被沙箱/权限挡着)
+
+**① 接线——最高优先,不需要管理员** ⭐
+
+这是唯一真正的「卡脖子」:RStudio 的 Python 仍指向那个**只有 1 个包**的 Python314、Positron 未设解释器。**742 + 700 个包现在从 IDE 里根本够不着。** 脚本已备好、已确认指向 `ds`(3.13.15)。在你自己的普通 PowerShell(非管理员、非本 App)里跑一次:
+
+```powershell
+cd "$env:USERPROFILE\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\診斷操作系統"; .\Configure_IDEs.ps1 -WhatIf
+```
+先关掉 Positron,`-WhatIf` 看无误后去掉再跑。**这一刀不下,前面所有优化在日常工作里等于不存在。**
+
+**② 删 Windows.old——你已授权,省 37.69 GB**
+
+用正确方式(别 `rm`,会坏 servicing)。管理员 PowerShell:
+```powershell
+cleanmgr /sageset:1
+```
+弹窗里勾「**以前的 Windows 安装**」+「Windows 更新清理」,确定,再:
+```powershell
+cleanmgr /sagerun:1
+```
+或走 设置 → 系统 → 存储 → 临时文件。删完可用空间约到 95 GB。
+
+**③ R 的 BLAS——唯一的原始算力短板,但这一刀归 IT**
+
+R 现在走单线程参考 BLAS,纯线性代数比 Python 慢 10–65 倍(实测)。换成多线程 OpenBLAS 的 `Rblas.dll` 能补上——但这要:管理员权限写 `Program Files`、一个**可信来源**的 DLL,而这台是三套 DLP 管控的公司资产,往系统目录放外来 DLL **应该走 IT**,不该在这里随手做。换错了 R 起不来。所以我的建议不变:**列进给 IT 的清单,附「换前备份原 `Rblas.dll`」**,不自己动。
+
+## 一句话
+
+**「器」已经利好了——Python 满配满线程、R 700 包、会话配置调优并测过。** 真正剩下的只有一件日常必须的:**把三个 IDE 接到这套环境上**(跑 `Configure_IDEs.ps1`)。那一步做完,你打开 RStudio / Positron / PyCharm 就能直接用上全部 1400+ 个包——这才是「善其事」的起点。
+
+要我把这份「已优化 / 待接线 / 归 IT」整理成一页 checklist 存进仓库(和之前的 IT 报修单放一起),方便你对着一项项落地吗?
+
+## 提问十三
+
+### 提问
+
+好的，谢谢先生您。务必将这份「已优化 / 待接线 / 归 IT」整理成一页 checklist 存进仓库(和之前的 IT 报修单放一起)。
+
+### 解答
+
+好的,我这就把这份 checklist 写进仓库,和之前的 IT 报修单放一起。先扫一眼现状,确保清单里的数字都是当下实测的。
+
+清单已存进仓库,和三份 IT 报修单放在同一个 `診斷操作系統/` 目录里:
+
+[數據分析裝備_優化清單.md](診斷操作系統/數據分析裝備_優化清單.md)
+
+一页四段,可对着逐项打勾:
+
+- **A 已优化 ✅** — Python 742 包/12 线程、R 700 包、`.Renviron` 接线、会话配置片段、三个信号实验、磁盘 58.7 GB、快速启动已关。全是本会话实测数字。
+- **B 待接线 🔧**(你在普通 PowerShell 跑,不需管理员)—— B1 接线(最高优先,附 checkbox)、B2 删 Windows.old、B3 清 ds314。每项都写了确切命令和现况(Windows.old、ds314 **都还在**)。
+- **C 归 IT 🏢** —— R 的 BLAS 补强(附那张 65× 的实测对比表和「换前备份」要求),并注明可并入现有综合工单。
+- **D 落地顺序** —— 一句话:先 B1,再 B2/B3,C1 交 IT。
+
+里面所有指向别的脚本/报修单的地方都做成了可点链接,方便你和 IT 顺着走。
+
+内容都在 OneDrive 同步范围内,已经落盘。**注意:仓库里现在累积了不少未提交的改动**——这份新清单、`Configure_IDEs.ps1`、`Optimize_Disk.ps1`、`Install_R_Packages.R`、键盘安全稽核报修单、`templates/信号分析/` 那几个脚本、以及 `env/python-ds-requirements.lock.txt`(742 行)。按本仓库「动系统前先留可回溯基线」的规矩,要我把这些一起提交并推送到 `世博量化研究院` 分支吗?
+
+## 提问十三
+
+### 提问
+
+好的，不过GitHub只有`世博量化研究院`而非`main`或`master`。
+
+### 解答
+
+## 提问十四
+
+### 提问
+
+### 解答
+
+## 提问十五
 
 ### 提问
 
