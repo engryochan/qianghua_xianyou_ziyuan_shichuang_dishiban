@@ -42,6 +42,18 @@ if ([System.IO.File]::Exists($probe)) { [System.IO.File]::Delete($probe) }
 if ($redir) { Bad 'Writes are sandbox-redirected. Run from a normal PowerShell. Aborting.'; exit 2 }
 Ok 'Not sandboxed.'
 
+# 0b) no process may hold the interpreters. A running python / uv / IDE keeps a
+#     file handle open on the version being removed, and uv then fails the whole
+#     uninstall with "failed to remove directory ...: os error 5" (access denied).
+#     This is the actual cause of that error, not permissions. Catch it up front.
+$busy = Get-Process python, python3, pythonw, uv, pip, pycharm64, rsession, rstudio, Positron -EA SilentlyContinue
+if ($busy) {
+    Bad ('These processes lock the interpreters (this is what causes "os error 5"). Close them, then re-run: ' +
+         (($busy.Name | Sort-Object -Unique) -join ', '))
+    exit 7
+}
+Ok 'No Python / uv / IDE processes running.'
+
 # 1) locate uv
 $uv = Join-Path $env:USERPROFILE '.local\bin\uv.exe'
 if (-not (Test-Path $uv)) { $uv = (Get-Command uv -EA SilentlyContinue).Source }
@@ -78,7 +90,19 @@ $bundle = Get-ItemProperty $keys -EA SilentlyContinue |
     Where-Object { $_.DisplayName -eq 'Python 3.14.7 (64-bit)' -and $_.QuietUninstallString } |
     Select-Object -First 1
 if (-not $bundle) {
-    Warn 'System Python 3.14.7 bundle uninstall entry not found (already removed?). Skipping.'
+    Warn 'System Python 3.14.7 bundle uninstall entry not found (already uninstalled).'
+    # The bundle is gone but an empty leftover folder can remain. Remove it ONLY
+    # if it holds no executables (i.e. it is a genuine orphaned shell, not a live install).
+    $py314 = 'C:\Users\PPCCpcpc\AppData\Local\Programs\Python\Python314'
+    if (Test-Path $py314) {
+        $hasExe = Get-ChildItem $py314 -Recurse -Filter *.exe -EA SilentlyContinue | Select-Object -First 1
+        if ($hasExe) {
+            Warn "  $py314 still contains executables - NOT deleting. Inspect manually."
+        } elseif ($PSCmdlet.ShouldProcess($py314, 'remove orphaned empty leftover folder')) {
+            Remove-Item $py314 -Recurse -Force -EA SilentlyContinue
+            Ok "  Removed orphaned empty leftover folder: $py314"
+        }
+    }
 } else {
     Write-Host ('  uninstall string: ' + $bundle.QuietUninstallString)
     if ($PSCmdlet.ShouldProcess('system Python 3.14.7', 'uninstall /quiet')) {
