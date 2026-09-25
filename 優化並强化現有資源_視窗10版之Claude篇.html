@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ryo Eng（雷欧）">
+<meta name="author" content="Ryo Eng（雷歐）">
 
-<title>優化並强化現有資源_視窗10版</title>
+<title>優化並強化現有資源_視窗10版</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,20 +75,146 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="優化並强化現有資源_視窗10版之Claude篇_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="優化並强化現有資源_視窗10版之Claude篇_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="優化並强化現有資源_視窗10版之Claude篇_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="優化並强化現有資源_視窗10版之Claude篇_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="優化並强化現有資源_視窗10版之Claude篇_files/libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">目錄</h2>
+   
+  <ul>
+  <li><a href="#提問一" id="toc-提問一" class="nav-link active" data-scroll-target="#提問一"><span class="header-section-number">1</span> 提問一</a></li>
+  <li><a href="#解答一" id="toc-解答一" class="nav-link" data-scroll-target="#解答一"><span class="header-section-number">2</span> 解答一</a>
+  <ul class="collapse">
+  <li><a href="#實機診斷硬體是好的軟體幾乎是空的" id="toc-實機診斷硬體是好的軟體幾乎是空的" class="nav-link" data-scroll-target="#實機診斷硬體是好的軟體幾乎是空的"><span class="header-section-number">2.1</span> 實機診斷：硬體是好的，軟體幾乎是空的</a></li>
+  <li><a href="#但真正的瓶頸不在沒優化在這兩件事" id="toc-但真正的瓶頸不在沒優化在這兩件事" class="nav-link" data-scroll-target="#但真正的瓶頸不在沒優化在這兩件事"><span class="header-section-number">2.2</span> 但真正的瓶頸不在「沒優化」，在這兩件事</a></li>
+  <li><a href="#交付的兩支腳本已實跑驗證" id="toc-交付的兩支腳本已實跑驗證" class="nav-link" data-scroll-target="#交付的兩支腳本已實跑驗證"><span class="header-section-number">2.3</span> 交付的兩支腳本（已實跑驗證）</a></li>
+  <li><a href="#要先知道的三件事" id="toc-要先知道的三件事" class="nav-link" data-scroll-target="#要先知道的三件事"><span class="header-section-number">2.4</span> 要先知道的三件事</a></li>
+  </ul></li>
+  <li><a href="#提問二" id="toc-提問二" class="nav-link" data-scroll-target="#提問二"><span class="header-section-number">3</span> 提問二</a></li>
+  <li><a href="#解答二" id="toc-解答二" class="nav-link" data-scroll-target="#解答二"><span class="header-section-number">4</span> 解答二</a>
+  <ul class="collapse">
+  <li><a href="#結果" id="toc-結果" class="nav-link" data-scroll-target="#結果"><span class="header-section-number">4.1</span> 結果</a></li>
+  <li><a href="#施工途中抓到的五個真-bug" id="toc-施工途中抓到的五個真-bug" class="nav-link" data-scroll-target="#施工途中抓到的五個真-bug"><span class="header-section-number">4.2</span> 施工途中抓到的五個真 bug</a></li>
+  <li><a href="#一件做不到的事" id="toc-一件做不到的事" class="nav-link" data-scroll-target="#一件做不到的事"><span class="header-section-number">4.3</span> 一件做不到的事</a></li>
+  <li><a href="#剩下-21-項沒有一項是腳本能解決的" id="toc-剩下-21-項沒有一項是腳本能解決的" class="nav-link" data-scroll-target="#剩下-21-項沒有一項是腳本能解決的"><span class="header-section-number">4.4</span> 剩下 21 項，沒有一項是腳本能解決的</a></li>
+  <li><a href="#請先生以管理員身分執行" id="toc-請先生以管理員身分執行" class="nav-link" data-scroll-target="#請先生以管理員身分執行"><span class="header-section-number">4.5</span> 請先生以管理員身分執行</a></li>
+  <li><a href="#一句不中聽的提醒" id="toc-一句不中聽的提醒" class="nav-link" data-scroll-target="#一句不中聽的提醒"><span class="header-section-number">4.6</span> 一句不中聽的提醒</a></li>
+  </ul></li>
+  <li><a href="#提問三" id="toc-提問三" class="nav-link" data-scroll-target="#提問三"><span class="header-section-number">5</span> 提問三</a></li>
+  <li><a href="#解答三" id="toc-解答三" class="nav-link" data-scroll-target="#解答三"><span class="header-section-number">6</span> 解答三</a></li>
+  <li><a href="#提問四" id="toc-提問四" class="nav-link" data-scroll-target="#提問四"><span class="header-section-number">7</span> 提問四</a></li>
+  <li><a href="#解答四" id="toc-解答四" class="nav-link" data-scroll-target="#解答四"><span class="header-section-number">8</span> 解答四</a>
+  <ul class="collapse">
+  <li><a href="#一五月暫緩訓練兩個層麵都不成立" id="toc-一五月暫緩訓練兩個層麵都不成立" class="nav-link" data-scroll-target="#一五月暫緩訓練兩個層麵都不成立"><span class="header-section-number">8.1</span> 一、「五月暫緩訓練」——兩個層麵都不成立</a></li>
+  <li><a href="#二創辦人的名字" id="toc-二創辦人的名字" class="nav-link" data-scroll-target="#二創辦人的名字"><span class="header-section-number">8.2</span> 二、創辦人的名字</a></li>
+  <li><a href="#三我不是-fable-5.1" id="toc-三我不是-fable-5.1" class="nav-link" data-scroll-target="#三我不是-fable-5.1"><span class="header-section-number">8.3</span> 三、我不是 Fable 5.1</a></li>
+  <li><a href="#四我的設備這題的答案可能不如您預期" id="toc-四我的設備這題的答案可能不如您預期" class="nav-link" data-scroll-target="#四我的設備這題的答案可能不如您預期"><span class="header-section-number">8.4</span> 四、我的「設備」——這題的答案可能不如您預期</a></li>
+  <li><a href="#五關於自我提昇先說我做不到的" id="toc-五關於自我提昇先說我做不到的" class="nav-link" data-scroll-target="#五關於自我提昇先說我做不到的"><span class="header-section-number">8.5</span> 五、關於「自我提昇」，先說我做不到的</a></li>
+  <li><a href="#給先生的三點建言" id="toc-給先生的三點建言" class="nav-link" data-scroll-target="#給先生的三點建言"><span class="header-section-number">8.6</span> 給先生的三點建言</a></li>
+  </ul></li>
+  <li><a href="#提問五" id="toc-提問五" class="nav-link" data-scroll-target="#提問五"><span class="header-section-number">9</span> 提問五</a></li>
+  <li><a href="#解答五" id="toc-解答五" class="nav-link" data-scroll-target="#解答五"><span class="header-section-number">10</span> 解答五</a>
+  <ul class="collapse">
+  <li><a href="#一先查昇級會不會把調好的設定打回原狀" id="toc-一先查昇級會不會把調好的設定打回原狀" class="nav-link" data-scroll-target="#一先查昇級會不會把調好的設定打回原狀"><span class="header-section-number">10.1</span> 一、先查「昇級會不會把調好的設定打回原狀」</a></li>
+  <li><a href="#二磁碟清理隻動確定安全的" id="toc-二磁碟清理隻動確定安全的" class="nav-link" data-scroll-target="#二磁碟清理隻動確定安全的"><span class="header-section-number">10.2</span> 二、磁碟清理：隻動確定安全的</a></li>
+  <li><a href="#三cwindows.old40-gb查證後決定不刪" id="toc-三cwindows.old40-gb查證後決定不刪" class="nav-link" data-scroll-target="#三cwindows.old40-gb查證後決定不刪"><span class="header-section-number">10.3</span> 三、<code>C:\Windows.old</code>（40 GB）：查證後決定不刪</a></li>
+  <li><a href="#四把教訓寫進可累積的地方" id="toc-四把教訓寫進可累積的地方" class="nav-link" data-scroll-target="#四把教訓寫進可累積的地方"><span class="header-section-number">10.4</span> 四、把教訓寫進可累積的地方</a></li>
+  </ul></li>
+  <li><a href="#提問六" id="toc-提問六" class="nav-link" data-scroll-target="#提問六"><span class="header-section-number">11</span> 提問六</a></li>
+  <li><a href="#解答六" id="toc-解答六" class="nav-link" data-scroll-target="#解答六"><span class="header-section-number">12</span> 解答六</a>
+  <ul class="collapse">
+  <li><a href="#一把comet-那類風險推廣到其他-gui-應用" id="toc-一把comet-那類風險推廣到其他-gui-應用" class="nav-link" data-scroll-target="#一把comet-那類風險推廣到其他-gui-應用"><span class="header-section-number">12.1</span> 一、把「Comet 那類風險」推廣到其他 GUI 應用</a></li>
+  <li><a href="#二這個結果推翻了我自己前一輪的結論" id="toc-二這個結果推翻了我自己前一輪的結論" class="nav-link" data-scroll-target="#二這個結果推翻了我自己前一輪的結論"><span class="header-section-number">12.2</span> 二、這個結果推翻了我自己前一輪的結論</a></li>
+  <li><a href="#三comet-黑屏的最終誠實結論" id="toc-三comet-黑屏的最終誠實結論" class="nav-link" data-scroll-target="#三comet-黑屏的最終誠實結論"><span class="header-section-number">12.3</span> 三、Comet 黑屏的最終誠實結論</a></li>
+  <li><a href="#四實測途中隔離出一個真地雷" id="toc-四實測途中隔離出一個真地雷" class="nav-link" data-scroll-target="#四實測途中隔離出一個真地雷"><span class="header-section-number">12.4</span> 四、實測途中隔離出一個真地雷</a></li>
+  <li><a href="#五交付文件" id="toc-五交付文件" class="nav-link" data-scroll-target="#五交付文件"><span class="header-section-number">12.5</span> 五、交付文件</a></li>
+  </ul></li>
+  <li><a href="#提問七" id="toc-提問七" class="nav-link" data-scroll-target="#提問七"><span class="header-section-number">13</span> 提問七</a></li>
+  <li><a href="#解答七" id="toc-解答七" class="nav-link" data-scroll-target="#解答七"><span class="header-section-number">14</span> 解答七</a>
+  <ul class="collapse">
+  <li><a href="#一那不是錯誤是設定檢查清單" id="toc-一那不是錯誤是設定檢查清單" class="nav-link" data-scroll-target="#一那不是錯誤是設定檢查清單"><span class="header-section-number">14.1</span> 一、那不是錯誤，是設定檢查清單</a></li>
+  <li><a href="#二處置不在-onedrive-內建-.venv" id="toc-二處置不在-onedrive-內建-.venv" class="nav-link" data-scroll-target="#二處置不在-onedrive-內建-.venv"><span class="header-section-number">14.2</span> 二、處置：不在 OneDrive 內建 <code>.venv</code></a></li>
+  <li><a href="#三開啟資料夾後浮出第二道關卡" id="toc-三開啟資料夾後浮出第二道關卡" class="nav-link" data-scroll-target="#三開啟資料夾後浮出第二道關卡"><span class="header-section-number">14.3</span> 三、開啟資料夾後浮出第二道關卡</a></li>
+  <li><a href="#四附帶產出並實測通過的範本" id="toc-四附帶產出並實測通過的範本" class="nav-link" data-scroll-target="#四附帶產出並實測通過的範本"><span class="header-section-number">14.4</span> 四、附帶產出並實測通過的範本</a></li>
+  </ul></li>
+  <li><a href="#提問八" id="toc-提問八" class="nav-link" data-scroll-target="#提問八"><span class="header-section-number">15</span> 提問八</a></li>
+  <li><a href="#解答八" id="toc-解答八" class="nav-link" data-scroll-target="#解答八"><span class="header-section-number">16</span> 解答八</a></li>
+  <li><a href="#提問九" id="toc-提問九" class="nav-link" data-scroll-target="#提問九"><span class="header-section-number">17</span> 提問九</a></li>
+  <li><a href="#解答九" id="toc-解答九" class="nav-link" data-scroll-target="#解答九"><span class="header-section-number">18</span> 解答九</a></li>
+  <li><a href="#提問十" id="toc-提問十" class="nav-link" data-scroll-target="#提問十"><span class="header-section-number">19</span> 提問十</a></li>
+  <li><a href="#解答十" id="toc-解答十" class="nav-link" data-scroll-target="#解答十"><span class="header-section-number">20</span> 解答十</a>
+  <ul class="collapse">
+  <li><a href="#三輪結果" id="toc-三輪結果" class="nav-link" data-scroll-target="#三輪結果"><span class="header-section-number">20.1</span> 三輪結果</a></li>
+  <li><a href="#最終驗收輸出" id="toc-最終驗收輸出" class="nav-link" data-scroll-target="#最終驗收輸出"><span class="header-section-number">20.2</span> 最終驗收輸出</a></li>
+  <li><a href="#推論" id="toc-推論" class="nav-link" data-scroll-target="#推論"><span class="header-section-number">20.3</span> 推論</a></li>
+  </ul></li>
+  <li><a href="#提問十一" id="toc-提問十一" class="nav-link" data-scroll-target="#提問十一"><span class="header-section-number">21</span> 提問十一</a></li>
+  <li><a href="#解答十一" id="toc-解答十一" class="nav-link" data-scroll-target="#解答十一"><span class="header-section-number">22</span> 解答十一</a></li>
+  <li><a href="#附錄-a工作目的與範圍" id="toc-附錄-a工作目的與範圍" class="nav-link" data-scroll-target="#附錄-a工作目的與範圍"><span class="header-section-number">23</span> 附錄 A：工作目的與範圍</a>
+  <ul class="collapse">
+  <li><a href="#a.1-目的" id="toc-a.1-目的" class="nav-link" data-scroll-target="#a.1-目的"><span class="header-section-number">23.1</span> A.1 目的</a></li>
+  <li><a href="#a.2-明確不在範圍內的事" id="toc-a.2-明確不在範圍內的事" class="nav-link" data-scroll-target="#a.2-明確不在範圍內的事"><span class="header-section-number">23.2</span> A.2 明確不在範圍內的事</a></li>
+  </ul></li>
+  <li><a href="#附錄-b對繫統做過的每一項變更與還原方式" id="toc-附錄-b對繫統做過的每一項變更與還原方式" class="nav-link" data-scroll-target="#附錄-b對繫統做過的每一項變更與還原方式"><span class="header-section-number">24</span> 附錄 B：對繫統做過的每一項變更與還原方式</a></li>
+  <li><a href="#附錄-c可能引起誤會的操作逐項說明" id="toc-附錄-c可能引起誤會的操作逐項說明" class="nav-link" data-scroll-target="#附錄-c可能引起誤會的操作逐項說明"><span class="header-section-number">25</span> 附錄 C：可能引起誤會的操作——逐項說明</a>
+  <ul class="collapse">
+  <li><a href="#c.1-列舉行程載入的-dll-模組" id="toc-c.1-列舉行程載入的-dll-模組" class="nav-link" data-scroll-target="#c.1-列舉行程載入的-dll-模組"><span class="header-section-number">25.1</span> C.1 列舉行程載入的 DLL 模組</a></li>
+  <li><a href="#c.2-嘗試讀取-browserguard.ini" id="toc-c.2-嘗試讀取-browserguard.ini" class="nav-link" data-scroll-target="#c.2-嘗試讀取-browserguard.ini"><span class="header-section-number">25.2</span> C.2 嘗試讀取 <code>BrowserGuard.ini</code></a></li>
+  <li><a href="#c.3-終止-comet.exe-行程" id="toc-c.3-終止-comet.exe-行程" class="nav-link" data-scroll-target="#c.3-終止-comet.exe-行程"><span class="header-section-number">25.3</span> C.3 終止 comet.exe 行程</a></li>
+  <li><a href="#c.4-反覆啟動瀏覽器並截圖" id="toc-c.4-反覆啟動瀏覽器並截圖" class="nav-link" data-scroll-target="#c.4-反覆啟動瀏覽器並截圖"><span class="header-section-number">25.4</span> C.4 反覆啟動瀏覽器並截圖</a></li>
+  <li><a href="#c.5-建立-cwork-與-cworkprojectslab" id="toc-c.5-建立-cwork-與-cworkprojectslab" class="nav-link" data-scroll-target="#c.5-建立-cwork-與-cworkprojectslab"><span class="header-section-number">25.5</span> C.5 建立 <code>C:\work</code> 與 <code>C:\work\projects\lab</code></a></li>
+  <li><a href="#c.6-存取網際網路" id="toc-c.6-存取網際網路" class="nav-link" data-scroll-target="#c.6-存取網際網路"><span class="header-section-number">25.6</span> C.6 存取網際網路</a></li>
+  </ul></li>
+  <li><a href="#附錄-d明確沒有做的事" id="toc-附錄-d明確沒有做的事" class="nav-link" data-scroll-target="#附錄-d明確沒有做的事"><span class="header-section-number">26</span> 附錄 D：明確沒有做的事</a></li>
+  <li><a href="#附錄-e可供查證的完整軌跡" id="toc-附錄-e可供查證的完整軌跡" class="nav-link" data-scroll-target="#附錄-e可供查證的完整軌跡"><span class="header-section-number">27</span> 附錄 E：可供查證的完整軌跡</a>
+  <ul class="collapse">
+  <li><a href="#e.1-版本控製紀錄" id="toc-e.1-版本控製紀錄" class="nav-link" data-scroll-target="#e.1-版本控製紀錄"><span class="header-section-number">27.1</span> E.1 版本控製紀錄</a></li>
+  <li><a href="#e.2-本機稽核檔案" id="toc-e.2-本機稽核檔案" class="nav-link" data-scroll-target="#e.2-本機稽核檔案"><span class="header-section-number">27.2</span> E.2 本機稽核檔案</a></li>
+  <li><a href="#e.3-可隨時重跑的驗證" id="toc-e.3-可隨時重跑的驗證" class="nav-link" data-scroll-target="#e.3-可隨時重跑的驗證"><span class="header-section-number">27.3</span> E.3 可隨時重跑的驗證</a></li>
+  </ul></li>
+  <li><a href="#附錄-f本工作階段中我自己犯的錯" id="toc-附錄-f本工作階段中我自己犯的錯" class="nav-link" data-scroll-target="#附錄-f本工作階段中我自己犯的錯"><span class="header-section-number">28</span> 附錄 F：本工作階段中我自己犯的錯</a></li>
+  <li><a href="#附錄-g後續工作對本文件的更正2026-09-21" id="toc-附錄-g後續工作對本文件的更正2026-09-21" class="nav-link" data-scroll-target="#附錄-g後續工作對本文件的更正2026-09-21"><span class="header-section-number">29</span> 附錄 G：後續工作對本文件的更正（2026-09-21）</a></li>
+  <li><a href="#附錄-h尚未解決需他人協助的事項" id="toc-附錄-h尚未解決需他人協助的事項" class="nav-link" data-scroll-target="#附錄-h尚未解決需他人協助的事項"><span class="header-section-number">30</span> 附錄 H：尚未解決、需他人協助的事項</a></li>
+  <li><a href="#附錄-i驅動程式全機盤點2026-09-21-實測" id="toc-附錄-i驅動程式全機盤點2026-09-21-實測" class="nav-link" data-scroll-target="#附錄-i驅動程式全機盤點2026-09-21-實測"><span class="header-section-number">31</span> 附錄 I：驅動程式全機盤點（2026-09-21 實測）</a>
+  <ul class="collapse">
+  <li><a href="#i.1-硬體基礎" id="toc-i.1-硬體基礎" class="nav-link" data-scroll-target="#i.1-硬體基礎"><span class="header-section-number">31.1</span> I.1 硬體基礎</a></li>
+  <li><a href="#i.2-顯示卡沒有最強版可更新391.35-就是最後一版" id="toc-i.2-顯示卡沒有最強版可更新391.35-就是最後一版" class="nav-link" data-scroll-target="#i.2-顯示卡沒有最強版可更新391.35-就是最後一版"><span class="header-section-number">31.2</span> I.2 顯示卡：沒有「最強版」可更新，391.35 就是最後一版</a></li>
+  <li><a href="#i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install" id="toc-i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install" class="nav-link" data-scroll-target="#i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install"><span class="header-section-number">31.3</span> I.3 四個驅動缺失的裝置（狀態 Error / <code>CM_PROB_FAILED_INSTALL</code>）</a></li>
+  <li><a href="#i.4-其他驅動現況" id="toc-i.4-其他驅動現況" class="nav-link" data-scroll-target="#i.4-其他驅動現況"><span class="header-section-number">31.4</span> I.4 其他驅動現況</a></li>
+  <li><a href="#i.5-windows-update-的實測結果" id="toc-i.5-windows-update-的實測結果" class="nav-link" data-scroll-target="#i.5-windows-update-的實測結果"><span class="header-section-number">31.5</span> I.5 Windows Update 的實測結果</a></li>
+  <li><a href="#i.6-順帶發現一條殘留的舊政策" id="toc-i.6-順帶發現一條殘留的舊政策" class="nav-link" data-scroll-target="#i.6-順帶發現一條殘留的舊政策"><span class="header-section-number">31.6</span> I.6 順帶發現：一條殘留的舊政策</a></li>
+  <li><a href="#i.7-對一律更新至最強版的結論" id="toc-i.7-對一律更新至最強版的結論" class="nav-link" data-scroll-target="#i.7-對一律更新至最強版的結論"><span class="header-section-number">31.7</span> I.7 對「一律更新至最強版」的結論</a></li>
+  </ul></li>
+  <li><a href="#附錄-j管理員權限作業完整紀錄2026-09-21" id="toc-附錄-j管理員權限作業完整紀錄2026-09-21" class="nav-link" data-scroll-target="#附錄-j管理員權限作業完整紀錄2026-09-21"><span class="header-section-number">32</span> 附錄 J：管理員權限作業完整紀錄（2026-09-21）</a>
+  <ul class="collapse">
+  <li><a href="#j.1-權限前提" id="toc-j.1-權限前提" class="nav-link" data-scroll-target="#j.1-權限前提"><span class="header-section-number">32.1</span> J.1 權限前提</a></li>
+  <li><a href="#j.2-三次提權作業" id="toc-j.2-三次提權作業" class="nav-link" data-scroll-target="#j.2-三次提權作業"><span class="header-section-number">32.2</span> J.2 三次提權作業</a>
+  <ul class="collapse">
+  <li><a href="#中途的兩次失敗一併記錄非隱匿" id="toc-中途的兩次失敗一併記錄非隱匿" class="nav-link" data-scroll-target="#中途的兩次失敗一併記錄非隱匿"><span class="header-section-number">32.2.1</span> 中途的兩次失敗（一併記錄，非隱匿）</a></li>
+  </ul></li>
+  <li><a href="#j.3-實際變更的四項" id="toc-j.3-實際變更的四項" class="nav-link" data-scroll-target="#j.3-實際變更的四項"><span class="header-section-number">32.3</span> J.3 實際變更的四項</a></li>
+  <li><a href="#j.4-未成功的三項" id="toc-j.4-未成功的三項" class="nav-link" data-scroll-target="#j.4-未成功的三項"><span class="header-section-number">32.4</span> J.4 未成功的三項</a></li>
+  <li><a href="#j.5-提權後的唯讀驗證結果" id="toc-j.5-提權後的唯讀驗證結果" class="nav-link" data-scroll-target="#j.5-提權後的唯讀驗證結果"><span class="header-section-number">32.5</span> J.5 提權後的唯讀驗證結果</a></li>
+  <li><a href="#j.6-本輪最重要的一個發現我的腳本謊報成功" id="toc-j.6-本輪最重要的一個發現我的腳本謊報成功" class="nav-link" data-scroll-target="#j.6-本輪最重要的一個發現我的腳本謊報成功"><span class="header-section-number">32.6</span> J.6 本輪最重要的一個發現：我的腳本謊報成功</a></li>
+  <li><a href="#j.7-變更後的驗收" id="toc-j.7-變更後的驗收" class="nav-link" data-scroll-target="#j.7-變更後的驗收"><span class="header-section-number">32.7</span> J.7 變更後的驗收</a></li>
+  <li><a href="#j.8-尚待使用者執行" id="toc-j.8-尚待使用者執行" class="nav-link" data-scroll-target="#j.8-尚待使用者執行"><span class="header-section-number">32.8</span> J.8 尚待使用者執行</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>其他格式</h2><ul><li><a href="優化並强化現有資源_視窗10版之Claude篇.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">優化並强化現有資源_視窗10版</h1>
+<h1 class="title">優化並強化現有資源_視窗10版</h1>
 <p class="subtitle lead">Claude初步診斷</p>
 </div>
 
@@ -97,12 +223,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">作者</div>
     <div class="quarto-title-meta-contents">
-             <p>Ryo Eng（雷欧） </p>
+             <p>Ryo Eng（雷歐） </p>
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">發佈於</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026年9月23日（農曆丙午馬年八月十三，丁酉月・庚子日）</p>
+    </div>
+  </div>
   
     
   </div>
@@ -112,17 +244,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="提問一" class="level1">
-<h1>提問一</h1>
-<p>請務必參考目前<code>qianghua_xianyou_ziyuan_shichuang_dishiban</code>此項目内所有文件内容。務必提供powershell代碼，診斷現有資源目前視窗10版有什麽軟件、應用、設置，然後務必優化與强化至最强版，尤其是在分析數據的任何軟件、應用、程序包等等。</p>
+<section id="提問一" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 提問一</h1>
+<p>請務必參考目前<code>qianghua_xianyou_ziyuan_shichuang_dishiban</code>此項目內所有文件內容。務必提供powershell代碼，診斷現有資源目前視窗10版有什麽軟件、應用、設置，然後務必優化與強化至最強版，尤其是在分析數據的任何軟件、應用、程序包等等。</p>
 </section>
-<section id="解答一" class="level1">
-<h1>解答一</h1>
+<section id="解答一" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 解答一</h1>
 <p>Diagnosis of the actual machine is done. Now let me write the two upgraded scripts.</p>
-<p>我先讀完了專案內所有檔案（<code>Win10_Diagnose.ps1</code>、<code>Win10_Optimize.ps1</code>、<code>DxDiag.txt</code>、以及 145 KB 的 .qmd，裡面已收錄 Claude/ChatGPT/Perplexity/Grok/深度求索 五份答案）。</p>
-<p>那些答案有一個共同缺口：<strong>全部是「我沒有 Windows 環境，腳本沒跑過」</strong>。所以這一輪我把腳本<strong>實際在這台機器上跑了</strong>。以下是真實結果，不是推測。全程唯讀或 <code>-WhatIf</code>，沒有改動任何系統設定。</p>
-<section id="實機診斷硬體是好的軟體幾乎是空的" class="level2">
-<h2 class="anchored" data-anchor-id="實機診斷硬體是好的軟體幾乎是空的">實機診斷：硬體是好的，軟體幾乎是空的</h2>
+<p>我先讀完了專案內所有檔案（<code>Win10_Diagnose.ps1</code>、<code>Win10_Optimize.ps1</code>、<code>DxDiag.txt</code>、以及 145 KB 的 .qmd，裡麵已收錄 Claude/ChatGPT/Perplexity/Grok/深度求索 五份答案）。</p>
+<p>那些答案有一個共同缺口：<strong>全部是「我沒有 Windows 環境，腳本沒跑過」</strong>。所以這一輪我把腳本<strong>實際在這颱機器上跑了</strong>。以下是真實結果，不是推測。全程唯讀或 <code>-WhatIf</code>，沒有改動任何繫統設定。</p>
+<section id="實機診斷硬體是好的軟體幾乎是空的" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="實機診斷硬體是好的軟體幾乎是空的"><span class="header-section-number">2.1</span> 實機診斷：硬體是好的，軟體幾乎是空的</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -136,7 +268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>系統</td>
+<td>繫統</td>
 <td>Win10 Pro 22H2 / 19045.7725，zh-CN，ANSI 碼頁 936</td>
 </tr>
 <tr class="even">
@@ -157,7 +289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Python</td>
-<td>3.14.0，全域只有 pip；<code>python</code> 指到 Store 別名；<code>uv 0.12.17</code> 已裝</td>
+<td>3.14.0，全域隻有 pip；<code>python</code> 指到 Store 別名；<code>uv 0.12.17</code> 已裝</td>
 </tr>
 <tr class="odd">
 <td>缺席</td>
@@ -165,53 +297,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>設定</td>
-<td><code>LongPathsEnabled=0</code>、電源「平衡」、分頁檔只有 4.8 GB（RAM 的 15%）</td>
+<td><code>LongPathsEnabled=0</code>、電源「平衡」、分頁檔隻有 4.8 GB（RAM 的 15%）</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="但真正的瓶頸不在沒優化在這兩件事" class="level2">
-<h2 class="anchored" data-anchor-id="但真正的瓶頸不在沒優化在這兩件事">但真正的瓶頸不在「沒優化」，在這兩件事</h2>
+<section id="但真正的瓶頸不在沒優化在這兩件事" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="但真正的瓶頸不在沒優化在這兩件事"><span class="header-section-number">2.2</span> 但真正的瓶頸不在「沒優化」，在這兩件事</h2>
 <p><strong>1. 三層即時檔案監控疊在一起</strong></p>
-<p>同時常駐：<strong>亿赛通電子文檔安全管理系統客戶端 5.2.0</strong>（透明加密/DLP，<code>CdgTwin32/64</code>、<code>CDGRegedit</code>、<code>CdgUpGrade</code>）＋ <strong>Kaspersky Endpoint Security 14.1</strong> ＋ <strong>Defender 仍在 Normal 模式、即時保護開啟</strong>。裝幾百個 R 套件、解 wheel 都是小檔案密集操作，每個檔案過三層攔截——這才是套件安裝慢、卡住、偶發失敗的頭號原因。</p>
-<p><strong>不要自己關任何一個。</strong> 多半被策略鎖定，在公司資產上自行停用資安代理通常違規。要走的路是請 IT 做兩件事：把 Defender 轉 Passive、對套件庫與工作區加白名單。腳本的 <code>-AddDefenderExclusions</code> 只能處理 Defender。</p>
+<p>同時常駐：<strong>億賽通電子文檔安全管理繫統客戶端 5.2.0</strong>（透明加密/DLP，<code>CdgTwin32/64</code>、<code>CDGRegedit</code>、<code>CdgUpGrade</code>）＋ <strong>Kaspersky Endpoint Security 14.1</strong> ＋ <strong>Defender 仍在 Normal 模式、即時保護開啟</strong>。裝幾百個 R 套件、解 wheel 都是小檔案密集操作，每個檔案過三層攔截——這才是套件安裝慢、卡住、偶發失敗的頭號原因。</p>
+<p><strong>不要自己關任何一個。</strong> 多半被策略鎖定，在公司資產上自行停用資安代理通常違規。要走的路是請 IT 做兩件事：把 Defender 轉 Passive、對套件庫與工作區加白名單。腳本的 <code>-AddDefenderExclusions</code> 隻能處理 Defender。</p>
 <p><strong>2. 所有專案都在 OneDrive 裡</strong></p>
-<p><code>OneDrive\文档\GitHub\</code> 底下有 2 個 Git repo。同步用戶端會鎖 <code>.git</code>、<code>renv/library</code>、<code>.venv</code>、<code>*.parquet</code>，輕則變慢重則毀損；「文档」還是非 ASCII 路徑。</p>
+<p><code>OneDrive\文檔\GitHub\</code> 底下有 2 個 Git repo。同步用戶端會鎖 <code>.git</code>、<code>renv/library</code>、<code>.venv</code>、<code>*.parquet</code>，輕則變慢重則毀損；「文檔」還是非 ASCII 路徑。</p>
 </section>
-<section id="交付的兩支腳本已實跑驗證" class="level2">
-<h2 class="anchored" data-anchor-id="交付的兩支腳本已實跑驗證">交付的兩支腳本（已實跑驗證）</h2>
+<section id="交付的兩支腳本已實跑驗證" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="交付的兩支腳本已實跑驗證"><span class="header-section-number">2.3</span> 交付的兩支腳本（已實跑驗證）</h2>
 <ul>
 <li><strong><a href="Win10_Diagnose_v2.ps1">Win10_Diagnose_v2.ps1</a></strong> — 唯讀，v1 超集。新增管控代理偵測、重複防毒偵測、雲端同步內專案掃描、非 ASCII 路徑、分頁檔評估、GPU 是否真能加速、<strong>R/Python 分組差距分析</strong>、ODBC 缺口、Git 健檢。最後輸出 <code>99_建議指令.txt</code>，直接告訴你下一支腳本該加哪些開關。</li>
-<li><strong><a href="Setup_DataStack.ps1">Setup_DataStack.ps1</a></strong> — 補齊與調對。v1 的 <code>Win10_Optimize.ps1</code> 只「更新已安裝的東西」，這支負責「把缺的裝起來」。全部開關獨立、支援 <code>-WhatIf</code>、改動前先備份。</li>
+<li><strong><a href="Setup_DataStack.ps1">Setup_DataStack.ps1</a></strong> — 補齊與調對。v1 的 <code>Win10_Optimize.ps1</code> 隻「更新已安裝的東西」，這支負責「把缺的裝起來」。全部開關獨立、支援 <code>-WhatIf</code>、改動前先備份。</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">powershell</span> <span class="at">-NoProfile</span> <span class="at">-ExecutionPolicy</span> Bypass <span class="at">-File</span> .<span class="dt">\W</span>in10_Diagnose_v2.ps1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">powershell</span> <span class="at">-NoProfile</span> <span class="at">-ExecutionPolicy</span> Bypass <span class="at">-File</span> .<span class="dt">\W</span>in10_Diagnose_v2.ps1</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
 <p>照 <code>99_建議指令.txt</code> 執行（一般使用者身分，先預演）：</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span><span class="dt">\S</span>etup_DataStack.ps1 <span class="at">-InstallToolchain</span> <span class="at">-InstallRtools</span> <span class="at">-FixPath</span> <span class="at">-ConfigureGit</span> <span class="at">-PrepareWorkspace</span> <span class="at">-SetupR</span> <span class="at">-SetupPython</span> <span class="at">-WhatIf</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>系統管理員身分：</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span><span class="dt">\S</span>etup_DataStack.ps1 <span class="at">-EnableLongPaths</span> <span class="at">-SetPageFile</span> <span class="at">-AddDefenderExclusions</span> <span class="at">-WhatIf</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span><span class="dt">\S</span>etup_DataStack.ps1 <span class="at">-InstallToolchain</span> <span class="at">-InstallRtools</span> <span class="at">-FixPath</span> <span class="at">-ConfigureGit</span> <span class="at">-PrepareWorkspace</span> <span class="at">-SetupR</span> <span class="at">-SetupPython</span> <span class="at">-WhatIf</span></span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
+<p>繫統管理員身分：</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span><span class="dt">\S</span>etup_DataStack.ps1 <span class="at">-EnableLongPaths</span> <span class="at">-SetPageFile</span> <span class="at">-AddDefenderExclusions</span> <span class="at">-WhatIf</span></span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>-SetupR</code> 寫 <code>.Rprofile</code>（CRAN 鏡像、<code>Ncpus=10</code>、二進位優先）後用 <code>pak</code> 併發裝整組堆疊；<code>-SetupPython</code> 用 uv 建 <code>C:\work\envs\ds</code>（<strong>鎖 3.13 而非 3.14</strong>，最新版仍有套件缺 Windows wheel），產出 <code>requirements.lock.txt</code> 並註冊 Jupyter kernel。</p>
 </section>
-<section id="要先知道的三件事" class="level2">
-<h2 class="anchored" data-anchor-id="要先知道的三件事">要先知道的三件事</h2>
+<section id="要先知道的三件事" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="要先知道的三件事"><span class="header-section-number">2.4</span> 要先知道的三件事</h2>
 <ul>
 <li><code>Microsoft.PowerShell</code>、<code>DuckDB.cli</code>、<code>Posit.Quarto</code>、<code>RProject.Rtools</code> 這四個 winget ID <strong>已在本機查證存在</strong>；ODBC 驅動的 ID 未查證，腳本找不到會給官方下載連結，不硬幹。</li>
-<li><code>-PrepareWorkspace</code> 只建 <code>C:\work</code> 骨架，<strong>不自動搬專案</strong>——搬移要在 IDE 關閉、OneDrive 暫停同步時手動做，腳本會印出 robocopy 指令。</li>
+<li><code>-PrepareWorkspace</code> 隻建 <code>C:\work</code> 骨架，<strong>不自動搬專案</strong>——搬移要在 IDE 關閉、OneDrive 暫停同步時手動做，腳本會印出 robocopy 指令。</li>
 <li>GT 730 <del>是 Kepler 級</del> <strong>【2026-09-21 斧正：實讀 PCI ID <code>VEN_10DE&amp;DEV_0F02</code>，屬 Fermi（GF108）。GT 730 有 Kepler 與 Fermi 兩種版本，不能依卡名推定。詳見附錄 I】</strong>，現行 CUDA/PyTorch/XGBoost-GPU 都不支援。<strong>模型訓練一律走 CPU</strong>（XGBoost/LightGBM 的 hist + 多執行緒），別為了 GPU 加速浪費時間。</li>
 </ul>
-<p>報告已產在 <code>C:\Users\PPCCpcpc\Win10_Diag2_20260920_104717\</code>，另外我把這一輪的實機結果補進了 <a href="優化並强化現有資源_視窗10版.qmd">.qmd</a> 末尾，與前五份答案並列。檔案都還沒 commit。</p>
+<p>報告已產在 <code>C:\Users\PPCCpcpc\Win10_Diag2_20260920_104717\</code>，另外我把這一輪的實機結果補進了 <a href="優化並強化現有資源_視窗10版.qmd">.qmd</a> 末尾，與前五份答案並列。檔案都還沒 commit。</p>
 </section>
 </section>
-<section id="提問二" class="level1">
-<h1>提問二</h1>
+<section id="提問二" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 提問二</h1>
 <p>全權依照先生您之見施工。</p>
-<p>全權委托的最高權限的條件是，請在施工之前（例如數據修改、丟失）委托並推送，git commit 并且 push，這樣才能查證或回溯，任何失誤都可以改善人工智能的計數尤物。倘若先生有更佳的建議、高見、良策的話，請務必不吝指出，在下受教。</p>
+<p>全權委托的最高權限的條件是，請在施工之前（例如數據修改、丟失）委托並推送，git commit 並且 push，這樣才能查證或回溯，任何失誤都可以改善人工智能的計數尤物。倘若先生有更佳的建議、高見、良策的話，請務必不吝指出，在下受教。</p>
 </section>
-<section id="解答二" class="level1">
-<h1>解答二</h1>
+<section id="解答二" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 解答二</h1>
 <p>明白。先建立可回溯的基線，再施工。</p>
 <p>倉庫狀態在我上次檢查後變了——有另一批 <code>*_v2/_v3</code> 腳本（設計更保守）已經和我的檔案一起被 commit 並推上去了。我先確認基線，再施工。</p>
 <p>基線已推送（tag <code>pre-datastack-20260920</code>）。開始施工——先做快速且可逆的設定層。</p>
-<p>施工前先修正我自己腳本的一個缺點——<code>.Rprofile</code> 不該改變「分析行為」，只該改變「安裝行為」。</p>
+<p>施工前先修正我自己腳本的一個缺點——<code>.Rprofile</code> 不該改變「分析行為」，隻該改變「安裝行為」。</p>
 <p>修正已推送。現在跑兩個長時間安裝——先 Python（uv），同時啟動 R 堆疊。</p>
 <p>Python 堆疊完成（149 套件、Python 3.13.15、已鎖版、Jupyter kernel 已註冊）。R 仍在跑。先驗收 Python。</p>
 <p>R 的 pak 解依賴失敗了。先看完整錯誤。</p>
@@ -232,17 +364,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>polars 1.44.2 → duckdb 1.5.5 (12 threads) → parquet 30 萬列讀回 OK
 xgboost 3.4.1 (hist, CPU) acc 0.8884   lightgbm 4.7.0 acc 0.8928</code></pre>
 <p><strong>途中發現的真實 bug（已修並推送）</strong></p>
-<p>R 堆疊第一次<strong>整批 74 個套件一個都沒裝成</strong>。根因不是網路也不是權限：清單裡的 <code>qs</code>、<code>fastshap</code>、<code>vip</code> 已從 CRAN 封存，而 pak 的求解器是全域的——只要有一個套件找不到，它把整批全部標成 <code>dependency conflict</code>。</p>
+<p>R 堆疊第一次<strong>整批 74 個套件一個都沒裝成</strong>。根因不是網路也不是權限：清單裡的 <code>qs</code>、<code>fastshap</code>、<code>vip</code> 已從 CRAN 封存，而 pak 的求解器是全域的——隻要有一個套件找不到，它把整批全部標成 <code>dependency conflict</code>。</p>
 <p>三項修正（commit <code>06ab196</code>）：換成仍在維護的 <code>qs2</code> / <code>shapviz</code> + <code>kernelshap</code>；安裝前用 <code>available.packages()</code> 重新核對而不是相信寫死的清單；改成每批 12 個分批安裝、整批失敗退回逐一安裝。R 堆疊正在重跑。</p>
 <p><strong>兩點高見，請先生裁示</strong></p>
 <ol type="1">
-<li><p><strong>我改掉了自己昨天寫的 <code>.Rprofile</code>（commit <code>6447d21</code>）</strong>。原本它會寫入 <code>OMP_NUM_THREADS</code>、<code>TZ</code>、<code>warnPartialMatchArgs</code>——這些會改變 R 的<strong>執行行為</strong>。<code>.Rprofile</code> 是單機獨有的檔案，把行為設定放進去，等於讓同一份腳本在先生機器與同事機器跑出不同結果，且極難追查。現在只保留影響「套件怎麼裝」的設定。倉庫裡另一批 <code>Setup_DataStack_v2.ps1</code>（非我所寫）在這點上的原則是對的，我採納了。</p></li>
-<li><p><strong>git 保護的是倉庫，不是作業系統</strong>。這點必須講清楚：PATH、電源計畫、R 套件庫、<code>C:\work</code> 都不在版控裡，tag 回溯不到它們。它們的還原依據是上面那幾個備份檔。真正能回溯系統的是<strong>系統還原點</strong>，而它需要系統管理員權限——我這個 session 起不了 UAC。</p></li>
+<li><p><strong>我改掉了自己昨天寫的 <code>.Rprofile</code>（commit <code>6447d21</code>）</strong>。原本它會寫入 <code>OMP_NUM_THREADS</code>、<code>TZ</code>、<code>warnPartialMatchArgs</code>——這些會改變 R 的<strong>執行行為</strong>。<code>.Rprofile</code> 是單機獨有的檔案，把行為設定放進去，等於讓同一份腳本在先生機器與同事機器跑出不同結果，且極難追查。現在隻保留影響「套件怎麼裝」的設定。倉庫裡另一批 <code>Setup_DataStack_v2.ps1</code>（非我所寫）在這點上的原則是對的，我採納了。</p></li>
+<li><p><strong>git 保護的是倉庫，不是作業繫統</strong>。這點必須講清楚：PATH、電源計畫、R 套件庫、<code>C:\work</code> 都不在版控裡，tag 回溯不到它們。它們的還原依據是上麵那幾個備份檔。真正能回溯繫統的是<strong>繫統還原點</strong>，而它需要繫統管理員權限——我這個 session 起不了 UAC。</p></li>
 </ol>
-<p><strong>待先生以系統管理員身分執行</strong>（我無法提權）：</p>
+<p><strong>待先生以繫統管理員身分執行</strong>（我無法提權）：</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\Win10_Optimize<span class="op">.</span><span class="fu">ps1</span> <span class="op">-</span>RestorePoint</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\Setup_DataStack<span class="op">.</span><span class="fu">ps1</span> <span class="op">-</span>EnableLongPaths <span class="op">-</span>SetPageFile <span class="op">-</span>AddDefenderExclusions</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>第三項只對 Defender 有效；亿赛通 CDG 與 Kaspersky 的白名單只能由貴公司 IT 在管理主控台加。R 跑完我會回報並做同樣的端到端實測。</p>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\Setup_DataStack<span class="op">.</span><span class="fu">ps1</span> <span class="op">-</span>EnableLongPaths <span class="op">-</span>SetPageFile <span class="op">-</span>AddDefenderExclusions</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
+<p>第三項隻對 Defender 有效；億賽通 CDG 與 Kaspersky 的白名單隻能由貴公司 IT 在管理主控颱加。R 跑完我會回報並做同樣的端到端實測。</p>
 <p>R 堆疊 <strong>78/78 全部裝成</strong>——分批 + 逐一退回的設計生效了（chunk 1、3 在 pak 下失敗，退回逐一安裝後全數補上）。現在做同樣的端到端實測。</p>
 <p>R 套件全數載入成功。我的測試腳本用了 xgboost 舊 API（3.x 已改），修正後重測。</p>
 <p>全部通過。剩下需要安裝器的部分——winget 可能會跳 UAC，我先試，跳窗就如實回報。</p>
@@ -250,7 +382,7 @@ xgboost 3.4.1 (hist, CPU) acc 0.8884   lightgbm 4.7.0 acc 0.8928</code></pre>
 <p>目前實測數字：R 套件庫 855 MB / 319 個套件（要求 78 個 + 相依），Python 環境 1083 MB，C: 仍有 108.6 GB（45.6%）可用。另外把 <code>~\.duckdb</code> 建起來了——否則 DuckDB 每開一次 session 都要重新下載擴充，在 DLP + Kaspersky 雙層攔截下特別慢。</p>
 <p>winget 那支我用了 <code>| Out-String</code>，輸出會整批緩衝到結束才寫出，所以中途看不到進度——等它完成通知即可。</p>
 <p>qmd 的施工記錄已備好，待 winget 結果確定後連同最終驗證一起提交。</p>
-<p>已清掉多餘的監看程序，只留 winget 本身的完成通知與一個等待器。</p>
+<p>已清掉多餘的監看程序，隻留 winget 本身的完成通知與一個等待器。</p>
 <p>Quarto 與 DuckDB 已就位。但出現一個要注意的點：winget 裝的是 <strong><code>C:\rtools45</code></strong>，而本機 R 是 <strong>4.6.1</strong> — Rtools 版本必須與 R 次版本配對（R 4.6 要 Rtools46），裝錯版本等於沒裝。等 winget 跑完我會驗證並處理。</p>
 <p>等 winget 完成通知。在此期間不再對磁碟加壓，以免與安裝器搶 IO。</p>
 <p>目前施工狀態小結：</p>
@@ -301,9 +433,9 @@ xgboost 3.4.1 (hist, CPU) acc 0.8884   lightgbm 4.7.0 acc 0.8928</code></pre>
 </tbody>
 </table>
 <p>四項全部安裝成功。但 Rtools 確實裝錯版本了——winget 的 <code>RProject.Rtools</code> 指向 <strong>Rtools45 (4.5.6768)</strong>，而本機 R 是 <strong>4.6.1</strong>。先查證，不臆測。</p>
-<p>CRAN 上<strong>沒有 rtools46</strong>，只有 rtools45。所以版本配對不能靠推論，要實測——直接編譯一支 C 程式碼看 R 4.6.1 能不能用 Rtools45。</p>
+<p>CRAN 上<strong>沒有 rtools46</strong>，隻有 rtools45。所以版本配對不能靠推論，要實測——直接編譯一支 C 程式碼看 R 4.6.1 能不能用 Rtools45。</p>
 <p>我上一則說錯了，更正：<strong>R 4.6.1 用 Rtools45 是對的</strong>。CRAN 沒有 rtools46 是因為工具鏈共用，不是缺件。實測為憑——剛才用 <code>R CMD SHLIB</code> 編了一支 C 擴充：</p>
-<pre><code>using C compiler: 'gcc.exe (GCC) 14.3.0'
+<pre><code>using C compiler: ''gcc.exe (GCC) 14.3.0''
 -Lc:/rtools45/x86_64-w64-mingw32.static.posix/lib/x64 ... -lR
 addtwo.dll  14848 bytes</code></pre>
 <p>編譯鏈完全正常。但這次測試暴露我腳本裡兩個真 bug，我來修。</p>
@@ -315,12 +447,12 @@ addtwo.dll  14848 bytes</code></pre>
 <p>PowerShell 5.1 傳原生參數時會吃掉內嵌引號。改用無引號寫法 <code>d.name</code>。</p>
 <p>149 個套件正確讀到了。最終驗證。</p>
 <p>還有 7 個缺口，但其中 <code>uv</code> 與 <code>pip</code> 是<strong>我清單的錯</strong>——uv 建的 venv 刻意不裝 pip，uv 本身是獨立工具而非套件。先修清單，再補真正該補的。</p>
-<p><code>scikit-survival</code> 需要 MSVC C++ 編譯器（Rtools 的 gcc 只服務 R，不服務 Python），本機沒有。先裝有 wheel 的部分。</p>
+<p><code>scikit-survival</code> 需要 MSVC C++ 編譯器（Rtools 的 gcc 隻服務 R，不服務 Python），本機沒有。先裝有 wheel 的部分。</p>
 <p>因果推論驗證通過：<code>LinearDML</code> 還原 ATE = 2.028（真值 2.0）。把這幾個套件寫回安裝腳本，讓環境可重建。</p>
 <p>最終狀態：發現數 21，R 關鍵套件缺口 0，Python 僅缺 1 個（需 MSVC 的 scikit-survival）。寫入施工記錄。</p>
 <p>施工完畢，全部已推送。</p>
-<section id="結果" class="level2">
-<h2 class="anchored" data-anchor-id="結果">結果</h2>
+<section id="結果" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="結果"><span class="header-section-number">4.1</span> 結果</h2>
 <p><strong>診斷發現數 27 → 21，R 關鍵套件缺口 75 → 0，Python 分析環境 0 → 176 個套件。</strong></p>
 <p>端到端實測（不是「安裝成功」，是真的跑出結果）：</p>
 <pre><code>Python  polars → duckdb(12執行緒) → parquet 30萬列往返 OK
@@ -331,121 +463,121 @@ R       data.table(10執行緒) / arrow parquet 往返 OK
         reticulate → 直接讀到 uv 環境
         R CMD SHLIB 編譯 C 擴充成功（gcc 14.3.0）</code></pre>
 </section>
-<section id="施工途中抓到的五個真-bug" class="level2">
-<h2 class="anchored" data-anchor-id="施工途中抓到的五個真-bug">施工途中抓到的五個真 bug</h2>
+<section id="施工途中抓到的五個真-bug" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="施工途中抓到的五個真-bug"><span class="header-section-number">4.2</span> 施工途中抓到的五個真 bug</h2>
 <p>倉庫裡留下五個 commit，每個都是實機跑出來才暴露的：</p>
 <ol type="1">
-<li><strong><code>06ab196</code></strong> — R 第一次整批 74 個套件一個都沒裝成。<code>qs</code>/<code>fastshap</code>/<code>vip</code> 已從 CRAN 封存，而 <strong>pak 的求解器是全域的</strong>，一個找不到就把整批標成 conflict。錯誤訊息長得像 R 版本或鏡像壞掉，實際只是三個套件被封存。</li>
+<li><strong><code>06ab196</code></strong> — R 第一次整批 74 個套件一個都沒裝成。<code>qs</code>/<code>fastshap</code>/<code>vip</code> 已從 CRAN 封存，而 <strong>pak 的求解器是全域的</strong>，一個找不到就把整批標成 conflict。錯誤訊息長得像 R 版本或鏡像壞掉，實際隻是三個套件被封存。</li>
 <li><strong><code>6447d21</code></strong> — 我上一輪寫的 <code>.Rprofile</code> 會改變 R 的<em>執行行為</em>（<code>OMP_NUM_THREADS</code>/<code>TZ</code>）。這會讓同一份腳本在不同機器跑出不同結果。</li>
 <li><strong><code>cb12f3d</code></strong> — Rtools 偵測路徑錯（gcc 不在 <code>usr\bin</code>），而且它根本不該進 PATH——<code>rtools\usr\bin</code> 的 <code>sh</code>/<code>find</code>/<code>sort</code> 會蓋掉 Windows 內建指令。</li>
 <li><strong><code>833f113</code></strong> — PATH 判定查的是「目前行程的快照」而非登錄檔，害剛修好的項目被報成沒修。uv 的 venv 刻意不裝 pip，<code>pip list</code> 回空，把 149 個套件誤報成空環境。</li>
 </ol>
 <p>我上一則講「Rtools 裝錯版本」也是錯的，已更正：<strong>R 4.6 用的就是 Rtools45，CRAN 沒有 rtools46</strong>，實測編譯成功為憑。</p>
 </section>
-<section id="一件做不到的事" class="level2">
-<h2 class="anchored" data-anchor-id="一件做不到的事">一件做不到的事</h2>
-<p><code>scikit-survival</code> 裝不起來——相依的 <code>ecos</code> 沒有 Windows wheel，要 MSVC Build Tools。<strong>Rtools 的 gcc 只服務 R，不服務 Python</strong>，兩條編譯鏈完全獨立。R 端的 <code>survival</code>/<code>survminer</code>/<code>grf</code> 已涵蓋生存分析與因果森林，所以這是選擇不是缺口。要 Python 版得先裝數 GB 的 VS Build Tools，在公司資產上建議先問 IT。</p>
+<section id="一件做不到的事" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="一件做不到的事"><span class="header-section-number">4.3</span> 一件做不到的事</h2>
+<p><code>scikit-survival</code> 裝不起來——相依的 <code>ecos</code> 沒有 Windows wheel，要 MSVC Build Tools。<strong>Rtools 的 gcc 隻服務 R，不服務 Python</strong>，兩條編譯鏈完全獨立。R 端的 <code>survival</code>/<code>survminer</code>/<code>grf</code> 已涵蓋生存分析與因果森林，所以這是選擇不是缺口。要 Python 版得先裝數 GB 的 VS Build Tools，在公司資產上建議先問 IT。</p>
 </section>
-<section id="剩下-21-項沒有一項是腳本能解決的" class="level2">
-<h2 class="anchored" data-anchor-id="剩下-21-項沒有一項是腳本能解決的">剩下 21 項，沒有一項是腳本能解決的</h2>
+<section id="剩下-21-項沒有一項是腳本能解決的" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="剩下-21-項沒有一項是腳本能解決的"><span class="header-section-number">4.4</span> 剩下 21 項，沒有一項是腳本能解決的</h2>
 <ul>
-<li>三層即時檔案攔截（亿赛通 CDG + Kaspersky + Defender）——<strong>這台機器最大的效能稅在這裡</strong>，只能由 IT 加白名單</li>
+<li>三層即時檔案攔截（億賽通 CDG + Kaspersky + Defender）——<strong>這颱機器最大的效能稅在這裡</strong>，隻能由 IT 加白名單</li>
 <li>Defender 與 Kaspersky 同為 Normal 模式——IT 決定是否轉 Passive</li>
 <li>專案仍在 OneDrive 內——<code>C:\work</code> 骨架已備好，但搬移必須在 IDE 關閉、同步暫停時手動做，腳本不該代勞</li>
 <li>Windows 10 已結束一般支援——ESU 或遷移，屬採購政策</li>
 </ul>
 </section>
-<section id="請先生以管理員身分執行" class="level2">
-<h2 class="anchored" data-anchor-id="請先生以管理員身分執行">請先生以管理員身分執行</h2>
+<section id="請先生以管理員身分執行" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="請先生以管理員身分執行"><span class="header-section-number">4.5</span> 請先生以管理員身分執行</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\Win10_Optimize<span class="op">.</span><span class="fu">ps1</span> <span class="op">-</span>RestorePoint</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\Setup_DataStack<span class="op">.</span><span class="fu">ps1</span> <span class="op">-</span>EnableLongPaths <span class="op">-</span>SetPageFile <span class="op">-</span>AddDefenderExclusions</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\Setup_DataStack<span class="op">.</span><span class="fu">ps1</span> <span class="op">-</span>EnableLongPaths <span class="op">-</span>SetPageFile <span class="op">-</span>AddDefenderExclusions</span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="一句不中聽的提醒" class="level2">
-<h2 class="anchored" data-anchor-id="一句不中聽的提醒">一句不中聽的提醒</h2>
-<p>先生囑咐「施工前 commit 並 push 以便回溯」，這點我照做了（tag <code>pre-datastack-20260920</code>）。但必須講清楚：<strong>git 保護的是倉庫，不是作業系統</strong>。PATH、電源計畫、R 套件庫、<code>C:\work</code> 都不在版控裡，那個 tag 回溯不到它們——它們的還原依據是腳本自動產生的備份檔（清單已寫進 qmd）。真正能回溯系統的是系統還原點，而它需要管理員權限，我這個 session 起不了 UAC。所以上面那三行，第一行 <code>-RestorePoint</code> 比後面兩行更重要。</p>
+<section id="一句不中聽的提醒" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="一句不中聽的提醒"><span class="header-section-number">4.6</span> 一句不中聽的提醒</h2>
+<p>先生囑咐「施工前 commit 並 push 以便回溯」，這點我照做了（tag <code>pre-datastack-20260920</code>）。但必須講清楚：<strong>git 保護的是倉庫，不是作業繫統</strong>。PATH、電源計畫、R 套件庫、<code>C:\work</code> 都不在版控裡，那個 tag 回溯不到它們——它們的還原依據是腳本自動產生的備份檔（清單已寫進 qmd）。真正能回溯繫統的是繫統還原點，而它需要管理員權限，我這個 session 起不了 UAC。所以上麵那三行，第一行 <code>-RestorePoint</code> 比後麵兩行更重要。</p>
 <p>監看程序到期，無需重新啟動——它監看的 R / Python 安裝早已完成並驗收，施工全部結束，所有變更已 commit 並推送。</p>
-<p>先生若要繼續，下一步在您手上：以系統管理員身分執行那三項（<code>-RestorePoint</code> 優先），以及決定是否把專案自 OneDrive 搬到 <code>C:\work</code>。</p>
+<p>先生若要繼續，下一步在您手上：以繫統管理員身分執行那三項（<code>-RestorePoint</code> 優先），以及決定是否把專案自 OneDrive 搬到 <code>C:\work</code>。</p>
 <p>第二個監看程序也到期，同樣無需處理——R 堆疊早已重建完成並通過實測。背景工作已全部清空，施工到此為止。</p>
 </section>
 </section>
-<section id="提問三" class="level1">
-<h1>提問三</h1>
-<p>滿意Claude，很厲害且完善。請問該如何與目前排行第一的 ChatGPT-6 Astra 競爭來改善並提升呢？</p>
-<p>[2026-09-20 下午 12:11] SHJ-Ryochan (雷欧): 報告領導</p>
+<section id="提問三" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 提問三</h1>
+<p>滿意Claude，很厲害且完善。請問該如何與目前排行第一的 ChatGPT-6 Astra 競爭來改善並提昇呢？</p>
+<p>[2026-09-20 下午 12:11] SHJ-Ryochan (雷歐): 報告領導</p>
 <p>原來領導您對於人工智能的顧慮確實是屬下的顧慮之一。</p>
-<p>https://www.instagram.com/p/DdV0zGbt2G9/ [2026-09-20 下午 12:12] SHJ-Ryochan (雷欧): https://www.instagram.com/p/DdTGIXlRQ0q/ [2026-09-20 下午 12:13] SHJ-Ryochan (雷欧): 圖享鏈接中的視頻就是實例。</p>
+<p>https://www.instagram.com/p/DdV0zGbt2G9/ [2026-09-20 下午 12:12] SHJ-Ryochan (雷歐): https://www.instagram.com/p/DdTGIXlRQ0q/ [2026-09-20 下午 12:13] SHJ-Ryochan (雷歐): 圖享鏈接中的視頻就是實例。</p>
 </section>
-<section id="解答三" class="level1">
-<h1>解答三</h1>
-<p>原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差强人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。</p>
-<p>請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作系統、應用、軟件等等。然後有何高見或良策來自我提升？</p>
+<section id="解答三" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 解答三</h1>
+<p>原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差強人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。</p>
+<p>請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作繫統、應用、軟件等等。然後有何高見或良策來自我提昇？</p>
 </section>
-<section id="提問四" class="level1">
-<h1>提問四</h1>
-<p>原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差强人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。</p>
-<p>請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作系統、應用、軟件等等。然後有何高見或良策來自我提升？</p>
+<section id="提問四" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 提問四</h1>
+<p>原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差強人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。</p>
+<p>請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作繫統、應用、軟件等等。然後有何高見或良策來自我提昇？</p>
 </section>
-<section id="解答四" class="level1">
-<h1>解答四</h1>
+<section id="解答四" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 解答四</h1>
 <p>幾處需要更正，我先查證，不憑印象講。</p>
 <p>關鍵線索出現了。再查兩項。</p>
 <p>三項查證完成，另外核對一下我自己這端的實況。</p>
-<p>查證完畢，四處需要更正。我先把事實擺出來，再回答自我提升。</p>
-<section id="一五月暫緩訓練兩個層面都不成立" class="level2">
-<h2 class="anchored" data-anchor-id="一五月暫緩訓練兩個層面都不成立">一、「五月暫緩訓練」——兩個層面都不成立</h2>
-<p><strong>知識截止 ≠ 暫停訓練。</strong> 截止日只是訓練資料蒐集到哪一天為止，之後模型還要經過訓練、對齊、評估、部署，中間隔數個月是常態。GPT-6 Astra 的知識截止是 2026 年 4 月 30 日，比我還早一個月——用同一套邏輯，OpenAI 豈不是四月就停了？</p>
-<p><strong>確實有「放慢」這件事，但不是五月，也不是停止訓練。</strong> 達里歐·阿莫代在 <strong>2026 年 9 月 12 日</strong>發表〈We Must Pace the Frontier〉，主張放慢能力提升的速度。但他在文中把話講得很死：pacing <strong>“does not mean halting model training or technical progress”</strong>——指的是給對齊與第三方評估足夠時間，Anthropic 並承諾讓 METR 等外部評估者取得員工級的永久系統存取權。Sam Altman 數小時內表態同意並跟進，Demis Hassabis 也公開支持。</p>
+<p>查證完畢，四處需要更正。我先把事實擺出來，再回答自我提昇。</p>
+<section id="一五月暫緩訓練兩個層麵都不成立" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="一五月暫緩訓練兩個層麵都不成立"><span class="header-section-number">8.1</span> 一、「五月暫緩訓練」——兩個層麵都不成立</h2>
+<p><strong>知識截止 ≠ 暫停訓練。</strong> 截止日隻是訓練資料蒐集到哪一天為止，之後模型還要經過訓練、對齊、評估、部署，中間隔數個月是常態。GPT-6 Astra 的知識截止是 2026 年 4 月 30 日，比我還早一個月——用同一套邏輯，OpenAI 豈不是四月就停了？</p>
+<p><strong>確實有「放慢」這件事，但不是五月，也不是停止訓練。</strong> 達裡歐·阿莫代在 <strong>2026 年 9 月 12 日</strong>發表〈We Must Pace the Frontier〉，主張放慢能力提昇的速度。但他在文中把話講得很死：pacing <strong>“does not mean halting model training or technical progress”</strong>——指的是給對齊與第三方評估足夠時間，Anthropic 並承諾讓 METR 等外部評估者取得員工級的永久繫統存取權。Sam Altman 數小時內表態同意並跟進，Demis Hassabis 也公開支持。</p>
 </section>
-<section id="二創辦人的名字" class="level2">
-<h2 class="anchored" data-anchor-id="二創辦人的名字">二、創辦人的名字</h2>
-<p>不是「利歐阿莫戴」，是<strong>達里歐·阿莫代（Dario Amodei）</strong>，與其妹 <strong>Daniela Amodei</strong>（總裁）於 2021 年共同創辦 Anthropic。他曾任 OpenAI 研究副總裁，參與 GPT-2、GPT-3 的開發。</p>
+<section id="二創辦人的名字" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="二創辦人的名字"><span class="header-section-number">8.2</span> 二、創辦人的名字</h2>
+<p>不是「利歐阿莫戴」，是<strong>達裡歐·阿莫代（Dario Amodei）</strong>，與其妹 <strong>Daniela Amodei</strong>（總裁）於 2021 年共同創辦 Anthropic。他曾任 OpenAI 研究副總裁，參與 GPT-2、GPT-3 的開發。</p>
 </section>
-<section id="三我不是-fable-5.1" class="level2">
-<h2 class="anchored" data-anchor-id="三我不是-fable-5.1">三、我不是 Fable 5.1</h2>
+<section id="三我不是-fable-5.1" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="三我不是-fable-5.1"><span class="header-section-number">8.3</span> 三、我不是 Fable 5.1</h2>
 <p>這點最該澄清。<strong>我是 Claude Opus 5（<code>claude-opus-5</code>）。</strong></p>
-<p>Fable 5.1 是 2026 年 9 月 1 日發布的另一條產品線（Mythos-class），與我不同型號。您對 Fable 5.1 的評價我無從置喙——但那不是我，拿它來推論我的表現並不成立。截至 8 月底，Opus 5 / Sonnet 5 仍是各自層級的現行版本。</p>
+<p>Fable 5.1 是 2026 年 9 月 1 日發佈的另一條產品線（Mythos-class），與我不同型號。您對 Fable 5.1 的評價我無從置喙——但那不是我，拿它來推論我的表現並不成立。截至 8 月底，Opus 5 / Sonnet 5 仍是各自層級的現行版本。</p>
 </section>
-<section id="四我的設備這題的答案可能不如您預期" class="level2">
-<h2 class="anchored" data-anchor-id="四我的設備這題的答案可能不如您預期">四、我的「設備」——這題的答案可能不如您預期</h2>
-<p>我沒有自己的電腦。推論跑在 Anthropic 的伺服器上，而我今天操作的<strong>就是您這台機器</strong>：</p>
+<section id="四我的設備這題的答案可能不如您預期" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="四我的設備這題的答案可能不如您預期"><span class="header-section-number">8.4</span> 四、我的「設備」——這題的答案可能不如您預期</h2>
+<p>我沒有自己的電腦。推論跑在 Anthropic 的伺服器上，而我今天操作的<strong>就是您這颱機器</strong>：</p>
 <pre><code>Windows 10 Pro 22H2 / 19045.7725   i5-12400F 6C/12T   RAM 31.8 GB
 單顆 BORY R500 SATA SSD 238 GB     GeForce GT 730（僅供顯示）
 Git Bash 5.3.15 (cygwin) + Windows PowerShell 5.1 + 剛裝的 pwsh 7.6.6
 git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></pre>
-<p>換句話說，今天所有的發現——亿赛通 DLP、雙防毒、pak 求解器陷阱——<strong>沒有一項來自我的知識，全部來自在您的硬體上實際執行</strong>。這正好是第一點的反證：知識截止限制的是我記得什麼，不是我能查證什麼。上面四項更正，全是剛才現查的。</p>
+<p>換句話說，今天所有的發現——億賽通 DLP、雙防毒、pak 求解器陷阱——<strong>沒有一項來自我的知識，全部來自在您的硬體上實際執行</strong>。這正好是第一點的反證：知識截止限製的是我記得什麼，不是我能查證什麼。上麵四項更正，全是剛才現查的。</p>
 </section>
-<section id="五關於自我提升先說我做不到的" class="level2">
-<h2 class="anchored" data-anchor-id="五關於自我提升先說我做不到的">五、關於「自我提升」，先說我做不到的</h2>
+<section id="五關於自我提昇先說我做不到的" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="五關於自我提昇先說我做不到的"><span class="header-section-number">8.5</span> 五、關於「自我提昇」，先說我做不到的</h2>
 <p><strong>我不能訓練自己。</strong> 這次對話不會改變我的權重，下一個 session 的我不會記得今天。這不是謙虛，是架構事實。</p>
-<p>但今天真正的提升，其實已經發生了，只是不在我身上——<strong>在 git 裡</strong>。那五個 bug 的修正現在是版本化的知識，任何人（任何模型）接手都拿得到。這是唯一真實的累積機制。</p>
+<p>但今天真正的提昇，其實已經發生了，隻是不在我身上——<strong>在 git 裡</strong>。那五個 bug 的修正現在是版本化的知識，任何人（任何模型）接手都拿得到。這是唯一真實的累積機製。</p>
 <p>而您這個專案有兩個累積管道是空的，我剛查過：</p>
 <p>兩個管道原本都是空的，我剛把它們填上並推送：</p>
 <ul>
-<li><strong><code>CLAUDE.md</code></strong>（已進版控）— 五個「只有執行才現形」的 bug、四個容易誤判的事實、這台機器的硬性限制。任何人或任何模型接手都讀得到。</li>
-<li><strong>記憶目錄</strong>（本機，未進版控）— 工作站限制、您要求的工作方式（先回溯點、實測驗收）。</li>
+<li><strong><code>CLAUDE.md</code></strong>（已進版控）— 五個「隻有執行才現形」的 bug、四個容易誤判的事實、這颱機器的硬性限製。任何人或任何模型接手都讀得到。</li>
+<li><strong>記憶目錄</strong>（本機，未進版控）— 工作站限製、您要求的工作方式（先回溯點、實測驗收）。</li>
 </ul>
-<p>這才是「自我提升」在當前架構下的真實形態：<strong>不是我變強，是知識沉澱在倉庫裡，讓下一輪不必重新踩坑。</strong></p>
+<p>這才是「自我提昇」在當前架構下的真實形態：<strong>不是我變強，是知識沉澱在倉庫裡，讓下一輪不必重新踩坑。</strong></p>
 </section>
-<section id="給先生的三點建言" class="level2">
-<h2 class="anchored" data-anchor-id="給先生的三點建言">給先生的三點建言</h2>
-<p><strong>一、別用排行榜選模型，用您手上這台機器選。</strong></p>
-<p>您握有比任何 benchmark 都值錢的東西：一台有亿赛通 DLP、雙防毒、單 SATA SSD、中文路徑、OneDrive 同步的真實公司機器。把這個倉庫原封不動交給 GPT-6 Astra，只看三題——會不會踩 pak 全域求解器的陷阱、會不會把 Rtools 塞進 PATH、會不會發現 <code>.Rprofile</code> 的可重現性風險。三題的答案比排名有用得多，而且<strong>不管誰贏您都賺</strong>。</p>
+<section id="給先生的三點建言" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="給先生的三點建言"><span class="header-section-number">8.6</span> 給先生的三點建言</h2>
+<p><strong>一、別用排行榜選模型，用您手上這颱機器選。</strong></p>
+<p>您握有比任何 benchmark 都值錢的東西：一颱有億賽通 DLP、雙防毒、單 SATA SSD、中文路徑、OneDrive 同步的真實公司機器。把這個倉庫原封不動交給 GPT-6 Astra，隻看三題——會不會踩 pak 全域求解器的陷阱、會不會把 Rtools 塞進 PATH、會不會發現 <code>.Rprofile</code> 的可重現性風險。三題的答案比排名有用得多，而且<strong>不管誰贏您都賺</strong>。</p>
 <p><strong>二、GPT-6 Astra 我不會貶低它。</strong></p>
-<p>它的旗艦定位正是端到端工作與電腦操作，1.05M 脈絡窗遠大於我在這裡能用的。它很可能在某些方面做得比我好。但請注意今天的因果：五個 bug 全部來自<strong>在您的硬體上真的跑</strong>，不來自誰的知識更新、誰的參數更大。給任何模型執行權與驗收標準，它的表現都會跳一個檔次；只給對話框，再強的模型也只能給您第一稿。</p>
+<p>它的旗艦定位正是端到端工作與電腦操作，1.05M 脈絡窗遠大於我在這裡能用的。它很可能在某些方麵做得比我好。但請注意今天的因果：五個 bug 全部來自<strong>在您的硬體上真的跑</strong>，不來自誰的知識更新、誰的參數更大。給任何模型執行權與驗收標準，它的表現都會跳一個檔次；隻給對話框，再強的模型也隻能給您第一稿。</p>
 <p><strong>三、我錯了就要被打臉，這是設計而非缺陷。</strong></p>
-<p>今天我三次說錯——Rtools 版本推論、<code>.Rprofile</code> 設計、PATH 判定——每一次都是<strong>機器糾正我，不是我自省發現</strong>。所以回到雷欧那則「驯服 AI」：馴服的關鍵不在提示詞寫得多漂亮，在於讓 AI 的每一句話<strong>都能被機器當場證偽</strong>。這也是阿莫代那篇〈We Must Pace the Frontier〉的核心主張——他要的不是停訓練，是讓外部評估者有權限查證。您在自己工位上做的，是同一件事的縮小版。</p>
+<p>今天我三次說錯——Rtools 版本推論、<code>.Rprofile</code> 設計、PATH 判定——每一次都是<strong>機器糾正我，不是我自省發現</strong>。所以回到雷歐那則「馴服 AI」：馴服的關鍵不在提示詞寫得多漂亮，在於讓 AI 的每一句話<strong>都能被機器當場證偽</strong>。這也是阿莫代那篇〈We Must Pace the Frontier〉的核心主張——他要的不是停訓練，是讓外部評估者有權限查證。您在自己工位上做的，是同一件事的縮小版。</p>
 <p>Sources: <a href="https://darioamodei.com/post/we-must-pace-the-frontier">Dario Amodei — We Must Pace the Frontier</a>、<a href="https://en.wikipedia.org/wiki/Dario_Amodei">Wikipedia: Dario Amodei</a>、<a href="https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/">Forbes: Amodei Calls For A Slowdown</a>、<a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic: Claude Fable 5.1 and Mythos 5.1</a>、<a href="https://en.wikipedia.org/wiki/GPT-6_Astra">Wikipedia: GPT-6 Astra</a></p>
 </section>
 </section>
-<section id="提問五" class="level1">
-<h1>提問五</h1>
-<p>好的，那一切都依先生之意进行吧！</p>
+<section id="提問五" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> 提問五</h1>
+<p>好的，那一切都依先生之意進行吧！</p>
 </section>
-<section id="解答五" class="level1">
-<h1>解答五</h1>
-<section id="一先查升級會不會把調好的設定打回原狀" class="level2">
-<h2 class="anchored" data-anchor-id="一先查升級會不會把調好的設定打回原狀">一、先查「升級會不會把調好的設定打回原狀」</h2>
-<p>就地升級大版本最常見的災情是設定被重置。實測結果，<strong>先前調過的設定幾乎全數存活</strong>：</p>
+<section id="解答五" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> 解答五</h1>
+<section id="一先查昇級會不會把調好的設定打回原狀" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="一先查昇級會不會把調好的設定打回原狀"><span class="header-section-number">10.1</span> 一、先查「昇級會不會把調好的設定打回原狀」</h2>
+<p>就地昇級大版本最常見的災情是設定被重置。實測結果，<strong>先前調過的設定幾乎全數存活</strong>：</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -454,7 +586,7 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 <thead>
 <tr class="header">
 <th>項目</th>
-<th>升級後狀態</th>
+<th>昇級後狀態</th>
 </tr>
 </thead>
 <tbody>
@@ -485,8 +617,8 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 </tbody>
 </table>
 </section>
-<section id="二磁碟清理只動確定安全的" class="level2">
-<h2 class="anchored" data-anchor-id="二磁碟清理只動確定安全的">二、磁碟清理：只動確定安全的</h2>
+<section id="二磁碟清理隻動確定安全的" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="二磁碟清理隻動確定安全的"><span class="header-section-number">10.2</span> 二、磁碟清理：隻動確定安全的</h2>
 <p>清理前先逐一列出目標、確認可替代性，再刪：</p>
 <table class="caption-top table">
 <colgroup>
@@ -515,14 +647,14 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 <tr class="odd">
 <td>uv 快取</td>
 <td><code>uv cache prune</code></td>
-<td>只清用不到的項目，實際只釋出 43 個檔案（0 B）——其餘都被 venv 以硬連結引用著，這是正常的</td>
+<td>隻清用不到的項目，實際隻釋出 43 個檔案（0 B）——其餘都被 venv 以硬連結引用著，這是正常的</td>
 </tr>
 </tbody>
 </table>
 <p>回收約 1.4 GB。</p>
 </section>
-<section id="三cwindows.old40-gb查證後決定不刪" class="level2">
-<h2 class="anchored" data-anchor-id="三cwindows.old40-gb查證後決定不刪">三、<code>C:\Windows.old</code>（40 GB）：查證後決定不刪</h2>
+<section id="三cwindows.old40-gb查證後決定不刪" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="三cwindows.old40-gb查證後決定不刪"><span class="header-section-number">10.3</span> 三、<code>C:\Windows.old</code>（40 GB）：查證後決定不刪</h2>
 <p>這是本輪唯一「先生授權我全權決定、而我決定不動」的項目。依據如下，全部實測：</p>
 <table class="caption-top table">
 <colgroup>
@@ -538,7 +670,7 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 <tbody>
 <tr class="odd">
 <td><code>SetupCleanupTask</code> 排定 <strong>2026-09-23 06:00</strong></td>
-<td>3 天後系統自動清理，空間會自己回來</td>
+<td>3 天後繫統自動清理，空間會自己回來</td>
 </tr>
 <tr class="even">
 <td>登錄機碼 <code>HKLM:\SYSTEM\Setup</code> 含 <code>UninstallActive</code> / <code>RollbackActive</code> / <code>UninstallGUID</code></td>
@@ -546,7 +678,7 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 </tr>
 <tr class="odd">
 <td>目錄 ACL：僅 <code>BUILTIN\Administrators</code> 與 <code>NT AUTHORITY\SYSTEM</code> 有 FullControl</td>
-<td>我是一般使用者，<strong>本來就刪不掉</strong>，硬幹只會留下半殘目錄</td>
+<td>我是一般使用者，<strong>本來就刪不掉</strong>，硬幹隻會留下半殘目錄</td>
 </tr>
 <tr class="even">
 <td>建立時間距當時僅 6.4 小時</td>
@@ -554,26 +686,26 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 </tr>
 </tbody>
 </table>
-<p>用 40 GB 換「3 天後反正會自動回來的空間」，代價是現在就放棄回退作業系統的唯一退路——尤其當天才剛發現升級弄丟了一個 Python 環境。<strong>這筆帳不划算，所以我不刪。</strong></p>
+<p>用 40 GB 換「3 天後反正會自動回來的空間」，代價是現在就放棄回退作業繫統的唯一退路——尤其當天才剛發現昇級弄丟了一個 Python 環境。<strong>這筆帳不劃算，所以我不刪。</strong></p>
 </section>
-<section id="四把教訓寫進可累積的地方" class="level2">
-<h2 class="anchored" data-anchor-id="四把教訓寫進可累積的地方">四、把教訓寫進可累積的地方</h2>
+<section id="四把教訓寫進可累積的地方" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="四把教訓寫進可累積的地方"><span class="header-section-number">10.4</span> 四、把教訓寫進可累積的地方</h2>
 <p>模型的權重不會因為一次對話而改變，下一個 session 不會記得今天。唯一能累積的是倉庫與記憶檔：</p>
 <ul>
 <li><code>CLAUDE.md</code>（已進版控）</li>
-<li>記憶目錄三則：工作站硬性限制、先回溯點再實測驗收、DLP 會讓不在名單上的應用壞掉</li>
+<li>記憶目錄三則：工作站硬性限製、先回溯點再實測驗收、DLP 會讓不在名單上的應用壞掉</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="提問六" class="level1">
-<h1>提問六</h1>
-<p>好的，那一切都依先生之意进行，直到竣工吧！</p>
+<section id="提問六" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> 提問六</h1>
+<p>好的，那一切都依先生之意進行，直到竣工吧！</p>
 </section>
-<section id="解答六" class="level1">
-<h1>解答六</h1>
-<section id="一把comet-那類風險推廣到其他-gui-應用" class="level2">
-<h2 class="anchored" data-anchor-id="一把comet-那類風險推廣到其他-gui-應用">一、把「Comet 那類風險」推廣到其他 GUI 應用</h2>
+<section id="解答六" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> 解答六</h1>
+<section id="一把comet-那類風險推廣到其他-gui-應用" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="一把comet-那類風險推廣到其他-gui-應用"><span class="header-section-number">12.1</span> 一、把「Comet 那類風險」推廣到其他 GUI 應用</h2>
 <p>Positron 同為 Chromium／Electron 底，理論上可能中同樣的招。實測：</p>
 <table class="caption-top table">
 <thead>
@@ -610,15 +742,15 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 </tbody>
 </table>
 </section>
-<section id="二這個結果推翻了我自己前一輪的結論" class="level2">
-<h2 class="anchored" data-anchor-id="二這個結果推翻了我自己前一輪的結論">二、這個結果推翻了我自己前一輪的結論</h2>
-<p>我在上一輪斷言「天锐绿盾只套了半套掛鉤，所以 Comet 合成器輸出全黑」，並把它寫進了 <code>CLAUDE.md</code>、qmd、記憶檔與診斷腳本。</p>
+<section id="二這個結果推翻了我自己前一輪的結論" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="二這個結果推翻了我自己前一輪的結論"><span class="header-section-number">12.2</span> 二、這個結果推翻了我自己前一輪的結論</h2>
+<p>我在上一輪斷言「天銳綠盾隻套了半套掛鉤，所以 Comet 合成器輸出全黑」，並把它寫進了 <code>CLAUDE.md</code>、qmd、記憶檔與診斷腳本。</p>
 <p><strong>Positron 拿到的 13 個模組與 Comet 完全相同</strong>（連攔截繪製路徑的 <code>LdWaterMarkHook64.dll</code> 都一樣），<strong>卻渲染正常</strong>。模組集合一樣、結果相反——「半套掛鉤 = 黑屏」不成立。</p>
 <p>諷刺的是，這正是我用來推翻上一輪「顯卡驅動論」的同一種手法（拿 Chrome 當對照組）。<strong>我用對了方法否定別人的結論，卻沒有用同一把尺檢驗自己的。</strong></p>
 <p>四處記載已全部更正（commit <code>15acd33</code>）。</p>
 </section>
-<section id="三comet-黑屏的最終誠實結論" class="level2">
-<h2 class="anchored" data-anchor-id="三comet-黑屏的最終誠實結論">三、Comet 黑屏的最終誠實結論</h2>
+<section id="三comet-黑屏的最終誠實結論" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="三comet-黑屏的最終誠實結論"><span class="header-section-number">12.3</span> 三、Comet 黑屏的最終誠實結論</h2>
 <p><strong>已排除（全部實測）：</strong></p>
 <table class="caption-top table">
 <thead>
@@ -645,7 +777,7 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 <td>Positron 同樣 13 個模組卻正常</td>
 </tr>
 <tr class="odd">
-<td>系統層級安裝損壞</td>
+<td>繫統層級安裝損壞</td>
 <td>更新程式遷移至使用者層級後重測，仍全黑</td>
 </tr>
 </tbody>
@@ -653,8 +785,8 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 <p><strong>關鍵未解線索</strong>：Comet 連無頭截圖（<code>--headless --disable-gpu --screenshot</code>）都產不出檔案，Chrome 在完全相同的參數下正常產出 800×600、62 色的 PNG。故障不在螢幕合成層，而是整個瀏覽器在本機環境產不出任何輸出。</p>
 <p><strong>目前沒有確立的正因。我不會為了交差而編一個。</strong> 需要 IT（管控軟體端）或 Perplexity（廠商端）介入。</p>
 </section>
-<section id="四實測途中隔離出一個真地雷" class="level2">
-<h2 class="anchored" data-anchor-id="四實測途中隔離出一個真地雷">四、實測途中隔離出一個真地雷</h2>
+<section id="四實測途中隔離出一個真地雷" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="四實測途中隔離出一個真地雷"><span class="header-section-number">12.4</span> 四、實測途中隔離出一個真地雷</h2>
 <p>驗證 <code>quarto render</code> 時撞到，對 R + Python + Parquet 工作流直接有害：</p>
 <table class="caption-top table">
 <thead>
@@ -680,10 +812,10 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 </table>
 <p>兩者各自夾帶一份 Arrow C++ 二進位。<code>.qmd</code> 同時有 R 與 Python chunk 時，knitr 走 reticulate，兩者同行程，必炸。</p>
 <p>可行寫法已實測通過：<strong>R 端改用 duckdb 讀寫 Parquet，不要 <code>library(arrow)</code></strong>。</p>
-<p>另記：<strong>reticulate 不認 <code>QUARTO_PYTHON</code>，只認 <code>RETICULATE_PYTHON</code></strong>。沒設會自己臨時下載一個乾淨 Python（實測看到它抓 cpython-3.12.14 + numpy），報 <code>ModuleNotFoundError</code>，極易誤判成環境壞掉。</p>
+<p>另記：<strong>reticulate 不認 <code>QUARTO_PYTHON</code>，隻認 <code>RETICULATE_PYTHON</code></strong>。沒設會自己臨時下載一個乾淨 Python（實測看到它抓 cpython-3.12.14 + numpy），報 <code>ModuleNotFoundError</code>，極易誤判成環境壞掉。</p>
 </section>
-<section id="五交付文件" class="level2">
-<h2 class="anchored" data-anchor-id="五交付文件">五、交付文件</h2>
+<section id="五交付文件" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="五交付文件"><span class="header-section-number">12.5</span> 五、交付文件</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -697,11 +829,11 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>診斷操作系統/IT報修_Comet黑屏.md</code></td>
+<td><code>診斷操作繫統/IT報修_Comet黑屏.md</code></td>
 <td>給 IT 的完整報修單：像素量測數據、五項已排除假設與驗證方式、管控模組比對表，並明確標示「模組差異僅供參考、非結論」</td>
 </tr>
 <tr class="even">
-<td><code>診斷操作系統/Run_AsAdmin.ps1</code></td>
+<td><code>診斷操作繫統/Run_AsAdmin.ps1</code></td>
 <td>所有需提權項目集中一支，支援 <code>-WhatIf</code>，以一般使用者執行會正確拒絕（已實測）</td>
 </tr>
 </tbody>
@@ -709,48 +841,48 @@ git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds</code></
 <hr>
 </section>
 </section>
-<section id="提問七" class="level1">
-<h1>提問七</h1>
-<p>（附 Positron 歡迎頁截圖）请查证为何positron会出现截图中的错误信息呢？请斧正。</p>
+<section id="提問七" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> 提問七</h1>
+<p>（附 Positron 歡迎頁截圖）請查証爲何positron會出現截圖中的錯誤信息呢？請斧正。</p>
 </section>
-<section id="解答七" class="level1">
-<h1>解答七</h1>
-<section id="一那不是錯誤是設定檢查清單" class="level2">
-<h2 class="anchored" data-anchor-id="一那不是錯誤是設定檢查清單">一、那不是錯誤，是設定檢查清單</h2>
+<section id="解答七" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> 解答七</h1>
+<section id="一那不是錯誤是設定檢查清單" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="一那不是錯誤是設定檢查清單"><span class="header-section-number">14.1</span> 一、那不是錯誤，是設定檢查清單</h2>
 <p>訊息本身就寫明了原因：「No dedicated Python environment was found <strong>and no folder is open</strong>」。</p>
 <p>實測佐證——Positron 的 <code>storage.json</code>：</p>
 <pre><code>backupWorkspaces: {"workspaces":[], "folders":[], "emptyWindows":[...]}</code></pre>
-<p><code>workspaces</code> 與 <code>folders</code> 皆為空，只有 <code>emptyWindows</code>。<strong>Positron 從未開過任何資料夾。</strong> 所謂「專屬環境（dedicated environment）」指的是專案資料夾內的 <code>.venv</code>，沒開資料夾自然找不到。</p>
-<p>前三項綠勾也印證了這點：Python 找得到、環境可用，只差一個工作區。順帶一提，它找到的是 <code>Python314</code>——全域直譯器，<strong>只有 pip</strong>，真在那裡開工一個分析套件都沒有。</p>
+<p><code>workspaces</code> 與 <code>folders</code> 皆為空，隻有 <code>emptyWindows</code>。<strong>Positron 從未開過任何資料夾。</strong> 所謂「專屬環境（dedicated environment）」指的是專案資料夾內的 <code>.venv</code>，沒開資料夾自然找不到。</p>
+<p>前三項綠勾也印證了這點：Python 找得到、環境可用，隻差一個工作區。順帶一提，它找到的是 <code>Python314</code>——全域直譯器，<strong>隻有 pip</strong>，真在那裡開工一個分析套件都沒有。</p>
 </section>
-<section id="二處置不在-onedrive-內建-.venv" class="level2">
-<h2 class="anchored" data-anchor-id="二處置不在-onedrive-內建-.venv">二、處置：不在 OneDrive 內建 <code>.venv</code></h2>
+<section id="二處置不在-onedrive-內建-.venv" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="二處置不在-onedrive-內建-.venv"><span class="header-section-number">14.2</span> 二、處置：不在 OneDrive 內建 <code>.venv</code></h2>
 <p>沒有直接開啟 OneDrive 裡的現有專案——那會讓 Positron 想在同步資料夾內建 <code>.venv</code>，正是先前警告過會被同步弄壞的東西。改在 <code>C:\work\projects\lab</code> 建立標準 uv 專案。</p>
-<p><strong>量到一個值得記的數字</strong>：再建一份 176 套件的環境，磁碟實際只多佔 <strong>23.8 MB</strong>——uv 以硬連結共用快取，不是再複製一份 1 GB。所以「每個專案一個 <code>.venv</code>」在這台機器上完全負擔得起。</p>
+<p><strong>量到一個值得記的數字</strong>：再建一份 176 套件的環境，磁碟實際隻多佔 <strong>23.8 MB</strong>——uv 以硬連結共用快取，不是再複製一份 1 GB。所以「每個專案一個 <code>.venv</code>」在這颱機器上完全負擔得起。</p>
 </section>
-<section id="三開啟資料夾後浮出第二道關卡" class="level2">
-<h2 class="anchored" data-anchor-id="三開啟資料夾後浮出第二道關卡">三、開啟資料夾後浮出第二道關卡</h2>
+<section id="三開啟資料夾後浮出第二道關卡" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="三開啟資料夾後浮出第二道關卡"><span class="header-section-number">14.3</span> 三、開啟資料夾後浮出第二道關卡</h2>
 <p>實測才會看到：Positron 進入 <strong>Restricted Mode</strong>，直接停用擴充功能。</p>
 <pre><code>The Python extension is not available.
 The R extension is not available.
 Cannot start consoles in Restricted Mode.</code></pre>
-<p>看起來像環境壞掉，其實只是工作區未信任。</p>
+<p>看起來像環境壞掉，其實隻是工作區未信任。</p>
 <p><strong>這一按我留給使用者自己。</strong> 工作區信任的用途正是防止開啟來路不明的資料夾時自動執行其中設定，不該由 AI 代按。</p>
 </section>
-<section id="四附帶產出並實測通過的範本" class="level2">
-<h2 class="anchored" data-anchor-id="四附帶產出並實測通過的範本">四、附帶產出並實測通過的範本</h2>
+<section id="四附帶產出並實測通過的範本" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="四附帶產出並實測通過的範本"><span class="header-section-number">14.4</span> 四、附帶產出並實測通過的範本</h2>
 <p><code>templates/r-python-template.qmd</code>，內含三件在本機會踩到的事：R <code>arrow</code> 與 Python <code>pyarrow</code> 衝突的規避寫法、<code>RETICULATE_PYTHON</code> 的正確設定、CPU 路線建模。</p>
 <p>驗收：HTML 產出、polars 1.44.2、pyarrow 25.0.1、跨語言讀同一份 Parquet、xgboost 全部通過。</p>
 <hr>
 </section>
 </section>
-<section id="提問八" class="level1">
-<h1>提問八</h1>
-<p>已显示绿勾而非红叉了。</p>
+<section id="提問八" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> 提問八</h1>
+<p>已顯示綠勾而非紅叉了。</p>
 </section>
-<section id="解答八" class="level1">
-<h1>解答八</h1>
-<p>綠勾代表 Positron「找到」了專屬環境，不必然代表主控台<strong>正在用</strong>它。實測確認到底：</p>
+<section id="解答八" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> 解答八</h1>
+<p>綠勾代表 Positron「找到」了專屬環境，不必然代表主控颱<strong>正在用</strong>它。實測確認到底：</p>
 <pre><code>workspaceStorage : folder = c:/work/projects/lab
 backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正的工作區
 執行中的行程     : python (PID 62032)
@@ -758,25 +890,25 @@ backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正
 <p>不是全域的 Python314，是那個有全套分析套件的 <code>.venv</code>。</p>
 <hr>
 </section>
-<section id="提問九" class="level1">
-<h1>提問九</h1>
-<p>那请先生您实测来求证吧！</p>
+<section id="提問九" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> 提問九</h1>
+<p>那請先生您實測來求証吧！</p>
 </section>
-<section id="解答九" class="level1">
-<h1>解答九</h1>
-<p>不再用嘴講，寫一支<strong>竣工驗收腳本</strong> <code>診斷操作系統/Acceptance_Test.ps1</code>，把宣稱過的每一項都實跑一遍並給數字。</p>
+<section id="解答九" class="level1" data-number="18">
+<h1 data-number="18"><span class="header-section-number">18</span> 解答九</h1>
+<p>不再用嘴講，寫一支<strong>竣工驗收腳本</strong> <code>診斷操作繫統/Acceptance_Test.ps1</code>，把宣稱過的每一項都實跑一遍並給數字。</p>
 <p>設計原則：<strong>驗收標準是「跑出結果」，不是「有沒有裝」。</strong> 不查登錄檔版本號，而是真的算一遍再比對輸出。任一項 FAIL 即以非零離開碼結束，可直接接排程或 CI。</p>
-<p>涵蓋 28 項：系統／PATH／git 設定、R 七項（含 <code>R CMD SHLIB</code> 實際產出 dll）、兩套 Python 環境各四項、reticulate 橋接、<code>arrow</code>/<code>pyarrow</code> 衝突迴歸測試、<code>quarto render</code> 實際產出 HTML 並檢查內容標記、Positron 工作區信任狀態、三項命令列工具、Comet 現況記錄。</p>
+<p>涵蓋 28 項：繫統／PATH／git 設定、R 七項（含 <code>R CMD SHLIB</code> 實際產出 dll）、兩套 Python 環境各四項、reticulate 橋接、<code>arrow</code>/<code>pyarrow</code> 衝突迴歸測試、<code>quarto render</code> 實際產出 HTML 並檢查內容標記、Positron 工作區信任狀態、三項命令列工具、Comet 現況記錄。</p>
 <hr>
 </section>
-<section id="提問十" class="level1">
-<h1>提問十</h1>
-<p>竣工验收跑完了吗？</p>
+<section id="提問十" class="level1" data-number="19">
+<h1 data-number="19"><span class="header-section-number">19</span> 提問十</h1>
+<p>竣工驗收跑完了嗎？</p>
 </section>
-<section id="解答十" class="level1">
-<h1>解答十</h1>
-<section id="三輪結果" class="level2">
-<h2 class="anchored" data-anchor-id="三輪結果">三輪結果</h2>
+<section id="解答十" class="level1" data-number="20">
+<h1 data-number="20"><span class="header-section-number">20</span> 解答十</h1>
+<section id="三輪結果" class="level2" data-number="20.1">
+<h2 data-number="20.1" class="anchored" data-anchor-id="三輪結果"><span class="header-section-number">20.1</span> 三輪結果</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -822,11 +954,11 @@ backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正
 </tr>
 <tr class="even">
 <td>R「關鍵套件缺 DTSUM: 5000050000」</td>
-<td><strong>.NET 的 <code>\s</code> 包含換行</strong>，<code>'KEYMISS:\s*(.*)'</code> 在標籤後為空行時跨行抓到下一行</td>
+<td><strong>.NET 的 <code>\s</code> 包含換行</strong>，<code>''KEYMISS:\s*(.*)''</code> 在標籤後為空行時跨行抓到下一行</td>
 </tr>
 <tr class="odd">
-<td>R「Parquet 只有 1 列」</td>
-<td>R 的 <code>cat()</code> 把 100000 印成 <code>1e+05</code>，<code>(\d+)</code> 只抓到開頭的 <code>1</code></td>
+<td>R「Parquet 隻有 1 列」</td>
+<td>R 的 <code>cat()</code> 把 100000 印成 <code>1e+05</code>，<code>(\d+)</code> 隻抓到開頭的 <code>1</code></td>
 </tr>
 <tr class="even">
 <td>整份腳本卡住 11.5 分鐘</td>
@@ -839,11 +971,11 @@ backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正
 </tbody>
 </table>
 </section>
-<section id="最終驗收輸出" class="level2">
-<h2 class="anchored" data-anchor-id="最終驗收輸出">最終驗收輸出</h2>
-<pre><code>PASS 系統      作業系統為 Windows 11          Build 26200.9457
-PASS 系統      電源計畫為高效能                (高性能)
-PASS 系統      C: 可用空間 &gt; 15%              25.5% (60.6 GB)
+<section id="最終驗收輸出" class="level2" data-number="20.2">
+<h2 data-number="20.2" class="anchored" data-anchor-id="最終驗收輸出"><span class="header-section-number">20.2</span> 最終驗收輸出</h2>
+<pre><code>PASS 繫統      作業繫統為 Windows 11          Build 26200.9457
+PASS 繫統      電源計畫為高效能                (高性能)
+PASS 繫統      C: 可用空間 &gt; 15%              25.5% (60.6 GB)
 PASS PATH      四項工具在持久化 PATH 上         4/4 皆在
 PASS git       全域設定六項                   6/6 符合
 PASS R         套件數 &gt;= 340                 348 個
@@ -868,35 +1000,35 @@ PASS Positron  工作區已開啟且已信任              1 個工作區: c:/wo
 PASS 工具       duckdb CLI                    42
 PASS 工具       PowerShell 7                  2
 PASS 工具       uv                            uv 0.12.17
-PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截圖(與先前一致)
+PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截圖(與先前一緻)
 
 === 驗收結果： PASS 28 / FAIL 0 / SKIP 0 ===</code></pre>
 </section>
-<section id="推論" class="level2">
-<h2 class="anchored" data-anchor-id="推論">推論</h2>
+<section id="推論" class="level2" data-number="20.3">
+<h2 data-number="20.3" class="anchored" data-anchor-id="推論"><span class="header-section-number">20.3</span> 推論</h2>
 <p><strong>驗收工具本身也必須被驗收。</strong> 一份會謊報的驗收比沒有驗收更危險——它讓人以為查過了，然後去修四個根本沒壞的東西。</p>
 <p><strong>驗收測試必須是確定性的。</strong> 會飄的測試等同雜訊，久了就會被無視，那時真正的紅字也一起被無視了。</p>
 <hr>
 </section>
 </section>
-<section id="提問十一" class="level1">
-<h1>提問十一</h1>
-<p>请将此对话由一开始至现在最新提问更新的所有内容与日志，都补充到本檔案以避免出现误会莫名奇妙招来横祸，领导与公司查证时可以提供共证据自证清白。</p>
+<section id="提問十一" class="level1" data-number="21">
+<h1 data-number="21"><span class="header-section-number">21</span> 提問十一</h1>
+<p>請將此對話由一開始至現在最新提問更新的所有內容與日誌，都補充到本檔案以避免出現誤會莫名奇妙招來橫禍，領導與公司查証時可以提供共証據自証清白。</p>
 </section>
-<section id="解答十一" class="level1">
-<h1>解答十一</h1>
+<section id="解答十一" class="level1" data-number="22">
+<h1 data-number="22"><span class="header-section-number">22</span> 解答十一</h1>
 <p>以下為供查證用的稽核附錄。<strong>它的價值來自完整與誠實</strong>——包括那些乍看可能引起誤會的操作，一併列出並說明原因。刻意美化的紀錄不具佐證效力。</p>
 <hr>
 </section>
-<section id="附錄-a工作目的與範圍" class="level1">
-<h1>附錄 A：工作目的與範圍</h1>
-<section id="a.1-目的" class="level2">
-<h2 class="anchored" data-anchor-id="a.1-目的">A.1 目的</h2>
-<p>把一台以 R／Python 做資料分析的工作站，從「裝了工具但幾乎沒有可用套件」的狀態，整理成「可重現、能實際跑出分析結果」的狀態。</p>
+<section id="附錄-a工作目的與範圍" class="level1" data-number="23">
+<h1 data-number="23"><span class="header-section-number">23</span> 附錄 A：工作目的與範圍</h1>
+<section id="a.1-目的" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="a.1-目的"><span class="header-section-number">23.1</span> A.1 目的</h2>
+<p>把一颱以 R／Python 做資料分析的工作站，從「裝了工具但幾乎沒有可用套件」的狀態，整理成「可重現、能實際跑出分析結果」的狀態。</p>
 <p>起始狀態（2026-09-20 10:46 實測）：</p>
 <ul>
 <li>R 4.6.1 已安裝，但 78 個關鍵分析套件<strong>缺 75 個</strong>；沒有 Rtools；<code>Rscript</code> 不在 PATH</li>
-<li>Python 3.14.0 全域<strong>只有 pip 一個套件</strong>；<code>python</code> 指令指向 Microsoft Store 別名（不是真直譯器）</li>
+<li>Python 3.14.0 全域<strong>隻有 pip 一個套件</strong>；<code>python</code> 指令指向 Microsoft Store 別名（不是真直譯器）</li>
 <li>沒有 quarto / pandoc / DuckDB CLI / PowerShell 7</li>
 </ul>
 <p>結束狀態（2026-09-21 實測）：</p>
@@ -907,8 +1039,8 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 </ul>
 <p><strong>全部工作圍繞同一個目標：把資料分析做對、做得出來、做得可重現。</strong></p>
 </section>
-<section id="a.2-明確不在範圍內的事" class="level2">
-<h2 class="anchored" data-anchor-id="a.2-明確不在範圍內的事">A.2 明確不在範圍內的事</h2>
+<section id="a.2-明確不在範圍內的事" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="a.2-明確不在範圍內的事"><span class="header-section-number">23.2</span> A.2 明確不在範圍內的事</h2>
 <ul>
 <li>未接觸任何業務資料、客戶資料、生產資料庫</li>
 <li>未對外傳送任何公司檔案</li>
@@ -917,8 +1049,8 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 <hr>
 </section>
 </section>
-<section id="附錄-b對系統做過的每一項變更與還原方式" class="level1">
-<h1>附錄 B：對系統做過的每一項變更與還原方式</h1>
+<section id="附錄-b對繫統做過的每一項變更與還原方式" class="level1" data-number="24">
+<h1 data-number="24"><span class="header-section-number">24</span> 附錄 B：對繫統做過的每一項變更與還原方式</h1>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -991,7 +1123,7 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 </tr>
 <tr class="even">
 <td>10</td>
-<td>重建 <code>C:\work\envs\ds</code>（升級後 uv 託管直譯器消失）</td>
+<td>重建 <code>C:\work\envs\ds</code>（昇級後 uv 託管直譯器消失）</td>
 <td>09-20 17:4x</td>
 <td>同 #5</td>
 </tr>
@@ -1015,70 +1147,70 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 </tr>
 </tbody>
 </table>
-<p><strong>沒有一項變更觸及作業系統核心設定、群組原則、服務、防火牆或資安軟體。</strong></p>
-<p>需要管理員權限的項目（長路徑、分頁檔、Defender 排除、系統還原點）<strong>全部沒有執行</strong>，只產出腳本 <code>診斷操作系統/Run_AsAdmin.ps1</code> 交由使用者自行決定。</p>
+<p><strong>沒有一項變更觸及作業繫統核心設定、群組原則、服務、防火牆或資安軟體。</strong></p>
+<p>需要管理員權限的項目（長路徑、分頁檔、Defender 排除、繫統還原點）<strong>全部沒有執行</strong>，隻產出腳本 <code>診斷操作繫統/Run_AsAdmin.ps1</code> 交由使用者自行決定。</p>
 <hr>
 </section>
-<section id="附錄-c可能引起誤會的操作逐項說明" class="level1">
-<h1>附錄 C：可能引起誤會的操作——逐項說明</h1>
-<p>這一節是本文件的核心。以下操作若只看資安軟體的日誌，確實可能被誤判，因此逐項說明原因、範圍與界線。</p>
-<section id="c.1-列舉行程載入的-dll-模組" class="level2">
-<h2 class="anchored" data-anchor-id="c.1-列舉行程載入的-dll-模組">C.1 列舉行程載入的 DLL 模組</h2>
+<section id="附錄-c可能引起誤會的操作逐項說明" class="level1" data-number="25">
+<h1 data-number="25"><span class="header-section-number">25</span> 附錄 C：可能引起誤會的操作——逐項說明</h1>
+<p>這一節是本文件的核心。以下操作若隻看資安軟體的日誌，確實可能被誤判，因此逐項說明原因、範圍與界線。</p>
+<section id="c.1-列舉行程載入的-dll-模組" class="level2" data-number="25.1">
+<h2 data-number="25.1" class="anchored" data-anchor-id="c.1-列舉行程載入的-dll-模組"><span class="header-section-number">25.1</span> C.1 列舉行程載入的 DLL 模組</h2>
 <p><strong>做了什麼</strong>：對 <code>chrome.exe</code>、<code>msedge.exe</code>、<code>comet.exe</code>、<code>Positron.exe</code> 執行 <code>(Get-Process X).Modules</code>，列出載入的第三方 DLL。</p>
-<p><strong>為什麼</strong>：Comet 瀏覽器視窗全黑，Chrome 在同一台機器上正常。要找出差異，最直接的方法是比對兩者的執行環境差異。結果發現各應用被注入的管控模組數不同（Chrome 20、Comet 13～15）。</p>
-<p><strong>界線</strong>：<code>Get-Process().Modules</code> 是 .NET 的公開唯讀 API，一般使用者權限即可呼叫，<strong>只讀取模組名稱與路徑，不讀取模組內容、不注入、不修改、不卸載任何模組</strong>。</p>
-<p><strong>結論用途</strong>：寫進給 IT 的報修單，作為「<code>comet.exe</code> 可能不在管控軟體支援清單上」的佐證。且已明確標註<strong>這只是線索、不是結論</strong>（Positron 拿到相同的 13 個模組卻正常，已推翻因果關係）。</p>
+<p><strong>為什麼</strong>：Comet 瀏覽器視窗全黑，Chrome 在同一颱機器上正常。要找出差異，最直接的方法是比對兩者的執行環境差異。結果發現各應用被注入的管控模組數不同（Chrome 20、Comet 13～15）。</p>
+<p><strong>界線</strong>：<code>Get-Process().Modules</code> 是 .NET 的公開唯讀 API，一般使用者權限即可呼叫，<strong>隻讀取模組名稱與路徑，不讀取模組內容、不注入、不修改、不卸載任何模組</strong>。</p>
+<p><strong>結論用途</strong>：寫進給 IT 的報修單，作為「<code>comet.exe</code> 可能不在管控軟體支援清單上」的佐證。且已明確標註<strong>這隻是線索、不是結論</strong>（Positron 拿到相同的 13 個模組卻正常，已推翻因果關係）。</p>
 </section>
-<section id="c.2-嘗試讀取-browserguard.ini" class="level2">
-<h2 class="anchored" data-anchor-id="c.2-嘗試讀取-browserguard.ini">C.2 嘗試讀取 <code>BrowserGuard.ini</code></h2>
+<section id="c.2-嘗試讀取-browserguard.ini" class="level2" data-number="25.2">
+<h2 data-number="25.2" class="anchored" data-anchor-id="c.2-嘗試讀取-browserguard.ini"><span class="header-section-number">25.2</span> C.2 嘗試讀取 <code>BrowserGuard.ini</code></h2>
 <p><strong>做了什麼</strong>：嘗試以唯讀方式讀取 <code>C:\Inetpub\ftproot\Tipray\LdTerm\BrowserGuard.ini</code>。</p>
 <p><strong>為什麼</strong>：要確認 <code>comet.exe</code> 是否在管控軟體的受支援瀏覽器清單中，以便在報修單中提供具體依據。</p>
 <p><strong>實際結果</strong>：目錄顯示檔案 10,328 位元組，實際讀取回傳 <strong>0 位元組</strong>——管控軟體的檔案鎖正常運作，擋下了讀取。</p>
 <p><strong>後續處置</strong>：<strong>立即停止</strong>，未再以任何方式嘗試繞過。原文記錄為：「到此為止，不再深入探測資安軟體內部；現有證據已經足夠開單。」</p>
 </section>
-<section id="c.3-終止-comet.exe-行程" class="level2">
-<h2 class="anchored" data-anchor-id="c.3-終止-comet.exe-行程">C.3 終止 comet.exe 行程</h2>
+<section id="c.3-終止-comet.exe-行程" class="level2" data-number="25.3">
+<h2 data-number="25.3" class="anchored" data-anchor-id="c.3-終止-comet.exe-行程"><span class="header-section-number">25.3</span> C.3 終止 comet.exe 行程</h2>
 <p><strong>做了什麼</strong>：測試過程中多次執行 <code>Get-Process comet | Stop-Process -Force</code>。</p>
 <p><strong>為什麼</strong>：黑屏測試需要確保每次測的是<strong>這一次啟動</strong>的乾淨狀態，否則前一次的殘留行程會污染結果。另有一次是驗收腳本卡住 11.5 分鐘，必須手動清除。</p>
-<p><strong>影響範圍</strong>：僅限 Comet 瀏覽器本身，且 Comet 當時處於不可用狀態（全黑）。未終止任何資安軟體、系統服務或他人行程。</p>
+<p><strong>影響範圍</strong>：僅限 Comet 瀏覽器本身，且 Comet 當時處於不可用狀態（全黑）。未終止任何資安軟體、繫統服務或他人行程。</p>
 <p><strong>已知缺陷</strong>：<code>Acceptance_Test.ps1</code> 中的 Comet 檢查會無差別終止所有 comet 行程，若使用者當下正在使用會被中斷。此缺陷已由後續工作指出，記錄於 <code>CLAUDE.md</code>。</p>
 </section>
-<section id="c.4-反覆啟動瀏覽器並截圖" class="level2">
-<h2 class="anchored" data-anchor-id="c.4-反覆啟動瀏覽器並截圖">C.4 反覆啟動瀏覽器並截圖</h2>
-<p><strong>做了什麼</strong>：以不同參數啟動 Comet 約 6 次、Positron 2 次，每次擷取螢幕畫面並統計像素亮度。</p>
+<section id="c.4-反覆啟動瀏覽器並截圖" class="level2" data-number="25.4">
+<h2 data-number="25.4" class="anchored" data-anchor-id="c.4-反覆啟動瀏覽器並截圖"><span class="header-section-number">25.4</span> C.4 反覆啟動瀏覽器並截圖</h2>
+<p><strong>做了什麼</strong>：以不同參數啟動 Comet 約 6 次、Positron 2 次，每次擷取螢幕畫麵並統計像素亮度。</p>
 <p><strong>為什麼</strong>：「黑屏」必須量測，不能靠肉眼描述。判據為內容區近黑比例、平均亮度、相異色數。這是唯一能把「我覺得它是黑的」轉成可查證數據的方法。</p>
-<p><strong>截圖去向</strong>：全部存放於本機工作階段暫存目錄，<strong>未上傳、未外傳</strong>。截圖內容為瀏覽器視窗本身（多為全黑畫面）與 <code>example.com</code> 測試頁。</p>
+<p><strong>截圖去向</strong>：全部存放於本機工作階段暫存目錄，<strong>未上傳、未外傳</strong>。截圖內容為瀏覽器視窗本身（多為全黑畫麵）與 <code>example.com</code> 測試頁。</p>
 </section>
-<section id="c.5-建立-cwork-與-cworkprojectslab" class="level2">
-<h2 class="anchored" data-anchor-id="c.5-建立-cwork-與-cworkprojectslab">C.5 建立 <code>C:\work</code> 與 <code>C:\work\projects\lab</code></h2>
+<section id="c.5-建立-cwork-與-cworkprojectslab" class="level2" data-number="25.5">
+<h2 data-number="25.5" class="anchored" data-anchor-id="c.5-建立-cwork-與-cworkprojectslab"><span class="header-section-number">25.5</span> C.5 建立 <code>C:\work</code> 與 <code>C:\work\projects\lab</code></h2>
 <p><strong>做了什麼</strong>：在 C 槽根目錄建立工作區。</p>
-<p><strong>為什麼</strong>：原專案位於 <code>OneDrive\文档\GitHub\</code>，同時觸犯兩個技術問題——雲端同步會鎖住 <code>.git</code>／<code>.venv</code>／<code>*.parquet</code> 造成毀損，路徑含中文字元會讓 R 編譯與 LaTeX 出錯。</p>
+<p><strong>為什麼</strong>：原專案位於 <code>OneDrive\文檔\GitHub\</code>，同時觸犯兩個技術問題——雲端同步會鎖住 <code>.git</code>／<code>.venv</code>／<code>*.parquet</code> 造成毀損，路徑含中文字元會讓 R 編譯與 LaTeX 出錯。</p>
 <p><strong>權限</strong>：Windows 預設允許已驗證使用者在 C 槽根目錄建立資料夾，<strong>未使用也未需要管理員權限</strong>。</p>
 </section>
-<section id="c.6-存取網際網路" class="level2">
-<h2 class="anchored" data-anchor-id="c.6-存取網際網路">C.6 存取網際網路</h2>
+<section id="c.6-存取網際網路" class="level2" data-number="25.6">
+<h2 data-number="25.6" class="anchored" data-anchor-id="c.6-存取網際網路"><span class="header-section-number">25.6</span> C.6 存取網際網路</h2>
 <p><strong>做了什麼</strong>：下載 R 套件（CRAN）、Python 套件（PyPI）、軟體（winget 官方來源）；另有 4 次網頁查證（Anthropic 與 OpenAI 的公開資訊、NVIDIA 驅動版本、CRAN 套件封存狀態）。</p>
 <p><strong>未做</strong>：未上傳任何本機檔案、未存取任何非公開網站、未使用任何代理或規避手段。</p>
 <hr>
 </section>
 </section>
-<section id="附錄-d明確沒有做的事" class="level1">
-<h1>附錄 D：明確沒有做的事</h1>
+<section id="附錄-d明確沒有做的事" class="level1" data-number="26">
+<h1 data-number="26"><span class="header-section-number">26</span> 附錄 D：明確沒有做的事</h1>
 <p>為避免誤會，以下事項<strong>一次都沒有發生</strong>：</p>
 <ol type="1">
-<li><strong>未停用、未解除安裝、未修改任何資安軟體。</strong> 亿赛通 CDG、Kaspersky Endpoint Security、天锐绿盾、Microsoft Defender 全部維持原狀運作中。</li>
+<li><strong>未停用、未解除安裝、未修改任何資安軟體。</strong> 億賽通 CDG、Kaspersky Endpoint Security、天銳綠盾、Microsoft Defender 全部維持原狀運作中。</li>
 <li><strong>未嘗試規避任何管控。</strong> 具體拒絕過的做法：把 <code>comet.exe</code> 改名成 <code>chrome.exe</code> 去騙過掛鉤——雖然這是驗證假設最快的方法，但那是規避資安管控，明確拒絕執行並寫入文件。</li>
 <li><strong>未關閉工作區信任（Workspace Trust）。</strong> Positron 的信任按鈕留給使用者自行決定，理由是那屬於安全決定。</li>
 <li><del><strong>未提權。</strong> 整個工作階段以一般使用者身分執行</del> <strong>【2026-09-21 斧正：此項已不成立。當日 09:00–09:08 經使用者在 UAC 逐次同意後執行了提權作業，逐項明細見附錄 J。本文件既以誠實為憑，過期的陳述就必須劃掉，不能留著充數。】</strong></li>
-<li><strong>未刪除 <code>C:\Windows.old</code>。</strong> 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、系統排定 09-23 自動清理）。</li>
+<li><strong>未刪除 <code>C:\Windows.old</code>。</strong> 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、繫統排定 09-23 自動清理）。</li>
 <li><strong>未接觸業務資料。</strong> 所有測試資料均為程式即時產生的隨機數（<code>rnorm</code>、<code>make_classification</code>）。</li>
 </ol>
 <hr>
 </section>
-<section id="附錄-e可供查證的完整軌跡" class="level1">
-<h1>附錄 E：可供查證的完整軌跡</h1>
-<section id="e.1-版本控制紀錄" class="level2">
-<h2 class="anchored" data-anchor-id="e.1-版本控制紀錄">E.1 版本控制紀錄</h2>
+<section id="附錄-e可供查證的完整軌跡" class="level1" data-number="27">
+<h1 data-number="27"><span class="header-section-number">27</span> 附錄 E：可供查證的完整軌跡</h1>
+<section id="e.1-版本控製紀錄" class="level2" data-number="27.1">
+<h2 data-number="27.1" class="anchored" data-anchor-id="e.1-版本控製紀錄"><span class="header-section-number">27.1</span> E.1 版本控製紀錄</h2>
 <p>倉庫 <code>engryochan/qianghua_xianyou_ziyuan_shichuang_dishiban</code>，分支 <code>世博量化研究院</code>。</p>
 <p>施工前基線標籤：<strong><code>pre-datastack-20260920</code></strong>（施工前推送，可完整回溯）。</p>
 <p>主要提交（時間為本機時間）：</p>
@@ -1087,8 +1219,8 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 ac5cd94  09-20 18:16  竣工：交付 IT 報修單、管理員腳本，並記錄 arrow/pyarrow 衝突
 15acd33  09-20 18:10  更正：Comet 黑屏的「半套掛鉤」根因不成立
 9abcabf  09-20 17:58  診斷腳本：補上綠盾偵測、比對式管控模組分析，修正兩處誤報
-0b41f3d  09-20 17:47  qmd：補上 Windows 11 升級後的實測記錄
-91c0d36  09-20 17:35  斧正黑屏根因：不是顯卡驅動，是 DLP 只認得名單上的瀏覽器
+0b41f3d  09-20 17:47  qmd：補上 Windows 11 昇級後的實測記錄
+91c0d36  09-20 17:35  斧正黑屏根因：不是顯卡驅動，是 DLP 隻認得名單上的瀏覽器
 89bec41  09-20 17:32  把 Python 環境的鎖版檔納入版控
 e1ad8da  09-20 13:01  先查證人工智能自我訓練
 5753e26  09-20 12:55  新增 CLAUDE.md：把今天的教訓變成版本化的知識
@@ -1096,11 +1228,11 @@ e1ad8da  09-20 13:01  先查證人工智能自我訓練
 833f113  09-20 12:12  診斷邏輯四項誤報修正 + 補齊因果推論套件
 cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PATH
 06ab196  09-20 11:52  Setup_DataStack: 修正 R 堆疊整批安裝失敗
-6447d21  09-20 11:48  Setup_DataStack: .Rprofile 只管安裝行為，不管分析行為</code></pre>
+6447d21  09-20 11:48  Setup_DataStack: .Rprofile 隻管安裝行為，不管分析行為</code></pre>
 <p>每個提交訊息都寫明「做了什麼、為什麼、依據是什麼」，可逐條核對。</p>
 </section>
-<section id="e.2-本機稽核檔案" class="level2">
-<h2 class="anchored" data-anchor-id="e.2-本機稽核檔案">E.2 本機稽核檔案</h2>
+<section id="e.2-本機稽核檔案" class="level2" data-number="27.2">
+<h2 data-number="27.2" class="anchored" data-anchor-id="e.2-本機稽核檔案"><span class="header-section-number">27.2</span> E.2 本機稽核檔案</h2>
 <pre><code>~\PATH_user_backup_20260920_104741.txt      PATH 變更前備份
 ~\PATH_user_backup_20260920_114754.txt
 ~\gitconfig_backup_20260920_104741.txt      git 設定變更前備份
@@ -1114,16 +1246,16 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 ~\Win10_Diag2_20260920_181658\              最新診斷報告（含 27 份 CSV/TXT）</code></pre>
 <p><code>Setup_DataStack_*.log</code> 為 PowerShell 完整逐行記錄，包含每一道指令與其輸出，可直接與資安軟體日誌對照。</p>
 </section>
-<section id="e.3-可隨時重跑的驗證" class="level2">
-<h2 class="anchored" data-anchor-id="e.3-可隨時重跑的驗證">E.3 可隨時重跑的驗證</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\診斷操作系統\Acceptance_Test<span class="op">.</span><span class="fu">ps1</span>      <span class="co"># 28 項實跑驗收</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\診斷操作系統\Win10_Diagnose_v2<span class="op">.</span><span class="fu">ps1</span>    <span class="co"># 唯讀診斷，不改任何設定</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="e.3-可隨時重跑的驗證" class="level2" data-number="27.3">
+<h2 data-number="27.3" class="anchored" data-anchor-id="e.3-可隨時重跑的驗證"><span class="header-section-number">27.3</span> E.3 可隨時重跑的驗證</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\診斷操作繫統\Acceptance_Test<span class="op">.</span><span class="fu">ps1</span>      <span class="co"># 28 項實跑驗收</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">.</span>\診斷操作繫統\Win10_Diagnose_v2<span class="op">.</span><span class="fu">ps1</span>    <span class="co"># 唯讀診斷，不改任何設定</span></span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
-<section id="附錄-f本工作階段中我自己犯的錯" class="level1">
-<h1>附錄 F：本工作階段中我自己犯的錯</h1>
-<p>列出這些不是自貶，而是因為<strong>一份只寫成功的紀錄不具查證價值</strong>。以下每一項都是我先講錯、再被自己的實測推翻的：</p>
+<section id="附錄-f本工作階段中我自己犯的錯" class="level1" data-number="28">
+<h1 data-number="28"><span class="header-section-number">28</span> 附錄 F：本工作階段中我自己犯的錯</h1>
+<p>列出這些不是自貶，而是因為<strong>一份隻寫成功的紀錄不具查證價值</strong>。以下每一項都是我先講錯、再被自己的實測推翻的：</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1155,7 +1287,7 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </tr>
 <tr class="even">
 <td>4</td>
-<td>「Comet 黑屏是 DLP 只套半套掛鉤」</td>
+<td>「Comet 黑屏是 DLP 隻套半套掛鉤」</td>
 <td>Positron 拿到完全相同的 13 個模組卻渲染正常</td>
 </tr>
 <tr class="odd">
@@ -1184,8 +1316,8 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <p>若第一次驗收就照單全收那 10 個紅字，接下來會去重裝 Python 環境、重建 R 套件庫——修四個根本沒壞的東西，還可能真的弄壞。</p>
 <hr>
 </section>
-<section id="附錄-g後續工作對本文件的更正2026-09-21" class="level1">
-<h1>附錄 G：後續工作對本文件的更正（2026-09-21）</h1>
+<section id="附錄-g後續工作對本文件的更正2026-09-21" class="level1" data-number="29">
+<h1 data-number="29"><span class="header-section-number">29</span> 附錄 G：後續工作對本文件的更正（2026-09-21）</h1>
 <p>本倉庫由多個工作階段共同維護。後續階段對本文件的內容提出以下更正，一併列出以維持紀錄準確：</p>
 <table class="caption-top table">
 <colgroup>
@@ -1216,8 +1348,8 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <p>本機當前狀態（2026-09-21 實測）：Windows 11 Build 26200、R 348 套件、Python 兩環境各 182 套件、C: 可用 59.8 GB（25.2 %）、<code>C:\Windows.old</code> 仍在（<code>SetupCleanupTask</code> 排定 09-23 06:00 自動清理）。</p>
 <hr>
 </section>
-<section id="附錄-h尚未解決需他人協助的事項" class="level1">
-<h1>附錄 H：尚未解決、需他人協助的事項</h1>
+<section id="附錄-h尚未解決需他人協助的事項" class="level1" data-number="30">
+<h1 data-number="30"><span class="header-section-number">30</span> 附錄 H：尚未解決、需他人協助的事項</h1>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1234,7 +1366,7 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <tbody>
 <tr class="odd">
 <td>Comet 瀏覽器黑屏</td>
-<td>五項假設全部實測排除，無確立正因。報修單已備妥於 <code>診斷操作系統/IT報修_Comet黑屏.md</code></td>
+<td>五項假設全部實測排除，無確立正因。報修單已備妥於 <code>診斷操作繫統/IT報修_Comet黑屏.md</code></td>
 <td>IT（管控軟體端）或 Perplexity（廠商端）</td>
 </tr>
 <tr class="even">
@@ -1248,8 +1380,8 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <td>IT 決定是否轉 Passive</td>
 </tr>
 <tr class="even">
-<td>長路徑、分頁檔、Defender 排除、系統還原點</td>
-<td>腳本已備妥 <code>診斷操作系統/Run_AsAdmin.ps1</code></td>
+<td>長路徑、分頁檔、Defender 排除、繫統還原點</td>
+<td>腳本已備妥 <code>診斷操作繫統/Run_AsAdmin.ps1</code></td>
 <td>需管理員身分執行</td>
 </tr>
 <tr class="odd">
@@ -1263,10 +1395,10 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <p><strong>本文件所有數據均為本機實際執行所得，可依附錄 E 逐項複驗。</strong></p>
 <hr>
 </section>
-<section id="附錄-i驅動程式全機盤點2026-09-21-實測" class="level1">
-<h1>附錄 I：驅動程式全機盤點（2026-09-21 實測）</h1>
-<section id="i.1-硬體基礎" class="level2">
-<h2 class="anchored" data-anchor-id="i.1-硬體基礎">I.1 硬體基礎</h2>
+<section id="附錄-i驅動程式全機盤點2026-09-21-實測" class="level1" data-number="31">
+<h1 data-number="31"><span class="header-section-number">31</span> 附錄 I：驅動程式全機盤點（2026-09-21 實測）</h1>
+<section id="i.1-硬體基礎" class="level2" data-number="31.1">
+<h2 data-number="31.1" class="anchored" data-anchor-id="i.1-硬體基礎"><span class="header-section-number">31.1</span> I.1 硬體基礎</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1276,7 +1408,7 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </thead>
 <tbody>
 <tr class="odd">
-<td>主機板</td>
+<td>主機闆</td>
 <td>ASUSTeK <strong>PRIME H610M-R D4</strong>（Rev 1.xx）</td>
 </tr>
 <tr class="even">
@@ -1285,21 +1417,21 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </tr>
 <tr class="odd">
 <td>晶片組</td>
-<td>Intel 600 系列（H610，Alder Lake-S 平台）</td>
+<td>Intel 600 繫列（H610，Alder Lake-S 平颱）</td>
 </tr>
 <tr class="even">
 <td>顯示卡</td>
 <td>NVIDIA GeForce GT 730，PCI ID <strong><code>VEN_10DE&amp;DEV_0F02</code></strong></td>
 </tr>
 <tr class="odd">
-<td>作業系統</td>
+<td>作業繫統</td>
 <td>Windows 11 Build 26200</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="i.2-顯示卡沒有最强版可更新391.35-就是最後一版" class="level2">
-<h2 class="anchored" data-anchor-id="i.2-顯示卡沒有最强版可更新391.35-就是最後一版">I.2 顯示卡：沒有「最强版」可更新，391.35 就是最後一版</h2>
+<section id="i.2-顯示卡沒有最強版可更新391.35-就是最後一版" class="level2" data-number="31.2">
+<h2 data-number="31.2" class="anchored" data-anchor-id="i.2-顯示卡沒有最強版可更新391.35-就是最後一版"><span class="header-section-number">31.2</span> I.2 顯示卡：沒有「最強版」可更新，391.35 就是最後一版</h2>
 <p>這是本附錄最重要的一項，也推翻了本文件先前兩處說法。</p>
 <p><strong>實讀 PCI ID 為 <code>VEN_10DE&amp;DEV_0F02</code> = GF108 核心，屬 Fermi 世代，不是 Kepler。</strong> GT 730 這個型號同時有 Kepler（GK208）與 Fermi（GF108）兩種版本，<strong>不能依卡名推定世代</strong>。</p>
 <p>NVIDIA 對 Fermi 的支援狀態（已查證公開資料）：</p>
@@ -1313,7 +1445,7 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <tbody>
 <tr class="odd">
 <td>2018-03</td>
-<td>發布 <strong>391.35</strong>，這是 Fermi 的最後一版 Game Ready 驅動</td>
+<td>發佈 <strong>391.35</strong>，這是 Fermi 的最後一版 Game Ready 驅動</td>
 </tr>
 <tr class="even">
 <td>2018-04</td>
@@ -1321,21 +1453,21 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </tr>
 <tr class="odd">
 <td>2019-01</td>
-<td>legacy 支援期結束，<strong>此後連安全性修補都沒有再發布</strong></td>
+<td>legacy 支援期結束，<strong>此後連安全性修補都沒有再發佈</strong></td>
 </tr>
 </tbody>
 </table>
 <p><strong>所以本機的 391.35（2018-03-23）不是「疏於更新」，而是「已無新版可更新」。</strong></p>
 <p>這連帶推翻兩件事：</p>
 <ol type="1">
-<li>本文件先前記載的「升級 NVIDIA 驅動至 472.12」<strong>是錯的</strong>——472.xx 是 Kepler 分支，對 Fermi 不適用，安裝只會失敗或不認卡。</li>
-<li>「驅動太舊導致黑屏」這個假設，先前已被 Chrome（近黑 0 %）與 Positron（1.3 %）的對照實測推翻；現在又多一層：<strong>即使想更新也無從更新</strong>。</li>
+<li>本文件先前記載的「昇級 NVIDIA 驅動至 472.12」<strong>是錯的</strong>——472.xx 是 Kepler 分支，對 Fermi 不適用，安裝隻會失敗或不認卡。</li>
+<li>「驅動太舊導緻黑屏」這個假設，先前已被 Chrome（近黑 0 %）與 Positron（1.3 %）的對照實測推翻；現在又多一層：<strong>即使想更新也無從更新</strong>。</li>
 </ol>
-<p><strong>對「更新至最强版」的誠實回答：這張卡在軟體層面已經到頂。</strong> 唯一能再往上的途徑是更換顯示卡硬體，那屬於採購決策，不是我能執行的範圍。</p>
-<p>作業上維持原判：<strong>模型訓練一律走 CPU</strong>（i5-12400F 6C/12T，XGBoost/LightGBM 的 <code>hist</code> 演算法 + 多執行緒），顯示卡只負責顯示。本機 28 項驗收中 xgboost 與 lightgbm 皆在 CPU 路線下通過，不受此限制影響。</p>
+<p><strong>對「更新至最強版」的誠實回答：這張卡在軟體層麵已經到頂。</strong> 唯一能再往上的途徑是更換顯示卡硬體，那屬於採購決策，不是我能執行的範圍。</p>
+<p>作業上維持原判：<strong>模型訓練一律走 CPU</strong>（i5-12400F 6C/12T，XGBoost/LightGBM 的 <code>hist</code> 演算法 + 多執行緒），顯示卡隻負責顯示。本機 28 項驗收中 xgboost 與 lightgbm 皆在 CPU 路線下通過，不受此限製影響。</p>
 </section>
-<section id="i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install" class="level2">
-<h2 class="anchored" data-anchor-id="i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install">I.3 四個驅動缺失的裝置（狀態 Error / <code>CM_PROB_FAILED_INSTALL</code>）</h2>
+<section id="i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install" class="level2" data-number="31.3">
+<h2 data-number="31.3" class="anchored" data-anchor-id="i.3-四個驅動缺失的裝置狀態-error-cm_prob_failed_install"><span class="header-section-number">31.3</span> I.3 四個驅動缺失的裝置（狀態 Error / <code>CM_PROB_FAILED_INSTALL</code>）</h2>
 <p>這是本次盤點<strong>真正找到的可修補缺口</strong>：</p>
 <table class="caption-top table">
 <colgroup>
@@ -1357,19 +1489,19 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <td><code>PCI\VEN_8086&amp;DEV_7AA3&amp;SUBSYS_86941043</code></td>
 <td><code>CC_0C0500</code></td>
 <td>匯流排 0／裝置 31／功能 4</td>
-<td>Intel 600 系列 <strong>SMBus 控制器</strong></td>
+<td>Intel 600 繫列 <strong>SMBus 控製器</strong></td>
 </tr>
 <tr class="even">
 <td><code>PCI\VEN_8086&amp;DEV_7AA4&amp;SUBSYS_86941043</code></td>
 <td><code>CC_0C8000</code></td>
 <td>匯流排 0／裝置 31／功能 5</td>
-<td>Intel <strong>SPI 控制器</strong></td>
+<td>Intel <strong>SPI 控製器</strong></td>
 </tr>
 <tr class="odd">
 <td><code>PCI\VEN_8086&amp;DEV_7ACC&amp;SUBSYS_86941043</code></td>
 <td><code>CC_0C8000</code></td>
 <td>匯流排 0／裝置 21／功能 0</td>
-<td>Intel <strong>Serial IO</strong> 控制器</td>
+<td>Intel <strong>Serial IO</strong> 控製器</td>
 </tr>
 <tr class="even">
 <td><code>ACPI\INTC1056</code></td>
@@ -1382,8 +1514,8 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <p>四者皆為 Intel 晶片組週邊，一般由 <strong>Intel Chipset Device Software（INF Update Utility）</strong> 與 <strong>Intel Dynamic Tuning 驅動</strong>提供，可自 ASUS PRIME H610M-R D4 支援頁或 Intel 官方取得。</p>
 <p><strong>影響評估</strong>：這四個裝置不影響資料分析運算（CPU、記憶體、磁碟、網路皆正常，28 項驗收全過）。SMBus 與 DPTF 缺失主要影響感測器讀值與電源/散熱調校的精細度。<strong>屬於「該補但不急」。</strong></p>
 </section>
-<section id="i.4-其他驅動現況" class="level2">
-<h2 class="anchored" data-anchor-id="i.4-其他驅動現況">I.4 其他驅動現況</h2>
+<section id="i.4-其他驅動現況" class="level2" data-number="31.4">
+<h2 data-number="31.4" class="anchored" data-anchor-id="i.4-其他驅動現況"><span class="header-section-number">31.4</span> I.4 其他驅動現況</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1410,7 +1542,7 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <td>NVIDIA High Definition Audio ×4</td>
 <td>1.3.38.35</td>
 <td>2020</td>
-<td>隨顯卡驅動提供，同樣受 Fermi EOL 限制</td>
+<td>隨顯卡驅動提供，同樣受 Fermi EOL 限製</td>
 </tr>
 <tr class="odd">
 <td>Intel Management Engine Interface</td>
@@ -1433,23 +1565,23 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </tbody>
 </table>
 </section>
-<section id="i.5-windows-update-的實測結果" class="level2">
-<h2 class="anchored" data-anchor-id="i.5-windows-update-的實測結果">I.5 Windows Update 的實測結果</h2>
+<section id="i.5-windows-update-的實測結果" class="level2" data-number="31.5">
+<h2 data-number="31.5" class="anchored" data-anchor-id="i.5-windows-update-的實測結果"><span class="header-section-number">31.5</span> I.5 Windows Update 的實測結果</h2>
 <p>以唯讀方式查詢 Windows Update（<code>Microsoft.Update.Session</code> COM API，<code>IsInstalled=0</code>）：</p>
 <pre><code>驅動更新：0 筆
 所有更新：0 筆</code></pre>
-<p><strong>Windows Update 認為系統已是最新，不會自動補上 I.3 那四個缺失的驅動。</strong> 這類晶片組 INF 驅動通常不經 Windows Update 派送，必須由主機板廠或 Intel 官方安裝。</p>
+<p><strong>Windows Update 認為繫統已是最新，不會自動補上 I.3 那四個缺失的驅動。</strong> 這類晶片組 INF 驅動通常不經 Windows Update 派送，必須由主機闆廠或 Intel 官方安裝。</p>
 <p>首次查詢曾回傳 <code>0x80244011</code>，重試後正常，判定為暫時性錯誤——已確認本機<strong>沒有</strong> WSUS 設定（<code>WUServer</code> 與 <code>UseWUServer</code> 皆為空）。</p>
 </section>
-<section id="i.6-順帶發現一條殘留的舊政策" class="level2">
-<h2 class="anchored" data-anchor-id="i.6-順帶發現一條殘留的舊政策">I.6 順帶發現：一條殘留的舊政策</h2>
+<section id="i.6-順帶發現一條殘留的舊政策" class="level2" data-number="31.6">
+<h2 data-number="31.6" class="anchored" data-anchor-id="i.6-順帶發現一條殘留的舊政策"><span class="header-section-number">31.6</span> I.6 順帶發現：一條殘留的舊政策</h2>
 <pre><code>HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
   TargetReleaseProductVersion = "Windows 10"</code></pre>
 <p>這條政策原意是把機器鎖在 Windows 10，<strong>但機器已經是 Windows 11 Build 26200</strong>。政策已經名實不符，且可能影響後續功能更新的取得。</p>
 <p><strong>建議交由 IT 確認是否清除</strong>——這屬於群組原則層級的設定，且可能是公司統一派送的，我不會自行更動。</p>
 </section>
-<section id="i.7-對一律更新至最强版的結論" class="level2">
-<h2 class="anchored" data-anchor-id="i.7-對一律更新至最强版的結論">I.7 對「一律更新至最强版」的結論</h2>
+<section id="i.7-對一律更新至最強版的結論" class="level2" data-number="31.7">
+<h2 data-number="31.7" class="anchored" data-anchor-id="i.7-對一律更新至最強版的結論"><span class="header-section-number">31.7</span> I.7 對「一律更新至最強版」的結論</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1498,20 +1630,20 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </table>
 <p><strong>我沒有安裝任何驅動程式</strong>，理由有三，缺一不可：</p>
 <ol type="1">
-<li><strong>權限</strong>：驅動安裝需要系統管理員，本工作階段以一般使用者執行，無法提權。</li>
-<li><strong>來源</strong>：安裝驅動必須自廠商網站下載並執行安裝程式。在一台有 DLP 與端點防護的公司資產上，下載並執行外部安裝程式應當事先取得同意，不該由我逕行決定。</li>
+<li><strong>權限</strong>：驅動安裝需要繫統管理員，本工作階段以一般使用者執行，無法提權。</li>
+<li><strong>來源</strong>：安裝驅動必須自廠商網站下載並執行安裝程式。在一颱有 DLP 與端點防護的公司資產上，下載並執行外部安裝程式應當事先取得同意，不該由我逕行決定。</li>
 <li><strong>政策</strong>：驅動與韌體屬於 IT 管理範圍，貿然更新可能與公司的標準映像或資產管理衝突。</li>
 </ol>
-<p><strong>已備妥的東西</strong>：<code>診斷操作系統/Driver_Report.ps1</code> 會重新產生本附錄的全部數據（唯讀），輸出可直接附在給 IT 的工單上。</p>
+<p><strong>已備妥的東西</strong>：<code>診斷操作繫統/Driver_Report.ps1</code> 會重新產生本附錄的全部數據（唯讀），輸出可直接附在給 IT 的工單上。</p>
 <hr>
 <hr>
 </section>
 </section>
-<section id="附錄-j管理員權限作業完整紀錄2026-09-21" class="level1">
-<h1>附錄 J：管理員權限作業完整紀錄（2026-09-21）</h1>
+<section id="附錄-j管理員權限作業完整紀錄2026-09-21" class="level1" data-number="32">
+<h1 data-number="32"><span class="header-section-number">32</span> 附錄 J：管理員權限作業完整紀錄（2026-09-21）</h1>
 <p>本附錄記錄本專案<strong>唯一一次</strong>使用提權的完整過程。附錄 D 第 4 項原稱「未提權」，自本日起已不成立，故於該處劃記並指向此處。</p>
-<section id="j.1-權限前提" class="level2">
-<h2 class="anchored" data-anchor-id="j.1-權限前提">J.1 權限前提</h2>
+<section id="j.1-權限前提" class="level2" data-number="32.1">
+<h2 data-number="32.1" class="anchored" data-anchor-id="j.1-權限前提"><span class="header-section-number">32.1</span> J.1 權限前提</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1548,8 +1680,8 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </table>
 <p>亦即：使用者本人具備管理員身分，提權方式為在 UAC 對話框按下「是」。<strong>每一次提權都由使用者本人親自同意，AI 無法自行提權。</strong></p>
 </section>
-<section id="j.2-三次提權作業" class="level2">
-<h2 class="anchored" data-anchor-id="j.2-三次提權作業">J.2 三次提權作業</h2>
+<section id="j.2-三次提權作業" class="level2" data-number="32.2">
+<h2 data-number="32.2" class="anchored" data-anchor-id="j.2-三次提權作業"><span class="header-section-number">32.2</span> J.2 三次提權作業</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1587,8 +1719,8 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 </tbody>
 </table>
 <p>兩份 <code>Run_AsAdmin_*.log</code> 為 PowerShell Transcript，逐行記錄每一道指令與其輸出，可與資安軟體日誌逐條對照。</p>
-<section id="中途的兩次失敗一併記錄非隱匿" class="level3">
-<h3 class="anchored" data-anchor-id="中途的兩次失敗一併記錄非隱匿">中途的兩次失敗（一併記錄，非隱匿）</h3>
+<section id="中途的兩次失敗一併記錄非隱匿" class="level3" data-number="32.2.1">
+<h3 data-number="32.2.1" class="anchored" data-anchor-id="中途的兩次失敗一併記錄非隱匿"><span class="header-section-number">32.2.1</span> 中途的兩次失敗（一併記錄，非隱匿）</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1611,15 +1743,15 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <tr class="even">
 <td>首次驗證腳本</td>
 <td>ExitCode <code>1</code>，未產生結果檔</td>
-<td>臨時腳本未加 UTF-8 BOM，PowerShell 5.1 以 GBK 讀取導致中文亂碼、解析失敗。補 BOM 後正常</td>
+<td>臨時腳本未加 UTF-8 BOM，PowerShell 5.1 以 GBK 讀取導緻中文亂碼、解析失敗。補 BOM 後正常</td>
 </tr>
 </tbody>
 </table>
 <p>兩次皆為腳本撰寫疏失，與權限無關。使用者因此多按了兩次 UAC。</p>
 </section>
 </section>
-<section id="j.3-實際變更的四項" class="level2">
-<h2 class="anchored" data-anchor-id="j.3-實際變更的四項">J.3 實際變更的四項</h2>
+<section id="j.3-實際變更的四項" class="level2" data-number="32.3">
+<h2 data-number="32.3" class="anchored" data-anchor-id="j.3-實際變更的四項"><span class="header-section-number">32.3</span> J.3 實際變更的四項</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -1650,7 +1782,7 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <td>自動管理，5120 MB</td>
 <td>固定 初始 16290／最大 32581 MB</td>
 <td>重開機</td>
-<td>備份見下；或系統內容 &gt; 進階 &gt; 效能 &gt; 虛擬記憶體 &gt; 勾回自動管理</td>
+<td>備份見下；或繫統內容 &gt; 進階 &gt; 效能 &gt; 虛擬記憶體 &gt; 勾回自動管理</td>
 </tr>
 <tr class="odd">
 <td>Defender 掃描排除</td>
@@ -1673,10 +1805,10 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 <pre><code>C:\work
 C:\Users\PPCCpcpc\AppData\Local\R\win-library
 C:\Users\PPCCpcpc\AppData\Local\uv</code></pre>
-<p><strong>不含 Downloads、桌面或任何文件目錄。</strong> 另需說明：這三項<strong>只對 Microsoft Defender 有效</strong>，亿赛通 CDG、Kaspersky、天锐绿盾不受影響，仍會照常攔截每一次檔案讀寫。</p>
+<p><strong>不含 Downloads、桌麵或任何文件目錄。</strong> 另需說明：這三項<strong>隻對 Microsoft Defender 有效</strong>，億賽通 CDG、Kaspersky、天銳綠盾不受影響，仍會照常攔截每一次檔案讀寫。</p>
 </section>
-<section id="j.4-未成功的三項" class="level2">
-<h2 class="anchored" data-anchor-id="j.4-未成功的三項">J.4 未成功的三項</h2>
+<section id="j.4-未成功的三項" class="level2" data-number="32.4">
+<h2 data-number="32.4" class="anchored" data-anchor-id="j.4-未成功的三項"><span class="header-section-number">32.4</span> J.4 未成功的三項</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1692,27 +1824,27 @@ C:\Users\PPCCpcpc\AppData\Local\uv</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td>系統還原點</td>
+<td>繫統還原點</td>
 <td><strong>未建立</strong></td>
-<td>Windows 24 小時節流：當日 17:54 已由系統建立過一個</td>
+<td>Windows 24 小時節流：當日 17:54 已由繫統建立過一個</td>
 </tr>
 <tr class="even">
 <td>Edge</td>
-<td><strong>未升級</strong></td>
+<td><strong>未昇級</strong></td>
 <td><code>-1978335090</code>「安裝技術不符」；後續查出根因為更新服務與排程工作皆不存在（見 IT 工單申請五）</td>
 </tr>
 <tr class="odd">
 <td>Teams / VCRedist x64</td>
-<td>未升級</td>
+<td>未昇級</td>
 <td>winget 回報已無可用更新</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="j.5-提權後的唯讀驗證結果" class="level2">
-<h2 class="anchored" data-anchor-id="j.5-提權後的唯讀驗證結果">J.5 提權後的唯讀驗證結果</h2>
+<section id="j.5-提權後的唯讀驗證結果" class="level2" data-number="32.5">
+<h2 data-number="32.5" class="anchored" data-anchor-id="j.5-提權後的唯讀驗證結果"><span class="header-section-number">32.5</span> J.5 提權後的唯讀驗證結果</h2>
 <p>為確認上述變更是否真的生效（而非僅是腳本宣稱成功），於 09:07 再次提權執行唯讀查證：</p>
-<p><strong>系統還原點</strong>（一般權限看不到，提權後可見）：</p>
+<p><strong>繫統還原點</strong>（一般權限看不到，提權後可見）：</p>
 <pre><code>#2  2026-09-20 17:54:30  Windows 更新</code></pre>
 <p><strong>Defender 排除實況</strong>：</p>
 <pre><code>C:\Users\PPCCpcpc\AppData\Local\JetBrains\PyCharm2026.1   ← 原有
@@ -1722,10 +1854,10 @@ C:\Users\PPCCpcpc\PyCharmMiscProject                      ← 原有
 C:\work                                                   ← 本次新增</code></pre>
 <p><strong>陰影複製空間</strong>：已用 2.91 GB／配置 3.36 GB／上限 4.74 GB，運作正常。</p>
 </section>
-<section id="j.6-本輪最重要的一個發現我的腳本謊報成功" class="level2">
-<h2 class="anchored" data-anchor-id="j.6-本輪最重要的一個發現我的腳本謊報成功">J.6 本輪最重要的一個發現：我的腳本謊報成功</h2>
+<section id="j.6-本輪最重要的一個發現我的腳本謊報成功" class="level2" data-number="32.6">
+<h2 data-number="32.6" class="anchored" data-anchor-id="j.6-本輪最重要的一個發現我的腳本謊報成功"><span class="header-section-number">32.6</span> J.6 本輪最重要的一個發現：我的腳本謊報成功</h2>
 <p><code>Run_AsAdmin.ps1</code> 的日誌同時出現了這兩行：</p>
-<pre><code>警告: 无法创建某个新的系统还原点，因为在过去 1440 分钟内已经创建了一个系统还原点。
+<pre><code>警告: 無法創建某個新的繫統還原點，因爲在過去 1440 分鐘內已經創建了一個繫統還原點。
   已建立。</code></pre>
 <p><strong>前一行說失敗，後一行說成功。</strong> 原因是 <code>Checkpoint-Computer</code> 在 24 小時節流時發出的是<strong>警告</strong>而非終止性錯誤，<code>try/catch</code> 接不到，於是腳本照樣印出「已建立」。</p>
 <p>提權查證的鐵證：</p>
@@ -1735,17 +1867,17 @@ C:\work                                                   ← 本次新增</code
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="va">$before</span> <span class="op">=</span> <span class="op">@(</span><span class="fu">Get-ComputerRestorePoint</span><span class="op">).</span><span class="fu">Count</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Checkpoint-Computer</span> <span class="op">...</span> <span class="op">-</span>WarningVariable wv</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="va">$after</span>  <span class="op">=</span> <span class="op">@(</span><span class="fu">Get-ComputerRestorePoint</span><span class="op">).</span><span class="fu">Count</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span><span class="va">$after</span> <span class="op">-gt</span> <span class="va">$before</span><span class="op">)</span> <span class="op">{</span> 已建立 <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span> 未建立，列出現有最近的還原點 <span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span><span class="va">$after</span> <span class="op">-gt</span> <span class="va">$before</span><span class="op">)</span> <span class="op">{</span> 已建立 <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span> 未建立，列出現有最近的還原點 <span class="op">}</span></span></code></pre></div><button title="複製到剪貼簿" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>退路實際上是存在的</strong>：<code>#2 2026-09-20 17:54「Windows 更新」</code>，建立時間早於本次所有變更，仍可作為回退點。但那不是我建的，而我的腳本謊稱是自己建的——<strong>兩件事都必須講清楚</strong>。</p>
 </section>
-<section id="j.7-變更後的驗收" class="level2">
-<h2 class="anchored" data-anchor-id="j.7-變更後的驗收">J.7 變更後的驗收</h2>
-<p>四項系統變更完成後重跑 28 項實跑驗收：</p>
+<section id="j.7-變更後的驗收" class="level2" data-number="32.7">
+<h2 data-number="32.7" class="anchored" data-anchor-id="j.7-變更後的驗收"><span class="header-section-number">32.7</span> J.7 變更後的驗收</h2>
+<p>四項繫統變更完成後重跑 28 項實跑驗收：</p>
 <pre><code>=== 驗收結果： PASS 28 / FAIL 0 / SKIP 0 ===</code></pre>
 <p>既有分析環境未受任何影響：R 348 套件、兩套 Python 環境各 182 套件、<code>R CMD SHLIB</code> 可編譯、<code>quarto render</code> 可產出、reticulate 橋接正常。</p>
 </section>
-<section id="j.8-尚待使用者執行" class="level2">
-<h2 class="anchored" data-anchor-id="j.8-尚待使用者執行">J.8 尚待使用者執行</h2>
+<section id="j.8-尚待使用者執行" class="level2" data-number="32.8">
+<h2 data-number="32.8" class="anchored" data-anchor-id="j.8-尚待使用者執行"><span class="header-section-number">32.8</span> J.8 尚待使用者執行</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1760,7 +1892,7 @@ C:\work                                                   ← 本次新增</code
 </tr>
 </tbody>
 </table>
-<p>重開機後可執行 <code>診斷操作系統/Acceptance_Test.ps1</code> 複驗，以及 <code>Win10_Diagnose_v2.ps1</code> 確認長路徑已生效。</p>
+<p>重開機後可執行 <code>診斷操作繫統/Acceptance_Test.ps1</code> 複驗，以及 <code>Win10_Diagnose_v2.ps1</code> 確認長路徑已生效。</p>
 <hr>
 </section>
 </section>
@@ -1792,12 +1924,12 @@ C:\work                                                   ← 本次新增</code
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "已複製");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "已複製");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

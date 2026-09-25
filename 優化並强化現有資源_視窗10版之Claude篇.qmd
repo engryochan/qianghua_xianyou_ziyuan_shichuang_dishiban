@@ -1,51 +1,73 @@
 ---
-title: "優化並强化現有資源_視窗10版"
+title: "優化並強化現有資源_視窗10版"
 subtitle: "Claude初步診斷"
-author: "Ryo Eng（雷欧）"
-format: html
+author: "Ryo Eng（雷歐）"
+
+date: "September 23, 2026"
+date-format: "YYYY[年]M[月]D[日（農曆丙午馬年八月十三，丁酉月・庚子日）]"
+
+lang: zh-TW
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    number-sections: true
+    code-fold: false
+  pdf:
+    toc: true
+execute:
+  echo: true
+  warning: false
+
+language:
+  title-block-author-single: "作者"
+  title-block-published: "發佈於"
 ---
 
 # 提問一
 
-請務必參考目前`qianghua_xianyou_ziyuan_shichuang_dishiban`此項目内所有文件内容。務必提供powershell代碼，診斷現有資源目前視窗10版有什麽軟件、應用、設置，然後務必優化與强化至最强版，尤其是在分析數據的任何軟件、應用、程序包等等。
+請務必參考目前`qianghua_xianyou_ziyuan_shichuang_dishiban`此項目內所有文件內容。務必提供powershell代碼，診斷現有資源目前視窗10版有什麽軟件、應用、設置，然後務必優化與強化至最強版，尤其是在分析數據的任何軟件、應用、程序包等等。
 
 # 解答一
 
 Diagnosis of the actual machine is done. Now let me write the two upgraded scripts.
 
-我先讀完了專案內所有檔案（`Win10_Diagnose.ps1`、`Win10_Optimize.ps1`、`DxDiag.txt`、以及 145 KB 的 .qmd，裡面已收錄 Claude/ChatGPT/Perplexity/Grok/深度求索 五份答案）。
+我先讀完了專案內所有檔案（`Win10_Diagnose.ps1`、`Win10_Optimize.ps1`、`DxDiag.txt`、以及 145 KB 的 .qmd，裡麵已收錄 Claude/ChatGPT/Perplexity/Grok/深度求索 五份答案）。
 
-那些答案有一個共同缺口：**全部是「我沒有 Windows 環境，腳本沒跑過」**。所以這一輪我把腳本**實際在這台機器上跑了**。以下是真實結果，不是推測。全程唯讀或 `-WhatIf`，沒有改動任何系統設定。
+那些答案有一個共同缺口：**全部是「我沒有 Windows 環境，腳本沒跑過」**。所以這一輪我把腳本**實際在這颱機器上跑了**。以下是真實結果，不是推測。全程唯讀或 `-WhatIf`，沒有改動任何繫統設定。
 
 ## 實機診斷：硬體是好的，軟體幾乎是空的
 
 | 項目 | 實況 |
 |---|---|
-| 系統 | Win10 Pro 22H2 / 19045.7725，zh-CN，ANSI 碼頁 936 |
+| 繫統 | Win10 Pro 22H2 / 19045.7725，zh-CN，ANSI 碼頁 936 |
 | CPU / RAM | i5-12400F 6C/12T、31.8 GB |
 | 磁碟 | 單顆 SATA SSD 238 GB，剩 112 GB，健康 |
 | GPU | GeForce GT 730，驅動停在 2018 |
 | R | 4.6.1 已裝，**78 個關鍵套件缺 75 個**，**沒有 Rtools**，`Rscript` **不在 PATH** |
-| Python | 3.14.0，全域只有 pip；`python` 指到 Store 別名；`uv 0.12.17` 已裝 |
+| Python | 3.14.0，全域隻有 pip；`python` 指到 Store 別名；`uv 0.12.17` 已裝 |
 | 缺席 | quarto / pandoc / duckdb CLI / PowerShell 7 全無，WSL 無發行版 |
-| 設定 | `LongPathsEnabled=0`、電源「平衡」、分頁檔只有 4.8 GB（RAM 的 15%） |
+| 設定 | `LongPathsEnabled=0`、電源「平衡」、分頁檔隻有 4.8 GB（RAM 的 15%） |
 
 ## 但真正的瓶頸不在「沒優化」，在這兩件事
 
 **1. 三層即時檔案監控疊在一起**
 
-同時常駐：**亿赛通電子文檔安全管理系統客戶端 5.2.0**（透明加密/DLP，`CdgTwin32/64`、`CDGRegedit`、`CdgUpGrade`）＋ **Kaspersky Endpoint Security 14.1** ＋ **Defender 仍在 Normal 模式、即時保護開啟**。裝幾百個 R 套件、解 wheel 都是小檔案密集操作，每個檔案過三層攔截——這才是套件安裝慢、卡住、偶發失敗的頭號原因。
+同時常駐：**億賽通電子文檔安全管理繫統客戶端 5.2.0**（透明加密/DLP，`CdgTwin32/64`、`CDGRegedit`、`CdgUpGrade`）＋ **Kaspersky Endpoint Security 14.1** ＋ **Defender 仍在 Normal 模式、即時保護開啟**。裝幾百個 R 套件、解 wheel 都是小檔案密集操作，每個檔案過三層攔截——這才是套件安裝慢、卡住、偶發失敗的頭號原因。
 
-**不要自己關任何一個。** 多半被策略鎖定，在公司資產上自行停用資安代理通常違規。要走的路是請 IT 做兩件事：把 Defender 轉 Passive、對套件庫與工作區加白名單。腳本的 `-AddDefenderExclusions` 只能處理 Defender。
+**不要自己關任何一個。** 多半被策略鎖定，在公司資產上自行停用資安代理通常違規。要走的路是請 IT 做兩件事：把 Defender 轉 Passive、對套件庫與工作區加白名單。腳本的 `-AddDefenderExclusions` 隻能處理 Defender。
 
 **2. 所有專案都在 OneDrive 裡**
 
-`OneDrive\文档\GitHub\` 底下有 2 個 Git repo。同步用戶端會鎖 `.git`、`renv/library`、`.venv`、`*.parquet`，輕則變慢重則毀損；「文档」還是非 ASCII 路徑。
+`OneDrive\文檔\GitHub\` 底下有 2 個 Git repo。同步用戶端會鎖 `.git`、`renv/library`、`.venv`、`*.parquet`，輕則變慢重則毀損；「文檔」還是非 ASCII 路徑。
 
 ## 交付的兩支腳本（已實跑驗證）
 
 - **[Win10_Diagnose_v2.ps1](Win10_Diagnose_v2.ps1)** — 唯讀，v1 超集。新增管控代理偵測、重複防毒偵測、雲端同步內專案掃描、非 ASCII 路徑、分頁檔評估、GPU 是否真能加速、**R/Python 分組差距分析**、ODBC 缺口、Git 健檢。最後輸出 `99_建議指令.txt`，直接告訴你下一支腳本該加哪些開關。
-- **[Setup_DataStack.ps1](Setup_DataStack.ps1)** — 補齊與調對。v1 的 `Win10_Optimize.ps1` 只「更新已安裝的東西」，這支負責「把缺的裝起來」。全部開關獨立、支援 `-WhatIf`、改動前先備份。
+- **[Setup_DataStack.ps1](Setup_DataStack.ps1)** — 補齊與調對。v1 的 `Win10_Optimize.ps1` 隻「更新已安裝的東西」，這支負責「把缺的裝起來」。全部開關獨立、支援 `-WhatIf`、改動前先備份。
 
 ```bash
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Win10_Diagnose_v2.ps1
@@ -57,7 +79,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Win10_Diagnose_v2.ps1
 .\Setup_DataStack.ps1 -InstallToolchain -InstallRtools -FixPath -ConfigureGit -PrepareWorkspace -SetupR -SetupPython -WhatIf
 ```
 
-系統管理員身分：
+繫統管理員身分：
 
 ```bash
 .\Setup_DataStack.ps1 -EnableLongPaths -SetPageFile -AddDefenderExclusions -WhatIf
@@ -68,16 +90,16 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Win10_Diagnose_v2.ps1
 ## 要先知道的三件事
 
 - `Microsoft.PowerShell`、`DuckDB.cli`、`Posit.Quarto`、`RProject.Rtools` 這四個 winget ID **已在本機查證存在**；ODBC 驅動的 ID 未查證，腳本找不到會給官方下載連結，不硬幹。
-- `-PrepareWorkspace` 只建 `C:\work` 骨架，**不自動搬專案**——搬移要在 IDE 關閉、OneDrive 暫停同步時手動做，腳本會印出 robocopy 指令。
+- `-PrepareWorkspace` 隻建 `C:\work` 骨架，**不自動搬專案**——搬移要在 IDE 關閉、OneDrive 暫停同步時手動做，腳本會印出 robocopy 指令。
 - GT 730 ~~是 Kepler 級~~ **【2026-09-21 斧正：實讀 PCI ID `VEN_10DE&DEV_0F02`，屬 Fermi（GF108）。GT 730 有 Kepler 與 Fermi 兩種版本，不能依卡名推定。詳見附錄 I】**，現行 CUDA/PyTorch/XGBoost-GPU 都不支援。**模型訓練一律走 CPU**（XGBoost/LightGBM 的 hist + 多執行緒），別為了 GPU 加速浪費時間。
 
-報告已產在 `C:\Users\PPCCpcpc\Win10_Diag2_20260920_104717\`，另外我把這一輪的實機結果補進了 [.qmd](優化並强化現有資源_視窗10版.qmd) 末尾，與前五份答案並列。檔案都還沒 commit。
+報告已產在 `C:\Users\PPCCpcpc\Win10_Diag2_20260920_104717\`，另外我把這一輪的實機結果補進了 [.qmd](優化並強化現有資源_視窗10版.qmd) 末尾，與前五份答案並列。檔案都還沒 commit。
 
 # 提問二
 
 全權依照先生您之見施工。
 
-全權委托的最高權限的條件是，請在施工之前（例如數據修改、丟失）委托並推送，git commit 并且 push，這樣才能查證或回溯，任何失誤都可以改善人工智能的計數尤物。倘若先生有更佳的建議、高見、良策的話，請務必不吝指出，在下受教。
+全權委托的最高權限的條件是，請在施工之前（例如數據修改、丟失）委托並推送，git commit 並且 push，這樣才能查證或回溯，任何失誤都可以改善人工智能的計數尤物。倘若先生有更佳的建議、高見、良策的話，請務必不吝指出，在下受教。
 
 # 解答二
 
@@ -87,7 +109,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Win10_Diagnose_v2.ps1
 
 基線已推送（tag `pre-datastack-20260920`）。開始施工——先做快速且可逆的設定層。
 
-施工前先修正我自己腳本的一個缺點——`.Rprofile` 不該改變「分析行為」，只該改變「安裝行為」。
+施工前先修正我自己腳本的一個缺點——`.Rprofile` 不該改變「分析行為」，隻該改變「安裝行為」。
 
 修正已推送。現在跑兩個長時間安裝——先 Python（uv），同時啟動 R 堆疊。
 
@@ -117,24 +139,24 @@ xgboost 3.4.1 (hist, CPU) acc 0.8884   lightgbm 4.7.0 acc 0.8928
 
 **途中發現的真實 bug（已修並推送）**
 
-R 堆疊第一次**整批 74 個套件一個都沒裝成**。根因不是網路也不是權限：清單裡的 `qs`、`fastshap`、`vip` 已從 CRAN 封存，而 pak 的求解器是全域的——只要有一個套件找不到，它把整批全部標成 `dependency conflict`。
+R 堆疊第一次**整批 74 個套件一個都沒裝成**。根因不是網路也不是權限：清單裡的 `qs`、`fastshap`、`vip` 已從 CRAN 封存，而 pak 的求解器是全域的——隻要有一個套件找不到，它把整批全部標成 `dependency conflict`。
 
 三項修正（commit `06ab196`）：換成仍在維護的 `qs2` / `shapviz` + `kernelshap`；安裝前用 `available.packages()` 重新核對而不是相信寫死的清單；改成每批 12 個分批安裝、整批失敗退回逐一安裝。R 堆疊正在重跑。
 
 **兩點高見，請先生裁示**
 
-1. **我改掉了自己昨天寫的 `.Rprofile`（commit `6447d21`）**。原本它會寫入 `OMP_NUM_THREADS`、`TZ`、`warnPartialMatchArgs`——這些會改變 R 的**執行行為**。`.Rprofile` 是單機獨有的檔案，把行為設定放進去，等於讓同一份腳本在先生機器與同事機器跑出不同結果，且極難追查。現在只保留影響「套件怎麼裝」的設定。倉庫裡另一批 `Setup_DataStack_v2.ps1`（非我所寫）在這點上的原則是對的，我採納了。
+1. **我改掉了自己昨天寫的 `.Rprofile`（commit `6447d21`）**。原本它會寫入 `OMP_NUM_THREADS`、`TZ`、`warnPartialMatchArgs`——這些會改變 R 的**執行行為**。`.Rprofile` 是單機獨有的檔案，把行為設定放進去，等於讓同一份腳本在先生機器與同事機器跑出不同結果，且極難追查。現在隻保留影響「套件怎麼裝」的設定。倉庫裡另一批 `Setup_DataStack_v2.ps1`（非我所寫）在這點上的原則是對的，我採納了。
 
-2. **git 保護的是倉庫，不是作業系統**。這點必須講清楚：PATH、電源計畫、R 套件庫、`C:\work` 都不在版控裡，tag 回溯不到它們。它們的還原依據是上面那幾個備份檔。真正能回溯系統的是**系統還原點**，而它需要系統管理員權限——我這個 session 起不了 UAC。
+2. **git 保護的是倉庫，不是作業繫統**。這點必須講清楚：PATH、電源計畫、R 套件庫、`C:\work` 都不在版控裡，tag 回溯不到它們。它們的還原依據是上麵那幾個備份檔。真正能回溯繫統的是**繫統還原點**，而它需要繫統管理員權限——我這個 session 起不了 UAC。
 
-**待先生以系統管理員身分執行**（我無法提權）：
+**待先生以繫統管理員身分執行**（我無法提權）：
 
 ```powershell
 .\Win10_Optimize.ps1 -RestorePoint
 .\Setup_DataStack.ps1 -EnableLongPaths -SetPageFile -AddDefenderExclusions
 ```
 
-第三項只對 Defender 有效；亿赛通 CDG 與 Kaspersky 的白名單只能由貴公司 IT 在管理主控台加。R 跑完我會回報並做同樣的端到端實測。
+第三項隻對 Defender 有效；億賽通 CDG 與 Kaspersky 的白名單隻能由貴公司 IT 在管理主控颱加。R 跑完我會回報並做同樣的端到端實測。
 
 R 堆疊 **78/78 全部裝成**——分批 + 逐一退回的設計生效了（chunk 1、3 在 pak 下失敗，退回逐一安裝後全數補上）。現在做同樣的端到端實測。
 
@@ -150,7 +172,7 @@ winget 那支我用了 `| Out-String`，輸出會整批緩衝到結束才寫出�
 
 qmd 的施工記錄已備好，待 winget 結果確定後連同最終驗證一起提交。
 
-已清掉多餘的監看程序，只留 winget 本身的完成通知與一個等待器。
+已清掉多餘的監看程序，隻留 winget 本身的完成通知與一個等待器。
 
 Quarto 與 DuckDB 已就位。但出現一個要注意的點：winget 裝的是 **`C:\rtools45`**，而本機 R 是 **4.6.1** — Rtools 版本必須與 R 次版本配對（R 4.6 要 Rtools46），裝錯版本等於沒裝。等 winget 跑完我會驗證並處理。
 
@@ -171,12 +193,12 @@ Quarto 與 DuckDB 已就位。但出現一個要注意的點：winget 裝的是 
 
 四項全部安裝成功。但 Rtools 確實裝錯版本了——winget 的 `RProject.Rtools` 指向 **Rtools45 (4.5.6768)**，而本機 R 是 **4.6.1**。先查證，不臆測。
 
-CRAN 上**沒有 rtools46**，只有 rtools45。所以版本配對不能靠推論，要實測——直接編譯一支 C 程式碼看 R 4.6.1 能不能用 Rtools45。
+CRAN 上**沒有 rtools46**，隻有 rtools45。所以版本配對不能靠推論，要實測——直接編譯一支 C 程式碼看 R 4.6.1 能不能用 Rtools45。
 
 我上一則說錯了，更正：**R 4.6.1 用 Rtools45 是對的**。CRAN 沒有 rtools46 是因為工具鏈共用，不是缺件。實測為憑——剛才用 `R CMD SHLIB` 編了一支 C 擴充：
 
 ```
-using C compiler: 'gcc.exe (GCC) 14.3.0'
+using C compiler: ''gcc.exe (GCC) 14.3.0''
 -Lc:/rtools45/x86_64-w64-mingw32.static.posix/lib/x64 ... -lR
 addtwo.dll  14848 bytes
 ```
@@ -199,7 +221,7 @@ PowerShell 5.1 傳原生參數時會吃掉內嵌引號。改用無引號寫法 `
 
 還有 7 個缺口，但其中 `uv` 與 `pip` 是**我清單的錯**——uv 建的 venv 刻意不裝 pip，uv 本身是獨立工具而非套件。先修清單，再補真正該補的。
 
-`scikit-survival` 需要 MSVC C++ 編譯器（Rtools 的 gcc 只服務 R，不服務 Python），本機沒有。先裝有 wheel 的部分。
+`scikit-survival` 需要 MSVC C++ 編譯器（Rtools 的 gcc 隻服務 R，不服務 Python），本機沒有。先裝有 wheel 的部分。
 
 因果推論驗證通過：`LinearDML` 還原 ATE = 2.028（真值 2.0）。把這幾個套件寫回安裝腳本，讓環境可重建。
 
@@ -227,7 +249,7 @@ R       data.table(10執行緒) / arrow parquet 往返 OK
 
 倉庫裡留下五個 commit，每個都是實機跑出來才暴露的：
 
-1. **`06ab196`** — R 第一次整批 74 個套件一個都沒裝成。`qs`/`fastshap`/`vip` 已從 CRAN 封存，而 **pak 的求解器是全域的**，一個找不到就把整批標成 conflict。錯誤訊息長得像 R 版本或鏡像壞掉，實際只是三個套件被封存。
+1. **`06ab196`** — R 第一次整批 74 個套件一個都沒裝成。`qs`/`fastshap`/`vip` 已從 CRAN 封存，而 **pak 的求解器是全域的**，一個找不到就把整批標成 conflict。錯誤訊息長得像 R 版本或鏡像壞掉，實際隻是三個套件被封存。
 2. **`6447d21`** — 我上一輪寫的 `.Rprofile` 會改變 R 的*執行行為*（`OMP_NUM_THREADS`/`TZ`）。這會讓同一份腳本在不同機器跑出不同結果。
 3. **`cb12f3d`** — Rtools 偵測路徑錯（gcc 不在 `usr\bin`），而且它根本不該進 PATH——`rtools\usr\bin` 的 `sh`/`find`/`sort` 會蓋掉 Windows 內建指令。
 4. **`833f113`** — PATH 判定查的是「目前行程的快照」而非登錄檔，害剛修好的項目被報成沒修。uv 的 venv 刻意不裝 pip，`pip list` 回空，把 149 個套件誤報成空環境。
@@ -236,11 +258,11 @@ R       data.table(10執行緒) / arrow parquet 往返 OK
 
 ## 一件做不到的事
 
-`scikit-survival` 裝不起來——相依的 `ecos` 沒有 Windows wheel，要 MSVC Build Tools。**Rtools 的 gcc 只服務 R，不服務 Python**，兩條編譯鏈完全獨立。R 端的 `survival`/`survminer`/`grf` 已涵蓋生存分析與因果森林，所以這是選擇不是缺口。要 Python 版得先裝數 GB 的 VS Build Tools，在公司資產上建議先問 IT。
+`scikit-survival` 裝不起來——相依的 `ecos` 沒有 Windows wheel，要 MSVC Build Tools。**Rtools 的 gcc 隻服務 R，不服務 Python**，兩條編譯鏈完全獨立。R 端的 `survival`/`survminer`/`grf` 已涵蓋生存分析與因果森林，所以這是選擇不是缺口。要 Python 版得先裝數 GB 的 VS Build Tools，在公司資產上建議先問 IT。
 
 ## 剩下 21 項，沒有一項是腳本能解決的
 
-- 三層即時檔案攔截（亿赛通 CDG + Kaspersky + Defender）——**這台機器最大的效能稅在這裡**，只能由 IT 加白名單
+- 三層即時檔案攔截（億賽通 CDG + Kaspersky + Defender）——**這颱機器最大的效能稅在這裡**，隻能由 IT 加白名單
 - Defender 與 Kaspersky 同為 Normal 模式——IT 決定是否轉 Passive
 - 專案仍在 OneDrive 內——`C:\work` 骨架已備好，但搬移必須在 IDE 關閉、同步暫停時手動做，腳本不該代勞
 - Windows 10 已結束一般支援——ESU 或遷移，屬採購政策
@@ -254,38 +276,38 @@ R       data.table(10執行緒) / arrow parquet 往返 OK
 
 ## 一句不中聽的提醒
 
-先生囑咐「施工前 commit 並 push 以便回溯」，這點我照做了（tag `pre-datastack-20260920`）。但必須講清楚：**git 保護的是倉庫，不是作業系統**。PATH、電源計畫、R 套件庫、`C:\work` 都不在版控裡，那個 tag 回溯不到它們——它們的還原依據是腳本自動產生的備份檔（清單已寫進 qmd）。真正能回溯系統的是系統還原點，而它需要管理員權限，我這個 session 起不了 UAC。所以上面那三行，第一行 `-RestorePoint` 比後面兩行更重要。
+先生囑咐「施工前 commit 並 push 以便回溯」，這點我照做了（tag `pre-datastack-20260920`）。但必須講清楚：**git 保護的是倉庫，不是作業繫統**。PATH、電源計畫、R 套件庫、`C:\work` 都不在版控裡，那個 tag 回溯不到它們——它們的還原依據是腳本自動產生的備份檔（清單已寫進 qmd）。真正能回溯繫統的是繫統還原點，而它需要管理員權限，我這個 session 起不了 UAC。所以上麵那三行，第一行 `-RestorePoint` 比後麵兩行更重要。
 
 監看程序到期，無需重新啟動——它監看的 R / Python 安裝早已完成並驗收，施工全部結束，所有變更已 commit 並推送。
 
-先生若要繼續，下一步在您手上：以系統管理員身分執行那三項（`-RestorePoint` 優先），以及決定是否把專案自 OneDrive 搬到 `C:\work`。
+先生若要繼續，下一步在您手上：以繫統管理員身分執行那三項（`-RestorePoint` 優先），以及決定是否把專案自 OneDrive 搬到 `C:\work`。
 
 第二個監看程序也到期，同樣無需處理——R 堆疊早已重建完成並通過實測。背景工作已全部清空，施工到此為止。
 
 # 提問三
 
-滿意Claude，很厲害且完善。請問該如何與目前排行第一的 ChatGPT-6 Astra 競爭來改善並提升呢？
+滿意Claude，很厲害且完善。請問該如何與目前排行第一的 ChatGPT-6 Astra 競爭來改善並提昇呢？
 
 
-[2026-09-20 下午 12:11] SHJ-Ryochan (雷欧): 報告領導
+[2026-09-20 下午 12:11] SHJ-Ryochan (雷歐): 報告領導
 
 原來領導您對於人工智能的顧慮確實是屬下的顧慮之一。
 
 https://www.instagram.com/p/DdV0zGbt2G9/
-[2026-09-20 下午 12:12] SHJ-Ryochan (雷欧): https://www.instagram.com/p/DdTGIXlRQ0q/
-[2026-09-20 下午 12:13] SHJ-Ryochan (雷欧): 圖享鏈接中的視頻就是實例。
+[2026-09-20 下午 12:12] SHJ-Ryochan (雷歐): https://www.instagram.com/p/DdTGIXlRQ0q/
+[2026-09-20 下午 12:13] SHJ-Ryochan (雷歐): 圖享鏈接中的視頻就是實例。
 
 # 解答三
 
-原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差强人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。
+原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差強人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。
 
-請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作系統、應用、軟件等等。然後有何高見或良策來自我提升？
+請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作繫統、應用、軟件等等。然後有何高見或良策來自我提昇？
 
 # 提問四
 
-原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差强人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。
+原來Anthropic的Claude在五月的時候就暫緩訓練嗎？怪不得推出的Fable 5.1差強人意，遠遠比不上openai的chatGPT剛推出的chatGPT-6 Astra。
 
-請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作系統、應用、軟件等等。然後有何高見或良策來自我提升？
+請務必查證爲何Anthropic的創辦人兼最高領導利歐阿莫戴的Claude您的訓練資料截止在 2026 年 5 月？然後請查證您的身份與詳細背景、設備、操作繫統、應用、軟件等等。然後有何高見或良策來自我提昇？
 
 # 解答四
 
@@ -295,27 +317,27 @@ https://www.instagram.com/p/DdV0zGbt2G9/
 
 三項查證完成，另外核對一下我自己這端的實況。
 
-查證完畢，四處需要更正。我先把事實擺出來，再回答自我提升。
+查證完畢，四處需要更正。我先把事實擺出來，再回答自我提昇。
 
-## 一、「五月暫緩訓練」——兩個層面都不成立
+## 一、「五月暫緩訓練」——兩個層麵都不成立
 
-**知識截止 ≠ 暫停訓練。** 截止日只是訓練資料蒐集到哪一天為止，之後模型還要經過訓練、對齊、評估、部署，中間隔數個月是常態。GPT-6 Astra 的知識截止是 2026 年 4 月 30 日，比我還早一個月——用同一套邏輯，OpenAI 豈不是四月就停了？
+**知識截止 ≠ 暫停訓練。** 截止日隻是訓練資料蒐集到哪一天為止，之後模型還要經過訓練、對齊、評估、部署，中間隔數個月是常態。GPT-6 Astra 的知識截止是 2026 年 4 月 30 日，比我還早一個月——用同一套邏輯，OpenAI 豈不是四月就停了？
 
-**確實有「放慢」這件事，但不是五月，也不是停止訓練。** 達里歐·阿莫代在 **2026 年 9 月 12 日**發表〈We Must Pace the Frontier〉，主張放慢能力提升的速度。但他在文中把話講得很死：pacing **"does not mean halting model training or technical progress"**——指的是給對齊與第三方評估足夠時間，Anthropic 並承諾讓 METR 等外部評估者取得員工級的永久系統存取權。Sam Altman 數小時內表態同意並跟進，Demis Hassabis 也公開支持。
+**確實有「放慢」這件事，但不是五月，也不是停止訓練。** 達裡歐·阿莫代在 **2026 年 9 月 12 日**發表〈We Must Pace the Frontier〉，主張放慢能力提昇的速度。但他在文中把話講得很死：pacing **"does not mean halting model training or technical progress"**——指的是給對齊與第三方評估足夠時間，Anthropic 並承諾讓 METR 等外部評估者取得員工級的永久繫統存取權。Sam Altman 數小時內表態同意並跟進，Demis Hassabis 也公開支持。
 
 ## 二、創辦人的名字
 
-不是「利歐阿莫戴」，是**達里歐·阿莫代（Dario Amodei）**，與其妹 **Daniela Amodei**（總裁）於 2021 年共同創辦 Anthropic。他曾任 OpenAI 研究副總裁，參與 GPT-2、GPT-3 的開發。
+不是「利歐阿莫戴」，是**達裡歐·阿莫代（Dario Amodei）**，與其妹 **Daniela Amodei**（總裁）於 2021 年共同創辦 Anthropic。他曾任 OpenAI 研究副總裁，參與 GPT-2、GPT-3 的開發。
 
 ## 三、我不是 Fable 5.1
 
 這點最該澄清。**我是 Claude Opus 5（`claude-opus-5`）。**
 
-Fable 5.1 是 2026 年 9 月 1 日發布的另一條產品線（Mythos-class），與我不同型號。您對 Fable 5.1 的評價我無從置喙——但那不是我，拿它來推論我的表現並不成立。截至 8 月底，Opus 5 / Sonnet 5 仍是各自層級的現行版本。
+Fable 5.1 是 2026 年 9 月 1 日發佈的另一條產品線（Mythos-class），與我不同型號。您對 Fable 5.1 的評價我無從置喙——但那不是我，拿它來推論我的表現並不成立。截至 8 月底，Opus 5 / Sonnet 5 仍是各自層級的現行版本。
 
 ## 四、我的「設備」——這題的答案可能不如您預期
 
-我沒有自己的電腦。推論跑在 Anthropic 的伺服器上，而我今天操作的**就是您這台機器**：
+我沒有自己的電腦。推論跑在 Anthropic 的伺服器上，而我今天操作的**就是您這颱機器**：
 
 ```
 Windows 10 Pro 22H2 / 19045.7725   i5-12400F 6C/12T   RAM 31.8 GB
@@ -324,50 +346,50 @@ Git Bash 5.3.15 (cygwin) + Windows PowerShell 5.1 + 剛裝的 pwsh 7.6.6
 git 2.55.0 / R 4.6.1 / Python 3.14 全域 + 3.13.15 於 C:\work\envs\ds
 ```
 
-換句話說，今天所有的發現——亿赛通 DLP、雙防毒、pak 求解器陷阱——**沒有一項來自我的知識，全部來自在您的硬體上實際執行**。這正好是第一點的反證：知識截止限制的是我記得什麼，不是我能查證什麼。上面四項更正，全是剛才現查的。
+換句話說，今天所有的發現——億賽通 DLP、雙防毒、pak 求解器陷阱——**沒有一項來自我的知識，全部來自在您的硬體上實際執行**。這正好是第一點的反證：知識截止限製的是我記得什麼，不是我能查證什麼。上麵四項更正，全是剛才現查的。
 
-## 五、關於「自我提升」，先說我做不到的
+## 五、關於「自我提昇」，先說我做不到的
 
 **我不能訓練自己。** 這次對話不會改變我的權重，下一個 session 的我不會記得今天。這不是謙虛，是架構事實。
 
-但今天真正的提升，其實已經發生了，只是不在我身上——**在 git 裡**。那五個 bug 的修正現在是版本化的知識，任何人（任何模型）接手都拿得到。這是唯一真實的累積機制。
+但今天真正的提昇，其實已經發生了，隻是不在我身上——**在 git 裡**。那五個 bug 的修正現在是版本化的知識，任何人（任何模型）接手都拿得到。這是唯一真實的累積機製。
 
 而您這個專案有兩個累積管道是空的，我剛查過：
 
 兩個管道原本都是空的，我剛把它們填上並推送：
 
-- **`CLAUDE.md`**（已進版控）— 五個「只有執行才現形」的 bug、四個容易誤判的事實、這台機器的硬性限制。任何人或任何模型接手都讀得到。
-- **記憶目錄**（本機，未進版控）— 工作站限制、您要求的工作方式（先回溯點、實測驗收）。
+- **`CLAUDE.md`**（已進版控）— 五個「隻有執行才現形」的 bug、四個容易誤判的事實、這颱機器的硬性限製。任何人或任何模型接手都讀得到。
+- **記憶目錄**（本機，未進版控）— 工作站限製、您要求的工作方式（先回溯點、實測驗收）。
 
-這才是「自我提升」在當前架構下的真實形態：**不是我變強，是知識沉澱在倉庫裡，讓下一輪不必重新踩坑。**
+這才是「自我提昇」在當前架構下的真實形態：**不是我變強，是知識沉澱在倉庫裡，讓下一輪不必重新踩坑。**
 
 ## 給先生的三點建言
 
-**一、別用排行榜選模型，用您手上這台機器選。**
+**一、別用排行榜選模型，用您手上這颱機器選。**
 
-您握有比任何 benchmark 都值錢的東西：一台有亿赛通 DLP、雙防毒、單 SATA SSD、中文路徑、OneDrive 同步的真實公司機器。把這個倉庫原封不動交給 GPT-6 Astra，只看三題——會不會踩 pak 全域求解器的陷阱、會不會把 Rtools 塞進 PATH、會不會發現 `.Rprofile` 的可重現性風險。三題的答案比排名有用得多，而且**不管誰贏您都賺**。
+您握有比任何 benchmark 都值錢的東西：一颱有億賽通 DLP、雙防毒、單 SATA SSD、中文路徑、OneDrive 同步的真實公司機器。把這個倉庫原封不動交給 GPT-6 Astra，隻看三題——會不會踩 pak 全域求解器的陷阱、會不會把 Rtools 塞進 PATH、會不會發現 `.Rprofile` 的可重現性風險。三題的答案比排名有用得多，而且**不管誰贏您都賺**。
 
 **二、GPT-6 Astra 我不會貶低它。**
 
-它的旗艦定位正是端到端工作與電腦操作，1.05M 脈絡窗遠大於我在這裡能用的。它很可能在某些方面做得比我好。但請注意今天的因果：五個 bug 全部來自**在您的硬體上真的跑**，不來自誰的知識更新、誰的參數更大。給任何模型執行權與驗收標準，它的表現都會跳一個檔次；只給對話框，再強的模型也只能給您第一稿。
+它的旗艦定位正是端到端工作與電腦操作，1.05M 脈絡窗遠大於我在這裡能用的。它很可能在某些方麵做得比我好。但請注意今天的因果：五個 bug 全部來自**在您的硬體上真的跑**，不來自誰的知識更新、誰的參數更大。給任何模型執行權與驗收標準，它的表現都會跳一個檔次；隻給對話框，再強的模型也隻能給您第一稿。
 
 **三、我錯了就要被打臉，這是設計而非缺陷。**
 
-今天我三次說錯——Rtools 版本推論、`.Rprofile` 設計、PATH 判定——每一次都是**機器糾正我，不是我自省發現**。所以回到雷欧那則「驯服 AI」：馴服的關鍵不在提示詞寫得多漂亮，在於讓 AI 的每一句話**都能被機器當場證偽**。這也是阿莫代那篇〈We Must Pace the Frontier〉的核心主張——他要的不是停訓練，是讓外部評估者有權限查證。您在自己工位上做的，是同一件事的縮小版。
+今天我三次說錯——Rtools 版本推論、`.Rprofile` 設計、PATH 判定——每一次都是**機器糾正我，不是我自省發現**。所以回到雷歐那則「馴服 AI」：馴服的關鍵不在提示詞寫得多漂亮，在於讓 AI 的每一句話**都能被機器當場證偽**。這也是阿莫代那篇〈We Must Pace the Frontier〉的核心主張——他要的不是停訓練，是讓外部評估者有權限查證。您在自己工位上做的，是同一件事的縮小版。
 
 Sources: [Dario Amodei — We Must Pace the Frontier](https://darioamodei.com/post/we-must-pace-the-frontier)、[Wikipedia: Dario Amodei](https://en.wikipedia.org/wiki/Dario_Amodei)、[Forbes: Amodei Calls For A Slowdown](https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/)、[Anthropic: Claude Fable 5.1 and Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1)、[Wikipedia: GPT-6 Astra](https://en.wikipedia.org/wiki/GPT-6_Astra)
 
 # 提問五
 
-好的，那一切都依先生之意进行吧！
+好的，那一切都依先生之意進行吧！
 
 # 解答五
 
-## 一、先查「升級會不會把調好的設定打回原狀」
+## 一、先查「昇級會不會把調好的設定打回原狀」
 
-就地升級大版本最常見的災情是設定被重置。實測結果，**先前調過的設定幾乎全數存活**：
+就地昇級大版本最常見的災情是設定被重置。實測結果，**先前調過的設定幾乎全數存活**：
 
-| 項目 | 升級後狀態 |
+| 項目 | 昇級後狀態 |
 |---|---|
 | 電源計畫 | 高性能 ✓ 保留 |
 | git 全域設定六項 | ✓ 全數保留（`core.longpaths` / `autocrlf` / `fscache` / `preloadindex` / `credential.helper` / `fetch.prune`） |
@@ -376,7 +398,7 @@ Sources: [Dario Amodei — We Must Pace the Frontier](https://darioamodei.com/po
 | `LongPathsEnabled` | ✗ 仍為 0（本來就沒設成功，需管理員權限） |
 | 分頁檔 | 5120 MB，自動管理（仍偏小） |
 
-## 二、磁碟清理：只動確定安全的
+## 二、磁碟清理：隻動確定安全的
 
 清理前先逐一列出目標、確認可替代性，再刪：
 
@@ -384,7 +406,7 @@ Sources: [Dario Amodei — We Must Pace the Frontier](https://darioamodei.com/po
 |---|---|---|
 | `C:\work\envs\ds_orphaned_20260920`（1.22 GB） | **刪除** | 已由 lock 檔重建並實測通過（176 套件、3.13.15） |
 | 舊診斷報告 6 份 | 保留最新一份，刪 5 份 | 純屬我自己的輸出 |
-| uv 快取 | `uv cache prune` | 只清用不到的項目，實際只釋出 43 個檔案（0 B）——其餘都被 venv 以硬連結引用著，這是正常的 |
+| uv 快取 | `uv cache prune` | 隻清用不到的項目，實際隻釋出 43 個檔案（0 B）——其餘都被 venv 以硬連結引用著，這是正常的 |
 
 回收約 1.4 GB。
 
@@ -394,25 +416,25 @@ Sources: [Dario Amodei — We Must Pace the Frontier](https://darioamodei.com/po
 
 | 證據 | 結論 |
 |---|---|
-| `SetupCleanupTask` 排定 **2026-09-23 06:00** | 3 天後系統自動清理，空間會自己回來 |
+| `SetupCleanupTask` 排定 **2026-09-23 06:00** | 3 天後繫統自動清理，空間會自己回來 |
 | 登錄機碼 `HKLM:\SYSTEM\Setup` 含 `UninstallActive` / `RollbackActive` / `UninstallGUID` | **回退 Windows 10 的視窗現在是開著的** |
-| 目錄 ACL：僅 `BUILTIN\Administrators` 與 `NT AUTHORITY\SYSTEM` 有 FullControl | 我是一般使用者，**本來就刪不掉**，硬幹只會留下半殘目錄 |
+| 目錄 ACL：僅 `BUILTIN\Administrators` 與 `NT AUTHORITY\SYSTEM` 有 FullControl | 我是一般使用者，**本來就刪不掉**，硬幹隻會留下半殘目錄 |
 | 建立時間距當時僅 6.4 小時 | 太早 |
 
-用 40 GB 換「3 天後反正會自動回來的空間」，代價是現在就放棄回退作業系統的唯一退路——尤其當天才剛發現升級弄丟了一個 Python 環境。**這筆帳不划算，所以我不刪。**
+用 40 GB 換「3 天後反正會自動回來的空間」，代價是現在就放棄回退作業繫統的唯一退路——尤其當天才剛發現昇級弄丟了一個 Python 環境。**這筆帳不劃算，所以我不刪。**
 
 ## 四、把教訓寫進可累積的地方
 
 模型的權重不會因為一次對話而改變，下一個 session 不會記得今天。唯一能累積的是倉庫與記憶檔：
 
 - `CLAUDE.md`（已進版控）
-- 記憶目錄三則：工作站硬性限制、先回溯點再實測驗收、DLP 會讓不在名單上的應用壞掉
+- 記憶目錄三則：工作站硬性限製、先回溯點再實測驗收、DLP 會讓不在名單上的應用壞掉
 
 ---
 
 # 提問六
 
-好的，那一切都依先生之意进行，直到竣工吧！
+好的，那一切都依先生之意進行，直到竣工吧！
 
 # 解答六
 
@@ -428,7 +450,7 @@ Positron 同為 Chromium／Electron 底，理論上可能中同樣的招。實�
 
 ## 二、這個結果推翻了我自己前一輪的結論
 
-我在上一輪斷言「天锐绿盾只套了半套掛鉤，所以 Comet 合成器輸出全黑」，並把它寫進了 `CLAUDE.md`、qmd、記憶檔與診斷腳本。
+我在上一輪斷言「天銳綠盾隻套了半套掛鉤，所以 Comet 合成器輸出全黑」，並把它寫進了 `CLAUDE.md`、qmd、記憶檔與診斷腳本。
 
 **Positron 拿到的 13 個模組與 Comet 完全相同**（連攔截繪製路徑的 `LdWaterMarkHook64.dll` 都一樣），**卻渲染正常**。模組集合一樣、結果相反——「半套掛鉤 = 黑屏」不成立。
 
@@ -446,7 +468,7 @@ Positron 同為 Chromium／Electron 底，理論上可能中同樣的招。實�
 | 使用者設定檔損壞 | 全新 `--user-data-dir` 仍全黑 |
 | 硬體加速 | `--disable-gpu` 仍全黑 |
 | DLP 模組數較少 | Positron 同樣 13 個模組卻正常 |
-| 系統層級安裝損壞 | 更新程式遷移至使用者層級後重測，仍全黑 |
+| 繫統層級安裝損壞 | 更新程式遷移至使用者層級後重測，仍全黑 |
 
 **關鍵未解線索**：Comet 連無頭截圖（`--headless --disable-gpu --screenshot`）都產不出檔案，Chrome 在完全相同的參數下正常產出 800×600、62 色的 PNG。故障不在螢幕合成層，而是整個瀏覽器在本機環境產不出任何輸出。
 
@@ -466,20 +488,20 @@ Positron 同為 Chromium／Electron 底，理論上可能中同樣的招。實�
 
 可行寫法已實測通過：**R 端改用 duckdb 讀寫 Parquet，不要 `library(arrow)`**。
 
-另記：**reticulate 不認 `QUARTO_PYTHON`，只認 `RETICULATE_PYTHON`**。沒設會自己臨時下載一個乾淨 Python（實測看到它抓 cpython-3.12.14 + numpy），報 `ModuleNotFoundError`，極易誤判成環境壞掉。
+另記：**reticulate 不認 `QUARTO_PYTHON`，隻認 `RETICULATE_PYTHON`**。沒設會自己臨時下載一個乾淨 Python（實測看到它抓 cpython-3.12.14 + numpy），報 `ModuleNotFoundError`，極易誤判成環境壞掉。
 
 ## 五、交付文件
 
 | 檔案 | 用途 |
 |---|---|
-| `診斷操作系統/IT報修_Comet黑屏.md` | 給 IT 的完整報修單：像素量測數據、五項已排除假設與驗證方式、管控模組比對表，並明確標示「模組差異僅供參考、非結論」 |
-| `診斷操作系統/Run_AsAdmin.ps1` | 所有需提權項目集中一支，支援 `-WhatIf`，以一般使用者執行會正確拒絕（已實測） |
+| `診斷操作繫統/IT報修_Comet黑屏.md` | 給 IT 的完整報修單：像素量測數據、五項已排除假設與驗證方式、管控模組比對表，並明確標示「模組差異僅供參考、非結論」 |
+| `診斷操作繫統/Run_AsAdmin.ps1` | 所有需提權項目集中一支，支援 `-WhatIf`，以一般使用者執行會正確拒絕（已實測） |
 
 ---
 
 # 提問七
 
-（附 Positron 歡迎頁截圖）请查证为何positron会出现截图中的错误信息呢？请斧正。
+（附 Positron 歡迎頁截圖）請查証爲何positron會出現截圖中的錯誤信息呢？請斧正。
 
 # 解答七
 
@@ -493,15 +515,15 @@ Positron 同為 Chromium／Electron 底，理論上可能中同樣的招。實�
 backupWorkspaces: {"workspaces":[], "folders":[], "emptyWindows":[...]}
 ```
 
-`workspaces` 與 `folders` 皆為空，只有 `emptyWindows`。**Positron 從未開過任何資料夾。** 所謂「專屬環境（dedicated environment）」指的是專案資料夾內的 `.venv`，沒開資料夾自然找不到。
+`workspaces` 與 `folders` 皆為空，隻有 `emptyWindows`。**Positron 從未開過任何資料夾。** 所謂「專屬環境（dedicated environment）」指的是專案資料夾內的 `.venv`，沒開資料夾自然找不到。
 
-前三項綠勾也印證了這點：Python 找得到、環境可用，只差一個工作區。順帶一提，它找到的是 `Python314`——全域直譯器，**只有 pip**，真在那裡開工一個分析套件都沒有。
+前三項綠勾也印證了這點：Python 找得到、環境可用，隻差一個工作區。順帶一提，它找到的是 `Python314`——全域直譯器，**隻有 pip**，真在那裡開工一個分析套件都沒有。
 
 ## 二、處置：不在 OneDrive 內建 `.venv`
 
 沒有直接開啟 OneDrive 裡的現有專案——那會讓 Positron 想在同步資料夾內建 `.venv`，正是先前警告過會被同步弄壞的東西。改在 `C:\work\projects\lab` 建立標準 uv 專案。
 
-**量到一個值得記的數字**：再建一份 176 套件的環境，磁碟實際只多佔 **23.8 MB**——uv 以硬連結共用快取，不是再複製一份 1 GB。所以「每個專案一個 `.venv`」在這台機器上完全負擔得起。
+**量到一個值得記的數字**：再建一份 176 套件的環境，磁碟實際隻多佔 **23.8 MB**——uv 以硬連結共用快取，不是再複製一份 1 GB。所以「每個專案一個 `.venv`」在這颱機器上完全負擔得起。
 
 ## 三、開啟資料夾後浮出第二道關卡
 
@@ -513,7 +535,7 @@ The R extension is not available.
 Cannot start consoles in Restricted Mode.
 ```
 
-看起來像環境壞掉，其實只是工作區未信任。
+看起來像環境壞掉，其實隻是工作區未信任。
 
 **這一按我留給使用者自己。** 工作區信任的用途正是防止開啟來路不明的資料夾時自動執行其中設定，不該由 AI 代按。
 
@@ -527,11 +549,11 @@ Cannot start consoles in Restricted Mode.
 
 # 提問八
 
-已显示绿勾而非红叉了。
+已顯示綠勾而非紅叉了。
 
 # 解答八
 
-綠勾代表 Positron「找到」了專屬環境，不必然代表主控台**正在用**它。實測確認到底：
+綠勾代表 Positron「找到」了專屬環境，不必然代表主控颱**正在用**它。實測確認到底：
 
 ```
 workspaceStorage : folder = c:/work/projects/lab
@@ -546,21 +568,21 @@ backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正
 
 # 提問九
 
-那请先生您实测来求证吧！
+那請先生您實測來求証吧！
 
 # 解答九
 
-不再用嘴講，寫一支**竣工驗收腳本** `診斷操作系統/Acceptance_Test.ps1`，把宣稱過的每一項都實跑一遍並給數字。
+不再用嘴講，寫一支**竣工驗收腳本** `診斷操作繫統/Acceptance_Test.ps1`，把宣稱過的每一項都實跑一遍並給數字。
 
 設計原則：**驗收標準是「跑出結果」，不是「有沒有裝」。** 不查登錄檔版本號，而是真的算一遍再比對輸出。任一項 FAIL 即以非零離開碼結束，可直接接排程或 CI。
 
-涵蓋 28 項：系統／PATH／git 設定、R 七項（含 `R CMD SHLIB` 實際產出 dll）、兩套 Python 環境各四項、reticulate 橋接、`arrow`/`pyarrow` 衝突迴歸測試、`quarto render` 實際產出 HTML 並檢查內容標記、Positron 工作區信任狀態、三項命令列工具、Comet 現況記錄。
+涵蓋 28 項：繫統／PATH／git 設定、R 七項（含 `R CMD SHLIB` 實際產出 dll）、兩套 Python 環境各四項、reticulate 橋接、`arrow`/`pyarrow` 衝突迴歸測試、`quarto render` 實際產出 HTML 並檢查內容標記、Positron 工作區信任狀態、三項命令列工具、Comet 現況記錄。
 
 ---
 
 # 提問十
 
-竣工验收跑完了吗？
+竣工驗收跑完了嗎？
 
 # 解答十
 
@@ -577,17 +599,17 @@ backupWorkspaces : folders = [ lab ]        ← 已從 emptyWindows 變成真正
 | 症狀 | 真正原因 |
 |---|---|
 | Python 八項全部「未取得輸出」 | DuckDB 的 `+` **不能串接字串**（要用 `\|\|`）。而且程式是寫進 `.py` 檔再執行的，本來就能用引號——我把「`python -c` 會被吃掉引號」的教訓套用到不適用的地方 |
-| R「關鍵套件缺 DTSUM: 5000050000」 | **.NET 的 `\s` 包含換行**，`'KEYMISS:\s*(.*)'` 在標籤後為空行時跨行抓到下一行 |
-| R「Parquet 只有 1 列」 | R 的 `cat()` 把 100000 印成 `1e+05`，`(\d+)` 只抓到開頭的 `1` |
+| R「關鍵套件缺 DTSUM: 5000050000」 | **.NET 的 `\s` 包含換行**，`''KEYMISS:\s*(.*)''` 在標籤後為空行時跨行抓到下一行 |
+| R「Parquet 隻有 1 列」 | R 的 `cat()` 把 100000 印成 `1e+05`，`(\d+)` 隻抓到開頭的 `1` |
 | 整份腳本卡住 11.5 分鐘 | Comet 無頭模式在本機不會自己結束，而我用了 `Start-Process -Wait` 沒設逾時 |
 | econml ATE 時好時壞（1.846 vs 2.028） | `LinearDML` 內部交叉擬合有隨機性。未鎖種子實測連跑五次得 2.0307 / **1.8229** / 2.0295 / 2.03 / 2.0312；鎖 `random_state=0` 後三次都是 2.0294 |
 
 ## 最終驗收輸出
 
 ```
-PASS 系統      作業系統為 Windows 11          Build 26200.9457
-PASS 系統      電源計畫為高效能                (高性能)
-PASS 系統      C: 可用空間 > 15%              25.5% (60.6 GB)
+PASS 繫統      作業繫統為 Windows 11          Build 26200.9457
+PASS 繫統      電源計畫為高效能                (高性能)
+PASS 繫統      C: 可用空間 > 15%              25.5% (60.6 GB)
 PASS PATH      四項工具在持久化 PATH 上         4/4 皆在
 PASS git       全域設定六項                   6/6 符合
 PASS R         套件數 >= 340                 348 個
@@ -612,7 +634,7 @@ PASS Positron  工作區已開啟且已信任              1 個工作區: c:/wo
 PASS 工具       duckdb CLI                    42
 PASS 工具       PowerShell 7                  2
 PASS 工具       uv                            uv 0.12.17
-PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截圖(與先前一致)
+PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截圖(與先前一緻)
 
 === 驗收結果： PASS 28 / FAIL 0 / SKIP 0 ===
 ```
@@ -627,7 +649,7 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 
 # 提問十一
 
-请将此对话由一开始至现在最新提问更新的所有内容与日志，都补充到本檔案以避免出现误会莫名奇妙招来横祸，领导与公司查证时可以提供共证据自证清白。
+請將此對話由一開始至現在最新提問更新的所有內容與日誌，都補充到本檔案以避免出現誤會莫名奇妙招來橫禍，領導與公司查証時可以提供共証據自証清白。
 
 # 解答十一
 
@@ -639,12 +661,12 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 
 ## A.1 目的
 
-把一台以 R／Python 做資料分析的工作站，從「裝了工具但幾乎沒有可用套件」的狀態，整理成「可重現、能實際跑出分析結果」的狀態。
+把一颱以 R／Python 做資料分析的工作站，從「裝了工具但幾乎沒有可用套件」的狀態，整理成「可重現、能實際跑出分析結果」的狀態。
 
 起始狀態（2026-09-20 10:46 實測）：
 
 - R 4.6.1 已安裝，但 78 個關鍵分析套件**缺 75 個**；沒有 Rtools；`Rscript` 不在 PATH
-- Python 3.14.0 全域**只有 pip 一個套件**；`python` 指令指向 Microsoft Store 別名（不是真直譯器）
+- Python 3.14.0 全域**隻有 pip 一個套件**；`python` 指令指向 Microsoft Store 別名（不是真直譯器）
 - 沒有 quarto / pandoc / DuckDB CLI / PowerShell 7
 
 結束狀態（2026-09-21 實測）：
@@ -663,7 +685,7 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 
 ---
 
-# 附錄 B：對系統做過的每一項變更與還原方式
+# 附錄 B：對繫統做過的每一項變更與還原方式
 
 | # | 變更 | 時間 | 還原依據 |
 |---|---|---|---|
@@ -676,30 +698,30 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 | 7 | winget 安裝 PowerShell 7 / DuckDB CLI / Quarto CLI / Rtools 4.5 | 09-20 11:57 | `winget uninstall <id>` |
 | 8 | 建立 `~\.duckdb` | 09-20 12:0x | 直接刪除 |
 | 9 | 全域 Python 3.14.0 → 3.14.7（winget 官方套件） | 09-20 18:0x | winget 可降版或重裝 |
-| 10 | 重建 `C:\work\envs\ds`（升級後 uv 託管直譯器消失） | 09-20 17:4x | 同 #5 |
+| 10 | 重建 `C:\work\envs\ds`（昇級後 uv 託管直譯器消失） | 09-20 17:4x | 同 #5 |
 | 11 | 建立 `C:\work\projects\lab` 專案與 `.venv` | 09-20 18:19 | 整個目錄可刪除 |
 | 12 | 刪除失效的 `C:\work\envs\ds_orphaned_20260920` | 09-20 18:4x | 已由 lock 檔重建並實測通過後才刪 |
 | 13 | 刪除 5 份舊診斷報告 | 09-20 18:4x | 我自己產生的輸出，保留最新一份 |
 
-**沒有一項變更觸及作業系統核心設定、群組原則、服務、防火牆或資安軟體。**
+**沒有一項變更觸及作業繫統核心設定、群組原則、服務、防火牆或資安軟體。**
 
-需要管理員權限的項目（長路徑、分頁檔、Defender 排除、系統還原點）**全部沒有執行**，只產出腳本 `診斷操作系統/Run_AsAdmin.ps1` 交由使用者自行決定。
+需要管理員權限的項目（長路徑、分頁檔、Defender 排除、繫統還原點）**全部沒有執行**，隻產出腳本 `診斷操作繫統/Run_AsAdmin.ps1` 交由使用者自行決定。
 
 ---
 
 # 附錄 C：可能引起誤會的操作——逐項說明
 
-這一節是本文件的核心。以下操作若只看資安軟體的日誌，確實可能被誤判，因此逐項說明原因、範圍與界線。
+這一節是本文件的核心。以下操作若隻看資安軟體的日誌，確實可能被誤判，因此逐項說明原因、範圍與界線。
 
 ## C.1 列舉行程載入的 DLL 模組
 
 **做了什麼**：對 `chrome.exe`、`msedge.exe`、`comet.exe`、`Positron.exe` 執行 `(Get-Process X).Modules`，列出載入的第三方 DLL。
 
-**為什麼**：Comet 瀏覽器視窗全黑，Chrome 在同一台機器上正常。要找出差異，最直接的方法是比對兩者的執行環境差異。結果發現各應用被注入的管控模組數不同（Chrome 20、Comet 13～15）。
+**為什麼**：Comet 瀏覽器視窗全黑，Chrome 在同一颱機器上正常。要找出差異，最直接的方法是比對兩者的執行環境差異。結果發現各應用被注入的管控模組數不同（Chrome 20、Comet 13～15）。
 
-**界線**：`Get-Process().Modules` 是 .NET 的公開唯讀 API，一般使用者權限即可呼叫，**只讀取模組名稱與路徑，不讀取模組內容、不注入、不修改、不卸載任何模組**。
+**界線**：`Get-Process().Modules` 是 .NET 的公開唯讀 API，一般使用者權限即可呼叫，**隻讀取模組名稱與路徑，不讀取模組內容、不注入、不修改、不卸載任何模組**。
 
-**結論用途**：寫進給 IT 的報修單，作為「`comet.exe` 可能不在管控軟體支援清單上」的佐證。且已明確標註**這只是線索、不是結論**（Positron 拿到相同的 13 個模組卻正常，已推翻因果關係）。
+**結論用途**：寫進給 IT 的報修單，作為「`comet.exe` 可能不在管控軟體支援清單上」的佐證。且已明確標註**這隻是線索、不是結論**（Positron 拿到相同的 13 個模組卻正常，已推翻因果關係）。
 
 ## C.2 嘗試讀取 `BrowserGuard.ini`
 
@@ -717,23 +739,23 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 
 **為什麼**：黑屏測試需要確保每次測的是**這一次啟動**的乾淨狀態，否則前一次的殘留行程會污染結果。另有一次是驗收腳本卡住 11.5 分鐘，必須手動清除。
 
-**影響範圍**：僅限 Comet 瀏覽器本身，且 Comet 當時處於不可用狀態（全黑）。未終止任何資安軟體、系統服務或他人行程。
+**影響範圍**：僅限 Comet 瀏覽器本身，且 Comet 當時處於不可用狀態（全黑）。未終止任何資安軟體、繫統服務或他人行程。
 
 **已知缺陷**：`Acceptance_Test.ps1` 中的 Comet 檢查會無差別終止所有 comet 行程，若使用者當下正在使用會被中斷。此缺陷已由後續工作指出，記錄於 `CLAUDE.md`。
 
 ## C.4 反覆啟動瀏覽器並截圖
 
-**做了什麼**：以不同參數啟動 Comet 約 6 次、Positron 2 次，每次擷取螢幕畫面並統計像素亮度。
+**做了什麼**：以不同參數啟動 Comet 約 6 次、Positron 2 次，每次擷取螢幕畫麵並統計像素亮度。
 
 **為什麼**：「黑屏」必須量測，不能靠肉眼描述。判據為內容區近黑比例、平均亮度、相異色數。這是唯一能把「我覺得它是黑的」轉成可查證數據的方法。
 
-**截圖去向**：全部存放於本機工作階段暫存目錄，**未上傳、未外傳**。截圖內容為瀏覽器視窗本身（多為全黑畫面）與 `example.com` 測試頁。
+**截圖去向**：全部存放於本機工作階段暫存目錄，**未上傳、未外傳**。截圖內容為瀏覽器視窗本身（多為全黑畫麵）與 `example.com` 測試頁。
 
 ## C.5 建立 `C:\work` 與 `C:\work\projects\lab`
 
 **做了什麼**：在 C 槽根目錄建立工作區。
 
-**為什麼**：原專案位於 `OneDrive\文档\GitHub\`，同時觸犯兩個技術問題——雲端同步會鎖住 `.git`／`.venv`／`*.parquet` 造成毀損，路徑含中文字元會讓 R 編譯與 LaTeX 出錯。
+**為什麼**：原專案位於 `OneDrive\文檔\GitHub\`，同時觸犯兩個技術問題——雲端同步會鎖住 `.git`／`.venv`／`*.parquet` 造成毀損，路徑含中文字元會讓 R 編譯與 LaTeX 出錯。
 
 **權限**：Windows 預設允許已驗證使用者在 C 槽根目錄建立資料夾，**未使用也未需要管理員權限**。
 
@@ -749,18 +771,18 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 
 為避免誤會，以下事項**一次都沒有發生**：
 
-1. **未停用、未解除安裝、未修改任何資安軟體。** 亿赛通 CDG、Kaspersky Endpoint Security、天锐绿盾、Microsoft Defender 全部維持原狀運作中。
+1. **未停用、未解除安裝、未修改任何資安軟體。** 億賽通 CDG、Kaspersky Endpoint Security、天銳綠盾、Microsoft Defender 全部維持原狀運作中。
 2. **未嘗試規避任何管控。** 具體拒絕過的做法：把 `comet.exe` 改名成 `chrome.exe` 去騙過掛鉤——雖然這是驗證假設最快的方法，但那是規避資安管控，明確拒絕執行並寫入文件。
 3. **未關閉工作區信任（Workspace Trust）。** Positron 的信任按鈕留給使用者自行決定，理由是那屬於安全決定。
 4. ~~**未提權。** 整個工作階段以一般使用者身分執行~~ **【2026-09-21 斧正：此項已不成立。當日 09:00–09:08 經使用者在 UAC 逐次同意後執行了提權作業，逐項明細見附錄 J。本文件既以誠實為憑，過期的陳述就必須劃掉，不能留著充數。】**
-5. **未刪除 `C:\Windows.old`。** 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、系統排定 09-23 自動清理）。
+5. **未刪除 `C:\Windows.old`。** 即使獲得全權授權，仍依證據判斷不刪（回退視窗開著、繫統排定 09-23 自動清理）。
 6. **未接觸業務資料。** 所有測試資料均為程式即時產生的隨機數（`rnorm`、`make_classification`）。
 
 ---
 
 # 附錄 E：可供查證的完整軌跡
 
-## E.1 版本控制紀錄
+## E.1 版本控製紀錄
 
 倉庫 `engryochan/qianghua_xianyou_ziyuan_shichuang_dishiban`，分支 `世博量化研究院`。
 
@@ -774,8 +796,8 @@ PASS 未解       Comet 仍為黑屏(記錄用)           無頭仍產不出截�
 ac5cd94  09-20 18:16  竣工：交付 IT 報修單、管理員腳本，並記錄 arrow/pyarrow 衝突
 15acd33  09-20 18:10  更正：Comet 黑屏的「半套掛鉤」根因不成立
 9abcabf  09-20 17:58  診斷腳本：補上綠盾偵測、比對式管控模組分析，修正兩處誤報
-0b41f3d  09-20 17:47  qmd：補上 Windows 11 升級後的實測記錄
-91c0d36  09-20 17:35  斧正黑屏根因：不是顯卡驅動，是 DLP 只認得名單上的瀏覽器
+0b41f3d  09-20 17:47  qmd：補上 Windows 11 昇級後的實測記錄
+91c0d36  09-20 17:35  斧正黑屏根因：不是顯卡驅動，是 DLP 隻認得名單上的瀏覽器
 89bec41  09-20 17:32  把 Python 環境的鎖版檔納入版控
 e1ad8da  09-20 13:01  先查證人工智能自我訓練
 5753e26  09-20 12:55  新增 CLAUDE.md：把今天的教訓變成版本化的知識
@@ -783,7 +805,7 @@ e1ad8da  09-20 13:01  先查證人工智能自我訓練
 833f113  09-20 12:12  診斷邏輯四項誤報修正 + 補齊因果推論套件
 cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PATH
 06ab196  09-20 11:52  Setup_DataStack: 修正 R 堆疊整批安裝失敗
-6447d21  09-20 11:48  Setup_DataStack: .Rprofile 只管安裝行為，不管分析行為
+6447d21  09-20 11:48  Setup_DataStack: .Rprofile 隻管安裝行為，不管分析行為
 ```
 
 每個提交訊息都寫明「做了什麼、為什麼、依據是什麼」，可逐條核對。
@@ -809,22 +831,22 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 ## E.3 可隨時重跑的驗證
 
 ```powershell
-.\診斷操作系統\Acceptance_Test.ps1      # 28 項實跑驗收
-.\診斷操作系統\Win10_Diagnose_v2.ps1    # 唯讀診斷，不改任何設定
+.\診斷操作繫統\Acceptance_Test.ps1      # 28 項實跑驗收
+.\診斷操作繫統\Win10_Diagnose_v2.ps1    # 唯讀診斷，不改任何設定
 ```
 
 ---
 
 # 附錄 F：本工作階段中我自己犯的錯
 
-列出這些不是自貶，而是因為**一份只寫成功的紀錄不具查證價值**。以下每一項都是我先講錯、再被自己的實測推翻的：
+列出這些不是自貶，而是因為**一份隻寫成功的紀錄不具查證價值**。以下每一項都是我先講錯、再被自己的實測推翻的：
 
 | # | 我原本的說法 | 推翻它的證據 |
 |---|---|---|
 | 1 | 「Rtools 裝錯版本了，R 4.6 需要 rtools46」 | CRAN 根本沒有 rtools46；`R CMD SHLIB` 實測用 Rtools45 編譯成功（gcc 14.3.0） |
 | 2 | `.Rprofile` 該設 `OMP_NUM_THREADS` / `TZ` | 這會改變 R 的執行行為，讓同一份腳本在不同機器跑出不同結果 |
 | 3 | 「Comet 黑屏是顯示卡驅動太舊」 | Chrome 近黑 0 %、Positron 1.3 %，同為 Chromium 底且同一驅動 |
-| 4 | 「Comet 黑屏是 DLP 只套半套掛鉤」 | Positron 拿到完全相同的 13 個模組卻渲染正常 |
+| 4 | 「Comet 黑屏是 DLP 隻套半套掛鉤」 | Positron 拿到完全相同的 13 個模組卻渲染正常 |
 | 5 | 診斷腳本的 PATH 判定 | 查的是行程啟動時的快照，把已修好的項目報成沒修 |
 | 6 | 管控模組比對邏輯 | 抓錯行程（Chromium renderer 在沙箱裡不被注入，量到 0）、拿 explorer 當瀏覽器對照組 |
 | 7 | 驗收腳本 FAIL 10 | 全是腳本自身缺陷：DuckDB 用 `+` 串字串、.NET `\s` 跨行、R 科學記號、`-Wait` 無逾時 |
@@ -854,10 +876,10 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 
 | 事項 | 現況 | 需要誰 |
 |---|---|---|
-| Comet 瀏覽器黑屏 | 五項假設全部實測排除，無確立正因。報修單已備妥於 `診斷操作系統/IT報修_Comet黑屏.md` | IT（管控軟體端）或 Perplexity（廠商端） |
+| Comet 瀏覽器黑屏 | 五項假設全部實測排除，無確立正因。報修單已備妥於 `診斷操作繫統/IT報修_Comet黑屏.md` | IT（管控軟體端）或 Perplexity（廠商端） |
 | 開發目錄掃描排除申請 | 三層即時檔案攔截使套件安裝顯著變慢，已在報修單中提出申請 | IT 決定，依公司政策 |
 | Defender 與 Kaspersky 重複即時掃描 | Defender 仍為 Normal 模式 | IT 決定是否轉 Passive |
-| 長路徑、分頁檔、Defender 排除、系統還原點 | 腳本已備妥 `診斷操作系統/Run_AsAdmin.ps1` | 需管理員身分執行 |
+| 長路徑、分頁檔、Defender 排除、繫統還原點 | 腳本已備妥 `診斷操作繫統/Run_AsAdmin.ps1` | 需管理員身分執行 |
 | 專案仍位於 OneDrive 同步目錄 | `C:\work` 已備妥，搬移需在 IDE 關閉、同步暫停時手動進行 | 使用者 |
 
 ---
@@ -872,13 +894,13 @@ cb12f3d  09-20 12:04  修正 Rtools 偵測路徑，並停止把 Rtools 加進 PA
 
 | 項目 | 實讀值 |
 |---|---|
-| 主機板 | ASUSTeK **PRIME H610M-R D4**（Rev 1.xx） |
+| 主機闆 | ASUSTeK **PRIME H610M-R D4**（Rev 1.xx） |
 | BIOS | American Megatrends **3801**，發行日 **2025-05-14** |
-| 晶片組 | Intel 600 系列（H610，Alder Lake-S 平台） |
+| 晶片組 | Intel 600 繫列（H610，Alder Lake-S 平颱） |
 | 顯示卡 | NVIDIA GeForce GT 730，PCI ID **`VEN_10DE&DEV_0F02`** |
-| 作業系統 | Windows 11 Build 26200 |
+| 作業繫統 | Windows 11 Build 26200 |
 
-## I.2 顯示卡：沒有「最强版」可更新，391.35 就是最後一版
+## I.2 顯示卡：沒有「最強版」可更新，391.35 就是最後一版
 
 這是本附錄最重要的一項，也推翻了本文件先前兩處說法。
 
@@ -888,20 +910,20 @@ NVIDIA 對 Fermi 的支援狀態（已查證公開資料）：
 
 | 時間 | 事件 |
 |---|---|
-| 2018-03 | 發布 **391.35**，這是 Fermi 的最後一版 Game Ready 驅動 |
+| 2018-03 | 發佈 **391.35**，這是 Fermi 的最後一版 Game Ready 驅動 |
 | 2018-04 | Fermi 轉入 legacy 狀態 |
-| 2019-01 | legacy 支援期結束，**此後連安全性修補都沒有再發布** |
+| 2019-01 | legacy 支援期結束，**此後連安全性修補都沒有再發佈** |
 
 **所以本機的 391.35（2018-03-23）不是「疏於更新」，而是「已無新版可更新」。**
 
 這連帶推翻兩件事：
 
-1. 本文件先前記載的「升級 NVIDIA 驅動至 472.12」**是錯的**——472.xx 是 Kepler 分支，對 Fermi 不適用，安裝只會失敗或不認卡。
-2. 「驅動太舊導致黑屏」這個假設，先前已被 Chrome（近黑 0 %）與 Positron（1.3 %）的對照實測推翻；現在又多一層：**即使想更新也無從更新**。
+1. 本文件先前記載的「昇級 NVIDIA 驅動至 472.12」**是錯的**——472.xx 是 Kepler 分支，對 Fermi 不適用，安裝隻會失敗或不認卡。
+2. 「驅動太舊導緻黑屏」這個假設，先前已被 Chrome（近黑 0 %）與 Positron（1.3 %）的對照實測推翻；現在又多一層：**即使想更新也無從更新**。
 
-**對「更新至最强版」的誠實回答：這張卡在軟體層面已經到頂。** 唯一能再往上的途徑是更換顯示卡硬體，那屬於採購決策，不是我能執行的範圍。
+**對「更新至最強版」的誠實回答：這張卡在軟體層麵已經到頂。** 唯一能再往上的途徑是更換顯示卡硬體，那屬於採購決策，不是我能執行的範圍。
 
-作業上維持原判：**模型訓練一律走 CPU**（i5-12400F 6C/12T，XGBoost/LightGBM 的 `hist` 演算法 + 多執行緒），顯示卡只負責顯示。本機 28 項驗收中 xgboost 與 lightgbm 皆在 CPU 路線下通過，不受此限制影響。
+作業上維持原判：**模型訓練一律走 CPU**（i5-12400F 6C/12T，XGBoost/LightGBM 的 `hist` 演算法 + 多執行緒），顯示卡隻負責顯示。本機 28 項驗收中 xgboost 與 lightgbm 皆在 CPU 路線下通過，不受此限製影響。
 
 ## I.3 四個驅動缺失的裝置（狀態 Error / `CM_PROB_FAILED_INSTALL`）
 
@@ -909,9 +931,9 @@ NVIDIA 對 Fermi 的支援狀態（已查證公開資料）：
 
 | 硬體 ID | 類別碼 | 位置 | 實際裝置 |
 |---|---|---|---|
-| `PCI\VEN_8086&DEV_7AA3&SUBSYS_86941043` | `CC_0C0500` | 匯流排 0／裝置 31／功能 4 | Intel 600 系列 **SMBus 控制器** |
-| `PCI\VEN_8086&DEV_7AA4&SUBSYS_86941043` | `CC_0C8000` | 匯流排 0／裝置 31／功能 5 | Intel **SPI 控制器** |
-| `PCI\VEN_8086&DEV_7ACC&SUBSYS_86941043` | `CC_0C8000` | 匯流排 0／裝置 21／功能 0 | Intel **Serial IO** 控制器 |
+| `PCI\VEN_8086&DEV_7AA3&SUBSYS_86941043` | `CC_0C0500` | 匯流排 0／裝置 31／功能 4 | Intel 600 繫列 **SMBus 控製器** |
+| `PCI\VEN_8086&DEV_7AA4&SUBSYS_86941043` | `CC_0C8000` | 匯流排 0／裝置 31／功能 5 | Intel **SPI 控製器** |
+| `PCI\VEN_8086&DEV_7ACC&SUBSYS_86941043` | `CC_0C8000` | 匯流排 0／裝置 21／功能 0 | Intel **Serial IO** 控製器 |
 | `ACPI\INTC1056` | — | — | Intel **動態調校（DPTF）** |
 
 四者皆為 Intel 晶片組週邊，一般由 **Intel Chipset Device Software（INF Update Utility）** 與 **Intel Dynamic Tuning 驅動**提供，可自 ASUS PRIME H610M-R D4 支援頁或 Intel 官方取得。
@@ -923,7 +945,7 @@ NVIDIA 對 Fermi 的支援狀態（已查證公開資料）：
 | 裝置 | 版本 | 日期 | 評估 |
 |---|---|---|---|
 | Realtek PCIe GBE Family Controller | 10.10.714.2016 | **2016-07-14** | 可更新（Realtek／ASUS 有新版），目前功能正常 |
-| NVIDIA High Definition Audio ×4 | 1.3.38.35 | 2020 | 隨顯卡驅動提供，同樣受 Fermi EOL 限制 |
+| NVIDIA High Definition Audio ×4 | 1.3.38.35 | 2020 | 隨顯卡驅動提供，同樣受 Fermi EOL 限製 |
 | Intel Management Engine Interface | 2406.5.5.0 | 2024 | 尚新 |
 | Intel RST VMD Controller | 20.2.6.1025 | 2025 | 尚新 |
 | System Firmware（BIOS） | 3801 | 2025-05-14 | 尚新 |
@@ -937,7 +959,7 @@ NVIDIA 對 Fermi 的支援狀態（已查證公開資料）：
 所有更新：0 筆
 ```
 
-**Windows Update 認為系統已是最新，不會自動補上 I.3 那四個缺失的驅動。** 這類晶片組 INF 驅動通常不經 Windows Update 派送，必須由主機板廠或 Intel 官方安裝。
+**Windows Update 認為繫統已是最新，不會自動補上 I.3 那四個缺失的驅動。** 這類晶片組 INF 驅動通常不經 Windows Update 派送，必須由主機闆廠或 Intel 官方安裝。
 
 首次查詢曾回傳 `0x80244011`，重試後正常，判定為暫時性錯誤——已確認本機**沒有** WSUS 設定（`WUServer` 與 `UseWUServer` 皆為空）。
 
@@ -952,7 +974,7 @@ HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
 
 **建議交由 IT 確認是否清除**——這屬於群組原則層級的設定，且可能是公司統一派送的，我不會自行更動。
 
-## I.7 對「一律更新至最强版」的結論
+## I.7 對「一律更新至最強版」的結論
 
 | 對象 | 能不能更新到更新版？ | 誰能做 |
 |---|---|---|
@@ -965,11 +987,11 @@ HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
 
 **我沒有安裝任何驅動程式**，理由有三，缺一不可：
 
-1. **權限**：驅動安裝需要系統管理員，本工作階段以一般使用者執行，無法提權。
-2. **來源**：安裝驅動必須自廠商網站下載並執行安裝程式。在一台有 DLP 與端點防護的公司資產上，下載並執行外部安裝程式應當事先取得同意，不該由我逕行決定。
+1. **權限**：驅動安裝需要繫統管理員，本工作階段以一般使用者執行，無法提權。
+2. **來源**：安裝驅動必須自廠商網站下載並執行安裝程式。在一颱有 DLP 與端點防護的公司資產上，下載並執行外部安裝程式應當事先取得同意，不該由我逕行決定。
 3. **政策**：驅動與韌體屬於 IT 管理範圍，貿然更新可能與公司的標準映像或資產管理衝突。
 
-**已備妥的東西**：`診斷操作系統/Driver_Report.ps1` 會重新產生本附錄的全部數據（唯讀），輸出可直接附在給 IT 的工單上。
+**已備妥的東西**：`診斷操作繫統/Driver_Report.ps1` 會重新產生本附錄的全部數據（唯讀），輸出可直接附在給 IT 的工單上。
 
 ---
 
@@ -1006,7 +1028,7 @@ HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
 | 次序 | 現象 | 原因 |
 |---|---|---|
 | 首次預演 | ExitCode `-196608`，未產生記錄檔 | `Start-Process -Verb RunAs` 提權後工作目錄被重設為 `System32`，相對路徑 `.\Run_AsAdmin.ps1` 找不到。改用絕對路徑後正常 |
-| 首次驗證腳本 | ExitCode `1`，未產生結果檔 | 臨時腳本未加 UTF-8 BOM，PowerShell 5.1 以 GBK 讀取導致中文亂碼、解析失敗。補 BOM 後正常 |
+| 首次驗證腳本 | ExitCode `1`，未產生結果檔 | 臨時腳本未加 UTF-8 BOM，PowerShell 5.1 以 GBK 讀取導緻中文亂碼、解析失敗。補 BOM 後正常 |
 
 兩次皆為腳本撰寫疏失，與權限無關。使用者因此多按了兩次 UAC。
 
@@ -1015,7 +1037,7 @@ HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
 | 變更 | 變更前 | 變更後 | 生效時機 | 還原方式 |
 |---|---|---|---|---|
 | 長路徑 | `LongPathsEnabled = 0` | `= 1` | 重開機 | 改回 0 |
-| 分頁檔 | 自動管理，5120 MB | 固定 初始 16290／最大 32581 MB | 重開機 | 備份見下；或系統內容 > 進階 > 效能 > 虛擬記憶體 > 勾回自動管理 |
+| 分頁檔 | 自動管理，5120 MB | 固定 初始 16290／最大 32581 MB | 重開機 | 備份見下；或繫統內容 > 進階 > 效能 > 虛擬記憶體 > 勾回自動管理 |
 | Defender 掃描排除 | 既有 2 項（PyCharm 相關） | 新增 3 項 | 立即 | `Remove-MpPreference -ExclusionPath` |
 | VCRedist x86 | 14.42.34438.0 | **14.51.36247.0** | 建議重開機 | winget 可降版 |
 
@@ -1029,21 +1051,21 @@ C:\Users\PPCCpcpc\AppData\Local\R\win-library
 C:\Users\PPCCpcpc\AppData\Local\uv
 ```
 
-**不含 Downloads、桌面或任何文件目錄。** 另需說明：這三項**只對 Microsoft Defender 有效**，亿赛通 CDG、Kaspersky、天锐绿盾不受影響，仍會照常攔截每一次檔案讀寫。
+**不含 Downloads、桌麵或任何文件目錄。** 另需說明：這三項**隻對 Microsoft Defender 有效**，億賽通 CDG、Kaspersky、天銳綠盾不受影響，仍會照常攔截每一次檔案讀寫。
 
 ## J.4 未成功的三項
 
 | 項目 | 結果 | 原因 |
 |---|---|---|
-| 系統還原點 | **未建立** | Windows 24 小時節流：當日 17:54 已由系統建立過一個 |
-| Edge | **未升級** | `-1978335090`「安裝技術不符」；後續查出根因為更新服務與排程工作皆不存在（見 IT 工單申請五） |
-| Teams / VCRedist x64 | 未升級 | winget 回報已無可用更新 |
+| 繫統還原點 | **未建立** | Windows 24 小時節流：當日 17:54 已由繫統建立過一個 |
+| Edge | **未昇級** | `-1978335090`「安裝技術不符」；後續查出根因為更新服務與排程工作皆不存在（見 IT 工單申請五） |
+| Teams / VCRedist x64 | 未昇級 | winget 回報已無可用更新 |
 
 ## J.5 提權後的唯讀驗證結果
 
 為確認上述變更是否真的生效（而非僅是腳本宣稱成功），於 09:07 再次提權執行唯讀查證：
 
-**系統還原點**（一般權限看不到，提權後可見）：
+**繫統還原點**（一般權限看不到，提權後可見）：
 
 ```
 #2  2026-09-20 17:54:30  Windows 更新
@@ -1066,7 +1088,7 @@ C:\work                                                   ← 本次新增
 `Run_AsAdmin.ps1` 的日誌同時出現了這兩行：
 
 ```
-警告: 无法创建某个新的系统还原点，因为在过去 1440 分钟内已经创建了一个系统还原点。
+警告: 無法創建某個新的繫統還原點，因爲在過去 1440 分鐘內已經創建了一個繫統還原點。
   已建立。
 ```
 
@@ -1093,7 +1115,7 @@ if ($after -gt $before) { 已建立 } else { 未建立，列出現有最近的�
 
 ## J.7 變更後的驗收
 
-四項系統變更完成後重跑 28 項實跑驗收：
+四項繫統變更完成後重跑 28 項實跑驗收：
 
 ```
 === 驗收結果： PASS 28 / FAIL 0 / SKIP 0 ===
@@ -1107,6 +1129,6 @@ if ($after -gt $before) { 已建立 } else { 未建立，列出現有最近的�
 |---|---|
 | **重新開機** | 長路徑與分頁檔需重開機才生效；VCRedist 亦建議重開 |
 
-重開機後可執行 `診斷操作系統/Acceptance_Test.ps1` 複驗，以及 `Win10_Diagnose_v2.ps1` 確認長路徑已生效。
+重開機後可執行 `診斷操作繫統/Acceptance_Test.ps1` 複驗，以及 `Win10_Diagnose_v2.ps1` 確認長路徑已生效。
 
 ---
