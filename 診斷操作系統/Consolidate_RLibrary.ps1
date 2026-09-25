@@ -126,7 +126,11 @@ for (p in c("extRemes","brms","grf","pROC","survival","MASS","data.table"))
   cat("  ", p, ":", if (requireNamespace(p, quietly=TRUE)) "loads" else "FAIL", "\n")
 '@
     $tmp = Join-Path $env:TEMP 'rlib_verify.R'
-    $code | Set-Content $tmp -Encoding UTF8
+    # Write WITHOUT a BOM: Windows PowerShell 5.1's `Set-Content -Encoding UTF8`
+    # prepends a byte-order mark, and Rscript then dies with
+    #   Error: unexpected input in "<BOM>"
+    # .NET WriteAllText(string) uses UTF-8 without BOM, which Rscript reads cleanly.
+    [System.IO.File]::WriteAllText($tmp, $code)
     & $rscript $tmp
     Remove-Item $tmp -Force -EA SilentlyContinue
 }
