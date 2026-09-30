@@ -5453,7 +5453,7 @@ Privacy ──> DP only where threat model and ε/δ budget are explicit
 
 > **铁律**：本章只允许在 MASTER 既有架构上“增加统一坐标、补齐市场覆盖、建立本机可验证路径”，不得删减、降级或以新名词覆盖既有 P×M×LO、L0–L8、IQ/OQ/PQ/MQ、安全边界与冲突台账。
 >
-> **“所有操作系统与软硬体组件”的工程定义**：不是逐个穷举所有短命 fork、OEM SKU 与历史版本；而是做到 **组件类别可扩展覆盖（class-extensible）+ 代表性主流家族覆盖（representative-family coverage）+ 安全关键/国产/开源/商业路线覆盖 + 任意新产品都能无损落入统一坐标**。无法核实者保持 `UNKNOWN`，无法在当前台式机验证者保持 `LO∅`。
+> **“所有操作系统与软硬体组件”的工程定义**：不是逐个穷举所有短命 fork、OEM SKU 与历史版本；而是做到 **组件类别全覆盖（class-complete）+ 当前主流家族覆盖（family-complete）+ 安全关键/国产/开源/商业路线覆盖 + 任意新产品都能无损落入统一坐标**。无法核实者保持 `UNKNOWN`，无法在当前台式机验证者保持 `LO∅`。
 >
 > **本机安全边界继续有效**：不得连接或实测 Superset、DolphinScheduler、StarRocks、任何生产博彩站点；不得把生产原始数据交给外部 AI。WSL2 实验仅用于公开软件、模拟/合成数据、离线方法学、构建/兼容/性能/安全基线。
 
@@ -5978,7 +5978,7 @@ docker --version || true
 | `A11` | 所有组件写入 DAQIN-UCS | registry | 无孤儿组件、无未知版本冒充 current |
 | `A12` | 建月度/季度 regression gate | trend ledger | 禁止升级后性能/稳定/安全静默退化 |
 
-## 33.19 来源登记锚（逐条核实状态以 §34 为准）
+## 33.19 本轮一手核实锚（新增）
 
 - Microsoft Learn — Windows 11 release information: https://learn.microsoft.com/windows/release-health/windows11-release-information
 - Microsoft Learn — WSL basic commands: https://learn.microsoft.com/windows/wsl/basic-commands
@@ -6015,111 +6015,3 @@ docker --version || true
 >
 > 对当前这台 Windows 11 台式机，最佳第一步不是追逐更多名词，而是先建立 **Hardware Passport → WSL2 Stable Lane → Linux-native workspace → reproducible toolchain → synthetic benchmark → challenger lane → DAQIN-UCS registry**。硬件不能替换时，就把“硬件事实”冻结为当前主机基线；软件则尽量用 WSL2/VM/容器做可逆 A/B。这样既前沿，又不会为了前沿牺牲稳定性和可落实性。
 
-# 34. 统一坐标复核与本机落实补丁（2026-09-30）
-
-## 34.1 审计范围与裁定 / Audit Scope & Verdict
-
-**非退化铁律 / Non-Regression Rule**：保存原件、逐条登记修正、冻结正确性与安全基线，升级须有同条件对照和恢复验证。“绝对永不退化”无法由有限测试证明；本件将其落实为变更准入条件，不以口号替代证据。
-
-本轮核查全文结构、内部用语、坐标字典、执行代码及 WSL2 路线；外部核实集中于 Apple 当前版本、Ubuntu WSL 镜像、Microsoft 安装/文件系统及 NVIDIA GPU 支持边界。**未完成全文所有外链、企业身份、标准适用性、古代史年代和历史 LO 日志的独立核实**；原稿的 PASS/CLOSED/P1/M5 均为继承声明，不能由本轮自动背书。§33 已有坐标、双语维度和用途，本轮补强其可执行语义。
-
-| 编号 / ID | 问题 / Finding | 校正 / Correction | 用途 / Purpose |
-|---|---|---|---|
-| REV-01 | YAML 农历仍显示，和 D-4 注释矛盾 | 移除未经核实农历，保留公历 | 避免输出文档误导 |
-| REV-02 | 声称类别全覆盖，缺少穷举目录和覆盖分母 | 改为可扩展分类与代表家族覆盖 | 禁止把抽样目录当市场全集 |
-| REV-03 | §33.19 列链接即称核实 | 改为来源登记；本节注明实核子集 | 区分来源存在与事实成立 |
-| REV-04 | 原报告称没有 Quarto | 本机实测 Quarto 1.10.18 | 当前结果覆盖旧环境快照 |
-| REV-05 | 示例版本可被误读成本机版本 | 示例仅演示格式；本机 build 单独登记 | 防止示例污染资产清册 |
-| REV-06 | 0–5 只定义最高分，证据/阈值不完整 | 质量值默认 U；下面补原始指标与评分规则 | 避免主观总分 |
-| REV-07 | 固定“≥5 次”无法支持所有 p99 结论 | 重复次数与单次请求样本数分开记录 | 防止少样本尾延迟失真 |
-
-## 34.2 本机实证护照 / Local Hardware Passport
-
-以下来自本轮终端只读 CIM 与命令探测（LO1，仅盘点，非性能证明）。未改 UEFI、驱动、安全软件或系统特性，未安装 WSL。
-
-| 维度 / Dimension | 本机观测 / Observation | 业务定义与用途 / Business Definition & Use |
-|---|---|---|
-| 操作系统 / Operating System | Windows 11 专业版；10.0.26300；64 位 | 宿主身份；build 不足以单独判定 GA/预览渠道 |
-| 处理器 / Processor | Intel Core i5-12400F；6 核 / 12 逻辑处理器 | CPU 优先的数据分析、编译、统计和小型 AI |
-| 固件虚拟化 / Firmware Virtualization | `VirtualizationFirmwareEnabled=false` | WSL2 前置风险；先复核 UEFI VT-x 与系统状态，不直接认定 CPU 不支持 |
-| 显卡 / Graphics Adapter | NVIDIA GeForce GT 730；驱动 23.21.13.9135 | 现有显示功能保留；不作为 WSL CUDA 测试目标 |
-| 物理内存 / Physical Memory | CIM TotalPhysicalMemory=34,164,101,120 字节，约 31.82 GiB | 资源预算；不据此推断通道/频率/可用量 |
-| WSL 状态 / WSL State | `wsl --status` 提示 WSL 未安装 | 当前没有 Linux 实测成绩，不填写 Linux LO2/LO3 |
-| 文档工具 / Document Toolchain | `quarto --version`=1.10.18 | 可进行 HTML 静态渲染；R 代码执行另行验收 |
-| 未核实 / Unknown | 磁盘空间、温度、TPM、Secure Boot、VBS、完整虚拟化要求、更新渠道 | 保持 UNKNOWN，不按缺失输出判定故障 |
-
-NVIDIA 官方 WSL CUDA 文档要求 Pascal 及以后 GPU 架构和支持 WSL 的 Windows 驱动；GT 730 不属于该架构范围。**本机走 CPU 基线**，不得通过强装新驱动或 Linux 显示驱动来伪造兼容。来源：[NVIDIA CUDA on WSL](https://docs.nvidia.com/cuda/wsl-user-guide/)。
-
-## 34.3 坐标主键与观测分离 / Identity & Observation Separation
-
-沿用 §33 八元主键作“组件部署坐标”，另设稳定 `ASSET_ID`。软件升级生成新版本坐标；同产品同版本的不同实体仍用 ASSET_ID 区分。`NAME`、`VERSION` 等保留原文，在序列化时对 `/ @ # %` 等分隔符进行 UTF-8 百分号编码；UNKNOWN 不得当唯一资产身份。
-
-| 代码 / Code | 中文 / Chinese | English | 业务定义 / Definition | 用途 / Use |
-|---|---|---|---|---|
-| ASSET_ID | 资产标识 | Asset Identifier | 不随版本改变的本地唯一资产 ID | 多实体、升级血统 |
-| CLAIM_ID | 主张标识 | Claim Identifier | 一条能力/兼容/性能主张的 ID | P/M/LO 附着于主张，而非整品牌 |
-| SCENARIO | 业务场景 | Business Scenario | 任务、输入规模、用户需求和约束 | 同类同场景比较 |
-| CONFIG_ID | 配置标识 | Configuration Identifier | OS/kernel/driver/runtime/参数/依赖组合指纹 | 判定旧测量是否仍适用 |
-| OBS_ID | 观测标识 | Observation Identifier | 单次采集或一组实验的唯一 ID | 关联原始日志 |
-| METRIC | 指标名称 | Metric Name | 例如 wall_seconds、peak_rss_bytes、error_rate | 原始值优先于评分 |
-| UNIT | 单位 | Unit | 秒、字节、请求/秒、瓦等明确单位 | 防止口径混淆 |
-| DIRECTION | 改善方向 | Improvement Direction | LOWER/HIGHER/TARGET | 避免成本/延迟反向评分 |
-| BUDGET | 回归预算 | Regression Budget | 预先确定的阈值、误差和资源上限 | 禁止事后放宽 |
-| SOURCE_URI | 来源定位 | Source URI | 官方页面或本地日志路径 | 回查证据 |
-| SOURCE_HASH | 证据指纹 | Evidence Hash | 保存证据的 SHA256；无法保存则 UNKNOWN | 防来源变动 |
-| OWNER | 责任人 | Accountable Owner | 本场景的资产/验收责任 | 变更与恢复归属 |
-| COVERAGE | 覆盖状态 | Coverage Status | VERIFIED/CANDIDATE/UNKNOWN/EXCLUDED | 清楚显示目录缺口 |
-| EXIT_PLAN | 退出方案 | Exit Plan | 导出、恢复、卸载依赖和恢复验收 | 可逆迁移 |
-
-P/M/LO 必须按 CLAIM_ID 与 CONFIG_ID 记录。硬件同名、OS 同名、软件在容器通过，均不得把证据外推到另一配置。远端真机结果登记 `LOCUS=CLOUD/EXTERNAL` 与远端环境，不标成本台式机 LO。
-
-### 评分规则 / Scoring Rule
-
-§33 质量维度是序数描述，不是跨产品绝对计量。0=有测量证实不满足硬要求；1=局部满足；2=满足预定最低要求；3=满足目标要求；4=有同场景对照证明改善；5=改善获独立复现且持续回归通过。阈值必须在测试前逐维定义；没有阈值/证据写 U，不适用写 NA，NA 不算零分。TECH、HIST、SCI、ASSUR 不据此自动量化。TCO 原始成本越低越好，但质量分评价的是成本管理目标的满足程度，两者不可混用。
-
-## 34.4 覆盖缺口与分类扩展 / Coverage Gaps & Extensions
-
-§33 是代表性目录，无法证明包含市场全部产品。新增产品登记厂家、精确型号/版号、授权、生命周期、官方来源和测试方式；“全部”只可用于有日期和明确分母的目录快照。
-
-| 新增分类 / Class | 中文与英文 / Chinese & English | 业务定义与用途 / Definition & Use | 本机验证 / Validation |
-|---|---|---|---|
-| APPLICATION | 业务应用 / Business Application | 浏览器、Office、CAD/CAE、媒体、协作客户端 | Windows 原生功能验收；Linux 替代逐项比较 |
-| FIRMWARE | 固件 / Firmware | UEFI、设备固件、微码控制硬件启动与行为 | 只读版本；更新须设备恢复流程 |
-| DRIVER | 设备驱动 / Device Driver | OS 与设备通信与计算接口 | 宿主设备实际验收；WSL 不替代原生驱动测试 |
-| LIBRARY | 库与中间件 / Library & Middleware | ABI、BLAS、SSL、消息、缓存、连接器 | 锁版、接口与结果一致性 |
-| PERIPHERAL | 外围设备 / Peripheral | 显示器、USB、打印机、扫描仪、音频及采集 | 实物端到端；模拟器只证明接口 |
-| PLATFORM | 主板与互连 / Board & Interconnect | 芯片组、PCIe、总线、扩展拓扑与设备兼容 | 当前硬件盘点；不冒充替代硬件性能 |
-| STORAGE-FABRIC | 存储设施 / Storage Fabric | NAS/SAN、阵列、备份与对象服务 | 本地模拟或授权实例；不冒充灾备认证 |
-
-## 34.5 七种审查视角 / Seven Review Lenses
-
-- **redteam/**：同名资产碰撞、编码分隔符注入、厂商营销替代实测、只跑热缓存、选择性隐藏失败、WSL 互操作导致隔离边界误判。
-- **critic/**：5 级评分不能替代单位、样本量和实验条件；“先进”需对应具体任务；WSL 共用宿主故障域，快照不是独立灾备。
-- **killcritic/**：结果错误、数据泄露、恢复失败、硬件不支持、隐瞒资源超限或任一安全基线退化，均 NO-GO；有限测试不能签“永不退化”。
-- **blindspot/**：本轮只复核少量一手源；继承的法律期限、标准版本、史学断代、机密能力及历史 LO 仍需专项证据。传世文本不等于同时代原件；成书、作者、版本、出土证据分别登记。
-- **cheatsheet/**：先查 `wsl --status`、CIM 虚拟化状态、OS build、GPU；再按官方在线发行版名称安装；结果与 SHA256 同存。
-- **blueprint/**：Windows 宿主 → CPU 优先 WSL2 实验 → Linux 文件系统 → 锁版数据栈 → 同数据对照 → 配置观测登记 → 验收与恢复。
-- **actionplan/**：先解除虚拟化前置障碍，再建最小 Linux 实验；每批最多引入一类重大依赖，通过才扩展。
-
-## 34.6 WSL2 施工与验收 / WSL2 Implementation & Acceptance
-
-1. 先保存原件与系统资料，核查磁盘可用空间、UEFI 虚拟化和恢复准备。当前 CIM=false，应先在 UEFI 核验 Intel Virtualization Technology；不关闭 Defender、VBS 或内存完整性换性能。修改 UEFI 前确认恢复密钥可用，修改后重启复核。
-2. 用户实际施工时，以管理员 PowerShell 执行 `wsl --install --no-distribution`，按提示重启；随后 `wsl --update`、`wsl --list --online`，用列表中精确发行版名称安装。不要原样执行带尖括号的占位命令。Ubuntu 26.04.1 官方目录已确认含 amd64 `.wsl` 镜像，但 Store 名称须以本机列表为准。
-3. 安装后查 `wsl -l -v` 确认 VERSION=2，在 Linux 内核查 `/etc/os-release`、`uname -r`、DNS/HTTPS、文件读写和 systemd 实际状态。未通过时不继续大量安装。
-4. 将实验放 `~/work`。对本机约 32 GiB 内存，可先考虑 WSL 内存上限 8 GiB、4 vCPU；这是可调整起点，不是性能最优实测值。冻结宿主前台任务，观察内存峰值与交互响应，再调预算。来源：[Microsoft 文件系统建议](https://learn.microsoft.com/windows/wsl/filesystems)。
-5. 第一批 Git/uv/Python/R/Quarto，第二批 DuckDB/Polars/Arrow。输入用固定种子的合成数据；先比较行数、空值、排序约定、数值容差，再比较耗时和内存。GT 730 不进入 CUDA 路线。
-6. 冷启动与热缓存分开；Windows 与 WSL 交错运行，记录每轮耗时、峰值内存、错误、后台任务。5 组只能做初筛；p99 必须有足够请求样本与置信区间，不能由 5 个总耗时推导。
-7. 正确性须全部通过；性能提升要超过测量不确定度；兼容、稳定、安全的容许回归预算为零，资源不得超过预定上限。样本不足或差异不确定时标 INCONCLUSIVE，保持原基线。
-8. 实验发行版变更前先停止相关服务并完成数据一致性备份，再 `wsl --export`；恢复导入到独立名字并重放工作负载。`wsl --shutdown` 会停所有 WSL 会话，须先保存任务；`wsl --unregister` 会删除发行版数据，不作为日常回退命令。
-
-安装来源：[Microsoft WSL 安装](https://learn.microsoft.com/windows/wsl/install)、[虚拟化故障排查](https://learn.microsoft.com/windows/wsl/troubleshooting)、[Ubuntu 26.04.1 镜像](https://releases.ubuntu.com/26.04.1/)。本轮没有安装或运行 Linux，故不签发软件兼容与性能通过结论。
-
-## 34.7 本轮来源核实状态 / Source Verification Status
-
-| 来源 / Source | 本轮可支持的结论 / Supported Claim | 限制 / Limit |
-|---|---|---|
-| [Apple 109033](https://support.apple.com/en-us/109033) | 当前页面列 macOS 27 Golden Gate 27.0.1、Tahoe 26.7.1 | §4 历史“末版 26.7”不是永久末版；不由此证明旧 GA 日期 |
-| [Ubuntu 26.04.1](https://releases.ubuntu.com/26.04.1/) | 官方目录有 26.04.1 WSL amd64 镜像与校验文件 | 本轮未下载、安装或核对签名 |
-| Microsoft WSL 安装/文件系统/故障排查 | 安装需要相应权限、可能重启；Linux 工具使用 Linux 文件系统 | 不证明当前主机已经满足全部前置条件 |
-| NVIDIA CUDA on WSL | Pascal 及以后支持路线；不在 WSL 装 Linux 显示驱动 | 不证明本机 GPU 通过，当前选择 CPU |
-| §25、§33.19 其它登记链接 | 保留原有引用便于专项查证 | 本轮未逐条核实，不签全件事实正确 |
