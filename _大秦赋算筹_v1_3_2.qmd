@@ -1467,6 +1467,8 @@ Z7 CONTROLLED ROLLOUT
 
 **模拟数据可以证明系统“跑得动”，不能单独证明真实欺诈召回率、真实 ROI 或真实公平性。**
 
+> **锚 ⟲ §0.7**：本协议 `Z0 真实数据金库` 即 **EI-1（自主权）**；`Z1 隐私引擎`（aggregation/DP/de-identification）即 **EI-4（差分隐私群体尺）**；合成数据第 4 门（Privacy：membership inference / DP）为 **EI-3（无全知画像）** 的验收闸。
+
 ---
 
 # 14. AI/数据/量化科技栈总表
@@ -1547,6 +1549,8 @@ Z7 CONTROLLED ROLLOUT
 - Model Cards / Datasheets
 - calibration / uncertainty / conformal prediction
 - drift / OOD detection
+
+> **锚 ⟲ §0.7**：本栈即价值不变量之落地工具——OpenDP / diffprivlib → **EI-4**；SDV / CTGAN / synthpop → 相位 P2 合成数据；Flower（联邦）→ P2 跨运营商零 PII 交换；TenSEAL（同态）→ **EI-3**（不解明文即可算）。
 
 ---
 
@@ -1996,8 +2000,8 @@ brand_name
 33. GPU/SSD 固件、驱动和 ROCm/CUDA 版本未锁定；
 34. Agent 能访问生产数据却没有 tool allowlist、JIT 权限、审批和完整审计；
 35. 训练/推理的敏感数据在共享 GPU/云租户环境没有明确隔离与密钥控制；
-36. BCI/医疗神经数据被用于博彩营销、个体诱导或非原目的画像；
-37. 以“国家安全/公安/国防/宇航”为名把未经授权的敏感能力、攻击逻辑或监控需求塞进商业 GDI-OS；
+36. BCI/医疗神经数据被用于博彩营销、个体诱导或非原目的画像；（⟲ §0.7：**EI-3 无全知画像** 之否决闸）
+37. 以“国家安全/公安/国防/宇航”为名把未经授权的敏感能力、攻击逻辑或监控需求塞进商业 GDI-OS；（⟲ §0.7：**EI-5 赋能非掌控** 之否决闸）
 38. 开源依赖没有 upstream/source/signature/SBOM provenance，却仅因“来自 GitHub”就视为可信。
 
 
