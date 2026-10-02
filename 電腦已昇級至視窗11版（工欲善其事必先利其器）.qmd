@@ -5533,13 +5533,106 @@ Proton 是让 Windows 游戏在 Linux 上运行的兼容工具，不是源码转
 
 ### 提問
 
+截图在`C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\诸子百家考工记`
+
+刚签购了《太阁立志传[Ⅴ DX](https://store.steampowered.com/app/1842810) 》，目前尚未启动该游戏。请先生先查证两份附件中《太阁立志传》
+
+* 刚才欲安装时弹出信息路径，如图屏幕截图 2026-10-02 145859.png中有显示。请查证该用途为何呢？
+* Snipaste_2026-10-02_15-00-43.png 显示“正在启动”
+* 由于无法看到下载程序包，请先生目前先查证Steam软件应用中的所有设置与文件，包括任何内嵌与隐藏文件、任何相关设置等等。然后先记录任何现有文件与设置到一个文本报告。稍后启动后再次实测任何文件与设置。务必查证源码。
+* 点击开始游戏后，弹出错误信息 Snipaste_2026-10-02_15-17-36.png与屏幕截图 2026-10-02 145859.png。请先生查证原因。
+
+请先生您先实测，查证是哪些设置拦截呢？切勿直接爆破~
+
+《太阁立志传》官网 https://www.gamecity.com.tw/taikou5dx/ 中点击“马上开玩”后也是弹出同样错误信息。刚开始官网显示此地区不支援此游戏，估计是地缘关系吧？！
+- 可否查证是否基于此电脑设置的地区呢？
+- 可否查证Steam Error：Application load error 3:0000065432错误信息的原因呢？
+- 可否查证Steam Error：Application load error 3:0000065432错误信息是哪个函数中源码即可知晓原因呢？
+- 可否查证Steam Error：Application load error 3:0000065432错误信息的字典即可知晓原因呢？
+- 可否查证Steam软件中的源码呢？
+
 ### 解答
+
+已完成只读核查并保存[文本报告](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-baseline-20261002/核查结论.txt)。
+
+**两张截图的含义已得到本机证据支持：**
+
+- **图一**：Steam Client Service 请求权限执行游戏依赖安装脚本。实测该程序签名有效，签署者为 Valve。
+- **图二**：正在运行 Microsoft DirectX 安装步骤。日志记录 **15:01:53 返回退出码 0**，注册表也记录安装标记。
+- 当前发现 **启动器 `Taiko5DXLauncher.exe` 已运行**，查询时未见主程序 `Taiko5DX.exe`。所以这份记录是“依赖安装后、启动器已运行的基线”，不是严格首次启动前快照。此流程符合 [Steam 官方安装脚本说明](https://partner.steamgames.com/doc/sdk/installscripts)。
+
+**游戏文件已经安装在：**
+
+`C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX`
+
+实测 **1,331 个文件、约 6.87 GiB**，全部保存了 SHA256 校验值。清单记录下载量约 **1.51 GiB**；下载量与安装后的文件大小不同，Steam 不一定保留独立安装包。
+
+**源码方面：**未发现常见源码、工程或调试文件；主程序属于原生 x64 PE 程序。发现了编译后的事件工具，但它不是完整引擎源码。**目前不能判断资源包是否加密，也不能把二进制格式直接认定为加密。**
+
+已保存 Steam 范围内 **9,041 个可访问条目**、配置元数据、可识别设置、安装日志、进程及签名记录。[完整文件清单](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-baseline-20261002/20261002-151409/all-files.csv)包括隐藏属性检查；远端设置、内存状态及封装资源内部尚未全量检查，登录令牌没有复制。
+
+启动后对照工具已准备，**尚未进行游戏主程序启动后的实测**。本轮没有代您启动游戏、修改 Steam 设置或更改公司资安防御。
+
+**已确认错误发生在 Steam 应用加载／启动流程，但目前尚未确定唯一根因。**截图中的代码是 `Application load error 3:0000065432`。
+
+本机实测发现：
+
+- 游戏 **1,331 个文件的哈希与之前基线一致**，没有发现期间被删除或修改；但尚未与 Steam 官方文件校验。
+- DirectX 安装记录为**退出码 0，安装成功标记存在**。
+- 启动器两次退出，日志均记录**退出码 51**；没有证据证明主程序成功进入游戏。
+- Steam 和启动器确实加载了公司管控模块，**但没有取得对应阻断记录，不能据此认定安全软件导致错误**。
+
+下一步最有判断价值的是：**Steam 库 → 右键《太阁立志传Ⅴ DX》→ 属性 → 已安装文件 → 验证游戏文件的完整性。**这是该游戏厂商建议的首项检查。[光荣官方排障说明](https://support.gamecity.ne.jp/hc/ja/articles/41132141860377--%E5%A4%AA%E9%96%A4%E7%AB%8B%E5%BF%97%E4%BC%9D%E2%85%A4-DX-Steam-%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84-%E5%8B%95%E4%BD%9C%E3%81%8C%E9%87%8D%E3%81%84)
+
+如果校验通过仍报同码，再由 IT 核查 **15:17–15:23** 的目标程序策略日志。无需先关闭防御、替换 DLL 或重装系统。
+
+证据已保存至[故障核查报告](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-error-20261002/故障核查报告.md)。本轮未修改公司安全设置，也未代您再次启动游戏。
+
+**已实测，目前没有找到能直接指认“哪项设置拦截《太阁》”的记录。**不能据此认定是卡巴斯基、亿赛通或绿盾造成错误。
+
+| 检查项 | 实测结果 |
+|---|---|
+| Steam／启动器防火墙规则 | 找到 4 条，均为**入站放行** |
+| AppLocker | 查询未见有效规则集合，错误时段未见执行事件 |
+| Defender | 未见游戏相关检测或拦截记录 |
+| Windows CodeIntegrity | 未见直接指向 Steam／《太阁》的目标事件 |
+| 亿赛通可读日志与配置 | 未找到目标程序的明确阻断条目 |
+| 卡巴斯基详细报告 | **系统拒绝读取**，尚不能核对具体规则 |
+
+另外，确实发现 Windows **签名级别检查**记录：Chrome／svchost 加载部分公司组件时未满足签名要求。**这些记录涉及其他进程，不能当作《太阁》报错的原因。**[微软签名要求说明](https://learn.microsoft.com/en-us/windows/win32/amsi/dev-audience)
+
+下一步需要有权限的 IT 查询 **15:17–15:23** 的管理端记录，取得“目标程序＋规则名称／ID＋阻断动作＋原因”，才能确定具体设置。无需先添加白名单。
+
+完整结果已保存至[拦截设置核查报告](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-error-20261002/policy-evidence/拦截设置核查报告.md)。**本轮没有爆破、绕过权限或修改任何防御设置。**
+
+
 
 ## 提問十九
 
 ### 提問
 
+请先生严密核实、查证并实测`C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX`路径下所有文件，然后先核实并校对程序能否回溯成源码呢？先生可以通过任何前沿兼高端网站、任何前沿兼高端编程语言、前沿兼高端工具/软件/应用去回溯此路径下与任何相关所有文件内容。切勿修改或删除任何现有设置。
+
+请先生严密核实、查证并实测C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX路径下所有文件，然后先核实并校对程序能否回溯成源码呢？先生可以通过任何前沿兼高端网站、任何前沿兼高端编程语言、前沿兼高端工具/软件/应用去回溯此路径下与任何相关所有文件内容。切勿修改或删除任何现有设置。
+
 ### 解答
+
+**已完成该目录全部文件的只读核验。结论：可以进一步分析机器码，但目前不能将其完整还原为开发者原始源码。**
+
+实测结果：
+
+- **1,331 个文件，共约 6.87 GiB**：全部逐字节读取并计算 SHA-256，没有读取失败。
+- 与先前基线相比：**新增、删除、哈希变化均为 0**。
+- **6 个 EXE／DLL 数字签名均有效**，签署方为光荣或 Valve。
+- 三个游戏 EXE 均为原生 Windows 程序，没有 CLR 运行时头；未发现常见源码工程或 PDB 文件。
+- 未发现额外 NTFS 命名数据流。
+- 全文件搜索未找到该启动错误的明文字符串；这仍不能确定错误来自哪个函数。
+
+原生反编译工具可以生成近似伪代码，但不能保证恢复原始注释、变量名、工程结构，或直接得到可编译的完整项目。[Ghidra 官方说明](https://github.com/NationalSecurityAgency/ghidra)
+
+**本轮没有进行完整反编译或专用资源解包，也没有确认资源是否加密。** 文件核验不等于游戏启动验收或 Steam 官方完整性验证。
+
+已保存并打开[完整实测报告](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-source-audit-20261002/源码可回溯性实测报告.md)，附逐文件清单与逐行注释的审计脚本。没有修改游戏文件或任何现有设置，没有上传文件或绕过公司防御。
 
 ## 提問廿
 
