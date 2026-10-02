@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 1.241,
+  "result_rows": 2,
+  "result": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\largefile-verified\\result.parquet",
+  "config": {
+    "input": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\smoke-ds\\sample.parquet",
+    "output": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\largefile-verified",
+    "group": "group",
+    "value": "value",
+    "memory_gb": 6,
+    "threads": 6,
+    "max_temp_gb": 20
+  },
+  "duckdb": "1.5.5",
+  "sql": "SELECT \"group\" AS group_value, COUNT(*) AS row_count, SUM(TRY_CAST(\"value\" AS DOUBLE)) AS numeric_sum, COUNT(*) FILTER (WHERE \"value\" IS NOT NULL AND TRY_CAST(\"value\" AS DOUBLE) IS NULL) AS invalid_numeric_count FROM source_data GROUP BY \"group\""
+}

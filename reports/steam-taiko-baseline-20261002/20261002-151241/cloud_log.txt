@@ -1,0 +1,64 @@
+
+
+[2026-10-02 12:58:07] Client version: 1788652215
+[2026-10-02 12:58:07] [AppID 7] Starting sync (init,)
+[2026-10-02 12:58:07] [AppID 7] AutoCloud checking local state for user 290578512
+[2026-10-02 12:58:07] [AppID 7] Not running AutoCloud. No config data found
+[2026-10-02 12:58:07] [U:1:290578512] [AppID 7] Init cache request complete
+[2026-10-02 12:58:07] [AppID 7] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/7/remotecache.vdf'
+[2026-10-02 12:58:09] [AppID 7] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/290578512/7/remotecache.vdf'
+[2026-10-02 12:58:11] [AppID 7] Starting sync (down,)
+[2026-10-02 12:58:11] [AppID 7] Attempting to sync from local change number '0' to global change number '0' (full)
+[2026-10-02 12:58:11] [AppID 7] sharedconfig.vdf has local changes but mismatch - creating a conflict. Local/Remote SHA: 94066f42d7b742ef5ed278007b8cfee04bd9c50a / d374fad2c4168c40662cb2c3607b66e4aab6250d, Timestamps: 0 / 1656143681, persist state: 0 / 0
+[2026-10-02 12:58:11] [AppID 7] Sync conflict for file sharedconfig.vdf
+[2026-10-02 12:58:11] [AppID 7] Download failed due to conflicts in build list
+[2026-10-02 12:58:11] [Roaming Config] OnRemoteStorageSyncedClient() - result Remote File Conflict
+[2026-10-02 12:58:11] [AppID 760] Starting sync (Get App Quota Usage,)
+[2026-10-02 12:58:11] [AppID 7] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/290578512/7/remotecache.vdf'
+[2026-10-02 12:58:12] [AppID 760] GetAppQuotaUsage - Success
+[2026-10-02 12:58:12] [AppID 2371090] Starting sync (eval,)
+[2026-10-02 12:58:12] [AppID 2371090] AutoCloud checking local state for user 290578512
+[2026-10-02 12:58:12] [AppID 2371090] Need to sync from local change number '0' to global change number '0' (full), but not attempting now
+[2026-10-02 12:58:12] [AppID 2371090] Eval complete
+[2026-10-02 12:58:12] [AppID 2371090] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/2371090/remotecache.vdf'
+[2026-10-02 12:59:07] [Roaming Config] PerformSyncCloud - conflict detected, accepting local files
+[2026-10-02 12:59:07] [AppID 7] Starting sync (up,resolve,)
+[2026-10-02 12:59:08] [AppID 7] Need to sync from local change number '0' to global change number '0' (full), but not attempting now
+[2026-10-02 12:59:08] [AppID 7] sharedconfig.vdf already marked as conflicting. Local/Remote SHA: 94066f42d7b742ef5ed278007b8cfee04bd9c50a / d374fad2c4168c40662cb2c3607b66e4aab6250d, Local/Remote persist state: 0 / 0
+[2026-10-02 12:59:08] [AppID 7] Resolving file sharedconfig.vdf from state 4, bUseLocal = true
+[2026-10-02 12:59:08] [AppID 7] Need to upload file sharedconfig.vdf
+[2026-10-02 12:59:08] [AppID 7] Upload batch initiated, ID: 7062948166190815582, ChangeNumber: 1, App Build ID: 0
+[2026-10-02 12:59:09] [AppID 7] HTTP upload for file 'sharedconfig.vdf' beginning . . .
+[2026-10-02 12:59:09] [AppID 7] HTTP upload for file 'sharedconfig.vdf' (offset=0, length=163) to (20.209.97.193 / 20.209.97.193, host: steamclouddub.blob.core.windows.net), path /cloud/50/E0/51/11/7/017_1_14223D45_19F49_9.dat - success.
+[2026-10-02 12:59:10] [AppID 7] Upload OK for file sharedconfig.vdf
+[2026-10-02 12:59:10] [AppID 7] Upload complete, result OK
+[2026-10-02 12:59:10] [Roaming Config] OnRemoteStorageConflictResolution - result OK
+[2026-10-02 12:59:11] [AppID 7] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/290578512/7/remotecache.vdf'
+[2026-10-02 13:00:07] [Roaming Config] PerformSyncCloud - all sync'd up
+[2026-10-02 14:55:35] [AppID 228980] Starting sync (init,)
+[2026-10-02 14:55:35] [AppID 228980] AutoCloud checking local state for user 290578512
+[2026-10-02 14:55:35] [AppID 228980] Not running AutoCloud. No config data found
+[2026-10-02 14:55:35] [U:1:290578512] [AppID 228980] Init cache request complete
+[2026-10-02 14:55:35] [AppID 228980] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/228980/remotecache.vdf'
+[2026-10-02 14:55:36] [AppID 1842810] Starting sync (init,)
+[2026-10-02 14:55:36] [AppID 1842810] AutoCloud checking local state for user 290578512
+[2026-10-02 14:55:36] [U:1:290578512] [AppID 1842810] Init cache request complete
+[2026-10-02 14:55:36] [AppID 1842810] Starting sync (eval,)
+[2026-10-02 14:55:36] [AppID 1842810] AutoCloud checking local state for user 290578512
+[2026-10-02 14:55:36] [AppID 1842810] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/1842810/remotecache.vdf'
+[2026-10-02 14:55:37] [AppID 1842810] Need to sync from local change number '0' to global change number '0' (full), but not attempting now
+[2026-10-02 14:55:37] [AppID 1842810] Eval complete
+[2026-10-02 14:55:37] [AppID 1842810] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/1842810/remotecache.vdf'
+[2026-10-02 15:00:11] [AppID 2371090] Starting sync (down,)
+[2026-10-02 15:00:12] [AppID 2371090] Attempting to sync from local change number '0' to global change number '0' (full)
+[2026-10-02 15:00:12] [AppID 2371090] Download complete in build list
+[2026-10-02 15:00:12] [AppID 2371090] Successfully synced to ChangeNumber 0
+[2026-10-02 15:00:12] [AppID 2371090] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/2371090/remotecache.vdf'
+[2026-10-02 15:01:53] [AppID 1842810] Starting sync (AC Launch,down,)
+[2026-10-02 15:01:53] [AppID 1842810] AutoCloud checking local state for user 290578512
+[2026-10-02 15:01:54] [AppID 1842810] Attempting to sync from local change number '0' to global change number '0' (full)
+[2026-10-02 15:01:54] [AppID 1842810] Download complete in build list
+[2026-10-02 15:01:54] [AppID 1842810] Successfully synced to ChangeNumber 0
+[2026-10-02 15:01:54] [AppID 1842810] Running AutoCloud on launch. Looking for existing files to watch:
+[2026-10-02 15:01:54] [AppID 1842810] AutoCloud done. Watching 0 files
+[2026-10-02 15:01:54] [AppID 1842810] YldWriteCacheDirectoryToFile - empty vector, deleting 'C:\Program Files (x86)\Steam/userdata/290578512/1842810/remotecache.vdf'

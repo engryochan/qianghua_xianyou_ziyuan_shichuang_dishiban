@@ -1,0 +1,32 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20260921135922
+用户名: SHJ-H0647-RYOCH\PPCCpcpc
+RunAs 用户: SHJ-H0647-RYOCH\PPCCpcpc
+配置名称: 
+计算机: SHJ-H0647-RYOCH (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -EncodedCommand JABlAG4AdgA6AFAAUwBNAG8AZAB1AGwAZQBQAGEAdABoACAAPQAgACIAJABlAG4AdgA6AFMAeQBzAHQAZQBtAFIAbwBvAHQAXABTAHkAcwB0AGUAbQAzADIAXABXAGkAbgBkAG8AdwBzAFAAbwB3AGUAcgBTAGgAZQBsAGwAXAB2ADEALgAwAFwATQBvAGQAdQBsAGUAcwA7ACQAZQBuAHYAOgBQAHIAbwBnAHIAYQBtAEYAaQBsAGUAcwBcAFcAaQBuAGQAbwB3AHMAUABvAHcAZQByAFMAaABlAGwAbABcAE0AbwBkAHUAbABlAHMAIgA7ACAAUwB0AGEAcgB0AC0AVAByAGEAbgBzAGMAcgBpAHAAdAAgAC0ATABpAHQAZQByAGEAbABQAGEAdABoACAAJwBDADoAXABVAHMAZQByAHMAXABQAFAAQwBDAHAAYwBwAGMAXABPAG4AZQBEAHIAaQB2AGUAXACHZWNoXABHAGkAdABIAHUAYgBcAHEAaQBhAG4AZwBoAHUAYQBfAHgAaQBhAG4AeQBvAHUAXwB6AGkAeQB1AGEAbgBfAHMAaABpAGMAaAB1AGEAbgBnAF8AZABpAHMAaABpAGIAYQBuAFwAcgBlAHAAbwByAHQAcwBcADIAMAAyADYALQAwADkALQAyADEAXAB1AHAAZABhAHQAZQAtAHIAbwB1AG4AZAAyAFwAZAByAGkAdgBlAHIALQBhAGQAbQBpAG4ALQB0AHIAYQBuAHMAYwByAGkAcAB0AC0AMgAuAHQAeAB0ACcAOwAgAHQAcgB5ACAAewAgACYAIAAnAEMAOgBcAFUAcwBlAHIAcwBcAFAAUABDAEMAcABjAHAAYwBcAE8AbgBlAEQAcgBpAHYAZQBcAIdlY2hcAEcAaQB0AEgAdQBiAFwAcQBpAGEAbgBnAGgAdQBhAF8AeABpAGEAbgB5AG8AdQBfAHoAaQB5AHUAYQBuAF8AcwBoAGkAYwBoAHUAYQBuAGcAXwBkAGkAcwBoAGkAYgBhAG4AXAA6irdlzWRcT/t8cX1cAEkAbgBzAHQAYQBsAGwAXwBWAGUAcgBpAGYAaQBlAGQAXwBEAHIAaQB2AGUAcgBzAC4AcABzADEAJwAgAC0AUgBvAG8AdAAgACcAQwA6AFwAVQBzAGUAcgBzAFwAUABQAEMAQwBwAGMAcABjAFwATwBuAGUARAByAGkAdgBlAFwAh2VjaFwARwBpAHQASAB1AGIAXABxAGkAYQBuAGcAaAB1AGEAXwB4AGkAYQBuAHkAbwB1AF8AegBpAHkAdQBhAG4AXwBzAGgAaQBjAGgAdQBhAG4AZwBfAGQAaQBzAGgAaQBiAGEAbgBcAHIAZQBwAG8AcgB0AHMAXAAyADAAMgA2AC0AMAA5AC0AMgAxAFwAdQBwAGQAYQB0AGUALQByAG8AdQBuAGQAMgBcAGQAcgBpAHYAZQByAHMAJwAgAC0AQQBwAHAAbAB5ACAAfQAgAGMAYQB0AGMAaAAgAHsAIABXAHIAaQB0AGUALQBPAHUAdABwAHUAdAAgACgAJABfACAAfAAgAE8AdQB0AC0AUwB0AHIAaQBuAGcAKQA7ACAAZQB4AGkAdAAgADEAIAB9ACAAZgBpAG4AYQBsAGwAeQAgAHsAIABTAHQAbwBwAC0AVAByAGEAbgBzAGMAcgBpAHAAdAAgAH0A
+进程 ID: 106716
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+已启动脚本，输出文件为 C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\2026-09-21\update-round2\driver-admin-transcript-2.txt
+警告: 无法创建某个新的系统还原点，因为在过去 1440 分钟内已经创建了一个系统还原点。可以通过在注册表项 'HKLM\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore' 下创建 DWORD 值 'SystemRestorePointCreationFrequency' 来更改还原点的创建频率。此注册表项的值指示每两次创建还原点的必要时间间隔(以分钟为单位)。默认值为 1440 分钟(24 小时)。
+PS>TerminatingError():“无法将值“2:10.0,2:6.3,2:6.2,2:6.1,2:6.0,2:5.2,2:5.1”转换为类型“System.Version”。错误:“版本字符串部分太短或太长。””
+无法将值“2:10.0,2:6.3,2:6.2,2:6.1,2:6.0,2:5.2,2:5.1”转换为类型“System.Version”。错误:“版本字符串部分太短或太长。”
+所在位置 C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\診斷操作系統\Install_Verified_Drivers.ps
+1:66 字符: 119
++ ... -First 1;if($old.DriverVersion -and $new.DriverVersion -and [version] ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvalidCastParseTargetInvocation
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20260921140558
+**********************

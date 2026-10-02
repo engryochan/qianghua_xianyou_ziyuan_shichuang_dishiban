@@ -1,0 +1,37 @@
+{
+  "Time": "2026-09-21T13:40:36.1390047+04:00",
+  "Admin": false,
+  "Pagefile": {
+    "Name": "C:\\pagefile.sys",
+    "InitialSize": 16290,
+    "MaximumSize": 32581
+  },
+  "PagefileUsage": {
+    "Name": "C:\\pagefile.sys",
+    "AllocatedBaseSize": 16290,
+    "CurrentUsage": 156,
+    "PeakUsage": 161
+  },
+  "Problems": [
+    {
+      "FriendlyName": "SM 总线控制器",
+      "Problem": 28,
+      "InstanceId": "PCI\\VEN_8086&DEV_7AA3&SUBSYS_86941043&REV_11\\3&11583659&0&FC"
+    },
+    {
+      "FriendlyName": "PCI 设备",
+      "Problem": 28,
+      "InstanceId": "PCI\\VEN_8086&DEV_7AA4&SUBSYS_86941043&REV_11\\3&11583659&0&FD"
+    },
+    {
+      "FriendlyName": null,
+      "Problem": 28,
+      "InstanceId": "ACPI\\INTC1056\\2&DABA3FF&0"
+    },
+    {
+      "FriendlyName": "PCI 设备",
+      "Problem": 28,
+      "InstanceId": "PCI\\VEN_8086&DEV_7ACC&SUBSYS_86941043&REV_11\\3&11583659&0&A8"
+    }
+  ]
+}

@@ -1,60 +1,8 @@
-# History files
-.Rhistory
-.Rapp.history
-
-# Session Data files
-.RData
-.RDataTmp
-
-# User-specific files
-.Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+# Publish project reports and user-requested local project files.
+# Keep authentication material and browser account stores out of GitHub.
 .httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
 .Renviron
-
-# pkgdown site
-docs/
-
-# translation temp files
-po/*~
-
-# RStudio Connect folder
-rsconnect/
-
-# Local machine inventories and generated validation data
-/reports/
-/診斷操作系統/reports/
-
-# Python bytecode（語法檢查等會產生）
-__pycache__/
-*.py[cod]
-
-/.quarto/
-**/*.quarto_ipynb
+*.pem
+*.key
+/reports/2026-09-21/completion/edge-test-profile/
+/reports/2026-09-21/completion/edge-final-test-profile/

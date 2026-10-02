@@ -1,0 +1,144 @@
+{
+  "capacity": {
+    "total": 254703636480,
+    "used": 193923518464,
+    "free": 60780118016
+  },
+  "results": [
+    {
+      "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\basic-data-analytical-lab\\数据库_旧版10万行样本_已废弃_20260725_1331",
+      "logical_bytes": 105289003,
+      "files": 79,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\basic-data-analytical-lab\\.git",
+      "logical_bytes": 8192243370,
+      "files": 183,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": [
+        {
+          "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\basic-data-analytical-lab\\.git\\objects\\pack\\pack-a23a519dc50099a487bdea8bb7c963145569e9f9.pack",
+          "bytes": 8186574844
+        }
+      ]
+    },
+    {
+      "path": "C:\\work\\envs",
+      "logical_bytes": 5730269306,
+      "files": 132235,
+      "complete": false,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 20.9,
+      "large": [
+        {
+          "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\tensorflow\\python\\_pywrap_tensorflow_common.dll",
+          "bytes": 1056626688
+        },
+        {
+          "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+          "bytes": 305887744
+        }
+      ]
+    },
+    {
+      "path": "C:\\work\\projects",
+      "logical_bytes": 1367675310,
+      "files": 36473,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 2.6,
+      "large": []
+    },
+    {
+      "path": "C:\\work\\uvcache",
+      "logical_bytes": 174909338,
+      "files": 11931,
+      "complete": false,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 15.0,
+      "large": []
+    },
+    {
+      "path": "C:\\work\\cache",
+      "logical_bytes": 0,
+      "files": 0,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\uv\\cache",
+      "logical_bytes": 339368068,
+      "files": 10623,
+      "complete": false,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 15.4,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Temp",
+      "logical_bytes": 65437948,
+      "files": 524,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 7.6,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\.cache",
+      "logical_bytes": 66718161,
+      "files": 4207,
+      "complete": false,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 15.0,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Google\\Chrome\\User Data",
+      "logical_bytes": 8764126181,
+      "files": 41249,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 13.7,
+      "large": [
+        {
+          "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Google\\Chrome\\User Data\\OptGuideOnDeviceModel\\2025.8.21.1028\\weights.bin",
+          "bytes": 2862920655
+        },
+        {
+          "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Google\\Chrome\\User Data\\OptGuideOnDeviceModel\\2025.8.21.1028\\cache.bin",
+          "bytes": 1409783784
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\Downloads",
+      "logical_bytes": 282,
+      "files": 1,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    }
+  ],
+  "wsl_exit": 1,
+  "wsl": ""
+}

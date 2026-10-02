@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Level": "注意",
+    "Area": "記憶體",
+    "Message": "分頁檔不是由 Windows 自動管理；應依 commit peak、當機傾印與可用磁碟評估，避免套用固定 RAM 倍數。"
+  },
+  {
+    "Level": "注意",
+    "Area": "安全性",
+    "Message": "Defender 即時保護未啟用；須结合安全中心防毒產品確認保護狀態，不能單憑此判定缺少防毒。"
+  },
+  {
+    "Level": "說明",
+    "Area": "GPU",
+    "Message": "GPU 名稱/驅動僅供盤點；CUDA、PyTorch 支援與 Windows 11 CPU/TPM/Secure Boot/WDDM 資格須依廠商當前要求另外核實。"
+  },
+  {
+    "Level": "說明",
+    "Area": "套件",
+    "Message": "未安装選用分析套件不等於故障。依工作負載建立獨立 Python/R 專案環境與鎖檔；不建議全域一次升級所有套件。"
+  },
+  {
+    "Level": "說明",
+    "Area": "範圍",
+    "Message": "本次不連網檢查可升級版本；Windows 更新清單不代表完整更新歷史。未搜尋其他使用者、所有可攜程式、每個專案環境、Conda/WSL 容器內部。"
+  }
+]

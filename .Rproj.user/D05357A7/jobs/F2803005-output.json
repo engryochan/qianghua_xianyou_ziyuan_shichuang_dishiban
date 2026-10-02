@@ -1,0 +1,4 @@
+[1,"==> quarto preview 电脑已升级至视窗11版（工欲善其事必先利其器）.qmd --to html --no-watch-inputs --no-browse\n\n"]
+[1,"pandoc \n  to: html\n  output-file: 电脑已升级至视窗11版（工欲善其事必先利其器）.html\n  standalone: true\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  title: 电脑已升级至视窗11版（工欲善其事必先利其器）\n  subtitle: 数据分析专员\n  author: Ryo Eng（雷欧）\n  \n"]
+[1,"Output created: 电脑已升级至视窗11版（工欲善其事必先利其器）.html\n\nWatching files for changes\n"]
+[1,"Browse at http://localhost:7874/\nListening on http://127.0.0.1:7874/\n"]

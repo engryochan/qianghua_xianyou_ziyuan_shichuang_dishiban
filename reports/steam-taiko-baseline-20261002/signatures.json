@@ -1,0 +1,38 @@
+[
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\bin\\SteamService.exe",
+    "Status": "Valid",
+    "Signer": "CN=Valve Corp., O=Valve Corp., L=Bellevue, S=Washington, C=US",
+    "FileVersion": "10.96.30.42"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steam.exe",
+    "Status": "Valid",
+    "Signer": "CN=Valve Corp., O=Valve Corp., L=Bellevue, S=Washington, C=US",
+    "FileVersion": "10.96.30.42"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Steamworks Shared\\_CommonRedist\\DirectX\\Jun2010\\DXSETUP.exe",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "FileVersion": "4.9.0.0904"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DX.exe",
+    "Status": "Valid",
+    "Signer": "CN=\"KOEI TECMO GAMES CO., LTD.\", OU=Marketing Division, O=\"KOEI TECMO GAMES CO., LTD.\", L=Yokohama, S=Kanagawa, C=JP",
+    "FileVersion": "1.2.1.0"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe",
+    "Status": "Valid",
+    "Signer": "CN=\"KOEI TECMO GAMES CO., LTD.\", OU=Marketing Division, O=\"KOEI TECMO GAMES CO., LTD.\", L=Yokohama, S=Kanagawa, C=JP",
+    "FileVersion": "1.0.0.0"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Evcon\\Taiko5DXEvcon.exe",
+    "Status": "Valid",
+    "Signer": "CN=\"KOEI TECMO GAMES CO., LTD.\", OU=Marketing Division, O=\"KOEI TECMO GAMES CO., LTD.\", L=Yokohama, S=Kanagawa, C=JP",
+    "FileVersion": "1, 1, 0, 0"
+  }
+]

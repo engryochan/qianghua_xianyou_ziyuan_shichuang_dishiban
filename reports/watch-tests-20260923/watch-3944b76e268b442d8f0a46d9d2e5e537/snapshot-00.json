@@ -1,0 +1,23 @@
+{
+    "CapturedAt":  "2026-09-23T08:36:18.0738323+04:00",
+    "InventoryAt":  "2026-09-23T08:36:17.2380488+04:00",
+    "Data":  {
+                 "Inventory":  {
+                                   "LocalSystem":  null,
+                                   "LocalKeyboards":  [
+
+                                                      ],
+                                   "Errors":  [
+                                                  "本机系统读取失败：拒绝访问 ",
+                                                  "键盘清单读取失败：拒绝访问 "
+                                              ]
+                               },
+                 "Connections":  [
+
+                                 ],
+                 "Truncated":  false,
+                 "Errors":  [
+                                "TCP连接读取失败：拒绝访问 "
+                            ]
+             }
+}

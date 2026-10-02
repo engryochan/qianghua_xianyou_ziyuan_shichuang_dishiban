@@ -1,0 +1,39 @@
+{
+  "purpose": "Current synthetic baseline only; no pre-update timings available",
+  "rows": 1000000,
+  "parquet_bytes": 1062262,
+  "tests": {
+    "duckdb_1m_parquet_groupby": {
+      "seconds": [
+        0.008640199999717879,
+        0.0076045999994676095,
+        0.008042000001296401,
+        0.007201300000815536,
+        0.006961200000660028
+      ],
+      "median_seconds": 0.0076045999994676095
+    },
+    "polars_1m_parquet_groupby": {
+      "seconds": [
+        0.008410300000832649,
+        0.007319900001675705,
+        0.0074226999986422015,
+        0.006721600000673789,
+        0.006277000000409316
+      ],
+      "median_seconds": 0.007319900001675705
+    },
+    "numpy_512_matrix_product_with_validation": {
+      "seconds": [
+        0.004335499999797321,
+        0.004771600000822218,
+        0.005029599999033962,
+        0.004305899999963003,
+        0.004171799999312498
+      ],
+      "median_seconds": 0.004335499999797321
+    }
+  },
+  "available_memory_bytes": 13133914112,
+  "process_rss_bytes": 222928896
+}

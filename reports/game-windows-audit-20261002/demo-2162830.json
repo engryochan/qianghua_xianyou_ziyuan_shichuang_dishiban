@@ -1,0 +1,101 @@
+{
+  "2162830": {
+    "success": true,
+    "data": {
+      "type": "demo",
+      "name": "Sailing Era Demo",
+      "steam_appid": 2162830,
+      "required_age": 0,
+      "is_free": true,
+      "controller_support": "full",
+      "detailed_description": "In this demo, we provide the very first chapter and 2 main characters for you to try the game.<br />\r\nCurrently no English support, but we will update the languages soon!<br />\r\n<br />\r\nSailing Era is a Maritime Trade &amp; Strategy Game set in the age when the ocean connected the world.<br />\r\nIt tells the legendary story of four young captains from Portugal, Arabia, China, and Japan as they explore the world.<br />\r\nSailing, trade, adventure, naval battles...<br />\r\nExperience the eternal charm of ancient civilizations while exploring the world of diverse cultures,<br />\r\nAnd discover the courage and determination to break free from shackles while journeying into the unknown.<br />\r\nEvery voyage<br />\r\nIs a journey of &quot;Sailing &amp; Beyond&quot;!",
+      "about_the_game": "In this demo, we provide the very first chapter and 2 main characters for you to try the game.<br />\r\nCurrently no English support, but we will update the languages soon!<br />\r\n<br />\r\nSailing Era is a Maritime Trade &amp; Strategy Game set in the age when the ocean connected the world.<br />\r\nIt tells the legendary story of four young captains from Portugal, Arabia, China, and Japan as they explore the world.<br />\r\nSailing, trade, adventure, naval battles...<br />\r\nExperience the eternal charm of ancient civilizations while exploring the world of diverse cultures,<br />\r\nAnd discover the courage and determination to break free from shackles while journeying into the unknown.<br />\r\nEvery voyage<br />\r\nIs a journey of &quot;Sailing &amp; Beyond&quot;!",
+      "short_description": "Sailing Era is a Maritime Trade &amp; Strategy Game set in the age when the ocean connected the world. It tells the legendary story of four young captains from Portugal, Arabia, China, and Japan as they explore the world.",
+      "fullgame": {
+        "appid": "2161440",
+        "name": "Sailing Era"
+      },
+      "supported_languages": "Simplified Chinese",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2162830/header.jpg?t=1666785666",
+      "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2162830/capsule_231x87.jpg?t=1666785666",
+      "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2162830/capsule_184x69.jpg?t=1666785666",
+      "website": null,
+      "pc_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS *:</strong> Windows 7(64-Bit)<br></li><li><strong>Processor:</strong> i5-2320 3GHZ 4 Core<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> GTX 750 2GB<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 10 GB available space<br></li><li><strong>Additional Notes:</strong> Need 64 bit system</li></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10(64-Bit)<br></li><li><strong>Processor:</strong> i7-7700k 4.2GHz 6 Core<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> GTX 1050 TI 4GB<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 10 GB available space<br></li><li><strong>Additional Notes:</strong> Need 64 bit system</li></ul>"
+      },
+      "mac_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+      },
+      "linux_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+      },
+      "developers": [
+        "GY Games"
+      ],
+      "publishers": [
+        "GY Games"
+      ],
+      "package_groups": [],
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 10,
+          "description": "Game demo"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        }
+      ],
+      "release_date": {
+        "coming_soon": false,
+        "date": "Oct 26, 2022"
+      },
+      "support_info": {
+        "url": "",
+        "email": "sailingeraglobal@gmail.com"
+      },
+      "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/2162830?t=1666785666",
+      "background_raw": "https://store.akamai.steamstatic.com/images/storepagebackground/app/2162830?t=1666785666",
+      "content_descriptors": {
+        "ids": [],
+        "notes": null
+      },
+      "ratings": {
+        "dejus": {
+          "rating": "12",
+          "descriptors": "Drogas lícitas\r\nViolência",
+          "use_age_gate": "true",
+          "required_age": "12"
+        },
+        "steam_germany": {
+          "rating_generated": "1",
+          "rating": "12",
+          "required_age": "12",
+          "banned": "0",
+          "use_age_gate": "0",
+          "descriptors": "Alkohol / Tabak\nGewalt"
+        },
+        "igrs": {
+          "rating_generated": "1",
+          "rating": "18",
+          "required_age": "18",
+          "banned": "0",
+          "use_age_gate": "0",
+          "descriptors": "Rokok dan/atau rokok elektronik, minuman beralkohol, narkotika, psikotropika, dan/atau zat adiktif lainnya\nKekerasan"
+        }
+      }
+    }
+  }
+}

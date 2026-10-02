@@ -1,0 +1,42 @@
+[
+  {
+    "TimeCreated": "2026-09-21T07:59:25.6171167+04:00",
+    "Id": 7000,
+    "Message": "由于下列错误，Kaspersky Endpoint Security 服务 (KES.14.1) 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:25.6171167+04:00",
+    "Id": 7009,
+    "Message": "等待 Kaspersky Endpoint Security 服务 (KES.14.1) 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:25.0996068+04:00",
+    "Id": 7000,
+    "Message": "由于下列错误，Kaspersky Endpoint Security 服务 (KES.14.1) 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:25.0996068+04:00",
+    "Id": 7009,
+    "Message": "等待 Kaspersky Endpoint Security 服务 (KES.14.1) 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:24.5779054+04:00",
+    "Id": 7000,
+    "Message": "由于下列错误，Kaspersky Endpoint Security 服务 (KES.14.1) 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:24.5779054+04:00",
+    "Id": 7009,
+    "Message": "等待 Kaspersky Endpoint Security 服务 (KES.14.1) 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:24.0550537+04:00",
+    "Id": 7000,
+    "Message": "由于下列错误，Kaspersky Endpoint Security 服务 (KES.14.1) 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-09-21T07:59:24.0550537+04:00",
+    "Id": 7009,
+    "Message": "等待 Kaspersky Endpoint Security 服务 (KES.14.1) 服务的连接超时(30000 毫秒)。"
+  }
+]

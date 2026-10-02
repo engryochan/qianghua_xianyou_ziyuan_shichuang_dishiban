@@ -1,0 +1,8 @@
+
+Flags        : 62
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility
+PSChildName  : ToggleKeys
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+

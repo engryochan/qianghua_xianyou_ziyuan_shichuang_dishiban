@@ -1,0 +1,22 @@
+[
+  {
+    "Check": "hid-devices",
+    "Status": "OK",
+    "Error": null
+  },
+  {
+    "Check": "accessibility",
+    "Status": "OK",
+    "Error": null
+  },
+  {
+    "Check": "input-methods",
+    "Status": "OK",
+    "Error": null
+  },
+  {
+    "Check": "remote-macro-candidates",
+    "Status": "OK",
+    "Error": null
+  }
+]

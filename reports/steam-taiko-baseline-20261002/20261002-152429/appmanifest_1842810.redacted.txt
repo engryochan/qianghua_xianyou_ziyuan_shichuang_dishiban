@@ -1,0 +1,43 @@
+"AppState"
+{
+	"appid"		"1842810"
+	"Universe"		"1"
+	"LauncherPath"		"C:\\Program Files (x86)\\Steam\\steam.exe"
+	"name"		"Taiko Risshiden V DX"
+	"StateFlags"		"4"
+	"installdir"		"Taiko5DX"
+	"LastUpdated"		"1790938536"
+	"LastPlayed"		"1790940154"
+	"SizeOnDisk"		"7374028339"
+	"StagingSize"		"0"
+	"buildid"		"9163702"
+[REDACTED sensitive field]
+	"DownloadType"		"1"
+	"UpdateResult"		"0"
+	"BytesToDownload"		"1621706016"
+	"BytesDownloaded"		"1621706016"
+	"BytesToStage"		"7476959890"
+	"BytesStaged"		"7476959890"
+	"TargetBuildID"		"9163702"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"1842811"
+		{
+			"manifest"		"2345313088801476794"
+			"size"		"7374028339"
+		}
+	}
+	"SharedDepots"
+	{
+		"228990"		"228980"
+	}
+	"UserConfig"
+	{
+	}
+	"MountedConfig"
+	{
+	}
+}

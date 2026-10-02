@@ -1,0 +1,9 @@
+{
+  "input": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\smoke-ds\\sample.parquet",
+  "output": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\largefile-verified",
+  "group": "group",
+  "value": "value",
+  "memory_gb": 6,
+  "threads": 6,
+  "max_temp_gb": 20
+}

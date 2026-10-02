@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "jupyterlab",
+    "Before": "4.6.3",
+    "Candidate": "4.6.4"
+  },
+  {
+    "Name": "lazy-loader",
+    "Before": "0.5",
+    "Candidate": "0.6"
+  },
+  {
+    "Name": "networkx",
+    "Before": "3.6.1",
+    "Candidate": "3.7"
+  },
+  {
+    "Name": "platformdirs",
+    "Before": "4.11.11",
+    "Candidate": "4.11.12"
+  },
+  {
+    "Name": "pyparsing",
+    "Before": "3.3.2",
+    "Candidate": "3.3.3"
+  },
+  {
+    "Name": "tifffile",
+    "Before": "2026.9.15",
+    "Candidate": "2026.9.20"
+  }
+]

@@ -1,0 +1,8 @@
+warning: in the working copy of '診斷操作系統/Analyze_LargeFile.ps1', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/DataStack_R_Bootstrap.R', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/DataStack_Smoke.py', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/Setup_DataStack_v2.ps1', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/Win10_Diagnose.ps1', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/Win10_Diagnose_v3.ps1', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/Win10_Optimize.ps1', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '診斷操作系統/Win10_Optimize_v2.ps1', CRLF will be replaced by LF the next time Git touches it

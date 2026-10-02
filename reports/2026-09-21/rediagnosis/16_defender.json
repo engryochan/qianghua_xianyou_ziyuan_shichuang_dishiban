@@ -1,0 +1,14 @@
+﻿[
+  {
+    "AMRunningMode": "Not running",
+    "AMServiceEnabled": false,
+    "AntivirusEnabled": false,
+    "RealTimeProtectionEnabled": false,
+    "BehaviorMonitorEnabled": false,
+    "IsTamperProtected": false,
+    "AntivirusSignatureVersion": null,
+    "AntivirusSignatureLastUpdated": null,
+    "AntivirusSignatureAge": 65535,
+    "QuickScanEndTime": null
+  }
+]

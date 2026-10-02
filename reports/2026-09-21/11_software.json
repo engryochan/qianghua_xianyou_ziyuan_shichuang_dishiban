@@ -1,0 +1,862 @@
+﻿[
+  {
+    "Name": "YeeChat 4.95.20",
+    "Version": "4.95.20",
+    "Publisher": null,
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Armoury Crate Service",
+    "Version": "6.5.14.0",
+    "Publisher": "ASUSTeK COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Git",
+    "Version": "2.55.0.5",
+    "Publisher": "The Git Development Community",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Program Files\\Git\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Mozilla Firefox (x64 zh-CN)",
+    "Version": "153.0.1",
+    "Publisher": "Mozilla",
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files\\Mozilla Firefox",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Mozilla Maintenance Service",
+    "Version": "153.0.1",
+    "Publisher": "Mozilla",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "微软OfficePLUS",
+    "Version": "4.2.0.7275",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files\\Microsoft OfficePLUS",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft OneDrive",
+    "Version": "26.158.0816.0003",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "PotPlayer-64 bit",
+    "Version": "220302",
+    "Publisher": "Kakao Corp.",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft Office 专业增强版 2016  - zh-cn",
+    "Version": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files (x86)\\Microsoft Office",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "PyCharm 2026.1.5",
+    "Version": "261.27258.51",
+    "Publisher": "JetBrains s.r.o.",
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files\\JetBrains\\PyCharm 2026.1.3",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "R for Windows 4.6.1",
+    "Version": "4.6.1",
+    "Publisher": "R Core Team",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Program Files\\R\\R-4.6.1\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "RStudio",
+    "Version": "2026.09.0+174",
+    "Publisher": "Posit Software",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Program Files\\RStudio",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Rtools 4.5 (6768-6492)",
+    "Version": "4.5.6768",
+    "Publisher": "The R Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\rtools45\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Vulkan Run Time Libraries 1.0.65.1",
+    "Version": "1.0.65.1",
+    "Publisher": "LunarG, Inc.",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "WinRAR 7.23 (64-位)",
+    "Version": "7.23.0",
+    "Publisher": "win.rar GmbH",
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files\\WinRAR",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft .NET Host FX Resolver - 8.0.31 (x64)",
+    "Version": "64.124.58447",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft Update Health Tools",
+    "Version": "3.74.0.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft Windows Application Compatibility Fix Database",
+    "Version": null,
+    "Publisher": null,
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "TortoiseSVN 1.14.9.29743 (64 bit)",
+    "Version": "1.14.29743",
+    "Publisher": "TortoiseSVN",
+    "InstallDate": "20260919",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "ROG Live Service",
+    "Version": "3.5.11.0",
+    "Publisher": "ASUSTek COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438",
+    "Version": "14.42.34438",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "ASUS Ambient HAL",
+    "Version": "7.23.0.0",
+    "Publisher": "ASUSTeK COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Development Libraries (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Standard Library (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft .NET Host - 8.0.31 (x64)",
+    "Version": "64.124.58447",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Tcl/Tk Support (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 pip Bootstrap (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Quarto",
+    "Version": "1.10.18",
+    "Publisher": "Posit Software, PBC",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Core Interpreter (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Test Suite (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Office 16 Click-to-Run Licensing Component",
+    "Version": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260918",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Office 16 Click-to-Run Extensibility Component 64-bit Registration",
+    "Version": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260918",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Documentation (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Adobe Acrobat (64-bit)",
+    "Version": "26.001.21691",
+    "Publisher": "Adobe",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\Adobe\\Acrobat DC\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA Ansel",
+    "Version": "391.35",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Ansel",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA 3D Vision 驱动程序 391.35",
+    "Version": "391.35",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files (x86)\\NVIDIA Corporation\\3D Vision",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA 控制面板 391.35",
+    "Version": "391.35",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Control Panel Client",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA 图形驱动程序 391.35",
+    "Version": "391.35",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\Display.Driver.{3AA2C2B2-0003-4B16-92DE-65A44626AFCF}",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA HD 音频驱动程序 1.3.38.35",
+    "Version": "1.3.38.35",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\HDAudio.Driver.{B282C878-F158-4113-A62C-11A4B34F8CDD}",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA Install Application",
+    "Version": "2.1002.346.0",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\InstallerCore",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA Display Container",
+    "Version": "1.2",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Display.NvContainer",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA Display Container LS",
+    "Version": "1.2",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NVDisplayContainerLS.{F702FA16-C2D4-4560-9086-095454248ED1}",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA Display Watchdog Plugin",
+    "Version": "1.2",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NVDisplayPluginWatchdog.{5659ACF7-6708-4492-B089-5E4410C7C9F5}",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "NVIDIA Display Session Container",
+    "Version": "1.2",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NVDisplaySessionContainer.{4BE72B72-3023-47F5-AA13-88094D5B4443}",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Update for x64-based Windows Systems (KB5001716)",
+    "Version": "8.94.0.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "AURA lighting effect add-on x64",
+    "Version": "0.0.60",
+    "Publisher": "ASUSTek COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "ASUS Aura SDK",
+    "Version": "3.07.05",
+    "Publisher": "ASUSTeK COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft .NET Runtime - 8.0.31 (x64)",
+    "Version": "64.124.58447",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438",
+    "Version": "14.42.34438",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 Executables (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Google Chrome",
+    "Version": "153.0.8010.53",
+    "Publisher": "Google LLC",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Program Files\\Google\\Chrome\\Application",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kaspersky Security Center 网络代理",
+    "Version": "16.2.0.1023",
+    "Publisher": "卡巴斯基",
+    "InstallDate": "",
+    "InstallLocation": "C:\\Program Files (x86)\\Kaspersky Lab\\NetworkAgent\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "WPS Office 2019 增强版 (11.8.2.12330)",
+    "Version": "11.8.2.12330",
+    "Publisher": "Kingsoft Corp.",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft Edge",
+    "Version": "150.0.4078.105",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730",
+    "InstallLocation": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft Edge WebView2 Runtime",
+    "Version": "150.0.4078.105",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730",
+    "InstallLocation": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "NVIDIA Stereoscopic 3D Driver",
+    "Version": "7.17.13.7500",
+    "Publisher": "NVIDIA Corporation",
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files (x86)\\NVIDIA Corporation\\3D Vision",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kaspersky Endpoint Security for Windows",
+    "Version": "11.26.4.423",
+    "Publisher": null,
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "AURA lighting effect add-on",
+    "Version": "0.0.60",
+    "Publisher": "ASUSTek COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft .NET Runtime - 8.0.31 (x64)",
+    "Version": "8.0.31.36420",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "ASUS Framework Service",
+    "Version": "4.2.5.4",
+    "Publisher": "ASUSTeK Computer Inc.",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "ASUS Ambient HAL",
+    "Version": "7.23.0.0",
+    "Publisher": "ASUSTeK COMPUTER INC.",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "VBA (2627.01)",
+    "Version": "6.03.00.9402",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "VBA (2701.04)",
+    "Version": "6.03.00.9402",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "AURA Service",
+    "Version": "3.10.12",
+    "Publisher": "ASUSTeK COMPUTER INC.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438",
+    "Version": "14.42.34438",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "亿赛通电子文档安全管理系统-客户端",
+    "Version": "5.2.0",
+    "Publisher": "北京亿赛通科技发展有限责任公司",
+    "InstallDate": "20260730",
+    "InstallLocation": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Office 16 Click-to-Run Extensibility Component",
+    "Version": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260918",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Office 16 Click-to-Run Localization Component",
+    "Version": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260918",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kaspersky Endpoint Security for Windows",
+    "Version": "11.26.4.423",
+    "Publisher": null,
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kaspersky Endpoint Security for Windows",
+    "Version": "14.1.0.423",
+    "Publisher": "AO Kaspersky Lab",
+    "InstallDate": "20260730",
+    "InstallLocation": "C:\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kaspersky Endpoint Security for Windows",
+    "Version": "11.26.4.423",
+    "Publisher": null,
+    "InstallDate": null,
+    "InstallLocation": "C:\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34438",
+    "Version": "14.42.34438",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "ASUS Update Helper",
+    "Version": "1.3.107.159",
+    "Publisher": "ASUSTeK Computer Inc.",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Adobe Refresh Manager",
+    "Version": "1.8.0",
+    "Publisher": "Adobe Systems Incorporated",
+    "InstallDate": "20260921",
+    "InstallLocation": "C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438",
+    "Version": "14.42.34438.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438",
+    "Version": "14.42.34438.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Python Launcher",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": "20260920",
+    "InstallLocation": "",
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "AURA Service",
+    "Version": "3.10.12",
+    "Publisher": "ASUSTeK COMPUTER INC.",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kaspersky Security Center 网络代理",
+    "Version": "16.2.0.1023",
+    "Publisher": "卡巴斯基",
+    "InstallDate": "20260730",
+    "InstallLocation": "C:\\Program Files (x86)\\Kaspersky Lab\\NetworkAgent\\",
+    "SystemComponent": true,
+    "Scope": "Machine",
+    "RegistryView": "32bit"
+  },
+  {
+    "Name": "Kimi",
+    "Version": "3.1.4",
+    "Publisher": null,
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "DuckDB CLI",
+    "Version": "1.5.5",
+    "Publisher": "DuckDB",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\WinGet\\Packages\\DuckDB.cli_Microsoft.Winget.Source_8wekyb3d8bbwe",
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "FlashCenter",
+    "Version": "3.9.2.6",
+    "Publisher": "Chongqing Zhongcheng Network Technology Co., Ltd",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "GitHub Desktop",
+    "Version": "3.6.6",
+    "Publisher": "GitHub, Inc.",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Users\\PPCCpcpc\\AppData\\Local\\GitHubDesktop",
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Comet",
+    "Version": "152.0.7977.199",
+    "Publisher": "The Comet Authors",
+    "InstallDate": "20260920",
+    "InstallLocation": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Perplexity\\Comet\\Application",
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Positron (User)",
+    "Version": "2026.09.1",
+    "Publisher": "Posit Software, PBC",
+    "InstallDate": "20260919",
+    "InstallLocation": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Positron\\",
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  },
+  {
+    "Name": "Python 3.14.7 (64-bit)",
+    "Version": "3.14.7150.0",
+    "Publisher": "Python Software Foundation",
+    "InstallDate": null,
+    "InstallLocation": null,
+    "SystemComponent": false,
+    "Scope": "CurrentUser",
+    "RegistryView": "Native"
+  }
+]

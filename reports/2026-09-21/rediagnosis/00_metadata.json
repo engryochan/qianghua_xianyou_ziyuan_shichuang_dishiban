@@ -1,0 +1,12 @@
+﻿[
+  {
+    "SchemaVersion": "3.0",
+    "CollectedAt": "2026-09-21T13:36:40.7473572+04:00",
+    "PowerShell": "7.6.5",
+    "IsAdministrator": false,
+    "Mode": "OfflineReadOnly",
+    "ProbeTimeoutSeconds": 35,
+    "MaxInterpreters": 8,
+    "Scope": "Machine software + current user; no other user hives, recursive disk scan, network update check, secrets or command arguments"
+  }
+]

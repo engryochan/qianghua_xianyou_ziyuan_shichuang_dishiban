@@ -1,0 +1,11 @@
+{
+  "Time": "2026-09-22T14:29:02.4408165+04:00",
+  "CapsLockToggle": false,
+  "LeftShiftDown": false,
+  "RightShiftDown": false,
+  "CtrlDown": false,
+  "AltDown": false,
+  "StickyKeysEnabled": false,
+  "FilterKeysEnabled": false,
+  "Scope": "Single snapshot; intermittent faults and foreground-app state require reproduction"
+}

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Runtime": "Python",
+    "Path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"
+  },
+  {
+    "Runtime": "Rscript",
+    "Path": "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe"
+  },
+  {
+    "Runtime": "Rscript",
+    "Path": "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe"
+  }
+]

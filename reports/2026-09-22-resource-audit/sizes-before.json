@@ -1,0 +1,38 @@
+[
+  {
+    "Path": "C:\\work\\envs\\ds",
+    "Files": 154484,
+    "GiB": 6.288,
+    "ReadErrors": 0
+  },
+  {
+    "Path": "C:\\work\\projects\\lab\\.venv",
+    "Files": 36436,
+    "GiB": 1.273,
+    "ReadErrors": 0
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\uv\\cache",
+    "Files": 82611,
+    "GiB": 2.547,
+    "ReadErrors": 0
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\pip\\Cache",
+    "Files": 3,
+    "GiB": 0.0,
+    "ReadErrors": 0
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\Downloads",
+    "Files": 0,
+    "GiB": 0.0,
+    "ReadErrors": 0
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers",
+    "Files": 1742,
+    "GiB": 6.9,
+    "ReadErrors": 0
+  }
+]

@@ -1,0 +1,52 @@
+$(
+    function() {
+        $(".show").hide()
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        var type = window.location.href.split("/")
+        type = type[type.length - 1]
+
+        if(type=="mumu"){
+            if (isiOS) {
+                type = "mumu_mac"
+            } else{
+                type = "mumu_win"
+            }
+        }else{
+            if (isiOS) {
+                type = "ios"
+            } 
+        }
+        
+        function isQQAPP() {
+            var isIosQQ = ( /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && /\sQQ/i.test(navigator.userAgent));
+            var isAndroidQQ = ( /(Android)/i.test(navigator.userAgent) && /MQQBrowser/i.test(navigator.userAgent) && /\sQQ/i.test((navigator.userAgent).split('MQQBrowser')));
+            if (isIosQQ || isAndroidQQ) {
+                return true
+            }
+            return false
+        }
+
+        function is_weixn_qq() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return "weixin";
+            } else if (isQQAPP()) {
+                return "QQ";
+            }
+            return false;
+        }
+        if(is_weixn_qq()){
+            var img_src = "/img/down_html/android.jpg"
+            if(isiOS){
+                img_src = "/img/down_html/ios.jpg"
+            }
+            $(".show").attr("src",img_src)
+            $(".show").show()
+            return 
+        }
+        var url = "//whhx.ehijoy.com/download_url/" + type + "?r=" + Math.random() + Math.random()
+        window.location.href = url
+    }
+)

@@ -1,0 +1,9 @@
+{
+  "steam_queries": 30,
+  "steam_windows_verified": 28,
+  "manufacturer_fallbacks": 2,
+  "main_games": 35,
+  "main_windows_verified": 30,
+  "local_game_runtime_tested": false,
+  "report_sha256": "30827089346eab9727706dc71f8e49892a17d81b91a9783a36f10687e58ede98"
+}

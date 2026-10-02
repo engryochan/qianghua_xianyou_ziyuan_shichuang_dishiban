@@ -1,0 +1,60 @@
+Fri Oct 02 11:22:10 2026 UTC - Current process: Taiko5DXLauncher.exe
+Fri Oct 02 11:22:10 2026 UTC - Module file name: C:\Program Files (x86)\Steam\gameoverlayrenderer.dll
+Fri Oct 02 11:22:10 2026 UTC - Process ID: 165024
+Fri Oct 02 11:22:10 2026 UTC - GameID = 1842810, OverlayGameID = 1842810
+Fri Oct 02 11:22:10 2026 UTC - System page size: 4096
+Fri Oct 02 11:22:10 2026 UTC - Hooking SetCursorPos, GetCursorPos, ShowCursor, SetCursor, and GetCursor
+Fri Oct 02 11:22:10 2026 UTC - Game is using dxgi (dx10/dx11), preparing to hook.
+Fri Oct 02 11:22:10 2026 UTC - Game is using D3D9 or D3D9Ex, preparing to hook.
+Fri Oct 02 11:22:11 2026 UTC - Modules at GameOverlayRenderer.dll attach
+Fri Oct 02 11:22:11 2026 UTC - 01: Taiko5DXLauncher.exe - (00F60000 to 020CA000)
+Fri Oct 02 11:22:11 2026 UTC - 02: ntdll.dll - (77540000 to 776FF000)
+Fri Oct 02 11:22:11 2026 UTC - 03: KERNEL32.DLL - (76BF0000 to 76CE0000)
+Fri Oct 02 11:22:11 2026 UTC - 04: KERNELBASE.dll - (75970000 to 75C49000)
+Fri Oct 02 11:22:11 2026 UTC - 05: apphelp.dll - (74F10000 to 74FBF000)
+Fri Oct 02 11:22:11 2026 UTC - 06: AcLayers.DLL - (6BED0000 to 6C162000)
+Fri Oct 02 11:22:11 2026 UTC - 07: msvcrt.dll - (75030000 to 750F7000)
+Fri Oct 02 11:22:11 2026 UTC - 08: GDI32.dll - (76E80000 to 76EA2000)
+Fri Oct 02 11:22:11 2026 UTC - 09: win32u.dll - (74FF0000 to 7500C000)
+Fri Oct 02 11:22:11 2026 UTC - 10: gdi32full.dll - (76F20000 to 7700A000)
+Fri Oct 02 11:22:11 2026 UTC - 11: msvcp_win.dll - (76800000 to 76885000)
+Fri Oct 02 11:22:11 2026 UTC - 12: ucrtbase.dll - (771E0000 to 772F0000)
+Fri Oct 02 11:22:11 2026 UTC - 13: USER32.dll - (75770000 to 7595D000)
+Fri Oct 02 11:22:11 2026 UTC - 14: RPCRT4.dll - (76510000 to 765CC000)
+Fri Oct 02 11:22:11 2026 UTC - 15: IMM32.DLL - (75F90000 to 75FB5000)
+Fri Oct 02 11:22:11 2026 UTC - 16: ghijt32.DLL - (74FD0000 to 74FE4000)
+Fri Oct 02 11:22:11 2026 UTC - 17: ADVAPI32.dll - (77010000 to 77095000)
+Fri Oct 02 11:22:11 2026 UTC - 18: sechost.dll - (76420000 to 764A5000)
+Fri Oct 02 11:22:11 2026 UTC - 19: SHELL32.dll - (75100000 to 7576A000)
+Fri Oct 02 11:22:11 2026 UTC - 20: SHLWAPI.dll - (769C0000 to 76A12000)
+Fri Oct 02 11:22:11 2026 UTC - 21: ole32.dll - (76A90000 to 76BE7000)
+Fri Oct 02 11:22:11 2026 UTC - 22: combase.dll - (75C50000 to 75EE7000)
+Fri Oct 02 11:22:11 2026 UTC - 23: d3d9.dll - (6DF70000 to 6E0E9000)
+Fri Oct 02 11:22:11 2026 UTC - 24: VERSION.dll - (74C90000 to 74C98000)
+Fri Oct 02 11:22:11 2026 UTC - 25: MSIMG32.dll - (6FA80000 to 6FA86000)
+Fri Oct 02 11:22:11 2026 UTC - 26: OLEAUT32.dll - (77110000 to 771AF000)
+Fri Oct 02 11:22:11 2026 UTC - 27: WINSPOOL.DRV - (74580000 to 7460A000)
+Fri Oct 02 11:22:11 2026 UTC - 28: UxTheme.dll - (718E0000 to 7195E000)
+Fri Oct 02 11:22:11 2026 UTC - 29: shcore.dll - (76700000 to 767D5000)
+Fri Oct 02 11:22:11 2026 UTC - 30: dwmapi.dll - (6F9C0000 to 6F9E5000)
+Fri Oct 02 11:22:11 2026 UTC - 31: steam_api.dll - (6A770000 to 6A7B2000)
+Fri Oct 02 11:22:11 2026 UTC - 32: gdiplus.dll - (6F680000 to 6F7FE000)
+Fri Oct 02 11:22:11 2026 UTC - 33: oledlg.dll - (73280000 to 732AE000)
+Fri Oct 02 11:22:11 2026 UTC - 34: dxgi.dll - (61780000 to 61888000)
+Fri Oct 02 11:22:11 2026 UTC - 35: WINMM.dll - (74D00000 to 74D34000)
+Fri Oct 02 11:22:11 2026 UTC - 36: OLEACC.dll - (732C0000 to 73319000)
+Fri Oct 02 11:22:11 2026 UTC - 37: cfgmgr32.dll - (74480000 to 744C0000)
+Fri Oct 02 11:22:11 2026 UTC - 38: powrprof.dll - (74900000 to 74955000)
+Fri Oct 02 11:22:11 2026 UTC - 39: dxcore.dll - (619F0000 to 61A26000)
+Fri Oct 02 11:22:11 2026 UTC - 40: LdSmartEnc32.dll - (74980000 to 749DE000)
+Fri Oct 02 11:22:11 2026 UTC - 41: FLTLIB.DLL - (74970000 to 74979000)
+Fri Oct 02 11:22:11 2026 UTC - 42: LdUserInjectDll32.dll - (74870000 to 748AB000)
+Fri Oct 02 11:22:11 2026 UTC - 43: HookDataInteraction.dll - (74840000 to 74861000)
+Fri Oct 02 11:22:11 2026 UTC - 44: LdHook32.dll - (74610000 to 74834000)
+Fri Oct 02 11:22:11 2026 UTC - 45: PSAPI.DLL - (771D0000 to 771D6000)
+Fri Oct 02 11:22:11 2026 UTC - 46: CRYPTBASE.DLL - (744D0000 to 744DA000)
+Fri Oct 02 11:22:11 2026 UTC - 47: ghhlp32.dll - (74300000 to 7431E000)
+Fri Oct 02 11:22:11 2026 UTC - 48: UMPDC.dll - (741D0000 to 741DF000)
+Fri Oct 02 11:22:11 2026 UTC - 49: gameoverlayrenderer.dll - (69D00000 to 69E75000)
+Fri Oct 02 11:22:11 2026 UTC - ----------------------------
+

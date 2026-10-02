@@ -1,0 +1,85 @@
+本机诊断 | 2026-09-23T08:36:44.4488829+04:00 | 第1轮 | Ctrl+C停止
+对端设备/系统/操作者：未确认。IP、端口及进程不构成入侵证据。
+系统与键盘采集时间：2026-09-23T08:36:43.7837020+04:00
+
+Computer     : SHJ-H0647-RYOCH
+OS           : Microsoft Windows 11 专业版
+Version      : 10.0.26200
+Build        : 26200
+Manufacturer : ASUS
+Model        : System Product Name
+
+
+Status FriendlyName        InstanceId
+------ ------------        ----------
+OK     HID Keyboard Device HID\VID_1A2C&PID_6004&MI_00\7&3B28E9EF&0&0000
+
+已建立TCP连接：52；展示前20条；采集截断：False
+
+Process                        ProcessId RemoteAddress   RemotePort RemoteDevice RemoteOS
+-------                        --------- -------------   ---------- ------------ --------
+python                              3504 127.0.0.1             9520 未知         未知
+python                              3504 127.0.0.1             9521 未知         未知
+svchost                             4192 98.66.133.185          443 未知         未知
+LdTermDaemon                        4452 192.168.7.17         20081 未知         未知
+ArmouryCrate.Service                4468 127.0.0.1             1034 未知         未知
+ROGLiveService                      4476 127.0.0.1             1025 未知         未知
+ROGLiveService                      4476 127.0.0.1            13030 未知         未知
+ChatGPT                             6596 104.18.37.228          443 未知         未知
+ChatGPT                             6596 108.177.127.188       5228 未知         未知
+ChatGPT                             6596 142.251.127.188       5228 未知         未知
+ChatGPT                             6596 172.64.148.235         443 未知         未知
+ChatGPT                             6596 172.64.155.209         443 未知         未知
+ChatGPT                             6596 172.64.155.209         443 未知         未知
+ChatGPT                             6596 192.178.213.188       5228 未知         未知
+ArmouryCrate.UserSessionHelper      8016 127.0.0.1            50100 未知         未知
+AcPowerNotification                 8328 127.0.0.1             1042 未知         未知
+explorer                            9268 52.97.152.114          443 未知         未知
+Telegram                           11712 91.108.56.188          443 未知         未知
+chrome                             15020 104.18.28.234          443 未知         未知
+chrome                             15020 104.18.29.234          443 未知         未知
+
+变化快照目录：reports\watch-tests-20260923\watch-22dcfbe93286494d9e7e9ca8da2e22df（最多十份，每份1MiB；旧运行目录需自行管理）
+本机诊断 | 2026-09-23T08:36:46.6438717+04:00 | 第2轮 | Ctrl+C停止
+对端设备/系统/操作者：未确认。IP、端口及进程不构成入侵证据。
+系统与键盘采集时间：2026-09-23T08:36:43.7837020+04:00
+
+Computer     : SHJ-H0647-RYOCH
+OS           : Microsoft Windows 11 专业版
+Version      : 10.0.26200
+Build        : 26200
+Manufacturer : ASUS
+Model        : System Product Name
+
+
+Status FriendlyName        InstanceId
+------ ------------        ----------
+OK     HID Keyboard Device HID\VID_1A2C&PID_6004&MI_00\7&3B28E9EF&0&0000
+
+已建立TCP连接：54；展示前20条；采集截断：False
+
+Process                        ProcessId RemoteAddress   RemotePort RemoteDevice RemoteOS
+-------                        --------- -------------   ---------- ------------ --------
+python                              3504 127.0.0.1             9520 未知         未知
+python                              3504 127.0.0.1             9521 未知         未知
+svchost                             4192 98.66.133.185          443 未知         未知
+LdTermDaemon                        4452 192.168.7.17         20081 未知         未知
+ArmouryCrate.Service                4468 127.0.0.1             1034 未知         未知
+ROGLiveService                      4476 127.0.0.1             1025 未知         未知
+ROGLiveService                      4476 127.0.0.1            13030 未知         未知
+ChatGPT                             6596 104.18.37.228          443 未知         未知
+ChatGPT                             6596 108.177.127.188       5228 未知         未知
+ChatGPT                             6596 142.251.127.188       5228 未知         未知
+ChatGPT                             6596 172.64.148.235         443 未知         未知
+ChatGPT                             6596 172.64.155.209         443 未知         未知
+ChatGPT                             6596 172.64.155.209         443 未知         未知
+ChatGPT                             6596 192.178.213.188       5228 未知         未知
+ArmouryCrate.UserSessionHelper      8016 127.0.0.1            50100 未知         未知
+AcPowerNotification                 8328 127.0.0.1             1042 未知         未知
+explorer                            9268 52.97.152.114          443 未知         未知
+Telegram                           11712 91.108.56.188          443 未知         未知
+chrome                             15020 104.18.28.234          443 未知         未知
+chrome                             15020 104.18.29.234          443 未知         未知
+
+变化快照目录：reports\watch-tests-20260923\watch-22dcfbe93286494d9e7e9ca8da2e22df（最多十份，每份1MiB；旧运行目录需自行管理）
+本机诊断已停止；没有修改驱动、防护或启动设置。

@@ -1,0 +1,244 @@
+[
+  {
+    "FullName": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\log",
+    "Length": null,
+    "LastWriteTime": null,
+    "Error": "Could not find a part of the path 'C:\\inetpub\\ftproot\\Tipray\\LdTerm\\log'."
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\bl0051.dat",
+    "Length": 102390,
+    "LastWriteTime": "2026-07-30T14:36:01.0931278+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\bl0052.dat",
+    "Length": 20526,
+    "LastWriteTime": "2026-07-30T14:36:01.1087519+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\bl0054.dat",
+    "Length": 102428,
+    "LastWriteTime": "2026-07-30T14:36:01.1087519+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\bl0055.dat",
+    "Length": 102426,
+    "LastWriteTime": "2026-07-30T14:36:01.1087519+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\bl0056.dat",
+    "Length": 102428,
+    "LastWriteTime": "2026-07-30T14:36:01.1243748+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\bl0057.dat",
+    "Length": 43636,
+    "LastWriteTime": "2026-09-22T07:52:00.199222+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\certdb_v2.dat",
+    "Length": 2438517,
+    "LastWriteTime": "2026-09-22T07:52:00.3396551+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\idsdrop.dat",
+    "Length": 466123,
+    "LastWriteTime": "2026-09-22T07:48:24.7150235+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\klsrl2.dat",
+    "Length": 459070,
+    "LastWriteTime": "2026-09-22T07:52:00.5015868+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\pdmkl.dat",
+    "Length": 273652,
+    "LastWriteTime": "2026-09-22T07:52:00.6330874+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Bases\\rootcertdb.dat",
+    "Length": 805750,
+    "LastWriteTime": "2026-07-30T14:36:14.3885739+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\AppStartLog.db",
+    "Length": 12288,
+    "LastWriteTime": "2026-09-18T17:59:00.0833373+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\BTImages.dat",
+    "Length": 569,
+    "LastWriteTime": "2026-09-19T08:35:01.8568999+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\detects.db",
+    "Length": 102400,
+    "LastWriteTime": "2026-09-21T16:22:15.6203614+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\iswift.dat",
+    "Length": 4456448,
+    "LastWriteTime": "2026-07-30T14:36:47.7489858+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\kdbldsc.dat",
+    "Length": 16,
+    "LastWriteTime": "2026-09-22T07:53:04.9386864+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\kdbprdmpsc.dat",
+    "Length": 28,
+    "LastWriteTime": "2026-09-22T08:08:00.6851274+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\kes_reports_upd.db",
+    "Length": 3014656,
+    "LastWriteTime": "2026-07-10T09:39:36+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\killchain.db",
+    "Length": 24576,
+    "LastWriteTime": "2026-07-30T14:37:22.9229702+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\mask_list.dat",
+    "Length": 1120,
+    "LastWriteTime": "2026-07-10T12:49:58+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\persistent_q.db",
+    "Length": 110592,
+    "LastWriteTime": "2026-09-27T18:05:15.1988868+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\ports_im_en.dat",
+    "Length": 700,
+    "LastWriteTime": "2026-07-10T12:49:58+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\ports_mail_en.dat",
+    "Length": 470,
+    "LastWriteTime": "2026-07-10T12:49:58+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\ports_web_en.dat",
+    "Length": 310,
+    "LastWriteTime": "2026-07-10T12:49:58+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\reports.db",
+    "Length": 6008832,
+    "LastWriteTime": "2026-09-22T08:44:41.3788527+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\sfdb_amsi.dat",
+    "Length": 2228224,
+    "LastWriteTime": "2026-07-30T14:36:47.7840527+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\sfdb_md5.dat",
+    "Length": 2228224,
+    "LastWriteTime": "2026-07-30T14:36:47.7840527+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\sfdb.dat",
+    "Length": 2228224,
+    "LastWriteTime": "2026-07-30T14:36:47.7840527+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\uaspubkeys.dat",
+    "Length": 452,
+    "LastWriteTime": "2026-07-30T14:36:17.9819916+04:00"
+  },
+  {
+    "FullName": "C:\\ProgramData\\Kaspersky Lab\\KES.14.1",
+    "Length": null,
+    "LastWriteTime": null,
+    "Error": "Access to the path 'C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\EdrTelemetryCache' is denied."
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\DbgFile0.log",
+    "Length": 3861,
+    "LastWriteTime": "2026-10-01T18:19:50.6896692+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\dbset.dat",
+    "Length": 30720,
+    "LastWriteTime": "2021-02-26T06:56:51.5410579+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\FileLog.dat",
+    "Length": 317,
+    "LastWriteTime": "2026-09-27T18:05:18.8337787+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\license_en.txt",
+    "Length": 5116,
+    "LastWriteTime": "2021-02-26T06:56:38.2502977+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\license.txt",
+    "Length": 2775,
+    "LastWriteTime": "2021-02-26T06:56:27.9767101+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\Policy.dat",
+    "Length": 512,
+    "LastWriteTime": "2026-10-02T07:58:24.8785213+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\upweb.log",
+    "Length": 0,
+    "LastWriteTime": "2021-02-26T06:56:27.9777102+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\ESTSIP\\EstDlpSEDataBase.db",
+    "Length": 13312,
+    "LastWriteTime": "2026-10-02T07:58:25.9371227+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\ESTSIP\\Dict\\desc.db",
+    "Length": 16384,
+    "LastWriteTime": "2021-02-26T06:56:39.268356+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\ESTSIP\\Dict\\edesc.db",
+    "Length": 16384,
+    "LastWriteTime": "2021-02-26T06:56:39.2843569+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\ESTSIP\\DlpDbLog\\DLPDB_2026-10-02.txt",
+    "Length": 8115183,
+    "LastWriteTime": "2026-10-02T15:36:14.9398698+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\FileOut\\readme.txt",
+    "Length": 129,
+    "LastWriteTime": "2021-02-26T06:56:32.6219758+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\FileOut\\ICON\\Thumbs.db",
+    "Length": 15360,
+    "LastWriteTime": "2021-02-26T06:56:30.5868594+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\FileOut\\SKIN\\Thumbs.db",
+    "Length": 7680,
+    "LastWriteTime": "2021-02-26T06:56:31.8019289+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\res\\Thumbs.db",
+    "Length": 72704,
+    "LastWriteTime": "2021-02-26T06:56:49.1349203+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\res\\UI\\Thumbs.db",
+    "Length": 388096,
+    "LastWriteTime": "2021-02-26T06:56:49.4409378+04:00"
+  },
+  {
+    "FullName": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\res\\UI\\TrayStateIcon\\Thumbs.db",
+    "Length": 61440,
+    "LastWriteTime": "2021-02-26T06:56:49.4429379+04:00"
+  }
+]

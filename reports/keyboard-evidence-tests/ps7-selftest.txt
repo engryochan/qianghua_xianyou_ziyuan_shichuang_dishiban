@@ -1,0 +1,1 @@
+SELFTEST_OK: classification and bounded queue; no OS input injected

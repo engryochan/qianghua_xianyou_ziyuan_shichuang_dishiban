@@ -1,0 +1,30 @@
+[
+  {
+    "Class": null,
+    "FriendlyName": "SM 总线控制器",
+    "Status": "Error",
+    "Problem": 28,
+    "InstanceId": "PCI\\VEN_8086&DEV_7AA3&SUBSYS_86941043&REV_11\\3&11583659&0&FC"
+  },
+  {
+    "Class": null,
+    "FriendlyName": "PCI 设备",
+    "Status": "Error",
+    "Problem": 28,
+    "InstanceId": "PCI\\VEN_8086&DEV_7AA4&SUBSYS_86941043&REV_11\\3&11583659&0&FD"
+  },
+  {
+    "Class": null,
+    "FriendlyName": null,
+    "Status": "Error",
+    "Problem": 28,
+    "InstanceId": "ACPI\\INTC1056\\2&DABA3FF&0"
+  },
+  {
+    "Class": null,
+    "FriendlyName": "PCI 设备",
+    "Status": "Error",
+    "Problem": 28,
+    "InstanceId": "PCI\\VEN_8086&DEV_7ACC&SUBSYS_86941043&REV_11\\3&11583659&0&A8"
+  }
+]

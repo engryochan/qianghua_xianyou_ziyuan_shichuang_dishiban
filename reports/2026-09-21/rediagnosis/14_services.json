@@ -1,0 +1,2109 @@
+﻿[
+  {
+    "Name": "AdobeARMservice",
+    "DisplayName": "Adobe Acrobat Update Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ADPSvc",
+    "DisplayName": "聚合数据平台服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ALG",
+    "DisplayName": "Application Layer Gateway Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AppIDSvc",
+    "DisplayName": "Application Identity",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Appinfo",
+    "DisplayName": "Application Information",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AppMgmt",
+    "DisplayName": "Application Management",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AppReadiness",
+    "DisplayName": "App Readiness",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AppVClient",
+    "DisplayName": "Microsoft App-V Client",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AppXSvc",
+    "DisplayName": "AppX Deployment Service (AppXSVC)",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ApxSvc",
+    "DisplayName": "Windows 虚拟音频设备代理服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ArmouryCrateService",
+    "DisplayName": "Armoury Crate Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AssignedAccessManagerSvc",
+    "DisplayName": "AssignedAccessManager 服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "asus",
+    "DisplayName": "ASUS 更新服务 (asus)",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "AsusCertService",
+    "DisplayName": "ASUS Certificate Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "asusm",
+    "DisplayName": "ASUS 更新服务 (asusm)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "AsusUpdateCheck",
+    "DisplayName": "AsusUpdateCheck",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AudioEndpointBuilder",
+    "DisplayName": "Windows Audio Endpoint Builder",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Audiosrv",
+    "DisplayName": "Windows Audio",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "autotimesvc",
+    "DisplayName": "手机网络时间",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AVP.KES.14.1",
+    "DisplayName": "Kaspersky Endpoint Security 服务 (KES.14.1)",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "avpsus.KES.14.1",
+    "DisplayName": "Kaspersky Seamless Update Service (KES.14.1)",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "AxInstSV",
+    "DisplayName": "ActiveX Installer (AxInstSV)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "BDESVC",
+    "DisplayName": "BitLocker Drive Encryption Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "BITS",
+    "DisplayName": "Background Intelligent Transfer Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "BrokerInfrastructure",
+    "DisplayName": "Background Tasks Infrastructure Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "BTAGService",
+    "DisplayName": "蓝牙音频网关服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "BthAvctpSvc",
+    "DisplayName": "AVCTP 服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "bthserv",
+    "DisplayName": "蓝牙支持服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "camsvc",
+    "DisplayName": "功能访问管理器服务",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CDPSvc",
+    "DisplayName": "连接设备平台服务",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "CertPropSvc",
+    "DisplayName": "Certificate Propagation",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ClickToRunSvc",
+    "DisplayName": "‪Microsoft Office ClickToRun Service‬",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ClipSVC",
+    "DisplayName": "Client License Service (ClipSVC)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "cloudidsvc",
+    "DisplayName": "Microsoft 云标识服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CodexSandboxService.OpenAI.Codex",
+    "DisplayName": "ChatGPT",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CommonService",
+    "DisplayName": "Service for common users",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "COMSysApp",
+    "DisplayName": "COM+ System Application",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CoreMessagingRegistrar",
+    "DisplayName": "CoreMessaging",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CoworkVMService",
+    "DisplayName": "Claude",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CryptSvc",
+    "DisplayName": "Cryptographic Services",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CscService",
+    "DisplayName": "Offline Files",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DcomLaunch",
+    "DisplayName": "DCOM Server Process Launcher",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "dcsvc",
+    "DisplayName": "已声明的配置(DC)服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "defragsvc",
+    "DisplayName": "Optimize drives",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DeviceAssociationService",
+    "DisplayName": "Device Association Service",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DeviceInstall",
+    "DisplayName": "Device Install Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DevQueryBroker",
+    "DisplayName": "DevQuery Background Discovery Broker",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Dhcp",
+    "DisplayName": "DHCP Client",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "diagsvc",
+    "DisplayName": "Diagnostic Execution Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DiagTrack",
+    "DisplayName": "Connected User Experiences and Telemetry",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DialogBlockingService",
+    "DisplayName": "DialogBlockingService",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DispBrokerDesktopSvc",
+    "DisplayName": "显示策略服务",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DisplayEnhancementService",
+    "DisplayName": "显示增强服务",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DmEnrollmentSvc",
+    "DisplayName": "设备管理注册服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "dmwappushservice",
+    "DisplayName": "设备管理无线应用程序协议 (WAP) 推送消息路由服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "Dnscache",
+    "DisplayName": "DNS Client",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DoSvc",
+    "DisplayName": "Delivery Optimization",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "dot3svc",
+    "DisplayName": "Wired AutoConfig",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DPS",
+    "DisplayName": "Diagnostic Policy Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DsmSvc",
+    "DisplayName": "Device Setup Manager",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DsSvc",
+    "DisplayName": "Data Sharing Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DusmSvc",
+    "DisplayName": "数据使用量",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "EapHost",
+    "DisplayName": "Extensible Authentication Protocol",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "EFS",
+    "DisplayName": "Encrypting File System (EFS)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "embeddedmode",
+    "DisplayName": "嵌入模式",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "EntAppSvc",
+    "DisplayName": "Enterprise App Management Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "EventLog",
+    "DisplayName": "Windows Event Log",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "EventSystem",
+    "DisplayName": "COM+ Event System",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Fax",
+    "DisplayName": "Fax",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "fdPHost",
+    "DisplayName": "Function Discovery Provider Host",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "FDResPub",
+    "DisplayName": "Function Discovery Resource Publication",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "fhsvc",
+    "DisplayName": "File History Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "FileSyncHelper",
+    "DisplayName": "FileSyncHelper",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "FlashCenterSvc",
+    "DisplayName": "FlashCenterSvc",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "FontCache",
+    "DisplayName": "Windows Font Cache Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "FrameServer",
+    "DisplayName": "Windows Camera Frame Server",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "FrameServerMonitor",
+    "DisplayName": "Windows Camera Frame Server Monitor",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "GameInputSvc",
+    "DisplayName": "GameInput Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "GoogleChromeElevationService",
+    "DisplayName": "Google Chrome Elevation Service (GoogleChromeElevationService)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "GoogleUpdaterInternalService152.0.7933.0",
+    "DisplayName": "Google 更新程序内部服务 (GoogleUpdaterInternalService152.0.7933.0)",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "GoogleUpdaterService152.0.7933.0",
+    "DisplayName": "Google 更新程序服务 (GoogleUpdaterService152.0.7933.0)",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "gpsvc",
+    "DisplayName": "Group Policy Client",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "GraphicsPerfSvc",
+    "DisplayName": "GraphicsPerfSvc",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "hidserv",
+    "DisplayName": "Human Interface Device Service",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "hpatchmon",
+    "DisplayName": "Hotpatch Monitoring Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "HvHost",
+    "DisplayName": "HV 主机服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "icssvc",
+    "DisplayName": "Windows 移动热点服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "IKEEXT",
+    "DisplayName": "IKE and AuthIP IPsec Keying Modules",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "InstallService",
+    "DisplayName": "Microsoft Store 安装服务",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Intel(R) Platform License Manager Service",
+    "DisplayName": "Intel(R) Platform License Manager Service",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "IntelGraphicsSoftwareService",
+    "DisplayName": "Intel® Graphics Software",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "InventorySvc",
+    "DisplayName": "清单和兼容性评估服务",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "iphlpsvc",
+    "DisplayName": "IP Helper",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "IpxlatCfgSvc",
+    "DisplayName": "IP 转换配置服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "IsoEnvBroker",
+    "DisplayName": "隔离环境代理",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "IsolationSession",
+    "DisplayName": "IsolationSession",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "jhi_service",
+    "DisplayName": "Intel(R) Dynamic Application Loader Host Interface Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "KeyIso",
+    "DisplayName": "CNG Key Isolation",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "klnagent",
+    "DisplayName": "Kaspersky Security Center 网络代理",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "klpsm",
+    "DisplayName": "klpsm",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ksnproxy",
+    "DisplayName": "卡巴斯基安全网络代理服务器",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "KtmRm",
+    "DisplayName": "KtmRm for Distributed Transaction Coordinator",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LanmanServer",
+    "DisplayName": "Server",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LanmanWorkstation",
+    "DisplayName": "Workstation",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LeaderTerm",
+    "DisplayName": "LeaderTerm",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LeaderTermDaemon",
+    "DisplayName": "LeaderTermDaemon",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "lfsvc",
+    "DisplayName": "Geolocation Service",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LicenseManager",
+    "DisplayName": "Windows 许可证管理器服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LightingService",
+    "DisplayName": "ASUS AURA SYNC lighting service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "lltdsvc",
+    "DisplayName": "Link-Layer Topology Discovery Mapper",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "lmhosts",
+    "DisplayName": "TCP/IP NetBIOS Helper",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LocalKdc",
+    "DisplayName": "Kerberos 本地密钥发行中心",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "LSM",
+    "DisplayName": "LSM",
+    "State": "Running",
+    "StartMode": "Unknown",
+    "DelayedAutoStart": null
+  },
+  {
+    "Name": "LxpSvc",
+    "DisplayName": "语言体验服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MapsBroker",
+    "DisplayName": "Downloaded Maps Manager",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "McmSvc",
+    "DisplayName": "移动连接管理服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "McpManagementService",
+    "DisplayName": "McpManagementService",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MDCoreSvc",
+    "DisplayName": "Microsoft Defender Core 服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MicrosoftEdgeElevationService",
+    "DisplayName": "Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "midisrv",
+    "DisplayName": "Windows MIDI 服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MozillaMaintenance",
+    "DisplayName": "Mozilla Maintenance Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "mpssvc",
+    "DisplayName": "Windows Defender Firewall",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MSDTC",
+    "DisplayName": "Distributed Transaction Coordinator",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "MSiSCSI",
+    "DisplayName": "Microsoft iSCSI Initiator Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "msiserver",
+    "DisplayName": "Windows Installer",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MsKeyboardFilter",
+    "DisplayName": "Microsoft 键盘筛选器",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NaturalAuthentication",
+    "DisplayName": "自然身份验证",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NcaSvc",
+    "DisplayName": "Network Connectivity Assistant",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NcbService",
+    "DisplayName": "Network Connection Broker",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NcdAutoSetup",
+    "DisplayName": "Network Connected Devices Auto-Setup",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Netlogon",
+    "DisplayName": "Netlogon",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Netman",
+    "DisplayName": "Network Connections",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "netprofm",
+    "DisplayName": "Network List Service",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NetSetupSvc",
+    "DisplayName": "NetSetupSvc",
+    "State": "Stopped",
+    "StartMode": "Unknown",
+    "DelayedAutoStart": null
+  },
+  {
+    "Name": "NetTcpPortSharing",
+    "DisplayName": "Net.Tcp Port Sharing Service",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NgcCtnrSvc",
+    "DisplayName": "Microsoft Passport Container",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NgcSvc",
+    "DisplayName": "Microsoft Passport",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NlaSvc",
+    "DisplayName": "网络位置感知",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "nsi",
+    "DisplayName": "Network Store Interface Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NVDisplay.ContainerLocalSystem",
+    "DisplayName": "NVIDIA Display Container LS",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "OfficePLUS Service",
+    "DisplayName": "OfficePLUS Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "OneDrive Updater Service",
+    "DisplayName": "OneDrive Updater Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ose",
+    "DisplayName": "Office  Source Engine",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PcaSvc",
+    "DisplayName": "Program Compatibility Assistant Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "PeerDistSvc",
+    "DisplayName": "BranchCache",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "perceptionsimulation",
+    "DisplayName": "Windows 感知模拟服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PerfHost",
+    "DisplayName": "Performance Counter DLL Host",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PhoneSvc",
+    "DisplayName": "Phone Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "pla",
+    "DisplayName": "Performance Logs & Alerts",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PlugPlay",
+    "DisplayName": "Plug and Play",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PolicyAgent",
+    "DisplayName": "IPsec Policy Agent",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Power",
+    "DisplayName": "Power",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PrintDeviceConfigurationService",
+    "DisplayName": "打印设备配置服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PrintNotify",
+    "DisplayName": "Printer Extensions and Notifications",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PrintScanBrokerService",
+    "DisplayName": "PrintScanBrokerService",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ProfSvc",
+    "DisplayName": "User Profile Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PushToInstall",
+    "DisplayName": "Windows PushToInstall 服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "QWAVE",
+    "DisplayName": "Quality Windows Audio Video Experience",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RasAuto",
+    "DisplayName": "Remote Access Auto Connection Manager",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RasMan",
+    "DisplayName": "Remote Access Connection Manager",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "refsdedupsvc",
+    "DisplayName": "ReFS 重复数据删除服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RemoteAccess",
+    "DisplayName": "Routing and Remote Access",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RemoteRegistry",
+    "DisplayName": "Remote Registry",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RetailDemo",
+    "DisplayName": "零售演示服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RmSvc",
+    "DisplayName": "无线电管理服务",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ROG Live Service",
+    "DisplayName": "ROG Live Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RpcEptMapper",
+    "DisplayName": "RPC Endpoint Mapper",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RpcLocator",
+    "DisplayName": "Remote Procedure Call (RPC) Locator",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RpcSs",
+    "DisplayName": "Remote Procedure Call (RPC)",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "RstMwService",
+    "DisplayName": "Intel(R) Storage Middleware Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SamSs",
+    "DisplayName": "Security Accounts Manager",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SCardSvr",
+    "DisplayName": "Smart Card",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ScDeviceEnum",
+    "DisplayName": "Smart Card Device Enumeration Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Schedule",
+    "DisplayName": "Task Scheduler",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SCPolicySvc",
+    "DisplayName": "Smart Card Removal Policy",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SDRSVC",
+    "DisplayName": "Windows 备份",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "seclogon",
+    "DisplayName": "Secondary Logon",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SecurityHealthService",
+    "DisplayName": "Windows 安全中心服务",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SEMgrSvc",
+    "DisplayName": "付款和 NFC/SE 管理器",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SENS",
+    "DisplayName": "System Event Notification Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Sense",
+    "DisplayName": "Windows Defender Advanced Threat Protection Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SensorDataService",
+    "DisplayName": "Sensor Data Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SensorService",
+    "DisplayName": "Sensor Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SensrSvc",
+    "DisplayName": "Sensor Monitoring Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SessionEnv",
+    "DisplayName": "Remote Desktop Configuration",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SharedAccess",
+    "DisplayName": "Internet Connection Sharing (ICS)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ShellHWDetection",
+    "DisplayName": "Shell Hardware Detection",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "shpamsvc",
+    "DisplayName": "Shared PC Account Manager",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "smphost",
+    "DisplayName": "Microsoft Storage Spaces SMP",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SmsRouter",
+    "DisplayName": "Microsoft Windows SMS 路由器服务。",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SNMPTrap",
+    "DisplayName": "SNMP 陷阱",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Spooler",
+    "DisplayName": "Print Spooler",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "sppsvc",
+    "DisplayName": "Software Protection",
+    "State": "Stopped",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "SSDPSRV",
+    "DisplayName": "SSDP Discovery",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ssh-agent",
+    "DisplayName": "OpenSSH Authentication Agent",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SstpSvc",
+    "DisplayName": "Secure Socket Tunneling Protocol Service",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "StateRepository",
+    "DisplayName": "State Repository Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "StiSvc",
+    "DisplayName": "Windows Image Acquisition (WIA)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "StorSvc",
+    "DisplayName": "Storage Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "svsvc",
+    "DisplayName": "Spot Verifier",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "swprv",
+    "DisplayName": "Microsoft Software Shadow Copy Provider",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SysMain",
+    "DisplayName": "SysMain",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "SystemEventsBroker",
+    "DisplayName": "System Events Broker",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TapiSrv",
+    "DisplayName": "Telephony",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TermService",
+    "DisplayName": "Remote Desktop Services",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TextInputManagementService",
+    "DisplayName": "Text Input Management Service",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Themes",
+    "DisplayName": "Themes",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TieringEngineService",
+    "DisplayName": "Storage Tiers Management",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TimeBrokerSvc",
+    "DisplayName": "Time Broker",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TokenBroker",
+    "DisplayName": "Web 账户管理器",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TrkWks",
+    "DisplayName": "Distributed Link Tracking Client",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TroubleshootingSvc",
+    "DisplayName": "建议疑难解答服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "TrustedInstaller",
+    "DisplayName": "Windows Modules Installer",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "tzautoupdate",
+    "DisplayName": "自动时区更新程序",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UevAgentService",
+    "DisplayName": "User Experience Virtualization Service",
+    "State": "Stopped",
+    "StartMode": "Disabled",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UmRdpService",
+    "DisplayName": "Remote Desktop Services UserMode Port Redirector",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "upnphost",
+    "DisplayName": "UPnP Device Host",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UserManager",
+    "DisplayName": "User Manager",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UsoSvc",
+    "DisplayName": "更新 Orchestrator 服务",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "VaultSvc",
+    "DisplayName": "Credential Manager",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vds",
+    "DisplayName": "Virtual Disk",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmicguestinterface",
+    "DisplayName": "Hyper-V Guest Service Interface",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmicheartbeat",
+    "DisplayName": "Hyper-V Heartbeat Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmickvpexchange",
+    "DisplayName": "Hyper-V Data Exchange Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmicrdv",
+    "DisplayName": "Hyper-V 远程桌面虚拟化服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmicshutdown",
+    "DisplayName": "Hyper-V Guest Shutdown Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmictimesync",
+    "DisplayName": "Hyper-V Time Synchronization Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmicvmsession",
+    "DisplayName": "Hyper-V PowerShell Direct Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "vmicvss",
+    "DisplayName": "Hyper-V 卷影复制请求程序",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "VSS",
+    "DisplayName": "Volume Shadow Copy",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "W32Time",
+    "DisplayName": "Windows Time",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WaaSMedicSvc",
+    "DisplayName": "WaaSMedicSvc",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WalletService",
+    "DisplayName": "WalletService",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WarpJITSvc",
+    "DisplayName": "Warp JIT Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wbengine",
+    "DisplayName": "Block Level Backup Engine Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WbioSrvc",
+    "DisplayName": "Windows Biometric Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Wcmsvc",
+    "DisplayName": "Windows Connection Manager",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wcncsvc",
+    "DisplayName": "Windows Connect Now - Config Registrar",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WdiServiceHost",
+    "DisplayName": "Diagnostic Service Host",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WdiSystemHost",
+    "DisplayName": "Diagnostic System Host",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WdNisSvc",
+    "DisplayName": "Microsoft Defender 防病毒网络检查服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WebClient",
+    "DisplayName": "WebClient",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "webthreatdefsvc",
+    "DisplayName": "Web 威胁防御服务",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Wecsvc",
+    "DisplayName": "Windows Event Collector",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WEPHOSTSVC",
+    "DisplayName": "Windows Encryption Provider Host Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wercplsupport",
+    "DisplayName": "Problem Reports Control Panel Support",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WerSvc",
+    "DisplayName": "Windows Error Reporting Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WFDSConMgrSvc",
+    "DisplayName": "WLAN Direct 服务连接管理器服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "whesvc",
+    "DisplayName": "Windows 健康状况和优化体验",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "WiaRpc",
+    "DisplayName": "Still Image Acquisition Events",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WinDefend",
+    "DisplayName": "Microsoft Defender 防病毒服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WinHttpAutoProxySvc",
+    "DisplayName": "WinHTTP Web Proxy Auto-Discovery Service",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "Winmgmt",
+    "DisplayName": "Windows Management Instrumentation",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WinRM",
+    "DisplayName": "Windows Remote Management (WS-Management)",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "wisvc",
+    "DisplayName": "Windows 预览体验成员服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WlanSvc",
+    "DisplayName": "WLAN AutoConfig",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wlidsvc",
+    "DisplayName": "Microsoft Account Sign-in Assistant",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wlpasvc",
+    "DisplayName": "本地配置文件助手服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WManSvc",
+    "DisplayName": "Windows 管理服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wmiApSrv",
+    "DisplayName": "WMI Performance Adapter",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WMIRegistrationService",
+    "DisplayName": "Intel(R) Management Engine WMI Provider Registration",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WMPNetworkSvc",
+    "DisplayName": "Windows Media Player Network Sharing Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "workfolderssvc",
+    "DisplayName": "Work Folders",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WpcMonSvc",
+    "DisplayName": "家长控制",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WPDBusEnum",
+    "DisplayName": "Portable Device Enumerator Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WpnService",
+    "DisplayName": "Windows 推送通知系统服务",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wpscloudsvr",
+    "DisplayName": "WPS Office Cloud Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WSAIFabricSvc",
+    "DisplayName": "Windows AI 组件主机",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wscsvc",
+    "DisplayName": "安全中心",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "WSearch",
+    "DisplayName": "Windows Search",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "wuauserv",
+    "DisplayName": "Windows 更新",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "wuqisvc",
+    "DisplayName": "Microsoft 使用情况和质量见解",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WwanSvc",
+    "DisplayName": "WWAN AutoConfig",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "XblAuthManager",
+    "DisplayName": "Xbox Live 身份验证管理器",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "XblGameSave",
+    "DisplayName": "Xbox Live 游戏保存",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "XboxGipSvc",
+    "DisplayName": "Xbox Accessory Management Service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "XboxNetApiSvc",
+    "DisplayName": "Xbox Live 网络服务",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "AarSvc_e8757",
+    "DisplayName": "Agent Activation Runtime_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "BcastDVRUserService_e8757",
+    "DisplayName": "GameDVR 和广播用户服务_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "BluetoothUserService_e8757",
+    "DisplayName": "蓝牙用户支持服务_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CaptureService_e8757",
+    "DisplayName": "CaptureService_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "cbdhsvc_e8757",
+    "DisplayName": "剪贴板用户服务_e8757",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": true
+  },
+  {
+    "Name": "CDPUserSvc_e8757",
+    "DisplayName": "连接设备平台用户服务_e8757",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CloudBackupRestoreSvc_e8757",
+    "DisplayName": "云备份和还原服务_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "ConsentUxUserSvc_e8757",
+    "DisplayName": "ConsentUX 用户服务_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "CredentialEnrollmentManagerUserSvc_e8757",
+    "DisplayName": "CredentialEnrollmentManagerUserSvc_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DeviceAssociationBrokerSvc_e8757",
+    "DisplayName": "DeviceAssociationBroker_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DevicePickerUserSvc_e8757",
+    "DisplayName": "DevicePicker_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "DevicesFlowUserSvc_e8757",
+    "DisplayName": "DevicesFlow_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "MessagingService_e8757",
+    "DisplayName": "MessagingService_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "NPSMSvc_e8757",
+    "DisplayName": "正在播放会话管理器服务_e8757",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "OneSyncSvc_e8757",
+    "DisplayName": "同步主机_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "P9RdrService_e8757",
+    "DisplayName": "P9RdrService_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PenService_e8757",
+    "DisplayName": "PenService_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PimIndexMaintenanceSvc_e8757",
+    "DisplayName": "Contact Data_e8757",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "PrintWorkflowUserSvc_e8757",
+    "DisplayName": "PrintWorkflow_e8757",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UdkUserSvc_e8757",
+    "DisplayName": "Udk 用户服务_e8757",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UnistoreSvc_e8757",
+    "DisplayName": "User Data Storage_e8757",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "UserDataSvc_e8757",
+    "DisplayName": "User Data Access_e8757",
+    "State": "Running",
+    "StartMode": "Manual",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "webthreatdefusersvc_e8757",
+    "DisplayName": "Web 威胁防御用户服务_e8757",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  },
+  {
+    "Name": "WpnUserService_e8757",
+    "DisplayName": "Windows Push Notifications User Service_e8757",
+    "State": "Running",
+    "StartMode": "Auto",
+    "DelayedAutoStart": false
+  }
+]

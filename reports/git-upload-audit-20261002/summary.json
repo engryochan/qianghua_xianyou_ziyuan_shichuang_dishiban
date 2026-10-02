@@ -1,0 +1,29 @@
+{
+  "time": "2026-10-02T16:35:05.331955+04:00",
+  "root": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban",
+  "branch": "世博量化研究院",
+  "head": "20586c8f86129cfaaace0ebb6e272812798fc7d5",
+  "remote_head_verified_in_prior_readonly_ls_remote": "20586c8f86129cfaaace0ebb6e272812798fc7d5",
+  "head_matches_verified_remote": true,
+  "committed_path_count": 258,
+  "counts": {
+    "当前提交中已有（远端HEAD已核实一致）": {
+      "count": 258,
+      "bytes": 38507409
+    },
+    "被Git忽略（本轮未证明其他历史或分支是否含有）": {
+      "count": 1300,
+      "bytes": 308421757
+    },
+    "Git内部元数据（不按文件上传）": {
+      "count": 250,
+      "bytes": 2916492553
+    }
+  },
+  "changed_paths": [],
+  "missing_committed_paths": [],
+  "special_index_flags": [],
+  "errors": [],
+  "untraversed_reparse_dirs": [],
+  "scope": "Current branch HEAD and local files only; no pull/fetch/push/commit, no OneDrive cloud confirmation; output files created after the scan are not in its snapshot."
+}

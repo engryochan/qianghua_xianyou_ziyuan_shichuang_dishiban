@@ -1,0 +1,8 @@
+"Name","Location"
+"Snipaste","Startup"
+"Mozilla-Firefox-308046B0AF4A39CB","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+"GoogleChromeAutoLaunch_BB347D1503165DD0861E8C7EEA929BEA","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+"MicrosoftEdgeAutoLaunch_45F2C36DEFA40954163E6E4890A144CE","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+"OneDrive","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+"CometUpdaterTaskUser151.0.7922.249","HKU\S-1-5-21-323984447-536449353-4267113659-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+"SecurityHealth","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"

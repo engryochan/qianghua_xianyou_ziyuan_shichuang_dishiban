@@ -1,0 +1,32 @@
+[
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R.zip",
+    "Bytes": 98106772,
+    "SHA256": "A666E7613293D43E05BE02E54DA941BD89B12AB5858D89F3088067F9DD6B0BC9"
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_LAN_Realtek_8111_SZ-TSD_W11_64_V11682750919_20251230R.zip",
+    "Bytes": 15387705,
+    "SHA256": "3B6946C79C745B6E5B2F9E08A9CF6F291EE5C9951F85860753F820F41D76F96D"
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R.zip",
+    "Bytes": 489874588,
+    "SHA256": "6804CC83E1698EC24C3FAD966280181998F813D605B523D84D33A1833F610779"
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_SerialIO_RPL_SZ_TSD_W11_64_V30100253131_20251210R.zip",
+    "Bytes": 4916811,
+    "SHA256": "A276D49122AE86A26BD5A1AFD3281CA45DE9712031C99221A065CF023C75A4A0"
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\IPF_Intel_RPL_TP_W11_64_V22102048_20260323R.zip",
+    "Bytes": 13468675,
+    "SHA256": "4E0C0B6AEA628B5BA7B04950BEEF980D1EED85A46A17D95C62201FC1C5EC7A86"
+  },
+  {
+    "Path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\SW_IPPP_Intel_ARL_TP_W11_64_V2603101171_20260324R.zip",
+    "Bytes": 95363931,
+    "SHA256": "251B38683F165C9894CB7D31CFDF8E4AFBA272E66BA6F8008ABC2B7349EB510F"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "engine": "powershell.exe",
+    "script": "Diag-KeyboardSource.ps1",
+    "mode": "compile",
+    "exit": 0,
+    "seconds": 0.8
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "Diag-KeyboardSource.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 2.06
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "Diag-RawInputDevice.ps1",
+    "mode": "compile",
+    "exit": 0,
+    "seconds": 0.76
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "Diag-RawInputDevice.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 1.77
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "Full-Keyboard-State.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 1.72
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "Log-AllKeys-Async.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 1.82
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "RawInputKeyLogger.ps1",
+    "mode": "compile",
+    "exit": 0,
+    "seconds": 0.76
+  },
+  {
+    "engine": "powershell.exe",
+    "script": "RawInputKeyLogger.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 1.79
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "Diag-KeyboardSource.ps1",
+    "mode": "compile",
+    "exit": 0,
+    "seconds": 1.29
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "Diag-KeyboardSource.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 2.7
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "Diag-RawInputDevice.ps1",
+    "mode": "compile",
+    "exit": 0,
+    "seconds": 1.29
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "Diag-RawInputDevice.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 2.34
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "Full-Keyboard-State.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 2.1
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "Log-AllKeys-Async.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 2.12
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "RawInputKeyLogger.ps1",
+    "mode": "compile",
+    "exit": 0,
+    "seconds": 1.31
+  },
+  {
+    "engine": "pwsh.exe",
+    "script": "RawInputKeyLogger.ps1",
+    "mode": "run",
+    "exit": 0,
+    "seconds": 2.31
+  }
+]

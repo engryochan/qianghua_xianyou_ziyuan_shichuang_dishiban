@@ -1,0 +1,8 @@
+
+Flags        : 510
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility
+PSChildName  : StickyKeys
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+

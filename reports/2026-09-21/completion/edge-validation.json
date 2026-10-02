@@ -1,0 +1,18 @@
+{
+  "Version": "150.0.4078.105",
+  "ExitCode": 0,
+  "JavaScriptAndDOM": "Passed",
+  "UpdaterRootExists": true,
+  "Services": [
+    {
+      "Name": "edgeupdate",
+      "Status": 1,
+      "StartType": 2
+    },
+    {
+      "Name": "edgeupdatem",
+      "Status": 1,
+      "StartType": 3
+    }
+  ]
+}

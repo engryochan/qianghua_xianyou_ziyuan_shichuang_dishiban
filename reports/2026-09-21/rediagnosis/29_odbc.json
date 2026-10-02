@@ -1,0 +1,90 @@
+﻿[
+  {
+    "Name": "Driver da Microsoft para arquivos texto (*.txt; *.csv)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Driver do Microsoft Access (*.mdb)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Driver do Microsoft dBase (*.dbf)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Driver do Microsoft Excel(*.xls)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Driver do Microsoft Paradox (*.db )",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Access Driver (*.mdb)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Access-Treiber (*.mdb)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft dBase Driver (*.dbf)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft dBase-Treiber (*.dbf)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Excel Driver (*.xls)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Excel-Treiber (*.xls)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft ODBC for Oracle",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Paradox Driver (*.db )",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Paradox-Treiber (*.db )",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Text Driver (*.txt; *.csv)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Text-Treiber (*.txt; *.csv)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "SQL Server",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Access Driver (*.mdb, *.accdb)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Access Text Driver (*.txt, *.csv)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "Microsoft Access dBASE Driver (*.dbf, *.ndx, *.mdx)",
+    "Platform": "32-bit"
+  },
+  {
+    "Name": "SQL Server",
+    "Platform": "64-bit"
+  }
+]

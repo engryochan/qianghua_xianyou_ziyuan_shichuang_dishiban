@@ -1,0 +1,2 @@
+"Name","NumberOfCores","NumberOfLogicalProcessors","MaxClockSpeed","AddressWidth","VirtualizationFirmwareEnabled","SecondLevelAddressTranslationExtensions","VMMonitorModeExtensions"
+"12th Gen Intel(R) Core(TM) i5-12400F","6","12","2500","64","True","True","True"

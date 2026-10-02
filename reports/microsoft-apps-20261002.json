@@ -1,0 +1,482 @@
+[
+  {
+    "Name": "Microsoft.UI.Xaml.2.0",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.0_2.1810.18004.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Microsoft3DViewer",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Microsoft3DViewer_6.1908.2042.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MSPaint",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.MSPaint_6.1907.29027.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00_14.0.33519.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00_14.0.33519.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.8_8.2501.31001.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxApp",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.XboxApp_48.104.4001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "microsoft.windowscommunicationsapps",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\microsoft.windowscommunicationsapps_16005.14326.22342.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MixedReality.Portal",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.MixedReality.Portal_2000.21051.1282.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.1.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.1.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.1.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.1.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.7_7.2409.9001.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.7_7.2409.9001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.SkypeApp",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.SkypeApp_15.150.3125.0_x64__kzf8qxf38zg5c"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftStickyNotes",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftStickyNotes_6.1.4.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Office.OneNote",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Office.OneNote_16001.14326.22594.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.People",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.People_10.2202.100.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsMaps",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsMaps_11.2506.3.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.4",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.4_2.42007.9001.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.4",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.4_2.42007.9001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Xbox.TCUI",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxIdentityProvider",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.XboxIdentityProvider_12.130.16001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxGameOverlay",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.XboxGameOverlay_1.54.4001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VP9VideoExtensions",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.VP9VideoExtensions_1.2.20.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingWeather",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.BingWeather_4.54.63045.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.7",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ZuneVideo",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.ZuneVideo_10.26061.10051.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.3",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.3_2.32002.13001.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.3",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.3_2.32002.13001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.5",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.5",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.DevHome",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.DevHome_0.2100.858.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OfficePushNotificationUtility",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.OfficePushNotificationUtility_16.0.19127.20800_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Office.ActionsServer",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Office.ActionsServer_16.0.19127.20800_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WebpImageExtension",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WebpImageExtension_1.2.31.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxGamingOverlay",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.XboxGamingOverlay_7.326.8061.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsCalculator",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_11.2607.0.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ZuneMusic",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.ZuneMusic_11.2607.16.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAlarms",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAlarms_11.2607.6.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsCamera",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCamera_2026.2607.1.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.2_2.5.1.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.2_2.5.1.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.Photos",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.Photos_2026.11080.24002.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OutlookForWindows",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.OutlookForWindows_1.2026.818.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.PowerShell",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingNews",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.BingNews_1.0.2.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxSpeechToTextOverlay",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.XboxSpeechToTextOverlay_1.97.17002.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingSearch",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.BingSearch_1.1.43.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.8_8.2511.26001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.SecHealthUI",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.SecHealthUI_1000.29628.1000.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsNotepad",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2607.14.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Paint",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Paint_11.2605.81.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.WebExperience",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.ScreenSketch",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2607.23.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WidgetsPlatformRuntime",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WidgetsPlatformRuntime_1.6.19.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ApplicationCompatibilityEnhancements",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.ApplicationCompatibilityEnhancements_1.2511.9.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.StartExperiencesApp",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.StartExperiencesApp_1.380.2.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.LanguageExperiencePackzh-CN",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.LanguageExperiencePackzh-CN_26100.163.263.0_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsTerminal",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.24.11911.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MPEG2VideoExtension",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.MPEG2VideoExtension_1.2.32.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsSoundRecorder",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsSoundRecorder_11.2607.1.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WebMediaExtensions",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WebMediaExtensions_2.1.51.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.RawImageExtension",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.RawImageExtension_2.5.35.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AV1VideoExtension",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.AV1VideoExtension_2.0.35.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftWindows.CrossDevice",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.CrossDevice_0.26072.116.0_x64__cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.GetHelp",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.GetHelp_10.2409.42492.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.GamingApp",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2609.1001.16.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.DesktopAppInstaller",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.DesktopAppInstaller_1.29.380.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.PowerAutomateDesktop",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.PowerAutomateDesktop_1.0.2141.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.LanguageExperiencePackja-JP",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.LanguageExperiencePackja-JP_26100.174.273.0_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftEdge.Stable",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftEdge.Stable_153.0.4234.48_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AVCEncoderVideoExtension",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.AVCEncoderVideoExtension_1.1.47.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.StorePurchaseApp",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.StorePurchaseApp_22608.1401.1.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.8_8000.994.2142.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "IsFramework": true,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.8_8000.994.2142.0_x86__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Winget.Source",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Winget.Source_2026.926.823.50_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftWindows.Speech.zh-TW.1",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Speech.zh-TW.1_1.0.14.0_x64__cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.LanguageExperiencePackzh-TW",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.LanguageExperiencePackzh-TW_26100.176.274.0_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftWindows.Speech.ja-JP.1",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Speech.ja-JP.1_1.0.21.0_x64__cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Speech.zh-CN.1",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Speech.zh-CN.1_1.0.23.0_x64__cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.HEIFImageExtension",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.HEIFImageExtension_1.2.57.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Todos",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.Todos_0.178.8571.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftSolitaireCollection",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftSolitaireCollection_4.27.9181.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.YourPhone",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsFeedbackHub",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsFeedbackHub_2.2608.303.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsStore",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsStore_22608.1401.5.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OneDriveSync",
+    "IsFramework": false,
+    "InstallLocation": "C:\\Program Files\\WindowsApps\\Microsoft.OneDriveSync_26178.913.6.0_neutral__8wekyb3d8bbwe"
+  }
+]

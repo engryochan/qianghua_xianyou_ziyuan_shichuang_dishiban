@@ -1,0 +1,1708 @@
+{
+  "utc": "2026-10-02T07:01:14.022413+00:00",
+  "scope": "OFFICIAL_PLATFORM_METADATA_NOT_LOCAL_GAME_TEST",
+  "results": [
+    {
+      "appid": 1842810,
+      "expected": "太阁立志传Ⅴ DX",
+      "source": "https://store.steampowered.com/app/1842810/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1842810&l=english&cc=us",
+      "error": "API success=false"
+    },
+    {
+      "appid": 39680,
+      "expected": "The Guild II Renaissance",
+      "source": "https://store.steampowered.com/app/39680/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=39680&l=english&cc=us",
+      "name": "The Guild II Renaissance",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: OS *: Windows® XP, Vista, 7, 10 Processor: 2 GHz Processor Memory: 512 MB RAM Graphics: DirectX 9 capable graphics adapter with Pixelshader Model 1.1 DirectX: Version 9.0c Storage: 4 GB available space Sound Card: DirectX 9.0 compatible sound card",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jul 28, 2010"
+      }
+    },
+    {
+      "appid": 311260,
+      "expected": "The Guild 3",
+      "source": "https://store.steampowered.com/app/311260/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=311260&l=english&cc=us",
+      "name": "The Guild 3",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS *: Windows 7, 8, Windows 10 (64 bit), Windows 11 (64 bit) Processor: Intel Core i3 4000 series, AMD FX 6000 series Memory: 8 GB RAM Graphics: Dedicated GPU with 4 GB (GeForce GTX 970 or Radeon RX570) DirectX: Version 11 Storage: 8 GB available space Sound Card: DirectX compatible Sound card",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 9,
+          "description": "Co-op"
+        },
+        {
+          "id": 38,
+          "description": "Online Co-op"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jun 14, 2022"
+      }
+    },
+    {
+      "appid": 612720,
+      "expected": "SAELIG",
+      "source": "https://store.steampowered.com/app/612720/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=612720&l=english&cc=us",
+      "name": "SAELIG",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows 10, 11 - 64 Bit Processor: Multi core CPU Memory: 8 GB RAM Graphics: GTX 970 or better DirectX: Version 11 Storage: 14 GB available space Additional Notes: These specs are indication only and the game may run on lower end hardware",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 55,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 56,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 57,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 58,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 18,
+          "description": "Partial Controller Support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jun 30, 2017"
+      }
+    },
+    {
+      "appid": 838350,
+      "expected": "太吾绘卷",
+      "source": "https://store.steampowered.com/app/838350/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=838350&l=english&cc=us",
+      "name": "The Scroll of Taiwu : Beyond The Dome",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows 10 64-bit Processor: Intel Core i3-6100 / AMD FX-6300 Memory: 8 GB RAM Graphics: Intel HD 530 / NVIDIA GTX 750 Ti DirectX: Version 11 Storage: 25 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 42,
+          "description": "Remote Play on Tablet"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jun 16, 2026"
+      }
+    },
+    {
+      "appid": 1948980,
+      "expected": "大侠立志传",
+      "source": "https://store.steampowered.com/app/1948980/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1948980&l=english&cc=us",
+      "name": "Hero's Adventure: Road to Passion",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: OS Windows7 64 bit Processor: intel i3-3220 or amd fx-6300 Memory: 4 GB RAM Graphics: Nvidia GT730 or equivalent Intel/AMD discrete or integrated graphics DirectX: Version 11 Storage: 2 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Nov 15, 2023"
+      }
+    },
+    {
+      "appid": 1696440,
+      "expected": "绝世好武功",
+      "source": "https://store.steampowered.com/app/1696440/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1696440&l=english&cc=us",
+      "name": "The Matchless Kungfu",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows 10 64-bit Processor: Intel(R) Core(TM) i5-8300H or equivalent Memory: 8 GB RAM Graphics: Nvidia Geforce GTX 1060 DirectX: Version 12 Storage: 5 GB available space Additional Notes: Minimum requirements may change during development.",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 51,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 55,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 57,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Nov 5, 2024"
+      }
+    },
+    {
+      "appid": 1222670,
+      "expected": "模拟人生4",
+      "source": "https://store.steampowered.com/app/1222670/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1222670&l=english&cc=us",
+      "name": "The Sims™ 4",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: 64 Bit Required. Windows 10 Processor: 3.3 GHz Intel Core i3-3220 (2 cores, 4 threads), AMD Ryzen 3 1200 3.1 GHz (4 cores) or better Memory: 4 GB RAM Graphics: 128 MB of Video RAM and support for Pixel Shader 3.0. Supported Video Cards: NVIDIA GeForce 6600 or better, ATI Radeon X1300 or better, Intel GMA X4500 or better DirectX: Version 11 Network: Broadband Internet connection Storage: 26 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 35,
+          "description": "In-App Purchases"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 69,
+          "description": "Stereo Sound"
+        },
+        {
+          "id": 70,
+          "description": "Surround Sound"
+        },
+        {
+          "id": 42,
+          "description": "Remote Play on Tablet"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jun 18, 2020"
+      }
+    },
+    {
+      "appid": 261550,
+      "expected": "骑马与砍杀Ⅱ：霸主",
+      "source": "https://store.steampowered.com/app/261550/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=261550&l=english&cc=us",
+      "name": "Mount & Blade II: Bannerlord",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS *: Windows 7 (64-bit only) Processor: Intel® Core™ i3-8100 / AMD Ryzen™ 3 1200 / Snapdragon X Elite Memory: 6 GB RAM Graphics: Intel® UHD Graphics 630 / NVIDIA® GeForce® GTX 660 2GB / AMD Radeon™ HD 7850 2GB Storage: 60 GB available space Additional Notes: Integrated GPUs require additional 2GB of system RAM.",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 18,
+          "description": "Partial Controller Support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 17,
+          "description": "Includes level editor"
+        },
+        {
+          "id": 42,
+          "description": "Remote Play on Tablet"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Oct 25, 2022"
+      }
+    },
+    {
+      "appid": 233860,
+      "expected": "Kenshi",
+      "source": "https://store.steampowered.com/app/233860/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=233860&l=english&cc=us",
+      "name": "Kenshi",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: OS:64-bit Windows Processor:Dual-core 64-bit Memory:6 GB RAM Graphics:Pixel shader 5.0 capable card DirectX®:11 Hard Drive:14GB HD space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 17,
+          "description": "Includes level editor"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Dec 6, 2018"
+      }
+    },
+    {
+      "appid": 2135150,
+      "expected": "Elin",
+      "source": "https://store.steampowered.com/app/2135150/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=2135150&l=english&cc=us",
+      "name": "Elin",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS *: windows 8 Processor: Pentium Core i-5 Memory: 8 GB RAM Graphics: Intel HD Graphics 615 DirectX: Version 10 Storage: 2 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Nov 1, 2024"
+      }
+    },
+    {
+      "appid": 1129580,
+      "expected": "Medieval Dynasty",
+      "source": "https://store.steampowered.com/app/1129580/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1129580&l=english&cc=us",
+      "name": "Medieval Dynasty",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows 10, 11 (x64) Processor: Intel Core i5 @ 3.3GHz or AMD @ 3.5GHz Memory: 8 GB RAM Graphics: DirectX 11 compatible GPU, 6GB dedicated VRAM (Intel Arc A580 / GeForce GTX 1060 / Radeon RX 580) DirectX: Version 11 Network: Broadband Internet connection Storage: 20 GB available space Additional Notes: Though not required, SSD for storage and 16 GB of memory is recommended",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 9,
+          "description": "Co-op"
+        },
+        {
+          "id": 38,
+          "description": "Online Co-op"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 67,
+          "description": "Camera Comfort"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 69,
+          "description": "Stereo Sound"
+        },
+        {
+          "id": 70,
+          "description": "Surround Sound"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Sep 23, 2021"
+      }
+    },
+    {
+      "appid": 1331550,
+      "expected": "Big Ambitions",
+      "source": "https://store.steampowered.com/app/1331550/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1331550&l=english&cc=us",
+      "name": "Big Ambitions",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows 10 Processor: Intel i5 or similar Memory: 8 GB RAM Graphics: NVIDIA Geforce GTX 960 or similar (Minimum 2GB vram) Storage: 12 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Aug 28, 2026"
+      }
+    },
+    {
+      "appid": 2161440,
+      "expected": "风帆纪元",
+      "source": "https://store.steampowered.com/app/2161440/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=2161440&l=english&cc=us",
+      "name": "Sailing Era",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS *: Windows 7(64-Bit) Processor: i5-2320 3GHZ 4 Core Memory: 4 GB RAM Graphics: GTX 750 2GB DirectX: Version 11 Storage: 15 GB available space Additional Notes: Need 64 bit system",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jan 11, 2023"
+      }
+    },
+    {
+      "appid": 1424800,
+      "expected": "大航海时代Ⅳ HD",
+      "source": "https://store.steampowered.com/app/1424800/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1424800&l=english&cc=us",
+      "error": "API success=false"
+    },
+    {
+      "appid": 1574360,
+      "expected": "大航海时代：起源",
+      "source": "https://store.steampowered.com/app/1574360/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1574360&l=english&cc=us",
+      "name": "Uncharted Waters Origin",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: OS *: 64-bit Windows 7, Windows 8.1, Windows 10 Processor: Intel Core i3 / AMD Ryzen 3 Memory: 8 GB RAM Graphics: NVIDIA GeForce GTX 460 / AMD Radeon HD 7750 Network: Broadband Internet connection Storage: 20 GB available space",
+      "categories": [
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 20,
+          "description": "MMO"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 9,
+          "description": "Co-op"
+        },
+        {
+          "id": 38,
+          "description": "Online Co-op"
+        },
+        {
+          "id": 35,
+          "description": "In-App Purchases"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Mar 5, 2023"
+      }
+    },
+    {
+      "appid": 335620,
+      "expected": "Star Traders: Frontiers",
+      "source": "https://store.steampowered.com/app/335620/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=335620&l=english&cc=us",
+      "name": "Star Traders: Frontiers",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: OS *: Windows XP, Windos Vista, or Windows 7 / 8 / 10 Processor: 1.2 Ghz Memory: 1024 MB RAM Graphics: OpenGL 2.0 or higher Storage: 250 MB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 67,
+          "description": "Camera Comfort"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 25,
+          "description": "Steam Leaderboards"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jul 31, 2018"
+      }
+    },
+    {
+      "appid": 1063790,
+      "expected": "Citizen of Rome",
+      "source": "https://store.steampowered.com/app/1063790/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1063790&l=english&cc=us",
+      "name": "Citizen of Rome - Dynasty Ascendant",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: OS: 7 Processor: SSE2 capable Intel Pentium 4 or later Memory: 512 MB RAM Graphics: Integrated Graphics Card Storage: 200 MB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 64,
+          "description": "Adjustable Text Size"
+        },
+        {
+          "id": 67,
+          "description": "Camera Comfort"
+        },
+        {
+          "id": 66,
+          "description": "Color Alternatives"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 75,
+          "description": "Keyboard Only Option"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 71,
+          "description": "Narrated Game Menus"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 77,
+          "description": "Touch Only Option"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "May 16, 2019"
+      }
+    },
+    {
+      "appid": 2288150,
+      "expected": "三国志8 REMAKE",
+      "source": "https://store.steampowered.com/app/2288150/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=2288150&l=english&cc=us",
+      "name": "ROMANCE OF THE THREE KINGDOMS 8 REMAKE",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows® 10/11 64-bit (Note: Windows®11 system requirements apply when using that OS.) Processor: Intel Core i5-4460 or higher Memory: 8 GB RAM Graphics: NVIDIA GeForce GTX 660 (2GB) or better, AMD Radeon R7 370 (2GB) or better DirectX: Version 11 Network: Broadband Internet connection Storage: 40 GB available space Sound Card: 16-bit stereo with 48KHz playback for WAV files Additional Notes: Information based on a display resolution of 1280x720, a frame rate of 30FPS, and the lowest CG quality settings.",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 69,
+          "description": "Stereo Sound"
+        },
+        {
+          "id": 70,
+          "description": "Surround Sound"
+        },
+        {
+          "id": 18,
+          "description": "Partial Controller Support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Oct 23, 2024"
+      }
+    },
+    {
+      "appid": 1158310,
+      "expected": "Crusader Kings III",
+      "source": "https://store.steampowered.com/app/1158310/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1158310&l=english&cc=us",
+      "name": "Crusader Kings III",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows® 10 Home 64 bit Processor: Intel Core i5-750 | AMD FX 4300 Memory: 8 GB RAM Graphics: NVIDIA GeForce GTX 660 | AMD Radeon HD 7870 | Intel Arc A310 | Intel Iris Plus G7 | AMD Radeon Vega 11 Storage: 20 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 64,
+          "description": "Adjustable Text Size"
+        },
+        {
+          "id": 67,
+          "description": "Camera Comfort"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 80,
+          "description": "#category_playable_at_your_own_pace"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 42,
+          "description": "Remote Play on Tablet"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Sep 1, 2020"
+      }
+    },
+    {
+      "appid": 205610,
+      "expected": "Port Royale 3",
+      "source": "https://store.steampowered.com/app/205610/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=205610&l=english&cc=us",
+      "name": "Port Royale 3",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum OS *: Windowx XP / Vista / 7 Processor: Dualcore CPU Memory: 2 GB RAM Graphics: Shader Model 2.0 PCIe (Geforce 7 Series, Radeon X2000-Series) DirectX®: dx90c Hard Drive: 3 GB HD space Other Requirements: Broadband Internet connection",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "May 4, 2012"
+      }
+    },
+    {
+      "appid": 1024650,
+      "expected": "Port Royale 4",
+      "source": "https://store.steampowered.com/app/1024650/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1024650&l=english&cc=us",
+      "name": "Port Royale 4",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS *: Windows 8.1 or Windows 10 (64bit versions) Processor: AMD or Intel, Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6 Memory: 8 GB RAM Graphics: nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0) DirectX: Version 11 Storage: 10 GB available space Sound Card: DirectX Compatible Sound Card with latest drivers",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 18,
+          "description": "Partial Controller Support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Sep 25, 2020"
+      }
+    },
+    {
+      "appid": 57620,
+      "expected": "Patrician IV",
+      "source": "https://store.steampowered.com/app/57620/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=57620&l=english&cc=us",
+      "name": "Patrician IV",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "OS *: Windows XP / Vista / 7 Processor: 2 GHz Memory: 1 GB Hard Disk Space: 5 GB Video Card: 256 MB DirectX 9.0c compatible PCIe (Geforce 6 Series/Radeon X1000 Series) Sound: DirectX compatible DirectX®: 9.0c",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Sep 17, 2010"
+      }
+    },
+    {
+      "appid": 1336980,
+      "expected": "信长之野望·新生",
+      "source": "https://store.steampowered.com/app/1336980/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1336980&l=english&cc=us",
+      "name": "NOBUNAGA'S AMBITION: Awakening",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows® 10, Windows® 11, 64bit Processor: Intel Core i3-3220 or over (Windows® 10), Intel Core i3-8350K or over (Windows® 11) Memory: 4 GB RAM Graphics: NVIDIA GeForce GTX 660 2GB or over, AMD Radeon R7 370 2GB or over DirectX: Version 11 Network: Broadband Internet connection Storage: 25 GB available space Sound Card: 16 bit stereo, 48KHz WAVE file can be played Additional Notes: 1280 x 720 Display required",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 69,
+          "description": "Stereo Sound"
+        },
+        {
+          "id": 70,
+          "description": "Surround Sound"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Jul 20, 2022"
+      }
+    },
+    {
+      "appid": 779340,
+      "expected": "Total War: THREE KINGDOMS",
+      "source": "https://store.steampowered.com/app/779340/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=779340&l=english&cc=us",
+      "name": "Total War: THREE KINGDOMS",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS *: Windows 7 64 Bit Processor: Intel Core 2 Duo 3.00Ghz Memory: 4 GB RAM Graphics: GTX 650 Ti 1GB|HD 7850 1GB|Intel UHD Graphics 620 DirectX: Version 11 Storage: 60 GB available space Additional Notes: 6GB Memory if using integrated GPU.",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 47,
+          "description": "LAN PvP"
+        },
+        {
+          "id": 9,
+          "description": "Co-op"
+        },
+        {
+          "id": 38,
+          "description": "Online Co-op"
+        },
+        {
+          "id": 48,
+          "description": "LAN Co-op"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 67,
+          "description": "Camera Comfort"
+        },
+        {
+          "id": 66,
+          "description": "Color Alternatives"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 69,
+          "description": "Stereo Sound"
+        },
+        {
+          "id": 70,
+          "description": "Surround Sound"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "May 23, 2019"
+      }
+    },
+    {
+      "appid": 3450310,
+      "expected": "Europa Universalis V",
+      "source": "https://store.steampowered.com/app/3450310/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=3450310&l=english&cc=us",
+      "name": "Europa Universalis V",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows® 10 Home 64 Bit Processor: Intel® Core™ i7-8700K | AMD® Ryzen™ 5 3600 Memory: 16 GB RAM Graphics: Nvidia® GeForce™ GTX 1060 (6GB) | AMD® Radeon™ RX 580 (8GB) | Intel® Arc™ A380 (6GB) | Intel® Arc™ 140V Storage: 20 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 9,
+          "description": "Co-op"
+        },
+        {
+          "id": 38,
+          "description": "Online Co-op"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Nov 4, 2025"
+      }
+    },
+    {
+      "appid": 281990,
+      "expected": "Stellaris",
+      "source": "https://store.steampowered.com/app/281990/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=281990&l=english&cc=us",
+      "name": "Stellaris",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: OS: Windows® 10 Home 64 Bit Processor: Intel® iCore™ i3-530 or AMD® FX-6350 Memory: 4 GB RAM Graphics: Nvidia® GeForce™ GTX 460 or AMD® ATI Radeon™ HD 5870 (1GB VRAM), or AMD® Radeon™ RX Vega 11 or Intel® HD Graphics 4600 DirectX: Version 9.0c Network: Broadband Internet connection Storage: 10 GB available space Sound Card: Direct X 9.0c- compatible sound card Additional Notes: Controller support: 3-button mouse, keyboard and speakers. Special multiplayer requirements: Internet Connection",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 27,
+          "description": "Cross-Platform Multiplayer"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "May 9, 2016"
+      }
+    },
+    {
+      "appid": 1295660,
+      "expected": "Civilization VII",
+      "source": "https://store.steampowered.com/app/1295660/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1295660&l=english&cc=us",
+      "name": "Sid Meier's Civilization VII",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Win 10 64 Bit Processor: Intel i5-4690 / Intel i3-10100 / AMD Ryzen 3 1200 Memory: 8 GB RAM Graphics: NVIDIA GTX 1050 / AMD RX 460 / Intel Arc A380 DirectX: Version 12 Storage: 20 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 47,
+          "description": "LAN PvP"
+        },
+        {
+          "id": 27,
+          "description": "Cross-Platform Multiplayer"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 30,
+          "description": "Steam Workshop"
+        },
+        {
+          "id": 64,
+          "description": "Adjustable Text Size"
+        },
+        {
+          "id": 67,
+          "description": "Camera Comfort"
+        },
+        {
+          "id": 73,
+          "description": "Chat Text-to-speech"
+        },
+        {
+          "id": 66,
+          "description": "Color Alternatives"
+        },
+        {
+          "id": 68,
+          "description": "Custom Volume Controls"
+        },
+        {
+          "id": 78,
+          "description": "Adjustable Difficulty"
+        },
+        {
+          "id": 76,
+          "description": "Mouse Only Option"
+        },
+        {
+          "id": 71,
+          "description": "Narrated Game Menus"
+        },
+        {
+          "id": 74,
+          "description": "Playable without Timed Input"
+        },
+        {
+          "id": 55,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 56,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 57,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 58,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 79,
+          "description": "Save Anytime"
+        },
+        {
+          "id": 59,
+          "description": "Steam Input API Support"
+        },
+        {
+          "id": 69,
+          "description": "Stereo Sound"
+        },
+        {
+          "id": 70,
+          "description": "Surround Sound"
+        },
+        {
+          "id": 77,
+          "description": "Touch Only Option"
+        },
+        {
+          "id": 61,
+          "description": "HDR available"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Feb 10, 2025"
+      }
+    },
+    {
+      "appid": 1466860,
+      "expected": "Age of Empires IV",
+      "source": "https://store.steampowered.com/app/1466860/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1466860&l=english&cc=us",
+      "name": "Age of Empires IV: Anniversary Edition",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: Requires a 64-bit processor and operating system OS: Windows 10 64bit | Windows 11 64bit Processor: Intel Core i5-6300U or AMD Ryzen 5 2400G | CPU with AVX support required Memory: 8 GB RAM Graphics: Intel HD 520 or AMD Radeon RX Vega 11 DirectX: Version 12 Storage: 50 GB available space",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 1,
+          "description": "Multi-player"
+        },
+        {
+          "id": 49,
+          "description": "PvP"
+        },
+        {
+          "id": 36,
+          "description": "Online PvP"
+        },
+        {
+          "id": 9,
+          "description": "Co-op"
+        },
+        {
+          "id": 38,
+          "description": "Online Co-op"
+        },
+        {
+          "id": 27,
+          "description": "Cross-Platform Multiplayer"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 57,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 58,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 59,
+          "description": "Steam Input API Support"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Oct 28, 2021"
+      }
+    },
+    {
+      "appid": 1407450,
+      "expected": "大江湖之苍龙与白鸟",
+      "source": "https://store.steampowered.com/app/1407450/",
+      "api": "https://store.steampowered.com/api/appdetails?appids=1407450&l=english&cc=us",
+      "name": "The World of Kungfu: Dragon and Eagle",
+      "type": "game",
+      "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+      },
+      "pc_minimum": "Minimum: OS *: Windows 7 / Windows 10 64 bit Processor: 2.50GHz Memory: 4 GB RAM Graphics: HD4400 DirectX: Version 11 Storage: 4 GB available space Additional Notes: 1920x1080 or resolutions of the same aspect ratio",
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 22,
+          "description": "Steam Achievements"
+        },
+        {
+          "id": 28,
+          "description": "Full controller support"
+        },
+        {
+          "id": 55,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 56,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 57,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 58,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 23,
+          "description": "Steam Cloud"
+        },
+        {
+          "id": 62,
+          "description": "Family Sharing"
+        }
+      ],
+      "release": {
+        "coming_soon": false,
+        "date": "Oct 23, 2024"
+      }
+    }
+  ]
+}

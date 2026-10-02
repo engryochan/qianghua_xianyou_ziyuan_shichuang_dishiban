@@ -1,0 +1,2312 @@
+﻿[
+  {
+    "Interpreter": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "Name": "pip",
+    "Version": "26.2.1",
+    "Library": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+    "Name": "pip",
+    "Version": "26.2.1",
+    "Library": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.12.14-windows-x86_64-none\\python.exe",
+    "Name": "pip",
+    "Version": "26.2.1",
+    "Library": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.12.14-windows-x86_64-none\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.13-windows-x86_64-none\\python.exe",
+    "Name": "pip",
+    "Version": "26.2.1",
+    "Library": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.13-windows-x86_64-none\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.13.15-windows-x86_64-none\\python.exe",
+    "Name": "pip",
+    "Version": "26.2.1",
+    "Library": "C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.13.15-windows-x86_64-none\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "alembic",
+    "Version": "1.20.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "anyio",
+    "Version": "4.15.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "arch",
+    "Version": "8.0.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "argon2-cffi",
+    "Version": "25.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "argon2-cffi-bindings",
+    "Version": "26.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "arrow",
+    "Version": "1.4.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "asttokens",
+    "Version": "3.0.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "async-lru",
+    "Version": "2.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "attrs",
+    "Version": "26.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "autograd",
+    "Version": "1.9.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "autograd-gamma",
+    "Version": "0.5.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "babel",
+    "Version": "2.18.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "backports.zstd",
+    "Version": "1.7.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "beautifulsoup4",
+    "Version": "4.15.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "bleach",
+    "Version": "6.4.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "causal-learn",
+    "Version": "0.1.4.8",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "certifi",
+    "Version": "2026.7.22",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "cffi",
+    "Version": "2.1.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "charset-normalizer",
+    "Version": "3.5.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "clarabel",
+    "Version": "0.11.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "click",
+    "Version": "8.5.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "clickhouse-connect",
+    "Version": "1.8.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "cloudpickle",
+    "Version": "3.1.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "colorama",
+    "Version": "0.4.6",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "colorlog",
+    "Version": "6.12.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "comm",
+    "Version": "0.2.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "contourpy",
+    "Version": "1.4.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "cvxpy",
+    "Version": "1.9.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "cycler",
+    "Version": "0.12.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "Cython",
+    "Version": "3.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "debugpy",
+    "Version": "1.8.22",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "defusedxml",
+    "Version": "0.7.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "dowhy",
+    "Version": "0.14",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "duckdb",
+    "Version": "1.5.5",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "econml",
+    "Version": "0.17.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "entrypoints",
+    "Version": "0.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "et_xmlfile",
+    "Version": "2.0.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "executing",
+    "Version": "2.2.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "faicons",
+    "Version": "0.2.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "fastexcel",
+    "Version": "0.21.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "fastjsonschema",
+    "Version": "2.22.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "fonttools",
+    "Version": "4.65.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "formulaic",
+    "Version": "1.2.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "fqdn",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "graphviz",
+    "Version": "0.21",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "great-tables",
+    "Version": "0.24.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "greenlet",
+    "Version": "3.5.6",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "h11",
+    "Version": "0.16.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "highspy",
+    "Version": "1.15.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "htmltools",
+    "Version": "0.7.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "httpcore",
+    "Version": "1.0.9",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "httpx",
+    "Version": "0.28.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "idna",
+    "Version": "3.20",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "ImageIO",
+    "Version": "2.37.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "importlib_metadata",
+    "Version": "9.0.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "importlib_resources",
+    "Version": "7.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "iniconfig",
+    "Version": "2.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "interface_meta",
+    "Version": "2.0.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "ipykernel",
+    "Version": "7.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "ipython",
+    "Version": "9.17.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "ipython_pygments_lexers",
+    "Version": "1.1.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "isoduration",
+    "Version": "20.11.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jedi",
+    "Version": "0.20.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "Jinja2",
+    "Version": "3.1.6",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "joblib",
+    "Version": "1.6.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "json5",
+    "Version": "0.15.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jsonpointer",
+    "Version": "3.1.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jsonschema",
+    "Version": "4.26.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jsonschema-specifications",
+    "Version": "2025.9.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter-events",
+    "Version": "0.12.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter-lsp",
+    "Version": "2.3.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter_builder",
+    "Version": "1.2.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter_client",
+    "Version": "8.10.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter_core",
+    "Version": "5.9.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter_server",
+    "Version": "2.21.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyter_server_terminals",
+    "Version": "0.5.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyterlab",
+    "Version": "4.6.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyterlab_pygments",
+    "Version": "0.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "jupyterlab_server",
+    "Version": "2.28.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "kiwisolver",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "lark",
+    "Version": "1.3.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "lazy-loader",
+    "Version": "0.5",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "lifelines",
+    "Version": "0.30.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "lightgbm",
+    "Version": "4.7.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "lime",
+    "Version": "0.2.0.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "linearmodels",
+    "Version": "7.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "llvmlite",
+    "Version": "0.49.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "lz4",
+    "Version": "4.4.5",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "Mako",
+    "Version": "1.4.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "MarkupSafe",
+    "Version": "3.0.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "matplotlib",
+    "Version": "3.11.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "matplotlib-inline",
+    "Version": "0.2.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "mistune",
+    "Version": "3.3.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "momentchi2",
+    "Version": "0.1.8",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "mpmath",
+    "Version": "1.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "multimark",
+    "Version": "0.3.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "mypy_extensions",
+    "Version": "1.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "narwhals",
+    "Version": "2.26.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "nbclient",
+    "Version": "0.11.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "nbconvert",
+    "Version": "7.17.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "nbformat",
+    "Version": "5.11.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "nest-asyncio2",
+    "Version": "1.7.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "networkx",
+    "Version": "3.6.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "nokap",
+    "Version": "0.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "notebook_shim",
+    "Version": "0.2.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "numba",
+    "Version": "0.67.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "numpy",
+    "Version": "2.5.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "openpyxl",
+    "Version": "3.1.5",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "optuna",
+    "Version": "5.0.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "osqp",
+    "Version": "1.1.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "packaging",
+    "Version": "26.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pandas",
+    "Version": "3.0.6",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pandocfilters",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "papermill",
+    "Version": "2.7.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "parso",
+    "Version": "0.8.7",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "patsy",
+    "Version": "1.0.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pillow",
+    "Version": "12.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "platformdirs",
+    "Version": "4.11.11",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "plotly",
+    "Version": "7.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pluggy",
+    "Version": "1.6.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "polars",
+    "Version": "1.44.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "polars-runtime-32",
+    "Version": "1.44.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "prometheus_client",
+    "Version": "0.26.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "prompt_toolkit",
+    "Version": "3.0.53",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "psutil",
+    "Version": "7.2.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "psycopg",
+    "Version": "3.3.6",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "psycopg-binary",
+    "Version": "3.3.6",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pure_eval",
+    "Version": "0.2.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pyarrow",
+    "Version": "25.0.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pycparser",
+    "Version": "3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pydot",
+    "Version": "4.0.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "Pygments",
+    "Version": "2.21.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pyhdfe",
+    "Version": "0.2.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "PyMySQL",
+    "Version": "1.2.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pyodbc",
+    "Version": "5.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pyparsing",
+    "Version": "3.3.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pytest",
+    "Version": "9.1.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "python-calamine",
+    "Version": "0.8.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "python-dateutil",
+    "Version": "2.9.0.post0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "python-json-logger",
+    "Version": "4.2.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pywin32",
+    "Version": "312",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pywinpty",
+    "Version": "3.0.5",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "PyYAML",
+    "Version": "6.0.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "pyzmq",
+    "Version": "27.2.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "qdldl",
+    "Version": "0.1.9.post1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "referencing",
+    "Version": "0.37.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "requests",
+    "Version": "2.34.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "rfc3339-validator",
+    "Version": "0.1.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "rfc3986-validator",
+    "Version": "0.1.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "rfc3987-syntax",
+    "Version": "1.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "rpds-py",
+    "Version": "2026.6.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "ruff",
+    "Version": "0.16.8",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "scikit-image",
+    "Version": "0.26.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "scikit-learn",
+    "Version": "1.9.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "scipy",
+    "Version": "1.18.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "scs",
+    "Version": "3.3.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "seaborn",
+    "Version": "0.13.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "Send2Trash",
+    "Version": "2.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "setuptools",
+    "Version": "84.0.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "shap",
+    "Version": "0.52.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "six",
+    "Version": "1.17.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "slicer",
+    "Version": "0.0.8",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "soupsieve",
+    "Version": "2.9.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "sparse",
+    "Version": "0.19.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "sparsediffpy",
+    "Version": "0.6.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "SQLAlchemy",
+    "Version": "2.0.54",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "stack-data",
+    "Version": "0.6.3",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "statsmodels",
+    "Version": "0.15.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "sympy",
+    "Version": "1.14.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "tenacity",
+    "Version": "9.1.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "terminado",
+    "Version": "0.18.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "threadpoolctl",
+    "Version": "3.7.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "tifffile",
+    "Version": "2026.9.15",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "tinycss2",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "tornado",
+    "Version": "6.5.10",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "tqdm",
+    "Version": "4.70.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "traitlets",
+    "Version": "5.16.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "typing_extensions",
+    "Version": "4.16.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "tzdata",
+    "Version": "2026.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "uri-template",
+    "Version": "1.3.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "urllib3",
+    "Version": "2.8.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "wcwidth",
+    "Version": "0.8.4",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "webcolors",
+    "Version": "25.10.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "webencodings",
+    "Version": "0.6.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "websocket-client",
+    "Version": "1.9.2",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "websockets",
+    "Version": "17.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "wrapt",
+    "Version": "2.4.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "xgboost",
+    "Version": "3.4.1",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "xlsxwriter",
+    "Version": "3.2.9",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Name": "zipp",
+    "Version": "4.1.0",
+    "Library": "C:\\work\\envs\\ds\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "alembic",
+    "Version": "1.20.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "anyio",
+    "Version": "4.15.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "arch",
+    "Version": "8.0.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "argon2-cffi",
+    "Version": "25.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "argon2-cffi-bindings",
+    "Version": "26.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "arrow",
+    "Version": "1.4.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "asttokens",
+    "Version": "3.0.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "async-lru",
+    "Version": "2.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "attrs",
+    "Version": "26.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "autograd",
+    "Version": "1.9.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "autograd-gamma",
+    "Version": "0.5.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "babel",
+    "Version": "2.18.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "backports.zstd",
+    "Version": "1.7.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "beautifulsoup4",
+    "Version": "4.15.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "bleach",
+    "Version": "6.4.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "causal-learn",
+    "Version": "0.1.4.8",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "certifi",
+    "Version": "2026.7.22",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "cffi",
+    "Version": "2.1.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "charset-normalizer",
+    "Version": "3.5.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "clarabel",
+    "Version": "0.11.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "click",
+    "Version": "8.5.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "clickhouse-connect",
+    "Version": "1.8.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "cloudpickle",
+    "Version": "3.1.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "colorama",
+    "Version": "0.4.6",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "colorlog",
+    "Version": "6.12.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "comm",
+    "Version": "0.2.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "contourpy",
+    "Version": "1.4.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "cvxpy",
+    "Version": "1.9.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "cycler",
+    "Version": "0.12.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "Cython",
+    "Version": "3.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "debugpy",
+    "Version": "1.8.22",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "defusedxml",
+    "Version": "0.7.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "dowhy",
+    "Version": "0.14",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "duckdb",
+    "Version": "1.5.5",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "econml",
+    "Version": "0.17.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "entrypoints",
+    "Version": "0.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "et_xmlfile",
+    "Version": "2.0.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "executing",
+    "Version": "2.2.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "faicons",
+    "Version": "0.2.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "fastexcel",
+    "Version": "0.21.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "fastjsonschema",
+    "Version": "2.22.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "fonttools",
+    "Version": "4.65.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "formulaic",
+    "Version": "1.2.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "fqdn",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "graphviz",
+    "Version": "0.21",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "great-tables",
+    "Version": "0.24.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "greenlet",
+    "Version": "3.5.6",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "h11",
+    "Version": "0.16.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "highspy",
+    "Version": "1.15.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "htmltools",
+    "Version": "0.7.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "httpcore",
+    "Version": "1.0.9",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "httpx",
+    "Version": "0.28.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "idna",
+    "Version": "3.20",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "ImageIO",
+    "Version": "2.37.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "importlib_metadata",
+    "Version": "9.0.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "importlib_resources",
+    "Version": "7.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "iniconfig",
+    "Version": "2.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "interface_meta",
+    "Version": "2.0.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "ipykernel",
+    "Version": "7.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "ipython",
+    "Version": "9.17.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "ipython_pygments_lexers",
+    "Version": "1.1.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "isoduration",
+    "Version": "20.11.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jedi",
+    "Version": "0.20.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "Jinja2",
+    "Version": "3.1.6",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "joblib",
+    "Version": "1.6.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "json5",
+    "Version": "0.15.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jsonpointer",
+    "Version": "3.1.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jsonschema",
+    "Version": "4.26.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jsonschema-specifications",
+    "Version": "2025.9.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter-events",
+    "Version": "0.12.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter-lsp",
+    "Version": "2.3.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter_builder",
+    "Version": "1.2.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter_client",
+    "Version": "8.10.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter_core",
+    "Version": "5.9.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter_server",
+    "Version": "2.21.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyter_server_terminals",
+    "Version": "0.5.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyterlab",
+    "Version": "4.6.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyterlab_pygments",
+    "Version": "0.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "jupyterlab_server",
+    "Version": "2.28.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "kiwisolver",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "lark",
+    "Version": "1.3.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "lazy-loader",
+    "Version": "0.5",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "lifelines",
+    "Version": "0.30.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "lightgbm",
+    "Version": "4.7.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "lime",
+    "Version": "0.2.0.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "linearmodels",
+    "Version": "7.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "llvmlite",
+    "Version": "0.49.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "lz4",
+    "Version": "4.4.5",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "Mako",
+    "Version": "1.4.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "MarkupSafe",
+    "Version": "3.0.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "matplotlib",
+    "Version": "3.11.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "matplotlib-inline",
+    "Version": "0.2.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "mistune",
+    "Version": "3.3.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "momentchi2",
+    "Version": "0.1.8",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "mpmath",
+    "Version": "1.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "multimark",
+    "Version": "0.3.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "mypy_extensions",
+    "Version": "1.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "narwhals",
+    "Version": "2.26.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "nbclient",
+    "Version": "0.11.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "nbconvert",
+    "Version": "7.17.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "nbformat",
+    "Version": "5.11.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "nest-asyncio2",
+    "Version": "1.7.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "networkx",
+    "Version": "3.6.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "nokap",
+    "Version": "0.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "notebook_shim",
+    "Version": "0.2.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "numba",
+    "Version": "0.67.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "numpy",
+    "Version": "2.5.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "openpyxl",
+    "Version": "3.1.5",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "optuna",
+    "Version": "5.0.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "osqp",
+    "Version": "1.1.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "packaging",
+    "Version": "26.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pandas",
+    "Version": "3.0.6",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pandocfilters",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "papermill",
+    "Version": "2.7.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "parso",
+    "Version": "0.8.7",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "patsy",
+    "Version": "1.0.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pillow",
+    "Version": "12.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "platformdirs",
+    "Version": "4.11.11",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "plotly",
+    "Version": "7.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pluggy",
+    "Version": "1.6.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "polars",
+    "Version": "1.44.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "polars-runtime-32",
+    "Version": "1.44.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "prometheus_client",
+    "Version": "0.26.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "prompt_toolkit",
+    "Version": "3.0.53",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "psutil",
+    "Version": "7.2.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "psycopg",
+    "Version": "3.3.6",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "psycopg-binary",
+    "Version": "3.3.6",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pure_eval",
+    "Version": "0.2.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pyarrow",
+    "Version": "25.0.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pycparser",
+    "Version": "3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pydot",
+    "Version": "4.0.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "Pygments",
+    "Version": "2.21.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pyhdfe",
+    "Version": "0.2.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "PyMySQL",
+    "Version": "1.2.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pyodbc",
+    "Version": "5.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pyparsing",
+    "Version": "3.3.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pytest",
+    "Version": "9.1.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "python-calamine",
+    "Version": "0.8.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "python-dateutil",
+    "Version": "2.9.0.post0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "python-json-logger",
+    "Version": "4.2.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pywin32",
+    "Version": "312",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pywinpty",
+    "Version": "3.0.5",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "PyYAML",
+    "Version": "6.0.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "pyzmq",
+    "Version": "27.2.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "qdldl",
+    "Version": "0.1.9.post1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "referencing",
+    "Version": "0.37.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "requests",
+    "Version": "2.34.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "rfc3339-validator",
+    "Version": "0.1.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "rfc3986-validator",
+    "Version": "0.1.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "rfc3987-syntax",
+    "Version": "1.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "rpds-py",
+    "Version": "2026.6.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "ruff",
+    "Version": "0.16.8",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "scikit-image",
+    "Version": "0.26.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "scikit-learn",
+    "Version": "1.9.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "scipy",
+    "Version": "1.18.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "scs",
+    "Version": "3.3.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "seaborn",
+    "Version": "0.13.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "Send2Trash",
+    "Version": "2.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "setuptools",
+    "Version": "84.0.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "shap",
+    "Version": "0.52.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "six",
+    "Version": "1.17.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "slicer",
+    "Version": "0.0.8",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "soupsieve",
+    "Version": "2.9.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "sparse",
+    "Version": "0.19.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "sparsediffpy",
+    "Version": "0.6.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "SQLAlchemy",
+    "Version": "2.0.54",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "stack-data",
+    "Version": "0.6.3",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "statsmodels",
+    "Version": "0.15.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "sympy",
+    "Version": "1.14.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "tenacity",
+    "Version": "9.1.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "terminado",
+    "Version": "0.18.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "threadpoolctl",
+    "Version": "3.7.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "tifffile",
+    "Version": "2026.9.15",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "tinycss2",
+    "Version": "1.5.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "tornado",
+    "Version": "6.5.10",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "tqdm",
+    "Version": "4.70.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "traitlets",
+    "Version": "5.16.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "typing_extensions",
+    "Version": "4.16.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "tzdata",
+    "Version": "2026.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "uri-template",
+    "Version": "1.3.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "urllib3",
+    "Version": "2.8.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "wcwidth",
+    "Version": "0.8.4",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "webcolors",
+    "Version": "25.10.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "webencodings",
+    "Version": "0.6.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "websocket-client",
+    "Version": "1.9.2",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "websockets",
+    "Version": "17.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "wrapt",
+    "Version": "2.4.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "xgboost",
+    "Version": "3.4.1",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "xlsxwriter",
+    "Version": "3.2.9",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  },
+  {
+    "Interpreter": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Name": "zipp",
+    "Version": "4.1.0",
+    "Library": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages"
+  }
+]

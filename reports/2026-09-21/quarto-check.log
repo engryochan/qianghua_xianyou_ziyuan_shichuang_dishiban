@@ -1,0 +1,37 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+
+processing file: check.qmd
+1/9                  
+2/9 [setup]          
+3/9                  
+4/9 [unnamed-chunk-1]
+5/9                  
+6/9 [unnamed-chunk-2]
+7/9                  
+8/9 [unnamed-chunk-3]
+9/9                  
+output file: check.knit.md
+
+pandoc 
+  to: html
+  output-file: check.html
+  standalone: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: R + Python 混用範本
+  
+Output created: check.html
+

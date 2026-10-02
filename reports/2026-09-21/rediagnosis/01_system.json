@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Caption": "Microsoft Windows 11 Pro",
+    "EditionID": "Professional",
+    "DisplayVersion": "25H2",
+    "Build": "26200.9457",
+    "BuildNumber": "26200",
+    "Architecture": "64-bit",
+    "ProductType": 1,
+    "RAM_GB": 31.82,
+    "FreeRAM_GB": 11.95,
+    "UptimeDays": 0.18,
+    "LastBoot": "2026-09-21T09:19:54.5+04:00",
+    "AutomaticManagedPagefile": false,
+    "Manufacturer": "ASUS",
+    "Model": "System Product Name",
+    "HypervisorPresent": false,
+    "PartOfDomain": false
+  }
+]

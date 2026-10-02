@@ -1,0 +1,11 @@
+Using Python 3.13.15 environment at: C:\work\envs\ds
+WARN Fixing invalid version specifier by removing trailing comma (before: `>=3.6,`; after: `>=3.6`)
+Resolved 6 packages in 440ms
+Would download 6 packages
+Would install 6 packages
+ + et-xmlfile==2.0.0
+ + fastexcel==0.21.0
+ + openpyxl==3.1.5
+ + python-calamine==0.8.2
+ + pywin32==312
+ + xlsxwriter==3.2.9

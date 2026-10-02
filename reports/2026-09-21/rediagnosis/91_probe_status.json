@@ -1,0 +1,410 @@
+﻿[
+  {
+    "Probe": "01_system",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.06
+  },
+  {
+    "Probe": "02_cpu",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 4.0
+  },
+  {
+    "Probe": "03_memory",
+    "Status": "OK",
+    "Detail": "已讀取 2 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.03
+  },
+  {
+    "Probe": "04_gpu",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.85
+  },
+  {
+    "Probe": "05_bios",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.68
+  },
+  {
+    "Probe": "06_volumes",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.69
+  },
+  {
+    "Probe": "07_disks",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 5.15
+  },
+  {
+    "Probe": "08_pagefile",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.82
+  },
+  {
+    "Probe": "09_updates",
+    "Status": "OK",
+    "Detail": "已讀取 4 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.66
+  },
+  {
+    "Probe": "10_reboot",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.73
+  },
+  {
+    "Probe": "11_software",
+    "Status": "OK",
+    "Detail": "已讀取 86 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.75
+  },
+  {
+    "Probe": "12_appx_current_user",
+    "Status": "OK",
+    "Detail": "已讀取 156 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.06
+  },
+  {
+    "Probe": "13_startup",
+    "Status": "OK",
+    "Detail": "已讀取 7 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.89
+  },
+  {
+    "Probe": "14_services",
+    "Status": "OK",
+    "Detail": "已讀取 301 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 4.29
+  },
+  {
+    "Probe": "15_scheduled_tasks",
+    "Status": "OK",
+    "Detail": "已讀取 201 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.58
+  },
+  {
+    "Probe": "16_defender",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.7
+  },
+  {
+    "Probe": "17_antivirus",
+    "Status": "OK",
+    "Detail": "已讀取 2 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.2
+  },
+  {
+    "Probe": "18_firewall",
+    "Status": "OK",
+    "Detail": "已讀取 3 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 4.33
+  },
+  {
+    "Probe": "19_secure_boot",
+    "Status": "Unavailable",
+    "Detail": "无法设置正确的权限。访问被拒绝。",
+    "Seconds": 2.95
+  },
+  {
+    "Probe": "20_tpm",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.65
+  },
+  {
+    "Probe": "21_tpm_specification",
+    "Status": "Unavailable",
+    "Detail": "拒绝访问 ",
+    "Seconds": 7.76
+  },
+  {
+    "Probe": "22_bitlocker",
+    "Status": "Unavailable",
+    "Detail": "拒绝访问 ",
+    "Seconds": 8.34
+  },
+  {
+    "Probe": "23_security_settings",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.67
+  },
+  {
+    "Probe": "24_device_guard",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.75
+  },
+  {
+    "Probe": "25_optional_features",
+    "Status": "Unavailable",
+    "Detail": "The requested operation requires elevation.\r\n",
+    "Seconds": 2.85
+  },
+  {
+    "Probe": "26_smb",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.65
+  },
+  {
+    "Probe": "27_settings",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.68
+  },
+  {
+    "Probe": "28_execution_policy",
+    "Status": "OK",
+    "Detail": "已讀取 5 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.69
+  },
+  {
+    "Probe": "29_odbc",
+    "Status": "OK",
+    "Detail": "已讀取 22 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 3.21
+  },
+  {
+    "Probe": "30_windows_licensing",
+    "Status": "OK",
+    "Detail": "已讀取 1 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 10.79
+  },
+  {
+    "Probe": "31_editor_extensions",
+    "Status": "OK",
+    "Detail": "已讀取 15 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.82
+  },
+  {
+    "Probe": "32_events",
+    "Status": "OK",
+    "Detail": "已讀取 3 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.76
+  },
+  {
+    "Probe": "33_power_plan",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.11
+  },
+  {
+    "Probe": "34_registered_interpreters",
+    "Status": "OK",
+    "Detail": "已讀取 3 筆；空清單只代表此探測沒有回傳項目。",
+    "Seconds": 2.76
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.05
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.05
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.04
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.04
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.05
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.06
+  },
+  {
+    "Probe": "Runtime/Python",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.07
+  },
+  {
+    "Probe": "Runtime/Rscript",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.23
+  },
+  {
+    "Probe": "Runtime/Rscript",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.23
+  },
+  {
+    "Probe": "Runtime/uv",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.15
+  },
+  {
+    "Probe": "Runtime/Git",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.07
+  },
+  {
+    "Probe": "Runtime/Git",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.43
+  },
+  {
+    "Probe": "Runtime/Quarto",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.08
+  },
+  {
+    "Probe": "Runtime/Quarto",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 2.74
+  },
+  {
+    "Probe": "Runtime/Pandoc",
+    "Status": "Unavailable",
+    "Detail": "限定的安裝位置未發現；可能是可攜版或另一使用者安裝。",
+    "Seconds": 0.0
+  },
+  {
+    "Probe": "Runtime/PowerShell7",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.21
+  },
+  {
+    "Probe": "Runtime/PowerShell7",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.36
+  },
+  {
+    "Probe": "Runtime/Node",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.4
+  },
+  {
+    "Probe": "Runtime/Java",
+    "Status": "Unavailable",
+    "Detail": "限定的安裝位置未發現；可能是可攜版或另一使用者安裝。",
+    "Seconds": 0.0
+  },
+  {
+    "Probe": "Runtime/DuckDB",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.55
+  },
+  {
+    "Probe": "Runtime/PostgreSQL",
+    "Status": "Unavailable",
+    "Detail": "限定的安裝位置未發現；可能是可攜版或另一使用者安裝。",
+    "Seconds": 0.0
+  },
+  {
+    "Probe": "Runtime/Docker",
+    "Status": "Unavailable",
+    "Detail": "限定的安裝位置未發現；可能是可攜版或另一使用者安裝。",
+    "Seconds": 0.0
+  },
+  {
+    "Probe": "Runtime/Julia",
+    "Status": "Unavailable",
+    "Detail": "限定的安裝位置未發現；可能是可攜版或另一使用者安裝。",
+    "Seconds": 0.0
+  },
+  {
+    "Probe": "Runtime/Winget",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 2.53
+  },
+  {
+    "Probe": "Runtime/RtoolsCompiler",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.24
+  },
+  {
+    "Probe": "PythonPackages/C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.26
+  },
+  {
+    "Probe": "PythonPackages/C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.43
+  },
+  {
+    "Probe": "PythonPackages/C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.12.14-windows-x86_64-none\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.33
+  },
+  {
+    "Probe": "PythonPackages/C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.13-windows-x86_64-none\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.24
+  },
+  {
+    "Probe": "PythonPackages/C:\\Users\\PPCCpcpc\\AppData\\Roaming\\uv\\python\\cpython-3.13.15-windows-x86_64-none\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.18
+  },
+  {
+    "Probe": "PythonPackages/C:\\work\\envs\\ds\\Scripts\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.41
+  },
+  {
+    "Probe": "PythonPackages/C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 0.41
+  },
+  {
+    "Probe": "RPackages/C:\\Program Files\\R\\R-4.6.1\\bin\\x64\\Rscript.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 3.48
+  },
+  {
+    "Probe": "RPackages/C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe",
+    "Status": "OK",
+    "Detail": "ExitCode=0",
+    "Seconds": 2.39
+  }
+]

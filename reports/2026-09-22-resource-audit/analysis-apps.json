@@ -1,0 +1,117 @@
+[
+  {
+    "DisplayName": "微软OfficePLUS",
+    "DisplayVersion": "4.2.0.7275",
+    "InstallLocation": "C:\\Program Files\\Microsoft OfficePLUS"
+  },
+  {
+    "DisplayName": "Microsoft Office 专业增强版 2016  - zh-cn",
+    "DisplayVersion": "16.0.19127.20800",
+    "InstallLocation": "C:\\Program Files (x86)\\Microsoft Office"
+  },
+  {
+    "DisplayName": "PyCharm 2026.2.3",
+    "DisplayVersion": "262.10968.92",
+    "InstallLocation": "C:\\Program Files\\JetBrains\\PyCharm 2026.2.2"
+  },
+  {
+    "DisplayName": "R for Windows 4.6.1",
+    "DisplayVersion": "4.6.1",
+    "InstallLocation": "C:\\Program Files\\R\\R-4.6.1\\"
+  },
+  {
+    "DisplayName": "RStudio",
+    "DisplayVersion": "2026.09.0+174",
+    "InstallLocation": "C:\\Program Files\\RStudio"
+  },
+  {
+    "DisplayName": "Python 3.14.7 Development Libraries (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 Standard Library (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 Tcl/Tk Support (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 pip Bootstrap (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Quarto",
+    "DisplayVersion": "1.10.18",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 Core Interpreter (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 Test Suite (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Licensing Component",
+    "DisplayVersion": "16.0.19127.20800",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Extensibility Component 64-bit Registration",
+    "DisplayVersion": "16.0.19127.20800",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 Documentation (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python 3.14.7 Executables (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "WPS Office 2019 增强版 (11.8.2.12330)",
+    "DisplayVersion": "11.8.2.12330",
+    "InstallLocation": null
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Extensibility Component",
+    "DisplayVersion": "16.0.19127.20800",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Localization Component",
+    "DisplayVersion": "16.0.19127.20800",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "Python Launcher",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": ""
+  },
+  {
+    "DisplayName": "DuckDB CLI",
+    "DisplayVersion": "1.5.5",
+    "InstallLocation": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\WinGet\\Packages\\DuckDB.cli_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  },
+  {
+    "DisplayName": "Positron (User)",
+    "DisplayVersion": "2026.09.1",
+    "InstallLocation": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Positron\\"
+  },
+  {
+    "DisplayName": "Python 3.14.7 (64-bit)",
+    "DisplayVersion": "3.14.7150.0",
+    "InstallLocation": null
+  }
+]

@@ -1,0 +1,19 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+Attaching package: 'data.table'
+
+The following object is masked from 'package:base':
+
+    %notin%
+
+duckdb is storing downloaded extensions and secrets under ~/.duckdb:
+i C:\Users\PPCCpcpc/.duckdb
+This persists across sessions and is shared with the DuckDB CLI and other clients.
+i Run duckdb(shared_home = FALSE) to use a temporary directory instead.
+i See ?duckdb_storage for details and alternatives.
+[1] 1e+05
+{"status":"passed","package_count":348,"xgboost_accuracy":0.9886,"checks":["10-key-packages","data.table","R-duckdb-parquet","R-xgboost","reticulate-pyarrow"]} 

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Acceptance_Test.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 320
+  },
+  {
+    "name": "Analytics_Model_Check.py",
+    "comment_insertions_only": true,
+    "new_comments": 60
+  },
+  {
+    "name": "Analytics_R_Check.R",
+    "comment_insertions_only": true,
+    "new_comments": 31
+  },
+  {
+    "name": "Analyze_LargeFile.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 95
+  },
+  {
+    "name": "Configure_IDEs.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 186
+  },
+  {
+    "name": "DataStack_R_Bootstrap.R",
+    "comment_insertions_only": true,
+    "new_comments": 61
+  },
+  {
+    "name": "DataStack_Smoke.py",
+    "comment_insertions_only": true,
+    "new_comments": 75
+  },
+  {
+    "name": "Driver_Report.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 124
+  },
+  {
+    "name": "Install_R_Packages.R",
+    "comment_insertions_only": true,
+    "new_comments": 99
+  },
+  {
+    "name": "Install_Verified_Drivers.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 77
+  },
+  {
+    "name": "Plan_Compatible_Drivers.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 39
+  },
+  {
+    "name": "Repair_Analytics.py",
+    "comment_insertions_only": true,
+    "new_comments": 56
+  },
+  {
+    "name": "Run_AsAdmin.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 127
+  },
+  {
+    "name": "Setup_DataStack.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 448
+  },
+  {
+    "name": "Setup_DataStack_v2.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 230
+  },
+  {
+    "name": "Start_Analytics.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 38
+  },
+  {
+    "name": "Update_Approved_Apps.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 19
+  },
+  {
+    "name": "Win10_Diagnose.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 531
+  },
+  {
+    "name": "Win10_Diagnose_v2.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 648
+  },
+  {
+    "name": "Win10_Diagnose_v3.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 353
+  },
+  {
+    "name": "Win10_Optimize.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 248
+  },
+  {
+    "name": "Win10_Optimize_v2.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 153
+  },
+  {
+    "name": "Win11_App_RealTest.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 287
+  },
+  {
+    "name": "Windows_Update_Scan.ps1",
+    "comment_insertions_only": true,
+    "new_comments": 13
+  }
+]

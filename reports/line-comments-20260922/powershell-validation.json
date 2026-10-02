@@ -1,0 +1,110 @@
+[
+  {
+    "Name": "Acceptance_Test.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Analyze_LargeFile.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Configure_IDEs.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Driver_Report.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Install_Verified_Drivers.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Plan_Compatible_Drivers.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Run_AsAdmin.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Setup_DataStack_v2.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Setup_DataStack.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Start_Analytics.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Update_Approved_Apps.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Win10_Diagnose_v2.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Win10_Diagnose_v3.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Win10_Diagnose.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Win10_Optimize_v2.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Win10_Optimize.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Win11_App_RealTest.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  },
+  {
+    "Name": "Windows_Update_Scan.ps1",
+    "ParseErrors": 0,
+    "SameTokens": true,
+    "SameAstTypes": true
+  }
+]

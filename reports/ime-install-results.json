@@ -1,0 +1,23 @@
+﻿[
+    {
+        "Name":  "Language.Basic~~~zh-TW~0.0.1.0",
+        "Before":  "Installed",
+        "After":  "Installed",
+        "RestartNeeded":  null,
+        "Error":  null
+    },
+    {
+        "Name":  "Language.Fonts.Hant~~~und-HANT~0.0.1.0",
+        "Before":  "Installed",
+        "After":  "Installed",
+        "RestartNeeded":  null,
+        "Error":  null
+    },
+    {
+        "Name":  "Language.Handwriting~~~ja-JP~0.0.1.0",
+        "Before":  "Installed",
+        "After":  "Installed",
+        "RestartNeeded":  null,
+        "Error":  null
+    }
+]

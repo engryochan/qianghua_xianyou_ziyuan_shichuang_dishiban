@@ -1,0 +1,267 @@
+{
+  "captured_at_tbilisi": "20261002-151241",
+  "phase": "CURRENT_BASELINE_AFTER_INSTALL_ATTEMPT_NOT_PROVEN_BEFORE_FIRST_LAUNCH",
+  "steam_root": "C:\\Program Files (x86)\\Steam",
+  "game_root": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX",
+  "total_entries": 9041,
+  "game_files": 1331,
+  "game_logical_bytes": 7374028339,
+  "source_candidates": [],
+  "pe_headers": [
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\steam_api.dll",
+      "valid_pe": true,
+      "machine": "0x14c",
+      "pe_magic": "0x10b",
+      "clr_directory_present": false,
+      "note": "No CLR directory does not prove language, encryption, DRM or source availability"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\steam_api64.dll",
+      "valid_pe": true,
+      "machine": "0x8664",
+      "pe_magic": "0x20b",
+      "clr_directory_present": false,
+      "note": "No CLR directory does not prove language, encryption, DRM or source availability"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DX.exe",
+      "valid_pe": true,
+      "machine": "0x8664",
+      "pe_magic": "0x20b",
+      "clr_directory_present": false,
+      "note": "No CLR directory does not prove language, encryption, DRM or source availability"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe",
+      "valid_pe": true,
+      "machine": "0x14c",
+      "pe_magic": "0x10b",
+      "clr_directory_present": false,
+      "note": "No CLR directory does not prove language, encryption, DRM or source availability"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Evcon\\steam_api.dll",
+      "valid_pe": true,
+      "machine": "0x14c",
+      "pe_magic": "0x10b",
+      "clr_directory_present": false,
+      "note": "No CLR directory does not prove language, encryption, DRM or source availability"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Evcon\\Taiko5DXEvcon.exe",
+      "valid_pe": true,
+      "machine": "0x14c",
+      "pe_magic": "0x10b",
+      "clr_directory_present": false,
+      "note": "No CLR directory does not prove language, encryption, DRM or source availability"
+    }
+  ],
+  "settings": [
+    {
+      "scope": "game-user-data",
+      "state": "ABSENT",
+      "path": "C:\\Users\\PPCCpcpc\\Documents\\KoeiTecmo\\Taiko5DX"
+    },
+    {
+      "file": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_1842810.acf",
+      "line": 22,
+      "key": "AutoUpdateBehavior",
+      "value": "0"
+    },
+    {
+      "file": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_1842810.acf",
+      "line": 23,
+      "key": "AllowOtherDownloadsWhileRunning",
+      "value": "0"
+    },
+    {
+      "file": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_1842810.acf",
+      "line": 24,
+      "key": "ScheduledAutoUpdate",
+      "value": "0"
+    },
+    {
+      "file": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_228980.acf",
+      "line": 16,
+      "key": "AutoUpdateBehavior",
+      "value": "0"
+    },
+    {
+      "file": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_228980.acf",
+      "line": 17,
+      "key": "AllowOtherDownloadsWhileRunning",
+      "value": "0"
+    },
+    {
+      "file": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_228980.acf",
+      "line": 18,
+      "key": "ScheduledAutoUpdate",
+      "value": "0"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "Language",
+      "type": 1,
+      "value": "schinese"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "SteamExe",
+      "type": 1,
+      "value": "c:/program files (x86)/steam/steam.exe"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "SteamPath",
+      "type": 1,
+      "value": "c:/program files (x86)/steam"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "SuppressAutoRun",
+      "type": 4,
+      "value": "0"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "Restart",
+      "type": 4,
+      "value": "0"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "StartupModeTmpIsValid",
+      "type": 4,
+      "value": "0"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "RunningAppID",
+      "type": 4,
+      "value": "1842810"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "CompletedOOBEStage1",
+      "type": 4,
+      "value": "1"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "SourceModInstallPath",
+      "type": 1,
+      "value": "C:\\Program Files (x86)\\Steam\\steamapps\\sourcemods"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "Rate",
+      "type": 1,
+      "value": "30000"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "hive": "HKCU",
+      "key": "AlreadyRetriedOfflineMode",
+      "type": 4,
+      "value": "0"
+    },
+    {
+      "registry": "Software\\Valve\\Steam",
+      "subkeys": [
+        "ActiveProcess",
+        "Apps"
+      ]
+    },
+    {
+      "registry": "SOFTWARE\\WOW6432Node\\Valve\\Steam\\Apps\\CommonRedist",
+      "subkeys": [
+        "DirectX"
+      ]
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "Type",
+      "type": 4,
+      "value": "16"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "Start",
+      "type": 4,
+      "value": "3"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "ErrorControl",
+      "type": 4,
+      "value": "1"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "ImagePath",
+      "type": 2,
+      "value": "\"C:\\Program Files (x86)\\Common Files\\Steam\\steamservice.exe\" /RunAsService"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "DisplayName",
+      "type": 1,
+      "value": "Steam Client Service"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "WOW64",
+      "type": 4,
+      "value": "332"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "ObjectName",
+      "type": 1,
+      "value": "LocalSystem"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "hive": "HKLM",
+      "key": "Description",
+      "type": 1,
+      "value": "Steam Client Service monitors and updates Steam content"
+    },
+    {
+      "registry": "SYSTEM\\CurrentControlSet\\Services\\Steam Client Service",
+      "subkeys": [
+        "Security"
+      ]
+    }
+  ],
+  "errors": [
+    "registry Software\\KoeiTecmo\\Taiko5DX: [WinError 2] 系统找不到指定的文件。"
+  ],
+  "limits": [
+    "Live non-atomic snapshot",
+    "All accessible filesystem entries under Steam; no reparse traversal",
+    "Steam binaries not unpacked or decompiled",
+    "No encrypted/DRM classification from entropy",
+    "Settings whitelist only; credentials not exported",
+    "Remote server/account settings and inaccessible files not enumerated",
+    "File sizes are logical, not unique physical disk allocation"
+  ]
+}

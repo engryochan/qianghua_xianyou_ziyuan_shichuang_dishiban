@@ -1,0 +1,7 @@
+Get-PnpDevice: C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\诊断电脑模板\Diag-KeyboardSource.ps1:32
+Line |
+  32 |  … evices' = { Get-PnpDevice -PresentOnly -Class Keyboard,HIDClass -Erro …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | 拒绝访问 
+
+

@@ -1,0 +1,6 @@
+{
+  "CheckedAt": "2026-09-22T08:14:00.5482553+04:00",
+  "VersionComparisonIssues": [],
+  "Count": 0,
+  "Scope": "Devices present in both snapshots; missing IDs separately recorded in driver-changes.json"
+}

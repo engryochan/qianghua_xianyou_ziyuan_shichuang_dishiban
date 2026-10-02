@@ -1,0 +1,3036 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Selected.Microsoft.Management.Infrastructure.CimInstance</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">AdobeARMservice</S>
+      <S N="DisplayName">Adobe Acrobat Update Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="1">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ADPSvc</S>
+      <S N="DisplayName">聚合数据平台服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonation -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="2">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ALG</S>
+      <S N="DisplayName">Application Layer Gateway Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\alg.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="3">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AppIDSvc</S>
+      <S N="DisplayName">Application Identity</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Appinfo</S>
+      <S N="DisplayName">Application Information</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="5">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AppMgmt</S>
+      <S N="DisplayName">Application Management</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="6">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AppReadiness</S>
+      <S N="DisplayName">App Readiness</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k AppReadiness -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="7">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AppVClient</S>
+      <S N="DisplayName">Microsoft App-V Client</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\system32\AppVClient.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AppXSvc</S>
+      <S N="DisplayName">AppX Deployment Service (AppXSVC)</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k wsappx -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="9">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ApxSvc</S>
+      <S N="DisplayName">Windows 虚拟音频设备代理服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ArmouryCrateService</S>
+      <S N="DisplayName">Armoury Crate Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\ASUS\Armoury Crate Service\ArmouryCrate.Service.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="11">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AssignedAccessManagerSvc</S>
+      <S N="DisplayName">AssignedAccessManager 服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k AssignedAccessManagerSvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="12">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">asus</S>
+      <S N="DisplayName">ASUS 更新服务 (asus)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\ASUS\Update\AsusUpdate.exe" /svc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="13">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AsusCertService</S>
+      <S N="DisplayName">ASUS Certificate Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\ASUS\AsusCertService\1.4.4\AsusCertService.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="14">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">asusm</S>
+      <S N="DisplayName">ASUS 更新服务 (asusm)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\ASUS\Update\AsusUpdate.exe" /medsvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="15">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AsusUpdateCheck</S>
+      <S N="DisplayName">AsusUpdateCheck</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\AsusUpdateCheck.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="16">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AudioEndpointBuilder</S>
+      <S N="DisplayName">Windows Audio Endpoint Builder</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="17">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Audiosrv</S>
+      <S N="DisplayName">Windows Audio</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="18">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">autotimesvc</S>
+      <S N="DisplayName">手机网络时间</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k autoTimeSvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="19">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AVP.KES.14.1</S>
+      <S N="DisplayName">Kaspersky Endpoint Security 服务 (KES.14.1)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Kaspersky Lab\KES.14.1.0\avp.exe" -r</S>
+    </MS>
+  </Obj>
+  <Obj RefId="20">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">avpsus.KES.14.1</S>
+      <S N="DisplayName">Kaspersky Seamless Update Service (KES.14.1)</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Kaspersky Lab\KES.14.1.0\avpsus.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="21">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AxInstSV</S>
+      <S N="DisplayName">ActiveX Installer (AxInstSV)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k AxInstSVGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="22">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BDESVC</S>
+      <S N="DisplayName">BitLocker Drive Encryption Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="23">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BITS</S>
+      <S N="DisplayName">Background Intelligent Transfer Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="24">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BrokerInfrastructure</S>
+      <S N="DisplayName">Background Tasks Infrastructure Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="25">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BTAGService</S>
+      <S N="DisplayName">蓝牙音频网关服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted</S>
+    </MS>
+  </Obj>
+  <Obj RefId="26">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BthAvctpSvc</S>
+      <S N="DisplayName">AVCTP 服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="27">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">bthserv</S>
+      <S N="DisplayName">蓝牙支持服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="28">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">camsvc</S>
+      <S N="DisplayName">功能访问管理器服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k osprivacy -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="29">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CDPSvc</S>
+      <S N="DisplayName">连接设备平台服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="30">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CertPropSvc</S>
+      <S N="DisplayName">Certificate Propagation</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs</S>
+    </MS>
+  </Obj>
+  <Obj RefId="31">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ClickToRunSvc</S>
+      <S N="DisplayName">‪Microsoft Office ClickToRun Service‬</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe" /service</S>
+    </MS>
+  </Obj>
+  <Obj RefId="32">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ClipSVC</S>
+      <S N="DisplayName">Client License Service (ClipSVC)</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k wsappx -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="33">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">cloudidsvc</S>
+      <S N="DisplayName">Microsoft 云标识服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k CloudIdServiceGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="34">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CodexSandboxService.OpenAI.Codex</S>
+      <S N="DisplayName">ChatGPT</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\WindowsApps\OpenAI.Codex_26.915.4065.0_x005F_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-service.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="35">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CommonService</S>
+      <S N="DisplayName">Service for common users</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\Program Files\EsafeNet\Cobra DocGuard Client\CommonService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="36">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">COMSysApp</S>
+      <S N="DisplayName">COM+ System Application</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\dllhost.exe /Processid:{02D4B3F1-FD88-11D1-960D-00805FC79235}</S>
+    </MS>
+  </Obj>
+  <Obj RefId="37">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CoreMessagingRegistrar</S>
+      <S N="DisplayName">CoreMessaging</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="38">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CoworkVMService</S>
+      <S N="DisplayName">Claude</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\WindowsApps\Claude_2.2553.1.0_x005F_x64__pzs8sxrjxfjjc\app\resources\cowork-svc.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="39">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CryptSvc</S>
+      <S N="DisplayName">Cryptographic Services</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="40">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CscService</S>
+      <S N="DisplayName">Offline Files</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="41">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DcomLaunch</S>
+      <S N="DisplayName">DCOM Server Process Launcher</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="42">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">dcsvc</S>
+      <S N="DisplayName">已声明的配置(DC)服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="43">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">defragsvc</S>
+      <S N="DisplayName">Optimize drives</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k defragsvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="44">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DeviceAssociationService</S>
+      <S N="DisplayName">Device Association Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="45">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DeviceInstall</S>
+      <S N="DisplayName">Device Install Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="46">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DevQueryBroker</S>
+      <S N="DisplayName">DevQuery Background Discovery Broker</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="47">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Dhcp</S>
+      <S N="DisplayName">DHCP Client</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="48">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">diagsvc</S>
+      <S N="DisplayName">Diagnostic Execution Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k diagnostics</S>
+    </MS>
+  </Obj>
+  <Obj RefId="49">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DiagTrack</S>
+      <S N="DisplayName">Connected User Experiences and Telemetry</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k utcsvc -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="50">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DialogBlockingService</S>
+      <S N="DisplayName">DialogBlockingService</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DialogBlockingService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="51">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DispBrokerDesktopSvc</S>
+      <S N="DisplayName">显示策略服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="52">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DisplayEnhancementService</S>
+      <S N="DisplayName">显示增强服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="53">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DmEnrollmentSvc</S>
+      <S N="DisplayName">设备管理注册服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="54">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">dmwappushservice</S>
+      <S N="DisplayName">设备管理无线应用程序协议 (WAP) 推送消息路由服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="55">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Dnscache</S>
+      <S N="DisplayName">DNS Client</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="56">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DoSvc</S>
+      <S N="DisplayName">Delivery Optimization</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="57">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">dot3svc</S>
+      <S N="DisplayName">Wired AutoConfig</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="58">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DPS</S>
+      <S N="DisplayName">Diagnostic Policy Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNoNetwork -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="59">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DsmSvc</S>
+      <S N="DisplayName">Device Setup Manager</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="60">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DsSvc</S>
+      <S N="DisplayName">Data Sharing Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="61">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DusmSvc</S>
+      <S N="DisplayName">数据使用量</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p -s DusmSvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="62">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">EapHost</S>
+      <S N="DisplayName">Extensible Authentication Protocol</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="63">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">edgeupdate</S>
+      <S N="DisplayName">Microsoft Edge 更新 服务 (edgeupdate)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /svc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="64">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">edgeupdatem</S>
+      <S N="DisplayName">Microsoft Edge 更新 服务 (edgeupdatem)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /medsvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="65">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">EFS</S>
+      <S N="DisplayName">Encrypting File System (EFS)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\lsass.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="66">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">embeddedmode</S>
+      <S N="DisplayName">嵌入模式</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="67">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">EntAppSvc</S>
+      <S N="DisplayName">Enterprise App Management Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k appmodelRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="68">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">EventLog</S>
+      <S N="DisplayName">Windows Event Log</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="69">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">EventSystem</S>
+      <S N="DisplayName">COM+ Event System</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="70">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Fax</S>
+      <S N="DisplayName">Fax</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\fxssvc.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="71">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">fdPHost</S>
+      <S N="DisplayName">Function Discovery Provider Host</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="72">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">FDResPub</S>
+      <S N="DisplayName">Function Discovery Resource Publication</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonation -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="73">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">fhsvc</S>
+      <S N="DisplayName">File History Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="74">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">FileSyncHelper</S>
+      <S N="DisplayName">FileSyncHelper</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files\Microsoft OneDrive\26.163.0823.0004\FileSyncHelper.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="75">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">FlashCenterSvc</S>
+      <S N="DisplayName">FlashCenterSvc</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\FlashCenter\FlashCenterSvc.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="76">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">FontCache</S>
+      <S N="DisplayName">Windows Font Cache Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="77">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">FrameServer</S>
+      <S N="DisplayName">Windows Camera Frame Server</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k Camera</S>
+    </MS>
+  </Obj>
+  <Obj RefId="78">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">FrameServerMonitor</S>
+      <S N="DisplayName">Windows Camera Frame Server Monitor</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k CameraMonitor</S>
+    </MS>
+  </Obj>
+  <Obj RefId="79">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">GameInputSvc</S>
+      <S N="DisplayName">GameInput Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\GameInputSvc.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="80">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">GoogleChromeElevationService</S>
+      <S N="DisplayName">Google Chrome Elevation Service (GoogleChromeElevationService)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files\Google\Chrome\Application\153.0.8010.53\elevation_service.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="81">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">GoogleUpdaterInternalService152.0.7933.0</S>
+      <S N="DisplayName">Google 更新程序内部服务 (GoogleUpdaterInternalService152.0.7933.0)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Google\GoogleUpdater\152.0.7933.0\updater.exe" --system --windows-service --service=update-internal</S>
+    </MS>
+  </Obj>
+  <Obj RefId="82">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">GoogleUpdaterService152.0.7933.0</S>
+      <S N="DisplayName">Google 更新程序服务 (GoogleUpdaterService152.0.7933.0)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Google\GoogleUpdater\152.0.7933.0\updater.exe" --system --windows-service --service=update</S>
+    </MS>
+  </Obj>
+  <Obj RefId="83">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">gpsvc</S>
+      <S N="DisplayName">Group Policy Client</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k GPSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="84">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">GraphicsPerfSvc</S>
+      <S N="DisplayName">GraphicsPerfSvc</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k GraphicsPerfSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="85">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">hidserv</S>
+      <S N="DisplayName">Human Interface Device Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="86">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">hpatchmon</S>
+      <S N="DisplayName">Hotpatch Monitoring Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="87">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">HvHost</S>
+      <S N="DisplayName">HV 主机服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="88">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">icssvc</S>
+      <S N="DisplayName">Windows 移动热点服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="89">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">IKEEXT</S>
+      <S N="DisplayName">IKE and AuthIP IPsec Keying Modules</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="90">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">InstallService</S>
+      <S N="DisplayName">Microsoft Store 安装服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="91">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Intel(R) Platform License Manager Service</S>
+      <S N="DisplayName">Intel(R) Platform License Manager Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\DriverStore\FileRepository\iclsclient.inf_amd64_fc84dfa25a6a7727\lib\PlatformLicenseManagerService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="92">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">IntelGraphicsSoftwareService</S>
+      <S N="DisplayName">Intel® Graphics Software</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\WindowsApps\AppUp.IntelArcSoftware_26.32.2604.0_x005F_x64__8j3eq9eme6ctt\VFS\ProgramFilesX64\Intel\Intel Graphics Software\IntelGraphicsSoftware.Service.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="93">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">InventorySvc</S>
+      <S N="DisplayName">清单和兼容性评估服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k InvSvcGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="94">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">iphlpsvc</S>
+      <S N="DisplayName">IP Helper</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetSvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="95">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">IpxlatCfgSvc</S>
+      <S N="DisplayName">IP 转换配置服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="96">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">IsoEnvBroker</S>
+      <S N="DisplayName">隔离环境代理</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k IsoEnvBroker -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="97">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">IsolationSession</S>
+      <S N="DisplayName">IsolationSession</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k IsolationSession -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="98">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">jhi_service</S>
+      <S N="DisplayName">Intel(R) Dynamic Application Loader Host Interface Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\DriverStore\FileRepository\dal.inf_amd64_b45f13a105037dbe\jhi_service.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="99">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">KeyIso</S>
+      <S N="DisplayName">CNG Key Isolation</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\lsass.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="100">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">klnagent</S>
+      <S N="DisplayName">Kaspersky Security Center 网络代理</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe" </S>
+    </MS>
+  </Obj>
+  <Obj RefId="101">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">klpsm</S>
+      <S N="DisplayName">klpsm</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Kaspersky Lab\KES.14.1.0\klpsm.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="102">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ksnproxy</S>
+      <S N="DisplayName">卡巴斯基安全网络代理服务器</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\ksnproxy.exe" </S>
+    </MS>
+  </Obj>
+  <Obj RefId="103">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">KtmRm</S>
+      <S N="DisplayName">KtmRm for Distributed Transaction Coordinator</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkServiceAndNoImpersonation -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="104">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LanmanServer</S>
+      <S N="DisplayName">Server</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="105">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LanmanWorkstation</S>
+      <S N="DisplayName">Workstation</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="106">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LeaderTerm</S>
+      <S N="DisplayName">LeaderTerm</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\Inetpub\ftproot\Tipray\LdTerm\LdTermDaemon.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="107">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LeaderTermDaemon</S>
+      <S N="DisplayName">LeaderTermDaemon</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\Inetpub\ftproot\Tipray\LdTerm\LdTermDaemon.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="108">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">lfsvc</S>
+      <S N="DisplayName">Geolocation Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcsRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="109">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LicenseManager</S>
+      <S N="DisplayName">Windows 许可证管理器服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="110">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LightingService</S>
+      <S N="DisplayName">ASUS AURA SYNC lighting service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files (x86)\LightingService\LightingService.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="111">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">lltdsvc</S>
+      <S N="DisplayName">Link-Layer Topology Discovery Mapper</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="112">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">lmhosts</S>
+      <S N="DisplayName">TCP/IP NetBIOS Helper</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="113">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LocalKdc</S>
+      <S N="DisplayName">Kerberos 本地密钥发行中心</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\lsass.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="114">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LSM</S>
+      <S N="DisplayName">LSM</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Unknown</S>
+      <Nil N="PathName" />
+    </MS>
+  </Obj>
+  <Obj RefId="115">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">LxpSvc</S>
+      <S N="DisplayName">语言体验服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs</S>
+    </MS>
+  </Obj>
+  <Obj RefId="116">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MapsBroker</S>
+      <S N="DisplayName">Downloaded Maps Manager</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="117">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">McmSvc</S>
+      <S N="DisplayName">移动连接管理服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k McmSvc -p -s McmSvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="118">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">McpManagementService</S>
+      <S N="DisplayName">McpManagementService</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k McpManagementServiceGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="119">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MDCoreSvc</S>
+      <S N="DisplayName">Microsoft Defender Core 服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.4-0\MpDefenderCoreService.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="120">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MicrosoftEdgeElevationService</S>
+      <S N="DisplayName">Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Microsoft\Edge\Application\153.0.4234.48\elevation_service.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="121">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">midisrv</S>
+      <S N="DisplayName">Windows MIDI 服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\midisrv.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="122">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MozillaMaintenance</S>
+      <S N="DisplayName">Mozilla Maintenance Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Mozilla Maintenance Service\maintenanceservice.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="123">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">mpssvc</S>
+      <S N="DisplayName">Windows Defender Firewall</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="124">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MSDTC</S>
+      <S N="DisplayName">Distributed Transaction Coordinator</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\msdtc.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="125">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MSiSCSI</S>
+      <S N="DisplayName">Microsoft iSCSI Initiator Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="126">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">msiserver</S>
+      <S N="DisplayName">Windows Installer</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\msiexec.exe /V</S>
+    </MS>
+  </Obj>
+  <Obj RefId="127">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MsKeyboardFilter</S>
+      <S N="DisplayName">Microsoft 键盘筛选器</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="128">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NaturalAuthentication</S>
+      <S N="DisplayName">自然身份验证</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="129">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NcaSvc</S>
+      <S N="DisplayName">Network Connectivity Assistant</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetSvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="130">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NcbService</S>
+      <S N="DisplayName">Network Connection Broker</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="131">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NcdAutoSetup</S>
+      <S N="DisplayName">Network Connected Devices Auto-Setup</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNoNetwork -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="132">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Netlogon</S>
+      <S N="DisplayName">Netlogon</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\lsass.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="133">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Netman</S>
+      <S N="DisplayName">Network Connections</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="134">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">netprofm</S>
+      <S N="DisplayName">Network List Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netprofm -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="135">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NetSetupSvc</S>
+      <S N="DisplayName">NetSetupSvc</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Unknown</S>
+      <Nil N="PathName" />
+    </MS>
+  </Obj>
+  <Obj RefId="136">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NetTcpPortSharing</S>
+      <S N="DisplayName">Net.Tcp Port Sharing Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="137">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NgcCtnrSvc</S>
+      <S N="DisplayName">Microsoft Passport Container</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="138">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NgcSvc</S>
+      <S N="DisplayName">Microsoft Passport</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="139">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NlaSvc</S>
+      <S N="DisplayName">网络位置感知</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netprofm -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="140">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">nsi</S>
+      <S N="DisplayName">Network Store Interface Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="141">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NVDisplay.ContainerLocalSystem</S>
+      <S N="DisplayName">NVIDIA Display Container LS</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\NVIDIA Corporation\Display.NvContainer\NVDisplay.Container.exe" -s NVDisplay.ContainerLocalSystem -f "C:\ProgramData\NVIDIA\NVDisplay.ContainerLocalSystem.log" -l 3 -d "C:\Program Files\NVIDIA Corporation\Display.NvContainer\plugins\LocalSystem" -r -p 30000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="142">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">OfficePLUS Service</S>
+      <S N="DisplayName">OfficePLUS Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\Program Files\Microsoft OfficePLUS\4.2.0.7275\addin\MSOfficePLUSService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="143">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">OneDrive Updater Service</S>
+      <S N="DisplayName">OneDrive Updater Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files\Microsoft OneDrive\26.163.0823.0004\OneDriveUpdaterService.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="144">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ose</S>
+      <S N="DisplayName">Office  Source Engine</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Common Files\Microsoft Shared\Source Engine\OSE.EXE"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="145">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PcaSvc</S>
+      <S N="DisplayName">Program Compatibility Assistant Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="146">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PeerDistSvc</S>
+      <S N="DisplayName">BranchCache</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k PeerDist</S>
+    </MS>
+  </Obj>
+  <Obj RefId="147">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">perceptionsimulation</S>
+      <S N="DisplayName">Windows 感知模拟服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\PerceptionSimulation\PerceptionSimulationService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="148">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PerfHost</S>
+      <S N="DisplayName">Performance Counter DLL Host</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\SysWow64\perfhost.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="149">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PhoneSvc</S>
+      <S N="DisplayName">Phone Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="150">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">pla</S>
+      <S N="DisplayName">Performance Logs &amp; Alerts</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNoNetwork -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="151">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PlugPlay</S>
+      <S N="DisplayName">Plug and Play</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="152">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PolicyAgent</S>
+      <S N="DisplayName">IPsec Policy Agent</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k NetworkServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="153">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Power</S>
+      <S N="DisplayName">Power</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="154">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PrintDeviceConfigurationService</S>
+      <S N="DisplayName">打印设备配置服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="155">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PrintNotify</S>
+      <S N="DisplayName">Printer Extensions and Notifications</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k print</S>
+    </MS>
+  </Obj>
+  <Obj RefId="156">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PrintScanBrokerService</S>
+      <S N="DisplayName">PrintScanBrokerService</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k PrintScanBrokerService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="157">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ProfSvc</S>
+      <S N="DisplayName">User Profile Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UserProfileService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="158">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PushToInstall</S>
+      <S N="DisplayName">Windows PushToInstall 服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="159">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">QWAVE</S>
+      <S N="DisplayName">Quality Windows Audio Video Experience</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonation -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="160">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RasAuto</S>
+      <S N="DisplayName">Remote Access Auto Connection Manager</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="161">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RasMan</S>
+      <S N="DisplayName">Remote Access Connection Manager</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs</S>
+    </MS>
+  </Obj>
+  <Obj RefId="162">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">refsdedupsvc</S>
+      <S N="DisplayName">ReFS 重复数据删除服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\ReFsDedupSvc.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="163">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RemoteAccess</S>
+      <S N="DisplayName">Routing and Remote Access</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs</S>
+    </MS>
+  </Obj>
+  <Obj RefId="164">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RemoteRegistry</S>
+      <S N="DisplayName">Remote Registry</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k localService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="165">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RetailDemo</S>
+      <S N="DisplayName">零售演示服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k rdxgroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="166">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RmSvc</S>
+      <S N="DisplayName">无线电管理服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted</S>
+    </MS>
+  </Obj>
+  <Obj RefId="167">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ROG Live Service</S>
+      <S N="DisplayName">ROG Live Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\Program Files\ASUS\ROG Live Service\ROGLiveService.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="168">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RpcEptMapper</S>
+      <S N="DisplayName">RPC Endpoint Mapper</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k RPCSS -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="169">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RpcLocator</S>
+      <S N="DisplayName">Remote Procedure Call (RPC) Locator</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\locator.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="170">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RpcSs</S>
+      <S N="DisplayName">Remote Procedure Call (RPC)</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k rpcss -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="171">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">RstMwService</S>
+      <S N="DisplayName">Intel(R) Storage Middleware Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\DriverStore\FileRepository\iastorvd.inf_amd64_f28d27d12c1c64c5\RstMwService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="172">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SamSs</S>
+      <S N="DisplayName">Security Accounts Manager</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\lsass.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="173">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SCardSvr</S>
+      <S N="DisplayName">Smart Card</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonation</S>
+    </MS>
+  </Obj>
+  <Obj RefId="174">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ScDeviceEnum</S>
+      <S N="DisplayName">Smart Card Device Enumeration Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted</S>
+    </MS>
+  </Obj>
+  <Obj RefId="175">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Schedule</S>
+      <S N="DisplayName">Task Scheduler</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="176">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SCPolicySvc</S>
+      <S N="DisplayName">Smart Card Removal Policy</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs</S>
+    </MS>
+  </Obj>
+  <Obj RefId="177">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SDRSVC</S>
+      <S N="DisplayName">Windows 备份</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k SDRSVC</S>
+    </MS>
+  </Obj>
+  <Obj RefId="178">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">seclogon</S>
+      <S N="DisplayName">Secondary Logon</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="179">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SecurityHealthService</S>
+      <S N="DisplayName">Windows 安全中心服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\SecurityHealthService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="180">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SEMgrSvc</S>
+      <S N="DisplayName">付款和 NFC/SE 管理器</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="181">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SENS</S>
+      <S N="DisplayName">System Event Notification Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcsRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="182">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Sense</S>
+      <S N="DisplayName">Windows Defender Advanced Threat Protection Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="183">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SensorDataService</S>
+      <S N="DisplayName">Sensor Data Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\SensorDataService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="184">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SensorService</S>
+      <S N="DisplayName">Sensor Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="185">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SensrSvc</S>
+      <S N="DisplayName">Sensor Monitoring Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonation -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="186">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SessionEnv</S>
+      <S N="DisplayName">Remote Desktop Configuration</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="187">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SharedAccess</S>
+      <S N="DisplayName">Internet Connection Sharing (ICS)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="188">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ShellHWDetection</S>
+      <S N="DisplayName">Shell Hardware Detection</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="189">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">shpamsvc</S>
+      <S N="DisplayName">Shared PC Account Manager</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcsRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="190">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">smphost</S>
+      <S N="DisplayName">Microsoft Storage Spaces SMP</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k smphost</S>
+    </MS>
+  </Obj>
+  <Obj RefId="191">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SmsRouter</S>
+      <S N="DisplayName">Microsoft Windows SMS 路由器服务。</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="192">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SNMPTrap</S>
+      <S N="DisplayName">SNMP 陷阱</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\snmptrap.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="193">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Spooler</S>
+      <S N="DisplayName">Print Spooler</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\spoolsv.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="194">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">sppsvc</S>
+      <S N="DisplayName">Software Protection</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\sppsvc.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="195">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SSDPSRV</S>
+      <S N="DisplayName">SSDP Discovery</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonationRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="196">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ssh-agent</S>
+      <S N="DisplayName">OpenSSH Authentication Agent</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\System32\OpenSSH\ssh-agent.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="197">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SstpSvc</S>
+      <S N="DisplayName">Secure Socket Tunneling Protocol Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="198">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">StateRepository</S>
+      <S N="DisplayName">State Repository Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k appmodel -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="199">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">StiSvc</S>
+      <S N="DisplayName">Windows Image Acquisition (WIA)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k imgsvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="200">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">StorSvc</S>
+      <S N="DisplayName">Storage Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="201">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">svsvc</S>
+      <S N="DisplayName">Spot Verifier</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="202">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">swprv</S>
+      <S N="DisplayName">Microsoft Software Shadow Copy Provider</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k swprv</S>
+    </MS>
+  </Obj>
+  <Obj RefId="203">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SysMain</S>
+      <S N="DisplayName">SysMain</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="204">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">SystemEventsBroker</S>
+      <S N="DisplayName">System Events Broker</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="205">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TapiSrv</S>
+      <S N="DisplayName">Telephony</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="206">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TermService</S>
+      <S N="DisplayName">Remote Desktop Services</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="207">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TextInputManagementService</S>
+      <S N="DisplayName">Text Input Management Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="208">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Themes</S>
+      <S N="DisplayName">Themes</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="209">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TieringEngineService</S>
+      <S N="DisplayName">Storage Tiers Management</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\TieringEngineService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="210">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TimeBrokerSvc</S>
+      <S N="DisplayName">Time Broker</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="211">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TokenBroker</S>
+      <S N="DisplayName">Web 账户管理器</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="212">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TrkWks</S>
+      <S N="DisplayName">Distributed Link Tracking Client</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="213">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TroubleshootingSvc</S>
+      <S N="DisplayName">建议疑难解答服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="214">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">TrustedInstaller</S>
+      <S N="DisplayName">Windows Modules Installer</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\servicing\TrustedInstaller.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="215">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">tzautoupdate</S>
+      <S N="DisplayName">自动时区更新程序</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="216">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UevAgentService</S>
+      <S N="DisplayName">User Experience Virtualization Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Disabled</S>
+      <S N="PathName">C:\WINDOWS\system32\AgentService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="217">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UmRdpService</S>
+      <S N="DisplayName">Remote Desktop Services UserMode Port Redirector</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="218">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">upnphost</S>
+      <S N="DisplayName">UPnP Device Host</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonationRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="219">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UserManager</S>
+      <S N="DisplayName">User Manager</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="220">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UsoSvc</S>
+      <S N="DisplayName">更新 Orchestrator 服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="221">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">VaultSvc</S>
+      <S N="DisplayName">Credential Manager</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\lsass.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="222">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vds</S>
+      <S N="DisplayName">Virtual Disk</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\vds.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="223">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmicguestinterface</S>
+      <S N="DisplayName">Hyper-V Guest Service Interface</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestrictedRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="224">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmicheartbeat</S>
+      <S N="DisplayName">Hyper-V Heartbeat Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k ICService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="225">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmickvpexchange</S>
+      <S N="DisplayName">Hyper-V Data Exchange Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestrictedRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="226">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmicrdv</S>
+      <S N="DisplayName">Hyper-V 远程桌面虚拟化服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k ICService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="227">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmicshutdown</S>
+      <S N="DisplayName">Hyper-V Guest Shutdown Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestrictedRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="228">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmictimesync</S>
+      <S N="DisplayName">Hyper-V Time Synchronization Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="229">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmicvmsession</S>
+      <S N="DisplayName">Hyper-V PowerShell Direct Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestrictedRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="230">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">vmicvss</S>
+      <S N="DisplayName">Hyper-V 卷影复制请求程序</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestrictedRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="231">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">VSS</S>
+      <S N="DisplayName">Volume Shadow Copy</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\vssvc.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="232">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">W32Time</S>
+      <S N="DisplayName">Windows Time</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="233">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WaaSMedicSvc</S>
+      <S N="DisplayName">WaaSMedicSvc</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k wusvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="234">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WalletService</S>
+      <S N="DisplayName">WalletService</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k appmodel -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="235">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WarpJITSvc</S>
+      <S N="DisplayName">Warp JIT Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted</S>
+    </MS>
+  </Obj>
+  <Obj RefId="236">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wbengine</S>
+      <S N="DisplayName">Block Level Backup Engine Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\WINDOWS\system32\wbengine.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="237">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WbioSrvc</S>
+      <S N="DisplayName">Windows Biometric Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k WbioSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="238">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Wcmsvc</S>
+      <S N="DisplayName">Windows Connection Manager</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s Wcmsvc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="239">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wcncsvc</S>
+      <S N="DisplayName">Windows Connect Now - Config Registrar</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceAndNoImpersonation -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="240">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WdiServiceHost</S>
+      <S N="DisplayName">Diagnostic Service Host</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="241">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WdiSystemHost</S>
+      <S N="DisplayName">Diagnostic System Host</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="242">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WdNisSvc</S>
+      <S N="DisplayName">Microsoft Defender 防病毒网络检查服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.4-0\NisSrv.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="243">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WebClient</S>
+      <S N="DisplayName">WebClient</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="244">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">webthreatdefsvc</S>
+      <S N="DisplayName">Web 威胁防御服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k WebThreatDefense -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="245">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Wecsvc</S>
+      <S N="DisplayName">Windows Event Collector</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="246">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WEPHOSTSVC</S>
+      <S N="DisplayName">Windows Encryption Provider Host Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k WepHostSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="247">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wercplsupport</S>
+      <S N="DisplayName">Problem Reports Control Panel Support</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="248">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WerSvc</S>
+      <S N="DisplayName">Windows Error Reporting Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k WerSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="249">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WFDSConMgrSvc</S>
+      <S N="DisplayName">WLAN Direct 服务连接管理器服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="250">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">whesvc</S>
+      <S N="DisplayName">Windows 健康状况和优化体验</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k whesvc -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="251">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WiaRpc</S>
+      <S N="DisplayName">Still Image Acquisition Events</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="252">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WinDefend</S>
+      <S N="DisplayName">Microsoft Defender 防病毒服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.4-0\MsMpEng.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="253">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WinHttpAutoProxySvc</S>
+      <S N="DisplayName">WinHTTP Web Proxy Auto-Discovery Service</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceHttp -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="254">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">Winmgmt</S>
+      <S N="DisplayName">Windows Management Instrumentation</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="255">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WinRM</S>
+      <S N="DisplayName">Windows Remote Management (WS-Management)</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k NetworkService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="256">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wisvc</S>
+      <S N="DisplayName">Windows 预览体验成员服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="257">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WlanSvc</S>
+      <S N="DisplayName">WLAN AutoConfig</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="258">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wlidsvc</S>
+      <S N="DisplayName">Microsoft Account Sign-in Assistant</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="259">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wlpasvc</S>
+      <S N="DisplayName">本地配置文件助手服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="260">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WManSvc</S>
+      <S N="DisplayName">Windows 管理服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="261">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wmiApSrv</S>
+      <S N="DisplayName">WMI Performance Adapter</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\wbem\WmiApSrv.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="262">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WMIRegistrationService</S>
+      <S N="DisplayName">Intel(R) Management Engine WMI Provider Registration</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\DriverStore\FileRepository\mewmiprov.inf_amd64_47b9a82f73e9dad8\WMIRegistrationService.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="263">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WMPNetworkSvc</S>
+      <S N="DisplayName">Windows Media Player Network Sharing Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files\Windows Media Player\wmpnetwk.exe"</S>
+    </MS>
+  </Obj>
+  <Obj RefId="264">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">workfolderssvc</S>
+      <S N="DisplayName">Work Folders</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="265">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WpcMonSvc</S>
+      <S N="DisplayName">家长控制</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="266">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WPDBusEnum</S>
+      <S N="DisplayName">Portable Device Enumerator Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted</S>
+    </MS>
+  </Obj>
+  <Obj RefId="267">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WpnService</S>
+      <S N="DisplayName">Windows 推送通知系统服务</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="268">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wpscloudsvr</S>
+      <S N="DisplayName">WPS Office Cloud Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">"C:\Program Files (x86)\Kingsoft\office6\wpscloudsvr.exe" LocalService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="269">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WSAIFabricSvc</S>
+      <S N="DisplayName">Windows AI 组件主机</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k WSAIFabricSvcGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="270">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wscsvc</S>
+      <S N="DisplayName">安全中心</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="271">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WSearch</S>
+      <S N="DisplayName">Windows Search</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\SearchIndexer.exe /Embedding</S>
+    </MS>
+  </Obj>
+  <Obj RefId="272">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wuauserv</S>
+      <S N="DisplayName">Windows 更新</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="273">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">wuqisvc</S>
+      <S N="DisplayName">Microsoft 使用情况和质量见解</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k WuqiSvcGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="274">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WwanSvc</S>
+      <S N="DisplayName">WWAN AutoConfig</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestrictedRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="275">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">XblAuthManager</S>
+      <S N="DisplayName">Xbox Live 身份验证管理器</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcsRedirectionGuard -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="276">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">XblGameSave</S>
+      <S N="DisplayName">Xbox Live 游戏保存</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="277">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">XboxGipSvc</S>
+      <S N="DisplayName">Xbox Accessory Management Service</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="278">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">XboxNetApiSvc</S>
+      <S N="DisplayName">Xbox Live 网络服务</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k netsvcs -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="279">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">AarSvc_77090</S>
+      <S N="DisplayName">AarSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k AarSvcGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="280">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BcastDVRUserService_77090</S>
+      <S N="DisplayName">BcastDVRUserService_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k BcastDVRUserService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="281">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">BluetoothUserService_77090</S>
+      <S N="DisplayName">BluetoothUserService_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k BthAppGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="282">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CaptureService_77090</S>
+      <S N="DisplayName">CaptureService_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="283">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">cbdhsvc_77090</S>
+      <S N="DisplayName">cbdhsvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k ClipboardSvcGroup -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="284">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CDPUserSvc_77090</S>
+      <S N="DisplayName">CDPUserSvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="285">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CloudBackupRestoreSvc_77090</S>
+      <S N="DisplayName">CloudBackupRestoreSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="286">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">ConsentUxUserSvc_77090</S>
+      <S N="DisplayName">ConsentUxUserSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DevicesFlow</S>
+    </MS>
+  </Obj>
+  <Obj RefId="287">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">CredentialEnrollmentManagerUserSvc_77090</S>
+      <S N="DisplayName">CredentialEnrollmentManagerUserSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\CredentialEnrollmentManager.exe</S>
+    </MS>
+  </Obj>
+  <Obj RefId="288">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DeviceAssociationBrokerSvc_77090</S>
+      <S N="DisplayName">DeviceAssociationBrokerSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DevicesFlow -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="289">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DevicePickerUserSvc_77090</S>
+      <S N="DisplayName">DevicePickerUserSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DevicesFlow</S>
+    </MS>
+  </Obj>
+  <Obj RefId="290">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">DevicesFlowUserSvc_77090</S>
+      <S N="DisplayName">DevicesFlowUserSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k DevicesFlow</S>
+    </MS>
+  </Obj>
+  <Obj RefId="291">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">MessagingService_77090</S>
+      <S N="DisplayName">MessagingService_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="292">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">NPSMSvc_77090</S>
+      <S N="DisplayName">NPSMSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="293">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">OneSyncSvc_77090</S>
+      <S N="DisplayName">OneSyncSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="294">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">P9RdrService_77090</S>
+      <S N="DisplayName">P9RdrService_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k P9RdrService -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="295">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PenService_77090</S>
+      <S N="DisplayName">PenService_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k PenService</S>
+    </MS>
+  </Obj>
+  <Obj RefId="296">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PimIndexMaintenanceSvc_77090</S>
+      <S N="DisplayName">PimIndexMaintenanceSvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="297">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">PrintWorkflowUserSvc_77090</S>
+      <S N="DisplayName">PrintWorkflowUserSvc_77090</S>
+      <S N="State">Stopped</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k PrintWorkflow</S>
+    </MS>
+  </Obj>
+  <Obj RefId="298">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UdkUserSvc_77090</S>
+      <S N="DisplayName">UdkUserSvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UdkSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="299">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UnistoreSvc_77090</S>
+      <S N="DisplayName">UnistoreSvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\System32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="300">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">UserDataSvc_77090</S>
+      <S N="DisplayName">UserDataSvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Manual</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="301">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">webthreatdefusersvc_77090</S>
+      <S N="DisplayName">webthreatdefusersvc_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p</S>
+    </MS>
+  </Obj>
+  <Obj RefId="302">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="Name">WpnUserService_77090</S>
+      <S N="DisplayName">WpnUserService_77090</S>
+      <S N="State">Running</S>
+      <S N="StartMode">Auto</S>
+      <S N="PathName">C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup</S>
+    </MS>
+  </Obj>
+</Objs>

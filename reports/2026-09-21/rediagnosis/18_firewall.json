@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Name": "Domain",
+    "Enabled": "True",
+    "DefaultInboundAction": 0,
+    "DefaultOutboundAction": 0
+  },
+  {
+    "Name": "Private",
+    "Enabled": "True",
+    "DefaultInboundAction": 0,
+    "DefaultOutboundAction": 0
+  },
+  {
+    "Name": "Public",
+    "Enabled": "True",
+    "DefaultInboundAction": 0,
+    "DefaultOutboundAction": 0
+  }
+]

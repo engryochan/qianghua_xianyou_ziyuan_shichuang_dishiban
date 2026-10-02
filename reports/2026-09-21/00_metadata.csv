@@ -1,0 +1,2 @@
+"SchemaVersion","CollectedAt","PowerShell","IsAdministrator","Mode","ProbeTimeoutSeconds","MaxInterpreters","Scope"
+"3.0","2026-09-21T08:11:19.3886281+04:00","7.6.5","False","OfflineReadOnly","35","8","Machine software + current user; no other user hives, recursive disk scan, network update check, secrets or command arguments"

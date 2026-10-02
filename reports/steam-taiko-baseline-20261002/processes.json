@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "steam.exe",
+    "ProcessId": 120984,
+    "ParentProcessId": 119488,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\steam.exe",
+    "CreationDate": "2026-10-02T12:56:19.648054+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 117312,
+    "ParentProcessId": 120984,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T12:56:23.318985+04:00"
+  },
+  {
+    "Name": "steamservice.exe",
+    "ProcessId": 120204,
+    "ParentProcessId": 1360,
+    "ExecutablePath": null,
+    "CreationDate": "2026-10-02T12:56:24.105514+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 122912,
+    "ParentProcessId": 117312,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T12:56:25.720123+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 123564,
+    "ParentProcessId": 117312,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T12:56:26.154278+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 123604,
+    "ParentProcessId": 117312,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T12:56:26.17153+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 123676,
+    "ParentProcessId": 117312,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T12:56:26.487464+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 121752,
+    "ParentProcessId": 117312,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T12:58:05.872658+04:00"
+  },
+  {
+    "Name": "steamwebhelper.exe",
+    "ProcessId": 153108,
+    "ParentProcessId": 117312,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe",
+    "CreationDate": "2026-10-02T15:00:10.695632+04:00"
+  },
+  {
+    "Name": "Taiko5DXLauncher.exe",
+    "ProcessId": 164740,
+    "ParentProcessId": 120984,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe",
+    "CreationDate": "2026-10-02T15:01:56.484079+04:00"
+  }
+]

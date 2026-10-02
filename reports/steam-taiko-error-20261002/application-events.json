@@ -1,0 +1,6 @@
+{
+  "Query": "Application: last two hours; 1000,1001,33,59; target Steam/Taiko",
+  "State": "NoMatchingEventsFound,Microsoft.PowerShell.Commands.GetWinEventCommand",
+  "Items": [],
+  "Error": "No events were found that match the specified selection criteria."
+}

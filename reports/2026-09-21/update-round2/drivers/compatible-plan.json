@@ -1,0 +1,241 @@
+[
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLake\\AlderLakeSystem.inf",
+    "Version": "10.1.45.10",
+    "SHA256": "0352E9D3DD79AE8280DE90894DA3FC74A7ADFCA90BA471D76BF4F5B942D4A8D8",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLake\\AlderLake.cat",
+    "CatalogSHA256": "FFB7F7F146D1EEBCD76FC9E68F6B8096C4F088C5B25D1CC2CFEBF2E9D56E3781",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "PCI Express 根端口",
+        "DeviceID": "PCI\\VEN_8086&DEV_460D&SUBSYS_86941043&REV_05\\3&11583659&0&08",
+        "Before": "10.0.26100.9278",
+        "BeforeInf": "pci.inf",
+        "Problem": 0
+      },
+      {
+        "Name": "PCI 标准主机 CPU 桥",
+        "DeviceID": "PCI\\VEN_8086&DEV_4650&SUBSYS_86941043&REV_05\\3&11583659&0&00",
+        "Before": "10.0.26100.1150",
+        "BeforeInf": "machine.inf",
+        "Problem": 0
+      },
+      {
+        "Name": "Intel(R) 平台监控技术驱动程序",
+        "DeviceID": "PCI\\VEN_8086&DEV_467D&SUBSYS_86941043&REV_01\\3&11583659&0&50",
+        "Before": "10.0.26100.8972",
+        "BeforeInf": "intelpmt.inf",
+        "Problem": 0
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLakePCH-S\\AlderLakePCH-SSystem.inf",
+    "Version": "10.1.37.5",
+    "SHA256": "54C24CE112CAD0B5902A3DCBF81A0D472BE5A23D628384C6A6C9E8F1ECAF24EE",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLakePCH-S\\AlderLakePCH-S.cat",
+    "CatalogSHA256": "C7CFDBF7197939ED58BF7C9CEE5E800192601F1A486CB00287D84230DBB0E27D",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "SM 总线控制器",
+        "DeviceID": "PCI\\VEN_8086&DEV_7AA3&SUBSYS_86941043&REV_11\\3&11583659&0&FC",
+        "Before": null,
+        "BeforeInf": null,
+        "Problem": 28
+      },
+      {
+        "Name": "PCI 标准 RAM 控制器",
+        "DeviceID": "PCI\\VEN_8086&DEV_7AA7&SUBSYS_86941043&REV_11\\3&11583659&0&A2",
+        "Before": "10.0.26100.1150",
+        "BeforeInf": "machine.inf",
+        "Problem": 0
+      },
+      {
+        "Name": "PCI Express 根端口",
+        "DeviceID": "PCI\\VEN_8086&DEV_7AB8&SUBSYS_86941043&REV_11\\3&11583659&0&E0",
+        "Before": "10.0.26100.9278",
+        "BeforeInf": "pci.inf",
+        "Problem": 0
+      },
+      {
+        "Name": "PCI 设备",
+        "DeviceID": "PCI\\VEN_8086&DEV_7AA4&SUBSYS_86941043&REV_11\\3&11583659&0&FD",
+        "Before": null,
+        "BeforeInf": null,
+        "Problem": 28
+      },
+      {
+        "Name": "PCI 标准 ISA 桥",
+        "DeviceID": "PCI\\VEN_8086&DEV_7A87&SUBSYS_86941043&REV_11\\3&11583659&0&F8",
+        "Before": "10.0.26100.1150",
+        "BeforeInf": "machine.inf",
+        "Problem": 0
+      },
+      {
+        "Name": "PCI Express 根端口",
+        "DeviceID": "PCI\\VEN_8086&DEV_7ABB&SUBSYS_86941043&REV_11\\3&11583659&0&E3",
+        "Before": "10.0.26100.9278",
+        "BeforeInf": "pci.inf",
+        "Problem": 0
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLakePCH-S\\AlderLakePCH-SSystemLPSS.inf",
+    "Version": "10.1.37.5",
+    "SHA256": "7D91CB10286A525C23A07DB476E91A0F2B6DD08B547CB53DF8577AA2FC2E82CF",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLakePCH-S\\AlderLakePCH-S.cat",
+    "CatalogSHA256": "C7CFDBF7197939ED58BF7C9CEE5E800192601F1A486CB00287D84230DBB0E27D",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "PCI 设备",
+        "DeviceID": "PCI\\VEN_8086&DEV_7ACC&SUBSYS_86941043&REV_11\\3&11583659&0&A8",
+        "Before": null,
+        "BeforeInf": null,
+        "Problem": 28
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLake_Extension-DmaSec\\AlderLakeDmaSecExtension.inf",
+    "Version": "10.1.45.10",
+    "SHA256": "27F7D1948F9839F022FBC105301EA2BAF5217D06E0D430D36E452B552B8DCD3D",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_Chipset_ADL_SZ_TSD_W11_64_V101375_20251209R\\DriverFiles\\AlderLake_Extension-DmaSec\\AlderLakeDmaSec.cat",
+    "CatalogSHA256": "AA4917BF3C705A36386E30126750797C0CDE5AFD4E48EBE63EAA3C287B47132E",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "PCI Express 根端口",
+        "DeviceID": "PCI\\VEN_8086&DEV_460D&SUBSYS_86941043&REV_05\\3&11583659&0&08",
+        "Before": "10.0.26100.9278",
+        "BeforeInf": "pci.inf",
+        "Problem": 0
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_SerialIO_RPL_SZ_TSD_W11_64_V30100253131_20251210R\\Drivers\\iaLPSS2_GPIO2_ADL.inf",
+    "Version": "30.100.2531.31",
+    "SHA256": "0344AC417ACC62625C7C88D7B32BB114BA64D3ADC24E93FA989531F32469D96C",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_SerialIO_RPL_SZ_TSD_W11_64_V30100253131_20251210R\\Drivers\\iaLPSS2_GPIO2_ADL.cat",
+    "CatalogSHA256": "0A1053CD6ABC056FADD5644F502A3ED1C156EB317BFF823D6FAB427BEBF02BBC",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": null,
+        "DeviceID": "ACPI\\INTC1056\\2&DABA3FF&0",
+        "Before": null,
+        "BeforeInf": null,
+        "Problem": 28
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_SerialIO_RPL_SZ_TSD_W11_64_V30100253131_20251210R\\Drivers\\iaLPSS2_I2C_ADL.inf",
+    "Version": "30.100.2531.31",
+    "SHA256": "C6D8EACCDCE0CD4EBBA68E916A972A2F6B5FEDCB543BDFA0F0D53C9A892BC239",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_SerialIO_RPL_SZ_TSD_W11_64_V30100253131_20251210R\\Drivers\\iaLPSS2_I2C_ADL.cat",
+    "CatalogSHA256": "CF00447032E736C4E52A54118B327B5E3685231994B2BE6E337F6C9196A25D49",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "PCI 设备",
+        "DeviceID": "PCI\\VEN_8086&DEV_7ACC&SUBSYS_86941043&REV_11\\3&11583659&0&A8",
+        "Before": null,
+        "BeforeInf": null,
+        "Problem": 28
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_LAN_Realtek_8111_SZ-TSD_W11_64_V11682750919_20251230R\\WIN11\\64\\rt68cx21x64.inf",
+    "Version": "1168.027.50.0919",
+    "SHA256": "9508BB65647EB461D716B48B86D554C0E3CF181A0734A7C95C9EA647A7B310FE",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_LAN_Realtek_8111_SZ-TSD_W11_64_V11682750919_20251230R\\WIN11\\64\\rt68cx21x64.cat",
+    "CatalogSHA256": "BAA7976C82B828AD8FBEE2BEF725A0FAE03D8E661B7CCC69D739915B88D5B75D",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "Realtek PCIe GBE Family Controller",
+        "DeviceID": "PCI\\VEN_10EC&DEV_8168&SUBSYS_86771043&REV_15\\01000000684CE00000",
+        "Before": "10.10.714.2016",
+        "BeforeInf": "oem6.inf",
+        "Problem": 0
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R\\Consumer\\JHI\\DAL.inf",
+    "Version": "1.46.2024.0221",
+    "SHA256": "1B6EBF142BE828EDA98BAC7948DD77D666F6C887ADD168AEA9A85913BA143676",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R\\Consumer\\JHI\\DAL.cat",
+    "CatalogSHA256": "E55762345FE96A871DE88F49F3B81C861555F704371D6A695807303C322F57AF",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "Intel(R) Dynamic Application Loader Host Interface",
+        "DeviceID": "SWD\\DRIVERENUM\\OEM_DAL_COMPONENT&4&14850405&0",
+        "Before": "1.44.2023.710",
+        "BeforeInf": "oem20.inf",
+        "Problem": 0
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R\\Consumer\\MEI\\win10\\heci.inf",
+    "Version": "2552.8.10.0",
+    "SHA256": "24DD2BF14363B72D27DCD21BD86C2DFAE8C54E9954D3E974EBE504927D0353AE",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R\\Consumer\\MEI\\win10\\HECI.cat",
+    "CatalogSHA256": "290C2C52700EE1EED3DCE8BF8A1A39F38CC297CA4AA0C0DA92B560A090DA5307",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "Intel(R) Management Engine Interface #1",
+        "DeviceID": "PCI\\VEN_8086&DEV_7AE8&SUBSYS_86941043&REV_11\\3&11583659&0&B0",
+        "Before": "2406.5.5.0",
+        "BeforeInf": "oem11.inf",
+        "Problem": 0
+      }
+    ]
+  },
+  {
+    "Inf": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R\\Consumer\\WMIProvider\\MEWMIProv.inf",
+    "Version": "2544.8.3.0",
+    "SHA256": "3594427D861A5FE10AE4765D094E2B33B3E1B043F13BB130CFC16BF38AEEAAFC",
+    "Catalog": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\drivers\\DRV_MEI_Intel_Consumer_SZ_TSD_W11_64_V25528100_20260120R\\Consumer\\WMIProvider\\MEWMIProv.cat",
+    "CatalogSHA256": "07F05492F87D663790AD1ECF2FC2484A539FEBF4366D656860336D9B0A495D9D",
+    "Signature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "Decision": "Eligible",
+    "Devices": [
+      {
+        "Name": "Intel(R) Management Engine WMI Provider",
+        "DeviceID": "SWD\\DRIVERENUM\\OEM_WMI_COMPONENT&4&14850405&0",
+        "Before": "2408.5.4.0",
+        "BeforeInf": "oem19.inf",
+        "Problem": 0
+      }
+    ]
+  }
+]

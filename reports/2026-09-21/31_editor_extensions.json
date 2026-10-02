@@ -1,0 +1,77 @@
+﻿[
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "charliermarsh.ruff",
+    "Version": "2026.82.0"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "GitHub.vscode-pull-request-github",
+    "Version": "0.162.0"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "lohsebhipolg2s.theme-aurora-borealis",
+    "Version": "1.0.2"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "meta.pyrefly",
+    "Version": "1.3.1"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "ms-python.debugpy",
+    "Version": "2026.6.0"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "ms-toolsai.jupyter",
+    "Version": "2025.9.1"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "ms-toolsai.jupyter-keymap",
+    "Version": "1.1.2"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "ms-toolsai.jupyter-renderers",
+    "Version": "1.3.0"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "ms-toolsai.vscode-jupyter-cell-tags",
+    "Version": "0.1.9"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "ms-toolsai.vscode-jupyter-slideshow",
+    "Version": "0.1.6"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "Posit.air-vscode",
+    "Version": "0.28.0"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "posit.assistant",
+    "Version": "1.4.1"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "posit.publisher",
+    "Version": "2.12.0"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "Posit.shiny",
+    "Version": "1.4.3"
+  },
+  {
+    "EditorRoot": "C:\\Users\\PPCCpcpc\\.positron\\extensions",
+    "Id": "quarto.quarto",
+    "Version": "1.138.0"
+  }
+]

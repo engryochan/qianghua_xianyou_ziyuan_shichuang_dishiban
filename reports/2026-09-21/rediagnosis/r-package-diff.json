@@ -1,0 +1,434 @@
+[
+  {
+    "InputObject": "AstraeaDB==0.2.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "BBmisc==1.13.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "BayesBP==1.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "DEoptimR==1.2-1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "DescTools==0.99.60",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "Exact==3.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "GLMMadaptive==0.9-7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "JMbayes2==0.6-0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "KernSmooth==2.23-27",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "LaplacesDemon==16.1.8",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "MASS==7.3-66",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "Matrix==1.7-6",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "QuickJSR==1.11.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "RSpectra==0.16-2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "RcppEigen==0.3.4.0.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "STARRS==1.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "StanHeaders==2.39.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "SuperSurv==0.1.7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "bayesplot==1.16.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "bdsmatrix==1.3-7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "bookdown==0.48",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "brew==1.0-10",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "capushe==1.1.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "chatLLM==0.1.4",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "chatgpt==0.2.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "class==7.3-24",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "cluster==2.1.8.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "coda==0.19-4.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "colourpicker==1.3.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "coxme==2.2-22",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "credentials==2.0.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "deadwood==0.9.0-3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "devtools==2.5.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "downlit==0.4.5",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "dygraphs==1.1.1.6",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "e1071==1.7-17",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "ellipsis==0.3.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "expm==1.0-1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "extraDistr==1.10.0.5",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "fable.prophet==0.1.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "fansi==1.0.7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "genieclust==1.3.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "gert==2.4.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "ggridges==0.5.7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "gh==1.6.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "gitcreds==0.1.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "gld==2.6.8",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "gtools==3.9.5",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "ini==0.3.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "inline==0.3.21",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "kableExtra==1.4.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "lattice==0.23-1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "lmom==3.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "loo==2.10.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "matrixStats==1.5.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "miniUI==0.1.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "mongolite==4.1.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "nanoparquet==0.5.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "nlme==3.1-171",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "nnet==7.3-21",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "nnls==1.6",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "odbc==1.7.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "odbc.resourcer==1.0.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "openxlsx==4.2.9",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "pacman==0.5.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "pkgdown==2.2.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "plyr==1.8.9",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "posterior==1.7.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "progress==1.2.3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "prophet==1.1.7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "proxy==0.4-29",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "quitefastmst==0.9.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rcmdcheck==1.4.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rdtools==0.1.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "readxl==1.5.0.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "remotes==2.5.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "reshape2==1.4.5",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "resourcer==1.5.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "robustbase==0.99-7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rootSolve==1.8.2.4",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "roxygen2==8.1.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rstan==2.32.7",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rstanarm==2.32.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rstantools==2.7.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "rversions==3.0.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "selectr==0.7-0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "shiny.blueprint==0.3.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "shiny.react==0.4.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "shinystan==2.7.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "shinythemes==1.2.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "spatial==7.3-19",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "survC1==1.0-3",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "survival==3.8-12",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "svglite==2.2.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "tensorA==0.36.2.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "threejs==0.3.4",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "tinytex==0.61",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "urlchecker==2.0.0",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "usethis==3.2.2",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "whisker==0.4.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "xfun==0.61",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "xopen==1.0.1",
+    "SideIndicator": "=>"
+  },
+  {
+    "InputObject": "nanoparquet==0.5.1",
+    "SideIndicator": "<="
+  },
+  {
+    "InputObject": "odbc==1.7.0",
+    "SideIndicator": "<="
+  },
+  {
+    "InputObject": "readxl==1.5.0",
+    "SideIndicator": "<="
+  },
+  {
+    "InputObject": "selectr==0.6-0",
+    "SideIndicator": "<="
+  },
+  {
+    "InputObject": "tinytex==0.60",
+    "SideIndicator": "<="
+  },
+  {
+    "InputObject": "xfun==0.60",
+    "SideIndicator": "<="
+  }
+]

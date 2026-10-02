@@ -1,0 +1,1910 @@
+{
+  "TotalRead": 395,
+  "Relevant": [
+    {
+      "TimeCreated": "2026-10-02T15:38:43.8787249+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:43.7586936+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:43.7492251+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.7788381+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.6660387+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.6335312+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.5836058+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.5729658+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.5622964+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.5334498+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.4839174+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:42.4758483+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.458937+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.4195063+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.3659004+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.3578451+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.347075+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.3136989+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.2649313+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:41.2559963+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.6638655+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.2402627+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.2270165+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.2048704+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.19995+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.1943759+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.1809092+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.1572259+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:40.1482014+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:39.1314299+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:39.1042975+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:39.06686+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:39.0588178+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:39.0481307+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:39.0196084+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:38.9667975+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:38.9582211+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:38.6170888+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.9348793+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.9172951+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.8835506+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.8786055+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.8728006+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.8576381+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.832014+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:37.82747+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.8174218+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.8032482+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.7791779+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.7742423+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.7687159+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.7543615+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.7280056+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.7234051+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:36.5272672+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.7098722+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.6958095+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.668155+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.6633741+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.6577397+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.6432015+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.6190472+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:35.6143741+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5961377+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5815434+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5570701+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5527074+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5473312+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5334035+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5086465+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.5041526+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:34.4936484+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4901253+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4767229+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4533833+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4487963+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4439471+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.429734+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4054842+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:33.4006303+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.4598297+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3927459+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3783971+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3539816+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3488437+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3437339+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3288763+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.3028135+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:32.2978208+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.2822295+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.2683997+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.2429983+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.2379758+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.2329846+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.217395+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.191941+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:31.1842565+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.4306932+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.1732614+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.15854+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.1339059+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.1292704+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.1241746+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.1103581+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.086265+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:30.0817273+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:29.0698858+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:29.0557522+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:29.0299496+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:29.0246028+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:29.0191532+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:28.9540681+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:28.8998877+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:28.8910575+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:28.3830966+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.8635214+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.8489658+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.7978677+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.7896574+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.7789219+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.5916303+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.5373678+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:27.5284156+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.5136975+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.4217917+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.3360033+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.2236581+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.2136796+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.1959296+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.1640916+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.1088732+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:26.099824+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:25.0848056+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:25.0572591+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.992879+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.984823+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.9740581+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.9326993+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.8571203+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.8463272+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:24.1859253+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.8288144+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.8162682+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.7937341+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.788898+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.78377+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.7705378+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.7463737+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:23.7379621+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.7128167+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.6597771+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.6059163+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.5979045+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.5869837+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.5493882+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.5172696+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.5094876+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:22.1264698+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.4907484+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.4780248+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.4545022+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.4461467+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.4355056+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.406155+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.3531405+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:21.3445421+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.3295738+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.301453+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.2380961+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.2286912+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.2173418+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.1879114+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.1369258+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.1286268+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:20.085492+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:19.1172061+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:19.0710024+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:19.0112208+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:19.0000409+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:18.9863919+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:18.939047+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:18.8654499+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:18.8537311+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:18.0435889+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.8304562+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.8172536+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.7950832+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.7910308+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.7860851+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.7729665+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.7502293+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:17.745943+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.7334443+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.7203075+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.6966993+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.6924138+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.6870682+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.6743025+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.651094+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:16.6471094+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.9861076+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.6370209+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.6242957+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.6016635+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.5972169+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.5925058+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.5791342+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.5559017+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:15.5466898+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.5224052+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.4935434+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.4427502+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.4340318+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.4238723+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.3947036+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.3470703+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:14.3387594+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.9377562+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.3168322+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.302584+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.2790941+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.2751051+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.2701122+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.2573807+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.2344619+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:13.2301026+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.2147654+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.2021374+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.1803837+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.1759618+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.1712654+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.1590275+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.1358856+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:12.1297939+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.8861975+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.1116505+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.0975628+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.0750178+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.0706781+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.0658603+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.0534176+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.030116+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:11.0251608+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:10.0102834+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:09.9967929+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:09.9741832+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:09.9696516+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:09.9647482+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:09.8550412+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:09.8179057+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:05.2463652+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:03.0599305+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.9583233+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.9432154+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.9191491+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.9144971+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.9092389+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.8952348+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.8719202+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.8633724+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:38:00.2142398+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.8442375+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.8098964+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.7450896+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.7348802+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.7218314+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.6783137+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.5670994+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:59.5287704+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.1664083+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.096144+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.0807159+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.0572791+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.0529427+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.0476675+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.0307438+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:58.0016679+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:57.8227596+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.8135906+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.7994802+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.7767234+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.772333+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.7674049+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.7518632+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.7269164+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.7228651+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:56.1372634+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:55.70577+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:55.6901657+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:55.2727184+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:54.9109412+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:54.906359+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:54.8936744+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:54.8702596+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:54.715038+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:54.1037609+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:53.697095+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:53.6832472+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:53.2701121+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:52.9132454+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:52.9085875+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:52.896215+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:52.4728518+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:52.3304322+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:51.8528785+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:51.3149218+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:51.3013224+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:50.8828565+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:50.4818437+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:50.4767995+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:50.4642853+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:50.429361+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:50.2812197+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:49.8216128+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:49.2689984+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:49.2551089+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:49.2136704+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:48.8401286+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:48.8355945+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:48.8231394+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:48.7935079+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:48.5103815+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.7854132+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.5011058+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.4883009+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.4552467+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.106108+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.1006584+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.0839123+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.0542475+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:47.0489491+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:46.0296993+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:46.0157219+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.9888833+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.7640851+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.625922+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.6209384+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.6072493+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.5798234+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:45.5721842+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.5559653+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.5413826+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.5146987+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.1511063+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.14601+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.1317291+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:44.1068862+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:43.8229149+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:43.7366701+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.8027192+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.7888066+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.7650481+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.761132+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.7562817+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.7435477+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.7201425+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:42.7038333+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6968305+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6947072+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6841935+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6616519+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6571498+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6519819+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6385184+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.6111634+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:41.2554203+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.2419978+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.2297081+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.2070955+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.203047+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.1978752+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.1852805+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.1619699+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:40.1576213+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.6638629+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Windows\\System32\\svchost.exe) attempted to load \\Device\\HarddiskVolume3\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll that did not meet the Windows signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.1497623+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.1367567+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.1135529+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\BrowerInject64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.108586+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.1031928+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll that did not meet the Microsoft signing level requirements."
+    },
+    {
+      "TimeCreated": "2026-10-02T15:37:39.0879512+04:00",
+      "Id": 3033,
+      "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume3\\Program Files\\Google\\Chrome\\Application\\chrome.exe) attempted to load \\Device\\HarddiskVolume3\\inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll that did not meet the Microsoft signing level requirements."
+    }
+  ]
+}

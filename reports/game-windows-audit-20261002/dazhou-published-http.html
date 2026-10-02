@@ -1,0 +1,282 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>星岚造意</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="index.html">主页</a></li>
+				<li><a href="games.html">游戏</a></li>
+				<li><a href="blog.html">日志</a></li>
+				<li><a href="features.html">关于我们</a></li>
+				<!-- <li><a href="contact.html">留言</a></li> -->
+			</ul>
+			<div class="search-bar">
+					<input type="text" placeholder="search" required=""  value="search"/>
+					<input type="submit" value="" />
+			</div>
+			<div class="clearfix"></div>
+			<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navigation" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="banner"></div>
+<!-- Header Ends Here -->	
+<div class="banner-bot">
+	<div class="container">
+		<h2>大周列国志</h2>
+		<p>国内首款贯穿【武王伐纣】到【秦灭六国】整条时间线的历史策略模拟经营手游。</p>
+		<p>混沌凿开吞几岁，洪荒莫考传承裔。
+但闻前史载三皇，伏羲神农及黄帝。
+三皇之后五帝传，少昊颛顼高辛继。
+唐尧虞舜又继之，天下于斯为盛际。
+——宋．杨简《历代诗·三皇五帝》</p>
+		<!-- <nav class="cl-effect-3"><a href="#">More</a></nav> -->
+	</div>
+</div>
+<!-- Gallery Starts Here -->
+<div class="gallery">
+	<div class="container">
+		<h3>展览</h3>
+		<div class="gallery-top">
+			<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">1</span></li>
+						<li><span class="filter" data-filter="app">2</span></li>
+						<li><span class="filter" data-filter="card">3</span></li>
+						<li><span class="filter" data-filter="icon">4</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logos mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>			
+				</div>
+
+		</div>
+	</div>
+</div>
+<!-- Gallery Ends Here -->
+<!-- Video Part starts Here -->
+<div class="video-serch">
+	<div class="container">
+		<div class="col-md-6 vid-col">
+			<p>下武维周，世有贤王。受命于天，圣德永昌！</p>
+			<p>游戏采用【都城-天下】双视角结构，玩家可以在【都城模式】中面南坐北，参与周礼的制定与朝堂争斗，平衡群臣关系，惩治虎视眈眈的宗室，以维持周室在王畿地区的统治秩序！
+在【天下模式】中，玩家则需要与天下列国进行“和平友好”的交流，传播自家所推崇的文化流派，救护忠于周室的封国，打压那些心怀不轨的诸侯。是选择维持分封制、巡狩天下、制衡诸侯，还是选择变天下为郡县、扫平列国，全在玩家一念之间。但请不要忘了，诸侯也不是省油的灯……</p>
+			<div class="more">
+				<!-- <a href="#">See more videos</a> -->
+			</div>
+		</div> 
+		<div class="col-md-6 vid-coll">
+			<img src="images/vid-img.jpg" alt="">
+			<!-- <div class="play-but">
+				<a href="#small-dialog5" class="thickbox play-icon popup-with-zoom-anim"><img src="images/vid-play.png" alt="" /></a>
+			</div> -->
+			<!--pop-up-box-->
+					  <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>  
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!--pop-up-box-->
+			<div id="small-dialog5" class="mfp-hide">
+					<iframe src="//player.vimeo.com/video/38584262"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+		</div>
+		<div class="clearfix"></div>
+	</div>	
+</div>
+<!-- Video Part Ends Here -->
+<!-- What New Part starts Here -->
+<!-- <div class="what-new">
+	<div class="container">
+		<h3>What's new</h3>
+		<div class="blog-news">
+			<div class="blog-news-grid">
+				<div class="news-grid-left">
+					<h4>06</h4>
+					<small>of january 2015</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Claritas est etiam processus</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-news-grid b_n_g">
+				<div class="news-grid-left">
+					<h4>28</h4>
+					<small>of january 2015</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Claritas est etiam processus</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="blog-news b_n">
+			<div class="blog-news-grid">
+				<div class="news-grid-left">
+					<h4>21</h4>
+					<small>of january 2015</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Claritas est etiam processus</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-news-grid b_n_g">
+				<div class="news-grid-left">
+					<h4>05</h4>
+					<small>of january 2015</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Claritas est etiam processus</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div> -->
+<!-- What New Part Endss Here -->
+<!-- Footer Starts Here -->
+<div class="footer">
+	<div class="container">
+		<ul class="social">
+			<!-- <li><i class="fa"></i></li>
+			<li><i class="fb"></i></li>
+			<li><i class="fc"></i></li> -->
+		</ul>
+		<p>2020-星岚造意 <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备20008292号-1</a></p>
+		<div style="width:300px;margin:0 auto; padding:20px 0;">
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35021102001378" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="ga.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">闽公网安备 35021102001378号</p></a>
+		</div>
+	</div>
+	
+</div>
+<!-- Footer Ends Here -->
+</body>
+</html>

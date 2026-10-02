@@ -1,0 +1,7 @@
+Get-CimInstance: C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\诊断电脑模板\Diag-KeyboardSource.ps1:38
+Line |
+  38 |  … ndidates' = { Get-CimInstance Win32_Process -ErrorAction Stop | Where …
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | 拒绝访问 
+
+

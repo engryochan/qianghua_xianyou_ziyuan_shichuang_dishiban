@@ -1,0 +1,61 @@
+
+
+[2026-10-02 12:56:21] Client version: 1788652215
+[2026-10-02 12:56:21] Loaded SDL version 3.4.0-1359-g70e9cc86d
+[2026-10-02 12:56:21] ChildProcessQuery: failed with code -2
+[2026-10-02 12:56:21] CGpuTopology: failed to run gpu topology query
+[2026-10-02 12:56:21] Failed to init SteamVR because it isn't installed
+[2026-10-02 12:56:26] Console Log Start
+[2026-10-02 12:57:43] LogonFailure No Connection
+[2026-10-02 12:58:07] roaming config store loaded successfully - 0 bytes.
+[2026-10-02 12:58:07] Could not bind socket to 192.168.103.29:27036: 10014 (ipv4 = TRUE ipv6 = TRUE, using = IPv4)
+[2026-10-02 12:58:08] saving roaming config store to 'sharedconfig.vdf'
+[2026-10-02 12:58:08] CConfigStore::FlushToDisk() - RemoteStorage().FileWrite() returned false, will retry.
+[2026-10-02 12:58:09] saving roaming config store to 'sharedconfig.vdf'
+[2026-10-02 12:58:09] roaming config store 2 saved successfully
+[2026-10-02 12:58:11] Error: texture file 'public\steam_cloudsync' does not exist or is invalid
+[2026-10-02 12:58:11] System startup time: 110.53 seconds
+[2026-10-02 12:58:14] ExecCommandLine: ""C:\Program Files (x86)\Steam\steam.exe""
+[2026-10-02 14:38:08] CAPIJobRequestUserStats - Server response failed 2
+[2026-10-02 14:38:08] CAPIJobRequestUserStats - Server response failed 2
+[2026-10-02 14:57:17] ExecCommandLine: ""C:\Program Files (x86)\Steam\Steam.exe" -foreground"
+[2026-10-02 14:57:39] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to ShowEula with ""
+[2026-10-02 14:57:39] GameAction [AppID 1842810, ActionID 1] : LaunchApp waiting for user response to ShowEula ""
+[2026-10-02 14:57:50] GameAction [AppID 1842810, ActionID 1] : LaunchApp continues with user response "ShowEula"
+[2026-10-02 14:57:50] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to CheckShaderDepotManifest with ""
+[2026-10-02 14:57:50] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to RunningInstallScript with ""
+[2026-10-02 15:00:11] CAPIJobRequestUserStats - Server response failed 2
+[2026-10-02 15:01:53] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to SynchronizingCloud with ""
+[2026-10-02 15:01:54] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to SynchronizingStats with ""
+[2026-10-02 15:01:54] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to ShowInterstitials with ""
+[2026-10-02 15:01:54] GameAction [AppID 1842810, ActionID 1] : LaunchApp waiting for user response to ShowInterstitials ""
+[2026-10-02 15:01:54] GameAction [AppID 1842810, ActionID 1] : LaunchApp continues with user response "ShowInterstitials"
+[2026-10-02 15:01:54] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to SiteLicenseSeatCheckout with ""
+[2026-10-02 15:01:55] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to DelayLaunch with ""
+[2026-10-02 15:01:55] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to CreatingProcess with ""
+[2026-10-02 15:01:55] GameAction [AppID 1842810, ActionID 1] : LaunchApp waiting for user response to CreatingProcess ""
+[2026-10-02 15:01:55] GameAction [AppID 1842810, ActionID 1] : LaunchApp continues with user response "CreatingProcess"
+[2026-10-02 15:01:55] Forced create of Win32Event but it already existed
+[2026-10-02 15:01:55] Forced create of Win32Event but it already existed
+[2026-10-02 15:01:56] Game process added : AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 164740, IP 0.0.0.0:0
+[2026-10-02 15:01:56] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to WaitingGameWindow with ""
+[2026-10-02 15:01:56] GameAction [AppID 1842810, ActionID 1] : LaunchApp changed task to Completed with ""
+[2026-10-02 15:22:00] Game process removed: AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 164740 
+[2026-10-02 15:22:05] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to CheckShaderDepotManifest with ""
+[2026-10-02 15:22:05] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to RunningInstallScript with ""
+[2026-10-02 15:22:05] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to SynchronizingCloud with ""
+[2026-10-02 15:22:06] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to SynchronizingStats with ""
+[2026-10-02 15:22:07] CAPIJobRequestUserStats - Server response failed 2
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to ShowInterstitials with ""
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp waiting for user response to ShowInterstitials ""
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp continues with user response "ShowInterstitials"
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to SiteLicenseSeatCheckout with ""
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to DelayLaunch with ""
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to CreatingProcess with ""
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp waiting for user response to CreatingProcess ""
+[2026-10-02 15:22:07] GameAction [AppID 1842810, ActionID 2] : LaunchApp continues with user response "CreatingProcess"
+[2026-10-02 15:22:09] Game process added : AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 165024, IP 0.0.0.0:0
+[2026-10-02 15:22:10] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to WaitingGameWindow with ""
+[2026-10-02 15:22:10] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to Completed with ""
+[2026-10-02 15:22:34] Game process removed: AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 165024 
+

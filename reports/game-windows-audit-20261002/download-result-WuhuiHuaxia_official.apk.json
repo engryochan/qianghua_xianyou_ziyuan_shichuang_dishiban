@@ -1,0 +1,12 @@
+{
+  "name": "WuhuiHuaxia_official.apk",
+  "url": "https://whhx.ehijoy.com/download/index",
+  "source": "https://whhx.ehijoy.com/index.shtml",
+  "utc": "2026-10-02T07:28:23.207803+00:00",
+  "executed": false,
+  "final_url": "https://whhx.ehijoy.com/download/index",
+  "declared_bytes": 1353,
+  "content_type": "text/html; charset=utf-8",
+  "status": "FAILED",
+  "error": "AssertionError: Unexpected package format"
+}

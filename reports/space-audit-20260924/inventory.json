@@ -1,0 +1,1371 @@
+[
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Temp",
+    "exists": true,
+    "logical_bytes": 12116927,
+    "files": 162,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "Diagnostics/EXCEL",
+        6328129
+      ],
+      [
+        "NVIDIA Corporation/NV_Cache",
+        5214208
+      ],
+      [
+        "exthost-9dee51.cpuprofile",
+        188425
+      ],
+      [
+        "wct1076.tmp",
+        97015
+      ],
+      [
+        "wct56DE.tmp",
+        97015
+      ],
+      [
+        "kallichore-bb162588-92288.out.log",
+        69395
+      ],
+      [
+        "kallichore-bb162588-92288.log",
+        59870
+      ],
+      [
+        "wct2562.tmp",
+        29524
+      ],
+      [
+        "wctEEF.tmp",
+        29524
+      ],
+      [
+        "Microsoft/Teams",
+        1420
+      ],
+      [
+        "AdobeARM.log",
+        840
+      ],
+      [
+        "cv_debug.log",
+        366
+      ],
+      [
+        "connection_python-a7b3081e.json",
+        236
+      ],
+      [
+        "NotifyIconGeneratedAumid_551773357143255580.png",
+        172
+      ],
+      [
+        "registration_r-46cfa1b6.json",
+        156
+      ],
+      [
+        "CFGB46A.tmp",
+        150
+      ],
+      [
+        "f97dbbdbaf2aa253a446c85f0469f0cc-{87A94AB0-E370-4cde-98D3-ACC110C5967D}",
+        69
+      ],
+      [
+        "__PSScriptPolicyTest_5htsriyn.4o1.ps1",
+        60
+      ],
+      [
+        "__PSScriptPolicyTest_btk1yprg.n1s.ps1",
+        60
+      ],
+      [
+        "__PSScriptPolicyTest_emh1zuxa.rxj.ps1",
+        60
+      ],
+      [
+        "__PSScriptPolicyTest_ga4s0cbm.gev.ps1",
+        60
+      ],
+      [
+        "__PSScriptPolicyTest_pavcc00k.hfi.ps1",
+        60
+      ],
+      [
+        "__PSScriptPolicyTest_um5rywsm.4lq.ps1",
+        60
+      ],
+      [
+        ".ses",
+        53
+      ],
+      [
+        "0840ad56-9df2-405c-a61f-c05db89a1148.tmp",
+        0
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\uv\\cache",
+    "exists": true,
+    "logical_bytes": 3370924237,
+    "files": 105930,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "archive-v0/3L6Q1XPoNnhN1gEc",
+        220273279
+      ],
+      [
+        "archive-v0/idjiqIUCFOBZl9J7",
+        218921038
+      ],
+      [
+        "archive-v0/Mhzbi__Y4Jcb2Qut",
+        218912350
+      ],
+      [
+        "archive-v0/CZWkuEMdqahkDJ1O",
+        218908254
+      ],
+      [
+        "archive-v0/BOuX4xQiT8nTvr4F",
+        218866250
+      ],
+      [
+        "archive-v0/9CqN2CtMYbqTnYsf",
+        175888474
+      ],
+      [
+        "builds-v0/.tmpepLGkg",
+        142493548
+      ],
+      [
+        "archive-v0/nxQoIE3QyVG2_nUM",
+        121527932
+      ],
+      [
+        "archive-v0/uSrlXNwqQySFVgDK",
+        107992270
+      ],
+      [
+        "archive-v0/jyMa3D1iV7NZJnv3",
+        107929804
+      ],
+      [
+        "archive-v0/EE0-yfd3h6zGF_KI",
+        96199136
+      ],
+      [
+        "archive-v0/v5Snsl83e2CMaftI",
+        86243086
+      ],
+      [
+        "archive-v0/8hGUvyKVLCvuX7_c",
+        57793783
+      ],
+      [
+        "simple-v25/pypi",
+        56902456
+      ],
+      [
+        "builds-v0/.tmp4bf1NK",
+        49513323
+      ],
+      [
+        "archive-v0/8ETS_Fda2E1H3Q8T",
+        44653983
+      ],
+      [
+        "archive-v0/HuHQqXN5HZu9BQeV",
+        41918931
+      ],
+      [
+        "archive-v0/sTINfMsM8G31IXM5",
+        41908179
+      ],
+      [
+        "archive-v0/JQUiCMoLM78QTD-t",
+        41384180
+      ],
+      [
+        "archive-v0/_kmLUaAsXbugVDX5",
+        41371065
+      ],
+      [
+        "archive-v0/K2XGwYi5llcVbPhE",
+        40911930
+      ],
+      [
+        "archive-v0/I9LwEIgRHQEeaiZm",
+        40383304
+      ],
+      [
+        "archive-v0/yyAM2aUu5nPrqTod",
+        39859298
+      ],
+      [
+        "archive-v0/UMaAHzQxAF-qeUGI",
+        37945281
+      ],
+      [
+        "archive-v0/lPuiMmNtIXCL3WKU",
+        37824188
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\uv\\cache\\archive-v0\\9CqN2CtMYbqTnYsf\\_polars_runtime_32\\_polars_runtime.pyd",
+        "bytes": 175884800
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\uv\\cache\\archive-v0\\nxQoIE3QyVG2_nUM\\llvmlite\\binding\\llvmlite.dll",
+        "bytes": 120369664
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\pip\\Cache",
+    "exists": true,
+    "logical_bytes": 40351,
+    "files": 3,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "http-v2/a",
+        40205
+      ],
+      [
+        "selfcheck",
+        146
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\.cache",
+    "exists": true,
+    "logical_bytes": 2041198921,
+    "files": 30295,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "codex-runtimes/codex-primary-runtime",
+        1378539374
+      ],
+      [
+        "codex-runtimes/codex-runtime-install-BWTVPw",
+        662659547
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\.cache\\codex-runtimes\\codex-runtime-install-BWTVPw\\node-runtime.tar.gz",
+        "bytes": 497475877
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\.codex",
+    "exists": true,
+    "logical_bytes": 1131021439,
+    "files": 10372,
+    "skipped_reparse_dirs": 1,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "plugins/.plugin-appserver",
+        416085696
+      ],
+      [
+        ".sandbox-bin",
+        319887152
+      ],
+      [
+        ".tmp/bundled-marketplaces",
+        85400676
+      ],
+      [
+        ".tmp/plugins",
+        79889381
+      ],
+      [
+        "plugins/cache",
+        74797340
+      ],
+      [
+        "cache/remote_plugin_catalog",
+        48010729
+      ],
+      [
+        "cache/codex_apps_tools",
+        25676148
+      ],
+      [
+        "logs_2.sqlite",
+        19136512
+      ],
+      [
+        "sessions/2026",
+        16988814
+      ],
+      [
+        ".codex-global-state.json",
+        11838457
+      ],
+      [
+        ".codex-global-state.json.bak",
+        11838457
+      ],
+      [
+        "visualizations/2026",
+        5540835
+      ],
+      [
+        "sqlite",
+        4509392
+      ],
+      [
+        "thread_history_1.sqlite",
+        4079616
+      ],
+      [
+        "logs_2.sqlite-wal",
+        2888152
+      ],
+      [
+        "state_5.sqlite",
+        1777664
+      ],
+      [
+        "state_5.sqlite-wal",
+        1079472
+      ],
+      [
+        "skills/.system",
+        384669
+      ],
+      [
+        "models_cache.json",
+        353135
+      ],
+      [
+        "queue_1.sqlite-wal",
+        284312
+      ],
+      [
+        ".sandbox",
+        158580
+      ],
+      [
+        "memories_1.sqlite",
+        65536
+      ],
+      [
+        "goals_1.sqlite",
+        32768
+      ],
+      [
+        "goals_1.sqlite-shm",
+        32768
+      ],
+      [
+        "logs_2.sqlite-shm",
+        32768
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\.codex\\plugins\\.plugin-appserver\\codex.exe",
+        "bytes": 319887152
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\.codex\\.sandbox-bin\\codex.exe",
+        "bytes": 319887152
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\Downloads",
+    "exists": true,
+    "logical_bytes": 282,
+    "files": 1,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "desktop.ini",
+        282
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Windows.old",
+    "exists": false,
+    "logical_bytes": 0,
+    "files": 0,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [],
+    "large": []
+  },
+  {
+    "path": "C:\\Windows\\Temp",
+    "exists": true,
+    "logical_bytes": 3755127,
+    "files": 16,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "klsc-335E6D73CC9414FE/f1ff369b-af03-42ba-a751-e2fe1a76afb1",
+        1880488
+      ],
+      [
+        "klsc-335E6D73CC9414FE",
+        1174772
+      ],
+      [
+        "SHJ-H0647-RYOCH-20260923-1207.log",
+        226284
+      ],
+      [
+        "SHJ-H0647-RYOCH-20260924-0746.log",
+        177068
+      ],
+      [
+        "SHJ-H0647-RYOCH-20260924-0749.log",
+        150440
+      ],
+      [
+        "SHJ-H0647-RYOCH-20260924-0749a.log",
+        146022
+      ],
+      [
+        "bb3a785178f443fda931098a5a9a306b.db.ses",
+        53
+      ],
+      [
+        "klsc-335E6D73CC9414FE.lck",
+        0
+      ],
+      [
+        "SHJ-H0647-RYOCH-20260924-0741.log",
+        0
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Windows\\SoftwareDistribution\\Download",
+    "exists": true,
+    "logical_bytes": 0,
+    "files": 0,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [],
+    "large": []
+  },
+  {
+    "path": "C:\\$Recycle.Bin",
+    "exists": true,
+    "logical_bytes": 6563,
+    "files": 3,
+    "skipped_reparse_dirs": 0,
+    "error_count": 2,
+    "errors": [
+      "[WinError 5] 拒绝访问。: 'C:\\\\$Recycle.Bin\\\\S-1-5-21-323984447-536449353-4267113659-1000'",
+      "[WinError 5] 拒绝访问。: 'C:\\\\$Recycle.Bin\\\\S-1-5-18'"
+    ],
+    "groups": [
+      [
+        "S-1-5-21-323984447-536449353-4267113659-1001",
+        6563
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\work",
+    "exists": true,
+    "logical_bytes": 24347610291,
+    "files": 579624,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "uvcache/archive-v0",
+        9353833596
+      ],
+      [
+        "envs/ds",
+        6771402604
+      ],
+      [
+        "envs/ds314",
+        5094749235
+      ],
+      [
+        "projects/lab",
+        1367675310
+      ],
+      [
+        "envs/lab-stable-candidate-20260922",
+        1260384312
+      ],
+      [
+        "uvcache/sdists-v9",
+        355635500
+      ],
+      [
+        "uvcache/simple-v25",
+        131660328
+      ],
+      [
+        "uvcache/wheels-v6",
+        9616189
+      ],
+      [
+        "tmp",
+        2129721
+      ],
+      [
+        "uvcache/builds-v0",
+        506816
+      ],
+      [
+        "uvcache/interpreter-v4",
+        11771
+      ],
+      [
+        "R_package_install_report.csv",
+        3933
+      ],
+      [
+        "README.txt",
+        932
+      ],
+      [
+        "uvcache",
+        44
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\blF6YAdJmkIE-ALj\\tensorflow\\python\\_pywrap_tensorflow_common.dll",
+        "bytes": 1056626688
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\tensorflow\\python\\_pywrap_tensorflow_common.dll",
+        "bytes": 1056626688
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\8443iTc2ZrxPy0dX\\catboost\\_catboost.pyd",
+        "bytes": 336931840
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\catboost\\_catboost.pyd",
+        "bytes": 336931840
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\wPKhoVWgKJmIGHJB\\catboost\\_catboost.pyd",
+        "bytes": 336877568
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\catboost\\_catboost.pyd",
+        "bytes": 336877568
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\WtCuHSgqV3l0QAaT\\torch\\lib\\torch_cpu.dll",
+        "bytes": 305887744
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\u2JKgI2QztdZaHmG\\torch\\lib\\torch_cpu.dll",
+        "bytes": 305887744
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+        "bytes": 305887744
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+        "bytes": 305887744
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\FFY115tNztIo9jaw\\jaxlib\\jax_common.dll",
+        "bytes": 250157056
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\jaxlib\\jax_common.dll",
+        "bytes": 250157056
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\R5yUHY_msCGJABR9\\jaxlib\\jax_common.dll",
+        "bytes": 250139136
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\jaxlib\\jax_common.dll",
+        "bytes": 250139136
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\ToOogNV5bsW74iOJ\\xgboost\\lib\\xgboost.dll",
+        "bytes": 177256448
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\xgboost\\lib\\xgboost.dll",
+        "bytes": 177256448
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\xgboost\\lib\\xgboost.dll",
+        "bytes": 177256448
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\aEmziZNSj-c_dx3z\\_polars_runtime_32\\_polars_runtime.pyd",
+        "bytes": 175884800
+      },
+      {
+        "path": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages\\_polars_runtime_32\\_polars_runtime.pyd",
+        "bytes": 175884800
+      },
+      {
+        "path": "C:\\work\\envs\\lab-stable-candidate-20260922\\Lib\\site-packages\\_polars_runtime_32\\_polars_runtime.pyd",
+        "bytes": 175884800
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\_polars_runtime_32\\_polars_runtime.pyd",
+        "bytes": 175884800
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\_polars_runtime_32\\_polars_runtime.pyd",
+        "bytes": 175884800
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\tgenh_jcxPn3x31K\\llvmlite\\binding\\llvmlite.dll",
+        "bytes": 120369664
+      },
+      {
+        "path": "C:\\work\\projects\\lab\\.venv\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll",
+        "bytes": 120369664
+      },
+      {
+        "path": "C:\\work\\envs\\lab-stable-candidate-20260922\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll",
+        "bytes": 120369664
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll",
+        "bytes": 120369664
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll",
+        "bytes": 120369664
+      },
+      {
+        "path": "C:\\work\\uvcache\\archive-v0\\Hi-bRqmC9BtrhGkv\\kaleido\\executable\\bin\\kaleido.exe",
+        "bytes": 118177280
+      },
+      {
+        "path": "C:\\work\\envs\\ds314\\Lib\\site-packages\\kaleido\\executable\\bin\\kaleido.exe",
+        "bytes": 118177280
+      },
+      {
+        "path": "C:\\work\\envs\\ds\\Lib\\site-packages\\kaleido\\executable\\bin\\kaleido.exe",
+        "bytes": 118177280
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports",
+    "exists": true,
+    "logical_bytes": 292851040,
+    "files": 996,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "2026-09-21/update-round2",
+        213534337
+      ],
+      [
+        "2026-09-21/completion",
+        39561790
+      ],
+      [
+        "2026-09-21/rediagnosis",
+        12651745
+      ],
+      [
+        "line-comments-20260922",
+        7900347
+      ],
+      [
+        "2026-09-21/smoke-lab",
+        4860297
+      ],
+      [
+        "2026-09-21/launcher-check",
+        4860297
+      ],
+      [
+        "2026-09-21/smoke-ds",
+        4860286
+      ],
+      [
+        "2026-09-21",
+        1735041
+      ],
+      [
+        "keyboard-security-20260922",
+        1385462
+      ],
+      [
+        "2026-09-21/check_files",
+        885647
+      ],
+      [
+        "line-comments-20260922/before",
+        310040
+      ],
+      [
+        "2026-09-22-resource-audit",
+        39721
+      ],
+      [
+        "watch-tests-20260923/watch-22dcfbe93286494d9e7e9ca8da2e22df",
+        39177
+      ],
+      [
+        "2026-09-21/excel-repair",
+        32650
+      ],
+      [
+        "template-tests-20260923",
+        26496
+      ],
+      [
+        "line-comments-20260922/after-r",
+        24754
+      ],
+      [
+        "template-tests-20260923/before",
+        22234
+      ],
+      [
+        "space-audit-20260924",
+        19089
+      ],
+      [
+        "template-tests-20260923/validation-Core",
+        12178
+      ],
+      [
+        "template-tests-20260923/powershell.exe-Diag-KeyboardSource-run",
+        10550
+      ],
+      [
+        "template-tests-20260923/pwsh.exe-Diag-KeyboardSource-run",
+        9445
+      ],
+      [
+        "watch-tests-20260923",
+        9023
+      ],
+      [
+        "2026-09-21/models-lab",
+        6763
+      ],
+      [
+        "2026-09-21/models-ds",
+        6739
+      ],
+      [
+        "template-tests-20260923/powershell.exe-Diag-RawInputDevice-run",
+        5852
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\MicrosoftEdgeEnterpriseX64.msi",
+        "bytes": 213483520
+      }
+    ]
+  },
+  {
+    "path": "C:\\ProgramData\\Package Cache",
+    "exists": true,
+    "logical_bytes": 60350357,
+    "files": 24,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "{D5EFD516-E715-456F-9D3F-4CA6653C353E}v64.124.58447",
+        27688960
+      ],
+      [
+        "{3B2F2E17-02B1-4621-8FFC-E7C21D5B7AAB}v7.23.0.0",
+        8237056
+      ],
+      [
+        "{6FA797CF-6B76-4B6D-87EE-768F92008720}v14.51.36247/packages",
+        5861692
+      ],
+      [
+        "{582BA719-E6F1-4651-A873-049E6A0DDDAF}v14.51.36247/packages",
+        5385499
+      ],
+      [
+        "{56EEEF7D-0AE3-401A-898B-581719D005AE}v3.10.12",
+        5206016
+      ],
+      [
+        "{931A2CF0-2404-45EA-82F5-345735AE6A90}v14.51.36247/packages",
+        1278885
+      ],
+      [
+        "{4BF7CE18-E151-449F-9190-6CDBED0BB4A2}v14.51.36247/packages",
+        1130029
+      ],
+      [
+        "{CF8E6E00-9C03-4440-81C0-21FACB921A6B}v3.07.05",
+        929792
+      ],
+      [
+        "{147B0E5B-D916-44F6-A66B-163CF0F723E9}v64.124.58447",
+        794624
+      ],
+      [
+        "{56A842AA-B5B3-419B-A80E-36623D12F168}v64.124.58447",
+        720896
+      ],
+      [
+        "{0e3bb569-69d6-4c34-bff9-c2f81db5e5f0}",
+        631120
+      ],
+      [
+        "{9a6ce18d-11c0-4452-aa35-9f2b8437c686}",
+        630468
+      ],
+      [
+        "{2e423868-b66e-4e76-8813-89cc32786cfa}",
+        622862
+      ],
+      [
+        "{f4fdd107-b2e7-4ebf-aff0-8a79ba631247}",
+        616566
+      ],
+      [
+        "{4f032114-6537-4759-aa80-286f5555e723}",
+        615892
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\ProgramData\\NVIDIA Corporation",
+    "exists": true,
+    "logical_bytes": 3014464,
+    "files": 11,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "Drs",
+        2970173
+      ],
+      [
+        "nvstapisvr",
+        29957
+      ],
+      [
+        "nvStereoInstaller",
+        13263
+      ],
+      [
+        "nvstlink.log",
+        948
+      ],
+      [
+        "NvFBCPlugin",
+        123
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\CrashDumps",
+    "exists": true,
+    "logical_bytes": 25534257,
+    "files": 3,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "DeepLink.exe.112664.dmp",
+        14167275
+      ],
+      [
+        "Setup.exe.11400.dmp",
+        5684719
+      ],
+      [
+        "Setup.exe(1).11400.dmp",
+        5682263
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\Edge\\User Data",
+    "exists": true,
+    "logical_bytes": 743246563,
+    "files": 6734,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "component_crx_cache",
+        211050444
+      ],
+      [
+        "ProvenanceData/2025.10.7.5",
+        176781704
+      ],
+      [
+        "Default/Service Worker",
+        103987355
+      ],
+      [
+        "Default/Extensions",
+        62275952
+      ],
+      [
+        "Default/Code Cache",
+        44103892
+      ],
+      [
+        "Edge Entity Extraction/2026.9.1.2",
+        20739503
+      ],
+      [
+        "OneAuth/WebView2",
+        16358117
+      ],
+      [
+        "Edge Wallet/128.18367.18366.1",
+        14750712
+      ],
+      [
+        "GrShaderCache",
+        13059832
+      ],
+      [
+        "Safe Browsing",
+        8694332
+      ],
+      [
+        "Subresource Filter/Unindexed Rules",
+        7800685
+      ],
+      [
+        "Default/Cache",
+        6355467
+      ],
+      [
+        "Edge Shopping/2.1.114.0",
+        5604682
+      ],
+      [
+        "Subresource Filter/Indexed Rules",
+        5086253
+      ],
+      [
+        "BrowserMetrics-spare.pma",
+        4194304
+      ],
+      [
+        "BrowserMetrics",
+        4194304
+      ],
+      [
+        "Default",
+        4071251
+      ],
+      [
+        "EdgeLanguageDetectionModel/2026.1.30.1",
+        3334861
+      ],
+      [
+        "Default/Local Storage",
+        3330272
+      ],
+      [
+        "Default/EdgeCoupons",
+        2735384
+      ],
+      [
+        "Speech Recognition/1.15.0.1",
+        2692500
+      ],
+      [
+        "hyphen-data/120.0.6050.0",
+        1769902
+      ],
+      [
+        "ZxcvbnData/3.2.0.0",
+        1719936
+      ],
+      [
+        "Default/GPUCache",
+        1642864
+      ],
+      [
+        "Typosquatting/2026.9.23.1",
+        1465569
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\Edge\\User Data\\ProvenanceData\\2025.10.7.5\\vti-b-p32-visual.quant.ort",
+        "bytes": 176781560
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\Edge\\User Data\\component_crx_cache\\f081de18a604e95a175eaf4dd91b35b7f17ad4de24ee2f20eeb034c979bbcccb",
+        "bytes": 163024286
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Google\\Chrome\\User Data",
+    "exists": true,
+    "logical_bytes": 6997400643,
+    "files": 30276,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "OptGuideOnDeviceModel/2025.8.21.1028",
+        4272706723
+      ],
+      [
+        "Profile 2/Extensions",
+        1231682074
+      ],
+      [
+        "Profile 2/Cache",
+        423406323
+      ],
+      [
+        "Profile 2/Code Cache",
+        276974097
+      ],
+      [
+        "Profile 2/Service Worker",
+        225989346
+      ],
+      [
+        "Profile 2/IndexedDB",
+        84280800
+      ],
+      [
+        "Default/Service Worker",
+        67941442
+      ],
+      [
+        "Default/Cache",
+        51845030
+      ],
+      [
+        "Safe Browsing",
+        39129917
+      ],
+      [
+        "optimization_guide_model_store/43",
+        37572708
+      ],
+      [
+        "Profile 2/Storage",
+        33302484
+      ],
+      [
+        "component_crx_cache",
+        31080097
+      ],
+      [
+        "Default/Extensions",
+        29241525
+      ],
+      [
+        "WasmTtsEngine/20260904.1",
+        23345149
+      ],
+      [
+        "Profile 2",
+        22043677
+      ],
+      [
+        "Profile 2/Local Extension Settings",
+        21549775
+      ],
+      [
+        "GrShaderCache",
+        11059704
+      ],
+      [
+        "Default/IndexedDB",
+        10458169
+      ],
+      [
+        "Profile 2/Web Applications",
+        7139871
+      ],
+      [
+        "optimization_guide_model_store/30",
+        6754765
+      ],
+      [
+        "Default",
+        6035782
+      ],
+      [
+        "Profile 2/Extension State",
+        5974283
+      ],
+      [
+        "Profile 2/GPUCache",
+        5870484
+      ],
+      [
+        "Default/GPUCache",
+        5837168
+      ],
+      [
+        "extensions_crx_cache",
+        5825367
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Google\\Chrome\\User Data\\OptGuideOnDeviceModel\\2025.8.21.1028\\weights.bin",
+        "bytes": 2862920655
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Google\\Chrome\\User Data\\OptGuideOnDeviceModel\\2025.8.21.1028\\cache.bin",
+        "bytes": 1409783784
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\JetBrains",
+    "exists": true,
+    "logical_bytes": 834143935,
+    "files": 2453,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "PyCharm2026.2/plugins",
+        208760883
+      ],
+      [
+        "Daemon/bundles",
+        187479688
+      ],
+      [
+        "PyCharm2026.2/caches",
+        164626741
+      ],
+      [
+        "PyCharm2026.2/index",
+        160314723
+      ],
+      [
+        "PyCharm2026.2/full-line",
+        88972457
+      ],
+      [
+        "PyCharm2026.2/python_packages",
+        12833960
+      ],
+      [
+        "PyCharm2026.2/log",
+        3750478
+      ],
+      [
+        "PyCharm2026.2/python_stubs",
+        2938621
+      ],
+      [
+        "PyCharm2026.2/splash",
+        2048016
+      ],
+      [
+        "PyCharm2026.2",
+        1966660
+      ],
+      [
+        "PyCharm2026.2/restart",
+        386920
+      ],
+      [
+        "Daemon/logs",
+        22258
+      ],
+      [
+        "PyCharm2026.2/LocalHistory",
+        13396
+      ],
+      [
+        "PyCharm2026.2/tmp",
+        12985
+      ],
+      [
+        "PyCharm2026.2/projects",
+        11812
+      ],
+      [
+        "PyCharm2026.2/global-model-cache",
+        2488
+      ],
+      [
+        "Daemon/data",
+        1532
+      ],
+      [
+        "PyCharm2026.2/grape",
+        317
+      ]
+    ],
+    "large": []
+  },
+  {
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs",
+    "exists": true,
+    "logical_bytes": 4127381100,
+    "files": 41183,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "Positron/resources",
+        2357881604
+      ],
+      [
+        "kimi-desktop/resources",
+        827195665
+      ],
+      [
+        "Positron",
+        339324360
+      ],
+      [
+        "kimi-desktop",
+        329392126
+      ],
+      [
+        "Python/Python314",
+        172811282
+      ],
+      [
+        "Positron/locales",
+        49471161
+      ],
+      [
+        "kimi-desktop/locales",
+        48911733
+      ],
+      [
+        "Python/Launcher",
+        1618080
+      ],
+      [
+        "Positron/tools",
+        772240
+      ],
+      [
+        "Positron/bin",
+        2849
+      ]
+    ],
+    "large": [
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Positron\\resources\\app\\node_modules.asar",
+        "bytes": 365641329
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\kimi-desktop\\resources\\resources\\daimon-bundle.tar.gz",
+        "bytes": 256621174
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\kimi-desktop\\Kimi.exe",
+        "bytes": 239107472
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\kimi-desktop\\resources\\resources\\gateway.asar",
+        "bytes": 236807382
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Positron\\Positron.exe",
+        "bytes": 232848240
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Positron\\resources\\app\\quarto\\bin\\tools\\pandoc.exe",
+        "bytes": 231770720
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\Positron\\resources\\app\\quarto\\bin\\tools\\x86_64\\deno.exe",
+        "bytes": 127967840
+      },
+      {
+        "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Programs\\kimi-desktop\\resources\\app.asar",
+        "bytes": 114751550
+      }
+    ]
+  },
+  {
+    "path": "C:\\Forensic",
+    "exists": true,
+    "logical_bytes": 304359,
+    "files": 2,
+    "skipped_reparse_dirs": 0,
+    "error_count": 0,
+    "errors": [],
+    "groups": [
+      [
+        "KeyLogs",
+        304324
+      ],
+      [
+        "RawInputLogs",
+        35
+      ]
+    ],
+    "large": []
+  }
+]

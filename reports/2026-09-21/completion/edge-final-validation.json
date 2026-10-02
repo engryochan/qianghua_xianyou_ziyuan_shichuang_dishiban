@@ -1,0 +1,19 @@
+{
+  "Time": "2026-09-22T08:18:49.1616023+04:00",
+  "Version": "153.0.4234.48",
+  "JavaScriptDOMAndMajorVersion": "Passed",
+  "UserAgent": "Edg/153.0.0.0",
+  "VersionNote": "Reduced user agent; full version read from installed executable",
+  "Services": [
+    {
+      "Name": "edgeupdate",
+      "Status": "Stopped",
+      "StartType": "Automatic"
+    },
+    {
+      "Name": "edgeupdatem",
+      "Status": "Stopped",
+      "StartType": "Manual"
+    }
+  ]
+}

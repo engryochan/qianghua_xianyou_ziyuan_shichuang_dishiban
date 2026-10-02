@@ -1,0 +1,17 @@
+[
+  {
+    "FileName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DX.exe",
+    "Stream": ":$DATA",
+    "Length": 18685960
+  },
+  {
+    "FileName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe",
+    "Stream": ":$DATA",
+    "Length": 18225896
+  },
+  {
+    "FileName": "C:\\Program Files (x86)\\Steam\\bin\\SteamService.exe",
+    "Stream": ":$DATA",
+    "Length": 2962584
+  }
+]

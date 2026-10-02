@@ -1,0 +1,67 @@
+本程序只显示本机键位状态，默认仅显示修饰键；-AllKeys 会显示所有键位，请勿输入敏感内容。
+按 Ctrl+C 结束。
+
+Time        : 08:21:02.827
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:02.949
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.052
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.167
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.270
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.386
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.503
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.618
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+
+Time        : 08:21:03.734
+PressedKeys : (none)
+CapsLock    : False
+NumLock     : True
+ScrollLock  : False
+
+#< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="information" RefId="0"><TN RefId="0"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>本程序只显示本机键位状态，默认仅显示修饰键；-AllKeys 会显示所有键位，请勿输入敏感内容。</ToString><Props><Obj N="MessageData" RefId="1"><TN RefId="1"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>本程序只显示本机键位状态，默认仅显示修饰键；-AllKeys 会显示所有键位，请勿输入敏感内容。</ToString><Props><S N="Message">本程序只显示本机键位状态，默认仅显示修饰键；-AllKeys 会显示所有键位，请勿输入敏感内容。</S><B N="NoNewLine">false</B><S N="ForegroundColor">Yellow</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_x005F_xianyou_ziyuan_shichuang_dishiban\诊断电脑模板\Full-Keyboard-State.ps1</S><DT N="TimeGenerated">2026-09-23T08:21:02.7907521+04:00</DT><Obj N="Tags" RefId="2"><TN RefId="2"><T>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">SHJ-H0647-RYOCH\PPCCpcpc</S><S N="Computer">SHJ-H0647-Ryochan</S><U32 N="ProcessId">35336</U32><U32 N="NativeThreadId">34864</U32><U32 N="ManagedThreadId">16</U32></Props></Obj><Obj S="information" RefId="3"><TNRef RefId="0" /><ToString>按 Ctrl+C 结束。</ToString><Props><Obj N="MessageData" RefId="4"><TNRef RefId="1" /><ToString>按 Ctrl+C 结束。</ToString><Props><S N="Message">按 Ctrl+C 结束。</S><B N="NoNewLine">false</B><S N="ForegroundColor">Yellow</S><S N="BackgroundColor">Black</S></Props></Obj><S N="Source">C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_x005F_xianyou_ziyuan_shichuang_dishiban\诊断电脑模板\Full-Keyboard-State.ps1</S><DT N="TimeGenerated">2026-09-23T08:21:02.8010809+04:00</DT><Obj N="Tags" RefId="5"><TNRef RefId="2" /><LST><S>PSHOST</S></LST></Obj><S N="User">SHJ-H0647-RYOCH\PPCCpcpc</S><S N="Computer">SHJ-H0647-Ryochan</S><U32 N="ProcessId">35336</U32><U32 N="NativeThreadId">34864</U32><U32 N="ManagedThreadId">16</U32></Props></Obj></Objs>

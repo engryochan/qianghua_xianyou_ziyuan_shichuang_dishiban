@@ -1,0 +1,31 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20260921135733
+用户名: SHJ-H0647-RYOCH\PPCCpcpc
+RunAs 用户: SHJ-H0647-RYOCH\PPCCpcpc
+配置名称: 
+计算机: SHJ-H0647-RYOCH (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -EncodedCommand JABlAG4AdgA6AFAAUwBNAG8AZAB1AGwAZQBQAGEAdABoACAAPQAgACIAJABlAG4AdgA6AFMAeQBzAHQAZQBtAFIAbwBvAHQAXABTAHkAcwB0AGUAbQAzADIAXABXAGkAbgBkAG8AdwBzAFAAbwB3AGUAcgBTAGgAZQBsAGwAXAB2ADEALgAwAFwATQBvAGQAdQBsAGUAcwA7ACQAZQBuAHYAOgBQAHIAbwBnAHIAYQBtAEYAaQBsAGUAcwBcAFcAaQBuAGQAbwB3AHMAUABvAHcAZQByAFMAaABlAGwAbABcAE0AbwBkAHUAbABlAHMAIgA7ACAAUwB0AGEAcgB0AC0AVAByAGEAbgBzAGMAcgBpAHAAdAAgAC0ATABpAHQAZQByAGEAbABQAGEAdABoACAAJwBDADoAXABVAHMAZQByAHMAXABQAFAAQwBDAHAAYwBwAGMAXABPAG4AZQBEAHIAaQB2AGUAXACHZWNoXABHAGkAdABIAHUAYgBcAHEAaQBhAG4AZwBoAHUAYQBfAHgAaQBhAG4AeQBvAHUAXwB6AGkAeQB1AGEAbgBfAHMAaABpAGMAaAB1AGEAbgBnAF8AZABpAHMAaABpAGIAYQBuAFwAcgBlAHAAbwByAHQAcwBcADIAMAAyADYALQAwADkALQAyADEAXAB1AHAAZABhAHQAZQAtAHIAbwB1AG4AZAAyAFwAZAByAGkAdgBlAHIALQBhAGQAbQBpAG4ALQB0AHIAYQBuAHMAYwByAGkAcAB0AC4AdAB4AHQAJwA7ACAAdAByAHkAIAB7ACAAJgAgACcAQwA6AFwAVQBzAGUAcgBzAFwAUABQAEMAQwBwAGMAcABjAFwATwBuAGUARAByAGkAdgBlAFwAh2VjaFwARwBpAHQASAB1AGIAXABxAGkAYQBuAGcAaAB1AGEAXwB4AGkAYQBuAHkAbwB1AF8AegBpAHkAdQBhAG4AXwBzAGgAaQBjAGgAdQBhAG4AZwBfAGQAaQBzAGgAaQBiAGEAbgBcADqKt2XNZFxP+3xxfVwASQBuAHMAdABhAGwAbABfAFYAZQByAGkAZgBpAGUAZABfAEQAcgBpAHYAZQByAHMALgBwAHMAMQAnACAALQBBAHAAcABsAHkAIAB9ACAAYwBhAHQAYwBoACAAewAgAFcAcgBpAHQAZQAtAE8AdQB0AHAAdQB0ACAAKAAkAF8AIAB8ACAATwB1AHQALQBTAHQAcgBpAG4AZwApADsAIABlAHgAaQB0ACAAMQAgAH0AIABmAGkAbgBhAGwAbAB5ACAAewAgAFMAdABvAHAALQBUAHIAYQBuAHMAYwByAGkAcAB0ACAAfQA=
+进程 ID: 108040
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+已启动脚本，输出文件为 C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\2026-09-21\update-round2\driver-admin-transcript.txt
+PS>TerminatingError():“No verified candidates”
+No verified candidates
+所在位置 C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\診斷操作系統\Install_Verified_Drivers.ps
+1:7 字符: 23
++ if($plan.Count -eq 0){throw 'No verified candidates'}
++                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (No verified candidates:String) [], RuntimeException
+    + FullyQualifiedErrorId : No verified candidates
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20260921135734
+**********************

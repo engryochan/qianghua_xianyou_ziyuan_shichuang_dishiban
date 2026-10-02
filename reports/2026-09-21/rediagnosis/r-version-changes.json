@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "nanoparquet",
+    "Before": "0.5.1",
+    "After": "0.5.2"
+  },
+  {
+    "Name": "odbc",
+    "Before": "1.7.0",
+    "After": "1.7.1"
+  },
+  {
+    "Name": "readxl",
+    "Before": "1.5.0",
+    "After": "1.5.0.1"
+  },
+  {
+    "Name": "selectr",
+    "Before": "0.6-0",
+    "After": "0.7-0"
+  },
+  {
+    "Name": "tinytex",
+    "Before": "0.60",
+    "After": "0.61"
+  },
+  {
+    "Name": "xfun",
+    "Before": "0.60",
+    "After": "0.61"
+  },
+  {
+    "Name": "KernSmooth",
+    "Before": "2.23-26",
+    "After": "2.23-27"
+  },
+  {
+    "Name": "MASS",
+    "Before": "7.3-65",
+    "After": "7.3-66"
+  },
+  {
+    "Name": "Matrix",
+    "Before": "1.7-5",
+    "After": "1.7-6"
+  },
+  {
+    "Name": "class",
+    "Before": "7.3-23",
+    "After": "7.3-24"
+  },
+  {
+    "Name": "cluster",
+    "Before": "2.1.8.2",
+    "After": "2.1.8.3"
+  },
+  {
+    "Name": "lattice",
+    "Before": "0.22-9",
+    "After": "0.23-1"
+  },
+  {
+    "Name": "nlme",
+    "Before": "3.1-169",
+    "After": "3.1-171"
+  },
+  {
+    "Name": "nnet",
+    "Before": "7.3-20",
+    "After": "7.3-21"
+  },
+  {
+    "Name": "spatial",
+    "Before": "7.3-18",
+    "After": "7.3-19"
+  },
+  {
+    "Name": "survival",
+    "Before": "3.8-6",
+    "After": "3.8-12"
+  }
+]

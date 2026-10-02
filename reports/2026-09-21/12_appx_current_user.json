@@ -1,0 +1,1234 @@
+﻿[
+  {
+    "Name": "Microsoft.UI.Xaml.2.0",
+    "Version": "2.1810.18004.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Microsoft3DViewer",
+    "Version": "6.1908.2042.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MSPaint",
+    "Version": "6.1907.29027.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "Version": "14.0.33519.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "Version": "14.0.33519.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "Version": "8.2501.31001.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "Version": "14.0.33728.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "Version": "14.0.33728.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.XboxApp",
+    "Version": "48.104.4001.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "microsoft.windowscommunicationsapps",
+    "Version": "16005.14326.22342.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MixedReality.Portal",
+    "Version": "2000.21051.1282.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.1.7",
+    "Version": "1.7.27413.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.1.7",
+    "Version": "1.7.27413.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.1.7",
+    "Version": "1.7.27422.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.1.7",
+    "Version": "1.7.27422.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.7",
+    "Version": "7.2409.9001.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.7",
+    "Version": "7.2409.9001.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "Version": "2.2.29512.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "Version": "2.2.29512.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.SkypeApp",
+    "Version": "15.150.3125.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "Version": "2.2.28604.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "Version": "2.2.28604.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MicrosoftStickyNotes",
+    "Version": "6.1.4.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Office.OneNote",
+    "Version": "16001.14326.22594.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.People",
+    "Version": "10.2202.100.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsMaps",
+    "Version": "11.2506.3.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.4",
+    "Version": "2.42007.9001.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.4",
+    "Version": "2.42007.9001.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Xbox.TCUI",
+    "Version": "1.24.10001.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.XboxIdentityProvider",
+    "Version": "12.130.16001.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.XboxGameOverlay",
+    "Version": "1.54.4001.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.VP9VideoExtensions",
+    "Version": "1.2.20.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.7",
+    "Version": "7000.785.2325.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.BingWeather",
+    "Version": "4.54.63045.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.7",
+    "Version": "7000.785.2325.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.ZuneVideo",
+    "Version": "10.26061.10051.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.3",
+    "Version": "2.32002.13001.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.3",
+    "Version": "2.32002.13001.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "MSTeams",
+    "Version": "26183.1903.4892.4448",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MicrosoftEdge.Stable",
+    "Version": "150.0.4078.105",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "AppUp.IntelGraphicsExperience",
+    "Version": "1.100.5688.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.5",
+    "Version": "5001.373.1736.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.5",
+    "Version": "5001.373.1736.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.DevHome",
+    "Version": "0.2100.858.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "Version": "8000.946.1701.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "Version": "8000.946.1701.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.OfficePushNotificationUtility",
+    "Version": "16.0.19127.20800",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Office.ActionsServer",
+    "Version": "16.0.19127.20800",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "aimgr",
+    "Version": "0.20.29.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MicrosoftSolitaireCollection",
+    "Version": "4.26.7290.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WebpImageExtension",
+    "Version": "1.2.31.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.XboxGamingOverlay",
+    "Version": "7.326.8061.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "PDFShellExt",
+    "Version": "4.0.0.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.HEIFImageExtension",
+    "Version": "1.2.48.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.StorePurchaseApp",
+    "Version": "22607.1401.4.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsCalculator",
+    "Version": "11.2607.0.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.ZuneMusic",
+    "Version": "11.2607.16.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAlarms",
+    "Version": "11.2607.6.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsCamera",
+    "Version": "2026.2607.1.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.5.1.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.5.1.0",
+    "Architecture": "X86",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.Photos",
+    "Version": "2026.11080.24002.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsStore",
+    "Version": "22608.1401.3.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "5319275A.WhatsAppDesktop",
+    "Version": "2.2636.100.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "AppUp.IntelArcSoftware",
+    "Version": "26.32.2604.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Claude",
+    "Version": "2.2553.1.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "OpenAI.Codex",
+    "Version": "26.915.4065.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.OutlookForWindows",
+    "Version": "1.2026.818.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Winget.Source",
+    "Version": "2026.919.2350.48",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.PowerShell",
+    "Version": "7.6.6.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "1527c705-839a-4832-9118-54d4Bd6a0c89",
+    "Version": "10.0.19640.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "c5e2524a-ea46-4f67-841f-6a9465d9d515",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "E2A4F912-2574-4A75-9BB0-0D023378592B",
+    "Version": "10.0.19640.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.AAD.BrokerPlugin",
+    "Version": "1000.19580.1000.2",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.AccountsControl",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.AIFabric.CBS.1.6",
+    "Version": "1.6.951.100",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.AsyncTextService",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.BioEnrollment",
+    "Version": "10.0.19587.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.CredDialogHost",
+    "Version": "10.0.19595.1001",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.ECApp",
+    "Version": "10.0.26100.9278",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.LockApp",
+    "Version": "10.0.26100.9278",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MicrosoftEdgeDevToolsClient",
+    "Version": "1000.25128.1000.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.CBS",
+    "Version": "9.2603.18001.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Win32WebViewHost",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.Apprep.ChxApp",
+    "Version": "1000.25128.1000.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.AssignedAccessLockApp",
+    "Version": "1000.25128.1000.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.AugLoop.CBS",
+    "Version": "1.1126.2131.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.CapturePicker",
+    "Version": "10.0.19580.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.CloudExperienceHost",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.ContentDeliveryManager",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.NarratorQuickStart",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.OOBENetworkCaptivePortal",
+    "Version": "10.0.26569.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.OOBENetworkConnectionFlow",
+    "Version": "10.0.26569.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.ParentalControls",
+    "Version": "1000.25128.1000.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.PeopleExperienceHost",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.PinningConfirmationDialog",
+    "Version": "1000.25140.1001.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.PrintQueueActionCenter",
+    "Version": "1.0.2.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.SecureAssessmentBrowser",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.ShellExperienceHost",
+    "Version": "10.0.26100.8115",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.StartMenuExperienceHost",
+    "Version": "10.0.26100.4768",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Windows.XGpuEjectDialog",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.CBS.1.6",
+    "Version": "6000.900.156.100",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.CBS.2",
+    "Version": "2.2.0.100",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.XboxGameCallableUI",
+    "Version": "1000.25128.1000.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.61869720.Voiess",
+    "Version": "1000.26100.9278.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.61869721.Livtop",
+    "Version": "1000.26100.9278.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.61869722.Speion",
+    "Version": "1000.26100.9278.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.61869836.InpApp",
+    "Version": "1000.26100.9278.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.CBS",
+    "Version": "1000.26100.360.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.CoreAI",
+    "Version": "1000.26100.9457.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.Core",
+    "Version": "1000.26100.133.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.FileExp",
+    "Version": "1000.26100.10.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.OOBE",
+    "Version": "1000.26100.55.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.Photon",
+    "Version": "1000.26100.10.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.UndockedDevKit",
+    "Version": "10.0.26100.1",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Windows.CBSPreview",
+    "Version": "10.0.19580.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "windows.immersivecontrolpanel",
+    "Version": "10.0.8.1000",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Windows.PrintDialog",
+    "Version": "6.2.3.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 4,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.BingNews",
+    "Version": "1.0.2.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.XboxSpeechToTextOverlay",
+    "Version": "1.97.17002.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftCorporationII.QuickAssist",
+    "Version": "2.0.29.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.BingSearch",
+    "Version": "1.1.43.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "B9ECED6F.ArmouryCrate",
+    "Version": "6.5.14.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "Version": "8.2511.26001.0",
+    "Architecture": "X64",
+    "IsFramework": true,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.SecHealthUI",
+    "Version": "1000.29628.1000.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsNotepad",
+    "Version": "11.2607.14.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Paint",
+    "Version": "11.2605.81.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.Client.WebExperience",
+    "Version": "526.21100.40.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.ScreenSketch",
+    "Version": "11.2607.23.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "ASUSAmbientHAL64",
+    "Version": "1.0.0.3",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WidgetsPlatformRuntime",
+    "Version": "1.6.19.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.AVCEncoderVideoExtension",
+    "Version": "1.1.23.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.ApplicationCompatibilityEnhancements",
+    "Version": "1.2511.9.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.StartExperiencesApp",
+    "Version": "1.380.2.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.LanguageExperiencePackzh-CN",
+    "Version": "26100.163.263.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.Todos",
+    "Version": "0.176.7601.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsTerminal",
+    "Version": "1.24.11911.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.MPEG2VideoExtension",
+    "Version": "1.2.32.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsSoundRecorder",
+    "Version": "11.2607.1.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WebMediaExtensions",
+    "Version": "2.1.51.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.RawImageExtension",
+    "Version": "2.5.35.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.AV1VideoExtension",
+    "Version": "2.0.35.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.WindowsFeedbackHub",
+    "Version": "2.2608.301.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "MicrosoftWindows.CrossDevice",
+    "Version": "0.26072.116.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.GetHelp",
+    "Version": "10.2409.42492.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.GamingApp",
+    "Version": "2609.1001.16.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "AdobeAcrobatReaderCoreApp",
+    "Version": "26.0.0.1",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.DesktopAppInstaller",
+    "Version": "1.29.380.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Clipchamp.Clipchamp",
+    "Version": "4.6.10320.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.PowerAutomateDesktop",
+    "Version": "1.0.2141.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.YourPhone",
+    "Version": "1.26072.255.0",
+    "Architecture": "X64",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.OneDriveSync",
+    "Version": "26158.816.3.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 1,
+    "Status": 0
+  },
+  {
+    "Name": "Microsoft.LanguageExperiencePackja-JP",
+    "Version": "26100.174.273.0",
+    "Architecture": "Neutral",
+    "IsFramework": false,
+    "SignatureKind": 3,
+    "Status": 0
+  }
+]

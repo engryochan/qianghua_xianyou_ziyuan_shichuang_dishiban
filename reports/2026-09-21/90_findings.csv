@@ -1,0 +1,6 @@
+"Level","Area","Message"
+"注意","重啟","偵測到待重啟標記；PendingFileRename 單獨出現未必代表 Windows 更新需要重啟。"
+"建議","路徑","LongPathsEnabled 未啟用。啟用可改善支援 longPathAware 的程式；並非所有舊程式都能突破長路徑限制。"
+"說明","GPU","GPU 名稱/驅動僅供盤點；CUDA、PyTorch 支援與 Windows 11 CPU/TPM/Secure Boot/WDDM 資格須依廠商當前要求另外核實。"
+"說明","套件","未安装選用分析套件不等於故障。依工作負載建立獨立 Python/R 專案環境與鎖檔；不建議全域一次升級所有套件。"
+"說明","範圍","本次不連網檢查可升級版本；Windows 更新清單不代表完整更新歷史。未搜尋其他使用者、所有可攜程式、每個專案環境、Conda/WSL 容器內部。"

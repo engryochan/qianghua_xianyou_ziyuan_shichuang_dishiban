@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "steam.exe",
+    "ProcessId": 120984,
+    "ParentProcessId": 119488,
+    "ExecutablePath": "C:\\Program Files (x86)\\Steam\\steam.exe",
+    "CreationDate": "2026-10-02T12:56:19.648054+04:00"
+  },
+  {
+    "Name": "steamservice.exe",
+    "ProcessId": 120204,
+    "ParentProcessId": 1360,
+    "ExecutablePath": null,
+    "CreationDate": "2026-10-02T12:56:24.105514+04:00"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "Status": "READ_OK",
+  "TargetRules": [
+    {
+      "Name": "{81CCD97F-D0C3-40A8-B390-2071599DBE47}",
+      "DisplayName": "Steam",
+      "Enabled": 1,
+      "Direction": 1,
+      "Action": 2,
+      "Profile": 7,
+      "PolicyStoreSourceType": 1,
+      "Program": "C:\\Program Files (x86)\\Steam\\Steam.exe"
+    },
+    {
+      "Name": "{FA4EF4C3-780E-4187-BB50-FFEFC87831DD}",
+      "DisplayName": "Steam",
+      "Enabled": 1,
+      "Direction": 1,
+      "Action": 2,
+      "Profile": 7,
+      "PolicyStoreSourceType": 1,
+      "Program": "C:\\Program Files (x86)\\Steam\\Steam.exe"
+    },
+    {
+      "Name": "{7352C51F-0EED-405B-A0B6-8BAA4C0D57FD}",
+      "DisplayName": "太阁立志传Ⅴ DX",
+      "Enabled": 1,
+      "Direction": 1,
+      "Action": 2,
+      "Profile": 7,
+      "PolicyStoreSourceType": 1,
+      "Program": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe"
+    },
+    {
+      "Name": "{03E7AAE4-C895-485B-901F-26FFE9710B4B}",
+      "DisplayName": "太阁立志传Ⅴ DX",
+      "Enabled": 1,
+      "Direction": 1,
+      "Action": 2,
+      "Profile": 7,
+      "PolicyStoreSourceType": 1,
+      "Program": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe"
+    }
+  ],
+  "Error": null
+}

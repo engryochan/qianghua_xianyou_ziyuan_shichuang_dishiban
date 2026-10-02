@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "package_count": 348,
+  "xgboost_accuracy": 0.9886,
+  "checks": ["10-key-packages", "data.table", "R-duckdb-parquet", "R-xgboost", "reticulate-pyarrow"]
+}

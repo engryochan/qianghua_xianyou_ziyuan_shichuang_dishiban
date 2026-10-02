@@ -1,0 +1,56 @@
+[
+  {
+    "Log": "Microsoft-Windows-CodeIntegrity/Operational",
+    "Enabled": true,
+    "Records": 1192,
+    "QueryState": "READ_OK",
+    "WindowEvents": 1192,
+    "Matched": [],
+    "Error": null
+  },
+  {
+    "Log": "Microsoft-Windows-AppLocker/EXE and DLL",
+    "Enabled": true,
+    "Records": 0,
+    "QueryState": "NoMatchingEventsFound,Microsoft.PowerShell.Commands.GetWinEventCommand",
+    "WindowEvents": null,
+    "Matched": [],
+    "Error": "No events were found that match the specified selection criteria."
+  },
+  {
+    "Log": "Microsoft-Windows-AppLocker/MSI and Script",
+    "Enabled": true,
+    "Records": 0,
+    "QueryState": "NoMatchingEventsFound,Microsoft.PowerShell.Commands.GetWinEventCommand",
+    "WindowEvents": null,
+    "Matched": [],
+    "Error": "No events were found that match the specified selection criteria."
+  },
+  {
+    "Log": "Microsoft-Windows-AppLocker/Packaged app-Execution",
+    "Enabled": true,
+    "Records": 0,
+    "QueryState": "NoMatchingEventsFound,Microsoft.PowerShell.Commands.GetWinEventCommand",
+    "WindowEvents": null,
+    "Matched": [],
+    "Error": "No events were found that match the specified selection criteria."
+  },
+  {
+    "Log": "Microsoft-Windows-Windows Defender/Operational",
+    "Enabled": true,
+    "Records": 819,
+    "QueryState": "READ_OK",
+    "WindowEvents": 2,
+    "Matched": [],
+    "Error": null
+  },
+  {
+    "Log": "Application",
+    "Enabled": true,
+    "Records": 4216,
+    "QueryState": "READ_OK",
+    "WindowEvents": 24,
+    "Matched": [],
+    "Error": null
+  }
+]

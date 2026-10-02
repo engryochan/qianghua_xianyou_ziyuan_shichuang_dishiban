@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Scope": "MachinePolicy",
+    "ExecutionPolicy": "Undefined"
+  },
+  {
+    "Scope": "UserPolicy",
+    "ExecutionPolicy": "Undefined"
+  },
+  {
+    "Scope": "Process",
+    "ExecutionPolicy": "Undefined"
+  },
+  {
+    "Scope": "CurrentUser",
+    "ExecutionPolicy": "Undefined"
+  },
+  {
+    "Scope": "LocalMachine",
+    "ExecutionPolicy": "Undefined"
+  }
+]

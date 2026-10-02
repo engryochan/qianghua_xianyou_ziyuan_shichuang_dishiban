@@ -1,0 +1,23 @@
+[2026-10-02 15:22:09] Game process added : AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 165024, IP 0.0.0.0:0
+[2026-10-02 15:22:10] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to WaitingGameWindow with ""
+[2026-10-02 15:22:10] GameAction [AppID 1842810, ActionID 2] : LaunchApp changed task to Completed with ""
+[2026-10-02 15:22:34] Game process removed: AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 165024 
+[2026-10-02 15:42:41] ExecCommandLine: ""C:\Program Files (x86)\Steam\steam.exe" -- steam://launch/1842810/Dialog"
+[2026-10-02 15:42:41] ExecuteSteamURL: "steam://launch/1842810/Dialog"
+[2026-10-02 15:42:41] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to CheckShaderDepotManifest with ""
+[2026-10-02 15:42:41] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to RunningInstallScript with ""
+[2026-10-02 15:42:41] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to SynchronizingCloud with ""
+[2026-10-02 15:42:42] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to SynchronizingStats with ""
+[2026-10-02 15:42:43] CAPIJobRequestUserStats - Server response failed 2
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to ShowInterstitials with ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp waiting for user response to ShowInterstitials ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp continues with user response "ShowInterstitials"
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to SiteLicenseSeatCheckout with ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to DelayLaunch with ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to CreatingProcess with ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp waiting for user response to CreatingProcess ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp continues with user response "CreatingProcess"
+[2026-10-02 15:42:43] Game process added : AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 176728, IP 0.0.0.0:0
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to WaitingGameWindow with ""
+[2026-10-02 15:42:43] GameAction [AppID 1842810, ActionID 3] : LaunchApp changed task to Completed with ""
+[2026-10-02 15:42:54] Game process removed: AppID 1842810 ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe"", ProcID 176728 

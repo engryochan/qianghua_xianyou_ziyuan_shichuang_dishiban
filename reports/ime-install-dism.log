@@ -1,0 +1,150 @@
+﻿2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 DismApi.dll:                                            - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 DismApi.dll: <----- Starting DismApi.dll session -----> - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 DismApi.dll:                                            - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 DismApi.dll: Host machine information: OS Version=10.0.26200, Running architecture=amd64, Number of processors=12 - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 DismApi.dll: API Version 10.0.26100.9549 - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 DismApi.dll: Parent process command line: "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy RemoteSigned -File "C:\Users\PPCCpcpc\OneDrive\�ĵ�\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\Install-LanguageFeatures-20260927.ps1" - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Input parameters: LogLevel: 2, LogFilePath: C:\Users\PPCCpcpc\OneDrive\�ĵ�\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\ime-install-dism.log, ScratchDirectory: (null) - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Initialized GlobalConfig - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Initialized SessionTable - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Lookup in table by path failed for: DummyPath-2BA51B78-C7F7-4910-B99D-BB7345357CDC - CTransactionalImageTable::LookupImagePath
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Waiting for m_pInternalThread to start - CCommandThread::Start
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=39128 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=39128 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 m_pInternalThread started - CCommandThread::Start
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Created g_internalDismSession - DismInitializeInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Input parameters: ImagePath: DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}, WindowsDirectory: (null), SystemDrive: (null) - DismOpenSessionInternal
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Lookup in table by path failed for: DRIVE_C - CTransactionalImageTable::LookupImagePath
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Waiting for m_pInternalThread to start - CCommandThread::Start
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=33652 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=33652 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 m_pInternalThread started - CCommandThread::Start
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=40180 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=33652 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+2026-09-27 08:29:39, Info                  DISM   API: PID=35804 TID=33652 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+2026-09-27 08:29:40, Info                  DISM   PID=35804 TID=33652 Scratch directory set to 'C:\Users\PPCCpcpc\AppData\Local\Temp\'. - CDISMManager::put_ScratchDir
+2026-09-27 08:29:40, Info                  DISM   PID=35804 TID=33652 DismCore.dll version: 10.0.26100.9549 - CDISMManager::FinalConstruct
+2026-09-27 08:29:40, Info                  DISM   PID=35804 TID=33652 Successfully loaded the ImageSession at "C:\WINDOWS\SYSTEM32\Dism" - CDISMManager::LoadLocalImageSession
+2026-09-27 08:29:40, Info                  DISM   DISM Provider Store: PID=35804 TID=33652 Found and Initialized the DISM Logger. - CDISMProviderStore::Internal_InitializeLogger
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 Successfully created the local image session and provider store. - CDISMManager::CreateLocalImageSession
+2026-09-27 08:29:40, Info                  DISM   DISM FFU Provider: PID=35804 TID=33652 [C:\] is not recognized by the DISM FFU provider. - CFfuImage::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM Imaging Provider: PID=35804 TID=33652 The provider FfuManager does not support CreateDismImage on C:\ - CGenericImagingManager::CreateDismImage
+2026-09-27 08:29:40, Info                  DISM   DISM VHD Provider: PID=35804 TID=33652 [C:\] is not recognized by the DISM VHD provider. - CVhdImage::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM Imaging Provider: PID=35804 TID=33652 The provider VHDManager does not support CreateDismImage on C:\ - CGenericImagingManager::CreateDismImage
+[35804.33652] [0x8007007b] FIOReadFileIntoBuffer:(1454): 文件名、目录名或卷标语法不正确。
+[35804.33652] [0xc142011c] UnmarshallImageHandleFromDirectory:(641)
+[35804.33652] [0xc142011c] WIMGetMountedImageHandle:(2910)
+2026-09-27 08:29:40, Info                  DISM   DISM WIM Provider: PID=35804 TID=33652 [C:\] is not a WIM mount point. - CWimMountedImageInfo::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM Imaging Provider: PID=35804 TID=33652 The provider WimManager does not support CreateDismImage on C:\ - CGenericImagingManager::CreateDismImage
+2026-09-27 08:29:40, Info                  DISM   DISM Imaging Provider: PID=35804 TID=33652 No imaging provider supported CreateDismImage for this path - CGenericImagingManager::CreateDismImage
+[35804.33652] [0x8007007b] FIOReadFileIntoBuffer:(1454): 文件名、目录名或卷标语法不正确。
+[35804.33652] [0xc142011c] UnmarshallImageHandleFromDirectory:(641)
+[35804.33652] [0xc142011c] WIMGetMountedImageHandle:(2910)
+2026-09-27 08:29:40, Info                  DISM   DISM WIM Provider: PID=35804 TID=33652 [C:\] is not a WIM mount point. - CWimMountedImageInfo::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM FFU Provider: PID=35804 TID=33652 [C:\] is not recognized by the DISM FFU provider. - CFfuImage::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM VHD Provider: PID=35804 TID=33652 [C:\] is not recognized by the DISM VHD provider. - CVhdImage::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 physical location path: C:\ - CDISMManager::CreateImageSession
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 Event name for current DISM session is Global\{6DA3D156-AB5A-4254-BB0A-A227854F8810} - CDISMManager::CheckSessionAndLock
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 Create session event 0xce8 for current DISM session and event name is Global\{6DA3D156-AB5A-4254-BB0A-A227854F8810}  - CDISMManager::CheckSessionAndLock
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 Copying DISM from "C:\Windows\System32\Dism" - CDISMManager::CreateImageSessionFromLocation
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 No Sandbox was created, DISM running in-place. - CDISMManager::CreateImageSessionFromLocation
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 Successfully loaded the ImageSession at "C:\Windows\System32\Dism" - CDISMManager::LoadRemoteImageSession
+2026-09-27 08:29:40, Info                  DISM   DISM Image Session: PID=38564 TID=40056 Instantiating the Provider Store. - CDISMImageSession::get_ProviderStore
+2026-09-27 08:29:40, Info                  DISM   DISM OS Provider: PID=38564 TID=40056 Defaulting SystemPath to C:\ - CDISMOSServiceManager::Final_OnConnect
+2026-09-27 08:29:40, Info                  DISM   DISM OS Provider: PID=38564 TID=40056 Defaulting Windows folder to C:\Windows - CDISMOSServiceManager::Final_OnConnect
+2026-09-27 08:29:40, Info                  DISM   DISM Provider Store: PID=38564 TID=40056 Attempting to initialize the logger from the Image Session. - CDISMProviderStore::Final_OnConnect
+2026-09-27 08:29:40, Info                  DISM   DISM Provider Store: PID=38564 TID=40056 Found and Initialized the DISM Logger. - CDISMProviderStore::Internal_InitializeLogger
+2026-09-27 08:29:40, Info                  DISM   DISM Manager: PID=35804 TID=33652 Image session successfully loaded from location: C:\Windows\System32\Dism - CDISMManager::CreateImageSession
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=33652 Target image information: OS Version=10.0.26200.9550, Image architecture=amd64 - CDismCore::LogImageSessionDetails
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=40180 Session id is: 2 - DismOpenSessionInternal
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=40180 Input parameters: Session: 2 - DismGetOsInfoInternal
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=40180 Initialized default cancel event - DismGetOsInfoInternal
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=40180 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=33652 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=33652 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=40180 Input parameters: Session: 2, Feature: Language.Basic~~~zh-TW~0.0.1.0, LimitAccess: 0, CancelEvent: 0x00000000000008A0, Progress: 0x00000182239371EC, UserData: 0x0000000000000000 - DismAddCapabilityInternal
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=40180 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=33652 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+2026-09-27 08:29:40, Info                  DISM   API: PID=35804 TID=33652 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+2026-09-27 08:29:40, Info                  DISM   DISM Package Manager: PID=38564 TID=37336 Finished initializing the CbsConUI Handler. - CCbsConUIHandler::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM Package Manager: PID=38564 TID=37336 CBS is being initialized for online use. More information about CBS actions can be located at: %windir%\logs\CBS\CBS.log - CDISMPackageManager::Initialize
+2026-09-27 08:29:40, Info                  DISM   DISM Package Manager: PID=38564 TID=37336 Loaded servicing stack for online use. - CDISMPackageManager::CreateCbsSession
+2026-09-27 08:29:40, Info                  CSI    00000001 Shim considered [l:123]'\??\C:\WINDOWS\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.26100.9539_none_a518b3a377576fde\wcp.dll' : got STATUS_SUCCESS
+2026-09-27 08:29:41, Info                  DISM   DISM Package Manager: PID=38564 TID=40056 CBS session options=0x40100! - CDISMPackageManager::Internal_Finalize
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 DismApi.dll:                                            - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 DismApi.dll: <----- Starting DismApi.dll session -----> - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 DismApi.dll:                                            - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 DismApi.dll: Host machine information: OS Version=10.0.26200, Running architecture=amd64, Number of processors=12 - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 DismApi.dll: API Version 10.0.26100.9549 - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 DismApi.dll: Parent process command line: "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy RemoteSigned -File "C:\Users\PPCCpcpc\OneDrive\�ĵ�\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\Install-LanguageFeatures-20260927.ps1" - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Input parameters: LogLevel: 2, LogFilePath: C:\Users\PPCCpcpc\OneDrive\�ĵ�\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\ime-install-dism.log, ScratchDirectory: (null) - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Initialized GlobalConfig - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Initialized SessionTable - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Lookup in table by path failed for: DummyPath-2BA51B78-C7F7-4910-B99D-BB7345357CDC - CTransactionalImageTable::LookupImagePath
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Waiting for m_pInternalThread to start - CCommandThread::Start
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=109436 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=109436 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 m_pInternalThread started - CCommandThread::Start
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Created g_internalDismSession - DismInitializeInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Input parameters: ImagePath: DISM_{53BFAE52-B167-4E2F-A258-0A37B57FF845}, WindowsDirectory: (null), SystemDrive: (null) - DismOpenSessionInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Lookup in table by path failed for: DRIVE_C - CTransactionalImageTable::LookupImagePath
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Waiting for m_pInternalThread to start - CCommandThread::Start
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 Enter CCommandThread::CommandThreadProcedureStub - CCommandThread::CommandThreadProcedureStub
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 Enter CCommandThread::ExecuteLoop - CCommandThread::ExecuteLoop
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 CommandThread StartupEvent signaled - CCommandThread::WaitForStartup
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 m_pInternalThread started - CCommandThread::Start
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+2026-09-27 17:36:00, Info                  DISM   PID=150644 TID=107392 Scratch directory set to 'C:\Users\PPCCpcpc\AppData\Local\Temp\'. - CDISMManager::put_ScratchDir
+2026-09-27 17:36:00, Info                  DISM   PID=150644 TID=107392 DismCore.dll version: 10.0.26100.9549 - CDISMManager::FinalConstruct
+2026-09-27 17:36:00, Info                  DISM   PID=150644 TID=107392 Successfully loaded the ImageSession at "C:\WINDOWS\SYSTEM32\Dism" - CDISMManager::LoadLocalImageSession
+2026-09-27 17:36:00, Info                  DISM   DISM Provider Store: PID=150644 TID=107392 Found and Initialized the DISM Logger. - CDISMProviderStore::Internal_InitializeLogger
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 Successfully created the local image session and provider store. - CDISMManager::CreateLocalImageSession
+2026-09-27 17:36:00, Info                  DISM   DISM FFU Provider: PID=150644 TID=107392 [C:\] is not recognized by the DISM FFU provider. - CFfuImage::Initialize
+2026-09-27 17:36:00, Info                  DISM   DISM Imaging Provider: PID=150644 TID=107392 The provider FfuManager does not support CreateDismImage on C:\ - CGenericImagingManager::CreateDismImage
+2026-09-27 17:36:00, Info                  DISM   DISM VHD Provider: PID=150644 TID=107392 [C:\] is not recognized by the DISM VHD provider. - CVhdImage::Initialize
+2026-09-27 17:36:00, Info                  DISM   DISM Imaging Provider: PID=150644 TID=107392 The provider VHDManager does not support CreateDismImage on C:\ - CGenericImagingManager::CreateDismImage
+[150644.107392] [0x8007007b] FIOReadFileIntoBuffer:(1454): 文件名、目录名或卷标语法不正确。
+[150644.107392] [0xc142011c] UnmarshallImageHandleFromDirectory:(641)
+[150644.107392] [0xc142011c] WIMGetMountedImageHandle:(2910)
+2026-09-27 17:36:00, Info                  DISM   DISM WIM Provider: PID=150644 TID=107392 [C:\] is not a WIM mount point. - CWimMountedImageInfo::Initialize
+2026-09-27 17:36:00, Info                  DISM   DISM Imaging Provider: PID=150644 TID=107392 The provider WimManager does not support CreateDismImage on C:\ - CGenericImagingManager::CreateDismImage
+2026-09-27 17:36:00, Info                  DISM   DISM Imaging Provider: PID=150644 TID=107392 No imaging provider supported CreateDismImage for this path - CGenericImagingManager::CreateDismImage
+[150644.107392] [0x8007007b] FIOReadFileIntoBuffer:(1454): 文件名、目录名或卷标语法不正确。
+[150644.107392] [0xc142011c] UnmarshallImageHandleFromDirectory:(641)
+[150644.107392] [0xc142011c] WIMGetMountedImageHandle:(2910)
+2026-09-27 17:36:00, Info                  DISM   DISM WIM Provider: PID=150644 TID=107392 [C:\] is not a WIM mount point. - CWimMountedImageInfo::Initialize
+2026-09-27 17:36:00, Info                  DISM   DISM FFU Provider: PID=150644 TID=107392 [C:\] is not recognized by the DISM FFU provider. - CFfuImage::Initialize
+2026-09-27 17:36:00, Info                  DISM   DISM VHD Provider: PID=150644 TID=107392 [C:\] is not recognized by the DISM VHD provider. - CVhdImage::Initialize
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 physical location path: C:\ - CDISMManager::CreateImageSession
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 Event name for current DISM session is Global\{4592050C-C613-47AA-985E-8398BBF26319} - CDISMManager::CheckSessionAndLock
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 Create session event 0xd10 for current DISM session and event name is Global\{4592050C-C613-47AA-985E-8398BBF26319}  - CDISMManager::CheckSessionAndLock
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 Copying DISM from "C:\Windows\System32\Dism" - CDISMManager::CreateImageSessionFromLocation
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 No Sandbox was created, DISM running in-place. - CDISMManager::CreateImageSessionFromLocation
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 Successfully loaded the ImageSession at "C:\Windows\System32\Dism" - CDISMManager::LoadRemoteImageSession
+2026-09-27 17:36:00, Info                  DISM   DISM Image Session: PID=112040 TID=127944 Instantiating the Provider Store. - CDISMImageSession::get_ProviderStore
+2026-09-27 17:36:00, Info                  DISM   DISM OS Provider: PID=112040 TID=127944 Defaulting SystemPath to C:\ - CDISMOSServiceManager::Final_OnConnect
+2026-09-27 17:36:00, Info                  DISM   DISM OS Provider: PID=112040 TID=127944 Defaulting Windows folder to C:\Windows - CDISMOSServiceManager::Final_OnConnect
+2026-09-27 17:36:00, Info                  DISM   DISM Provider Store: PID=112040 TID=127944 Attempting to initialize the logger from the Image Session. - CDISMProviderStore::Final_OnConnect
+2026-09-27 17:36:00, Info                  DISM   DISM Provider Store: PID=112040 TID=127944 Found and Initialized the DISM Logger. - CDISMProviderStore::Internal_InitializeLogger
+2026-09-27 17:36:00, Info                  DISM   DISM Manager: PID=150644 TID=107392 Image session successfully loaded from location: C:\Windows\System32\Dism - CDISMManager::CreateImageSession
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 Target image information: OS Version=10.0.26200.9550, Image architecture=amd64 - CDismCore::LogImageSessionDetails
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Session id is: 2 - DismOpenSessionInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Input parameters: Session: 2 - DismGetOsInfoInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Initialized default cancel event - DismGetOsInfoInternal
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=106216 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+2026-09-27 17:36:00, Info                  DISM   API: PID=150644 TID=107392 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+2026-09-27 17:36:01, Info                  DISM   API: PID=150644 TID=106216 Input parameters: Session: 2, Feature: Language.Handwriting~~~zh-TW~0.0.1.0, LimitAccess: 0, CancelEvent: 0x0000000000000CF4, Progress: 0x000002933538750C, UserData: 0x0000000000000000 - DismAddCapabilityInternal
+2026-09-27 17:36:01, Info                  DISM   API: PID=150644 TID=106216 Successfully enqueued command object - CCommandThread::EnqueueCommandObject
+2026-09-27 17:36:01, Info                  DISM   API: PID=150644 TID=107392 ExecuteLoop: CommandQueue signaled - CCommandThread::ExecuteLoop
+2026-09-27 17:36:01, Info                  DISM   API: PID=150644 TID=107392 Successfully dequeued command object - CCommandThread::DequeueCommandObject
+2026-09-27 17:36:01, Info                  DISM   DISM Package Manager: PID=112040 TID=127944 Finished initializing the CbsConUI Handler. - CCbsConUIHandler::Initialize
+2026-09-27 17:36:01, Info                  DISM   DISM Package Manager: PID=112040 TID=127944 CBS is being initialized for online use. More information about CBS actions can be located at: %windir%\logs\CBS\CBS.log - CDISMPackageManager::Initialize
+2026-09-27 17:36:01, Info                  DISM   DISM Package Manager: PID=112040 TID=127944 Loaded servicing stack for online use. - CDISMPackageManager::CreateCbsSession
+2026-09-27 17:36:01, Info                  CSI    00000001 Shim considered [l:123]'\??\C:\WINDOWS\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.26100.9539_none_a518b3a377576fde\wcp.dll' : got STATUS_SUCCESS
+2026-09-27 17:36:01, Info                  DISM   DISM Package Manager: PID=112040 TID=102436 CBS session options=0x40100! - CDISMPackageManager::Internal_Finalize

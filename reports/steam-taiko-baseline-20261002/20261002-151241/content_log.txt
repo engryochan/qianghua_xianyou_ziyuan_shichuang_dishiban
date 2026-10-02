@@ -1,0 +1,199 @@
+
+
+[2026-10-02 12:58:07] Client version: 1788652215
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:07] Load failed: C:\Program Files (x86)\Steam\steamapps\libraryfolders.vdf.
+[2026-10-02 12:58:07] Load failed: C:\Program Files (x86)\Steam\config\libraryfolders.vdf.
+[2026-10-02 12:58:07] Steam library folders configuration will be reset.
+[2026-10-02 12:58:07] No install folder configuration files found.
+[2026-10-02 12:58:07] Loaded 0 apps from install folder "C:\Program Files (x86)\Steam\steamapps\appmanifest_*.acf".
+[2026-10-02 12:58:07] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:07] GetCellList - failed to get AppData for WinUI
+[2026-10-02 12:58:08] AppID 7 failed to update ownership ticket (Access Denied)
+[2026-10-02 12:58:08] GetCellList - failed to get AppData for WinUI
+[2026-10-02 14:38:07] AppID 1842810 state changed : Update Required,
+[2026-10-02 14:38:07] AppID 228980 state changed : Update Required,Shared Only,
+[2026-10-02 14:38:07] AppID 228980 state changed : Update Required,
+[2026-10-02 14:38:07] Dependency added: parent 228980, child 1842810, depot 228990
+[2026-10-02 14:38:07] AppID 1842810 scheduler update : Priority First, not played for 24 seconds, update disabled for 0 seconds
+[2026-10-02 14:38:07] AppID 1842810 state changed : Update Required,Update Queued,
+[2026-10-02 14:38:07] AppID 228980 scheduler update : Priority Auto Update, not played for 1790937487 seconds, update disabled for 0 seconds
+[2026-10-02 14:38:07] AppID 228980 state changed : Update Required,Update Queued,
+[2026-10-02 14:38:07] AppID 1842810 state changed : Update Required,Update Queued,Update Running,
+[2026-10-02 14:38:07] AppID 228980 state changed : Update Required,Update Queued,Update Running,
+[2026-10-02 14:38:07] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:38:07] AppID 1842810 App update changed : Running Update,Reconfiguring,
+[2026-10-02 14:38:08] Got 35 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 172 / Launcher 0)
+[2026-10-02 14:38:08] Moving to source priority class '7'
+[2026-10-02 14:38:08] Created download interface of type 'CDN' (2) to host edgenext.cdn.steampipe.steamcontent.com (edgenext.cdn.steampipe.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache5-vie1.steamcontent.com (cache5-vie1.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache6-vie1.steamcontent.com (cache6-vie1.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache7-vie1.steamcontent.com (cache7-vie1.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache8-vie1.steamcontent.com (cache8-vie1.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache1-vie1.steamcontent.com (cache1-vie1.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache2-vie1.steamcontent.com (cache2-vie1.steamcontent.com)
+[2026-10-02 14:38:08] Created download interface of type 'SteamCache' (7) to host cache10-vie1.steamcontent.com (cache10-vie1.steamcontent.com)
+[2026-10-02 14:38:09] HTTP (CDN,29) - edgenext.cdn.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: edgenext.cdn.steampipe.steamcontent.com): AuthenticateDepotID (228990) - Success!
+[2026-10-02 14:38:09] HTTP/2 available
+[2026-10-02 14:38:09] Created ipv4-only http client
+[2026-10-02 14:38:09] HTTP (CDN,29) - edgenext.cdn.steampipe.steamcontent.com (151.242.219.121:80 / 151.242.219.121:80, host: edgenext.cdn.steampipe.steamcontent.com): edgenext.cdn.steampipe.steamcontent.com/depot/228990/manifest/1829726630299308803/5/11500936510382970428 - manifest request received 200 (OK) HTTP response
+[2026-10-02 14:38:11] HTTPS (SteamCache,405) - cache10-vie1.steamcontent.com (146.66.155.6:443 / 146.66.155.6:443, host: cache10-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:11] HTTP/2 (SteamCache,405) - cache10-vie1.steamcontent.com (146.66.155.6:443 / 146.66.155.6:443, host: cache10-vie1.steamcontent.com): cache10-vie1.steamcontent.com/depot/1842811/manifest/2345313088801476794/5/13045513672968497270 - manifest request received 200 (OK) HTTP response
+[2026-10-02 14:38:11] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:38:11] AppID 1842810 App update changed : Running Update,Verifying Installed,
+[2026-10-02 14:38:11] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:38:11] AppID 1842810 App update changed : Running Update,Preallocating,
+[2026-10-02 14:38:12] AppID 228980 preallocated 84 files (89 MB) 
+[2026-10-02 14:38:12] AppID 1842810 preallocated 236 files (7016 MB) 
+[2026-10-02 14:38:12] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:38:12] AppID 228980 update started : download 0/100658080, store 0/0, reuse 0/0, delta 0/0, stage 0/102931551 
+[2026-10-02 14:38:12] AppID 228980 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-10-02 14:38:12] AppID 1842810 update started : download 0/1521047936, store 0/0, reuse 0/0, delta 0/0, stage 0/7374028339 
+[2026-10-02 14:38:12] AppID 1842810 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-10-02 14:38:12] AppID 1842810 App update changed : Running Update,Downloading,Staging,
+[2026-10-02 14:38:12] Downloading 203 chunks for depot 228990 (1829726630299308803)
+[2026-10-02 14:38:13] HTTPS (SteamCache,215) - cache2-vie1.steamcontent.com (146.66.155.21:443 / 146.66.155.21:443, host: cache2-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:13] HTTPS (SteamCache,204) - cache5-vie1.steamcontent.com (146.66.155.22:443 / 146.66.155.22:443, host: cache5-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:13] HTTPS (SteamCache,207) - cache8-vie1.steamcontent.com (146.66.155.25:443 / 146.66.155.25:443, host: cache8-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:14] HTTPS (SteamCache,30) - cache1-vie1.steamcontent.com (146.66.155.10:443 / 146.66.155.10:443, host: cache1-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:14] HTTPS (SteamCache,205) - cache6-vie1.steamcontent.com (146.66.155.23:443 / 146.66.155.23:443, host: cache6-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:14] HTTPS (SteamCache,206) - cache7-vie1.steamcontent.com (146.66.155.24:443 / 146.66.155.24:443, host: cache7-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:21] Increasing target number of download connections to 9 (rate was 0.000, now 23.386)
+[2026-10-02 14:38:21] Created download interface of type 'SteamCache' (7) to host cache9-vie1.steamcontent.com (cache9-vie1.steamcontent.com)
+[2026-10-02 14:38:24] HTTPS (SteamCache,404) - cache9-vie1.steamcontent.com (146.66.155.5:443 / 146.66.155.5:443, host: cache9-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:38:34] Increasing target number of download connections to 10 (rate was 23.386, now 32.655)
+[2026-10-02 14:38:34] Created download interface of type 'SteamCache' (7) to host cache11-vie1.steamcontent.com (cache11-vie1.steamcontent.com)
+[2026-10-02 14:38:34] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:38:34] AppID 1842810 App update changed : Running Update,Downloading,Staging,
+[2026-10-02 14:38:34] Downloading 8080 chunks for depot 1842811 (2345313088801476794)
+[2026-10-02 14:38:34] HTTP (CDN,29) - edgenext.cdn.steampipe.steamcontent.com (151.242.219.121:80 / 151.242.219.121:80, host: edgenext.cdn.steampipe.steamcontent.com): AuthenticateDepotID (1842811) - Success!
+[2026-10-02 14:38:35] HTTPS (SteamCache,406) - cache11-vie1.steamcontent.com (146.66.155.7:443 / 146.66.155.7:443, host: cache11-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:39:20] Increasing target number of download connections to 11 (rate was 32.655, now 39.274)
+[2026-10-02 14:39:20] Created download interface of type 'SteamCache' (7) to host cache12-vie1.steamcontent.com (cache12-vie1.steamcontent.com)
+[2026-10-02 14:39:29] HTTPS (SteamCache,407) - cache12-vie1.steamcontent.com (146.66.155.8:443 / 146.66.155.8:443, host: cache12-vie1.steamcontent.com): Negotiated HTTP/2
+[2026-10-02 14:39:33] Current download rate: 40.661 Mbps
+[2026-10-02 14:40:33] Current download rate: 0.000 Mbps
+[2026-10-02 14:41:34] Current download rate: 4.404 Mbps
+[2026-10-02 14:42:35] Current download rate: 28.983 Mbps
+[2026-10-02 14:43:36] Current download rate: 0.000 Mbps
+[2026-10-02 14:43:39] Got 35 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 172 / Launcher 0)
+[2026-10-02 14:43:39] stats: (CDN, 29) edgenext.cdn.steampipe.steamcontent.com: 139337408 Bytes, 142 sec (7.86 Mbps). 0 Hits / 0 Misses (0 %, 0 % bytes), score 0.9084
+[2026-10-02 14:43:39] stats: (Invalid, 0) : 718468938 Bytes, 182 sec (31.61 Mbps). 158 Hits / 596 Misses (21 %, 14 % bytes), score 0.0000
+[2026-10-02 14:43:39] stats: (SteamCache, 405) cache10-vie1.steamcontent.com: 65665226 Bytes, 143 sec (3.69 Mbps). 7 Hits / 60 Misses (10 %, 8 % bytes), score 0.9097
+[2026-10-02 14:43:39] stats: (SteamCache, 204) cache5-vie1.steamcontent.com: 89059664 Bytes, 129 sec (5.50 Mbps). 58 Hits / 57 Misses (50 %, 35 % bytes), score 0.8362
+[2026-10-02 14:43:39] stats: (SteamCache, 215) cache2-vie1.steamcontent.com: 76490128 Bytes, 132 sec (4.65 Mbps). 47 Hits / 53 Misses (47 %, 30 % bytes), score 0.8559
+[2026-10-02 14:43:39] stats: (SteamCache, 30) cache1-vie1.steamcontent.com: 70902112 Bytes, 138 sec (4.10 Mbps). 21 Hits / 62 Misses (25 %, 11 % bytes), score 0.9158
+[2026-10-02 14:43:39] stats: (SteamCache, 207) cache8-vie1.steamcontent.com: 46124288 Bytes, 137 sec (2.70 Mbps). 6 Hits / 42 Misses (12 %, 5 % bytes), score 0.9052
+[2026-10-02 14:43:39] stats: (SteamCache, 206) cache7-vie1.steamcontent.com: 64512992 Bytes, 137 sec (3.78 Mbps). 6 Hits / 60 Misses (9 %, 6 % bytes), score 0.9301
+[2026-10-02 14:43:39] stats: (SteamCache, 205) cache6-vie1.steamcontent.com: 57053984 Bytes, 133 sec (3.42 Mbps). 9 Hits / 154 Misses (6 %, 8 % bytes), score 0.9172
+[2026-10-02 14:43:39] stats: (SteamCache, 404) cache9-vie1.steamcontent.com: 44365200 Bytes, 125 sec (2.85 Mbps). 4 Hits / 43 Misses (9 %, 3 % bytes), score 0.9008
+[2026-10-02 14:43:39] stats: (SteamCache, 406) cache11-vie1.steamcontent.com: 43866304 Bytes, 120 sec (2.94 Mbps). 0 Hits / 42 Misses (0 %, 0 % bytes), score 0.9086
+[2026-10-02 14:43:39] stats: (SteamCache, 407) cache12-vie1.steamcontent.com: 21091632 Bytes, 69 sec (2.44 Mbps). 0 Hits / 23 Misses (0 %, 0 % bytes), score 0.9317
+[2026-10-02 14:44:37] Current download rate: 27.168 Mbps
+[2026-10-02 14:45:39] Current download rate: 0.000 Mbps
+[2026-10-02 14:46:40] Current download rate: 0.000 Mbps
+[2026-10-02 14:47:41] Current download rate: 0.000 Mbps
+[2026-10-02 14:48:42] Current download rate: 25.923 Mbps
+[2026-10-02 14:48:46] stats: (CDN, 29) edgenext.cdn.steampipe.steamcontent.com: 37905152 Bytes, 73 sec (4.15 Mbps). 0 Hits / 0 Misses (0 %, 0 % bytes), score 0.9060
+[2026-10-02 14:48:46] stats: (Invalid, 0) : 377470576 Bytes, 99 sec (30.51 Mbps). 158 Hits / 2443 Misses (6 %, 9 % bytes), score 0.0000
+[2026-10-02 14:48:46] stats: (SteamCache, 405) cache10-vie1.steamcontent.com: 19348144 Bytes, 62 sec (2.48 Mbps). 7 Hits / 225 Misses (3 %, 6 % bytes), score 0.9086
+[2026-10-02 14:48:46] stats: (SteamCache, 204) cache5-vie1.steamcontent.com: 22572656 Bytes, 66 sec (2.75 Mbps). 58 Hits / 211 Misses (22 %, 28 % bytes), score 0.9206
+[2026-10-02 14:48:46] stats: (SteamCache, 215) cache2-vie1.steamcontent.com: 24567072 Bytes, 70 sec (2.81 Mbps). 47 Hits / 229 Misses (17 %, 23 % bytes), score 0.9162
+[2026-10-02 14:48:46] stats: (SteamCache, 30) cache1-vie1.steamcontent.com: 37148880 Bytes, 70 sec (4.25 Mbps). 21 Hits / 342 Misses (6 %, 7 % bytes), score 0.9116
+[2026-10-02 14:48:46] stats: (SteamCache, 207) cache8-vie1.steamcontent.com: 33531120 Bytes, 71 sec (3.78 Mbps). 6 Hits / 77 Misses (7 %, 3 % bytes), score 0.9346
+[2026-10-02 14:48:46] stats: (SteamCache, 206) cache7-vie1.steamcontent.com: 45764704 Bytes, 78 sec (4.68 Mbps). 6 Hits / 417 Misses (1 %, 4 % bytes), score 0.9191
+[2026-10-02 14:48:46] stats: (SteamCache, 205) cache6-vie1.steamcontent.com: 25774960 Bytes, 69 sec (2.99 Mbps). 9 Hits / 231 Misses (4 %, 6 % bytes), score 0.9065
+[2026-10-02 14:48:46] stats: (SteamCache, 404) cache9-vie1.steamcontent.com: 48660752 Bytes, 78 sec (4.98 Mbps). 4 Hits / 270 Misses (1 %, 1 % bytes), score 0.9203
+[2026-10-02 14:48:46] stats: (SteamCache, 406) cache11-vie1.steamcontent.com: 43670448 Bytes, 71 sec (4.93 Mbps). 0 Hits / 289 Misses (0 %, 0 % bytes), score 0.9167
+[2026-10-02 14:48:46] stats: (SteamCache, 407) cache12-vie1.steamcontent.com: 38526688 Bytes, 68 sec (4.56 Mbps). 0 Hits / 152 Misses (0 %, 0 % bytes), score 0.9181
+[2026-10-02 14:49:09] Got 35 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 172 / Launcher 0)
+[2026-10-02 14:49:43] Current download rate: 0.000 Mbps
+[2026-10-02 14:50:44] Current download rate: 11.457 Mbps
+[2026-10-02 14:51:46] Current download rate: 26.482 Mbps
+[2026-10-02 14:52:48] Current download rate: 5.423 Mbps
+[2026-10-02 14:53:49] Current download rate: 14.933 Mbps
+[2026-10-02 14:53:53] IPv6 Connectivity state has changed, downgrading to ipv4-only
+[2026-10-02 14:53:53] HTTP/2 (SteamCache,404) - cache9-vie1.steamcontent.com (146.66.155.5:443 / 146.66.155.5:443, host: cache9-vie1.steamcontent.com): Received 0 (Invalid) HTTP response for depot 1842811
+[2026-10-02 14:53:53] HTTP/2 (SteamCache,404) - cache9-vie1.steamcontent.com (146.66.155.5:443 / 146.66.155.5:443, host: cache9-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:53:53] HTTP/2 (SteamCache,404) - cache9-vie1.steamcontent.com (146.66.155.5:443 / 146.66.155.5:443, host: cache9-vie1.steamcontent.com): No Connection
+[2026-10-02 14:53:53] stats: (SteamCache, 404) cache9-vie1.steamcontent.com: 22840384 Bytes, 47 sec (3.92 Mbps). 4 Hits / 642 Misses (1 %, 1 % bytes), score 0.9172
+[2026-10-02 14:53:53] Created download interface of type 'CDN' (2) to host fastly.cdn.steampipe.steamcontent.com (fastly.cdn.steampipe.steamcontent.com)
+[2026-10-02 14:54:05] HTTP (CDN,31) - fastly.cdn.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: fastly.cdn.steampipe.steamcontent.com): AuthenticateDepotID (1842811) - Success!
+[2026-10-02 14:54:16] stats: (CDN, 29) edgenext.cdn.steampipe.steamcontent.com: 14747856 Bytes, 86 sec (1.37 Mbps). 0 Hits / 0 Misses (0 %, 0 % bytes), score 0.8377
+[2026-10-02 14:54:16] stats: (Invalid, 0) : 381145104 Bytes, 138 sec (22.08 Mbps). 158 Hits / 6394 Misses (2 %, 6 % bytes), score 0.0000
+[2026-10-02 14:54:16] stats: (SteamCache, 405) cache10-vie1.steamcontent.com: 34105088 Bytes, 80 sec (3.43 Mbps). 7 Hits / 628 Misses (1 %, 5 % bytes), score 0.9228
+[2026-10-02 14:54:16] stats: (SteamCache, 204) cache5-vie1.steamcontent.com: 29047616 Bytes, 80 sec (2.89 Mbps). 58 Hits / 551 Misses (10 %, 22 % bytes), score 0.9128
+[2026-10-02 14:54:16] stats: (SteamCache, 215) cache2-vie1.steamcontent.com: 50236416 Bytes, 87 sec (4.63 Mbps). 47 Hits / 679 Misses (6 %, 15 % bytes), score 0.9199
+[2026-10-02 14:54:16] stats: (SteamCache, 30) cache1-vie1.steamcontent.com: 15454544 Bytes, 78 sec (1.58 Mbps). 21 Hits / 628 Misses (3 %, 6 % bytes), score 0.9134
+[2026-10-02 14:54:16] stats: (SteamCache, 207) cache8-vie1.steamcontent.com: 64056688 Bytes, 80 sec (6.41 Mbps). 6 Hits / 602 Misses (1 %, 1 % bytes), score 0.9164
+[2026-10-02 14:54:16] stats: (SteamCache, 206) cache7-vie1.steamcontent.com: 41548288 Bytes, 81 sec (4.12 Mbps). 6 Hits / 769 Misses (1 %, 3 % bytes), score 0.9147
+[2026-10-02 14:54:16] stats: (SteamCache, 205) cache6-vie1.steamcontent.com: 23849408 Bytes, 69 sec (2.77 Mbps). 9 Hits / 606 Misses (1 %, 4 % bytes), score 0.9190
+[2026-10-02 14:54:16] stats: (SteamCache, 404) cache9-vie1.steamcontent.com: 22840384 Bytes, 47 sec (3.92 Mbps). 4 Hits / 642 Misses (1 %, 1 % bytes), score 0.9172
+[2026-10-02 14:54:16] stats: (SteamCache, 406) cache11-vie1.steamcontent.com: 22836880 Bytes, 78 sec (2.35 Mbps). 0 Hits / 619 Misses (0 %, 0 % bytes), score 0.9214
+[2026-10-02 14:54:16] stats: (SteamCache, 407) cache12-vie1.steamcontent.com: 62028016 Bytes, 79 sec (6.26 Mbps). 0 Hits / 670 Misses (0 %, 0 % bytes), score 0.9117
+[2026-10-02 14:54:16] stats: (CDN, 31) fastly.cdn.steampipe.steamcontent.com: 393920 Bytes, 10 sec (0.32 Mbps). 0 Hits / 0 Misses (0 %, 0 % bytes), score 0.9372
+[2026-10-02 14:54:40] Got 35 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 172 / Launcher 0)
+[2026-10-02 14:54:50] Current download rate: 20.949 Mbps
+[2026-10-02 14:55:28] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:55:28] AppID 1842810 App update changed : Running Update,Verifying Staged,
+[2026-10-02 14:55:29] Verified 98 MB in 'C:\Program Files (x86)\Steam', clean bytes tally is now 98 MB
+[2026-10-02 14:55:29] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-10-02 14:55:35] Verified 1951 MB in 'C:\Program Files (x86)\Steam', clean bytes tally is now 2049 MB
+[2026-10-02 14:55:35] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-10-02 14:55:35] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:55:35] AppID 1842810 App update changed : Running Update,Committing,
+[2026-10-02 14:55:35] AppID 228980 starting commit from "C:\Program Files (x86)\Steam\steamapps\downloading\228980" to "C:\Program Files (x86)\Steam\steamapps\common\Steamworks Shared" : 158 updated, 0 moved, 0 deleted files
+[2026-10-02 14:55:35] AppID 228980 state changed : Fully Installed,Update Queued,Update Running,
+[2026-10-02 14:55:35] AppID 228980 finished update, 1 mounted depots (BuildID 24098430) : 228990 (1829726630299308803),
+[2026-10-02 14:55:35] AppID 1842810 starting commit from "C:\Program Files (x86)\Steam\steamapps\downloading\1842810" to "C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX" : 1355 updated, 0 moved, 0 deleted files
+[2026-10-02 14:55:36] AppID 1842810 state changed : Fully Installed,Update Queued,Update Running,
+[2026-10-02 14:55:36] AppID 1842810 finished update, 1 mounted depots (BuildID 9163702) : 1842811 (2345313088801476794),
+[2026-10-02 14:55:36] AppID 1842810 App update changed : Running Update,
+[2026-10-02 14:55:36] AppID 1842810 App update changed : None
+[2026-10-02 14:55:36] AppID 228980 state changed : Fully Installed,Update Queued,
+[2026-10-02 14:55:36] AppID 1842810 state changed : Fully Installed,Update Queued,
+[2026-10-02 14:55:36] AppID 1842810 state changed : Fully Installed,
+[2026-10-02 14:55:36] AppID 1842810 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-10-02 14:55:36] AppID 228980 state changed : Fully Installed,
+[2026-10-02 14:55:36] AppID 228980 scheduler finished : removed from schedule (result Suspended, state 0xc) 
+[2026-10-02 14:55:51] Current download rate: 0.000 Mbps
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,405) - cache10-vie1.steamcontent.com (146.66.155.6:443 / 146.66.155.6:443, host: cache10-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,405) - cache10-vie1.steamcontent.com (146.66.155.6:443 / 146.66.155.6:443, host: cache10-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,406) - cache11-vie1.steamcontent.com (146.66.155.7:443 / 146.66.155.7:443, host: cache11-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,406) - cache11-vie1.steamcontent.com (146.66.155.7:443 / 146.66.155.7:443, host: cache11-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,206) - cache7-vie1.steamcontent.com (146.66.155.24:443 / 146.66.155.24:443, host: cache7-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,206) - cache7-vie1.steamcontent.com (146.66.155.24:443 / 146.66.155.24:443, host: cache7-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTPS (CDN,31) - fastly.cdn.steampipe.steamcontent.com (199.232.211.82:443 / 199.232.211.82:443, host: fastly.cdn.steampipe.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTPS (CDN,31) - fastly.cdn.steampipe.steamcontent.com (199.232.211.82:443 / 199.232.211.82:443, host: fastly.cdn.steampipe.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,207) - cache8-vie1.steamcontent.com (146.66.155.25:443 / 146.66.155.25:443, host: cache8-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,207) - cache8-vie1.steamcontent.com (146.66.155.25:443 / 146.66.155.25:443, host: cache8-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,30) - cache1-vie1.steamcontent.com (146.66.155.10:443 / 146.66.155.10:443, host: cache1-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,30) - cache1-vie1.steamcontent.com (146.66.155.10:443 / 146.66.155.10:443, host: cache1-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,204) - cache5-vie1.steamcontent.com (146.66.155.22:443 / 146.66.155.22:443, host: cache5-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,204) - cache5-vie1.steamcontent.com (146.66.155.22:443 / 146.66.155.22:443, host: cache5-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,215) - cache2-vie1.steamcontent.com (146.66.155.21:443 / 146.66.155.21:443, host: cache2-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,215) - cache2-vie1.steamcontent.com (146.66.155.21:443 / 146.66.155.21:443, host: cache2-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,205) - cache6-vie1.steamcontent.com (146.66.155.23:443 / 146.66.155.23:443, host: cache6-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:28] HTTP/2 (SteamCache,205) - cache6-vie1.steamcontent.com (146.66.155.23:443 / 146.66.155.23:443, host: cache6-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:29] HTTP/2 (SteamCache,407) - cache12-vie1.steamcontent.com (146.66.155.8:443 / 146.66.155.8:443, host: cache12-vie1.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:29] HTTP/2 (SteamCache,407) - cache12-vie1.steamcontent.com (146.66.155.8:443 / 146.66.155.8:443, host: cache12-vie1.steamcontent.com): Closing connection
+[2026-10-02 14:56:29] HTTP (CDN,29) - edgenext.cdn.steampipe.steamcontent.com (151.242.233.45:80 / 151.242.233.45:80, host: edgenext.cdn.steampipe.steamcontent.com): Connection has been idle for '61' seconds, closing
+[2026-10-02 14:56:29] HTTP (CDN,29) - edgenext.cdn.steampipe.steamcontent.com (151.242.233.45:80 / 151.242.233.45:80, host: edgenext.cdn.steampipe.steamcontent.com): Closing connection
+[2026-10-02 14:59:46] stats: (CDN, 29) edgenext.cdn.steampipe.steamcontent.com: 11162288 Bytes, 28 sec (3.16 Mbps). 0 Hits / 0 Misses (0 %, 0 % bytes), score 0.8118
+[2026-10-02 14:59:46] stats: (Invalid, 0) : 145044560 Bytes, 33 sec (35.35 Mbps). 158 Hits / 7049 Misses (2 %, 6 % bytes), score 0.0000
+[2026-10-02 14:59:46] stats: (SteamCache, 405) cache10-vie1.steamcontent.com: 5438736 Bytes, 26 sec (1.66 Mbps). 7 Hits / 668 Misses (1 %, 4 % bytes), score 0.9162
+[2026-10-02 14:59:46] stats: (SteamCache, 204) cache5-vie1.steamcontent.com: 5504160 Bytes, 29 sec (1.51 Mbps). 58 Hits / 580 Misses (9 %, 22 % bytes), score 0.9231
+[2026-10-02 14:59:46] stats: (SteamCache, 215) cache2-vie1.steamcontent.com: 16602592 Bytes, 28 sec (4.72 Mbps). 47 Hits / 747 Misses (6 %, 14 % bytes), score 0.8207
+[2026-10-02 14:59:46] stats: (SteamCache, 30) cache1-vie1.steamcontent.com: 26940784 Bytes, 30 sec (7.27 Mbps). 21 Hits / 754 Misses (3 %, 5 % bytes), score 0.8793
+[2026-10-02 14:59:46] stats: (SteamCache, 207) cache8-vie1.steamcontent.com: 15530768 Bytes, 26 sec (4.72 Mbps). 6 Hits / 683 Misses (1 %, 1 % bytes), score 0.8940
+[2026-10-02 14:59:46] stats: (SteamCache, 206) cache7-vie1.steamcontent.com: 20295520 Bytes, 27 sec (5.97 Mbps). 6 Hits / 895 Misses (1 %, 2 % bytes), score 0.7474
+[2026-10-02 14:59:46] stats: (SteamCache, 205) cache6-vie1.steamcontent.com: 19071680 Bytes, 33 sec (4.68 Mbps). 9 Hits / 691 Misses (1 %, 4 % bytes), score 0.9044
+[2026-10-02 14:59:46] stats: (SteamCache, 406) cache11-vie1.steamcontent.com: 12956864 Bytes, 25 sec (4.14 Mbps). 0 Hits / 687 Misses (0 %, 0 % bytes), score 0.9180
+[2026-10-02 14:59:46] stats: (SteamCache, 407) cache12-vie1.steamcontent.com: 8534192 Bytes, 26 sec (2.66 Mbps). 0 Hits / 702 Misses (0 %, 0 % bytes), score 0.8347
+[2026-10-02 14:59:46] stats: (CDN, 31) fastly.cdn.steampipe.steamcontent.com: 3006976 Bytes, 28 sec (0.85 Mbps). 0 Hits / 0 Misses (0 %, 0 % bytes), score 0.8893
+[2026-10-02 15:01:56] AppID 1842810 state changed : Fully Installed,App Running,

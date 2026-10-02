@@ -1,0 +1,20 @@
+[
+  {
+    "Test": "duckdb_1m_parquet_groupby",
+    "BeforeMs": 7.6045999994676095,
+    "AfterMs": 7.197500000074797,
+    "ChangePercent": -5.353338761030335
+  },
+  {
+    "Test": "polars_1m_parquet_groupby",
+    "BeforeMs": 7.319900001675705,
+    "AfterMs": 6.199400000014066,
+    "ChangePercent": -15.307586188405987
+  },
+  {
+    "Test": "numpy_512_matrix_product_with_validation",
+    "BeforeMs": 4.335499999797321,
+    "AfterMs": 4.308300000047893,
+    "ChangePercent": -0.6273786126329006
+  }
+]

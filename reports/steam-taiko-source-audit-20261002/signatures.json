@@ -1,0 +1,38 @@
+[
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\steam_api.dll",
+    "Status": "Valid",
+    "Publisher": "CN=Valve, O=Valve, L=Bellevue, S=WA, C=US",
+    "Version": "06.75.97.18"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\steam_api64.dll",
+    "Status": "Valid",
+    "Publisher": "CN=Valve Corp., O=Valve Corp., L=Bellevue, S=Washington, C=US",
+    "Version": "06.91.21.57"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DX.exe",
+    "Status": "Valid",
+    "Publisher": "CN=\"KOEI TECMO GAMES CO., LTD.\", OU=Marketing Division, O=\"KOEI TECMO GAMES CO., LTD.\", L=Yokohama, S=Kanagawa, C=JP",
+    "Version": "1.2.1.0"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Taiko5DXLauncher.exe",
+    "Status": "Valid",
+    "Publisher": "CN=\"KOEI TECMO GAMES CO., LTD.\", OU=Marketing Division, O=\"KOEI TECMO GAMES CO., LTD.\", L=Yokohama, S=Kanagawa, C=JP",
+    "Version": "1.0.0.0"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Evcon\\steam_api.dll",
+    "Status": "Valid",
+    "Publisher": "CN=Valve, O=Valve, L=Bellevue, S=WA, C=US",
+    "Version": "06.75.97.18"
+  },
+  {
+    "Path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Evcon\\Taiko5DXEvcon.exe",
+    "Status": "Valid",
+    "Publisher": "CN=\"KOEI TECMO GAMES CO., LTD.\", OU=Marketing Division, O=\"KOEI TECMO GAMES CO., LTD.\", L=Yokohama, S=Kanagawa, C=JP",
+    "Version": "1, 1, 0, 0"
+  }
+]

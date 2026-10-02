@@ -1,0 +1,50 @@
+﻿[
+    {
+        "Name":  "Language.Basic~~~ja-JP~0.0.1.0",
+        "State":  4
+    },
+    {
+        "Name":  "Language.Basic~~~zh-TW~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.Fonts.Hant~~~und-HANT~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.Fonts.Jpan~~~und-JPAN~0.0.1.0",
+        "State":  4
+    },
+    {
+        "Name":  "Language.Handwriting~~~ja-JP~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.Handwriting~~~zh-TW~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.OCR~~~ja-JP~0.0.1.0",
+        "State":  4
+    },
+    {
+        "Name":  "Language.OCR~~~zh-TW~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.Speech~~~ja-JP~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.Speech~~~zh-TW~0.0.1.0",
+        "State":  0
+    },
+    {
+        "Name":  "Language.TextToSpeech~~~ja-JP~0.0.1.0",
+        "State":  4
+    },
+    {
+        "Name":  "Language.TextToSpeech~~~zh-TW~0.0.1.0",
+        "State":  0
+    }
+]

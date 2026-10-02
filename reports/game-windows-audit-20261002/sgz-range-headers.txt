@@ -1,0 +1,33 @@
+HTTP/1.1 302 
+Date: Fri, 02 Oct 2026 08:01:25 GMT
+Content-Length: 0
+Connection: keep-alive
+Location: https://sgzzlb-dl.lingxigames.com/t/3/11/6790e40977e35ac7_S3-ob_v7_review-ob_cn_publish-1786.2084.S1_scene3d_ui3d_mobile_cp_1790217738188.apk?x-oss-process=MQjDtRhedR0qP8ODwrHDrMKkw47CnsKrw7TDssKTB8KZwoBmw6Q=88d23cee0c889350
+Server: Tengine/Aserver
+EagleEye-TraceId: 215041cf17909280855332175eafc2
+Strict-Transport-Security: max-age=31536000
+Timing-Allow-Origin: *
+
+HTTP/1.1 206 Partial Content
+Server: Tengine
+Content-Type: application/vnd.android.package-archive
+Content-Length: 1
+Connection: keep-alive
+X-Fc-Request-Id: 1-6abf64d7-18eb0e-6e4ba391bba4
+Access-Control-Expose-Headers: Date,x-fc-request-id,x-fc-error-type,x-fc-code-checksum,x-fc-invocation-duration,x-fc-max-memory-usage,x-fc-log-result,x-fc-invocation-code-version,x-fc-instance-id
+cache-control: max-age=1209600
+X-Fc-Instance-Id: c-6abf6066-18da24a8-8c2493be6d7b
+X-Fc-Code-Checksum: 7465559370375069942
+X-Fc-Max-Memory-Usage: 735.68
+X-Fc-Invocation-Duration: 31
+X-Fc-Invocation-Service-Version: 13
+Date: Fri, 02 Oct 2026 08:01:27 GMT
+Via: cache17.l2cn3059[148,147,206-0,M], cache54.l2cn3059[149,0], ens-cache20.cn8915[198,198,206-0,M], ens-cache22.cn8915[209,0]
+Ali-Swift-Global-Savetime: 1790928087
+X-Cache: MISS TCP_MISS dirn:-2:-2 mlen:524288
+Content-Range: bytes 0-0/3966371199
+X-Swift-SaveTime: Fri, 02 Oct 2026 08:01:27 GMT
+X-Swift-CacheTime: 1209600
+Timing-Allow-Origin: *
+EagleId: 7ac1f61f17909280868546963e
+

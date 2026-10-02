@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "python": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+  "xgboost_accuracy": 0.8884,
+  "lightgbm_accuracy": 0.8928,
+  "causal_ate": 2.0294328499312058,
+  "checks": [
+    "xgboost-cpu",
+    "lightgbm-cpu",
+    "econml",
+    "pandas-calamine",
+    "polars-fastexcel",
+    "win32com-import",
+    "jupyter-kernel-execution"
+  ]
+}

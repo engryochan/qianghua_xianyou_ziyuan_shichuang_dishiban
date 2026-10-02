@@ -1,0 +1,177 @@
+{
+  "capacity": {
+    "total": 254703636480,
+    "used": 193956966400,
+    "free": 60746670080
+  },
+  "results": [
+    {
+      "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\basic-data-analytical-lab",
+      "logical_bytes": 43627054030,
+      "files": 5488,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.3,
+      "large": [
+        {
+          "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\basic-data-analytical-lab\\.git\\objects\\pack\\pack-a23a519dc50099a487bdea8bb7c963145569e9f9.pack",
+          "bytes": 8186574844
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\online-gaming-decision-intelligence-lab",
+      "logical_bytes": 105969471,
+      "files": 456,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 1.4,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban",
+      "logical_bytes": 3223919127,
+      "files": 1548,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 10.4,
+      "large": [
+        {
+          "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\.git\\objects\\pack\\pack-7eef07f252ccc9e1f755d19e10f05577ae9a171a.pack",
+          "bytes": 2889018175
+        },
+        {
+          "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\MicrosoftEdgeEnterpriseX64.msi",
+          "bytes": 213483520
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\GitHubDesktop",
+      "logical_bytes": 1552487941,
+      "files": 2092,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.2,
+      "large": [
+        {
+          "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\GitHubDesktop\\packages\\GitHubDesktop-3.6.6.nupkg",
+          "bytes": 315081709
+        },
+        {
+          "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\GitHubDesktop\\app-3.6.6\\GitHubDesktop.exe",
+          "bytes": 226686240
+        },
+        {
+          "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\GitHubDesktop\\app-3.5.8\\GitHubDesktop.exe",
+          "bytes": 213470496
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Temp",
+      "logical_bytes": 65439038,
+      "files": 523,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    },
+    {
+      "path": "C:\\Windows\\Temp",
+      "logical_bytes": 308029232,
+      "files": 92,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    },
+    {
+      "path": "C:\\work\\tmp",
+      "logical_bytes": 2129721,
+      "files": 4,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    },
+    {
+      "path": "C:\\work\\cache",
+      "logical_bytes": 0,
+      "files": 0,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 0.0,
+      "large": []
+    },
+    {
+      "path": "C:\\work\\uvcache",
+      "logical_bytes": 9852746597,
+      "files": 219270,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 137.4,
+      "large": [
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\blF6YAdJmkIE-ALj\\tensorflow\\python\\_pywrap_tensorflow_common.dll",
+          "bytes": 1056626688
+        },
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\8443iTc2ZrxPy0dX\\catboost\\_catboost.pyd",
+          "bytes": 336931840
+        },
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\wPKhoVWgKJmIGHJB\\catboost\\_catboost.pyd",
+          "bytes": 336877568
+        },
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\WtCuHSgqV3l0QAaT\\torch\\lib\\torch_cpu.dll",
+          "bytes": 305887744
+        },
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\u2JKgI2QztdZaHmG\\torch\\lib\\torch_cpu.dll",
+          "bytes": 305887744
+        },
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\FFY115tNztIo9jaw\\jaxlib\\jax_common.dll",
+          "bytes": 250157056
+        },
+        {
+          "path": "C:\\work\\uvcache\\archive-v0\\R5yUHY_msCGJABR9\\jaxlib\\jax_common.dll",
+          "bytes": 250139136
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\uv\\cache",
+      "logical_bytes": 4285833059,
+      "files": 143283,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 35.5,
+      "large": []
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\.cache",
+      "logical_bytes": 1378541428,
+      "files": 21735,
+      "complete": true,
+      "skipped_links": 0,
+      "errors": 0,
+      "seconds": 2.6,
+      "large": []
+    }
+  ],
+  "wsl_exit": 1,
+  "wsl": ""
+}

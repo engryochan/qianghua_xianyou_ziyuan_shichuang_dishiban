@@ -1,0 +1,11 @@
+{
+  "Time": "2026-09-21T14:04:31.7951950+04:00",
+  "Registry": {
+    "DisplayName": "Microsoft Edge",
+    "DisplayVersion": "150.0.4078.105",
+    "ModifyPath": "\"C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe\" /install appguid={56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}&appname=Microsoft%20Edge&needsadmin=true&repairtype=windowsonlinerepair /installsource windows",
+    "UninstallString": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\150.0.4078.105\\Installer\\setup.exe\" --uninstall --msedge --channel=stable --system-level --verbose-logging"
+  },
+  "UpdaterRootExists": false,
+  "Services": []
+}

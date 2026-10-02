@@ -1,0 +1,6 @@
+$ErrorActionPreference = 'Stop' # 将读取失败明确记录。
+$out = $PSScriptRoot # 将证据只保存在本脚本目录。
+try { & wevtutil.exe epl Security (Join-Path $out 'Security.evtx'); "ExportExitCode=$LASTEXITCODE" | Set-Content (Join-Path $out 'security-export-status.txt') } catch { $_ | Out-String | Set-Content (Join-Path $out 'security-export-error.txt') } # 导出当前保留的安全日志而不清除原日志。
+try { Get-WinEvent -FilterHashtable @{LogName='Security';Id=4624,4625,1102,4778,4779;StartTime=(Get-Date).AddDays(-3)} -MaxEvents 20000 | ForEach-Object { [xml]$xml=$_.ToXml(); $fields=@{}; foreach($d in $xml.Event.EventData.Data){$fields[[string]$d.Name]=[string]$d.'#text'}; [pscustomobject]@{Time=$_.TimeCreated;Id=$_.Id;Fields=$fields} } | ConvertTo-Json -Depth 6 | Set-Content (Join-Path $out 'security-events.json') } catch { $_ | Out-String | Set-Content (Join-Path $out 'security-query-error.txt') } # 保存最近三天关键登录事件并注明最多两万条。
+try { Get-CimInstance Win32_Service | Where-Object Name -match 'AVP|klnagent|WinDefend' | Select-Object Name,State,StartMode,ExitCode | ConvertTo-Json | Set-Content (Join-Path $out 'protection-services.json') } catch { $_ | Out-String | Set-Content (Join-Path $out 'protection-error.txt') } # 核验防护服务状态而不启动或停止服务。
+'Completed' | Set-Content (Join-Path $out 'admin-read-complete.txt') # 标记只读采集结束。

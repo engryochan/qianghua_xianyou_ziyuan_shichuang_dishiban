@@ -1,0 +1,10 @@
+Get-PnpDevice : 拒绝访问 
+At C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\诊断电脑模板\Diag-KeyboardSource.ps1:42 ch
+ar:1
++ Get-PnpDevice -PresentOnly -Class Keyboard,HIDClass -ErrorAction Stop ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (Win32_PnPEntity:ROOT\cimv2\Win32_PnPEntity) [Get-PnpDevice], CimExcep 
+   tion
+    + FullyQualifiedErrorId : HRESULT 0x80041003,Get-PnpDevice
+ 
+

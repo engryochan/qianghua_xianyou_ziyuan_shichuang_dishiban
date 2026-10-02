@@ -1,0 +1,11 @@
+﻿[
+  {
+    "Name": "NVIDIA GeForce GT 730",
+    "PNPDeviceID": "PCI\\VEN_10DE&DEV_0F02&SUBSYS_000010DE&REV_A1\\4&2E6F6D9A&0&0008",
+    "DriverVersion": "23.21.13.9135",
+    "DriverDate": "2018-03-23T00:00:00Z",
+    "VideoProcessor": "GeForce GT 730",
+    "Status": "OK",
+    "AdapterRAM": 2147483648
+  }
+]

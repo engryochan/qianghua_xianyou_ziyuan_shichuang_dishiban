@@ -1,0 +1,36 @@
+PARSE_AND_BOUNDARY_OK Diag-KeyboardSource.ps1
+PARSE_AND_BOUNDARY_OK Diag-RawInputDevice.ps1
+PARSE_AND_BOUNDARY_OK Full-Keyboard-State.ps1
+PARSE_AND_BOUNDARY_OK Log-AllKeys-Async.ps1
+PARSE_AND_BOUNDARY_OK RawInputKeyLogger.ps1
+WARNING: 拒绝访问 
+WARNING: 拒绝访问 
+开始监测 1 秒。请在记事本里复现故障，切勿在密码框操作。
+
+===== 结果 =====
+未标记注入事件     : 0
+注入按键 INJECTED     : 0（其中来自更低完整性级别 0）
+监测窗口内无软件注入按键。
+完整日志：C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\template-tests-20260923\validation-Core\20260923-082221-0306976\key-source-log.csv
+WARNING: 拒绝访问 
+WARNING: 拒绝访问 
+开始监测 1 秒。请在记事本里复现故障，切勿在密码框操作。
+
+===== 结果 =====
+未标记注入事件     : 0
+注入按键 INJECTED     : 0（其中来自更低完整性级别 0）
+监测窗口内无软件注入按键。
+完整日志：C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\template-tests-20260923\validation-Core\20260923-082223-2945135\key-source-log.csv
+REPEAT_OK Diag-KeyboardSource.ps1
+Raw Input 监测 1 秒，请复现故障……
+
+===== 按设备汇总 =====
+完整日志：C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\template-tests-20260923\validation-Core\rawinput-20260923-082224-3752402\raw-device-log.csv
+把带 VID/PID 的设备路径与预检里的 hid-devices.csv 对号入座；(null) 表示未提供设备句柄，不能据此认定软件注入或入侵。
+Raw Input 监测 1 秒，请复现故障……
+
+===== 按设备汇总 =====
+完整日志：C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\template-tests-20260923\validation-Core\rawinput-20260923-082225-5649952\raw-device-log.csv
+把带 VID/PID 的设备路径与预检里的 hid-devices.csv 对号入座；(null) 表示未提供设备句柄，不能据此认定软件注入或入侵。
+REPEAT_OK Diag-RawInputDevice.ps1
+VALIDATION_OK

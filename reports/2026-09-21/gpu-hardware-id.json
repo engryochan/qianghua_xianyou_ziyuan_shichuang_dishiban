@@ -1,0 +1,20 @@
+[
+  {
+    "DeviceDesc": "@hdaudbus.inf,%hdaudio.devicedesc%;High Definition Audio Controller",
+    "HardwareID": [
+      "PCI\\VEN_10DE&DEV_0BEA&SUBSYS_000010DE&REV_A1",
+      "PCI\\VEN_10DE&DEV_0BEA&SUBSYS_000010DE",
+      "PCI\\VEN_10DE&DEV_0BEA&CC_040300",
+      "PCI\\VEN_10DE&DEV_0BEA&CC_0403"
+    ]
+  },
+  {
+    "DeviceDesc": "@oem23.inf,%nvidia_dev.0f02%;NVIDIA GeForce GT 730",
+    "HardwareID": [
+      "PCI\\VEN_10DE&DEV_0F02&SUBSYS_000010DE&REV_A1",
+      "PCI\\VEN_10DE&DEV_0F02&SUBSYS_000010DE",
+      "PCI\\VEN_10DE&DEV_0F02&CC_030000",
+      "PCI\\VEN_10DE&DEV_0F02&CC_0300"
+    ]
+  }
+]

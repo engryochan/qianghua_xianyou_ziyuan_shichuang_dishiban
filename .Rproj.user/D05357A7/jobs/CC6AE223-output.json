@@ -1,0 +1,5 @@
+[1,"==> quarto preview Inteligent_egaming_platform_ref_v000.000.001.qmd --to html --no-watch-inputs --no-browse\n\n"]
+[1,"pandoc \n  to: html\n  output-file: Inteligent_egaming_platform_ref_v000.000.001.html\n  standalone: true\n  embed-resources: true\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  toc: true\n  toc-depth: 3\n  number-sections: true\n  \nmetadata\n  document-css: false\n  link-citations: true\n  lang: zh-TW\n  title: 頂級在線百家樂平臺\n  subtitle: 人工智能與強化學習將運營自動化\n  author: 雷歐（Ryo Eng）\n  date: '2026-09-24'\n  date-format: YYYY[年]M[月]D[日（農曆丙午馬年八月十四，丁酉月・辛丑日）]\n  theme: cosmo\n  toc-location: left\n  page-layout: full\n  code-summary: 查看代碼\n  \n"]
+[1,"\u001B[33mWARNING (C:/PROGRA~1/Quarto/share/filters/main.lua:13821) Error attempting to write crossref index\r\n\u001B[39m"]
+[1,"[WARNING] Could not load translations for zh-TW\r\n  translations/zh.yaml: \r\n[WARNING] The term Abstract has no translation defined.\r\n"]
+[1,"Output created: Inteligent_egaming_platform_ref_v000.000.001.html\n\nWatching files for changes\nBrowse at http://localhost:7355/\nListening on http://127.0.0.1:7355/\n"]

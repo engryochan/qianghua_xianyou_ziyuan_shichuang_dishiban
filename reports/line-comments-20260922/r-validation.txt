@@ -1,0 +1,8 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Analytics_R_Check.R : parse and expression equality PASS
+DataStack_R_Bootstrap.R : parse and expression equality PASS
+Install_R_Packages.R : parse and expression equality PASS

@@ -1,0 +1,22 @@
+[
+  {
+    "Check": "hid-devices",
+    "Status": "Unavailable",
+    "Error": "拒绝访问 "
+  },
+  {
+    "Check": "accessibility",
+    "Status": "OK",
+    "Error": null
+  },
+  {
+    "Check": "input-methods",
+    "Status": "OK",
+    "Error": null
+  },
+  {
+    "Check": "remote-macro-candidates",
+    "Status": "Unavailable",
+    "Error": "拒绝访问 "
+  }
+]

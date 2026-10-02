@@ -1,0 +1,13 @@
+ERROR: 另一个程序正在使用此文件，进程无法访问。 (os error 32): remove 'C:\Users\PPCCpcpc\OneDrive\文档\GitHub\qianghua_xianyou_ziyuan_shichuang_dishiban\reports\daqin-self-growth-20261002'
+
+Stack trace:
+    at Object.removeSync (ext:deno_fs/30_fs.js:250:3)
+    at safeRemoveSync (file:///C:/Program Files/Quarto/bin/quarto.js:3228:10)
+    at safeRemoveDirSync (file:///C:/Program Files/Quarto/bin/quarto.js:3248:10)
+    at renderProject (file:///C:/Program Files/Quarto/bin/quarto.js:137369:9)
+    at async _Command.actionHandler (file:///C:/Program Files/Quarto/bin/quarto.js:142798:24)
+    at async _Command.execute (file:///C:/Program Files/Quarto/bin/quarto.js:102189:7)
+    at async _Command.parseCommand (file:///C:/Program Files/Quarto/bin/quarto.js:102066:14)
+    at async quarto4 (file:///C:/Program Files/Quarto/bin/quarto.js:188195:5)
+    at async file:///C:/Program Files/Quarto/bin/quarto.js:188224:5
+    at async file:///C:/Program Files/Quarto/bin/quarto.js:188078:14

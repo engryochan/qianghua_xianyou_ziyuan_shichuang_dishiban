@@ -1,0 +1,3 @@
+Using Python 3.13.15 environment at: C:\work\projects\lab\.venv
+Checked 190 packages in 19ms
+All installed packages are compatible

@@ -1,0 +1,44 @@
+[
+  {
+    "Id": "MoonshotAI.Kimi",
+    "ExitCode": 0,
+    "Finished": "2026-09-21T08:53:39.4517598+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\MoonshotAI.Kimi.log"
+  },
+  {
+    "Id": "Microsoft.Teams",
+    "ExitCode": 0,
+    "Finished": "2026-09-21T08:55:54.3589145+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\Microsoft.Teams.log"
+  },
+  {
+    "Id": "JetBrains.PyCharm",
+    "ExitCode": 0,
+    "Finished": "2026-09-21T08:58:48.3770728+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\JetBrains.PyCharm.log"
+  },
+  {
+    "Id": "Adobe.Acrobat.Reader.64-bit",
+    "ExitCode": 0,
+    "Finished": "2026-09-21T09:02:53.7428626+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\Adobe.Acrobat.Reader.64-bit.log"
+  },
+  {
+    "Id": "Microsoft.Edge",
+    "ExitCode": -1978335090,
+    "Finished": "2026-09-21T09:02:56.3726526+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\Microsoft.Edge.log"
+  },
+  {
+    "Id": "Microsoft.VCRedist.2015+.x64",
+    "ExitCode": 0,
+    "Finished": "2026-09-21T09:03:52.3002834+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\Microsoft.VCRedist.2015+.x64.log"
+  },
+  {
+    "Id": "Microsoft.VCRedist.2015+.x86",
+    "ExitCode": -1978335189,
+    "Finished": "2026-09-21T09:03:54.6523674+04:00",
+    "Log": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\2026-09-21\\update-round2\\Microsoft.VCRedist.2015+.x86.log"
+  }
+]

@@ -1,0 +1,1419 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Selected.System.Diagnostics.Eventing.Reader.EventLogRecord</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:30:30.2490994+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0xD87EC55D_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x8AB9AE06</S>
+    </MS>
+  </Obj>
+  <Obj RefId="1">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:30:29.8025928+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.332.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.328.0_x000D__x000A__x0009_安全智能类型: 反间谍软件_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="2">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:30:29.8020703+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.332.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.328.0_x000D__x000A__x0009_安全智能类型: 防病毒_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="3">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:24:52.6260868+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.328.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\8478201895ab5b013b0b632c5c67b1b1c9e72d6c_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/22 10:24:46_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:24:52.6257825+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.328.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\91b3324dbf5cd429e8db3e46913dec7c3639cd6d_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/22 10:24:47_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="5">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:56.0867899+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitDefenderServiceRpc_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ServiceStartedSuccessfully</S>
+    </MS>
+  </Obj>
+  <Obj RefId="6">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:56.0859571+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1_x000D__x000A_ _x0009_新值: Default\ServiceStartStates = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="7">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:53.5830911+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\Controls\257 = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:53.5807669+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitDefenderServiceRpc</S>
+    </MS>
+  </Obj>
+  <Obj RefId="9">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:53.579882+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender</S>
+    </MS>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:41.6628411+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="11">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:27.6558059+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = RegistringUxToastLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="12">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:25.7257686+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = RegistringUxToastLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="13">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:25.7247332+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ServiceStartStates = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="14">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:21.066168+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\EcsConfigs\ETag\Tag = "e56DNtMiLK8Nsn8uSUtu/rgz0tzulhti+LoMYRebupw="_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\EcsConfigs\ETag\Tag = "iw/qhTCE1S+8BXEzodGYbtIBmG7EbeFyorfYKbZXtIc="</S>
+    </MS>
+  </Obj>
+  <Obj RefId="15">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:21.0660495+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\EcsConfigs\MpFC_EnableWDClipHelper = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="16">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:17.2825256+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitAsimov_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="17">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:16.7765786+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMiscConfigLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitAsimov</S>
+    </MS>
+  </Obj>
+  <Obj RefId="18">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:19:16.7761578+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\IsServiceRunning = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="19">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:16:44.9681922+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = ShutdownSpyNetManager_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="20">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T14:16:44.4280089+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupCompleted_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = ShutdownSpyNetManager</S>
+    </MS>
+  </Obj>
+  <Obj RefId="21">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T13:49:12.8617211+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="22">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T13:49:12.8596466+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.328.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="23">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T12:49:12.8522934+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="24">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T12:49:12.8504372+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.328.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="25">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:49:12.8523693+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="26">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:49:12.8501913+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.328.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="27">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:23:09.2240931+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="28">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:22:45.5589298+04:00</DT>
+      <I32 N="Id">1002</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">迳弪府Microsoft Defender 防病毒 scan has been stopped before completion._x000D__x000A_ _x0009_Scan ID: {E9EC7833-242B-4582-8FCB-7328D52DEA1F}_x000D__x000A_ _x0009_Scan Type: 反恶意软件_x000D__x000A_ _x0009_Scan Parameters: 快速扫描_x000D__x000A_  _x0009_User: NT AUTHORITY\SYSTEM_x000D__x000A_ _x0009_Stop Reason: 彐齄唱齄RPC connection rundown</S>
+    </MS>
+  </Obj>
+  <Obj RefId="29">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:12:50.7395366+04:00</DT>
+      <I32 N="Id">1000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 扫描已启动。_x000D__x000A_ _x0009_扫描 ID：  {E9EC7833-242B-4582-8FCB-7328D52DEA1F}_x000D__x000A_ _x0009_扫描类型：  反恶意软件_x000D__x000A_ _x0009_扫描参数：  快速扫描_x000D__x000A_ _x0009_扫描资源：  _x000D__x000A_  _x0009_用户：  NT AUTHORITY\SYSTEM_x000D__x000A_ _x0009_扫描触发器：  计划维护_x000D__x000A_ _x0009_仅当扫描的空闲：  已启用_x000D__x000A_ _x0009_低 CPU 优先级时扫描：  已禁用_x000D__x000A_ _x0009_线程优先级：  7</S>
+    </MS>
+  </Obj>
+  <Obj RefId="30">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:11:19.6432052+04:00</DT>
+      <I32 N="Id">1002</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">迳弪府Microsoft Defender 防病毒 scan has been stopped before completion._x000D__x000A_ _x0009_Scan ID: {F724BE9E-AC65-421D-B429-93E9E40B9639}_x000D__x000A_ _x0009_Scan Type: 反恶意软件_x000D__x000A_ _x0009_Scan Parameters: 快速扫描_x000D__x000A_  _x0009_User: NT AUTHORITY\SYSTEM_x000D__x000A_ _x0009_Stop Reason: 彐齄唱齄RPC connection rundown</S>
+    </MS>
+  </Obj>
+  <Obj RefId="31">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T11:09:11.7466512+04:00</DT>
+      <I32 N="Id">1000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 扫描已启动。_x000D__x000A_ _x0009_扫描 ID：  {F724BE9E-AC65-421D-B429-93E9E40B9639}_x000D__x000A_ _x0009_扫描类型：  反恶意软件_x000D__x000A_ _x0009_扫描参数：  快速扫描_x000D__x000A_ _x0009_扫描资源：  _x000D__x000A_  _x0009_用户：  NT AUTHORITY\SYSTEM_x000D__x000A_ _x0009_扫描触发器：  计划维护_x000D__x000A_ _x0009_仅当扫描的空闲：  已启用_x000D__x000A_ _x0009_低 CPU 优先级时扫描：  已禁用_x000D__x000A_ _x0009_线程优先级：  7</S>
+    </MS>
+  </Obj>
+  <Obj RefId="32">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T10:49:12.8520139+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="33">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T10:49:12.8501903+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.328.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="34">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T10:15:47.1839723+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="35">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T09:49:12.8659368+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.328.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-21T20:50:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="36">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T09:49:12.8640342+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.328.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="37">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T09:47:01.1300635+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="38">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T09:00:08.4269212+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x6F1DFB2_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0xD87EC55D</S>
+    </MS>
+  </Obj>
+  <Obj RefId="39">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T09:00:07.9747263+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.328.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: 反间谍软件_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="40">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T09:00:07.9742923+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.328.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: 防病毒_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="41">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T08:49:25.4323049+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\7c61dbc89528743ff1bd6772a116e7d0b605b61b_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/22 4:49:20_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="42">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T08:49:13.2403989+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ServiceStartedSuccessfully</S>
+    </MS>
+  </Obj>
+  <Obj RefId="43">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T08:49:13.2391594+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender</S>
+    </MS>
+  </Obj>
+  <Obj RefId="44">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T08:48:51.5671098+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitNiRtpPlugin_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="45">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-22T08:48:51.0476046+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitNiRtpPlugin</S>
+    </MS>
+  </Obj>
+  <Obj RefId="46">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:22:37.8666961+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupCompleted_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupRtpPlugin</S>
+    </MS>
+  </Obj>
+  <Obj RefId="47">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:18.1375382+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1_x000D__x000A_ _x0009_新值: Default\ServiceStartStates = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="48">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:15.9592433+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ServiceStartedSuccessfully</S>
+    </MS>
+  </Obj>
+  <Obj RefId="49">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:15.9581851+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender</S>
+    </MS>
+  </Obj>
+  <Obj RefId="50">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:12.2341035+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="51">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:12.2333457+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ServiceStartStates = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="52">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:06.5725755+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = PostPlatformUpdate_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="53">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:06.0719339+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ConfigureRollbackManagerState_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = PostPlatformUpdate</S>
+    </MS>
+  </Obj>
+  <Obj RefId="54">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:06.0493249+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMiscConfigLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ConfigureRollbackManagerState</S>
+    </MS>
+  </Obj>
+  <Obj RefId="55">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:20:06.048703+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\IsServiceRunning = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="56">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:19:29.5146435+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = UninitializeTaskScheduler_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="57">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:19:28.9573405+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = ShutdownSpyNetManager_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = UninitializeTaskScheduler</S>
+    </MS>
+  </Obj>
+  <Obj RefId="58">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:19:28.3688756+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupCompleted_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = ShutdownSpyNetManager</S>
+    </MS>
+  </Obj>
+  <Obj RefId="59">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:03:24.7406705+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths\C:\work = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="60">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:03:24.7406676+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths\C:\Users\PPCCpcpc\AppData\Local\uv = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="61">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T09:03:24.7406632+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths\C:\Users\PPCCpcpc\AppData\Local\R\win-library = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="62">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:55:25.2481531+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\35decb2b8a2128abc93c2a46391700144a4192d5_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:55:23_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="63">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:55:07.8345333+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\958470838c565c1c0218589dd877a2658e91743b_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:55:05_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="64">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:54:31.1728675+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\8771d0a0aa6614304bb4b3cd05ace45ec08974ec_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:54:29_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="65">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:54:16.263584+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.312.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.312.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.312.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-20T19:55:36Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-20T19:55:53Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="66">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:54:16.1116952+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.312.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="67">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:53:56.8077903+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\a94d3db3c9dacfdee4bead651d37d9a95a2bdb16_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:53:54_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="68">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:53:55.8418227+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\e7daefe3fa7b6690a2de8c5a3c2951a638d6ae2f_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:53:53_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="69">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:53:54.9796951+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\6873cedd8bab196c1fac5a9cabb1ac5eb854c3bb_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:53:52_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="70">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:53:39.6677165+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\8cf7de72231d59f6e8e56faba8568a99d5be6b4c_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:53:36_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="71">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:12:17.6720308+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\a6a1ae213582340a2904524ddaf35c8c73e75007_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:12:15_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="72">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:08:35.710213+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="73">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:05:59.6011816+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\12d540011a7206b9de96b183262b301794ebe4c4_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 4:05:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="74">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:04:37.0385679+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x74171008_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x6F1DFB2</S>
+    </MS>
+  </Obj>
+  <Obj RefId="75">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:04:36.5743516+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: 反间谍软件_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="76">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T08:04:36.5738926+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.312.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: 防病毒_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="77">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:58:42.2207512+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\d351b2f9a0a2bbc507ab413f98cd00d539a8e5fb_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 3:58:39_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="78">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:58:42.2204986+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\311bc977202bcb54d353901954979ccef57f6ae1_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 3:58:39_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 150196224</S>
+    </MS>
+  </Obj>
+  <Obj RefId="79">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:58:42.2201897+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\831bce1cad36e06f9de5dc8bd70ff2b73f2ff67b_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/21 3:58:40_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="80">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:33.0339951+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="81">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:18.9117955+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender</S>
+    </MS>
+  </Obj>
+  <Obj RefId="82">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:18.9117899+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1_x000D__x000A_ _x0009_新值: Default\ServiceStartStates = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="83">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:16.3751235+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = DeviceControlServiceStartup_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ServiceStartedSuccessfully</S>
+    </MS>
+  </Obj>
+  <Obj RefId="84">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:15.7910152+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = DeviceControlServiceStartup</S>
+    </MS>
+  </Obj>
+  <Obj RefId="85">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:05.0374452+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = RegistringUxToastLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="86">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:03.9278736+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitNriAgent_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = RegistringUxToastLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="87">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:03.407577+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitNriAgent</S>
+    </MS>
+  </Obj>
+  <Obj RefId="88">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:54:03.4069665+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ServiceStartStates = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="89">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:53:43.6739821+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMapsLatency_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="90">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:53:43.6734322+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\IsServiceRunning = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="91">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:53:43.0965492+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeLogging_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMapsLatency</S>
+    </MS>
+  </Obj>
+  <Obj RefId="92">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-21T07:53:42.5252137+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMiscConfigLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeLogging</S>
+    </MS>
+  </Obj>
+  <Obj RefId="93">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T18:53:01.877785+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupCompleted_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="94">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T18:52:08.4025557+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="95">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T18:50:28.2897042+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="96">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T18:41:28.937981+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="97">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T18:19:15.7727179+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\f1f32139e22726cff29eec3abac88e4cd1767049_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 14:19:16_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="98">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T17:54:21.3680322+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.303.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.303.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.303.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-20T06:35:57Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-20T06:35:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="99">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T17:54:21.3666522+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.303.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="100">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T17:13:35.1145105+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\1070fc5265ace8b9281e7151180a6fc75dcd39fb_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 13:13:35_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 1728000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="101">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T17:12:57.2371329+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="102">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T16:54:21.3759098+04:00</DT>
+      <I32 N="Id">1151</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端运行状况报告(UTC 时间):_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_网络实时检查引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_防病毒安全智能版本: 1.459.303.0_x000D__x000A_ _x0009_反间谍软件安全智能版本: 1.459.303.0_x000D__x000A_ _x0009_网络实时检查安全智能版本: 1.459.303.0_x000D__x000A_ _x0009_RTP 状态: 已启用_x000D__x000A_ _x0009_OA 状态: 已启用_x000D__x000A_ _x0009_IOAV 状态: 已启用_x000D__x000A_ _x0009_BM 状态: 已启用_x000D__x000A_ _x0009_防病毒安全智能持续时间: 0_x000D__x000A_ _x0009_反间谍软件安全智能持续时间: 0_x000D__x000A_ _x0009_上一次快速扫描时间: 4294967295_x000D__x000A_ _x0009_上一次完全扫描时间: 4294967295_x000D__x000A_ _x0009_防病毒安全智能创建时间: 2026-09-20T06:35:57Z_x000D__x000A_ _x0009_反间谍软件安全智能创建时间: 2026-09-20T06:35:56Z_x000D__x000A_ _x0009_上一次快速扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次快速扫描源: 0_x000D__x000A_ _x0009_上一次完全扫描开始时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描结束时间: 1601-01-01T00:00:00Z_x000D__x000A_ _x0009_上一次完全扫描源: 0_x000D__x000A_ _x0009_产品状态: 0x00080000_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="103">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T16:54:21.3702969+04:00</DT>
+      <I32 N="Id">1150</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Endpoint Protection 客户端已启动并处于正常运行状态。_x000D__x000A_ _x0009_平台版本: 4.18.26080.4_x000D__x000A_ _x0009_引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_安全智能版本: 1.459.303.0_x000D__x000A_</S>
+    </MS>
+  </Obj>
+  <Obj RefId="104">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T16:48:08.4555517+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\ToastOrSsoTrigger = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="105">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:56:29.6049228+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\5f749d203ae064874110cfcc5592dccb3d6d3129_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:56:29_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="106">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:56:29.6044642+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\8978f4b2739e001f6a9f4405924c1f9bc335027a_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:56:30_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="107">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:32.5261175+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\4c475794f2c9dd77775130e9fea6deb7f857c2c5_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:54:33_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="108">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:32.5255704+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\547d893ffc6757732195d4fee9c9863a634141b4_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:54:33_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="109">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:24.7434222+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1_x000D__x000A_ _x0009_新值: Default\ServiceStartStates = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="110">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:21.7714433+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ServiceStartedSuccessfully</S>
+    </MS>
+  </Obj>
+  <Obj RefId="111">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:21.7699148+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender</S>
+    </MS>
+  </Obj>
+  <Obj RefId="112">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:15.0969214+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = RegistringUxToastLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="113">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:11.5167669+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitNriAgent_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = RegistringUxToastLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="114">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:10.9301695+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitNriAgent</S>
+    </MS>
+  </Obj>
+  <Obj RefId="115">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:10.9294295+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ServiceStartStates = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="116">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:03.2552119+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMapsLatency_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="117">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:03.2546239+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\IsServiceRunning = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="118">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:54:02.5741259+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMiscConfigLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMapsLatency</S>
+    </MS>
+  </Obj>
+  <Obj RefId="119">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:53:18.1851311+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupCompleted_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\CleanupComponentProgress = CleanupEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="120">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.5702308+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\519195d0d6d53bdf605077fc692ef5d932674d98_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="121">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.5700205+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\007ae375ba299fc37b2db38ff0a062c4efde8cc9_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:56_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="122">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.569609+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\bd9b5d41d609412d3750b1438603298e45a9aa68_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="123">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.5693947+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\286019f1273bdf6ad439e268431da54532b40e8b_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="124">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.5689559+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\da5b0f3e233802e5876ea91cb4144c0cf39868a1_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="125">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.5687499+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\b784f1b2cac04f144eb489804a2df5a1dcade616_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="126">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:57.5682775+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\464b467cf509514a76c7a9eed42e88217bc9ab74_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:58_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 288000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="127">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:56.5411073+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\729ab362de032da6c4e41778964ce28d509c056b_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="128">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:49:56.5406612+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\81fa0e659b3df6d43edd0d42a7830107388615e9_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:49:57_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="129">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:43:17.7774674+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\ed25ce05174b540d7a9cf27611b06b563196f6ec_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:43:17_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="130">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:43:17.7771086+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\2923c3f109c3965fff725c9e9d9c138e660d3bc0_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:43:17_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 50065408</S>
+    </MS>
+  </Obj>
+  <Obj RefId="131">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:40:57.7370197+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x1D92FEC8_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x74171008</S>
+    </MS>
+  </Obj>
+  <Obj RefId="132">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:40:57.3152852+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: 反间谍软件_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="133">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:40:57.3149013+04:00</DT>
+      <I32 N="Id">2000</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 安全智能版本已更新。_x000D__x000A__x0009_当前安全智能版本: 1.459.303.0_x000D__x000A__x0009_以前的安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: 防病毒_x000D__x000A_ _x0009_更新类型: 增量_x000D__x000A_ _x0009_用户: NT AUTHORITY\SYSTEM_x000D__x000A__x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_上一个引擎版本: 1.1.26080.3</S>
+    </MS>
+  </Obj>
+  <Obj RefId="134">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:34:05.2470811+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\d3a639095948f5c74a2ab5dc4dd56861025a22f2_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:34:05_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="135">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:34:05.2467535+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\539e099721e089f1adf00eb757f401723d8bfed2_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:34:05_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="136">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:34:05.246245+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\4bef0d40baa5ca11b274d4cb46367071515040af_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:34:05_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="137">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:32:25.1811772+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\88200c24a992f1710315287333a9a515bbb2a0a1_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:32:25_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="138">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:32:25.1789783+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\cb619dcfeeb923d3bf79c96656090a33b7c84070_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:32:25_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="139">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:32:24.2504222+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\9188cfa682b69d7c02c560da4a69e117503d8767_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:32:24_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="140">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:32:24.2499859+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\d016e83116a5876d0afb6958caddf5c07fea7d2b_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:32:24_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="141">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:32:24.2266959+04:00</DT>
+      <I32 N="Id">2010</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 使用云保护获取附加安全智能。_x000D__x000A__x0009_当前安全智能版本: 1.459.301.0_x000D__x000A__x0009_安全智能类型: _x000D__x000A_ _x0009_用户: \_x000D__x000A_ _x0009_当前引擎版本: 1.1.26080.3_x000D__x000A_ _x0009_云保护智能类型: 安全智能更新_x000D__x000A_ _x0009_持久性路径: C:\ProgramData\Microsoft\Windows Defender\Scans\RtSigs\data\f389b046422b8b0b3dfba00cd011c00b515eb545_x000D__x000A_ _x0009_云保护智能版本: 0.0.0.0_x000D__x000A_ _x0009_云保护智能编译时间戳: 2026/9/20 11:32:24_x000D__x000A_ _x0009_持久性限制类型: 持续时间_x000D__x000A_ _x0009_持久性限制: 864000000</S>
+    </MS>
+  </Obj>
+  <Obj RefId="142">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:40.4718956+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x2001_x000D__x000A_ _x0009_新值: Default\ServiceStartStates = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="143">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:39.7488351+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\Controls\203 = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="144">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:39.7488301+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\Controls\389 = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="145">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:39.7488258+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: _x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Features\Controls\301 = 0x2710</S>
+    </MS>
+  </Obj>
+  <Obj RefId="146">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:39.7470267+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = ServiceStartedSuccessfully</S>
+    </MS>
+  </Obj>
+  <Obj RefId="147">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:39.7463934+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x78F5C58E_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\CoreService\WdConfigHash = 0x1D92FEC8</S>
+    </MS>
+  </Obj>
+  <Obj RefId="148">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:39.7453186+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ProductAppDataPath = C:\ProgramData\Microsoft\Windows Defender</S>
+    </MS>
+  </Obj>
+  <Obj RefId="149">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:28.0459378+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="150">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:28.0453503+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\UX Configuration\UILockdown = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration\UILockdown = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="151">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:28.0450803+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\Scan\ScheduleQuickScanTime = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Scan\ScheduleQuickScanTime = 0x0</S>
+    </MS>
+  </Obj>
+  <Obj RefId="152">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:28.0436046+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = LoadingEngine</S>
+    </MS>
+  </Obj>
+  <Obj RefId="153">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:28.0430504+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\ServiceStartStates = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\ServiceStartStates = 0x2001</S>
+    </MS>
+  </Obj>
+  <Obj RefId="154">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:26.4449525+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitializeMiscConfigLibrary_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\Diagnostics\InitializingComponentProgress = InitWcsLibrary</S>
+    </MS>
+  </Obj>
+  <Obj RefId="155">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:26.4440025+04:00</DT>
+      <I32 N="Id">5007</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">Microsoft Defender 防病毒 配置已更改。如果此为意外事件，则应查看设置，因为这可能是恶意软件造成的。_x000D__x000A_ _x0009_旧值: Default\IsServiceRunning = 0x0_x000D__x000A_ _x0009_新值: HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1</S>
+    </MS>
+  </Obj>
+  <Obj RefId="156">
+    <TNRef RefId="0" />
+    <MS>
+      <DT N="TimeCreated">2026-09-20T15:31:26.201512+04:00</DT>
+      <I32 N="Id">2014</I32>
+      <S N="ProviderName">Microsoft-Windows-Windows Defender</S>
+      <S N="Message">已成功Microsoft Defender 防病毒4.18.26080.4平台更新。_x000D__x000A_</S>
+    </MS>
+  </Obj>
+</Objs>

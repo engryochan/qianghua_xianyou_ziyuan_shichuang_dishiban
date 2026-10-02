@@ -1,0 +1,4 @@
+error: Couldn't parse requirement in `reports\2026-09-21\excel-repair\0-before.txt` at position 3294
+  cause: Expected one of `@`, `(`, `<`, `=`, `>`, `~`, `!`, `;`, found `P`
+         Using Python 3.13.15 environment at: C:\work\envs\ds
+               ^

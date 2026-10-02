@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Name": "NVIDIA GeForce GT 730",
+    "DriverVersion": "23.21.13.9135",
+    "DriverDate": "2018-03-23T00:00:00Z",
+    "VideoProcessor": "GeForce GT 730",
+    "Status": "OK",
+    "AdapterRAM": 2147483648
+  }
+]

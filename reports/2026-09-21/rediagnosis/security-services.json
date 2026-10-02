@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "AVP.KES.14.1",
+    "State": "Running",
+    "StartMode": "Auto"
+  },
+  {
+    "Name": "avpsus.KES.14.1",
+    "State": "Running",
+    "StartMode": "Auto"
+  },
+  {
+    "Name": "klnagent",
+    "State": "Running",
+    "StartMode": "Auto"
+  },
+  {
+    "Name": "WinDefend",
+    "State": "Stopped",
+    "StartMode": "Manual"
+  }
+]

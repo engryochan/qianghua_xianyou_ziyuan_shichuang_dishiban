@@ -1,0 +1,579 @@
+{
+  "timestamp": "2026-10-02T16:06:48.863396+04:00",
+  "root": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX",
+  "file_count": 1331,
+  "bytes": 7374028339,
+  "read_bytes": 7374028339,
+  "unstable_files": [],
+  "source_candidates": [],
+  "extensions": {
+    ".exe": {
+      "count": 3,
+      "bytes": 48560312
+    },
+    ".txt": {
+      "count": 3,
+      "bytes": 19384
+    },
+    ".dll": {
+      "count": 3,
+      "bytes": 817016
+    },
+    ".g1t": {
+      "count": 183,
+      "bytes": 6498392460
+    },
+    ".rgba8": {
+      "count": 2,
+      "bytes": 176880
+    },
+    ".bin": {
+      "count": 1,
+      "bytes": 2073600
+    },
+    ".dat": {
+      "count": 6,
+      "bytes": 6494855
+    },
+    ".wmv": {
+      "count": 5,
+      "bytes": 673902250
+    },
+    ".efps": {
+      "count": 1,
+      "bytes": 65564
+    },
+    ".ftx": {
+      "count": 1,
+      "bytes": 22304
+    },
+    ".pmf": {
+      "count": 1,
+      "bytes": 360448
+    },
+    ".tr5": {
+      "count": 39,
+      "bytes": 6749001
+    },
+    ".g1s": {
+      "count": 1,
+      "bytes": 276460
+    },
+    ".g1e": {
+      "count": 6,
+      "bytes": 38448
+    },
+    ".g1em": {
+      "count": 4,
+      "bytes": 2698
+    },
+    ".te5": {
+      "count": 507,
+      "bytes": 1427148
+    },
+    ".ts5": {
+      "count": 507,
+      "bytes": 10652776
+    },
+    ".tg5": {
+      "count": 2,
+      "bytes": 2005432
+    },
+    ".wb2": {
+      "count": 8,
+      "bytes": 83030040
+    },
+    ".wh2": {
+      "count": 8,
+      "bytes": 84776
+    },
+    ".kvs": {
+      "count": 40,
+      "bytes": 38876487
+    }
+  },
+  "pe_files": [
+    {
+      "path": "Taiko5DX.exe",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "clr_rva": 0,
+      "clr_size": 0,
+      "debug_rva": 15971120,
+      "debug_size": 56,
+      "coff_symbol_count": 0,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 11530417,
+          "rva": 4096,
+          "raw_size": 11530752,
+          "raw_offset": 1536
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 5471515,
+          "rva": 11538432,
+          "raw_size": 5471744,
+          "raw_offset": 11532288
+        },
+        {
+          "name": ".data",
+          "virtual_size": 22740636,
+          "rva": 17010688,
+          "raw_size": 393728,
+          "raw_offset": 17004032
+        },
+        {
+          "name": ".pdata",
+          "virtual_size": 634896,
+          "rva": 39751680,
+          "raw_size": 635392,
+          "raw_offset": 17397760
+        },
+        {
+          "name": ".idata",
+          "virtual_size": 14808,
+          "rva": 40390656,
+          "raw_size": 14848,
+          "raw_offset": 18033152
+        },
+        {
+          "name": ".msvcjmc",
+          "virtual_size": 70162,
+          "rva": 40407040,
+          "raw_size": 70656,
+          "raw_offset": 18048000
+        },
+        {
+          "name": ".tls",
+          "virtual_size": 2018,
+          "rva": 40480768,
+          "raw_size": 2048,
+          "raw_offset": 18118656
+        },
+        {
+          "name": ".00cfg",
+          "virtual_size": 283,
+          "rva": 40484864,
+          "raw_size": 512,
+          "raw_offset": 18120704
+        },
+        {
+          "name": "_RDATA",
+          "virtual_size": 51517,
+          "rva": 40488960,
+          "raw_size": 51712,
+          "raw_offset": 18121216
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 79430,
+          "rva": 40542208,
+          "raw_size": 79872,
+          "raw_offset": 18172928
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 215327,
+          "rva": 40624128,
+          "raw_size": 215552,
+          "raw_offset": 18252800
+        },
+        {
+          "name": ".bind",
+          "virtual_size": 206656,
+          "rva": 40841216,
+          "raw_size": 206656,
+          "raw_offset": 18468352
+        }
+      ],
+      "imports": [
+        "DINPUT8.dll",
+        "steam_api64.dll",
+        "IMM32.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "GDI32.dll",
+        "ADVAPI32.dll",
+        "SHELL32.dll",
+        "ole32.dll",
+        "OLEAUT32.dll",
+        "XINPUT1_3.dll",
+        "D3DCOMPILER_43.dll",
+        "dxgi.dll",
+        "dwmapi.dll",
+        "d3d9.dll",
+        "MF.dll",
+        "MFPlat.DLL",
+        "MFReadWrite.dll",
+        "dxva2.dll",
+        "d3d11.dll"
+      ]
+    },
+    {
+      "path": "Taiko5DXLauncher.exe",
+      "machine": "0x14c",
+      "format": "PE32",
+      "clr_rva": 0,
+      "clr_size": 0,
+      "debug_rva": 3630288,
+      "debug_size": 56,
+      "coff_symbol_count": 0,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 3222906,
+          "rva": 4096,
+          "raw_size": 3223040,
+          "raw_offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 661812,
+          "rva": 3227648,
+          "raw_size": 662016,
+          "raw_offset": 3224064
+        },
+        {
+          "name": ".data",
+          "virtual_size": 64412,
+          "rva": 3891200,
+          "raw_size": 39936,
+          "raw_offset": 3886080
+        },
+        {
+          "name": ".idata",
+          "virtual_size": 25330,
+          "rva": 3956736,
+          "raw_size": 25600,
+          "raw_offset": 3926016
+        },
+        {
+          "name": ".tls",
+          "virtual_size": 777,
+          "rva": 3985408,
+          "raw_size": 1024,
+          "raw_offset": 3951616
+        },
+        {
+          "name": ".00cfg",
+          "virtual_size": 260,
+          "rva": 3989504,
+          "raw_size": 512,
+          "raw_offset": 3952640
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 13796940,
+          "rva": 3993600,
+          "raw_size": 13797376,
+          "raw_offset": 3953152
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 264306,
+          "rva": 17793024,
+          "raw_size": 264704,
+          "raw_offset": 17750528
+        },
+        {
+          "name": ".bind",
+          "virtual_size": 200520,
+          "rva": 18059264,
+          "raw_size": 200520,
+          "raw_offset": 18015232
+        }
+      ],
+      "imports": [
+        "d3d9.dll",
+        "VERSION.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "GDI32.dll",
+        "MSIMG32.dll",
+        "WINSPOOL.DRV",
+        "ADVAPI32.dll",
+        "SHELL32.dll",
+        "SHLWAPI.dll",
+        "UxTheme.dll",
+        "ole32.dll",
+        "OLEAUT32.dll",
+        "steam_api.dll",
+        "oledlg.dll",
+        "dxgi.dll",
+        "gdiplus.dll",
+        "IMM32.dll",
+        "WINMM.dll",
+        "OLEACC.dll"
+      ]
+    },
+    {
+      "path": "steam_api.dll",
+      "machine": "0x14c",
+      "format": "PE32",
+      "clr_rva": 0,
+      "clr_size": 0,
+      "debug_rva": 180204,
+      "debug_size": 84,
+      "coff_symbol_count": 0,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 147100,
+          "rva": 4096,
+          "raw_size": 147456,
+          "raw_offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 92472,
+          "rva": 151552,
+          "raw_size": 92672,
+          "raw_offset": 148480
+        },
+        {
+          "name": ".data",
+          "virtual_size": 8732,
+          "rva": 245760,
+          "raw_size": 3584,
+          "raw_offset": 241152
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 2008,
+          "rva": 258048,
+          "raw_size": 2048,
+          "raw_offset": 244736
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 6404,
+          "rva": 262144,
+          "raw_size": 6656,
+          "raw_offset": 246784
+        }
+      ],
+      "imports": [
+        "KERNEL32.dll",
+        "ADVAPI32.dll",
+        "SHELL32.dll"
+      ]
+    },
+    {
+      "path": "steam_api64.dll",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "clr_rva": 0,
+      "clr_size": 0,
+      "debug_rva": 199888,
+      "debug_size": 84,
+      "coff_symbol_count": 0,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 155422,
+          "rva": 4096,
+          "raw_size": 155648,
+          "raw_offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 110860,
+          "rva": 159744,
+          "raw_size": 111104,
+          "raw_offset": 156672
+        },
+        {
+          "name": ".data",
+          "virtual_size": 11996,
+          "rva": 274432,
+          "raw_size": 4608,
+          "raw_offset": 267776
+        },
+        {
+          "name": ".pdata",
+          "virtual_size": 9084,
+          "rva": 286720,
+          "raw_size": 9216,
+          "raw_offset": 272384
+        },
+        {
+          "name": "_RDATA",
+          "virtual_size": 244,
+          "rva": 299008,
+          "raw_size": 512,
+          "raw_offset": 281600
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 2008,
+          "rva": 303104,
+          "raw_size": 2048,
+          "raw_offset": 282112
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 1876,
+          "rva": 307200,
+          "raw_size": 2048,
+          "raw_offset": 284160
+        }
+      ],
+      "imports": [
+        "KERNEL32.dll",
+        "ADVAPI32.dll",
+        "SHELL32.dll"
+      ]
+    },
+    {
+      "path": "Evcon\\Taiko5DXEvcon.exe",
+      "machine": "0x14c",
+      "format": "PE32",
+      "clr_rva": 0,
+      "clr_size": 0,
+      "debug_rva": 4375840,
+      "debug_size": 56,
+      "coff_symbol_count": 0,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 3900219,
+          "rva": 4096,
+          "raw_size": 3900416,
+          "raw_offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 823068,
+          "rva": 3907584,
+          "raw_size": 823296,
+          "raw_offset": 3901440
+        },
+        {
+          "name": ".data",
+          "virtual_size": 1669092,
+          "rva": 4730880,
+          "raw_size": 652288,
+          "raw_offset": 4724736
+        },
+        {
+          "name": ".idata",
+          "virtual_size": 22982,
+          "rva": 6402048,
+          "raw_size": 23040,
+          "raw_offset": 5377024
+        },
+        {
+          "name": ".tls",
+          "virtual_size": 777,
+          "rva": 6426624,
+          "raw_size": 1024,
+          "raw_offset": 5400064
+        },
+        {
+          "name": ".00cfg",
+          "virtual_size": 260,
+          "rva": 6430720,
+          "raw_size": 512,
+          "raw_offset": 5401088
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 5763523,
+          "rva": 6434816,
+          "raw_size": 5763584,
+          "raw_offset": 5401600
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 301726,
+          "rva": 12201984,
+          "raw_size": 302080,
+          "raw_offset": 11165184
+        },
+        {
+          "name": ".bind",
+          "virtual_size": 170240,
+          "rva": 12505088,
+          "raw_size": 170240,
+          "raw_offset": 11467264
+        }
+      ],
+      "imports": [
+        "OLEACC.dll",
+        "steam_api.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "GDI32.dll",
+        "WINSPOOL.DRV",
+        "ADVAPI32.dll",
+        "SHELL32.dll",
+        "ole32.dll",
+        "OLEAUT32.dll",
+        "MSIMG32.dll",
+        "COMCTL32.dll",
+        "SHLWAPI.dll",
+        "UxTheme.dll",
+        "gdiplus.dll",
+        "IMM32.dll"
+      ]
+    },
+    {
+      "path": "Evcon\\steam_api.dll",
+      "machine": "0x14c",
+      "format": "PE32",
+      "clr_rva": 0,
+      "clr_size": 0,
+      "debug_rva": 180204,
+      "debug_size": 84,
+      "coff_symbol_count": 0,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 147100,
+          "rva": 4096,
+          "raw_size": 147456,
+          "raw_offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 92472,
+          "rva": 151552,
+          "raw_size": 92672,
+          "raw_offset": 148480
+        },
+        {
+          "name": ".data",
+          "virtual_size": 8732,
+          "rva": 245760,
+          "raw_size": 3584,
+          "raw_offset": 241152
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 2008,
+          "rva": 258048,
+          "raw_size": 2048,
+          "raw_offset": 244736
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 6404,
+          "rva": 262144,
+          "raw_size": 6656,
+          "raw_offset": 246784
+        }
+      ],
+      "imports": [
+        "KERNEL32.dll",
+        "ADVAPI32.dll",
+        "SHELL32.dll"
+      ]
+    }
+  ],
+  "literal_error_matches": [],
+  "errors": [],
+  "untraversed_reparse_points": [],
+  "scope": "Full file hashing and literal search; PE headers/import DLL names only. No execution, decompilation, archive extraction, DRM removal or writes to target."
+}

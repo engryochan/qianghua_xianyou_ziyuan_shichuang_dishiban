@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Count": 1,
+    "Name": "Microsoft-Windows-DistributedCOM, 10010"
+  },
+  {
+    "Count": 150,
+    "Name": "Service Control Manager, 7000"
+  },
+  {
+    "Count": 149,
+    "Name": "Service Control Manager, 7009"
+  }
+]

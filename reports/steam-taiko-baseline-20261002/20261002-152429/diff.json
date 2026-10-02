@@ -1,0 +1,329 @@
+{
+  "before": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\steam-taiko-baseline-20261002\\20261002-151409",
+  "after": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\GitHub\\qianghua_xianyou_ziyuan_shichuang_dishiban\\reports\\steam-taiko-baseline-20261002\\20261002-152429",
+  "added": [
+    "C:\\Program Files (x86)\\Steam\\logs\\gameoverlay_renderer.previous.txt"
+  ],
+  "removed": [],
+  "changed": [
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\config\\virtualgamepadinfo.txt",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938916689107400",
+          "after": "1790940130017305000"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938918678594300",
+          "after": "1790940130919296500"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\appinfo_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "7025",
+          "after": "7355"
+        },
+        "mtime_ns": {
+          "before": "1790938857194340800",
+          "after": "1790940121375065200"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\cloud_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "6317",
+          "after": "10385"
+        },
+        "mtime_ns": {
+          "before": "1790938914747572100",
+          "after": "1790940155915162300"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\configstore_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "9427",
+          "after": "10052"
+        },
+        "mtime_ns": {
+          "before": "1790938917713923100",
+          "after": "1790940155447828000"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\console_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "3784",
+          "after": "5987"
+        },
+        "mtime_ns": {
+          "before": "1790938916782112100",
+          "after": "1790940154902425900"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\content_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "25967",
+          "after": "26189"
+        },
+        "mtime_ns": {
+          "before": "1790938916703129200",
+          "after": "1790940154872702900"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\controller.txt",
+      "differences": {
+        "bytes": {
+          "before": "356",
+          "after": "426"
+        },
+        "mtime_ns": {
+          "before": "1790939218872186900",
+          "after": "1790940121031857800"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\gameoverlay_renderer.txt",
+      "differences": {
+        "bytes": {
+          "before": "4672",
+          "after": "4372"
+        },
+        "mtime_ns": {
+          "before": "1790938918710702000",
+          "after": "1790940131344472500"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\gameprocess_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "339",
+          "after": "854"
+        },
+        "mtime_ns": {
+          "before": "1790938916689107400",
+          "after": "1790940154872702900"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\shader_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "2809",
+          "after": "3193"
+        },
+        "mtime_ns": {
+          "before": "1790938915087451000",
+          "after": "1790940154873764400"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\stats_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "690",
+          "after": "1118"
+        },
+        "mtime_ns": {
+          "before": "1790938916706104300",
+          "after": "1790940154871387200"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\steamui_librarycache.txt",
+      "differences": {
+        "bytes": {
+          "before": "118679",
+          "after": "118819"
+        },
+        "mtime_ns": {
+          "before": "1790938916786111500",
+          "after": "1790940154909751600"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\streaming_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "378",
+          "after": "908"
+        },
+        "mtime_ns": {
+          "before": "1790938916778105800",
+          "after": "1790940154904587200"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\webhelper.txt",
+      "differences": {
+        "bytes": {
+          "before": "27736",
+          "after": "28536"
+        },
+        "mtime_ns": {
+          "before": "1790938852531166800",
+          "after": "1790940167598012900"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\webhelper_js.txt",
+      "differences": {
+        "bytes": {
+          "before": "14870",
+          "after": "15104"
+        },
+        "mtime_ns": {
+          "before": "1790938915051382000",
+          "after": "1790940127289834500"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\logs\\workshop_log.txt",
+      "differences": {
+        "bytes": {
+          "before": "683",
+          "after": "882"
+        },
+        "mtime_ns": {
+          "before": "1790938917675921400",
+          "after": "1790940130338581400"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938916713189000",
+          "after": "1790940154978481000"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\appmanifest_1842810.acf",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938916707105400",
+          "after": "1790940154934368300"
+        },
+        "sha256": {
+          "before": "ce5ff6547b7c9fb7438c48773ad4314eff2b4353f6a3b1eac38ce31c7eb0ca0a",
+          "after": "deb0c76d3dcffd433d8107222c0c47eaa51d1b04133c71168c359345186ae206"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\userdata\\290578512\\config",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938917713923100",
+          "after": "1790940155447828000"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\userdata\\290578512\\config\\librarycache\\1842810.json",
+      "differences": {
+        "bytes": {
+          "before": "311",
+          "after": "362"
+        },
+        "mtime_ns": {
+          "before": "1790938917747920000",
+          "after": "1790940156117590100"
+        },
+        "sha256": {
+          "before": "4b9f5d36153b064302593c5471b692b454d942ba34d75a6f9ce7d6f5daa2cf5c",
+          "after": "4002001a3f6478e6e2b99d3fa89438af41eebadaf8c3a8d19a8644d56ffd42b4"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\userdata\\290578512\\config\\localconfig.vdf",
+      "differences": {
+        "bytes": {
+          "before": "31856",
+          "after": "31938"
+        },
+        "mtime_ns": {
+          "before": "1790938917701923700",
+          "after": "1790940155436438300"
+        },
+        "sha256": {
+          "before": "a7e4e87901f69882ade7520fe5c09f547e27876853f611e03af3df95259600a3",
+          "after": "b2020470738e3a49612667b4e80104c54de720f645c84c8670127b41da8c582d"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\userdata\\290578512\\gamerecordings",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938921883958700",
+          "after": "1790940160010282400"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\userdata\\290578512\\gamerecordings\\gamerecording.pb",
+      "differences": {
+        "bytes": {
+          "before": "45",
+          "after": "0"
+        },
+        "mtime_ns": {
+          "before": "1790938921871957900",
+          "after": "1790940160007149200"
+        }
+      }
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\userdata\\290578512\\gamerecordings\\timelines",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938916771105600",
+          "after": "1790940154907586700"
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\PPCCpcpc\\OneDrive\\文档\\KoeiTecmo\\Taiko5DX\\SaveData\\steam_autocloud.vdf",
+      "differences": {
+        "mtime_ns": {
+          "before": "1790938914689367200",
+          "after": "1790940126318252400"
+        }
+      }
+    }
+  ],
+  "limits": "Observed differences only; not proof the game caused changes. Steam logs/cache may change continuously."
+}

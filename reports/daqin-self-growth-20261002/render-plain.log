@@ -1,0 +1,13 @@
+ERROR: Error executing 'C:\Program Files\Quarto\bin\tools\x86_64\dart-sass\src\dart.exe': Failed to spawn 'C:\Program Files\Quarto\bin\tools\x86_64\dart-sass\src\dart.exe': Invalid handle
+
+Stack trace:
+    at execProcess (file:///C:/Program Files/Quarto/bin/quarto.js:7919:11)
+    at dartCommand (file:///C:/Program Files/Quarto/bin/quarto.js:79954:25)
+    at dartCompile (file:///C:/Program Files/Quarto/bin/quarto.js:79926:9)
+    at file:///C:/Program Files/Quarto/bin/quarto.js:87663:15
+    at async SassCache.setFromHash (file:///C:/Program Files/Quarto/bin/quarto.js:80089:11)
+    at async compileSass (file:///C:/Program Files/Quarto/bin/quarto.js:87474:19)
+    at async resolveSassBundles (file:///C:/Program Files/Quarto/bin/quarto.js:125332:17)
+    at async resolveExtras (file:///C:/Program Files/Quarto/bin/quarto.js:129987:14)
+    at async runPandoc (file:///C:/Program Files/Quarto/bin/quarto.js:129415:20)
+    at async renderPandoc (file:///C:/Program Files/Quarto/bin/quarto.js:131107:24)

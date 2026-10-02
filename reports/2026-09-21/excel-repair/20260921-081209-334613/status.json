@@ -1,0 +1,21 @@
+{
+  "started": "2026-09-21T08:12:10.544390",
+  "extras": [
+    "openpyxl",
+    "xlsxwriter",
+    "python-calamine",
+    "fastexcel",
+    "pywin32"
+  ],
+  "mode": "apply",
+  "environments": [
+    {
+      "python": "C:\\work\\envs\\ds\\Scripts\\python.exe",
+      "status": "installed-dependencies-checked"
+    },
+    {
+      "python": "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+      "status": "installed-dependencies-checked"
+    }
+  ]
+}

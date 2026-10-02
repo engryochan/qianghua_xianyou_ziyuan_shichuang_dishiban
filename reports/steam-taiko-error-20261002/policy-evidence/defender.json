@@ -1,0 +1,12 @@
+{
+  "Status": "READ_OK",
+  "Protection": {
+    "AntivirusEnabled": true,
+    "AMRunningMode": "Normal",
+    "RealTimeProtectionEnabled": true,
+    "BehaviorMonitorEnabled": true,
+    "IoavProtectionEnabled": true
+  },
+  "MatchingThreats": [],
+  "Error": null
+}

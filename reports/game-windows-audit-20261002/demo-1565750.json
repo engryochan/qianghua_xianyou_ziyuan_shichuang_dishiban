@@ -1,0 +1,113 @@
+{
+  "1565750": {
+    "success": true,
+    "data": {
+      "type": "demo",
+      "name": "SAELIG Demo",
+      "steam_appid": 1565750,
+      "required_age": 0,
+      "is_free": true,
+      "detailed_description": "<p class=\"bb_paragraph\" >Try SAELIG risk free and at your own pace.</p><p class=\"bb_paragraph\" >You can play on a single map and you have 16 days of gameplay, which equals 16 seasons and 8 years (ending in 888 AD). Once the demo ends, feel free to start another or if you love it enough, purchase the full game to continue from your demo save. There are lots of ways to play and lots to experience so feel free to start over with a new strategy or play style as many times as you like.</p><p class=\"bb_paragraph\" ></p>",
+      "about_the_game": "<p class=\"bb_paragraph\" >Try SAELIG risk free and at your own pace.</p><p class=\"bb_paragraph\" >You can play on a single map and you have 16 days of gameplay, which equals 16 seasons and 8 years (ending in 888 AD). Once the demo ends, feel free to start another or if you love it enough, purchase the full game to continue from your demo save. There are lots of ways to play and lots to experience so feel free to start over with a new strategy or play style as many times as you like.</p><p class=\"bb_paragraph\" ></p>",
+      "short_description": "Try SAELIG risk free and at your own pace.You can play on a single map and you have 16 days of gameplay, which equals 16 seasons and 8 years (ending in 888 AD). Once the demo ends, feel free to start another or if you love it enough, purchase the full game to continue from your demo save.",
+      "fullgame": {
+        "appid": "612720",
+        "name": "SAELIG"
+      },
+      "supported_languages": "English",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565750/7fc5fd80ca07ef5c6fd6a35ddd803a57eaabacf3/header.jpg?t=1756108139",
+      "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565750/e1fafdbe67b25186b0889fd5703d54ebfd92bf85/capsule_231x87.jpg?t=1756108139",
+      "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565750/e1fafdbe67b25186b0889fd5703d54ebfd92bf85/capsule_184x69.jpg?t=1756108139",
+      "website": "https://www.atorcoppegames.com",
+      "pc_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10, 11 - 64 Bit<br></li><li><strong>Processor:</strong> Multi core CPU<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GTX 970 or better<br></li><li><strong>DirectX:</strong> Version 11</li></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10, 11 - 64 Bit<br></li><li><strong>Processor:</strong> Multi core CPU<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> GTX 1080 or better<br></li><li><strong>DirectX:</strong> Version 11</li></ul>"
+      },
+      "mac_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires an Apple processor</li></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires an Apple processor</li></ul>"
+      },
+      "linux_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+      },
+      "legal_notice": "© 2025 Atorcoppe Games",
+      "developers": [
+        "Atorcoppe Games"
+      ],
+      "publishers": [
+        "Atorcoppe Games"
+      ],
+      "package_groups": [],
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+      },
+      "categories": [
+        {
+          "id": 2,
+          "description": "Single-player"
+        },
+        {
+          "id": 10,
+          "description": "Game demo"
+        },
+        {
+          "id": 55,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 56,
+          "description": "DualShock Controller Support"
+        },
+        {
+          "id": 57,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 58,
+          "description": "DualSense Controller Support"
+        },
+        {
+          "id": 18,
+          "description": "Partial Controller Support"
+        }
+      ],
+      "release_date": {
+        "coming_soon": false,
+        "date": "Aug 23, 2025"
+      },
+      "support_info": {
+        "url": "https://www.atorcoppegames.com",
+        "email": "email@atorcoppe.com"
+      },
+      "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/1565750?t=1756108139",
+      "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565750/84071cf1125dc3e67ff2bbcb418e350c2c0d4535/page_bg_raw.jpg?t=1756108139",
+      "content_descriptors": {
+        "ids": [
+          5
+        ],
+        "notes": "Implied sexual activity.\r\nFantasy violence.\r\nAlcohol use. \r\nCriminal activities.  "
+      },
+      "ratings": {
+        "dejus": {
+          "rating_generated": "1",
+          "rating": "l",
+          "required_age": "0",
+          "banned": "0",
+          "use_age_gate": "0",
+          "descriptors": ""
+        },
+        "steam_germany": {
+          "rating_generated": "1",
+          "rating": "0",
+          "required_age": "0",
+          "banned": "0",
+          "use_age_gate": "0",
+          "descriptors": ""
+        }
+      }
+    }
+  }
+}

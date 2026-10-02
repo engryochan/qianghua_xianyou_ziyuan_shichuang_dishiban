@@ -1,0 +1,6 @@
+
+
+[2026-10-02 12:58:07] Client version: 1788652215
+[2026-10-02 12:58:07] SSGL: UI mode (0->7)
+[2026-10-02 15:01:56] AppID 1842810 adding PID 164740 as a tracked process ""C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX\Taiko5DXLauncher.exe""
+[2026-10-02 15:01:56] SSGL: InternalUpdateClientGame indicates change to games list

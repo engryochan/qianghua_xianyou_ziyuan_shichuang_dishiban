@@ -1,0 +1,75 @@
+{
+  "Time": "2026-09-22T08:19:12.6718852+04:00",
+  "OS": {
+    "Caption": "Microsoft Windows 11 专业版",
+    "BuildNumber": "26200",
+    "LastBootUpTime": "2026-09-22T07:47:39.5+04:00",
+    "FreePhysicalMemory": 17422092
+  },
+  "PageFileAuto": false,
+  "PageFile": {
+    "Name": "C:\\pagefile.sys",
+    "AllocatedBaseSize": 16290,
+    "CurrentUsage": 29,
+    "PeakUsage": 29
+  },
+  "FreeGiB": 42.316043853759766,
+  "Problems": [],
+  "Network": {
+    "Name": "以太网",
+    "InterfaceDescription": "Realtek PCIe GbE Family Controller",
+    "Status": "Up",
+    "LinkSpeed": "1 Gbps",
+    "DriverVersion": "1168.27.50.919"
+  },
+  "SecurityServices": [
+    {
+      "Name": "AVP.KES.14.1",
+      "Status": 4,
+      "StartType": 2
+    },
+    {
+      "Name": "avpsus.KES.14.1",
+      "Status": 4,
+      "StartType": 2
+    },
+    {
+      "Name": "edgeupdate",
+      "Status": 1,
+      "StartType": 2
+    },
+    {
+      "Name": "edgeupdatem",
+      "Status": 1,
+      "StartType": 3
+    },
+    {
+      "Name": "klnagent",
+      "Status": 4,
+      "StartType": 2
+    },
+    {
+      "Name": "WinDefend",
+      "Status": 1,
+      "StartType": 3
+    }
+  ],
+  "Firewalls": [
+    {
+      "Name": "Domain",
+      "Enabled": 1
+    },
+    {
+      "Name": "Private",
+      "Enabled": 1
+    },
+    {
+      "Name": "Public",
+      "Enabled": 1
+    }
+  ],
+  "PowerPlan": "电源方案 GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (高性能)",
+  "LongPaths": 1,
+  "RebootCBS": false,
+  "RebootWU": false
+}

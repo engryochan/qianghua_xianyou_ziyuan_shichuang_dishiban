@@ -1,0 +1,1040 @@
+[
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "steam.exe",
+    "Path": "C:\\Program Files (x86)\\Steam\\steam.exe"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ntdll.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\ntdll.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "KERNEL32.DLL",
+    "Path": "C:\\WINDOWS\\System32\\KERNEL32.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "KERNELBASE.dll",
+    "Path": "C:\\WINDOWS\\System32\\KERNELBASE.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ghijt64.DLL",
+    "Path": "C:\\InetPub\\ftproot\\Tipray\\Ldterm\\ghijt64.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ADVAPI32.dll",
+    "Path": "C:\\WINDOWS\\System32\\ADVAPI32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "msvcrt.dll",
+    "Path": "C:\\WINDOWS\\System32\\msvcrt.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "sechost.dll",
+    "Path": "C:\\WINDOWS\\System32\\sechost.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "RPCRT4.dll",
+    "Path": "C:\\WINDOWS\\System32\\RPCRT4.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "USER32.dll",
+    "Path": "C:\\WINDOWS\\System32\\USER32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "win32u.dll",
+    "Path": "C:\\WINDOWS\\System32\\win32u.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "GDI32.dll",
+    "Path": "C:\\WINDOWS\\System32\\GDI32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "gdi32full.dll",
+    "Path": "C:\\WINDOWS\\System32\\gdi32full.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "msvcp_win.dll",
+    "Path": "C:\\WINDOWS\\System32\\msvcp_win.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ucrtbase.dll",
+    "Path": "C:\\WINDOWS\\System32\\ucrtbase.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "SHELL32.dll",
+    "Path": "C:\\WINDOWS\\System32\\SHELL32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ole32.dll",
+    "Path": "C:\\WINDOWS\\System32\\ole32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "combase.dll",
+    "Path": "C:\\WINDOWS\\System32\\combase.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "PSAPI.DLL",
+    "Path": "C:\\WINDOWS\\System32\\PSAPI.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "CRYPT32.dll",
+    "Path": "C:\\WINDOWS\\System32\\CRYPT32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WS2_32.dll",
+    "Path": "C:\\WINDOWS\\System32\\WS2_32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "COMCTL32.dll",
+    "Path": "C:\\WINDOWS\\WinSxS\\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9549_none_3e0a0396e3330090\\COMCTL32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "VERSION.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\VERSION.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "bcrypt.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WSOCK32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\WSOCK32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MSWSOCK.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MSWSOCK.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "LdSmartEnc64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\LdSmartEnc64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "FLTLIB.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\FLTLIB.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "IMM32.DLL",
+    "Path": "C:\\WINDOWS\\System32\\IMM32.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "LdUserInjectDll64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\LdUserInjectDll64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "HookDataInteractionx64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\HookDataInteractionx64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "LdHook64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\LdHook64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WINSPOOL.DRV",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\WINSPOOL.DRV"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "shcore.dll",
+    "Path": "C:\\WINDOWS\\System32\\shcore.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "cfgmgr32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\cfgmgr32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "CRYPTBASE.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ghhlp64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\ghhlp64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MonFileOp64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\MonFileOp64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "SHLWAPI.dll",
+    "Path": "C:\\WINDOWS\\System32\\SHLWAPI.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MPR.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MPR.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "LdWaterMarkHook64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\LdWaterMarkHook64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "gdiplus.dll",
+    "Path": "C:\\WINDOWS\\WinSxS\\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.26100.9549_none_6ef4f67c3dc57a5e\\gdiplus.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "crashhandler64.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\crashhandler64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WININET.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\WININET.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "LdPrintMonitor64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\LdPrintMonitor64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "uxtheme.dll",
+    "Path": "C:\\WINDOWS\\system32\\uxtheme.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "DynamicDll64.dll",
+    "Path": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\DynamicDll64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "COMDLG32.dll",
+    "Path": "C:\\WINDOWS\\System32\\COMDLG32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "OLEAUT32.dll",
+    "Path": "C:\\WINDOWS\\System32\\OLEAUT32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "IPHLPAPI.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "FileLock64.dll",
+    "Path": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\FileLock64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MSVFW32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MSVFW32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WINTRUST.dll",
+    "Path": "C:\\WINDOWS\\System32\\WINTRUST.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "SETUPAPI.dll",
+    "Path": "C:\\WINDOWS\\System32\\SETUPAPI.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WINMM.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\WINMM.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MSASN1.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MSASN1.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "msghijt64.dll",
+    "Path": "C:\\Inetpub\\ftproot\\Tipray\\LdTerm\\msghijt64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MSCTF.dll",
+    "Path": "C:\\WINDOWS\\System32\\MSCTF.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "OskSupport.dll",
+    "Path": "C:\\Windows\\System32\\OskSupport.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Windows.Storage.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\Windows.Storage.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "bcryptPrimitives.dll",
+    "Path": "C:\\WINDOWS\\System32\\bcryptPrimitives.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Hook64.dll",
+    "Path": "C:\\Program Files\\EsafeNet\\Cobra DocGuard Client\\Hook64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "steamui.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\steamui.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libpyrowave-shared-0.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libpyrowave-shared-0.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libavutil-60.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libavutil-60.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libavcodec-62.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libavcodec-62.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "SDL3.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\SDL3.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "tier0_s64.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\tier0_s64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "vstdlib_s64.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\vstdlib_s64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "video64.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\video64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libavfilter-11.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libavfilter-11.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libavformat-62.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libavformat-62.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libswresample-6.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libswresample-6.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libswscale-9.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libswscale-9.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Secur32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\Secur32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ncrypt.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\ncrypt.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "SSPICLI.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\SSPICLI.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "HID.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\HID.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "NTASN1.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\NTASN1.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "filesystem_stdio.DLL",
+    "Path": "C:\\Program Files (x86)\\Steam\\bin\\filesystem_stdio.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "vgui2_s.DLL",
+    "Path": "C:\\Program Files (x86)\\Steam\\bin\\vgui2_s.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MSIMG32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MSIMG32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "OPENGL32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\OPENGL32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "GLU32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\GLU32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dxcore.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\dxcore.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "chromehtml.DLL",
+    "Path": "C:\\Program Files (x86)\\Steam\\bin\\chromehtml.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "kernel.appcore.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dwmapi.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\dwmapi.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "apphelp.dll",
+    "Path": "C:\\WINDOWS\\system32\\apphelp.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "clbcatq.dll",
+    "Path": "C:\\WINDOWS\\System32\\clbcatq.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dataexchange.dll",
+    "Path": "C:\\WINDOWS\\system32\\dataexchange.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "twinapi.appcore.dll",
+    "Path": "C:\\WINDOWS\\system32\\twinapi.appcore.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Wtsapi32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\Wtsapi32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WINSTA.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\WINSTA.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "DWrite.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\DWrite.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "steamclient64.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\steamclient64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "imagehlp.dll",
+    "Path": "C:\\WINDOWS\\System32\\imagehlp.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "DXGI.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\DXGI.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "powrprof.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\powrprof.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "UMPDC.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "directxdatabasehelper.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\directxdatabasehelper.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "NSI.dll",
+    "Path": "C:\\WINDOWS\\System32\\NSI.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dhcpcsvc6.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dhcpcsvc.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "DNSAPI.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "DSPARSE.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\DSPARSE.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "DEVOBJ.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\DEVOBJ.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "libusb-1.0.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\libusb-1.0.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dsound.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\dsound.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "winmmbase.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ResampleDmo.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\ResampleDmo.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "msdmo.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\msdmo.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WinUSB.dll",
+    "Path": "C:\\WINDOWS\\system32\\WinUSB.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "wbemprox.dll",
+    "Path": "C:\\WINDOWS\\system32\\wbem\\wbemprox.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "wbemcomn.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\wbemcomn.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MMDevAPI.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MMDevAPI.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "wdmaud.drv",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\wdmaud.drv"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "wbemsvc.dll",
+    "Path": "C:\\WINDOWS\\system32\\wbem\\wbemsvc.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "wdmaud2.drv",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\wdmaud2.drv"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "AVRT.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\AVRT.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "GameInput.dll",
+    "Path": "C:\\WINDOWS\\system32\\GameInput.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "fastprox.dll",
+    "Path": "C:\\WINDOWS\\system32\\wbem\\fastprox.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "XInput1_4.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\XInput1_4.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "amsi.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\amsi.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "inputhost.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\inputhost.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "CoreMessaging.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\CoreMessaging.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "USERENV.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\USERENV.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "profapi.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\profapi.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "AUDIOSES.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\AUDIOSES.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "dinput8.dll",
+    "Path": "C:\\Windows\\System32\\dinput8.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MpOav.dll",
+    "Path": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26080.4-0\\MpOav.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "msacm32.drv",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\msacm32.drv"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "com_antivirus.dll",
+    "Path": "C:\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\com_antivirus.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "MSACM32.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\MSACM32.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "product_info.dll",
+    "Path": "C:\\Program Files (x86)\\Kaspersky Lab\\KES.14.1.0\\x64\\product_info.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "midimap.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\midimap.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Windows.UI.dll",
+    "Path": "C:\\Windows\\System32\\Windows.UI.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "rasadhlp.dll",
+    "Path": "C:\\Windows\\System32\\rasadhlp.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "openvr_api.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\openvr_api.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "audio64.dll",
+    "Path": "C:\\Program Files (x86)\\Steam\\bin\\audio64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "winhttp.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\winhttp.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "fwpuclnt.dll",
+    "Path": "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "CRYPTSP.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\CRYPTSP.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "rsaenh.dll",
+    "Path": "C:\\WINDOWS\\system32\\rsaenh.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "gpapi.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\gpapi.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "cryptnet.dll",
+    "Path": "C:\\Windows\\System32\\cryptnet.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "WINNSI.DLL",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\WINNSI.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "webio.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\webio.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ntmarta.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\ntmarta.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "nvapi64.dll",
+    "Path": "C:\\WINDOWS\\system32\\nvapi64.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "explorerframe.dll",
+    "Path": "C:\\WINDOWS\\system32\\explorerframe.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "PROPSYS.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\PROPSYS.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "urlmon.dll",
+    "Path": "C:\\Windows\\System32\\urlmon.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "iertutil.dll",
+    "Path": "C:\\Windows\\System32\\iertutil.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "srvcli.dll",
+    "Path": "C:\\Windows\\System32\\srvcli.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "netutils.dll",
+    "Path": "C:\\Windows\\System32\\netutils.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "virtdisk.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\virtdisk.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Windows.FileExplorer.Common.dll",
+    "Path": "C:\\Windows\\System32\\Windows.FileExplorer.Common.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "wintypes.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\wintypes.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "LINKINFO.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\LINKINFO.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ntshrui.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\ntshrui.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "cscapi.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\cscapi.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "policymanager.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\policymanager.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "friendsui.DLL",
+    "Path": "c:\\program files (x86)\\steam\\bin\\friendsui.DLL"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "windows.staterepositoryclient.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\windows.staterepositoryclient.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "edputil.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\edputil.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "cldapi.dll",
+    "Path": "C:\\Windows\\System32\\cldapi.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "Wldp.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\Wldp.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "pcacli.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\pcacli.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "sfc_os.dll",
+    "Path": "C:\\WINDOWS\\System32\\sfc_os.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "ServicingCommon.dll",
+    "Path": "C:\\WINDOWS\\SYSTEM32\\ServicingCommon.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "OneCoreUAPCommonProxyStub.dll",
+    "Path": "C:\\Windows\\System32\\OneCoreUAPCommonProxyStub.dll"
+  },
+  {
+    "Process": "steam.exe",
+    "PID": 120984,
+    "Module": "OneCoreCommonProxyStub.dll",
+    "Path": "C:\\Windows\\System32\\OneCoreCommonProxyStub.dll"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-02T07:52:51.109976+00:00",
+  "results": [
+    {
+      "appid": 1565750,
+      "game": "SAELIG",
+      "url": "https://store.steampowered.com/app/1565750/",
+      "api_success": true,
+      "name": "SAELIG Demo",
+      "type": "demo",
+      "windows": true,
+      "is_free": true
+    },
+    {
+      "appid": 2286710,
+      "game": "绝世好武功",
+      "url": "https://store.steampowered.com/app/2286710/",
+      "api_success": true,
+      "name": "The Matchless KungFu Demo",
+      "type": "demo",
+      "windows": true,
+      "is_free": true
+    },
+    {
+      "appid": 3288620,
+      "game": "Elin",
+      "url": "https://store.steampowered.com/app/3288620/",
+      "api_success": true,
+      "name": "Elin Demo",
+      "type": "demo",
+      "windows": true,
+      "is_free": true
+    },
+    {
+      "appid": 2162830,
+      "game": "风帆纪元",
+      "url": "https://store.steampowered.com/app/2162830/",
+      "api_success": true,
+      "name": "Sailing Era Demo",
+      "type": "demo",
+      "windows": true,
+      "is_free": true
+    },
+    {
+      "appid": 1407510,
+      "game": "大江湖之苍龙与白鸟",
+      "url": "https://store.steampowered.com/app/1407510/",
+      "api_success": true,
+      "name": "大江湖之苍龙与白鸟 Demo",
+      "type": "demo",
+      "windows": true,
+      "is_free": true
+    }
+  ]
+}

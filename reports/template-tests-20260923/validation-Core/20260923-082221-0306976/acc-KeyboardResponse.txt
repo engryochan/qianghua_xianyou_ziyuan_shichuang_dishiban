@@ -1,0 +1,16 @@
+
+AutoRepeatDelay        : 1000
+AutoRepeatRate         : 500
+BounceTime             : 0
+DelayBeforeAcceptance  : 1000
+Flags                  : 126
+Last BounceKey Setting : 0
+Last Valid Delay       : 0
+Last Valid Repeat      : 0
+Last Valid Wait        : 1000
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility
+PSChildName            : Keyboard Response
+PSDrive                : HKCU
+PSProvider             : Microsoft.PowerShell.Core\Registry
+

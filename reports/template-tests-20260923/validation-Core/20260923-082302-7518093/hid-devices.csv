@@ -1,0 +1,7 @@
+"Status","Class","FriendlyName","InstanceId","Problem","Manufacturer"
+"OK","HIDClass","USB 输入设备","USB\VID_1A2C&PID_6004&MI_00\6&14D9A150&0&0000","CM_PROB_NONE","(标准系统设备)"
+"OK","Keyboard","HID Keyboard Device","HID\VID_1A2C&PID_6004&MI_00\7&3B28E9EF&0&0000","CM_PROB_NONE","(标准键盘)"
+"OK","HIDClass","USB 输入设备","USB\VID_1A2C&PID_6004&MI_01\6&14D9A150&0&0001","CM_PROB_NONE","(标准系统设备)"
+"OK","HIDClass","符合 HID 标准的用户控制设备","HID\VID_1A2C&PID_6004&MI_01&COL01\7&23655DAA&0&0000","CM_PROB_NONE","Microsoft"
+"OK","HIDClass","USB 输入设备","USB\VID_10C4&PID_0005\5&2CF64626&0&4","CM_PROB_NONE","(标准系统设备)"
+"OK","HIDClass","符合 HID 标准的系统控制器","HID\VID_1A2C&PID_6004&MI_01&COL02\7&23655DAA&0&0001","CM_PROB_NONE","(标准系统设备)"

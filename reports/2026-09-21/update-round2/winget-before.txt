@@ -1,0 +1,10 @@
+名称                                                               ID                           版本                 可用
+----------------------------------------------------------------------------------------------------------------------------------------
+Adobe Acrobat (64-bit)                                             Adobe.Acrobat.Reader.64-bit  26.001.21691         26.002.21931
+Kimi                                                               MoonshotAI.Kimi              3.1.4                3.2.11
+Microsoft Edge                                                     Microsoft.Edge               150.0.4078.105       153.0.4234.48
+Microsoft Teams                                                    Microsoft.Teams              26183.1903.4892.4448 26198.304.4946.9672
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438 Microsoft.VCRedist.2015+.x64 14.42.34438.0        14.51.36247.0
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438 Microsoft.VCRedist.2015+.x86 14.42.34438.0        14.51.36247.0
+PyCharm 2026.1.5                                                   JetBrains.PyCharm            < 2026.2             2026.2.2
+7 升级可用。

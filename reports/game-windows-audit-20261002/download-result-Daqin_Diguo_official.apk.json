@@ -1,0 +1,9 @@
+{
+  "name": "Daqin_Diguo_official.apk",
+  "url": "https://d.xxhd-tech.com/pub/asdk-002_dqdg_1.apk",
+  "source": "http://dqdg.xxhd-tech.com/",
+  "utc": "2026-10-02T08:14:53.692474+00:00",
+  "executed": false,
+  "status": "FAILED",
+  "error": "URLError: <urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>"
+}

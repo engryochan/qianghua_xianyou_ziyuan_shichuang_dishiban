@@ -1,0 +1,8 @@
+﻿[
+  {
+    "UACEnabled": 1,
+    "ConsentPromptBehaviorAdmin": 5,
+    "RDPDenied": 1,
+    "RDPNetworkLevelAuthentication": 1
+  }
+]

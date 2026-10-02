@@ -1,0 +1,48 @@
+Steam／太阁立志传Ⅴ DX 本机只读核查（2026-10-02，Asia/Tbilisi）
+
+一、附件与实际安装流程
+图一为 UAC 提权提示。可见文件是 C:\Program Files (x86)\Steam\bin\SteamService.exe，发布者 Valve Corp.；参数 installscript 指向 Steamworks Shared\runasadmin.vdf，并带游戏 AppID 1842810。其用途是让 Steam 服务处理游戏所需的安装动作；不是展示游戏源码，也不是给游戏目录指定下载路径。
+图二写着“正在启动／正在运行安装脚本（Microsoft DirectX）”。此阶段可能仍在完成启动前依赖，不能单凭按钮状态断言主程序已运行。
+本机 runprocess_log.txt 实录：10/02/26 15:01:53，AppID 228980 的 DXSETUP.exe /silent 返回 Exit Code (0)、GLE 0。公共依赖注册表 DirectX\Jun2010 中 dxsetup=1。这两项支持该依赖安装步骤已报告成功，不等于游戏图形、声音或运行性能验收通过。
+本次扫描时截图中的 runasadmin.vdf 路径未找到可读文件，不能复原其当时全部指令；有关实际执行的判断以上述日志和注册表为依据。
+官方依据：https://partner.steamgames.com/doc/features/common_redist 和 https://partner.steamgames.com/doc/sdk/installscripts 。公共依赖由 Steam 按需要安装；安装脚本可在首次运行游戏前执行依赖程序。
+
+二、下载程序包为何不可见
+安装目录：C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX
+安装清单：C:\Program Files (x86)\Steam\steamapps\appmanifest_1842810.acf
+本机清单记录 BuildID=9163702；BytesDownloaded=BytesToDownload=1,621,706,016（约 1.51 GiB）；SizeOnDisk=7,374,028,339（约 6.87 GiB）。下载传输大小与安装文件大小是两种读数，不能直接相减作为隐藏占用。
+Steam 把内容安装到游戏库，不保证另保留用户可见的独立 ZIP／安装 EXE。实际文件已经存在，不需要从“下载”文件夹寻找完整安装器。
+最新完整快照：20261002-151409。游戏文件 1,331 个，总逻辑长度与安装清单一致；全部 1,331 个文件均保存 SHA256，读取前后长度与修改时间一致。SHA256 只支持后续字节对比，不证明文件行为安全或源码可得。
+
+三、当前启动状态与签名
+进程核对发现 Taiko5DXLauncher.exe，由 steam.exe 启动；查询时未见 Taiko5DX.exe。content_log.txt 在 15:01:56 将该 AppID 标为 Fully Installed,App Running；这个应用状态可由启动器占用，不表示游戏主程序已进入游戏画面。
+Steam Client Service 为 Running、Manual；未启停或更改它。
+SteamService.exe、steam.exe 的 Authenticode 状态 Valid，签署者 Valve Corp.；DXSETUP.exe 为 Valid，签署者 Microsoft Corporation。
+游戏主程序、启动器和事件工具均为 Valid，签署者 KOEI TECMO GAMES CO., LTD.。主程序文件版本 1.2.1.0，启动器 1.0.0.0，事件工具 1.1.0.0。有效签名不等于不存在漏洞或已获得所有安全认证。
+因此本轮基线是“安装尝试及依赖安装后、启动器已运行的当前状态”，不是严格首次启动前快照；不得倒签或猜测已经发生的设置变化。
+
+四、源码与加密核查范围
+游戏主程序 Taiko5DX.exe 是 x64 PE；启动器与 Evcon\Taiko5DXEvcon.exe 是 x86 PE。已检查的 EXE／DLL 没有 CLR 目录，符合原生程序发行文件的特征，但不能单靠该头部确认原始语言。
+游戏目录未发现常见 .c/.cpp/.h/.hpp/.cs/.py/.lua/.js/.java、.sln/.vcxproj 或 .pdb 候选。此结论是可见目录与扩展名扫描，不排除封装资源中存在文本脚本；不声称已分析或解开全部资源容器。
+实际文件包括图像、音视频与专用数据格式，例如 .G1T、.TE5、.TS5、.KVS、.DAT 等。二进制／专用格式不等于加密；本轮不能据此判断加密算法、DRM、公司透明加密状态或源码恢复比例。
+Evcon 是已发行的编译事件工具，并不是随包提供的完整引擎源码。本轮没有运行工具、解包、反编译、破解 DRM 或修改公司 DLP。
+文件通过正常 Windows 只读接口读取；若企业透明加密在授权读取时解密，读到的字节不等于物理磁盘原始字节。本轮不绕过企业加密来判定底层密文。
+官方许可参考：https://store.steampowered.com/eula/1842810_eula_0 。事件工具授权与主程序源码授权不同，源码提取及合并用途须分别核对。
+
+五、已保存的文件与设置
+all-files.csv：Steam 根目录下 9,041 个可访问条目的路径、目录/文件类型、长度、修改时间、Windows 属性、隐藏/系统标记及选定校验值。枚举包含隐藏文件；本次该范围标有 Hidden 属性的条目为 0，不代表电脑其他范围没有隐藏文件。
+游戏全文件计算校验值；Steam 配置与关键程序计算校验值。其他 Steam 二进制和缓存保存元数据，没有逐个解包或读取内嵌代码。
+snapshot.json／现有文件与设置报告.txt：采集时点、29 条设置/范围记录、源码候选、PE 头部及异常。包括可读的语言 schinese、游戏更新与后台下载字段、Steam 注册表、服务配置、存档路径存在性等；未识别字段不猜测语义。
+appmanifest_1842810.redacted.txt：脱敏后的本体安装清单。
+content_log.txt、runprocess_log.txt、gameprocess_log.txt、cloud_log.txt：限定的安装/启动/云端相关日志；空日志明确不构成事件未发生的证明。
+signatures.json、processes.json、commonredist-registry.txt、key-file-streams.json：程序签名、相关进程、公共依赖安装标记及关键 EXE 的 NTFS 数据流元数据。附加数据流仅抽查关键程序，不是全卷取证。
+原始密码、令牌、登录 cookie 和账号配置全文不复制到报告。配置文件的存在、元数据和哈希仍可用于前后对比。报告不上传外部服务，也未提交 GitHub。
+
+六、盲区与下一次实测
+这不是“所有系统与隐藏状态已完全查明”的结论：远端账号设置、运行中内存状态、重解析目标、受限对象、全部 NTFS 附加流、资源包内部与内核活动未全量读取。当前快照非原子采集，Steam 缓存/日志可自行变化；读取时发生变化的哈希不认定为稳定基线。
+游戏 HKCU\Software\KoeiTecmo\Taiko5DX 键未找到；并非其他存档/配置路径不存在。README 指定 Documents\KoeiTecmo\Taiko5DX\SaveData；脚本同时核对默认及 Windows 重定向的文档位置。
+初次 WMI 读取受沙箱拒绝；随后获批以只读进程查询取得当前状态，没有提升管理员权限来修改系统。
+由本人启动游戏并正常退出之后，再运行本目录 snapshot.py，然后运行 compare.py。两者只采集、比较，不启动游戏或更改设置。对照基线为 20261002-151409，最新快照单独保存新增、消失和变化的条目。
+文件变化不自动归因于游戏：Steam 更新、云同步、缓存和其他进程都可能同时写入。需要结合具体时间和日志确认；未观察到的变化仍不能补写为事实。
+
+本轮没有启动游戏主程序、点击 UAC、安装新依赖、修改 Steam 设置、删除文件或更改公司资安防御。所有新增脚本每行附注释；本轮交付是当前基线与后续对照工具，游戏启动后实测尚待进行。

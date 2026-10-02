@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Interpreter": "C:\\Program Files\\R\\R-4.6.1\\bin\\x64\\Rscript.exe",
+    "Version": "R version 4.6.1 (2026-06-24 ucrt)",
+    "Library": "C:/Users/PPCCpcpc/AppData/Local/R/win-library/4.6",
+    "Writable": "TRUE",
+    "Scope": "--vanilla; no project .Rprofile/.Renviron executed"
+  },
+  {
+    "Interpreter": "C:\\Program Files\\R\\R-4.6.1\\bin\\x64\\Rscript.exe",
+    "Version": "R version 4.6.1 (2026-06-24 ucrt)",
+    "Library": "C:/Program Files/R/R-4.6.1/library",
+    "Writable": "FALSE",
+    "Scope": "--vanilla; no project .Rprofile/.Renviron executed"
+  },
+  {
+    "Interpreter": "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe",
+    "Version": "R version 4.6.1 (2026-06-24 ucrt)",
+    "Library": "C:/Users/PPCCpcpc/AppData/Local/R/win-library/4.6",
+    "Writable": "TRUE",
+    "Scope": "--vanilla; no project .Rprofile/.Renviron executed"
+  },
+  {
+    "Interpreter": "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe",
+    "Version": "R version 4.6.1 (2026-06-24 ucrt)",
+    "Library": "C:/Program Files/R/R-4.6.1/library",
+    "Writable": "FALSE",
+    "Scope": "--vanilla; no project .Rprofile/.Renviron executed"
+  }
+]

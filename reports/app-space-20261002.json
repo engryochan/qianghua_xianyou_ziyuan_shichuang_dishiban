@@ -1,0 +1,920 @@
+[
+  {
+    "name": "Microsoft.UI.Xaml.2.0",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.0_2.1810.18004.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 5523352,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Microsoft3DViewer",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Microsoft3DViewer_6.1908.2042.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 34730017,
+    "files": 220,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.MSPaint",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.MSPaint_6.1907.29027.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 61867093,
+    "files": 217,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.VCLibs.140.00",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00_14.0.33519.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 2183288,
+    "files": 17,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.VCLibs.140.00",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00_14.0.33519.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 1784996,
+    "files": 16,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.8",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.8_8.2501.31001.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 15992672,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 12269959,
+    "files": 30,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 14304120,
+    "files": 31,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.XboxApp",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.XboxApp_48.104.4001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 12151218,
+    "files": 130,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "microsoft.windowscommunicationsapps",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\microsoft.windowscommunicationsapps_16005.14326.22342.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 216852567,
+    "files": 1637,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.MixedReality.Portal",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.MixedReality.Portal_2000.21051.1282.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 18824358,
+    "files": 143,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Framework.1.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 6158923,
+    "files": 7,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Framework.1.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 7463845,
+    "files": 7,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Runtime.1.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 352685,
+    "files": 8,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Runtime.1.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.1.7_1.7.27422.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 454227,
+    "files": 8,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.7_7.2409.9001.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 15866602,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.7_7.2409.9001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 16678457,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Framework.2.2",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 13458094,
+    "files": 7,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Framework.2.2",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 11345832,
+    "files": 7,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.SkypeApp",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.SkypeApp_15.150.3125.0_x64__kzf8qxf38zg5c",
+    "logical_bytes": 334432883,
+    "files": 265,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Runtime.2.2",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 505321,
+    "files": 8,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.NET.Native.Runtime.2.2",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 400383,
+    "files": 8,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.MicrosoftStickyNotes",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftStickyNotes_6.1.4.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 40543957,
+    "files": 131,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Office.OneNote",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Office.OneNote_16001.14326.22594.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 149013104,
+    "files": 650,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.People",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.People_10.2202.100.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 24555190,
+    "files": 182,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsMaps",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsMaps_11.2506.3.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 44711790,
+    "files": 394,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.4",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.4_2.42007.9001.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 11148417,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.4",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.4_2.42007.9001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 11716866,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Xbox.TCUI",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 12121994,
+    "files": 34,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.XboxIdentityProvider",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.XboxIdentityProvider_12.130.16001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 18447989,
+    "files": 23,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.XboxGameOverlay",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.XboxGameOverlay_1.54.4001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 3139763,
+    "files": 22,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.VP9VideoExtensions",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.VP9VideoExtensions_1.2.20.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 6128089,
+    "files": 214,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.1.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 63045293,
+    "files": 281,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.BingWeather",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.BingWeather_4.54.63045.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 30900865,
+    "files": 429,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.1.7",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 52973827,
+    "files": 247,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.ZuneVideo",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.ZuneVideo_10.26061.10051.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 34862750,
+    "files": 230,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.3",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.3_2.32002.13001.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 10141859,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.3",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.3_2.32002.13001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 10484967,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.1.5",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 49816196,
+    "files": 239,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.1.5",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 57154592,
+    "files": 239,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Windows.DevHome",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.DevHome_0.2100.858.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 1102023,
+    "files": 192,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.OfficePushNotificationUtility",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.OfficePushNotificationUtility_16.0.19127.20800_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 33913,
+    "files": 7,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Office.ActionsServer",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Office.ActionsServer_16.0.19127.20800_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 854503,
+    "files": 147,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WebpImageExtension",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WebpImageExtension_1.2.31.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 857417,
+    "files": 212,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.XboxGamingOverlay",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.XboxGamingOverlay_7.326.8061.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 34535177,
+    "files": 79,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsCalculator",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_11.2607.0.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 19325868,
+    "files": 226,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.ZuneMusic",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.ZuneMusic_11.2607.16.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 38168595,
+    "files": 192,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAlarms",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAlarms_11.2607.6.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 25727258,
+    "files": 244,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsCamera",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCamera_2026.2607.1.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 24113611,
+    "files": 142,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.2",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.2_2.5.1.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 121408321,
+    "files": 302,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.2",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.2_2.5.1.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 57631311,
+    "files": 251,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Windows.Photos",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.Photos_2026.11080.24002.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 923961007,
+    "files": 1189,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.OutlookForWindows",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.OutlookForWindows_1.2026.818.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 79597468,
+    "files": 1520,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.PowerShell",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 298048419,
+    "files": 1124,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.BingNews",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.BingNews_1.0.2.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 928675,
+    "files": 156,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.XboxSpeechToTextOverlay",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.XboxSpeechToTextOverlay_1.97.17002.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 832701,
+    "files": 32,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.BingSearch",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.BingSearch_1.1.43.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 121477,
+    "files": 11,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.UI.Xaml.2.8",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.UI.Xaml.2.8_8.2511.26001.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 16776870,
+    "files": 10,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.SecHealthUI",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.SecHealthUI_1000.29628.1000.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 27223915,
+    "files": 165,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsNotepad",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2607.14.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 18958438,
+    "files": 260,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Paint",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Paint_11.2605.81.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 437473322,
+    "files": 647,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "MicrosoftWindows.Client.WebExperience",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy",
+    "logical_bytes": 169776785,
+    "files": 4677,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.ScreenSketch",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2607.23.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 614110062,
+    "files": 340,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WidgetsPlatformRuntime",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WidgetsPlatformRuntime_1.6.19.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 2881253,
+    "files": 18,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.ApplicationCompatibilityEnhancements",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.ApplicationCompatibilityEnhancements_1.2511.9.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 2906313,
+    "files": 140,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.StartExperiencesApp",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.StartExperiencesApp_1.380.2.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 4057792,
+    "files": 55,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.LanguageExperiencePackzh-CN",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.LanguageExperiencePackzh-CN_26100.163.263.0_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 150647025,
+    "files": 3226,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsTerminal",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.24.11911.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 18009568,
+    "files": 259,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.MPEG2VideoExtension",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.MPEG2VideoExtension_1.2.32.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 1886044,
+    "files": 191,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsSoundRecorder",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsSoundRecorder_11.2607.1.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 9956808,
+    "files": 184,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WebMediaExtensions",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WebMediaExtensions_2.1.51.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 5173591,
+    "files": 224,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.RawImageExtension",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.RawImageExtension_2.5.35.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 3347386,
+    "files": 198,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.AV1VideoExtension",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.AV1VideoExtension_2.0.35.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 4348359,
+    "files": 198,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "MicrosoftWindows.CrossDevice",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.CrossDevice_0.26072.116.0_x64__cw5n1h2txyewy",
+    "logical_bytes": 2390454,
+    "files": 86,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.GetHelp",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.GetHelp_10.2409.42492.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 285046301,
+    "files": 839,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.GamingApp",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.GamingApp_2609.1001.16.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 379319312,
+    "files": 951,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.DesktopAppInstaller",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.DesktopAppInstaller_1.29.380.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 150981795,
+    "files": 778,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.PowerAutomateDesktop",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.PowerAutomateDesktop_1.0.2141.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 529056,
+    "files": 82,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.LanguageExperiencePackja-JP",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.LanguageExperiencePackja-JP_26100.174.273.0_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 172341135,
+    "files": 3215,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.MicrosoftEdge.Stable",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftEdge.Stable_153.0.4234.48_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 58457,
+    "files": 5,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.AVCEncoderVideoExtension",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.AVCEncoderVideoExtension_1.1.47.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 4613011,
+    "files": 212,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.StorePurchaseApp",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.StorePurchaseApp_22608.1401.1.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 60397457,
+    "files": 356,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.1.8",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.8_8000.994.2142.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 106041701,
+    "files": 290,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsAppRuntime.1.8",
+    "kind": "Framework",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.8_8000.994.2142.0_x86__8wekyb3d8bbwe",
+    "logical_bytes": 53396887,
+    "files": 250,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Winget.Source",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Winget.Source_2026.926.823.50_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 8535006,
+    "files": 19,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "MicrosoftWindows.Speech.zh-TW.1",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Speech.zh-TW.1_1.0.14.0_x64__cw5n1h2txyewy",
+    "logical_bytes": 144108758,
+    "files": 26,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.LanguageExperiencePackzh-TW",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.LanguageExperiencePackzh-TW_26100.176.274.0_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 146095664,
+    "files": 3203,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "MicrosoftWindows.Speech.ja-JP.1",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Speech.ja-JP.1_1.0.21.0_x64__cw5n1h2txyewy",
+    "logical_bytes": 207949935,
+    "files": 29,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "MicrosoftWindows.Speech.zh-CN.1",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\MicrosoftWindows.Speech.zh-CN.1_1.0.23.0_x64__cw5n1h2txyewy",
+    "logical_bytes": 158655810,
+    "files": 26,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.HEIFImageExtension",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.HEIFImageExtension_1.2.57.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 14844763,
+    "files": 212,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.Todos",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.Todos_0.178.8571.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 1010236,
+    "files": 59,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.MicrosoftSolitaireCollection",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.MicrosoftSolitaireCollection_4.27.9181.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 79516493,
+    "files": 199,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.YourPhone",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 392013669,
+    "files": 1730,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsFeedbackHub",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsFeedbackHub_2.2608.303.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 83404452,
+    "files": 241,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.WindowsStore",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsStore_22608.1401.5.0_x64__8wekyb3d8bbwe",
+    "logical_bytes": 136090011,
+    "files": 813,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Microsoft.OneDriveSync",
+    "kind": "MicrosoftApp",
+    "path": "C:\\Program Files\\WindowsApps\\Microsoft.OneDriveSync_26178.913.6.0_neutral__8wekyb3d8bbwe",
+    "logical_bytes": 29486,
+    "files": 3,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": ".codex",
+    "kind": "Tool",
+    "path": "C:\\Users\\PPCCpcpc\\.codex",
+    "logical_bytes": 1174969489,
+    "files": 10842,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "Codex",
+    "kind": "Tool",
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\OpenAI\\Codex",
+    "logical_bytes": 680972956,
+    "files": 2373,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "GitHubDesktop",
+    "kind": "Tool",
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\GitHubDesktop",
+    "logical_bytes": 1552487941,
+    "files": 2092,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "github-copilot",
+    "kind": "Tool",
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\github-copilot",
+    "logical_bytes": 0,
+    "files": 0,
+    "errors": 1,
+    "complete": true
+  },
+  {
+    "name": "github-copilot-git-2.53.0-3",
+    "kind": "Tool",
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\github-copilot-git-2.53.0-3",
+    "logical_bytes": 121775896,
+    "files": 385,
+    "errors": 0,
+    "complete": true
+  },
+  {
+    "name": "github-copilot-git-2.53.0-4",
+    "kind": "Tool",
+    "path": "C:\\Users\\PPCCpcpc\\AppData\\Local\\github-copilot-git-2.53.0-4",
+    "logical_bytes": 119136673,
+    "files": 385,
+    "errors": 0,
+    "complete": true
+  }
+]

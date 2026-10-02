@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Snipaste",
+    "Location": "Startup"
+  },
+  {
+    "Name": "Mozilla-Firefox-308046B0AF4A39CB",
+    "Location": "HKU\\S-1-5-21-323984447-536449353-4267113659-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+  },
+  {
+    "Name": "GoogleChromeAutoLaunch_BB347D1503165DD0861E8C7EEA929BEA",
+    "Location": "HKU\\S-1-5-21-323984447-536449353-4267113659-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+  },
+  {
+    "Name": "MicrosoftEdgeAutoLaunch_45F2C36DEFA40954163E6E4890A144CE",
+    "Location": "HKU\\S-1-5-21-323984447-536449353-4267113659-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+  },
+  {
+    "Name": "OneDrive",
+    "Location": "HKU\\S-1-5-21-323984447-536449353-4267113659-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+  },
+  {
+    "Name": "CometUpdaterTaskUser151.0.7922.249",
+    "Location": "HKU\\S-1-5-21-323984447-536449353-4267113659-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+  },
+  {
+    "Name": "SecurityHealth",
+    "Location": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+  }
+]
