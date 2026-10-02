@@ -1,0 +1,587 @@
+[
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "DINPUT8.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\DINPUT8.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "steam_api64.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\steam_api64.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "IMM32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\IMM32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "KERNEL32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\KERNEL32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "USER32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\USER32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "GDI32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\GDI32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "ADVAPI32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\ADVAPI32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "SHELL32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\SHELL32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "ole32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\ole32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "OLEAUT32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\OLEAUT32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "XINPUT1_3.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\XINPUT1_3.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "D3DCOMPILER_43.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\D3DCOMPILER_43.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "dxgi.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\dxgi.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "dwmapi.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\dwmapi.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "d3d9.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\d3d9.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "MF.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\MF.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "MFPlat.DLL",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\MFPlat.DLL"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "MFReadWrite.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\MFReadWrite.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "dxva2.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\dxva2.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DX.exe",
+    "Library": "d3d11.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\d3d11.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "d3d9.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\d3d9.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "VERSION.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\VERSION.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "KERNEL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\KERNEL32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "USER32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\USER32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "GDI32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\GDI32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "MSIMG32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\MSIMG32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "WINSPOOL.DRV",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\WINSPOOL.DRV"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "ADVAPI32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\ADVAPI32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "SHELL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\SHELL32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "SHLWAPI.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\SHLWAPI.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "UxTheme.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\UxTheme.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "ole32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\ole32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "OLEAUT32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\OLEAUT32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "steam_api.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\steam_api.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "oledlg.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\oledlg.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "dxgi.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\dxgi.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "gdiplus.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\gdiplus.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "IMM32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\IMM32.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "WINMM.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\WINMM.dll"
+    ]
+  },
+  {
+    "Importer": "Taiko5DXLauncher.exe",
+    "Library": "OLEACC.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\OLEACC.dll"
+    ]
+  },
+  {
+    "Importer": "steam_api.dll",
+    "Library": "KERNEL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\KERNEL32.dll"
+    ]
+  },
+  {
+    "Importer": "steam_api.dll",
+    "Library": "ADVAPI32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\ADVAPI32.dll"
+    ]
+  },
+  {
+    "Importer": "steam_api.dll",
+    "Library": "SHELL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\SHELL32.dll"
+    ]
+  },
+  {
+    "Importer": "steam_api64.dll",
+    "Library": "KERNEL32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\KERNEL32.dll"
+    ]
+  },
+  {
+    "Importer": "steam_api64.dll",
+    "Library": "ADVAPI32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\ADVAPI32.dll"
+    ]
+  },
+  {
+    "Importer": "steam_api64.dll",
+    "Library": "SHELL32.dll",
+    "Architecture": "0x8664",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\System32\\SHELL32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "OLEACC.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\OLEACC.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "steam_api.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Taiko5DX\\Evcon\\steam_api.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "KERNEL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\KERNEL32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "USER32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\USER32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "GDI32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\GDI32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "WINSPOOL.DRV",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\WINSPOOL.DRV"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "ADVAPI32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\ADVAPI32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "SHELL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\SHELL32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "ole32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\ole32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "OLEAUT32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\OLEAUT32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "MSIMG32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\MSIMG32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "COMCTL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\COMCTL32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "SHLWAPI.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\SHLWAPI.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "UxTheme.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\UxTheme.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "gdiplus.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\gdiplus.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\Taiko5DXEvcon.exe",
+    "Library": "IMM32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\IMM32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\steam_api.dll",
+    "Library": "KERNEL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\KERNEL32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\steam_api.dll",
+    "Library": "ADVAPI32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\ADVAPI32.dll"
+    ]
+  },
+  {
+    "Importer": "Evcon\\steam_api.dll",
+    "Library": "SHELL32.dll",
+    "Architecture": "0x14c",
+    "PresentInPrimaryLocations": true,
+    "Paths": [
+      "C:\\Windows\\SysWOW64\\SHELL32.dll"
+    ]
+  }
+]
