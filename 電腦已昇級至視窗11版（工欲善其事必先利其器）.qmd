@@ -5502,7 +5502,32 @@ Proton 是让 Windows 游戏在 Linux 上运行的兼容工具，不是源码转
 
 ### 提問
 
+刚签购了《太阁立志传[Ⅴ DX](https://store.steampowered.com/app/1842810)  》，目前尚未启动该游戏。请先生先查证两份附件中《太阁立志传》
+- 刚才欲安装时弹出信息路径，如图屏幕截图 2026-10-02 145859.png中有显示。请查证该用途为何呢？
+- Snipaste_2026-10-02_15-00-43.png 显示“正在启动”
+- 由于无法看到下载程序包，请先生目前先查证Steam软件应用中的所有设置与文件，包括任何内嵌与隐藏文件、任何相关设置等等。然后先记录任何现有文件与设置到一个文本报告。稍后启动后再次实测任何文件与设置。务必查证源码。
+
 ### 解答
+
+已完成只读核查并保存[文本报告](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-baseline-20261002/核查结论.txt)。
+
+**两张截图的含义已得到本机证据支持：**
+
+- **图一**：Steam Client Service 请求权限执行游戏依赖安装脚本。实测该程序签名有效，签署者为 Valve。
+- **图二**：正在运行 Microsoft DirectX 安装步骤。日志记录 **15:01:53 返回退出码 0**，注册表也记录安装标记。
+- 当前发现 **启动器 `Taiko5DXLauncher.exe` 已运行**，查询时未见主程序 `Taiko5DX.exe`。所以这份记录是“依赖安装后、启动器已运行的基线”，不是严格首次启动前快照。此流程符合 [Steam 官方安装脚本说明](https://partner.steamgames.com/doc/sdk/installscripts)。
+
+**游戏文件已经安装在：**
+
+`C:\Program Files (x86)\Steam\steamapps\common\Taiko5DX`
+
+实测 **1,331 个文件、约 6.87 GiB**，全部保存了 SHA256 校验值。清单记录下载量约 **1.51 GiB**；下载量与安装后的文件大小不同，Steam 不一定保留独立安装包。
+
+**源码方面：**未发现常见源码、工程或调试文件；主程序属于原生 x64 PE 程序。发现了编译后的事件工具，但它不是完整引擎源码。**目前不能判断资源包是否加密，也不能把二进制格式直接认定为加密。**
+
+已保存 Steam 范围内 **9,041 个可访问条目**、配置元数据、可识别设置、安装日志、进程及签名记录。[完整文件清单](C:/Users/PPCCpcpc/OneDrive/文档/GitHub/qianghua_xianyou_ziyuan_shichuang_dishiban/reports/steam-taiko-baseline-20261002/20261002-151409/all-files.csv)包括隐藏属性检查；远端设置、内存状态及封装资源内部尚未全量检查，登录令牌没有复制。
+
+启动后对照工具已准备，**尚未进行游戏主程序启动后的实测**。本轮没有代您启动游戏、修改 Steam 设置或更改公司资安防御。
 
 ## 提問十八
 

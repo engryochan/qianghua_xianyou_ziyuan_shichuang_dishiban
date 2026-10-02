@@ -55,3 +55,6 @@ rsconnect/
 # Python bytecode（語法檢查等會產生）
 __pycache__/
 *.py[cod]
+
+/.quarto/
+**/*.quarto_ipynb
