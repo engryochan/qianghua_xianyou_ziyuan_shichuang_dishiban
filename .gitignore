@@ -10,3 +10,4 @@
 # 太阁深度验证:含 ~430MB 可重下工具(ffmpeg/vgmstream,超 GitHub 100MB 单档上限)
 # 及可能的游戏抽出素材;留本地、不版控。
 /reports/steam-taiko-deep-validation-20261002/
+.Rproj.user
