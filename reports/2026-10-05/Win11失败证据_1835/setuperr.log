@@ -1,0 +1,95 @@
+﻿2026-10-05 17:50:56, Error                        CDeploymentSession::IsRangeRequestSupported(5313): Result = 0x80040154
+2026-10-05 17:50:56, Error                        IsRangeRequestSupported failed with: [80040154 [Error,Facility=FACILITY_ITF,Code=340 (0x0154)]]. Setting RangeRequestSupported to FALSE
+2026-10-05 17:51:00, Error                 MOUPG  CDlpActionImpl<class CDlpErrorImpl<class CDlpObjectInternalImpl<class CUnknownImpl<class IMoSetupDlpAction> > > >::Suspend(1291): Result = 0xC1800104[gle=0x00000002]
+2026-10-05 17:51:00, Error                 MOUPG  CDlpTask::CheckUserInterruptEx(3094): Result = 0x800704D3
+2026-10-05 17:51:00, Error                 MOUPG  CDlpTask::CheckUserInterrupt(3147): Result = 0x800704D3
+2026-10-05 17:51:00, Error                 MOUPG  CSetupManager::ExecuteInstallMode(1068): Result = 0x800705BB
+2026-10-05 17:51:00, Error                 MOUPG  CSetupManager::ExecuteDownlevelMode(622): Result = 0x800705BB
+2026-10-05 17:51:01, Error                 MOUPG  CSetupManager::Execute(358): Result = 0x800705BB[gle=0x0000007f]
+2026-10-05 17:51:01, Error                 MOUPG  CSetupHost::Execute(517): Result = 0x800705BB[gle=0x0000007f]
+2026-10-05 17:51:14, Error                 CONX   hwreqchk: ERROR,Windows::Compat::HardwareRequirements::HardwareInventory::GetProcessorVersionName,1225,Error reading registry value_ swallowing: [0x8007007F].
+
+2026-10-05 17:51:44, Error                        CDeploymentSession::IsRangeRequestSupported(5313): Result = 0x80040154
+2026-10-05 17:51:44, Error                        IsRangeRequestSupported failed with: [80040154 [Error,Facility=FACILITY_ITF,Code=340 (0x0154)]]. Setting RangeRequestSupported to FALSE
+2026-10-05 18:13:04, Error                        CDeploymentSession::IsRangeRequestSupported(5313): Result = 0x80040154
+2026-10-05 18:26:17, Error                 DU     DU::CDUSession::Search: Failed to set WU internal configuration property for targeted scans. hr = 0x80070057
+2026-10-05 18:26:56, Error                 CONX   devinv: ERROR,AslFileMappingCreate,159,RtlFileMapInitializeByFilePath failed c:\inetpub\ftproot\tipray\ldterm\ldcore.sys [c000000f]
+
+2026-10-05 18:26:56, Error                 CONX   devinv: ERROR,AslFileMappingCreate,159,RtlFileMapInitializeByFilePath failed c:\inetpub\ftproot\tipray\ldterm\ldwfp64.sys [c000000f]
+
+2026-10-05 18:27:08, Error                 CONX   acmigration: ERROR,AcmMatchPluginExecuteInternal,143,Plugin not registered [ETWMatchingPlugin].
+
+2026-10-05 18:27:48, Error                 SP     SPGetReserveManager: Failed to get Update Reserve Manager. hr = 0x80070005[gle=0x000000ea]
+2026-10-05 18:27:48, Error                 SP     SPStorageReserveAvailable: Failed to get Update Reserve manager. hr = 0x80070005[gle=0x000000ea]
+2026-10-05 18:27:48, Error                 CSI    00000001 (F) E_INVALIDARG #1# from LoadStore(target = NULL)
+[gle=0x80004005]
+2026-10-05 18:27:48, Error                 MIG        Error loading hive C:\Windows\system32\config\elam.: Win32Exception: 参数错误。 [0x00000057] __cdecl Mig::CIndirectKeyMapper::CIndirectKeyMapper(class UnBCL::String *,struct HKEY__ *,class UnBCL::String *,class UnBCL::String *,int,int,int,const Mig::HiveLoadRetryOptions *)[gle=0x000003f0]
+2026-10-05 18:27:48, Error      [0x0803b6] MIG        Can't retrieve group information for user NT SERVICE\ksnproxy. NetUserGetLocalGroups failed 0x000008AD
+2026-10-05 18:33:26, Error                            RegLoadKeyW failed to mount C:\$WINDOWS.~BT\NewOS\WINDOWS\system32\config\SYSTEM at $OFFLINE_RW$SYSTEM[gle=0x00000057]
+2026-10-05 18:33:26, Error                            SPMountOfflineHive: Can't mount offline hive: C:\$WINDOWS.~BT\NewOS\WINDOWS\system32\config\SYSTEM. Error: 0x00000057[gle=0x00000057]
+2026-10-05 18:33:26, Error                 SP         CEnableTelemetryForImage::DoExecute: Cannot load the system hive for the offline OS C:\$WINDOWS.~BT\NewOS\WINDOWS. Error: 0x80070057[gle=0x00000057]
+2026-10-05 18:33:27, Error                 SP         CSetBootCommand::DoExecute: Failed to open new OS DISM session. Error: 0x80070057[gle=0x0000007a]
+2026-10-05 18:33:27, Error                 SP     Operation failed: Set boot command %SYSTEMDRIVE%\$WINDOWS.~BT\Sources\SetupPlatform.exe /postoobe for phase DismPostOobe. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:33:27, Error                 SP         CSetBootCommand::DoExecute: Failed to open new OS DISM session. Error: 0x80070057[gle=0x0000007a]
+2026-10-05 18:33:27, Error                 SP     Operation failed: Set boot command %SYSTEMDRIVE%\$WINDOWS.~BT\Sources\SetupPlatform.exe /presysprep for phase DismPreSysprep. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:33:32, Error                 SP         CSetBootCommand::DoExecute: Failed to open new OS DISM session. Error: 0x80070057[gle=0x0000007a]
+2026-10-05 18:33:32, Error                 SP     Operation failed: Set boot command %SYSTEMDRIVE%\$WINDOWS.~BT\Sources\SetupPlatform.exe /postsysprep for phase DismPostSysprep. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:33:32, Error                 SP         CSetBootCommand::DoExecute: Failed to open new OS DISM session. Error: 0x80070057[gle=0x0000007a]
+2026-10-05 18:33:32, Error                 SP     Operation failed: Set boot command %SYSTEMDRIVE%\$WINDOWS.~BT\Sources\SetupPlatform.exe /preoobe for phase DismPreOobe. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:33:33, Error                 SP         CSetBootCommand::DoExecute: Failed to open new OS DISM session. Error: 0x80070057[gle=0x0000007a]
+2026-10-05 18:33:33, Error                 SP     Operation failed: Set boot command %SYSTEMDRIVE%\$WINDOWS.~BT\Sources\SetupPlatform.exe /onerror for phase DismOnError. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:33:33, Error                            RegLoadKeyW failed to mount C:\$WINDOWS.~BT\NewOS\WINDOWS\system32\config\SYSTEM at $OFFLINE_RW$SYSTEM[gle=0x00000057]
+2026-10-05 18:33:33, Error                            SPMountOfflineHive: Can't mount offline hive: C:\$WINDOWS.~BT\NewOS\WINDOWS\system32\config\SYSTEM. Error: 0x00000057[gle=0x00000057]
+2026-10-05 18:33:33, Error                 SP         SPSetOSEntropy: failed to mount system hive. Error: 80070057[gle=0x00000057]
+2026-10-05 18:33:33, Error                 SP         Failure while injecting entropy into the offline OS. Error: 0x80070057[gle=0x00000057]
+2026-10-05 18:33:33, Error                 SP     Operation failed: Set entropy for C:\$WINDOWS.~BT\NewOS. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:33:33, Error                 CSI    00000002 (F) E_INVALIDARG #2# from LoadStore(target = NULL)
+[gle=0x80004005]
+2026-10-05 18:33:33, Error                 MIG            Error loading hive C:\Windows\system32\config\elam.: Win32Exception: 参数错误。 [0x00000057] __cdecl Mig::CIndirectKeyMapper::CIndirectKeyMapper(class UnBCL::String *,struct HKEY__ *,class UnBCL::String *,class UnBCL::String *,int,int,int,const Mig::HiveLoadRetryOptions *)[gle=0x000003f0]
+2026-10-05 18:33:33, Error      [0x0803b6] MIG            Can't retrieve group information for user NT SERVICE\ksnproxy. NetUserGetLocalGroups failed 0x000008AD
+2026-10-05 18:33:35, Error                            RegLoadKeyW failed to mount C:\$WINDOWS.~BT\NewOS\WINDOWS\system32\config\SOFTWARE at $OFFLINE_RW$SOFTWARE[gle=0x00000057]
+2026-10-05 18:33:35, Error                            SPMountOfflineHive: Can't mount offline hive: C:\$WINDOWS.~BT\NewOS\WINDOWS\system32\config\SOFTWARE. Error: 0x00000057[gle=0x00000057]
+2026-10-05 18:33:35, Error                 SP         SPCalculateDriveMappings: Cannot load the SOFTWARE hive for the offline OS C:\$WINDOWS.~BT\NewOS\WINDOWS. Error: 0x00000057[gle=0x00000057]
+2026-10-05 18:33:35, Error                 SP         SPGetOSInformation: Cannot calculate offline drive mappings. Error: 0x80070057[gle=0x00000057]
+2026-10-05 18:33:35, Error                 CBS        Failed to load offline store from boot directory: '\\?\C:\$WINDOWS.~BT\NewOS\WINDOWS\' and windows directory: '\\?\C:\$WINDOWS.~BT\NewOS\WINDOWS\' [HRESULT = 0xd000000d - NTSTATUS Error]
+2026-10-05 18:33:35, Error                 CBS        Failed to initialize store parameters with boot drive: C:\$WINDOWS.~BT\NewOS\WINDOWS, windows directory C:\$WINDOWS.~BT\NewOS\WINDOWS [HRESULT = 0xd000000d - NTSTATUS Error]
+2026-10-05 18:33:35, Error                 SP         SPEvaluateCBSCompletionStatus: Failed to initialize the CBS session. hr = 0xD000000D
+2026-10-05 18:34:14, Error                 CSI    00000003 (F) E_INVALIDARG #3# from LoadStore(target = NULL)
+[gle=0x80004005]
+2026-10-05 18:34:14, Error                 MIG        Error loading hive C:\Windows\system32\config\elam.: Win32Exception: 参数错误。 [0x00000057] __cdecl Mig::CIndirectKeyMapper::CIndirectKeyMapper(class UnBCL::String *,struct HKEY__ *,class UnBCL::String *,class UnBCL::String *,int,int,int,const Mig::HiveLoadRetryOptions *)[gle=0x000003f0]
+2026-10-05 18:34:14, Error      [0x0803b6] MIG        Can't retrieve group information for user NT SERVICE\ksnproxy. NetUserGetLocalGroups failed 0x000008AD
+2026-10-05 18:34:15, Error      [0x0808ff] MIG        COutOfProcPluginFactory::CreateInstance: m_currentHostSurrogate->LoadDllServer(C:\$WINDOWS.~BT\Sources\ReplacementManifests\Microsoft-Windows-RasServer-MigPlugin\RasMigPlugin.dll, {D26AA4A5-92AD-48DB-8D59-95EF0DCE6939}, 1) failed, hr=[0x8007007f].
+2026-10-05 18:34:15, Error      [0x080387] MIG        Failure while calling IDiscovery->Discover for Plugin={ServerPath="Microsoft-Windows-RasServer-MigPlugin\RasMigPlugin.dll", CLSID={D26AA4A5-92AD-48DB-8D59-95EF0DCE6939}, ThreadingModel=Apartment, ExceptionHandling=Default}. Error: 0x8007007F
+2026-10-05 18:34:18, Error                 CSI    00000004 (F) E_INVALIDARG #4# from LoadStore(target = NULL)
+[gle=0x80004005]
+2026-10-05 18:34:18, Error                 MIG            Error loading hive C:\Windows\system32\config\elam.: Win32Exception: 参数错误。 [0x00000057] __cdecl Mig::CIndirectKeyMapper::CIndirectKeyMapper(class UnBCL::String *,struct HKEY__ *,class UnBCL::String *,class UnBCL::String *,int,int,int,const Mig::HiveLoadRetryOptions *)[gle=0x000003f0]
+2026-10-05 18:34:18, Error      [0x0803b6] MIG            Can't retrieve group information for user NT SERVICE\ksnproxy. NetUserGetLocalGroups failed 0x000008AD
+2026-10-05 18:34:32, Error                 CSI    00000005 (F) E_INVALIDARG #5# from LoadStore(target = NULL)
+[gle=0x80004005]
+2026-10-05 18:34:32, Error                 MIG            Error loading hive C:\Windows\system32\config\elam.: Win32Exception: 参数错误。 [0x00000057] __cdecl Mig::CIndirectKeyMapper::CIndirectKeyMapper(class UnBCL::String *,struct HKEY__ *,class UnBCL::String *,class UnBCL::String *,int,int,int,const Mig::HiveLoadRetryOptions *)[gle=0x000000cb]
+2026-10-05 18:34:32, Error      [0x0803b6] MIG            Can't retrieve group information for user NT SERVICE\ksnproxy. NetUserGetLocalGroups failed 0x000008AD
+2026-10-05 18:34:32, Error      [0x08039d] MIG            Cannot add mapping for user profile C:\Users\Default. Error: 87: Win32Exception: 参数错误。 [0x00000057] __cdecl Mig::CIndirectKeyMapper::CIndirectKeyMapper(class UnBCL::String *,struct HKEY__ *,class UnBCL::String *,class UnBCL::String *,int,int,int,const Mig::HiveLoadRetryOptions *)[gle=0x000000cb]
+2026-10-05 18:34:32, Error      [0x080801] MIG            User profile loading error. Aborting due to external request.[gle=0x000000cb]
+2026-10-05 18:34:32, Error                                MigPlatformStartupOnline caught exception: Win32Exception: User profile loading error. Aborting due to external request.: 指定的用户没有一个有效的配置文件。 [0x000004E5] class Mig::CUserContext *__cdecl Mig::COnlineWinNTPlatform::AddUserContext(class Mig::CRegistryDataStore *,class UnBCL::String *,class UnBCL::String *,class UnBCL::String *,class UnBCL::String *,class UnBCL::String *,class UnBCL::Array<class UnBCL::String *> *,int,struct _FILETIME,int,int,int,class UnBCL::String *,class UnBCL::String *)
+2026-10-05 18:34:32, Error                 SP         pSPDoMainGather: Engine initialization failed with error: 0x00000004
+2026-10-05 18:34:32, Error                 SP         CGatherData: Migration phase failed. Status: 4
+2026-10-05 18:34:32, Error                 SP     Operation failed: Gather data, scope: EVERYTHING. Error: 0x8007001F[gle=0x000000b7]
+2026-10-05 18:35:19, Error                            RegLoadKeyW failed to mount C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\WINDOWS\system32\config\SYSTEM at $OFFLINE_RW$SYSTEM[gle=0x00000057]
+2026-10-05 18:35:19, Error                            SPMountOfflineHive: Can't mount offline hive: C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\WINDOWS\system32\config\SYSTEM. Error: 0x00000057[gle=0x00000057]
+2026-10-05 18:35:19, Error                 SP         CEnableTelemetryForImage::DoExecute: Cannot load the system hive for the offline OS C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\WINDOWS. Error: 0x80070057[gle=0x00000057]
+2026-10-05 18:35:20, Error                 SP         CAddCbsPackage::DoExecute: Failed to open new OS DISM session. Error: 0x80070057[gle=0x0000007a]
+2026-10-05 18:35:20, Error                 SP     Operation failed: Add [1] package C:\$WINDOWS.~BT\DUImageSandbox\SSU-26100.9441-x64.cab to C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount. Error: 0x80070057[gle=0x000000b7]
+2026-10-05 18:35:20, Error                 SP     Cannot revert execution of operation 57 (Mount WIM file C:\$WINDOWS.~BT\Sources\SafeOS\winre.wim, index 1 to C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount). Execution queue is now compromised.
+2026-10-05 18:35:20, Error                 SP     ExecuteOperations: Main operation execution failed. Error: 0x80070057
+2026-10-05 18:35:20, Error                 SP     ExecuteOperations: Failed execution phase Pre-Finalize. Error: 0x80070057
+2026-10-05 18:35:20, Error                 MOUPG  MoSetupPlatform: ExecuteCurrentOperations reported failure![gle=0x00000057]
+2026-10-05 18:35:20, Error                 MOUPG  MoSetupPlatform: Using action error code: [0x80070057][gle=0x00000057]
+2026-10-05 18:35:20, Error                 MOUPG  CDlpActionPreFinalize::ExecuteRoutine(861): Result = 0x80070057[gle=0x00000057]
+2026-10-05 18:35:21, Error                 MOUPG  CDlpActionImpl<class CDlpErrorImpl<class CDlpObjectInternalImpl<class CUnknownImpl<class IMoSetupDlpAction> > > >::Execute(503): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CDlpTask::ExecuteAction(3334): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CDlpTask::ExecuteActions(3487): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CDlpTask::Execute(1643): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CSetupManager::ExecuteTask(3426): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CSetupManager::ExecuteTask(3388): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CSetupManager::ExecuteInstallMode(1354): Result = 0x80070057
+2026-10-05 18:35:21, Error                 MOUPG  CSetupManager::ExecuteDownlevelMode(690): Result = 0x80070057

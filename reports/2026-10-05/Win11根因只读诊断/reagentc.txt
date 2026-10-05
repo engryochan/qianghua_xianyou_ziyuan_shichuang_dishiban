@@ -1,0 +1,13 @@
+﻿Windows 恢复环境(Windows RE)和系统初始化配置
+信息:
+
+    Windows RE 状态:           Enabled
+    Windows RE 位置:           \\?\GLOBALROOT\device\harddisk0\partition3\Recovery\WindowsRE
+    引导配置数据(BCD)标识符:   fa1e68a9-8bf9-11f1-9fc7-ac45e65e54e9
+    恢复映像位置:              
+    恢复映像索引:              0
+    自定义映像位置:            
+    自定义映像索引:            0
+
+REAGENTC.EXE: 操作成功。
+    

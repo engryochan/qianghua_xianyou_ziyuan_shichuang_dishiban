@@ -1,0 +1,160 @@
+2026-10-05 18:35:22, Info                  SP     SERIALIZEVERBOSE: After restoring name is: Register sync process: SetupHost.exe with args /RollbackUser /Media /ClientId Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2] /ReportId 5242c1fc-2962-46bc-bff6-6489aff2c8e9
+2026-10-05 18:35:22, Info                  SP     SERIALIZEVERBOSE: Deserializing mount data from C:\$WINDOWS.~BT\Sources\mountpaths.dat
+2026-10-05 18:35:22, Info                  SP     SERIALIZEVERBOSE: Deserializing mount path type: class CDeploymentBase::CMountedPathInfo
+2026-10-05 18:35:22, Info                  SP     SERIALIZEVERBOSE: After restoring mount path is: C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount
+2026-10-05 18:35:22, Info                  IBSLIB RollbackReinitialize in progress...
+2026-10-05 18:35:22, Info                  IBSLIB RollbackReinitialize finished.
+2026-10-05 18:35:22, Info                  SP     Entering read-only mode, backup file: C:\$Windows.~BT\Sources\NewSystem.dat
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: NewSystem object resurrected!
+2026-10-05 18:35:22, Info                  SP     SetupPlatform opted-in to sqm
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Upload telemetry data
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [0]=[1.1]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #0 to 1.1
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [1]=[2]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #1 to 2
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [4]=[0x80070057]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #4 to 0x80070057
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [5]=[0x50015]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #5 to 0x50015
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [3]=[1]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #3 to 1
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [6]=[19045]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #6 to 19045
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Setting Watson bucketing parameter -> [7]=[vb_release]
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #7 to vb_release
+2026-10-05 18:35:22, Info                  MOUPG  Module path is [C:\$WINDOWS.~BT\Sources\SetupHost.exe]
+2026-10-05 18:35:22, Info                  MOUPG  Module version is [10.0.26100.9443 (ge_release_svc_prod1.260903-0214)]
+2026-10-05 18:35:22, Info                  MOUPG  Module path is [C:\$WINDOWS.~BT\Sources\SetupHost.exe]
+2026-10-05 18:35:22, Info                  MOUPG  Failed install count for build [10.0.26100.9443 (ge_release_svc_prod1.260903-0214)] is [2]
+2026-10-05 18:35:22, Info                         pGetHostCSDBuildNumber: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CSDBuildNumber' does not exist. Assume 0
+2026-10-05 18:35:22, Info                         Host OS version: 10.0.19045.0  (0.0) Platform 0x2, SuiteMask 0x100, ProdType 0x1
+2026-10-05 18:35:22, Info                         Source OS: Host SKU Info: Edition = 'Professional', Edition Type = 'Client', Installation Type = 'Complete', Product Name = 'Windows 10 专业版', Arch = amd64, StationType = Client Workstation, Stage type = Staged Image
+2026-10-05 18:35:22, Info                  MOUPG  Module path is [C:\$WINDOWS.~BT\Sources\SetupHost.exe]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SetupBuildString]=[10.0.26100.9443.amd64fre.ge_release_svc_prod1.260903-0214] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupCompilationType]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                         Target OS version: 10.0.26100.9443
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupVersionMajor]=[0xA] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupVersionMinor]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupVersionBuildNumber]=[0x65F4] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupVersionCSDBuildNumber]=[0x24E3] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupBuildDate]=[0x3FB27] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SetupBranchName]=[ge_release_svc_prod1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupBranchHash]=[0xC5C5B248] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemPhysicalMemory]=[0x1FC6250] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemProcessorCount]=[0xC] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemCpuModel]=[0x9] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemProcessorArchitecture]=[0x9] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SystemManufacturer]=[MiniPC] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SystemProductName]=[T1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SystemCpuDescription]=[12th Gen Intel(R) Core(TM) i5-12400] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [NativeProcessorArchitecture]=[0x9] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360Scenario]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360Mode]=[0x2] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [WindowsLicenseState]=[0x2] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [IsWebSetupCreatedMedia]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [LegacySetupInterrupt]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupMediaDriveType]=[0x3] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [ReflectDrivers]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [PostRollbackContext]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupUpgradeAttempts]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupPriority]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [MediaLayoutTime]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUSetupOptIn]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUSetupTime]=[0x15] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DigitalPKeyCmdUsed]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [PKeyLocationFound]=[0x8] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [PKeyLocationsTried]=[0x82] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DefaultPKeyUsed]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [PKeyValidateTime]=[0x5] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatHardBlockedProviders]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemPartitionTotalSpace]=[0x12B] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemPartitionFreeSpace]=[0x10F] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SystemPartitionFreeSpaceWinRe]=[0x10F] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatBlockEncountered]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatSysReqScanTime]=[0x4] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [UpdateMediaNotSupported]=[0x80] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [EulaTime]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [NewSetupMigChoicesOffered]=[0xB] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [NewSetupMigChoice]=[0x8] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatMigScanTime]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUImageOptIn]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUImageTotalDrivers]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUImageSkippedDrivers]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUImageDownloadedDrivers]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DUImageTime]=[0x853] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatActionableScanTime]=[0x20] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatPollingTime]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [CompatInstallReqTime]=[0x20] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [OSPartitionInstallReqFreeSpace]=[0x18B66] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [OSPartitionInstallReqTotalSpace]=[0x3B8A8] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [OSPartitionInstallReqRequiredSpace]=[0x7FBA] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DiskSpaceInstallReqBlocked]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DiskSpaceInstallReqExtDriveUsed]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SummaryTime]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [InstallModeFinalizeSkipped]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsImageIndex]=[0x4] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsArchitecture]=[0x9] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsVersionMajor]=[0xA] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsVersionMinor]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsVersionBuildNumber]=[0x6658] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsServicePackBuildNumber]=[0x19B8] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsServicePackLevel]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsAllowPartitionChanges]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsAllowUninstall]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsCompact]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [TargetOsDisableNEO]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [ImageDeployTime]=[0x161] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [MigratePackageRemovedFODRetrievalCount]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DataMigrationTime]=[0x15] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DebuggerOptionsTime]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DriverMigrationTime]=[0x2F] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsMajorVersion]=[0xA] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsMinorVersion]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsBuildNumber]=[0x4A65] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsArchitecture]=[0x2] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsStageType]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsEditionType]=[0x2] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupFailureCount]=[0x2] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsLanguage]=[0x804] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsSkuId]=[0x288] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsSuiteMask]=[0x100] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsProductType]=[0x1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsCompact]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsWimBoot]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsMajorVersion]=[0xA] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsMinorVersion]=[0x0] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsBuildNumber]=[0x4A61] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsBuildQFE]=[0x1E2D] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [QUADWORD] -> [SetupStartTime]=[0x1dd54af0b7da7b1] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [WuId]=[df49474a-39eb-43ba-8822-b89db2077d76] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [PKeyDownlevelInstallChannel]=[Volume] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [ProductKeyEditionId]=[Professional] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [TargetOsEditionId]=[Professional] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [TargetOsLanguage]=[zh-CN] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [TargetOsInstallationType]=[Client] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsEditionId]=[Professional] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsInstallationType]=[Client] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsSkuName]=[Windows 10 专业版] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsBranchName]=[vb_release] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SourceOsEditionId]=[Professional] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SourceOsLanguage]=[zh-CN] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  SP     SetupPlatform opted-in to sqm
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Upload telemetry data
+2026-10-05 18:35:22, Info                  MOUPG  Finalize: Remapping install error [0x80070057] -> [0xC1900108] for telemetry.
+2026-10-05 18:35:22, Info                  MOUPG  Finalize: Reporting result value: [0xC1900108]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360MappedResult]=[0xC1900108] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360Result]=[0x80070057] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360Extended]=[0x50015] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [CUSTOM] -> [WindowsUpdateExit] -> [Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2]][1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [CUSTOM] -> [Downlevel] -> [Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2]][1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][df49474a-39eb-43ba-8822-b89db2077d76][][Failed][Windows 10 专业版][19045][1][2][0x80070057][0x50015][26100]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: TraceOneSettingsEvent -> [0x0][0][scenarioId=1;platformEdition=Professional;platformInstallationType=Client;sku=48;AppVer=10.0.26100.9443;appBuildLab=ge_release_svc_prod1][][Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2]][1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  Finalize: Retrieving downlevel ticks from registry...
+2026-10-05 18:35:22, Info                  MOUPG  Finalize: Converting [534] downlevel ticks to seconds...
+2026-10-05 18:35:22, Info                  MOUPG  Finalize: Reporting total downlevel time: [2670 seconds]
+2026-10-05 18:35:22, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360DownlevelTime]=[0xA6E] [1bb266bb-bf24-4a9d-90bb-98109866d808][5242c1fc-2962-46bc-bff6-6489aff2c8e9][][0x1]
+2026-10-05 18:35:22, Info                  MOUPG  MoSetupPlatform: Releasing NewSystem object...
+2026-10-05 18:35:22, Info                  SP     Exiting read-only mode
+2026-10-05 18:35:22, Info                         Set Watson bucketing parameter #3 to 1
+2026-10-05 18:35:22, Info                  SP     CDeploymentBase::CleanupMounts: Unmounting directory C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount
+[107652] Received unmount request for image with guid 34b606a5-b9c0-40a8-801e-77ee8f35acb9.
+[107652] Unmount for image at C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount complete.

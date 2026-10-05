@@ -1,5 +1,5 @@
 {
-  "Time": "2026-10-05T18:15:07.2347590+08:00",
+  "Time": "2026-10-05T19:00:12.9104788+08:00",
   "OS": {
     "CurrentBuild": "19045",
     "UBR": 7725,
@@ -13,34 +13,33 @@
   "WUReboot": false,
   "Processes": [
     {
-      "ProcessName": "SetupHost",
-      "Id": 103588,
-      "CPU": 141.78125,
-      "Responding": true
-    },
-    {
       "ProcessName": "setupprep",
       "Id": 107820,
-      "CPU": 0.703125,
+      "CPU": 847.34375,
       "Responding": true
     },
     {
       "ProcessName": "Windows10UpgraderApp",
       "Id": 67620,
-      "CPU": 670.3125,
+      "CPU": 670.5625,
       "Responding": true
     }
   ],
   "Logs": [
     {
       "FullName": "C:\\$WINDOWS.~BT\\Sources\\Panther\\setupact.log",
-      "Length": 3838564,
-      "LastWriteTime": "2026-10-05T18:14:03.6261868+08:00"
+      "Length": 7490759,
+      "LastWriteTime": "2026-10-05T18:44:27.993981+08:00"
     },
     {
       "FullName": "C:\\$WINDOWS.~BT\\Sources\\Panther\\setuperr.log",
-      "Length": 1842,
-      "LastWriteTime": "2026-10-05T18:13:04.6874936+08:00"
+      "Length": 15581,
+      "LastWriteTime": "2026-10-05T18:36:03.1427196+08:00"
     }
-  ]
+  ],
+  "Diagnosis": {
+    "DateTime": "10/05/2026 18:36:06",
+    "FailureDetails": "ErrorCode = 0x80070057, ExCode = 0x50015, LastOperation = Add [1] package C:\\$WINDOWS.~BT\\DUImageSandbox\\SSU-26100.9441-x64.cab to C:\\$WINDOWS.~BT\\Sources\\SafeOS\\SafeOS.Mount",
+    "UpgradeEndTime": "2026/10/5 18:36:03"
+  }
 }
