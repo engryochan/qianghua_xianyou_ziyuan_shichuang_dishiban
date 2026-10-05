@@ -438,3 +438,115 @@ C: 容量 238.16 GiB，可用 134.70 GiB，**已用 103.47 GiB**。全盘递归�
 | 旧机的 TPM / Secure Boot / BitLocker 状态 | 旧机采集时同样因权限不足未取得（见 `00_summary.md` 的「未完成或不可用的探测」） |
 
 **空数据不等于健康。** 以上每一项在做决策前都应先补齐。
+
+---
+
+## 十二、追加实测：能否在「不修改管理员设置、不动防毒软件」的前提下升级到 Windows 11
+
+> 2026-10-05 同日追加。全程只读，未改动任何设置。新增产出：`DxDiag_new_machine.txt`（与旧机 `DxDiag.txt` 同口径，便于对比）。
+
+### 12.1 结论
+
+**不能。** 三道阻断，任何一道单独成立就足以否定，而三道同时存在。
+
+**但要分清楚：硬件百分之百合格，拦住升级的全部是行政与管控层面——恰恰就是题目划定的不可触碰范围。**
+
+### 12.2 硬件资格：Windows 自己判的是 Green
+
+直接读取 Appraiser 的裁决（`HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\TargetVersionUpgradeExperienceIndicators`，资料版发布日 2026-10-01，评估时间戳为今日）：
+
+| 目标 | 构建号 | UpgEx | RedReason | GatedBlockId | FailedPrereqs |
+|---|---|---|---|---|---|
+| **GE25H2**（Windows 11 25H2） | 26200 / 26220 | **Green** | {None} | {None} | {None} |
+| **GE26H2**（Windows 11 26H2） | 26300 | **Green** | {None} | {None} | {None} |
+
+这不是我的推断，是系统内建的升级评估器自己算出来的结论。逐项核对：
+
+| Windows 11 要求 | 实测值 | 判定 |
+|---|---|---|
+| CPU 在官方支持列表 | i5-12400（Alder Lake，Family 6 Model 151） | ✅ |
+| 内存 ≥ 4 GB | 32 GB | ✅ |
+| 系统盘 ≥ 64 GB | 238.16 GiB，可用 134.70；Appraiser `Free: gt64`、`SystemDriveTooFull: 0` | ✅ |
+| UEFI 固件 | `firmware_type = UEFI`；DxDiag `BIOS: 5.27 (type: UEFI)` | ✅ |
+| GPT 磁盘 | `PartitionStyle = GPT` | ✅ |
+| **TPM 2.0** | 设备 `ACPI\MSFT0101\1`「受信任的平台模块 2.0」，Status = OK，`tpm.sys` 服务运行中 | ✅ |
+| 具备 Secure Boot 能力 | UEFI + GPT 已满足 | ✅ |
+| DirectX 12 / WDDM 2.0+ | DirectX 12，Feature Levels **12_1**，驱动模型 **WDDM 2.7** | ✅ |
+
+两点补充说明：
+
+- **Secure Boot 目前是关闭的**（`UEFISecureBootEnabled = 0`）。Windows 11 的要求是「具备 Secure Boot 能力」而非「已启用」，Appraiser 也据此判了 Green，所以**不构成升级阻断**。但若日后要启用 BitLocker 或 VBS/HVCI，必须进 BIOS 开启——那是固件设置，同样需要管理员与实体操作。
+- 核显 `Dedicated Memory: 128 MB`、`Shared Memory: 16,268 MB`，即最多可从 32 GB 系统内存中借走约 16 GB 作显存。这是核显相对独显的固有代价，与升级无关，但对内存吃紧的分析负载需留意。
+
+### 12.3 阻断一：组策略把本机钉死在 Win10 22H2 —— 它本身就是「管理员设置」
+
+`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`：
+
+```
+TargetReleaseVersion        = 1
+TargetReleaseVersionInfo    = 22H2
+TargetReleaseProductVersion = Windows 10
+```
+
+**实测一（真跑了一次在线 Windows Update 搜索，只搜不装）**：耗时 12.8 秒，返回 **0 项**；其中 Windows 11 功能更新 **0 个**。Windows Update 这条路是死的。
+
+**实测二（该策略键能否由普通用户改写）**：ACL 中仅 `NT AUTHORITY\SYSTEM` 与 `BUILTIN\Administrators` 具 FullControl。以当前身份实际写入测试，返回：
+
+```
+Requested registry access is not allowed.
+```
+
+解除这条策略 = 修改管理员设置。题目明令不改，而且我们也改不了。
+
+### 12.4 阻断二：当前账户不是管理员，就地升级根本起不来
+
+- 身份：`SHJ-H0647-RYOCH\PPCCpcpc`，`IsAdmin: False`
+- 所属群组仅 `BUILTIN\Users` 与 `NT AUTHORITY\Authenticated Users`
+- 绕过 Windows Update 的常规三条路——挂载 ISO 跑 `setup.exe`、Windows 11 安装助手、媒体创建工具——**全部要求提权**
+- 本会话无法提权（与 CLAUDE.md 既有记录一致）
+
+即便策略不存在，这一条仍然卡死。
+
+### 12.5 阻断三：防毒与 DLP 的内核过滤驱动栈（最该慎重的一条）
+
+实测注册在系统中的相关过滤驱动与服务：
+
+| 服务 | Start | Group | 归属 |
+|---|---|---|---|
+| `LdMFilter` | **0（Boot 启动）** | FSFilter Activity Monitor | 天锐绿盾 |
+| `KLIF.KES-14-1` | 1（System 启动） | FSFilter Anti-Virus | Kaspersky |
+| `klflt.KES-14-1` | 1（System 启动） | FSFilter Bottom | Kaspersky |
+| `klfltdev.KES-14-1` | 3 | Pnp Device Filter | Kaspersky |
+| `Ldcore` | 2 | — | 天锐绿盾 |
+| `ldwfp` | 3 | — | 天锐绿盾（WFP 网络过滤） |
+| `LdCdRomFilters` | 3 | — | 天锐绿盾 |
+| `ProcessCtr` | 2 | — | 亿赛通 CDG |
+| `CommonService` | 2 | — | 亿赛通 CDG |
+
+三点风险：
+
+1. **Windows 安装程序的相容性扫描会对开机启动的第三方过滤驱动亮灯。** `LdMFilter` 是 `Start = 0`，开机即载入；Kaspersky 的两个 FSFilter 是 `Start = 1`。典型处置就是要求先卸载或停用安防产品——**这直接违反「不动防毒软件」这个前提**。
+2. **亿赛通 CDG 是透明加密。** 磁盘上存的是密文，靠过滤驱动即时解密。大版本就地升级会重建整个过滤驱动栈，**一旦驱动没跟上，已加密的文档可能变成读不出来的乱码**。业界标准做法是升级前由 IT 从服务端解除加密绑定或执行离线解密。这同样是「动 DLP」。
+3. **本机同时装了两个版本的 Kaspersky Endpoint Security**（11.26.4.423 与 14.1.0.423，另有 KSC 网络代理 16.2.0.1023）。两个大版本共存本身就是异常状态，在就地升级场景下属高风险项，应先请 IT 厘清。
+
+### 12.6 若要真的升级，需要走的流程（全部需 IT）
+
+按风险从低到高：
+
+1. IT 确认 Kaspersky Endpoint Security、亿赛通 CDG 5.2.0、天锐绿盾三者的当前版本**均已通过 Windows 11 25H2 认证**
+2. IT 从 CDG 服务端对本机**解除加密绑定或执行离线解密**，并确认文档可明文读取
+3. IT 厘清两个 KES 版本共存的问题
+4. IT 调整或移除 `TargetReleaseVersion` 策略
+5. 由管理员执行升级；**升级前完整备份**（本机无独立恢复分区，WinRE 寄居 C:，容错余地小）
+6. 升级后用 CLAUDE.md 的比对式诊断复验三层安防：量测 Chrome 被注入的模块数。**本机当前基线为 199 个模块、其中 21 个 DLP 模块**，升级后若这个数字掉下来，就是管控软件没跟上
+
+### 12.7 顺带填补 §11 的空白
+
+本次追加实测已解决 §11 表中的两项「未能验证」：
+
+| 原未验证项 | 现状 |
+|---|---|
+| TPM / Secure Boot 状态 | **已查明**：TPM 2.0 存在且正常；Secure Boot 具备能力但当前关闭 |
+| DirectX / WDDM 等级 | **已查明**：DX12、Feature Level 12_1、WDDM 2.7 |
+
+仍未解决：System Volume Information 与 Recovery 的确切占用、SSD 磨损度、M.2 插槽有无、同口径性能对比。
