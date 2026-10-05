@@ -1,0 +1,20 @@
+{
+  "Time": "2026-10-05T15:48:31.0824869+08:00",
+  "Method": "Single thread sum sqrt(i), i=1..20000000; .NET JIT warmup 10000; five repeats; result retained; no disk writes except this report",
+  "Seconds": [
+    0.0790807,
+    0.0768567,
+    0.0792942,
+    0.0768271,
+    0.0773845
+  ],
+  "Checksums": [
+    59628481635.85357,
+    59628481635.85357,
+    59628481635.85357,
+    59628481635.85357,
+    59628481635.85357
+  ],
+  "Runtime": "10.0.11",
+  "OldComparable": false
+}

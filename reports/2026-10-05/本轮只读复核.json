@@ -1,0 +1,55 @@
+{
+  "Time": "2026-10-05T15:46:27.7926641+08:00",
+  "Computer": null,
+  "CPU": null,
+  "Memory": [],
+  "OS": null,
+  "Disk": [],
+  "Volumes": [],
+  "GPU": [],
+  "RootFiles": [
+    {
+      "Name": "$WINRE_BACKUP_PARTITION.MARKER",
+      "Length": 0
+    },
+    {
+      "Name": "DumpStack.log.tmp",
+      "Length": 8192
+    },
+    {
+      "Name": "hiberfil.sys",
+      "Length": 13646827520
+    },
+    {
+      "Name": "pagefile.sys",
+      "Length": 5368709120
+    },
+    {
+      "Name": "swapfile.sys",
+      "Length": 16777216
+    }
+  ],
+  "Features": [],
+  "Tools": [
+    {
+      "Name": "r",
+      "Source": ""
+    },
+    {
+      "Name": "python.exe",
+      "Source": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    },
+    {
+      "Name": "python3.exe",
+      "Source": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe"
+    },
+    {
+      "Name": "node.exe",
+      "Source": "C:\\Users\\PPCCpcpc\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+    },
+    {
+      "Name": "git.exe",
+      "Source": "C:\\Users\\PPCCpcpc\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd\\git.exe"
+    }
+  ]
+}

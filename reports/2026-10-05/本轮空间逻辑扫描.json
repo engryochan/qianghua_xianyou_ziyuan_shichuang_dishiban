@@ -1,0 +1,141 @@
+{
+  "Time": "2026-10-05T15:48:44.5368258+08:00",
+  "Method": "Logical file lengths; hard links may be counted multiple times; inaccessible paths omitted; not allocated disk bytes",
+  "Directories": [
+    {
+      "Path": "C:\\$Audit",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 0
+    },
+    {
+      "Path": "C:\\$Eis$Bak",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 1
+    },
+    {
+      "Path": "C:\\$Recycle.Bin",
+      "LogicalBytes": 969945745.0,
+      "Files": 5,
+      "Errors": 2
+    },
+    {
+      "Path": "C:\\$WinREAgent",
+      "LogicalBytes": 4643.0,
+      "Files": 3,
+      "Errors": 0
+    },
+    {
+      "Path": "C:\\软件安装包",
+      "LogicalBytes": 9257040791.0,
+      "Files": 36,
+      "Errors": 0
+    },
+    {
+      "Path": "C:\\Documents and Settings",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 1
+    },
+    {
+      "Path": "C:\\inetpub",
+      "LogicalBytes": 238112628.0,
+      "Files": 398,
+      "Errors": 10
+    },
+    {
+      "Path": "C:\\PerfLogs",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 1
+    },
+    {
+      "Path": "C:\\Program Files",
+      "LogicalBytes": 3186685257.0,
+      "Files": 13603,
+      "Errors": 2
+    },
+    {
+      "Path": "C:\\Program Files (x86)",
+      "LogicalBytes": 15230714107.0,
+      "Files": 37667,
+      "Errors": 1
+    },
+    {
+      "Path": "C:\\ProgramData",
+      "LogicalBytes": 2395702490.0,
+      "Files": 2954,
+      "Errors": 58
+    },
+    {
+      "Path": "C:\\Recovery",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 1
+    },
+    {
+      "Path": "C:\\Snipaste-截图软件-x64",
+      "LogicalBytes": 39673244.0,
+      "Files": 81,
+      "Errors": 0
+    },
+    {
+      "Path": "C:\\System Volume Information",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 1
+    },
+    {
+      "Path": "C:\\Telegram",
+      "LogicalBytes": 846536254.0,
+      "Files": 37,
+      "Errors": 0
+    },
+    {
+      "Path": "C:\\Users",
+      "LogicalBytes": 14015853855.0,
+      "Files": 84375,
+      "Errors": 0
+    },
+    {
+      "Path": "C:\\Windows",
+      "LogicalBytes": 33420710048.0,
+      "Files": 364022,
+      "Errors": 47
+    },
+    {
+      "Path": "C:\\Windows.old",
+      "LogicalBytes": null,
+      "Files": 0,
+      "Errors": 0
+    }
+  ],
+  "ErrorSamples": [
+    "Could not find a part of the path 'C:\\$Eis$Bak'.",
+    "Access to the path 'C:\\$Recycle.Bin\\S-1-5-18' is denied.",
+    "Access to the path 'C:\\$Recycle.Bin\\S-1-5-21-323984447-536449353-4267113659-1000' is denied.",
+    "Access to the path 'C:\\Documents and Settings' is denied.",
+    "Could not find a part of the path 'C:\\inetpub\\ftproot\\Tipray\\LdTerm\\config'.",
+    "Could not find a part of the path 'C:\\inetpub\\ftproot\\Tipray\\LdTerm\\ifilters'.",
+    "Could not find a part of the path 'C:\\inetpub\\ftproot\\Tipray\\LdTerm\\LocalConfig'.",
+    "Access to the path 'C:\\PerfLogs' is denied.",
+    "Access to the path 'C:\\Program Files\\Windows Defender Advanced Threat Protection\\Classification\\Configuration' is denied.",
+    "Access to the path 'C:\\Program Files\\WindowsApps' is denied.",
+    "Access to the path 'C:\\Program Files (x86)\\Kaspersky Lab\\NetworkAgent\\~dumps' is denied.",
+    "Access to the path 'C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\EdrTelemetryCache' is denied.",
+    "Access to the path 'C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\EdrTelemetryCloudXdrCache' is denied.",
+    "Access to the path 'C:\\ProgramData\\Kaspersky Lab\\KES.14.1\\Data\\KataProtocollerCache' is denied.",
+    "Access to the path 'C:\\Recovery' is denied.",
+    "Access to the path 'C:\\System Volume Information' is denied.",
+    "Access to the path 'C:\\Windows\\appcompat\\Backup' is denied.",
+    "Access to the path 'C:\\Windows\\appcompat\\Programs' is denied.",
+    "Access to the path 'C:\\Windows\\CSC' is denied."
+  ],
+  "Volume": [
+    {
+      "TotalSize": 255727046656,
+      "AvailableFreeSpace": 144337281024
+    }
+  ]
+}
