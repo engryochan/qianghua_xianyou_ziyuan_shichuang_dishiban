@@ -1,6 +1,6 @@
 # 新旧主机对比评估：海兰 MiniPC T1（新）vs 华硕原机（旧）
 
-> **2026-10-05 本轮复核说明（优先于下方历史评语）**：本报告保留早先章节作为历史记录，新增第十三节为本轮只读诊断与纠错的有效结论。当前已用约 **43.56%**，并未超过一半；目录逻辑大小不能等同独占磁盘占用，未核实差额不能认定为还原点；CPU“算力一比一”、双通道“已成立”、显卡“显著改善”、DLP“必然阻断升级”、可回收“39 GiB”等早先断言均须按第十三节收窄。此次仅新增或修改仓库报告及复核脚本，未修改系统、固件、安防、执行策略，也未安装软件。
+> **2026-10-05 本轮复核说明（优先于下方历史评语）**：本报告保留早先章节作为历史记录，第十二节已于 16:01 后重新实测并替换；第十三节为硬件与性能复核的有效结论。当前已用约 **43.56%**，并未超过一半；目录逻辑大小不能等同独占磁盘占用，未核实差额不能认定为还原点；CPU“算力一比一”、双通道“已成立”、显卡“显著改善”、DLP“必然阻断升级”、可回收“39 GiB”等早先断言均须按第十三节收窄。此次仅新增或修改仓库报告及复核脚本，未修改系统、固件、安防、执行策略，也未安装软件。
 **日期**：2026-10-05
 **采集方式**：全程只读（未改动任何系统设置）。以普通用户身份执行，无法提权。
 **新机数据来源**：本机实测（CIM/WMI、注册表、递归目录扫描、.NET 微基准）。
@@ -442,119 +442,52 @@ C: 容量 238.16 GiB，可用 134.70 GiB，**已用 103.47 GiB**。全盘递归�
 
 ---
 
-## 十二、追加实测：能否在「不修改管理员设置、不动防毒软件」的前提下升级到 Windows 11
+## 十二、重新实测：不修改管理员设置与防毒软件，能否升级 Windows 11
 
-> 2026-10-05 同日追加。全程只读，未改动任何设置。新增产出：`DxDiag_new_machine.txt`（与旧机 `DxDiag.txt` 同口径，便于对比）。
+**复测时间：2026-10-05 16:01–16:02（北京时间）。本节替换早先“三道阻断”的推断，以下才是本轮有效结论。**
 
-### 12.1 结论
+### 12.1 结论及适用范围
 
-**不能。** 三道阻断，任何一道单独成立就足以否定，而三道同时存在。
+**当前普通用户会话不能直接完成常规 Windows 11 就地升级，Windows Update 当前也没有提供升级项。** 但不能据此宣称“这台主机在保持所有设置和防毒软件不变的条件下，任何方式都绝不可能升级”。由现有管理员账户运行正式 Windows 11 安装程序，属于使用已有权限，不等于修改管理员设置；能否保留现有防毒/DLP 完成升级，还须正式兼容性扫描证明。
 
-**但要分清楚：硬件百分之百合格，拦住升级的全部是行政与管控层面——恰恰就是题目划定的不可触碰范围。**
+本轮未启动升级、修改策略、写入策略键测试权限、停用安防、改执行策略、修改 TPM/安全启动，未下载或安装更新，未重启。在线搜索会写 Windows 自身的搜索缓存与日志，但未改更新配置。
 
-### 12.2 硬件资格：Windows 自己判的是 Green
+### 12.2 实际执行与结果
 
-直接读取 Appraiser 的裁决（`HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\TargetVersionUpgradeExperienceIndicators`，资料版发布日 2026-10-01，评估时间戳为今日）：
-
-| 目标 | 构建号 | UpgEx | RedReason | GatedBlockId | FailedPrereqs |
-|---|---|---|---|---|---|
-| **GE25H2**（Windows 11 25H2） | 26200 / 26220 | **Green** | {None} | {None} | {None} |
-| **GE26H2**（Windows 11 26H2） | 26300 | **Green** | {None} | {None} | {None} |
-
-这不是我的推断，是系统内建的升级评估器自己算出来的结论。逐项核对：
-
-| Windows 11 要求 | 实测值 | 判定 |
+| 实测项目 | 当前读数 | 可据此下的结论 |
 |---|---|---|
-| CPU 在官方支持列表 | i5-12400（Alder Lake，Family 6 Model 151） | ✅ |
-| 内存 ≥ 4 GB | 32 GB | ✅ |
-| 系统盘 ≥ 64 GB | 238.16 GiB，可用 134.70；Appraiser `Free: gt64`、`SystemDriveTooFull: 0` | ✅ |
-| UEFI 固件 | `firmware_type = UEFI`；DxDiag `BIOS: 5.27 (type: UEFI)` | ✅ |
-| GPT 磁盘 | `PartitionStyle = GPT` | ✅ |
-| **TPM 2.0** | 设备 `ACPI\MSFT0101\1`「受信任的平台模块 2.0」，Status = OK，`tpm.sys` 服务运行中 | ✅ |
-| 具备 Secure Boot 能力 | UEFI + GPT 已满足 | ✅ |
-| DirectX 12 / WDDM 2.0+ | DirectX 12，Feature Levels **12_1**，驱动模型 **WDDM 2.7** | ✅ |
+| 当前账户 | SHJ-H0647-RYOCH\PPCCpcpc；Elevated=False；Groups 含 BUILTIN\Users，不含 Administrators | 当前账户令牌没有管理员权限；常规手动就地安装不能由该账户独立完成 |
+| 在线更新搜索 | WUA COM Search；Online=True；默认配置更新源；ResultCode=2（成功），4.73 秒，Count=0 | 此时没有提供未安装、未隐藏的软件更新，更没有 Windows 11；搜索没有调用下载/安装器。0 项不能单独证明是哪条策略导致 |
+| 目标版本策略 | TargetReleaseVersion=1；TargetReleaseVersionInfo=22H2 | 存在版本目标配置；是否以完整有效组合生效，需结合下列产品值辨别 |
+| 产品策略值 | **ProductVersion 缺失**；TargetReleaseProductVersion=Windows 10 | 本机 WindowsUpdate.admx 将产品字段映射为 **ProductVersion**，微软文档亦对应 ProductVersion；不能把另一个名称直接当成标准产品锁定字段 |
+| 策略键 ACL | Users 类权限为读取，SYSTEM/Administrators 有完全控制 | 当前账户不能常规修改该策略；未执行写权限测试，无需改动键值证明这一点 |
+| Appraiser 缓存 | GE25H2 / GE26H2：UpgEx、UpgExU=Green；RedReason、GatedBlockId、FailedPrereqs=None | 缓存没有标出该目标的阻断；不是本轮正式 Setup ScanOnly 通过记录，亦不能据内部键名确认已发布版本 |
+| TPM 设备 | “受信任的平台模块 2.0”，Status=OK | TPM 2.0 设备存在；TPM WMI 状态查询拒绝访问，Get-Tpm 未取得有效状态，**就绪/启用/激活未充分核验** |
+| Secure Boot | 注册表 UEFISecureBootEnabled=0；Confirm-SecureBootUEFI 报权限不足 | 当前关闭；UEFI+GPT 与升级评估 Green 是有利线索，但不单独证明全部固件资格 |
+| 分区与基础硬件 | GPT；i5-12400，32 GiB；约 134 GiB 空闲；DxDiag UEFI、DX12、WDDM 2.7 | 基础硬件有充分升级条件，未发现 CPU/容量/显示规格方面的明显不足；安全固件与正式目标兼容性还需确认 |
+| 安防当前状态 | AVP.KES.14.1、klnagent、CommonService 运行；KLIF、klflt、LdMFilter 等驱动运行 | 安防/管控存在，没有证据证明必然拒绝升级，也没有证据证明升级后一定兼容 |
+| 本机安装介质 | 软件安装包目录仅找到 Office 的 ProPlusRetail.img；Downloads 未找到所检索的 Win11 ISO/助手 | 这些路径未找到可执行正式 Windows 11 扫描的安装介质；未下载新介质，**未运行 Setup /Compat ScanOnly** |
 
-两点补充说明：
+Defender 的 WinDefend 服务当前为 Stopped/Manual，是本轮读取的既有状态，并非本轮停用；不能仅按安全产品登记条目推断所有引擎同时常驻。本轮服务/驱动仅确认 KES 14.1 正在运行，旧报告“两个 KES 引擎同时运行”的结论不成立。
 
-- **Secure Boot 目前是关闭的**（`UEFISecureBootEnabled = 0`）。Windows 11 的要求是「具备 Secure Boot 能力」而非「已启用」，Appraiser 也据此判了 Green，所以**不构成升级阻断**。但若日后要启用 BitLocker 或 VBS/HVCI，必须进 BIOS 开启——那是固件设置，同样需要管理员与实体操作。
-- 核显 `Dedicated Memory: 128 MB`、`Shared Memory: 16,268 MB`，即最多可从 32 GB 系统内存中借走约 16 GB 作显存。这是核显相对独显的固有代价，与升级无关，但对内存吃紧的分析负载需留意。
+### 12.3 若要验证“保留现有设置与防毒软件仍可升级”，缺少什么
 
-### 12.3 阻断一：组策略把本机钉死在 Win10 22H2 —— 它本身就是「管理员设置」
+仍需现有管理员使用来源可靠、与目标版本及语言/版本匹配的 Windows 11 安装介质，执行**仅兼容性扫描**并保留返回码及 CompatData/Panther 日志。微软文档提供 `/Compat ScanOnly`，无兼容问题返回 `0xC1900210`；系统要求、应用、空间问题分别有对应错误码。该扫描可能写临时文件和日志，但不等于执行升级或修改现有安防设置。
 
-`HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`：
+本轮没有对应介质或管理员令牌，因此不把上述正式扫描写成“已经实测通过”。即使扫描通过，也只代表安装前检查未发现阻断，不能保证升级过程零故障或安防升级后的所有功能正常。若扫描确实要求移除某防毒/DLP 产品，那么该特定升级方案不满足用户的条件，应停在扫描结果处，由 IT 判断；不能先行停用、卸载或解除文档加密。
 
-```
-TargetReleaseVersion        = 1
-TargetReleaseVersionInfo    = 22H2
-TargetReleaseProductVersion = Windows 10
-```
+**回答用户原条件的准确口径：目前没有可供当前普通账户直接执行的已验证升级路径；硬件存在升级可行性，保留设置与防毒软件由管理员升级的可行性尚未完成正式验证。**
 
-**实测一（真跑了一次在线 Windows Update 搜索，只搜不装）**：耗时 12.8 秒，返回 **0 项**；其中 Windows 11 功能更新 **0 个**。Windows Update 这条路是死的。
+### 12.4 原始证据与官方依据
 
-**实测二（该策略键能否由普通用户改写）**：ACL 中仅 `NT AUTHORITY\SYSTEM` 与 `BUILTIN\Administrators` 具 FullControl。以当前身份实际写入测试，返回：
-
-```
-Requested registry access is not allowed.
-```
-
-解除这条策略 = 修改管理员设置。题目明令不改，而且我们也改不了。
-
-### 12.4 阻断二：当前账户不是管理员，就地升级根本起不来
-
-- 身份：`SHJ-H0647-RYOCH\PPCCpcpc`，`IsAdmin: False`
-- 所属群组仅 `BUILTIN\Users` 与 `NT AUTHORITY\Authenticated Users`
-- 绕过 Windows Update 的常规三条路——挂载 ISO 跑 `setup.exe`、Windows 11 安装助手、媒体创建工具——**全部要求提权**
-- 本会话无法提权（与 CLAUDE.md 既有记录一致）
-
-即便策略不存在，这一条仍然卡死。
-
-### 12.5 阻断三：防毒与 DLP 的内核过滤驱动栈（最该慎重的一条）
-
-实测注册在系统中的相关过滤驱动与服务：
-
-| 服务 | Start | Group | 归属 |
-|---|---|---|---|
-| `LdMFilter` | **0（Boot 启动）** | FSFilter Activity Monitor | 天锐绿盾 |
-| `KLIF.KES-14-1` | 1（System 启动） | FSFilter Anti-Virus | Kaspersky |
-| `klflt.KES-14-1` | 1（System 启动） | FSFilter Bottom | Kaspersky |
-| `klfltdev.KES-14-1` | 3 | Pnp Device Filter | Kaspersky |
-| `Ldcore` | 2 | — | 天锐绿盾 |
-| `ldwfp` | 3 | — | 天锐绿盾（WFP 网络过滤） |
-| `LdCdRomFilters` | 3 | — | 天锐绿盾 |
-| `ProcessCtr` | 2 | — | 亿赛通 CDG |
-| `CommonService` | 2 | — | 亿赛通 CDG |
-
-三点风险：
-
-1. **Windows 安装程序的相容性扫描会对开机启动的第三方过滤驱动亮灯。** `LdMFilter` 是 `Start = 0`，开机即载入；Kaspersky 的两个 FSFilter 是 `Start = 1`。典型处置就是要求先卸载或停用安防产品——**这直接违反「不动防毒软件」这个前提**。
-2. **亿赛通 CDG 是透明加密。** 磁盘上存的是密文，靠过滤驱动即时解密。大版本就地升级会重建整个过滤驱动栈，**一旦驱动没跟上，已加密的文档可能变成读不出来的乱码**。业界标准做法是升级前由 IT 从服务端解除加密绑定或执行离线解密。这同样是「动 DLP」。
-3. **本机同时装了两个版本的 Kaspersky Endpoint Security**（11.26.4.423 与 14.1.0.423，另有 KSC 网络代理 16.2.0.1023）。两个大版本共存本身就是异常状态，在就地升级场景下属高风险项，应先请 IT 厘清。
-
-### 12.6 若要真的升级，需要走的流程（全部需 IT）
-
-按风险从低到高：
-
-1. IT 确认 Kaspersky Endpoint Security、亿赛通 CDG 5.2.0、天锐绿盾三者的当前版本**均已通过 Windows 11 25H2 认证**
-2. IT 从 CDG 服务端对本机**解除加密绑定或执行离线解密**，并确认文档可明文读取
-3. IT 厘清两个 KES 版本共存的问题
-4. IT 调整或移除 `TargetReleaseVersion` 策略
-5. 由管理员执行升级；**升级前完整备份**（本机无独立恢复分区，WinRE 寄居 C:，容错余地小）
-6. 升级后用 CLAUDE.md 的比对式诊断复验三层安防：量测 Chrome 被注入的模块数。**本机当前基线为 199 个模块、其中 21 个 DLP 模块**，升级后若这个数字掉下来，就是管控软件没跟上
-
-### 12.7 顺带填补 §11 的空白
-
-本次追加实测已解决 §11 表中的两项「未能验证」：
-
-| 原未验证项 | 现状 |
-|---|---|
-| TPM / Secure Boot 状态 | **已查明**：TPM 2.0 存在且正常；Secure Boot 具备能力但当前关闭 |
-| DirectX / WDDM 等级 | **已查明**：DX12、Feature Level 12_1、WDDM 2.7 |
-
-仍未解决：System Volume Information 与 Recovery 的确切占用、SSD 磨损度、M.2 插槽有无、同口径性能对比。
-
+- `Win11只读资格复测.json` 与 `ReadOnly-Win11Eligibility.ps1`：身份、ACL、策略、Appraiser、TPM、固件和安防状态，含读取失败原因。
+- `Win11更新提供实测.json` 与 `ReadOnly-Win11UpdateSearch.ps1`：只搜索、不下载、不安装的本轮在线结果。
+- 本机 `C:\Windows\PolicyDefinitions\WindowsUpdate.admx` 第 692 行：产品值映射为 ProductVersion。
+- [微软 Windows 11 系统要求](https://www.microsoft.com/en-us/windows/windows-11-specifications)：固件要求为 UEFI、Secure Boot capable，TPM 2.0。
+- [微软 Update Policy CSP](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update)：ProductVersion 与 TargetReleaseVersion 的配置定义。
+- [微软 Windows Setup 命令行选项](https://learn.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11)：ScanOnly 和返回码说明。
 
 ---
-
 ## 十三、2026-10-05 本轮只读实测、旧机全仓检索与评估增补
 
 ### 13.1 范围、证据与可重复性
@@ -652,3 +585,26 @@ Requested registry access is not allowed.
 - [微软 Windows 10 支持结束说明](https://support.microsoft.com/en-us/servicing/os/windows-10/2025/10/october-14-2025-kb5066586-os-build-17763-7919)
 - [仓颉官网下载中心](https://cangjie-lang.cn/download)
 - [仓颉官方工具链安装指南](https://docs.cangjie-lang.cn/docs/1.0.0/user_manual/source_zh_cn/first_understanding/install_Community.html)
+
+
+## 十四、16:12 当前更新状态与后续建议
+
+用户说明点击更新后长时间未升至 Windows 11。本轮只读查询保存于 `更新当前状态复核.json`：系统仍为 Windows 10 22H2 / 19045.7725；SystemSetupInProgress=0，CBS/WU 的重启必需标记均为 False；只看到 MoUsoCoreWorker，没有看到 setuphost/setupprep/Windows11InstallationAssistant 等所筛选的升级进程。旧 Panther 错误日志日期为 7 月 30 日，不能当成本次失败日志。
+
+更新历史显示最近 Windows 10 累积更新 KB5122878、显示驱动等成功（ResultCode=2、HResult=0），所取最近 12 条未出现 Windows 11 功能升级。历史可能随系统映像迁移，不能仅按历史中的 NVIDIA 更新条目推断当前有 NVIDIA 显卡。此次证据更符合“进行了现有系统的更新，而没有进入 Windows 11 安装”；无法单靠后台更新协调进程证明任务卡死或进度，不能据此强制终止进程或重启。
+
+建议先由 IT 明确 Windows 11 升级是否属于允许的维护任务，核对 ESU、目标版本和现有安防/DLP 兼容性。先完成可恢复备份及正式 ScanOnly，再由现有管理员在维护时间升级；升级后验收激活、更新、网络、办公/加密文档及安防，之后启用 WSL2，再分批部署稳定工具链。无需把“所有组件最新”作为唯一标准，应选择仍受维护、相互兼容、可验证和可复现的稳定版本。
+
+Windows 10 22H2 本身支持 WSL2（当前功能尚未启用），仓颉有 Windows x64 工具链，二者都不以先升 Windows 11 为绝对前提；但这些兼容事实不解决 Windows 10 常规支持结束的问题。当前不能保证升级成功，也未开始升级。
+
+## 十五、官方 Windows 11 安装助手已准备并正常启动
+
+2026-10-05 16:23，按用户明确升级授权，从微软官网 Download Now 链接 https://go.microsoft.com/fwlink/?linkid=2171764 下载 Windows11InstallationAssistant.exe（4,169,184 字节）；Authenticode 状态 Valid，签名 Microsoft Corporation，SHA256 为 837F97852C2E8F4242CDE4DBF863ED0DB117082D2EEBFB7C3F1F37F9B6E89758。仅用正常 Start-Process 启动，返回 ProcessId 69036，未传静默安装或绕过参数。
+
+证据：Win11官方助手验证.json、Win11助手启动结果.json。正常启动成功不等于权限验证、兼容性检查、升级安装或重启已经完成；尚未验证界面状态，仍须按助手提示由现有管理员完成必要认证。没有修改 IP、管理员策略、安防或网络配置。微软官网明确安装助手需管理员运行：https://www.microsoft.com/en-us/software-download/windows11 。
+
+## 十六、16:26 管理员启动请求结果
+
+Windows 标准 RunAs 调用已返回 Started=True，ProcessId=70136（见 Win11正常管理员启动结果.json）；随后查询到 Windows10UpgraderApp 进程 67620 仍在运行，可能由助手已有实例承接，不能仅从启动返回值断言目标进程令牌已完成提权或升级已开始。
+
+本次系统实际状态仍为 19045.7725 / 22H2，SystemSetupInProgress=0，SetupType=0，未查询到 setuphost/setupprep。当前工具无法读取或点击原生助手窗口，等待当前界面提示文字以识别许可确认、兼容性要求或下载进度。没有重复发起安装，也没有使用未验证的静默参数；未修改 IP、网络或资安设置。

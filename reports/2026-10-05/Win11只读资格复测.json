@@ -1,0 +1,275 @@
+﻿{
+    "Time":  "2026-10-05T16:01:03.2478618+08:00",
+    "Account":  "SHJ-H0647-RYOCH\\PPCCpcpc",
+    "Elevated":  false,
+    "Groups":  [
+                   "SHJ-H0647-RYOCH\\None",
+                   "Everyone",
+                   "BUILTIN\\Users",
+                   "NT AUTHORITY\\INTERACTIVE",
+                   "CONSOLE LOGON",
+                   "NT AUTHORITY\\Authenticated Users",
+                   "NT AUTHORITY\\This Organization",
+                   "NT AUTHORITY\\本地账户",
+                   "LOCAL",
+                   "NT AUTHORITY\\NTLM Authentication"
+               ],
+    "Policy":  {
+                   "TargetReleaseVersion":  1,
+                   "TargetReleaseVersionInfo":  "22H2",
+                   "ProductVersion":  null,
+                   "TargetReleaseProductVersion":  "Windows 10",
+                   "UseWUServer":  null,
+                   "DisableOSUpgrade":  null,
+                   "DisableWindowsUpdateAccess":  null
+               },
+    "PolicyACL":  [
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "NT AUTHORITY\\Authenticated Users"
+                                                },
+                          "RegistryRights":  131097,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "NT AUTHORITY\\Authenticated Users"
+                                                },
+                          "RegistryRights":  -2147483648,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "NT AUTHORITY\\SYSTEM"
+                                                },
+                          "RegistryRights":  983103,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "NT AUTHORITY\\SYSTEM"
+                                                },
+                          "RegistryRights":  268435456,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "BUILTIN\\Administrators"
+                                                },
+                          "RegistryRights":  983103,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "BUILTIN\\Administrators"
+                                                },
+                          "RegistryRights":  268435456,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES"
+                                                },
+                          "RegistryRights":  131097,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "Value":  "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES"
+                                                },
+                          "RegistryRights":  -2147483648,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "BinaryLength":  48,
+                                                    "AccountDomainSid":  null,
+                                                    "Value":  "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681"
+                                                },
+                          "RegistryRights":  131097,
+                          "AccessControlType":  0
+                      },
+                      {
+                          "IdentityReference":  {
+                                                    "BinaryLength":  48,
+                                                    "AccountDomainSid":  null,
+                                                    "Value":  "S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681"
+                                                },
+                          "RegistryRights":  -2147483648,
+                          "AccessControlType":  0
+                      }
+                  ],
+    "Appraiser":  [
+                      {
+                          "PSChildName":  "21H2",
+                          "UpgEx":  "Green",
+                          "UpgExU":  "Green",
+                          "RedReason":  [
+                                            "None"
+                                        ],
+                          "GatedBlockId":  [
+                                               "None"
+                                           ],
+                          "FailedPrereqs":  [
+                                                "None"
+                                            ],
+                          "Timestamp":  134356426582588223,
+                          "DataExpDate":  "01/01/3000"
+                      },
+                      {
+                          "PSChildName":  "CO21H2",
+                          "UpgEx":  "Green",
+                          "UpgExU":  "Green",
+                          "RedReason":  [
+                                            "None"
+                                        ],
+                          "GatedBlockId":  [
+                                               "None"
+                                           ],
+                          "FailedPrereqs":  [
+                                                "None"
+                                            ],
+                          "Timestamp":  134356426552277829,
+                          "DataExpDate":  "01/01/3000"
+                      },
+                      {
+                          "PSChildName":  "GE25H2",
+                          "UpgEx":  "Green",
+                          "UpgExU":  "Green",
+                          "RedReason":  [
+                                            "None"
+                                        ],
+                          "GatedBlockId":  [
+                                               "None"
+                                           ],
+                          "FailedPrereqs":  [
+                                                "None"
+                                            ],
+                          "Timestamp":  134356426592726150,
+                          "DataExpDate":  "11/15/2026"
+                      },
+                      {
+                          "PSChildName":  "GE26H2",
+                          "UpgEx":  "Green",
+                          "UpgExU":  "Green",
+                          "RedReason":  [
+                                            "None"
+                                        ],
+                          "GatedBlockId":  [
+                                               "None"
+                                           ],
+                          "FailedPrereqs":  [
+                                                "None"
+                                            ],
+                          "Timestamp":  134356426592726150,
+                          "DataExpDate":  "11/15/2026"
+                      },
+                      {
+                          "PSChildName":  "UNV",
+                          "UpgEx":  null,
+                          "UpgExU":  null,
+                          "RedReason":  null,
+                          "GatedBlockId":  null,
+                          "FailedPrereqs":  [
+                                                "None"
+                                            ],
+                          "Timestamp":  134356426511882726,
+                          "DataExpDate":  "01/01/1601"
+                      }
+                  ],
+    "SecureBootRegistry":  {
+                               "UEFISecureBootEnabled":  0
+                           },
+    "SecureBootCmdlet":  null,
+    "TPM":  {
+                "TpmPresent":  null,
+                "TpmReady":  null,
+                "TpmEnabled":  null,
+                "TpmActivated":  null,
+                "ManufacturerIdTxt":  null,
+                "ManufacturerVersion":  null
+            },
+    "TPMWMI":  null,
+    "Disks":  {
+                  "Number":  0,
+                  "PartitionStyle":  "GPT",
+                  "Size":  256060514304
+              },
+    "TPMDevice":  {
+                      "FriendlyName":  "受信任的平台模块 2.0",
+                      "Status":  "OK"
+                  },
+    "SecurityServices":  [
+                             {
+                                 "Name":  "AVP.KES.14.1",
+                                 "State":  "Running",
+                                 "StartMode":  "Auto"
+                             },
+                             {
+                                 "Name":  "avpsus.KES.14.1",
+                                 "State":  "Running",
+                                 "StartMode":  "Auto"
+                             },
+                             {
+                                 "Name":  "CommonService",
+                                 "State":  "Running",
+                                 "StartMode":  "Auto"
+                             },
+                             {
+                                 "Name":  "klnagent",
+                                 "State":  "Running",
+                                 "StartMode":  "Auto"
+                             },
+                             {
+                                 "Name":  "WinDefend",
+                                 "State":  "Stopped",
+                                 "StartMode":  "Manual"
+                             }
+                         ],
+    "SecurityDrivers":  [
+                            {
+                                "Name":  "klflt.KES-14-1",
+                                "State":  "Running",
+                                "StartMode":  "System"
+                            },
+                            {
+                                "Name":  "klfltdev.KES-14-1",
+                                "State":  "Stopped",
+                                "StartMode":  "Manual"
+                            },
+                            {
+                                "Name":  "KLIF.KES-14-1",
+                                "State":  "Running",
+                                "StartMode":  "System"
+                            },
+                            {
+                                "Name":  "Ldcore",
+                                "State":  "Running",
+                                "StartMode":  "Auto"
+                            },
+                            {
+                                "Name":  "LdMFilter",
+                                "State":  "Running",
+                                "StartMode":  "Boot"
+                            },
+                            {
+                                "Name":  "ldwfp",
+                                "State":  "Running",
+                                "StartMode":  "Manual"
+                            }
+                        ],
+    "ExistingSetup":  {
+                          "FullName":  "C:\\软件安装包\\ProPlusRetail.img",
+                          "Length":  4584673280
+                      },
+    "Errors":  [
+                   {
+                       "Probe":  "SecureBoot",
+                       "Error":  "Unable to set proper privileges. Access was denied."
+                   },
+                   {
+                       "Probe":  "TPMWMI",
+                       "Error":  "拒绝访问 "
+                   }
+               ]
+}

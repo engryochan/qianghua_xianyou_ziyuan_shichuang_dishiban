@@ -1,0 +1,232 @@
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider />
+		<EventID>0</EventID>
+		<Version>2</Version>
+		<Level>0</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x0</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.108437200+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="66652" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<BinaryEventData>000001000A000105654A0000010000007651942AA354DD015A620200204E00000260001002000000010000000400000000000000C0090000090000000600000020FEFFFF400074007A007200650073002E0064006C006C002C002D00350037003200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400074007A007200650073002E0064006C006C002C002D003500370031000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C4FFFFFF00000000402B58478F54DD018096980000000000D4015929A354DD0101000000000000004D006900630072006F0073006F00660074002E00570069006E0064006F00770073002E0055007000640061007400650041007300730069007300740061006E00740042006F007800000043003A005C00550073006500720073005C00500050004300430070006300700063005C0041007000700044006100740061005C004C006F00630061006C005C00540065006D0070005C0042006F00780053007400750062004C006F00670073005C0055007000640061007400650041007300730069007300740061006E00740042006F0078004100700070002E003000300031002E00650074006C000000</BinaryEventData>
+	<ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+		<EventGuid>{68fdd900-4a3e-11d1-84f4-0000f80464e3}</EventGuid>
+	</ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider />
+		<EventID>0</EventID>
+		<Version>2</Version>
+		<Level>0</Level>
+		<Task>0</Task>
+		<Opcode>80</Opcode>
+		<Keywords>0x0</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.108437200+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="66652" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<BinaryEventData>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</BinaryEventData>
+	<ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+		<EventGuid>{68fdd900-4a3e-11d1-84f4-0000f80464e3}</EventGuid>
+	</ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.109841200+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="66652" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">Box Magic...</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.116034500+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="77752" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">ExecutionThread starting...</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.116768300+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="77752" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">User selected to go through the Sun Valley experience</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.116770800+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="77752" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">User selected to skip CheckUpgrade</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:04.129586900+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="77752" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">There is an instance of setup already running.</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:06.173662000+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="66652" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">Done</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>4</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x1</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:06.173665900+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="66652" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="Message">Exiting with result code: 0x0</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>Information</Task>
+	</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Microsoft.Windows.UpdateAssistantBox" Guid="{79597087-ef9a-4691-87d4-fbf7057a77b8}" />
+		<EventID>0</EventID>
+		<Version>0</Version>
+		<Level>1</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x800000000001</Keywords>
+		<TimeCreated SystemTime="2026-10-05T16:26:06.174014600+07:59" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="70136" ThreadID="66652" ProcessorID="0" KernelTime="0" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="PartA_PrivTags">2147483648</Data>
+		<Data Name="UpdateAssistantVersion">2025.10</Data>
+		<Data Name="GlobalEventCounter">2</Data>
+		<Data Name="CV">BnSnGopHIUKu7YYW.0</Data>
+		<Data Name="UpdateAssistantBoxStubCompleted">1</Data>
+		<Data Name="UpdateAssistantBoxStubInstallationProgram"></Data>
+		<Data Name="UpdateAssistantBoxStubHResult">0</Data>
+		<Data Name="UpdateAssistantBoxStubUiType">SVUi</Data>
+	</EventData>
+	<RenderingInfo Culture="zh-CN">
+		<Task>UpdateAssistantBoxStubDetails</Task>
+	</RenderingInfo>
+</Event>
+</Events>

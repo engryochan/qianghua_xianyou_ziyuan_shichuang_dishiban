@@ -1,0 +1,27 @@
+{
+  "Time": "2026-10-05T16:16:37.7386681+08:00",
+  "Account": "SHJ-H0647-RYOCH\\PPCCpcpc",
+  "AdministratorToken": false,
+  "Groups": [
+    "SHJ-H0647-RYOCH\\None",
+    "Everyone",
+    "BUILTIN\\Users",
+    "NT AUTHORITY\\INTERACTIVE",
+    "CONSOLE LOGON",
+    "NT AUTHORITY\\Authenticated Users",
+    "NT AUTHORITY\\This Organization",
+    "NT AUTHORITY\\本地账户",
+    "LOCAL",
+    "NT AUTHORITY\\NTLM Authentication"
+  ],
+  "OS": {
+    "CurrentBuild": "19045",
+    "UBR": 7725,
+    "DisplayVersion": "22H2"
+  },
+  "Setup": {
+    "SystemSetupInProgress": 0,
+    "SetupType": 0
+  },
+  "UpgradeProcesses": []
+}

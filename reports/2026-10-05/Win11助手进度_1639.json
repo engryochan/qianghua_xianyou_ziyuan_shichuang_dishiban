@@ -1,0 +1,27 @@
+{
+  "Time": "2026-10-05T16:38:25.1462793+08:00",
+  "ESD": [
+    {
+      "FullName": "C:\\Users\\PPCCpcpc\\AppData\\Local\\Temp\\26200.6584.250915-1905.25h2_ge_release_svc_refresh_CLIENTCONSUMER_RET_x64FRE_zh-cn.esd",
+      "Length": 2210754560,
+      "LastWriteTime": "2026-10-05T16:31:18.8197334+08:00"
+    }
+  ],
+  "Processes": [
+    {
+      "ProcessName": "Windows10UpgraderApp",
+      "Id": 67620,
+      "CPU": 32.359375,
+      "Responding": true
+    }
+  ],
+  "OS": {
+    "CurrentBuild": "19045",
+    "UBR": 7725,
+    "DisplayVersion": "22H2"
+  },
+  "Setup": {
+    "SystemSetupInProgress": 0,
+    "SetupType": 0
+  }
+}

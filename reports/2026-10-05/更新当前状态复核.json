@@ -1,0 +1,117 @@
+{
+  "Time": "2026-10-05T16:12:09.7072824+08:00",
+  "UpdateProcesses": [
+    {
+      "ProcessName": "MoUsoCoreWorker",
+      "Id": 74708,
+      "CPU": null,
+      "StartTime": null
+    }
+  ],
+  "CBSReboot": false,
+  "WUReboot": false,
+  "SetupState": {
+    "SystemSetupInProgress": 0,
+    "OOBEInProgress": 0,
+    "SetupType": 0,
+    "SetupPhase": 0
+  },
+  "Version": {
+    "CurrentBuild": "19045",
+    "UBR": 7725,
+    "DisplayVersion": "22H2"
+  },
+  "PantherLogs": [
+    {
+      "FullName": "C:\\Windows\\Panther\\setuperr.log",
+      "Length": 309,
+      "LastWriteTime": "2026-07-30T17:37:26.3889764+08:00"
+    }
+  ],
+  "RecentUpdateHistory": [
+    {
+      "Date": "2026-10-05T03:23:07",
+      "Title": "9NRX63209R7B-Microsoft.OutlookforWindows",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-05T03:22:13",
+      "Title": "2026-适用于 Windows 10 Version 22H2 的 09 累积更新，适合基于 x64 的系统 (KB5122878)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-05T02:51:00",
+      "Title": "Intel Corporation Display Driver Update (32.0.101.7088)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-05T02:49:36",
+      "Title": "Intel net Driver Update (24.40.0.4)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-05T02:49:32",
+      "Title": "Intel Corporation Driver Update (24.20.0.3)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-05T02:48:58",
+      "Title": "NVIDIA - Display - 27.21.14.5671",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-04T14:45:26",
+      "Title": "Windows 恶意软件删除工具 x64 - v5.145 (KB890830)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-04T14:44:23",
+      "Title": "2024-08 适用于 Windows 10 Version 22H2 更新，适用于基于 x64 的系统 (KB5042320)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-04T14:43:47",
+      "Title": "Intel - net - 23.150.0.4",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-04T14:43:30",
+      "Title": "Intel Corporation - Bluetooth - 23.90.0.8",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-10-04T14:43:21",
+      "Title": "2026-09 适用于 Windows 10 Version 22H2 的扩展安全更新 (ESU) 许可准备程序包，适合基于 x64 的系统 (KB5126256)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    },
+    {
+      "Date": "2026-07-30T10:11:55",
+      "Title": "2025-适用于 Windows 10 Version 22H2 的 11 累积更新，适合基于 x64 的系统 (KB5071959)",
+      "Operation": 1,
+      "ResultCode": 2,
+      "HResult": 0
+    }
+  ]
+}
