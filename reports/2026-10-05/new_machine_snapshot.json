@@ -1,0 +1,137 @@
+﻿{
+    "CollectedAt":  "2026-10-05T15:30:15.7534541+08:00",
+    "Mode":  "OfflineReadOnly",
+    "IsAdministrator":  false,
+    "Host":  "SHJ-H0647-RYOCH",
+    "System":  {
+                   "Manufacturer":  "MiniPC",
+                   "Model":  "T1",
+                   "Chassis":  [
+                                   13
+                               ],
+                   "Baseboard":  "Intel H610I Chipset",
+                   "BIOS":  "5.27",
+                   "BIOSDate":  "2025-07-29"
+               },
+    "OS":  {
+               "Caption":  "Microsoft Windows 10 专业版",
+               "DisplayVersion":  "22H2",
+               "Build":  "19045",
+               "UBR":  7725,
+               "InstallDate":  "2026-07-30T17:37:56.0000000+08:00",
+               "TargetReleaseVersionInfo":  "22H2",
+               "LongPathsEnabled":  0,
+               "HypervisorPresent":  false,
+               "PowerPlan":  "Balanced 381b4222-f694-41f0-9685-ff5bb260df2e"
+           },
+    "CPU":  {
+                "Name":  "12th Gen Intel(R) Core(TM) i5-12400",
+                "NumberOfCores":  6,
+                "NumberOfLogicalProcessors":  12,
+                "MaxClockSpeed":  2500,
+                "L2CacheSize":  7680,
+                "L3CacheSize":  18432,
+                "VirtualizationFirmwareEnabled":  true
+            },
+    "Memory":  [
+                   {
+                       "DeviceLocator":  "Controller0-ChannelA-DIMM0",
+                       "GB":  16,
+                       "Speed":  2667,
+                       "SMBIOSMemoryType":  26,
+                       "FormFactor":  12,
+                       "Manufacturer":  "Heoriady",
+                       "PartNumber":  "0                   "
+                   },
+                   {
+                       "DeviceLocator":  "Controller1-ChannelA-DIMM0",
+                       "GB":  16,
+                       "Speed":  2667,
+                       "SMBIOSMemoryType":  26,
+                       "FormFactor":  12,
+                       "Manufacturer":  "0x0000",
+                       "PartNumber":  "HAILAN 8WNB 16G 2666"
+                   }
+               ],
+    "MemoryArray":  {
+                        "MaxCapacityGB":  64,
+                        "Slots":  2
+                    },
+    "GPU":  {
+                "Name":  "Intel(R) UHD Graphics 730",
+                "DriverVersion":  "32.0.101.7088",
+                "DriverDate":  "2026-06-17",
+                "PNPDeviceID":  "PCI\\VEN_8086\u0026DEV_4692\u0026SUBSYS_22128086\u0026REV_0C\\3\u002611583659\u00260\u002610",
+                "CurrentHorizontalResolution":  1920,
+                "CurrentVerticalResolution":  1080
+            },
+    "Disk":  {
+                 "FriendlyName":  "HAILAN 256G",
+                 "MediaType":  "SSD",
+                 "BusType":  "SATA",
+                 "Size":  256060514304,
+                 "HealthStatus":  "Healthy",
+                 "FirmwareVersion":  "X1226A0"
+             },
+    "VolumeC":  {
+                    "SizeBytes":  255727046656,
+                    "FreeBytes":  144379408384,
+                    "UsedBytes":  111347638272,
+                    "SizeGiB":  238.16,
+                    "FreeGiB":  134.46,
+                    "UsedGiB":  103.7
+                },
+    "DiskBreakdownGiB":  {
+                             "C:\\Windows":  31.11,
+                             "C:\\Program Files (x86)":  14.18,
+                             "C:\\Users":  13.09,
+                             "hiberfil.sys":  12.71,
+                             "SystemVolumeInformation_inferred":  11.57,
+                             "C:\\软件安装包":  8.62,
+                             "pagefile.sys":  5,
+                             "C:\\Program Files":  2.97,
+                             "C:\\ProgramData":  2.23,
+                             "RecycleBin":  0.9,
+                             "C:\\Telegram":  0.79,
+                             "C:\\inetpub":  0.24,
+                             "C:\\Windows.old":  0
+                         },
+    "Benchmark":  {
+                      "Method":  ".NET micro-benchmark; NOT comparable to 2026-09-21 benchmark.py",
+                      "CpuSingleMiterPerSec":  596.9,
+                      "CpuMultiMiterPerSec":  3483.1,
+                      "CpuScaling":  5.84,
+                      "MemCopyGBps":  18.49,
+                      "DiskSeqWriteMBps":  321.8,
+                      "DiskSeqReadUncachedMBps":  416.2,
+                      "SmallFileCreatePerSec":  2598
+                  },
+    "Toolchain":  {
+                      "Git":  "2.55.0.5",
+                      "R":  null,
+                      "Rscript":  null,
+                      "Python":  "MS Store stub only",
+                      "uv":  null,
+                      "quarto":  null,
+                      "node":  null,
+                      "gcc":  null,
+                      "positron":  null,
+                      "docker":  null,
+                      "WSLFeatures":  "InstallState=2 (disabled) for WSL / VirtualMachinePlatform / Hyper-V-All"
+                  },
+    "Security":  [
+                     "Kaspersky Endpoint Security 11.26.4.423 / 14.1.0.423",
+                     "KSC NetworkAgent 16.2.0.1023",
+                     "EsafeNet Cobra DocGuard 5.2.0",
+                     "Tipray LdTerm (C:\\Inetpub\\ftproot\\Tipray\\LdTerm)",
+                     "Windows Defender"
+                 ],
+    "ChromeInjectedDlpModules":  21,
+    "NotVerified":  [
+                        "System Volume Information size (access denied)",
+                        "C:\\Recovery size (access denied)",
+                        "SSD SMART / wear (not exposed)",
+                        "Free M.2 slot (needs BIOS/teardown)",
+                        "Same-workload benchmark vs old machine (Python not installed)"
+                    ]
+}
