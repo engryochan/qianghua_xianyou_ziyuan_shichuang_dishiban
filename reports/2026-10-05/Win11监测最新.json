@@ -1,0 +1,46 @@
+{
+  "Time": "2026-10-05T18:15:07.2347590+08:00",
+  "OS": {
+    "CurrentBuild": "19045",
+    "UBR": 7725,
+    "DisplayVersion": "22H2"
+  },
+  "Setup": {
+    "SystemSetupInProgress": 0,
+    "SetupType": 0
+  },
+  "CBSReboot": false,
+  "WUReboot": false,
+  "Processes": [
+    {
+      "ProcessName": "SetupHost",
+      "Id": 103588,
+      "CPU": 141.78125,
+      "Responding": true
+    },
+    {
+      "ProcessName": "setupprep",
+      "Id": 107820,
+      "CPU": 0.703125,
+      "Responding": true
+    },
+    {
+      "ProcessName": "Windows10UpgraderApp",
+      "Id": 67620,
+      "CPU": 670.3125,
+      "Responding": true
+    }
+  ],
+  "Logs": [
+    {
+      "FullName": "C:\\$WINDOWS.~BT\\Sources\\Panther\\setupact.log",
+      "Length": 3838564,
+      "LastWriteTime": "2026-10-05T18:14:03.6261868+08:00"
+    },
+    {
+      "FullName": "C:\\$WINDOWS.~BT\\Sources\\Panther\\setuperr.log",
+      "Length": 1842,
+      "LastWriteTime": "2026-10-05T18:13:04.6874936+08:00"
+    }
+  ]
+}

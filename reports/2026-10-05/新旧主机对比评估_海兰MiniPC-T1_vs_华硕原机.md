@@ -608,3 +608,7 @@ Windows 10 22H2 本身支持 WSL2（当前功能尚未启用），仓颉有 Wind
 Windows 标准 RunAs 调用已返回 Started=True，ProcessId=70136（见 Win11正常管理员启动结果.json）；随后查询到 Windows10UpgraderApp 进程 67620 仍在运行，可能由助手已有实例承接，不能仅从启动返回值断言目标进程令牌已完成提权或升级已开始。
 
 本次系统实际状态仍为 19045.7725 / 22H2，SystemSetupInProgress=0，SetupType=0，未查询到 setuphost/setupprep。当前工具无法读取或点击原生助手窗口，等待当前界面提示文字以识别许可确认、兼容性要求或下载进度。没有重复发起安装，也没有使用未验证的静默参数；未修改 IP、网络或资安设置。
+
+## 十七、17:32 本轮升级明确失败
+
+微软 SetupDiag（1.7.0.0）判为 FindAbruptDownlevelFailure：0x80070057 - 0x50015，Pre-Finalize 阶段向 SafeOS.Mount 加入 SSU-26100.9441-x64.cab 时，DISM 无法识别离线系统版本。SetupHost 已结束，系统仍为 Windows 10 19045.7725；未重启、未完成 Windows 11 升级。该定位尚不足以确认根因是安防、权限、磁盘或源文件，不能归咎网管或直接停用防毒。证据保存于 Win11失败证据_1732。监测未停止，不重复启动安装或自动重启。

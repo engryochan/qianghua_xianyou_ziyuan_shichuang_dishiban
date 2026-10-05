@@ -1,0 +1,8 @@
+{
+  "ProfileName": "FindAbruptDownlevelFailure",
+  "FailureDetails": "ErrorCode = 0x80070057, ExCode = 0x50015, LastOperation = Add [1] package C:\\$WINDOWS.~BT\\DUImageSandbox\\SSU-26100.9441-x64.cab to C:\\$WINDOWS.~BT\\Sources\\SafeOS\\SafeOS.Mount",
+  "LastSetupPhase": "Pre-Finalize",
+  "LastSetupOperation": "Add [1] package C:\\$WINDOWS.~BT\\DUImageSandbox\\SSU-26100.9441-x64.cab to C:\\$WINDOWS.~BT\\Sources\\SafeOS\\SafeOS.Mount",
+  "UpgradeStartTime": "2026/10/5 16:45:08",
+  "UpgradeEndTime": "2026/10/5 17:32:05"
+}
