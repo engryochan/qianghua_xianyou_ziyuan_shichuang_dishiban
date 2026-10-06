@@ -1,0 +1,54 @@
+﻿python.exe : C:\work\logs\accept_python.py:1: SyntaxWarning: invalid escape sequence '\w'
+At line:1 char:302
++ ... tch {} } }; & 'C:\work\envs\ds\Scripts\python.exe' C:\work\logs\accep ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\work\logs\ac...e sequence '\w':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  """Real-computation acceptance for C:\work\envs\ds.
+C:\work\envs\ds\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, b
+ut LGBMClassifier was fitted with feature names
+  warnings.warn(
+g++ not available, if using conda: `conda install gxx`
+NUTS[nutpie]: [mu]
+C:\work\envs\ds\Lib\site-packages\dowhy\graph.py:492: SyntaxWarning: invalid escape sequence '\s'
+  elif re.match(".*graph\s*\[.*\]\s*", graph_str):
+C:\work\envs\ds\Lib\site-packages\dowhy\causal_graph.py:101: SyntaxWarning: invalid escape sequence '\s'
+  elif isinstance(graph, str) and re.match(".*graph\s*\[.*\]\s*", graph):
+C:\work\envs\ds\Lib\site-packages\dowhy\gcm\divergence.py:110: SyntaxWarning: invalid escape sequence '\i'
+  D_f(P || Q) = \int f(p(x)/q(x)) q(x) dx ~= -1/N \sum_x log(p(Y = 1 | x) / (1 - p(Y = 1 | x)))
+C:\work\envs\ds\Lib\site-packages\dowhy\gcm\distribution_change_robust.py:233: SyntaxWarning: invalid escape sequence '
+\i'
+  alpha_k = (n0,) or (n1,) np.ndarray of alpha_k weights for sample C_{k+1} \in {0,1}
+C:\work\envs\ds\Lib\site-packages\dowhy\gcm\model_evaluation.py:711: SyntaxWarning: invalid escape sequence '\i'
+  """Estimates \int (F(x) - 1_{x >= y})**2 dx = E[|X - y|] - 1/2 E[|X - X'|]
+C:\work\envs\ds\Lib\site-packages\dowhy\gcm\falsify.py:193: SyntaxWarning: invalid escape sequence '\i'
+  X _|_G' Y | Z and X _/|_G Y | Z for Y \in ND{X}^G', Z = PA{X}^G
+C:\work\envs\ds\Lib\site-packages\dowhy\gcm\equation_parser.py:52: SyntaxWarning: invalid escape sequence '\.'
+  You can specify any noise function defined in scipy\.stats library.
+C:\work\envs\ds\Lib\site-packages\dowhy\utils\cit.py:50: SyntaxWarning: invalid escape sequence '\s'
+  x\sim z, y\sim z
+C:\work\envs\ds\Lib\site-packages\econml\dml\dml.py:51: UserWarning: First stage model has discrete target but model is
+ not a classifier!
+  warn('First stage model has discrete target but model is not a classifier!', UserWarning)
+C:\work\envs\ds\Lib\site-packages\econml\dml\dml.py:51: UserWarning: First stage model has discrete target but model is
+ not a classifier!
+  warn('First stage model has discrete target but model is not a classifier!', UserWarning)
+CHECK                    RESULT DETAIL
+numpy                    PASS   sum=499999500000
+polars                   PASS   v1.44.2 [{'g': 'a', 's': 4.0}, {'g': 'b', 's': 6.0}]
+duckdb                   PASS   concat=abcd sum=5000050000
+pyarrow                  PASS   v25.0.1 rows=100000
+pandas+excel             PASS   pandas2.3.3 roundtrip_rows=3 equal=True
+scikit-learn             PASS   R2=0.9689
+statsmodels              PASS   beta=1.011,2.007,-1.509
+lightgbm                 PASS   v4.6.0 acc=1.0000
+xgboost                  PASS   v2.1.4 acc=1.0000
+torch                    PASS   v2.14.0+cpu cuda=False norm=14661.92
+jax                      PASS   v0.11.2 val=332833504
+numpyro                  PASS   v0.22.0 post_mu=3.008
+pymc                     PASS   v6.3.2 post_mu=2.053
+econml                   PASS   ATE=1.9660 (seeded; unseeded runs drifted 1.82-2.03)
+polars/arrow interop     PASS   polars->arrow rows=3
+
+PASS 15 / 15

@@ -1,0 +1,42 @@
+﻿=== 2026-10-06T12:45:21 [fin] openbb, openbb-platform-api, pyportfolioopt, s3fs ===
+powershell : Activate with: C:\work\envs\fin\Scripts\activate
+At line:1 char:302
++ ... tch {} } }; powershell -NoProfile -ExecutionPolicy Bypass -File C:\wo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Activate with: ...cripts\activate:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ + xlrd==2.0.2
+ + xmltodict==1.0.4
+ + yarl==1.25.1
+ + zipp==4.1.1
+[fin] uv exit=0
+=== 2026-10-06T12:45:41 [nlp] flair, transformer-smaller-training-vocab ===
+Activate with: C:\work\envs\nlp\Scripts\activate
+ + urllib3==2.8.0
+ + wcwidth==0.9.2
+ + wikipedia-api==0.16.0
+ + wrapt==2.5.0
+[nlp] uv exit=0
+=== 2026-10-06T12:46:29 [mlops] evidently, nannyml, feast ===
+Activate with: C:\work\envs\mlops\Scripts\activate
+ + websockets==17.2
+ + wrapt==2.5.0
+ + xgboost==2.1.4
+ + yarl==1.25.1
+[mlops] uv exit=0
+=== 2026-10-06T12:46:53 [xai] dalex ===
+Activate with: C:\work\envs\xai\Scripts\activate
+ + setuptools==84.0.0
+ + six==1.17.0
+ + tqdm==4.70.1
+ + tzdata==2026.5
+[xai] uv exit=0
+=== 2026-10-06T12:47:00 [rl] tianshou, gluonts, gevent ===
+Activate with: C:\work\envs\rl\Scripts\activate
+ + virtualenv==20.16.3
+ + werkzeug==3.1.9
+ + zope-event==6.2
+ + zope-interface==8.6
+[rl] uv exit=0
+=== 2026-10-06T12:47:14 satellites done ===

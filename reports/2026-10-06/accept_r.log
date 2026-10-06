@@ -1,0 +1,38 @@
+﻿Rscript.exe : 
+At line:1 char:302
++ ... tch {} } }; & 'C:\work\R\R-4.6.1\bin\x64\Rscript.exe' C:\work\logs\ac ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Attaching package: 'data.table'
+
+The following object is masked from 'package:base':
+
+    %notin%
+
+Warning message:
+In gsum(x) :
+  The sum of an integer column for a group was more than type 'integer' can hold so the result has been coerced to 'num
+eric' automatically for convenience.
+duckdb keeps downloaded extensions and secrets in a temporary directory:
+ℹ C:\Users\PPCCpcpc\AppData\Local\Temp\RtmpolLvyF/duckdb
+This is removed when the R session ends.
+• Extensions are re-downloaded each session.
+• Secrets are lost.
+ℹ Run duckdb(shared_home = TRUE) (or create ~/.duckdb) to keep them (suitable for most users).
+ℹ Run duckdb(shared_home = FALSE) to accept the temporary directory (and silence this message).
+ℹ See ?duckdb_storage for details and alternatives.
+CHECK                                      RESULT DETAIL
+arrow is absent (required)                 PASS   arrow not installed, as intended
+data.table aggregate                       PASS   rows=2 tot=5000050000
+duckdb parquet round-trip                  PASS   rows=100000 concat=abcd
+fixest high-dim FE regression              PASS   beta_x=1.4975
+tidymodels fit                             PASS   accuracy=0.8233
+ranger + yardstick                         PASS   r2=0.8082
+time series: fable forecast                PASS   horizons=6
+quantmod/PerformanceAnalytics loadable     PASS   sharpe=0.6643
+reticulate -> project venv                 PASS   python=3.13
+duckdb loaded FIRST, then pyarrow via reticulate PASS   pyarrow=25.0.1 polars=1.44.2
+
+PASS 10 / 10

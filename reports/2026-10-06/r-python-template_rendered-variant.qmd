@@ -1,0 +1,96 @@
+---
+title: "R + Python 混用範本（已實測 render 成功）"
+format:
+  html:
+    toc: true
+    embed-resources: true
+execute:
+  echo: true
+  warning: false
+---
+
+## 為何 R 端不用 `arrow`
+
+R 的 `arrow` 與 Python 的 `pyarrow` 各自夾帶一份 Arrow C++ 二進位。knitr 透過
+reticulate 在**同一個行程**裡跑 R 與 Python chunk，先載入的那一份會讓後載入的
+找不到符號，錯誤訊息是 `ImportError: DLL load failed while importing lib`。
+
+所以 R 端的 Parquet 一律走 `duckdb`。本檔的 R 區塊從不 `library(arrow)`。
+
+```{r}
+#| label: setup
+# reticulate 只認 RETICULATE_PYTHON，不認 QUARTO_PYTHON。沒設的話它會自行下載一份
+# 乾淨的 Python，於是所有套件都「不存在」，錯誤看起來像環境壞掉。
+Sys.setenv(RETICULATE_PYTHON = "C:/work/envs/ds/Scripts/python.exe")
+suppressPackageStartupMessages({
+  library(DBI); library(duckdb); library(data.table)
+})
+cat("R:", R.version.string, "\n")
+```
+
+## R 端：產生資料並以 duckdb 寫出 Parquet
+
+```{r}
+#| label: r-write
+set.seed(0)
+n  <- 100000L
+dt <- data.table(
+  id  = seq_len(n),
+  grp = rep(c("a", "b", "c", "d"), length.out = n),
+  x   = rnorm(n),
+  y   = runif(n)
+)
+
+pq  <- file.path(tempdir(), "bridge.parquet")
+pqq <- gsub("\\\\", "/", pq)
+
+con <- dbConnect(duckdb())
+duckdb_register(con, "dt", dt)
+dbExecute(con, sprintf("copy dt to '%s' (format parquet)", pqq))
+
+# DuckDB 串接字串用 ||，不是 +
+summ <- dbGetQuery(con, sprintf(
+  "select grp || '-r' as tag, count(*) as n, round(avg(x), 4) as mx
+     from '%s' group by grp order by grp", pqq))
+dbDisconnect(con, shutdown = TRUE)
+
+# 輸出給機器解析的數字一律關掉科學記號：cat() 會把 100000 印成 1e+05
+cat("ROWS:", format(n, scientific = FALSE), "\n")
+cat("PARQUET:", pqq, "\n")
+knitr::kable(summ)
+```
+
+## Python 端：讀同一份 Parquet
+
+```{python}
+#| label: py-read
+import sys
+import polars as pl
+import pyarrow.parquet as pq
+
+print("python:", sys.version.split()[0])
+print("polars:", pl.__version__)
+
+# R 的 tempdir() 是「每個 R 工作階段」的子目錄（...\Temp\RtmpXXXX），而 Python 的
+# tempfile.gettempdir() 回的是父目錄 ...\Temp。兩邊各自算路徑一定對不上。
+# 正解：用 reticulate 的 r. 橋，直接取 R 端算好的那個路徑。
+path = r.pqq
+print("path from R:", path)
+
+df = pl.read_parquet(path)
+print("rows:", f"{df.height:d}")
+
+out = (df.group_by("grp")
+         .agg(pl.len().alias("n"), pl.col("x").mean().round(4).alias("mx"))
+         .sort("grp"))
+print(out)
+print("pyarrow row groups:", pq.ParquetFile(path).num_row_groups)
+```
+
+## 兩端對同一份資料給出一致結果
+
+```{python}
+#| label: py-check
+assert df.height == 100000, df.height
+print("CROSSCHECK: OK  rows=" + f"{df.height:d}")
+```

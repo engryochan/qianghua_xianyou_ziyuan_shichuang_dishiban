@@ -1,0 +1,344 @@
+{
+  "core_count": 726,
+  "exact": 698,
+  "relaxed": {
+    "aiobotocore": "3.9.1",
+    "boto3": "1.43.98",
+    "botocore": "1.43.75",
+    "datasets": "5.0.1",
+    "deepdiff": "7.0.1",
+    "fsspec": "2026.6.0",
+    "gcsfs": "2026.8.1",
+    "mlxtend": "0.25.0",
+    "openbb-bls": "1.3.1",
+    "openbb-core": "1.6.13",
+    "openbb-fred": "1.6.2",
+    "openbb-government-us": "1.6.1",
+    "openbb-news": "1.6.2",
+    "openbb-oecd": "1.6.1",
+    "openbb-sec": "1.6.7",
+    "openbb-tradingeconomics": "1.6.1",
+    "openbb-us-eia": "1.3.1",
+    "openbb-yfinance": "1.6.3",
+    "platformdirs": "4.11.11",
+    "plotly": "5.24.1",
+    "scikit-base": "0.13.2",
+    "scikit-learn": "1.7.2",
+    "skfolio": "1.3.0",
+    "sktime": "1.1.0",
+    "tenacity": "8.5.0",
+    "transformers": "5.17.0",
+    "virtualenv": "20.16.3",
+    "wikipedia-api": "0.16.0"
+  },
+  "exiled": {
+    "dalex": "1.8.0",
+    "evidently": "0.7.23",
+    "feast": "0.66.0",
+    "flair": "0.15.1",
+    "gevent": "26.9.0",
+    "gluonts": "0.17.0",
+    "nannyml": "0.13.1",
+    "openbb": "4.7.2",
+    "openbb-cftc": "1.4.2",
+    "openbb-federal-reserve": "1.6.2",
+    "openbb-imf": "2.1.3",
+    "openbb-platform-api": "1.3.6",
+    "pyportfolioopt": "1.6.0",
+    "s3fs": "2026.9.0",
+    "tianshou": "2.0.1",
+    "transformer-smaller-training-vocab": "0.4.2"
+  },
+  "journal": [
+    {
+      "round": 1,
+      "status": "relax",
+      "pkgs": [
+        "boto3",
+        "botocore"
+      ]
+    },
+    {
+      "round": 2,
+      "status": "relax",
+      "pkgs": [
+        "fsspec",
+        "gcsfs"
+      ]
+    },
+    {
+      "round": 3,
+      "status": "relax",
+      "pkgs": [
+        "mlxtend",
+        "scikit-learn"
+      ]
+    },
+    {
+      "round": 4,
+      "status": "relax",
+      "pkgs": [
+        "deepdiff",
+        "openbb-platform-api"
+      ]
+    },
+    {
+      "round": 5,
+      "status": "relax",
+      "pkgs": [
+        "datasets",
+        "s3fs"
+      ]
+    },
+    {
+      "round": 6,
+      "status": "relax",
+      "pkgs": [
+        "plotly",
+        "skfolio"
+      ]
+    },
+    {
+      "round": 7,
+      "status": "relax",
+      "pkgs": [
+        "scikit-base",
+        "sktime"
+      ]
+    },
+    {
+      "round": 8,
+      "status": "relax",
+      "pkgs": [
+        "transformer-smaller-training-vocab",
+        "transformers"
+      ]
+    },
+    {
+      "round": 9,
+      "status": "relax",
+      "pkgs": [
+        "platformdirs",
+        "virtualenv"
+      ]
+    },
+    {
+      "round": 10,
+      "status": "relax",
+      "pkgs": [
+        "tenacity",
+        "wikipedia-api"
+      ]
+    },
+    {
+      "round": 11,
+      "status": "relax",
+      "pkgs": [
+        "aiobotocore"
+      ]
+    },
+    {
+      "round": 12,
+      "status": "relax",
+      "pkgs": [
+        "openbb-imf",
+        "tianshou"
+      ]
+    },
+    {
+      "round": 13,
+      "status": "exile",
+      "pkg": "s3fs",
+      "ver": "2026.9.0"
+    },
+    {
+      "round": 14,
+      "status": "relax",
+      "pkgs": [
+        "nannyml"
+      ]
+    },
+    {
+      "round": 15,
+      "status": "exile",
+      "pkg": "nannyml",
+      "ver": "0.13.1"
+    },
+    {
+      "round": 16,
+      "status": "relax",
+      "pkgs": [
+        "evidently"
+      ]
+    },
+    {
+      "round": 17,
+      "status": "exile",
+      "pkg": "evidently",
+      "ver": "0.7.23"
+    },
+    {
+      "round": 18,
+      "status": "relax",
+      "pkgs": [
+        "pyportfolioopt"
+      ]
+    },
+    {
+      "round": 19,
+      "status": "exile",
+      "pkg": "pyportfolioopt",
+      "ver": "1.6.0"
+    },
+    {
+      "round": 20,
+      "status": "relax",
+      "pkgs": [
+        "openbb-federal-reserve"
+      ]
+    },
+    {
+      "round": 21,
+      "status": "relax",
+      "pkgs": [
+        "openbb-cftc"
+      ]
+    },
+    {
+      "round": 22,
+      "status": "relax",
+      "pkgs": [
+        "openbb"
+      ]
+    },
+    {
+      "round": 23,
+      "status": "relax",
+      "pkgs": [
+        "openbb-us-eia"
+      ]
+    },
+    {
+      "round": 24,
+      "status": "relax",
+      "pkgs": [
+        "openbb-sec"
+      ]
+    },
+    {
+      "round": 25,
+      "status": "relax",
+      "pkgs": [
+        "openbb-oecd"
+      ]
+    },
+    {
+      "round": 26,
+      "status": "relax",
+      "pkgs": [
+        "openbb-news"
+      ]
+    },
+    {
+      "round": 27,
+      "status": "relax",
+      "pkgs": [
+        "openbb-government-us"
+      ]
+    },
+    {
+      "round": 28,
+      "status": "relax",
+      "pkgs": [
+        "openbb-fred"
+      ]
+    },
+    {
+      "round": 29,
+      "status": "relax",
+      "pkgs": [
+        "openbb-bls"
+      ]
+    },
+    {
+      "round": 30,
+      "status": "relax",
+      "pkgs": [
+        "openbb-core"
+      ]
+    },
+    {
+      "round": 31,
+      "status": "relax",
+      "pkgs": [
+        "openbb-yfinance"
+      ]
+    },
+    {
+      "round": 32,
+      "status": "relax",
+      "pkgs": [
+        "openbb-tradingeconomics"
+      ]
+    },
+    {
+      "round": 33,
+      "status": "exile",
+      "pkg": "openbb",
+      "ver": "4.7.2"
+    },
+    {
+      "round": 34,
+      "status": "exile",
+      "pkg": "openbb-cftc",
+      "ver": "1.4.2"
+    },
+    {
+      "round": 35,
+      "status": "exile",
+      "pkg": "openbb-federal-reserve",
+      "ver": "1.6.2"
+    },
+    {
+      "round": 36,
+      "status": "exile",
+      "pkg": "openbb-imf",
+      "ver": "2.1.3"
+    },
+    {
+      "round": 37,
+      "status": "exile",
+      "pkg": "openbb-platform-api",
+      "ver": "1.3.6"
+    },
+    {
+      "round": 38,
+      "status": "exile",
+      "pkg": "transformer-smaller-training-vocab",
+      "ver": "0.4.2"
+    },
+    {
+      "round": 39,
+      "status": "exile",
+      "pkg": "tianshou",
+      "ver": "2.0.1"
+    },
+    {
+      "round": 40,
+      "status": "relax",
+      "pkgs": [
+        "feast"
+      ]
+    },
+    {
+      "round": 41,
+      "status": "exile",
+      "pkg": "feast",
+      "ver": "0.66.0"
+    },
+    {
+      "round": 42,
+      "status": "solvable"
+    }
+  ]
+}
