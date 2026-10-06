@@ -1,0 +1,506 @@
+﻿[
+    {
+        "TimeCreated":  "\/Date(1791180229390)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 11 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2500\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229388)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 10 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229387)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 9 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229386)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 8 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229384)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 7 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229383)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 6 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229382)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 5 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229381)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 4 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229380)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 3 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229378)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 2 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229377)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 1 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180229358)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 0 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 35\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180226351)\/",
+        "Id":  98,
+        "ProviderName":  "Microsoft-Windows-Ntfs",
+        "Message":  "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180225468)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "基于虚拟化的安全性(策略: 0)是 disabled。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169873)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 11 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2500\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169871)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 10 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169870)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 9 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169869)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 8 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169868)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 7 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169866)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 6 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169865)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 5 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169864)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 4 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169863)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 3 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169862)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 2 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169860)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 1 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180169841)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 0 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 35\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180165485)\/",
+        "Id":  98,
+        "ProviderName":  "Microsoft-Windows-Ntfs",
+        "Message":  "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791180164531)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "基于虚拟化的安全性(策略: 0)是 disabled。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700155)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 11 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2500\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700153)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 10 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700152)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 9 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700151)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 8 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700150)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 7 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700148)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 6 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700147)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 5 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700146)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 4 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700145)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 3 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700144)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 2 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700143)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 1 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168700123)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 0 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 35\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168696562)\/",
+        "Id":  98,
+        "ProviderName":  "Microsoft-Windows-Ntfs",
+        "Message":  "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168695548)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "基于虚拟化的安全性(策略: 0)是 disabled。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454768)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 11 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2500\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454766)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 10 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454765)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 9 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454764)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 8 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454763)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 7 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454761)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 6 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454760)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 5 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454759)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 4 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454758)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 3 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454757)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 2 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454756)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 1 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 51\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168454736)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 0 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 35\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168451422)\/",
+        "Id":  98,
+        "ProviderName":  "Microsoft-Windows-Ntfs",
+        "Message":  "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791168450442)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "基于虚拟化的安全性(策略: 0)是 disabled。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109734)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 11 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2500\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109732)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 10 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109731)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 9 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109729)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 8 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109728)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 7 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109727)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 6 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109726)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 5 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109725)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 4 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109723)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 3 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109722)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 2 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109721)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 1 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125109702)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 0 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 35\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125105412)\/",
+        "Id":  98,
+        "ProviderName":  "Microsoft-Windows-Ntfs",
+        "Message":  "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791125104342)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "基于虚拟化的安全性(策略: 0)是 disabled。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970135)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 11 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2500\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970133)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 10 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970132)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 9 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970131)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 8 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970129)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 7 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970128)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 6 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970127)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 5 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970126)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 4 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970125)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 3 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970123)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 2 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970122)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 1 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 45\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124970102)\/",
+        "Id":  55,
+        "ProviderName":  "Microsoft-Windows-Kernel-Processor-Power",
+        "Message":  "组 0 中的处理器 0 显示下列电源管理功能:\r\n\r\n空闲状态类型: ACPI 空闲(C)状态 (1 状态)\r\n\r\n性能状态类型: ACPI 协作处理器性能控制\r\n标称频率(MHz): 2496\r\n最佳性能百分比: 180\r\n最低性能百分比: 35\r\n最低限制百分比: 3"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124969060)\/",
+        "Id":  98,
+        "ProviderName":  "Microsoft-Windows-Ntfs",
+        "Message":  "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+    },
+    {
+        "TimeCreated":  "\/Date(1791124967968)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "基于虚拟化的安全性(策略: 0)是 disabled。"
+    }
+]

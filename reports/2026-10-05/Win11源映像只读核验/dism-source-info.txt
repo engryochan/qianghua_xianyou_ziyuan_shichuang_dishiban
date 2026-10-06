@@ -1,0 +1,42 @@
+﻿
+部署映像服务和管理工具
+版本: 10.0.19041.3636
+
+映像的详细信息: C:\Users\PPCCpcpc\AppData\Local\Temp\26200.6584.250915-1905.25h2_ge_release_svc_refresh_CLIENTCONSUMER_RET_x64FRE_zh-cn.esd
+
+索引: 1
+名称: Windows Setup Media
+描述: Windows Setup Media
+大小: 270,358,099 个字节
+
+索引: 2
+名称: Microsoft Windows PE (amd64)
+描述: Microsoft Windows PE (amd64)
+大小: 2,612,780,185 个字节
+
+索引: 3
+名称: Microsoft Windows Setup (amd64)
+描述: Microsoft Windows Setup (amd64)
+大小: 2,718,859,443 个字节
+
+索引: 4
+名称: Windows 11 家庭版
+描述: Windows 11 家庭版
+大小: 22,818,447,641 个字节
+
+索引: 5
+名称: Windows 11 家庭单语言版
+描述: Windows 11 家庭单语言版
+大小: 22,796,176,998 个字节
+
+索引: 6
+名称: Windows 11 教育版
+描述: Windows 11 教育版
+大小: 23,768,079,596 个字节
+
+索引: 7
+名称: Windows 11 专业版
+描述: Windows 11 专业版
+大小: 23,771,494,917 个字节
+
+操作成功完成。

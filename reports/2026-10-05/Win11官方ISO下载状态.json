@@ -1,0 +1,18 @@
+{
+  "Time": "2026-10-05T19:29:01.4618791+08:00",
+  "SourcePage": "https://www.microsoft.com/zh-cn/software-download/windows11",
+  "SourceHost": "software.download.prss.microsoft.com",
+  "Version": "26H2",
+  "Build": "26300.9457",
+  "Language": "zh-cn",
+  "Architecture": "x64",
+  "ExpectedSHA256": "B795B52D598BF8FDEA5975844731F4A50C5713876CEFC513884354272B023AF0",
+  "PartialPath": "reports\\2026-10-05\\Windows11_Client_x64_zh-cn_26300_9457.iso.partial",
+  "CurlPID": 109468,
+  "ExecSessionID": 18793,
+  "State": "DownloadedAndSHA256Verified",
+  "ActualSHA256": "B795B52D598BF8FDEA5975844731F4A50C5713876CEFC513884354272B023AF0",
+  "VerifiedTime": "2026-10-05T20:26:45.1584626+08:00",
+  "CurlExitCode": 0,
+  "ISOPath": "reports\\2026-10-05\\Windows11_Client_x64_zh-cn_26300_9457.iso"
+}

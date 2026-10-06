@@ -612,3 +612,6 @@ Windows 标准 RunAs 调用已返回 Started=True，ProcessId=70136（见 Win11�
 ## 十七、17:32 本轮升级明确失败
 
 微软 SetupDiag（1.7.0.0）判为 FindAbruptDownlevelFailure：0x80070057 - 0x50015，Pre-Finalize 阶段向 SafeOS.Mount 加入 SSU-26100.9441-x64.cab 时，DISM 无法识别离线系统版本。SetupHost 已结束，系统仍为 Windows 10 19045.7725；未重启、未完成 Windows 11 升级。该定位尚不足以确认根因是安防、权限、磁盘或源文件，不能归咎网管或直接停用防毒。证据保存于 Win11失败证据_1732。监测未停止，不重复启动安装或自动重启。
+## 十八、19:23 安装失败根因实测
+
+19:00 用户截图显示助手错误 0x80070057。18:35 第二次失败仍为 Pre-Finalize / 0x50015，日志定位至 NewOS/SafeOS 离线注册表加载失败，尚未证明最终致因。正常 UAC 诊断成功；DISM 完整组件扫描未检出损坏；SFC verifyonly 发现默认用户 OneDrive 快捷方式差异，未证明与升级失败相关；专业版 ESD 经 DISM /CheckIntegrity 成功导出，源 SYSTEM/SOFTWARE 经微软离线注册表库读取成功。RegLoadAppKey 对系统 hive 的测试存在接口适用性限制，不能据此断言源损坏或安防拦截。详细结果及边界见同目录《Win11升级失败根因实测_1900.md》。目前准备微软官网下载的独立 ISO，以兼容性检查及保留文件和应用为前提继续官方升级；尚未开始此新路径的安装，系统仍为 19045.7725。未修改 IP、网络、管理员策略、防毒配置，未自动重启。

@@ -1,0 +1,21 @@
+﻿[
+    {
+        "Create":  0,
+        "Save":  0
+    },
+    {
+        "Name":  "synthetic-empty-control.hive",
+        "Result":  0,
+        "Time":  "2026-10-05T19:22:57.2239112+08:00"
+    },
+    {
+        "Name":  "SYSTEM-source.hive",
+        "Result":  1009,
+        "Time":  "2026-10-05T19:22:57.2740912+08:00"
+    },
+    {
+        "Name":  "SOFTWARE-source.hive",
+        "Result":  1009,
+        "Time":  "2026-10-05T19:22:59.7205296+08:00"
+    }
+]

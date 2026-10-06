@@ -1,0 +1,11 @@
+{
+  "File": "C:\\Windows\\System32\\config\\elam",
+  "Length": 32768,
+  "Signature": "regf",
+  "Major": 1,
+  "Minor": 5,
+  "HiveBinBytes": 16384,
+  "StoredChecksum": 4245522958,
+  "CalculatedChecksum": 4245522958,
+  "FirstBinSignature": "hbin"
+}

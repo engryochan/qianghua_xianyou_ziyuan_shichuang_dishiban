@@ -1,0 +1,180 @@
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DataMigrationTime]=[0x18] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DebuggerOptionsTime]=[0x0] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DriverMigrationTime]=[0x3B] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsMajorVersion]=[0xA] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsMinorVersion]=[0x0] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsBuildNumber]=[0x4A65] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsArchitecture]=[0x2] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsStageType]=[0x1] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsEditionType]=[0x2] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SetupFailureCount]=[0x3] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsLanguage]=[0x804] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsSkuId]=[0x288] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsSuiteMask]=[0x100] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsProductType]=[0x1] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsCompact]=[0x0] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [HostOsWimBoot]=[0x0] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsMajorVersion]=[0xA] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsMinorVersion]=[0x0] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsBuildNumber]=[0x4A61] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [SourceOsBuildQFE]=[0x1E2D] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [QUADWORD] -> [SetupStartTime]=[0x1dd54bd9de91d0a] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [WuId]=[df49474a-39eb-43ba-8822-b89db2077d76] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [PKeyDownlevelInstallChannel]=[Volume] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [ProductKeyEditionId]=[Professional] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [TargetOsEditionId]=[Professional] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [TargetOsLanguage]=[zh-CN] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [TargetOsInstallationType]=[Client] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsEditionId]=[Professional] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsInstallationType]=[Client] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsSkuName]=[Windows 10 专业版] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [HostOsBranchName]=[vb_release] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SourceOsEditionId]=[Professional] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [STRING] -> [SourceOsLanguage]=[zh-CN] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  SP     SetupPlatform opted-in to sqm
+2026-10-05 20:44:49, Info                  MOUPG  MoSetupPlatform: Upload telemetry data
+2026-10-05 20:44:49, Info                  MOUPG  Finalize: Remapping install error [0x80070057] -> [0xC1900108] for telemetry.
+2026-10-05 20:44:49, Info                  MOUPG  Finalize: Reporting result value: [0xC1900108]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360MappedResult]=[0xC1900108] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360Result]=[0x80070057] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360Extended]=[0x50015] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [CUSTOM] -> [WindowsUpdateExit] -> [Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2]][1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [CUSTOM] -> [Downlevel] -> [Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2]][1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][df49474a-39eb-43ba-8822-b89db2077d76][][Failed][Windows 10 专业版][19045][1][2][0x80070057][0x50015][26100]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: TraceOneSettingsEvent -> [0x0][0][scenarioId=1;platformEdition=Professional;platformInstallationType=Client;sku=48;AppVer=10.0.26100.9443;appBuildLab=ge_release_svc_prod1][][Win10UA:VNL:URL::<1.4.19041.6448>:<1>:{8C9165A7-6B3E-4A4B-AA88-103E0369408F}:[10.0.19045]:[2]][1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  Finalize: Retrieving downlevel ticks from registry...
+2026-10-05 20:44:49, Info                  MOUPG  Finalize: Converting [887] downlevel ticks to seconds...
+2026-10-05 20:44:49, Info                  MOUPG  Finalize: Reporting total downlevel time: [4435 seconds]
+2026-10-05 20:44:49, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [Setup360DownlevelTime]=[0x1153] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:44:49, Info                  MOUPG  MoSetupPlatform: Releasing NewSystem object...
+2026-10-05 20:44:49, Info                  SP     Exiting read-only mode
+2026-10-05 20:44:49, Info                         Set Watson bucketing parameter #3 to 1
+2026-10-05 20:44:49, Info                  SP     CDeploymentBase::CleanupMounts: Unmounting directory C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount
+[312324] Received unmount request for image with guid e7766747-0c51-4435-a390-2a218bd53790.
+[312324] Unmount for image at C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount complete.
+2026-10-05 20:45:34, Info                  SP     Persist diagnostics data for new system for future uploading
+2026-10-05 20:45:34, Info                         Persisting diagnostics data to C:\$WINDOWS.~BT\Sources\Diagnostics\diagnostics.dat
+2026-10-05 20:45:34, Info                         Diagnostics data saved successfully
+2026-10-05 20:45:34, Warning               SP     SPUninitializeNetwork: Not running in Windows PE; will not try to uninitialize network
+2026-10-05 20:45:34, Info                  SP     OPERATIONTRACK: CNewSystem Release
+2026-10-05 20:45:34, Info                  MOUPG  MoSetupPlatform: NewSystem object released!
+2026-10-05 20:45:34, Info                  MOUPG  MoSetupPlatform: Release Identifier -> [FinalizeExit]
+2026-10-05 20:45:34, Info                  MOUPG  MoSetupPlatform: Releasing Setup Platform object...
+2026-10-05 20:45:34, Info                  SP     Releasing the setup platform
+2026-10-05 20:45:34, Info                  SP       StopTelemetry: 1
+2026-10-05 20:45:34, Info                  SP       UploadTelemetryData: 1
+2026-10-05 20:45:34, Info                  SP       CorrelationVector: bhaRisDgtEyOdoFd.999.25
+2026-10-05 20:45:34, Info                  SP     Try to merge diagnostics data from default new system data file
+2026-10-05 20:45:34, Info                         Initializing diagnostics helper; data file = C:\$WINDOWS.~BT\Sources\Diagnostics\diagnostics.dat
+2026-10-05 20:45:34, Info                         Found existing diagnostics data, attempting to load it.
+2026-10-05 20:45:34, Info                         Merging diagnostics data for WatsonBucket
+2026-10-05 20:45:34, Info                         Merging diagnostics data success
+2026-10-05 20:45:34, Info                  SP     Finish merge diagnostics data
+2026-10-05 20:45:34, Info                  SP     Start uploading diagnostics data for setup platform
+2026-10-05 20:45:34, Info                  DIAGER DiagERInitialize:Entry Also Initialized the log
+2026-10-05 20:45:34, Info                  DIAGER IDiagER::IDiagER:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::Initialize:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::Initialize:Entry
+2026-10-05 20:45:34, Info                  DIAGER Consent Value = HKCU\Software\Microsoft\Windows\Windows Error Reporting\Consent!WinSetupDiag02 has been set to 4
+2026-10-05 20:45:34, Info                  DIAGER DiagERAddBucketingParameters:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Entry
+2026-10-05 20:45:34, Info                  DIAGER IDiagER::AddBucketingParameters:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=1.1
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=2
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=9
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=1
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=0x80070057
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=0x50015
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=19045
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=vb_release
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=26200
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddBucketingParameters:Adding bucketing param=ge_release
+2026-10-05 20:45:34, Info                  DIAGER DiagERSetHeader:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::SetHeader:Entry
+2026-10-05 20:45:34, Info                  DIAGER IDiagER::SetHeader:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::SetHeader:Setting header=Microsoft Windows Installation encountered a problem and needs to close. We are sorry for the inconvenience
+2026-10-05 20:45:34, Info                         CDiagnosticsHelper::GetWatsonFilesToAttach: Attaching file C:\$WINDOWS.~BT\Sources\Panther\SetupAct.log
+2026-10-05 20:45:34, Info                         CDiagnosticsHelper::GetWatsonFilesToAttach: Attaching file C:\$WINDOWS.~BT\Sources\Panther\diagerr.xml
+2026-10-05 20:45:34, Info                         CDiagnosticsHelper::GetWatsonFilesToAttach: Attaching file C:\$WINDOWS.~BT\Sources\Panther\WinSetupMon.log
+2026-10-05 20:45:34, Info                  DIAGER DiagERAddFiles:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddFiles:Entry
+2026-10-05 20:45:34, Info                  DIAGER IDiagER::AddFiles:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddFiles:Adding file=C:\$WINDOWS.~BT\Sources\Panther\SetupAct.log
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddFiles:Adding file=C:\$WINDOWS.~BT\Sources\Panther\diagerr.xml
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::AddFiles:Adding file=C:\$WINDOWS.~BT\Sources\Panther\WinSetupMon.log
+2026-10-05 20:45:34, Info                  DIAGER DiagERSubmitEx:Entry
+2026-10-05 20:45:34, Info                  DIAGER CWfpER::Submit:Entry
+2026-10-05 20:45:36, Info                  DIAGER Watson Error Report submitted and Result=2
+2026-10-05 20:45:36, Info                  DIAGER DiagERTerminate:Entry
+2026-10-05 20:45:36, Info                  DIAGER CWfpER::~CWfpER:Entry
+2026-10-05 20:45:36, Info                  DIAGER Consent Value = HKCU\Software\Microsoft\Windows\Windows Error Reporting\Consent!WinSetupDiag02 has been cleaned out
+2026-10-05 20:45:36, Info                  DIAGER IDiagER::~IDiagER:Entry
+2026-10-05 20:45:36, Info                         Key CollectTrace is not available.
+2026-10-05 20:45:36, Info                  SP     Existing CV from Telemetry : [bhaRisDgtEyOdoFd.999.24]
+2026-10-05 20:45:36, Info                  SP     Input CV : [bhaRisDgtEyOdoFd.999.25]
+2026-10-05 20:45:36, Warning               SP     Input CV is different form existing CV
+2026-10-05 20:45:37, Info                         Already stored correlation vector [bhaRisDgtEyOdoFd] in config file
+2026-10-05 20:45:37, Info                         Input correlation vector is [bhaRisDgtEyOdoFd]
+2026-10-05 20:45:37, Info                         Two correlation vectors are identical
+2026-10-05 20:45:37, Info                         Already stored original correlation vector [bhaRisDgtEyOdoFd.999.14] in config file
+2026-10-05 20:45:37, Info                         Input correlation vector is [bhaRisDgtEyOdoFd.999.25]
+2026-10-05 20:45:37, Warning                      Get a different correlation vector
+2026-10-05 20:45:37, Info                         Copy telemetry file: source folder: C:\$WINDOWS.~BT\Sources\Panther, destination folder: C:\ProgramData\Microsoft\Diagnosis\ETLLogs
+2026-10-05 20:45:37, Info                         Copy etl files: source: C:\$WINDOWS.~BT\Sources\Panther\DlTel-Merge.etl, destination: C:\ProgramData\Microsoft\Diagnosis\ETLLogs\DlTel-Merge.etl
+2026-10-05 20:45:37, Info                         pCopyTelemetryFile: Wrote CV bhaRisDgtEyOdoFd.999.25 to ETL C:\ProgramData\Microsoft\Diagnosis\ETLLogs\DlTel-Merge.etl:$ETLUNIQUECVDATA
+2026-10-05 20:45:37, Info                         Diagtrack service is running
+2026-10-05 20:45:38, Info                         Successfully Forceuploaded the telemetry data.
+2026-10-05 20:45:38, Info                         Upload files successfully so we can remove all etl files.
+2026-10-05 20:45:38, Info                  SP     Closing Panther Logging
+2026-10-05 20:45:38, Info                  MOUPG  MoSetupPlatform: Setup Platform object released!
+2026-10-05 20:45:38, Info                  MOUPG  Finalize: Leaving Execute Method
+2026-10-05 20:45:38, Warning               MOUPG  CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]
+2026-10-05 20:45:38, Warning               MOUPG  CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]
+2026-10-05 20:45:38, Warning               MOUPG  CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2001]
+2026-10-05 20:45:38, Info                  MOUPG  ProgressHandlerAction: Sending final progress message for action [0].
+2026-10-05 20:45:38, Info                  MOUPG  ProgressHandlerAction FinalUpdate: 0x0, 0x0 / 0x0, 0x0
+2026-10-05 20:45:38, Info                  MOUPG  ProgressHandlerAction: Sending final progress message for action [0].
+2026-10-05 20:45:38, Info                  MOUPG  ProgressHandlerAction FinalUpdate: 0x0, 0x0 / 0x0, 0x0
+2026-10-05 20:45:38, Info                  MOUPG  Signalling actions thread to shut down.
+2026-10-05 20:45:38, Info                  MOUPG  Waiting for actions thread to exit.
+2026-10-05 20:45:38, Info                  MOUPG  Actions thread has exited.
+2026-10-05 20:45:38, Warning               MOUPG  CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]
+2026-10-05 20:45:38, Warning               MOUPG  CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2000]
+2026-10-05 20:45:38, Warning               MOUPG  CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x3000]
+2026-10-05 20:45:38, Info                  MOUPG  DlpTask: Leaving Execute Method
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager::ExecuteCustomScript: Type = [0x3]
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager::ExecuteCustomScript: No scripts found. Finished type [0x3]
+2026-10-05 20:45:38, Info                  MOUPG  SetupNotify: Specifying extended data [0x50015] for error [0x80070057].
+2026-10-05 20:45:38, Info                  MOUPG  CSetupUIManager: Showing error message
+2026-10-05 20:45:38, Info                  MOUPG  CInstallUI::CInstallUIMessageWindow::SwitchToErrorPage
+2026-10-05 20:45:38, Info                  MOUPG  CInstallUI::ShowErrorMessage: Posted MSG_INSTALLUI_SWITCH_TO_ERROR_PAGE
+2026-10-05 20:45:38, Info                  MOUPG  CInstallUI::SwitchToErrorPage
+2026-10-05 20:45:38, Info                  MOUPG  SetupHost: Reporting error event -> [0x80070057, 0x50015]
+2026-10-05 20:45:38, Warning               MOUPG  SetupNotify::ReportEvent - Report ID or Event Reporter not available.
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager: FailureCount = [3]
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager: Requesting cleanup level [0x2] from parent process.
+2026-10-05 20:45:38, Info                  MOUPG  Setup phase change: [SetupPhaseError] -> [SetupPhaseUnpack]
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager: Deleting task: [Prepare]...
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager: Deleting task: [Install]...
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager: Deleting task: [Exit]...
+2026-10-05 20:45:38, Info                  MOUPG  SetupManager: Found unpack task! Restarting layout action...
+2026-10-05 20:45:38, Info                  MOUPG  CInstallUI::ShowMessageBox: Showing MessageBox
+2026-10-05 20:45:39, Error                 MOUPG  CSetupManager::Execute(394): Result = 0x80070057[gle=0x0000007f]
+2026-10-05 20:45:39, Error                 MOUPG  CSetupHost::Execute(564): Result = 0x80070057[gle=0x0000007f]
+2026-10-05 20:45:39, Info                  MOUPG  SetupHost: Using Diagnostic tool: ["C:\$WINDOWS.~BT\Sources\SetupDiag.exe" /Scenario:Upgrade /ZipLogs:False /Format:xml /Output:C:\Windows\logs\SetupDiag\SetupDiagResults.xml /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results]
+2026-10-05 20:45:39, Info                  MOUPG  SetupHost: Diagnostic results location: [C:\Windows\logs\SetupDiag\SetupDiagResults.xml]
+2026-10-05 20:45:39, Info                  MOUPG  SetupHost: Diagnostic Analysis timeout value: [90000] ms
+2026-10-05 20:45:39, Info                  MOUPG  SetupHost: Diagnostic Analysis - START
+2026-10-05 20:45:39, Info                  MOUPG  CSetupDiagnostics: Tracing Data [TIME] -> [DiagnosticAnalysisStart]=[2026-10-05 20:45:39] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:45:42, Info                  MOUPG  SetupHost: Diagnostic tool execution result: [0x0]
+2026-10-05 20:45:42, Info                  MOUPG  CSetupDiagnostics: Tracing Data [DWORD] -> [DiagnosticAnalysisResult]=[0x0] [1cebc98f-d495-4b2e-9884-b4edaf37cd1e][cc3bb52b-9d42-4526-bb4d-443eb2fe1b1c][][0x1]
+2026-10-05 20:45:44, Info                  MOUPG  CInstallUI::Quit: Posted MSG_INSTALLUI_FORCE_QUIT
+2026-10-05 20:45:44, Info                  MOUPG  CInstallUI::CInstallUIMessageWindow::ForceQuit
+2026-10-05 20:45:44, Info                  MOUPG  Force ending Message pump
+2026-10-05 20:45:44, Info                  MOUPG  CInstallUI::ExitInstance
+2026-10-05 20:45:44, Info                  MOUPG  SetupUI: Calling PowerClearRequest with type [0x1]...
+2026-10-05 20:45:44, Info                  MOUPG  SetupUI: Power request cleared!
+2026-10-05 20:45:44, Info                  MOUPG  SetupUI: Requesting main window removal...
+2026-10-05 20:45:44, Info                  MOUPG  SetupUI: Posting Quit Message...
+2026-10-05 20:45:44, Info                  MOUPG  SetupUI: Waiting for message thread...
+2026-10-05 20:45:44, Info                  MOUPG  SetupUI: Main window removed.
+2026-10-05 20:45:44, Info                  MOUPG  **************** SetupHost Logging End ****************

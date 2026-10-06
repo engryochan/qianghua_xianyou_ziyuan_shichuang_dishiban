@@ -1,0 +1,16 @@
+﻿[
+    {
+        "Name":  "SYSTEM",
+        "ExtractSuccess":  true,
+        "ExtractError":  0,
+        "ProcessPrivateReadOnlyHiveLoadResult":  1009,
+        "Time":  "2026-10-05T19:20:35.5948275+08:00"
+    },
+    {
+        "Name":  "SOFTWARE",
+        "ExtractSuccess":  true,
+        "ExtractError":  0,
+        "ProcessPrivateReadOnlyHiveLoadResult":  1009,
+        "Time":  "2026-10-05T19:20:36.3723360+08:00"
+    }
+]

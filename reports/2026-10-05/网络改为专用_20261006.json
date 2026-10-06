@@ -1,0 +1,8 @@
+﻿{
+    "Time":  "2026-10-06T11:06:19.9177184+08:00",
+    "Name":  "网络 2",
+    "InterfaceAlias":  "以太网 2",
+    "Before":  "Public",
+    "After":  "Private",
+    "Success":  true
+}

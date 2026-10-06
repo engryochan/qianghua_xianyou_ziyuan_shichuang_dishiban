@@ -1,0 +1,142 @@
+﻿{
+    "Time":  "2026-10-06T11:04:55.3737192+08:00",
+    "Connection":  {
+                       "Name":  "网络 2",
+                       "InterfaceAlias":  "以太网 2",
+                       "NetworkCategory":  0
+                   },
+    "Profiles":  [
+                     {
+                         "Name":  "Domain",
+                         "Enabled":  1,
+                         "DefaultInboundAction":  4,
+                         "DefaultOutboundAction":  2,
+                         "AllowInboundRules":  1,
+                         "AllowLocalFirewallRules":  1
+                     },
+                     {
+                         "Name":  "Private",
+                         "Enabled":  1,
+                         "DefaultInboundAction":  4,
+                         "DefaultOutboundAction":  2,
+                         "AllowInboundRules":  1,
+                         "AllowLocalFirewallRules":  1
+                     },
+                     {
+                         "Name":  "Public",
+                         "Enabled":  1,
+                         "DefaultInboundAction":  4,
+                         "DefaultOutboundAction":  2,
+                         "AllowInboundRules":  1,
+                         "AllowLocalFirewallRules":  1
+                     }
+                 ],
+    "InboundSummary":  [
+                           {
+                               "Profile":  "Public",
+                               "AllowCount":  51,
+                               "BlockCount":  0
+                           },
+                           {
+                               "Profile":  "Private",
+                               "AllowCount":  57,
+                               "BlockCount":  0
+                           }
+                       ],
+    "SharingRemoteRules":  [
+                               {
+                                   "Name":  "NETDIS-UPnPHost-In-TCP-Teredo",
+                                   "DisplayName":  "Teredo 网络发现(UPnP-In)",
+                                   "Profile":  4,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-SSDPSrv-In-UDP-Teredo",
+                                   "DisplayName":  "Teredo 网络发现(SSDP-In)",
+                                   "Profile":  4,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-WSDEVNT-In-TCP-Active",
+                                   "DisplayName":  "网络发现(WSD Events-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-WSDEVNTS-In-TCP-Active",
+                                   "DisplayName":  "网络发现(WSD EventsSecure-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-FDRESPUB-WSD-In-UDP-Active",
+                                   "DisplayName":  "网络发现(Pub-WSD-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-LLMNR-In-UDP-Active",
+                                   "DisplayName":  "网络发现(LLMNR-UDP-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-DAS-In-UDP-Active",
+                                   "DisplayName":  "网络发现(WSD 入站)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-FDPHOST-In-UDP-Active",
+                                   "DisplayName":  "网络发现(WSD-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-NB_Datagram-In-UDP-Active",
+                                   "DisplayName":  "网络发现(NB-Datagram-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-NB_Name-In-UDP-Active",
+                                   "DisplayName":  "网络发现(NB-Name-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-UPnPHost-In-TCP-Active",
+                                   "DisplayName":  "网络发现(UPnP-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               },
+                               {
+                                   "Name":  "NETDIS-SSDPSrv-In-UDP-Active",
+                                   "DisplayName":  "网络发现(SSDP-In)",
+                                   "Profile":  2,
+                                   "Action":  2
+                               }
+                           ],
+    "SecurityProducts":  {
+                             "displayName":  "Kaspersky Endpoint Security for Windows",
+                             "productState":  266240
+                         },
+    "Listeners":  [
+                      {
+                          "LocalAddress":  "::",
+                          "LocalPort":  445
+                      },
+                      {
+                          "LocalAddress":  "::",
+                          "LocalPort":  135
+                      },
+                      {
+                          "LocalAddress":  "192.168.103.55",
+                          "LocalPort":  139
+                      },
+                      {
+                          "LocalAddress":  "0.0.0.0",
+                          "LocalPort":  135
+                      }
+                  ]
+}

@@ -1,0 +1,20 @@
+﻿
+筛选器名称                      数字实例       高度          框架
+------------------------------  -------------  ------------  -----
+Estdlock                                3       586333         1
+bindflt                                 1       409800         1
+UCPD                                    3       385250.5       1
+FLMonDrv                                3       370030         1
+KLIF.KES-14-1                           4       320400.17836798641    1
+LdMFilter                               3       300030         1
+storqosflt                              0       244000         1
+wcifs                                   0       189900         1
+WIMMount                                1       180700         1
+CldFlt                                  0       180451         1
+Filelock                                        149998.99   <过时>
+FileCrypt                               0       141100         0
+luafv                                   1       135000         0
+klbackupflt.KES-14-1                    2       100800.17836798641    0
+npsvctrig                               1        46000         0
+Wof                                     1        40700         0
+FileInfo                                3        40500         0

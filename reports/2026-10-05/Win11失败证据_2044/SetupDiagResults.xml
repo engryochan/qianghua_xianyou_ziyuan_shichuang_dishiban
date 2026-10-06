@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-16"?>
+<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+  <Version>1.7.0.0</Version>
+  <ProfileName>FindAbruptDownlevelFailure</ProfileName>
+  <ProfileGuid>55882B1A-DA3E-408A-9076-23B22A0472BD</ProfileGuid>
+  <LogErrorLine>2026-10-05 20:44:46, Error                 DISM   DISM OS Provider: PID=312916 TID=20408 Failed trying to determine the OS Version. HRESULT=0x80070057 - CDISMOSServiceManager::get_OSVersion</LogErrorLine>
+  <FailureData>Error: SetupDiag reports abrupt down-level failure.Last Operation: Add [1] package C:\$WINDOWS.~BT\DUImageSandbox\SSU-26100.9441-x64.cab to C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.MountError: 0x80070057 - 0x50015</FailureData>
+  <FailureData>LogEntry: 2026-10-05 20:44:46, Error                 DISM   DISM OS Provider: PID=312916 TID=20408 Failed trying to determine the OS Version. HRESULT=0x80070057 - CDISMOSServiceManager::get_OSVersion</FailureData>
+  <FailureData>Refer to "https://docs.microsoft.com/en-us/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
+  <FailureDetails>ErrorCode = 0x80070057, ExCode = 0x50015, LastOperation = Add [1] package C:\$WINDOWS.~BT\DUImageSandbox\SSU-26100.9441-x64.cab to C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount</FailureDetails>
+  <SetupPhaseInfo>
+    <PhaseName>Pre-Finalize</PhaseName>
+    <PhaseStartTime>10/05/2026 20:43:54</PhaseStartTime>
+    <PhaseEndTime>01/01/0001 00:00:00</PhaseEndTime>
+    <PhaseTimeDelta>0:00:00:00.0000000</PhaseTimeDelta>
+    <CompletedSuccessfully>false</CompletedSuccessfully>
+  </SetupPhaseInfo>
+  <SetupOperationInfo>
+    <OperationName>Add [1] package C:\$WINDOWS.~BT\DUImageSandbox\SSU-26100.9441-x64.cab to C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount</OperationName>
+    <OperationStartTime>10/05/2026 20:44:44</OperationStartTime>
+    <OperationEndTime>01/01/0001 00:00:00</OperationEndTime>
+    <OperationTimeDelta>0:00:00:00.0000000</OperationTimeDelta>
+    <CompletedSuccessfully>false</CompletedSuccessfully>
+  </SetupOperationInfo>
+</SetupDiag>

@@ -1,0 +1,22 @@
+﻿[
+    {
+        "Name":  "SYSTEM",
+        "Length":  10485760,
+        "Signature":  "regf",
+        "Sequence1":  250,
+        "Sequence2":  250,
+        "Major":  1,
+        "Minor":  5,
+        "OfflineLibraryOpenResult":  0
+    },
+    {
+        "Name":  "SOFTWARE",
+        "Length":  76283904,
+        "Signature":  "regf",
+        "Sequence1":  293,
+        "Sequence2":  293,
+        "Major":  1,
+        "Minor":  5,
+        "OfflineLibraryOpenResult":  0
+    }
+]
