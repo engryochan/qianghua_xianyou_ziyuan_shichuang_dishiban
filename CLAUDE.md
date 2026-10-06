@@ -58,6 +58,62 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 
   所以 kernel.json 一律用 `ConvertTo-Json` 產生（它會正確轉義路徑），而且驗收要**真的 `json.load` 一次**並確認 `argv[0]` 指到存在的解譯器——見 `診斷操作系統/Accept_Jupyter_Kernels.py`。
 
+### 三之二、兩個 IDE 也在 `C:\work`，但啟動捷徑不能放開始選單
+
+| 項目 | 版本 | 位置 |
+|---|---|---|
+| Positron | 2026.09.1 build 2（Code OSS 1.130.0） | `C:\work\Positron`（官方 `UserSetup`，`/SILENT /DIR=`） |
+| RStudio | 2026.09.0+174 | `C:\work\RStudio`（官方 **ZIP** 解壓，免安裝器） |
+
+**開始選單在 `%APPDATA%` 底下，所以我建的捷徑會被 MSIX 容器吃掉**——實測確認
+Positron 安裝器建的選單項與我手建的 RStudio 捷徑都只存在於
+`…\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\…`，真實桌面看不到。
+程式本體在 `C:\work` 不受影響，被困住的只有捷徑。
+
+所以捷徑放 **`C:\work\Launch\{Positron,RStudio}.lnk`**（已驗證不被重導）。
+要進開始選單請在**自己的終端**執行：
+
+```powershell
+Copy-Item 'C:\work\Launch\*.lnk' "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\" -Force
+```
+
+接線方式同理：**Positron 的設定寫工作區**
+`C:\work\projects\lab\.vscode\settings.json`，不要寫 `%APPDATA%\Positron\User\`。
+RStudio 靠 `HKCU\SOFTWARE\R-core\R64`（`/CURRENTUSER` 安裝寫 HKCU，不是 HKLM）自動
+找到 R，另已明確釘 `RSTUDIO_WHICH_R`。
+
+**兩者都通過像素級算繪驗證**（`Win11_App_RealTest.ps1`，七種渲染旗標全部
+`Rendered=True`；Positron 內容區亮度 ~244.4、RStudio ~247）。與 Comet 不同，
+預設啟動即正常，不需任何旗標或白名單。
+
+### 三之三、本機顯卡是 Intel UHD Graphics 730，**沒有 NVIDIA 卡**
+
+```
+Intel(R) UHD Graphics 730
+PCI\VEN_8086&DEV_4692&SUBSYS_22128086&REV_0C
+驅動 32.0.101.7088（2026-06-17）
+```
+
+下文所有關於 NVIDIA GT 730 / `10DE:0F02` / Fermi / 472.xx 的段落，都是**舊機**
+（華碩原機）的紀錄。**「UHD Graphics 730」與「GT 730」名字極像但完全無關**，
+一個是 Intel 內顯、一個是 NVIDIA 獨顯。
+
+`Win11_App_RealTest.ps1` 原本**無條件**印出「本机 10DE:0F02 为旧型 Fermi」，
+而那份報告是要交給 IT 的——等於叫 IT 去查一張不存在的顯卡。
+已改為在產生報告時實讀所有適配器，不再寫死任何型號。
+
+### 三之四、大型壓縮檔不要用 `Expand-Archive`
+
+解 735 MB 的 RStudio ZIP，`Expand-Archive` **近半小時未完成**並隨工作階段中斷
+死掉，留下半成品（381 檔 / 0.53 GB，主程式還沒出來）。改用 Windows 內建 bsdtar：
+
+```powershell
+tar -xf 'C:\work\dl\RStudio-2026.09.0-174.zip' -C 'C:\work\RStudio'
+```
+
+**34.9 秒**完成，4,931 檔 / 2.1 GB。`C:\Windows\System32\tar.exe` 自 Win10 1803
+內建且認得 zip。
+
 ### 四、驗收用的新腳本
 
 | 檔案 | 用途 |
@@ -119,6 +175,15 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
   **後者的症狀特別會騙人**：我用 Bash heredoc 寫了一支回歸測試腳本（無 BOM），跑出「14 個失敗、而且完全沒有輸出」。看起來像整個環境崩了，其實腳本連檔案都沒找到。改成有 BOM 後同一支腳本是 **0 失敗**。
   **凡是「全部都失敗」又「沒有任何輸出」，先懷疑你的 runner，不要懷疑被測物。**
 - **PowerShell 5.1 沒有三元運算子**：`(if(…){…}else{…})` 放在運算式位置會丟 `The term 'if' is not recognized`。
+- **本環境的 Bash heredoc 會把 `\\` 塌成 `\`，即使寫成 `<<'EOF'`。** 這是本輪三次反斜線錯誤的共同真因，而三次的症狀完全不同、都很難看出來：
+
+  | 現場 | 實際寫出 | 症狀 |
+  |---|---|---|
+  | `kernel.json` 的 `argv[0]` | `"C:\work\envs\fin\..."` | `json.load` 拋 `Invalid \escape`，而 `kernelspec list` 照樣列出 |
+  | `Start_Analytics.ps1` 的 gcc 路徑 | `C:\worktools45聠_64-...in\gcc.exe` | 路徑變亂碼（`\t`→tab、`\x`→hex、`\b`→退格） |
+  | `Win11_App_RealTest.ps1` 的 `-split '\'` | 單一反斜線 | `-split` 吃 **regex**，孤立 `\` 是不完整轉義，切不開，欄位**靜默變空** |
+
+  對策：產生 JSON 用 `ConvertTo-Json`；切字串用 `.Split([char]0x5C)` 而非 `-split` 配反斜線；heredoc 內需要反斜線時用 `chr(92)` 組出；**最重要的是產生完就真的解析／執行一次**——這三個錯誤沒有一個能靠讀程式碼發現。
 - **`uv pip freeze` 的提示訊息會汙染鎖版檔**：用 PowerShell 管線收集會把 `Using Python … environment at: …` 一起寫進去，拿去安裝得到 `Couldn't parse requirement … at position 0`。用 `2>$null` 並過濾。**我在同一輪裡先交付了一份這樣的壞鎖版檔，只有真的拿它建第二個環境時才發現。**
 - **Store 版 `python` 代理殼**（`…\WindowsApps\python.exe`）在非互動工作階段會無回應地吊死。一律用絕對解譯器路徑。
 - **R 的 `tempdir()` 不等於 Python 的 `tempfile.gettempdir()`**：R 回每個工作階段的 `…\Temp\RtmpXXXX`，Python 回父目錄。`templates/r-python-template.qmd` 早就用 `r.pq` 橋解掉了——**動既有檔案之前先讀它**，不要重新發明倉庫已解的問題。

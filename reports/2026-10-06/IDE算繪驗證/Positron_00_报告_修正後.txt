@@ -1,0 +1,21 @@
+﻿应用实际算绘验证报告   2026-10-06 18:38:56
+主机：SHJ-H0647-RYOCH
+系统：Windows 10 Pro / Caption Microsoft Windows 10 专业版 / Build 19045.7725
+
+【严重】
+  - 系统：Build 19045 < 22000，系统仍是 Windows 10，升级未生效。
+
+【资讯】
+  - Comet：可执行档 C:\work\Positron\Positron.exe，版本 2026.09.1
+  - Comet：预设启动即可正常算绘，本次未重现黑屏。若你仍看到黑屏，可能只发生在特定网页或特定时机，请带着该网址重跑本脚本。
+
+--- 需要管理员权限、请自行手动执行 ---
+1) 先由 IT 核对显卡 PCI 硬件 ID、架构及 Windows 11 驱动支持；不可仅凭显卡名称推定架构。
+   实读适配器：Intel(R) UHD Graphics 730  |  PCI VEN_8086&DEV_4692&SUBSYS_22128086&REV_0C  |  驱动 32.0.101.7088
+   请按上列实读 PCI ID 对照厂商支持清单，不要强装其他架构驱动。
+   黑屏根因仍需对照应用、日志及厂商诊断，不能单凭驱动年份下结论。
+2) 若需请 IT 加白名单，提供下列资讯：
+   程式路径：C:\work\Positron\Positron.exe
+   需放行：GPU 行程建立、DirectComposition 呈现、本机 user-data-dir 读写
+
+

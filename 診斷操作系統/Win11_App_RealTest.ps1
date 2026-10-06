@@ -630,9 +630,13 @@ foreach ($lv in @('严重','警告','注意','资讯')) {
 # 向报告缓冲区追加一行文本。
 [void]$sb.AppendLine('--- 需要管理员权限、请自行手动执行 ---')
 # 向报告缓冲区追加一行文本。
-[void]$sb.AppendLine('1) 先由 IT 核对显卡 PCI 硬件 ID、架构及 Windows 11 驱动支持；不可仅凭 GT 730 名称选择 472.xx。')
+[void]$sb.AppendLine('1) 先由 IT 核对显卡 PCI 硬件 ID、架构及 Windows 11 驱动支持；不可仅凭显卡名称推定架构。')
 # 向报告缓冲区追加一行文本。
-[void]$sb.AppendLine('   本机 10DE:0F02 为旧型 Fermi；不要强装其他架构驱动。')
+foreach ($vc in @(Get-CimInstance Win32_VideoController -ErrorAction SilentlyContinue)) {
+    $pnpId = if ($vc.PNPDeviceID) { $vc.PNPDeviceID.Split([char]0x5C)[1] } else { '(未取得)' }
+    [void]$sb.AppendLine('   实读适配器：' + $vc.Name + '  |  PCI ' + $pnpId + '  |  驱动 ' + $vc.DriverVersion)
+}
+[void]$sb.AppendLine('   请按上列实读 PCI ID 对照厂商支持清单，不要强装其他架构驱动。')
 # 向报告缓冲区追加一行文本。
 [void]$sb.AppendLine('   黑屏根因仍需对照应用、日志及厂商诊断，不能单凭驱动年份下结论。')
 # 向报告缓冲区追加一行文本。

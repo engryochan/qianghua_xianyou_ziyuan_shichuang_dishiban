@@ -1,0 +1,14 @@
+{
+    "python.defaultInterpreterPath":  "C:\\work\\projects\\lab\\.venv\\Scripts\\python.exe",
+    "positron.r.customRootFolders":  [
+                                         "C:\\work\\R\\R-4.6.1"
+                                     ],
+    "positron.r.interpreters.default":  "C:\\work\\R\\R-4.6.1\\bin\\x64\\R.exe",
+    "python.terminal.activateEnvironment":  true,
+    "quarto.path":  "C:\\work\\tools\\bin\\quarto.cmd",
+    "r.rterm.windows":  "C:\\work\\R\\R-4.6.1\\bin\\x64\\Rterm.exe",
+    "r.libPaths":  [
+                       "C:\\work\\R\\R-4.6.1\\library"
+                   ],
+    "files.eol":  "\n"
+}

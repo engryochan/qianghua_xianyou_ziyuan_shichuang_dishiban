@@ -49,9 +49,27 @@ Write-Host ("  R       : " + (& "$R_BIN\Rscript.exe" -e "cat(R.version.string)" 
 Write-Host ("  quarto  : " + (& "$QUARTO\quarto.cmd" --version))
 Write-Host ("  uv      : " + (& "$UV_BIN\uv.exe" --version))
 
+$IDES = [ordered]@{
+    'Positron' = 'C:\work\Positron\Positron.exe'
+    'RStudio'  = 'C:\work\RStudio\rstudio.exe'
+}
+
 $satellites = 'fin','nlp','mlops','xai','rl'
 $present = @($satellites | Where-Object { Test-Path "C:\work\envs\$_\Scripts\python.exe" })
 Write-Host ("  satellites: " + ($present -join ', '))
+
+foreach ($k in $IDES.Keys) {
+    if (Test-Path $IDES[$k]) {
+        Write-Host ("  {0,-9}: {1}" -f $k, (Get-Item $IDES[$k]).VersionInfo.FileVersion)
+    } else {
+        Write-Host ("  {0,-9}: not installed" -f $k)
+    }
+}
+# Shortcuts live in C:\work\Launch, NOT the Start Menu: %APPDATA% writes made from
+# inside the Claude desktop app are redirected into its MSIX container, so a
+# Start Menu entry created there is invisible to the real desktop.
+Write-Host '  launchers : C:\work\Launch\{Positron,RStudio}.lnk'
+
 
 if ($WithToolchain) {
     # rtools45\usr\bin holds make.exe, which R CMD SHLIB needs on PATH -- but it

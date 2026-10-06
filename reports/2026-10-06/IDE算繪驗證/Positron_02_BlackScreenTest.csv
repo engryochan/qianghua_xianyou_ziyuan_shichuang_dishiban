@@ -1,0 +1,8 @@
+﻿"Label","Flags","Rendered","Detail"
+"A 预设（重现问题）","","True","内容区亮度=244.4 相异色=75 / 全窗亮度=244.04 相异色=76 / 1164x818"
+"B 关闭 GPU 沙箱（测 DLP 拦截）","--disable-gpu-sandbox","True","内容区亮度=244.87 相异色=54 / 全窗亮度=244.37 相异色=56 / 1164x818"
+"C 关闭 GPU 合成","--disable-gpu-compositing","True","内容区亮度=244.4 相异色=74 / 全窗亮度=244.07 相异色=76 / 1164x818"
+"D 完全关闭 GPU","--disable-gpu","True","内容区亮度=244.4 相异色=74 / 全窗亮度=244.07 相异色=76 / 1164x818"
+"E ANGLE 走 SwiftShader 软算","--use-angle=swiftshader","True","内容区亮度=244.76 相异色=56 / 全窗亮度=244.27 相异色=59 / 1164x818"
+"F ANGLE 走 D3D9 旧路径","--use-angle=d3d9","True","内容区亮度=244.4 相异色=74 / 全窗亮度=244.07 相异色=76 / 1164x818"
+"G 关 DirectComposition","--disable-features=DirectComposition","True","内容区亮度=244.4 相异色=75 / 全窗亮度=244.08 相异色=76 / 1164x818"
