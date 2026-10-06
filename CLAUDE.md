@@ -1,5 +1,95 @@
 # 專案說明（給接手的人與 AI）
 
+## 2026-10-06 更正（優先於以下全部紀錄）
+
+**本機已換成海兰 MiniPC-T1（i5-12400，有內顯），不是下文的華碩原機（i5-12400F，無內顯）。** 下文關於 GT 730 與 Comet 黑屏的整段，是**舊機**的紀錄，不要套到這台。新機目前 Windows 10 Pro 22H2 build 19045.7725。
+
+### 一、`env/python-ds-requirements.lock.txt` 不能用來重建環境
+
+這份鎖版檔**本身無解**，共六處內部矛盾，五處是真互斥：
+
+| 矛盾 | 說明 |
+|---|---|
+| `boto3==1.43.98` vs `botocore==1.43.75` | boto3 要求 `botocore>=1.43.98` |
+| `dalex` vs `evidently` | 前者要 `plotly>=6`，後者所有版本要 `plotly<6` |
+| `flair` vs `transformers==5.17.0` | flair 所有版本要 `transformers<5` |
+| `gevent==26.9.0` vs `cffi==2.0.0` | gevent 在 win32 要 `cffi>=2.1.1`（`ccxt` 也死釘 2.0.0）。**這兩個釘選單獨放在一起就無解** |
+| `gluonts` vs `toolz==1.1.0` | gluonts 所有版本要 `toolz<1` |
+| `s3fs==2026.9.0` vs `fsspec==2026.6.0` | s3fs 要 `fsspec>=2026.9.0` |
+
+**根因：pip 安裝時不做全域求解。** 它逐一裝、衝突只印警告然後照裝，所以那個環境裡至少五組套件一直跑在自己不支援的依賴版本上。`pip freeze` 忠實地把這個無解狀態拍成了快照。
+
+**推論：一份從未被真正用來重建過的鎖版檔，不是復原資產，只是一張照片。** 上一輪把它進版控是對的，但少了最後一步——拿它重建一次。等於備份從未做還原測試。
+
+**現在請用這兩份（已實際用來建成環境才宣稱可用）**：
+
+- `env/python-ds-core.in` — 核心環境約束檔（698 個 `==` + 28 個 `>=`）
+- `env/python-ds-verified.lock.txt` — 重建後 freeze 的 728 行實況
+
+舊的那份**保留不動，只當歷史證物**。
+
+### 二、單體環境在數學上不可能成立，必須拆
+
+740 套件同時塞 tensorflow + torch + jax + ray + gradio + openbb + ccxt + flair + evidently + dalex，永遠會差一個套件就無解。現行架構是**一個核心 + 五個衛星**：
+
+| 環境 | 內容 | 外移原因（守衛實測值） |
+|---|---|---|
+| `C:\work\envs\ds` | 核心，728 個發行版 | — |
+| `C:\work\envs\fin` | openbb、openbb-platform-api、pyportfolioopt、s3fs | `fsspec>=2026.9.0`（實到 2026.9.0） |
+| `C:\work\envs\nlp` | flair、transformer-smaller-training-vocab | `transformers<5`（實到 4.57.6） |
+| `C:\work\envs\mlops` | evidently、nannyml、feast | `plotly<6`（實到 5.24.1） |
+| `C:\work\envs\xai` | dalex | `plotly>=6`（實到 7.1.0） |
+| `C:\work\envs\rl` | tianshou、gluonts、gevent | `cffi>=2.1.1`（實到 2.1.1） |
+
+uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
+
+### 三、一切放 `C:\work`，絕對不要放 AppData
+
+**Claude 桌面應用跑在 MSIX 容器裡，對 `%APPDATA%` / `%LOCALAPPDATA%` 的寫入會被重導**到 `…\Packages\Claude_pzs8sxrjxfjjc\LocalCache\…`，真實的 R / Python / Jupyter 看不到。探針實證；寫 `C:\work` 不受影響。
+
+連帶後果：
+
+- **本帳戶無法建立符號連結**（`Administrator privilege required`），junction 可以。`uv python install` 用符號連結做次版本連結，在 `%APPDATA%` 下會留壞連結。**設 `UV_PYTHON_INSTALL_DIR=C:\work\pythons`。**
+- **`ipykernel install --user` 等於沒註冊**（寫進容器）。要設 `JUPYTER_DATA_DIR=C:\work\jupyter`，並**手寫 `kernel.json`**，`argv[0]` 用絕對路徑——`--prefix` 寫出來的是裸 `"python"`，會走 PATH 指到錯的解譯器。
+
+### 四、驗收用的新腳本
+
+| 檔案 | 用途 |
+|---|---|
+| `診斷操作系統/Accept_Python_Stack.py` | Python 15 項真實計算驗收 |
+| `診斷操作系統/Accept_R_Stack.R` | R 10 項，含 `arrow` 缺席守衛與 duckdb→reticulate→pyarrow |
+| `診斷操作系統/Accept_Satellites.py` | 衛星環境匯入與約束守衛 |
+| `診斷操作系統/Reconcile_PythonLock.py` | 鎖版檔矛盾的可稽核迭代鬆綁器 |
+| `診斷操作系統/Build_Satellite_Envs.ps1` | 重建五個衛星環境 |
+| `診斷操作系統/Install_R_Stack_v2.R` | R 堆疊逐一安裝（不用 pak） |
+| `診斷操作系統/Start_Analytics_v2.ps1` | 工作階段入口（＝`C:\work\Start_Analytics.ps1`） |
+
+### 五、本輪新增的其他地雷
+
+- **缺 `vcomp140.dll`**（Microsoft OpenMP 執行期）。本機有 `vcruntime140` / `msvcp140` / `concrt140`，就是沒有 OpenMP，也查無任何 VC++ Redistributable 安裝紀錄。任何連結 OpenMP 的 wheel 會報 `Could not find module <dll> (or one of its dependencies)`——**那個 DLL 明明在**，缺的是它的依賴。權宜解：環境內 `sklearn\.libs\vcomp140.dll` 自帶一份，複製到 `lightgbm\bin\`。正解請 IT 裝 VC++ Redistributable。
+- **`lightgbm==4.5.0` 配不了新版 scikit-learn**：sklearn 把 `force_all_finite` 改名 `ensure_all_finite` 並移除舊名，lightgbm 4.5.0 還在呼叫舊名 → `TypeError`。依賴求解器看不到，**只有真的 fit 一次才會知道**。用 `lightgbm>=4.6.0`。
+- **PowerShell 5.1 的 `Set-Content -Encoding utf8` 會寫 BOM**，`json.load` 直接拋 `Unexpected UTF-8 BOM`。用 `[System.IO.File]::WriteAllText($p, $s, (New-Object System.Text.UTF8Encoding($false)))`。
+- **PowerShell 5.1 沒有三元運算子**：`(if(…){…}else{…})` 放在運算式位置會丟 `The term 'if' is not recognized`。
+- **`uv pip freeze` 的提示訊息會汙染鎖版檔**：用 PowerShell 管線收集會把 `Using Python … environment at: …` 一起寫進去，拿去安裝得到 `Couldn't parse requirement … at position 0`。用 `2>$null` 並過濾。**我在同一輪裡先交付了一份這樣的壞鎖版檔，只有真的拿它建第二個環境時才發現。**
+- **Store 版 `python` 代理殼**（`…\WindowsApps\python.exe`）在非互動工作階段會無回應地吊死。一律用絕對解譯器路徑。
+- **R 的 `tempdir()` 不等於 Python 的 `tempfile.gettempdir()`**：R 回每個工作階段的 `…\Temp\RtmpXXXX`，Python 回父目錄。`templates/r-python-template.qmd` 早就用 `r.pq` 橋解掉了——**動既有檔案之前先讀它**，不要重新發明倉庫已解的問題。
+
+### 六、Windows 11 升級仍未完成
+
+三次嘗試、兩種來源映像（安裝助理 ESD 26200 / 官網 ISO 26300，SHA256 已核對），失敗簽名完全相同：Pre-Finalize、`0x80070057 - 0x50015`。換映像不影響結果。
+
+**確定的機制**：`RegLoadKeyW` 對所有離線 hive 回傳 Win32 `87`（NewOS `SOFTWARE`、SafeOS `SYSTEM`、本機 `elam`）。`elam` 本身是合法 `regf`、32,768 bytes、一般使用者讀得到，所以不是損壞或權限問題。
+
+本機同時常駐 Kaspersky KES 14.1.0.423（含開機 ELAM `klelam.sys`）、**亿赛通 Cobra DocGuard**（含 `CDGRegedit` 登錄檔元件）、**天锐绿盾 Tipray**。**沒有確定是哪一個驅動**，需管理員列舉 `fltmc filters` 與登錄檔回呼。
+
+**下一步先試**（前三次都沒用過，失敗點正是 Dynamic Update 的 SSU 注入）：
+
+```powershell
+F:\setup.exe /auto upgrade /DynamicUpdate disable /eula accept
+```
+
+細節與 IT 交接單：`reports/2026-10-06/Win11升級第三次失敗_根因與IT請求_20261006.md`。
+
 ## 2026-09-21 更正（優先於下方歷史紀錄）
 
 - 本機 GT 730 的 PCI ID 已實讀為 `VEN_10DE&DEV_0F02`，屬 Fermi 舊型版本；不能按「GT 730」名稱推定 Kepler，也不能套用下文 472.xx 驅動建議。NVIDIA 官方支援討論：https://forums.developer.nvidia.com/t/450-57-driver-version-for-geforce-gt-730/144948 。目前保持 CPU 分析，驅動與硬體更新交由 IT 核對。
@@ -79,7 +169,24 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 ## 幾個容易誤判的事實（皆已實測）
 
 - **Rtools 版本號不等於 R 次版本。** R 4.6 用的就是 Rtools45，CRAN 並未發行 rtools46。能否編譯請用 `R CMD SHLIB` 實測。
-- **Rtools 不該加進 PATH。** R 靠登錄機碼 `HKLM\SOFTWARE\R-core\Rtools` 尋找；而 `rtools\usr\bin` 的 `sh` / `find` / `sort` 會蓋掉 Windows 內建同名指令。
+- **Rtools 不該**永久**加進 PATH**，因為 `rtools\usr\bin` 的 `sh` / `find` / `sort` 會蓋掉 Windows 內建同名指令。
+
+  > **2026-10-06 更正：「R 靠登錄機碼 `HKLM\SOFTWARE\R-core\Rtools` 尋找」這句不完整，照它做會失敗。**
+  >
+  > 實測：Rtools45 以 `/CURRENTUSER` 安裝後，登錄機碼確實寫在 `HKCU\SOFTWARE\R-core\Rtools\4.5.6768`（不是 HKLM），但 `R CMD SHLIB` 仍然報 **`'make' not found`**。
+  >
+  > R 4.5／4.6 的真正機制是 `etc\x64\Makeconf` 讀 **`RTOOLS45_HOME`** 去定位編譯器（`LOCAL_SOFT = $(RTOOLS45_HOME)/x86_64-w64-mingw32.static.posix`）；安裝器會把這個變數設成使用者層級。但 **`make.exe` 本身在 `rtools45\usr\bin`，必須在 PATH 上**，建置才啟動得起來。
+  >
+  > 所以正確做法是**只在建置的那個工作階段**設這兩樣：
+  >
+  > ```powershell
+  > $env:RTOOLS45_HOME = 'C:\work\rtools45'
+  > $env:Path = "C:\work\rtools45\usr\bin;$env:Path"
+  > ```
+  >
+  > 或用 `診斷操作系統\Start_Analytics_v2.ps1 -WithToolchain`。
+  >
+  > 另外要記得：改完使用者層級環境變數後，**既有行程看不到**（`$env:` 是行程啟動時的快照，同本檔第 4 條教訓）。我第一次測失敗就是這個原因，不是 Rtools 裝壞。
 - **Rtools 的 gcc 只服務 R，不服務 Python。** Python 的 C 擴充需要 MSVC Build Tools，兩條編譯鏈完全獨立（`scikit-survival` 因此裝不起來）。
 - **Windows PowerShell 5.1 傳參數給原生程式會吃掉內嵌引號。** `python -c "...d.metadata[\"Name\"]..."` 會變成 `d.metadata[Name]` 而拋 `NameError`。用不需引號的寫法。
 
@@ -100,20 +207,58 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 
 ## 環境重建
 
-升級 Windows 11 時 `%APPDATA%\uv\python` 整個目錄消失，`C:\work\envs\ds` 的套件還在但底層直譯器沒了。重建：
+升級 Windows 11 時 `%APPDATA%\uv\python` 整個目錄消失，`C:\work\envs\ds` 的套件還在但底層直譯器沒了。
+
+> **下面這份是 2026-10-06 實測可行的版本。舊版的三個問題：`uv python install` 會把 Python 裝到會被 MSIX 重導的 `%APPDATA%`、`-r env/python-ds-requirements.lock.txt` 根本無解、`ipykernel install --user` 等於沒註冊。詳見本檔開頭的 2026-10-06 更正。**
 
 ```powershell
+# 1) Python 與快取都放 C:\work，不要放 AppData（MSIX 重導 + 無法建符號連結）
+$env:UV_PYTHON_INSTALL_DIR = 'C:\work\pythons'
+$env:UV_CACHE_DIR          = 'C:\work\uv-cache'
 uv python install 3.13
+
+# 2) 核心環境：用「已驗證」的那份，不是 python-ds-requirements.lock.txt
 uv venv --python 3.13 C:\work\envs\ds
-uv pip install --python C:\work\envs\ds\Scripts\python.exe -r env/python-ds-requirements.lock.txt
-C:\work\envs\ds\Scripts\python.exe -m ipykernel install --user --name ds --display-name "Python 3.13 (ds)"
+uv pip install --python C:\work\envs\ds\Scripts\python.exe -r env/python-ds-core.in
+
+# 3) 五個衛星環境（互斥套件）
+.\診斷操作系統\Build_Satellite_Envs.ps1
+
+# 4) Jupyter kernel：手寫 kernel.json，argv[0] 用絕對路徑
+#    （--user 會寫進 Claude 容器；--prefix 會寫出裸 "python"）
+$env:JUPYTER_DATA_DIR = 'C:\work\jupyter'
+New-Item -ItemType Directory 'C:\work\jupyter\kernels\ds' -Force | Out-Null
+$spec = '{
+  "argv": ["C:\\work\\envs\\ds\\Scripts\\python.exe", "-m", "ipykernel_launcher", "-f", "{connection_file}"],
+  "display_name": "Python 3.13 (ds)", "language": "python", "metadata": {"debugger": true}
+}'
+# 不可用 Set-Content -Encoding utf8：PS 5.1 會寫 BOM，json.load 直接拒收
+[System.IO.File]::WriteAllText('C:\work\jupyter\kernels\ds\kernel.json', $spec,
+  (New-Object System.Text.UTF8Encoding($false)))
+
+# 5) 驗收——標準是「跑出結果」，不是「裝成功」
+C:\work\envs\ds\Scripts\python.exe .\診斷操作系統\Accept_Python_Stack.py   # 期望 15/15
+C:\work\R\R-4.6.1\bin\x64\Rscript.exe .\診斷操作系統\Accept_R_Stack.R      # 期望 10/10
 ```
 
-**教訓：復原用的鎖版檔本身也要進版控。** 它原本只躺在 `C:\work` 裡，等於復原能力沒有備份。
+R 與 Quarto 都可以**使用者層級**安裝，不需管理員：
+
+```powershell
+# R 4.6.1（安裝檔簽章 CN=Martyn Plummer）
+.\R-4.6.1-win.exe /CURRENTUSER /SILENT /DIR=C:\work\R\R-4.6.1 /NOICONS /COMPONENTS=main,x64
+.\診斷操作系統\Install_R_Stack_v2.R   # 逐一安裝，不用 pak
+# Quarto：zip 解壓到 C:\work\tools 即可，不需安裝器
+```
+
+**教訓一：復原用的鎖版檔本身也要進版控。** 它原本只躺在 `C:\work` 裡，等於復原能力沒有備份。
+
+**教訓二（2026-10-06 補）：進版控還不夠，必須拿它真的重建一次。** 那份鎖版檔進版控整整兩週，沒人用過，而它從第一行就無解。**備份沒做還原測試，等於沒有備份。**
 
 ## 日常工作專案：`C:\work\projects\lab`
 
-不在 OneDrive、純 ASCII 路徑，附帶專屬 `.venv`（Python 3.13.15、176 套件，版本與 `env/python-ds-requirements.lock.txt` 一致）。`templates/r-python-template.qmd` 是已實測 render 成功的 R+Python 混用範本。
+不在 OneDrive、純 ASCII 路徑，附帶專屬 `.venv`。`templates/r-python-template.qmd` 是已實測 render 成功的 R+Python 混用範本——它用 `getwd()/.venv` 綁定專案內解譯器，所以要**在這個專案目錄裡** render。
+
+> 2026-10-06 更正：此處原寫「Python 3.13.15、176 套件，版本與 `env/python-ds-requirements.lock.txt` 一致」。新機上重建後是 **Python 3.13.16、728 個發行版**，依據改為 `env/python-ds-verified.lock.txt`。
 
 **uv 以硬連結共用快取**：再建一份 176 套件的環境，磁碟實際只多佔約 **24 MB**，不是再複製一份 1 GB。所以「每個專案一個 `.venv`」在這台機器上是負擔得起的。
 
