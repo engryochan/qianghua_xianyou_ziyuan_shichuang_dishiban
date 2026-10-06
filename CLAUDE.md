@@ -52,7 +52,11 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 - **本帳戶無法建立符號連結**（`Administrator privilege required`），junction 可以。`uv python install` 用符號連結做次版本連結，在 `%APPDATA%` 下會留壞連結。**設 `UV_PYTHON_INSTALL_DIR=C:\work\pythons`。**
 - **`ipykernel install --user` 等於沒註冊**（寫進容器）。要設 `JUPYTER_DATA_DIR=C:\work\jupyter`，並**手寫 `kernel.json`**，`argv[0]` 用絕對路徑——`--prefix` 寫出來的是裸 `"python"`，會走 PATH 指到錯的解譯器。
 
-  目前 `C:\work\jupyter\kernels` 下有六個，核心加五個衛星：`ds`、`fin`、`mlops`、`nlp`、`rl`、`xai`。每個都已確認其解譯器真的能 `import ipykernel`。
+  目前 `C:\work\jupyter\kernels` 下有六個，核心加五個衛星：`ds`、`fin`、`mlops`、`nlp`、`rl`、`xai`。重建用 `診斷操作系統/Register_Kernels_And_Runtime.ps1`。
+
+  **`jupyter kernelspec list` 只列舉目錄，不解析 `kernel.json`。** 一份 JSON 壞掉的 kernel 它照樣列出來，看起來一切正常。實際踩過：用字串拼接產生 `kernel.json` 時 Windows 路徑的反斜線少轉義一層，寫出 `"argv": ["C:\work\envs\fin\..."]`，`json.load` 拋 `Invalid \escape`，而 `kernelspec list` 六個全列、毫無異狀。
+
+  所以 kernel.json 一律用 `ConvertTo-Json` 產生（它會正確轉義路徑），而且驗收要**真的 `json.load` 一次**並確認 `argv[0]` 指到存在的解譯器——見 `診斷操作系統/Accept_Jupyter_Kernels.py`。
 
 ### 四、驗收用的新腳本
 
@@ -63,6 +67,10 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 | `診斷操作系統/Accept_Satellites.py` | 衛星環境匯入與約束守衛 |
 | `診斷操作系統/Accept_Satellites_Domain.py` | 衛星環境領域計算驗收（需網路的標 SKIP，不混進 PASS） |
 | `診斷操作系統/Accept_CmdStan.R` | 編譯並擬合真實 Stan 模型，檢查參數回收與 rhat |
+| `診斷操作系統/Accept_Flair_NER.py` | flair 實跑 NER（會下載模型到 `~\.flair`） |
+| `診斷操作系統/Accept_Jupyter_Kernels.py` | 真的 `json.load` 每份 kernel.json 並探測其解譯器 |
+| `診斷操作系統/Register_Kernels_And_Runtime.ps1` | 重建六個 kernel 與 OpenMP `.pth`（冪等） |
+| `診斷操作系統/Run_Full_Regression.ps1` | **一次跑完 8 節全套回歸**（含 BOM，必須保留） |
 | `診斷操作系統/Reconcile_PythonLock.py` | 鎖版檔矛盾的可稽核迭代鬆綁器 |
 | `診斷操作系統/Build_Satellite_Envs.ps1` | 重建五個衛星環境 |
 | `診斷操作系統/Install_R_Stack_v2.R` | R 堆疊逐一安裝（不用 pak） |

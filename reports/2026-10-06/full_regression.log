@@ -22,7 +22,7 @@ data.table aggregate                       PASS   rows=2 tot=5000050000
 duckdb parquet round-trip                  PASS   rows=100000 concat=abcd
 fixest high-dim FE regression              PASS   beta_x=1.4975
 tidymodels fit                             PASS   accuracy=0.8233
-ranger + yardstick                         PASS   r2=0.8068
+ranger + yardstick                         PASS   r2=0.8074
 time series: fable forecast                PASS   horizons=6
 quantmod/PerformanceAnalytics loadable     PASS   sharpe=0.6643
 reticulate -> project venv                 PASS   python=3.13
@@ -98,14 +98,13 @@ RESULT: PASS
 Output created: regress.html
 python 3.13.16 | polars
 ########## 8. Jupyter kernels ##########
-Available kernels:
-  python3    C:\work\envs\ds\share\jupyter\kernels\python3
-  ds         C:\work\jupyter\kernels\ds
-  fin        C:\work\jupyter\kernels\fin
-  mlops      C:\work\jupyter\kernels\mlops
-  nlp        C:\work\jupyter\kernels\nlp
-  rl         C:\work\jupyter\kernels\rl
-  xai        C:\work\jupyter\kernels\xai
+  ds     PASS ipykernel 7.3.0  <- C:\work\envs\ds\Scripts\python.exe
+  fin    PASS ipykernel 7.4.0  <- C:\work\envs\fin\Scripts\python.exe
+  mlops  PASS ipykernel 7.4.0  <- C:\work\envs\mlops\Scripts\python.exe
+  nlp    PASS ipykernel 7.4.0  <- C:\work\envs\nlp\Scripts\python.exe
+  rl     PASS ipykernel 7.4.0  <- C:\work\envs\rl\Scripts\python.exe
+  xai    PASS ipykernel 7.4.0  <- C:\work\envs\xai\Scripts\python.exe
+  kernels bad: 0
 
 ################ REGRESSION FAILURES: 0 ################
 
