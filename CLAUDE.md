@@ -52,6 +52,8 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 - **本帳戶無法建立符號連結**（`Administrator privilege required`），junction 可以。`uv python install` 用符號連結做次版本連結，在 `%APPDATA%` 下會留壞連結。**設 `UV_PYTHON_INSTALL_DIR=C:\work\pythons`。**
 - **`ipykernel install --user` 等於沒註冊**（寫進容器）。要設 `JUPYTER_DATA_DIR=C:\work\jupyter`，並**手寫 `kernel.json`**，`argv[0]` 用絕對路徑——`--prefix` 寫出來的是裸 `"python"`，會走 PATH 指到錯的解譯器。
 
+  目前 `C:\work\jupyter\kernels` 下有六個，核心加五個衛星：`ds`、`fin`、`mlops`、`nlp`、`rl`、`xai`。每個都已確認其解譯器真的能 `import ipykernel`。
+
 ### 四、驗收用的新腳本
 
 | 檔案 | 用途 |
@@ -82,7 +84,19 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 
 ### 五、本輪新增的其他地雷
 
-- **缺 `vcomp140.dll`**（Microsoft OpenMP 執行期）。本機有 `vcruntime140` / `msvcp140` / `concrt140`，就是沒有 OpenMP，也查無任何 VC++ Redistributable 安裝紀錄。任何連結 OpenMP 的 wheel 會報 `Could not find module <dll> (or one of its dependencies)`——**那個 DLL 明明在**，缺的是它的依賴。權宜解：環境內 `sklearn\.libs\vcomp140.dll` 自帶一份，複製到 `lightgbm\bin\`。正解請 IT 裝 VC++ Redistributable。
+- **缺 `vcomp140.dll`**（Microsoft OpenMP 執行期）。本機有 `vcruntime140` / `msvcp140` / `concrt140`，就是沒有 OpenMP，也查無任何 VC++ Redistributable 安裝紀錄。任何連結 OpenMP 的 wheel 會報 `Could not find module <dll> (or one of its dependencies)`——**那個 DLL 明明在**，缺的是它的依賴。
+
+  **Python 3.8 以後，Windows 的 DLL 搜尋不再看 `PATH`**（改用 `LOAD_LIBRARY_SEARCH_DEFAULT_DIRS`），只找 DLL 自身目錄、`System32`、以及 `os.add_dll_directory()` 註冊的目錄。所以「把 DLL 放某處再加進 PATH」**沒有用**，這點已實測否證。
+
+  現行做法：`C:\work\runtime\vcomp140.dll`（取自環境內 `sklearn\.libs`），六個環境的 `site-packages` 各放一份 `zz_work_runtime_dlls.pth`：
+
+  ```python
+  import os; os.path.isdir(r"C:\work\runtime") and os.add_dll_directory(r"C:\work\runtime")
+  ```
+
+  `isdir()` 守衛不可省——`.pth` 每次解譯器啟動都執行，對不存在的路徑呼叫 `add_dll_directory` 會拋例外並弄壞整個環境。
+
+  **根本解仍是請 IT 裝 VC++ Redistributable**（進 `System32` 就不需要任何環境層補丁）。
 - **`lightgbm==4.5.0` 配不了新版 scikit-learn**：sklearn 把 `force_all_finite` 改名 `ensure_all_finite` 並移除舊名，lightgbm 4.5.0 還在呼叫舊名 → `TypeError`。依賴求解器看不到，**只有真的 fit 一次才會知道**。用 `lightgbm>=4.6.0`。
 - **PowerShell 5.1 的 `Set-Content -Encoding utf8` 會寫 BOM**，`json.load` 直接拋 `Unexpected UTF-8 BOM`。用 `[System.IO.File]::WriteAllText($p, $s, (New-Object System.Text.UTF8Encoding($false)))`。
 - **PowerShell 5.1 沒有三元運算子**：`(if(…){…}else{…})` 放在運算式位置會丟 `The term 'if' is not recognized`。
