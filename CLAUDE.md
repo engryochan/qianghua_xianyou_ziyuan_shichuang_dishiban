@@ -59,10 +59,26 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 | `診斷操作系統/Accept_Python_Stack.py` | Python 15 項真實計算驗收 |
 | `診斷操作系統/Accept_R_Stack.R` | R 10 項，含 `arrow` 缺席守衛與 duckdb→reticulate→pyarrow |
 | `診斷操作系統/Accept_Satellites.py` | 衛星環境匯入與約束守衛 |
+| `診斷操作系統/Accept_Satellites_Domain.py` | 衛星環境領域計算驗收（需網路的標 SKIP，不混進 PASS） |
+| `診斷操作系統/Accept_CmdStan.R` | 編譯並擬合真實 Stan 模型，檢查參數回收與 rhat |
 | `診斷操作系統/Reconcile_PythonLock.py` | 鎖版檔矛盾的可稽核迭代鬆綁器 |
 | `診斷操作系統/Build_Satellite_Envs.ps1` | 重建五個衛星環境 |
 | `診斷操作系統/Install_R_Stack_v2.R` | R 堆疊逐一安裝（不用 pak） |
-| `診斷操作系統/Start_Analytics_v2.ps1` | 工作階段入口（＝`C:\work\Start_Analytics.ps1`） |
+| `診斷操作系統/Install_CmdStan.R` | 從 Stan r-universe 裝 cmdstanr 並編譯 CmdStan |
+| `診斷操作系統/Start_Analytics_v2.ps1` | 工作階段入口（＝`C:\work\Start_Analytics.ps1`），`-WithToolchain` 開啟編譯鏈 |
+
+### 四之二、編譯鏈（Rtools45 + CmdStan，皆使用者層級）
+
+| 項目 | 位置 |
+|---|---|
+| Rtools45 | `C:\work\rtools45`（`/CURRENTUSER /MERGETASKS=!addtopath`，**沒有**污染 PATH） |
+| gcc | `C:\work\rtools45\x86_64-w64-mingw32.static.posix\bin\gcc.exe`（14.3.0） |
+| make | `C:\work\rtools45\usr\bin\make.exe` |
+| CmdStan | `C:\work\cmdstan\cmdstan-2.40.0`（cmdstanr 0.9.0，來自 Stan r-universe，不在 CRAN） |
+
+要編譯時用 `Start_Analytics_v2.ps1 -WithToolchain`；平時**不要**開，因為
+`usr\bin` 會蓋掉 Windows 內建的 `sh` / `find` / `sort`。詳細機制見本檔
+「幾個容易誤判的事實」裡的 Rtools 更正。
 
 ### 五、本輪新增的其他地雷
 
@@ -201,7 +217,9 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 | `診斷操作系統/Win10_Optimize.ps1` | 只負責「更新已安裝的東西」 |
 | `診斷操作系統/Win10_Diagnose_v3.ps1` / `Setup_DataStack_v2.ps1` / `Win10_Optimize_v2.ps1` | 另一輪作者的版本，設計更保守（不改全域 `.Rprofile`、不動 PATH） |
 | `診斷操作系統/Win11_App_RealTest.ps1` | **驗證應用是否真的畫得出畫面**（不是「有沒有裝」）。像素級黑屏判定 + 渲染旗標逐一實測 |
-| `env/python-ds-requirements.lock.txt` | Python 工作環境的鎖版檔，**重建環境的唯一依據** |
+| `env/python-ds-core.in` | **重建核心環境的依據**（698 個 `==` + 28 個 `>=`，已實測可建成） |
+| `env/python-ds-verified.lock.txt` | 重建後 freeze 的 728 行實況，已通過 15/15 驗收 |
+| `env/python-ds-requirements.lock.txt` | ~~重建環境的唯一依據~~ **這份本身無解，不要用**。只留作歷史證物，見本檔開頭 2026-10-06 更正第一節 |
 
 流程：先 `Win10_Diagnose_v2.ps1`，再照 `99_建議指令.txt` 選 `Setup_DataStack.ps1` 的開關，第一次一律加 `-WhatIf`。
 

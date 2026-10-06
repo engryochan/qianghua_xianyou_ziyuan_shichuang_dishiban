@@ -1,0 +1,23 @@
+﻿
+--- fin ---
+  openbb provider coverage (offline)       PASS           openbb loaded, providers registered=19
+  PyPortfolioOpt max_sharpe                PASS           pypfopt weights sum=1.0000
+  OK
+--- nlp ---
+  flair tokenisation (no model download)   PASS           flair tokenised 7 tokens, first=Taipei
+  flair NER tagging                        SKIP(network)  needs a ~400MB model download; not attempted offline
+  OK
+  TextMatch(text_column="description", match_items=r"\b\d{3}-\d{3}-\d{4}\b", match_type="regex")
+--- mlops ---
+  evidently DataDriftPreset report         PASS           report produced, top-level keys=['metrics', 'tests']
+  nannyml univariate drift                 PASS           nannyml drift computed, rows=20
+  OK
+--- xai ---
+  dalex Explainer + variable importance    PASS           most important var=a
+  OK
+  warnings.warn(
+--- rl ---
+  gluonts SeasonalNaive forecast           PASS           gluonts 0.17.0 forecast len=7 mean0=93.0
+  gevent greenlets                         PASS           greenlets ran, squares=[0, 1, 4, 9, 16]
+  tianshou Batch                           PASS           tianshou 2.0.1 Batch shape=(4, 3) torch=2.14.1+cpu
+  OK

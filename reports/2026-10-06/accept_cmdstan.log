@@ -1,0 +1,18 @@
+﻿Rscript.exe : This is cmdstanr version 0.9.0
+At line:3 char:1
++ & 'C:\work\R\R-4.6.1\bin\x64\Rscript.exe' C:\work\logs\accept_cmdstan ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (This is cmdstanr version 0.9.0:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+- CmdStanR documentation and vignettes: mc-stan.org/cmdstanr
+- Use set_cmdstan_path() to set the path to CmdStan
+- Use install_cmdstan() to install CmdStan
+CmdStan path set to: C:/work/cmdstan/cmdstan-2.40.0
+cmdstan: 2.40.0 at C:/work/cmdstan/cmdstan-2.40.0 
+compiling...
+compiled -> C:/work/cmdstan/accept_model.exe 
+posterior mu   = 3.5128  (true 3.5)
+posterior sigma= 1.1557  (true 1.2)
+max rhat       = 1.0032 
+RESULT: PASS 

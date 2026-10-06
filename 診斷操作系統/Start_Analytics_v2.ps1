@@ -15,7 +15,7 @@
 
   Usage:
       . C:\work\Start_Analytics.ps1                  # analysis
-      . C:\work\Start_Analytics.ps1 -WithToolchain   # + compile R/Stan from source
+      . C:\work\Start_Analytics.ps1 -WithToolchain   # + compile R / Stan from source
 #>
 
 param([switch]$WithToolchain)
@@ -49,6 +49,10 @@ Write-Host ("  R       : " + (& "$R_BIN\Rscript.exe" -e "cat(R.version.string)" 
 Write-Host ("  quarto  : " + (& "$QUARTO\quarto.cmd" --version))
 Write-Host ("  uv      : " + (& "$UV_BIN\uv.exe" --version))
 
+$satellites = 'fin','nlp','mlops','xai','rl'
+$present = @($satellites | Where-Object { Test-Path "C:\work\envs\$_\Scripts\python.exe" })
+Write-Host ("  satellites: " + ($present -join ', '))
+
 if ($WithToolchain) {
     # rtools45\usr\bin holds make.exe, which R CMD SHLIB needs on PATH -- but it
     # also holds sh / find / sort, which shadow the Windows built-ins. So it goes
@@ -57,16 +61,23 @@ if ($WithToolchain) {
     $env:RTOOLS45_HOME = 'C:\work\rtools45'
     $env:Path = "C:\work\rtools45\usr\bin;$env:Path"
     $env:CMDSTAN = 'C:/work/cmdstan/cmdstan-2.40.0'
-    Write-Host '  toolchain ON (session only):' -ForegroundColor Yellow
-    # gcc lives in x86_64-w64-mingw32.static.posixin, NOT usrin -- and it does
-    # not need to be on PATH at all: R's Makeconf finds it via RTOOLS45_HOME.
-    # Only make.exe (in usrin) has to be reachable. Report gcc by absolute path.
-    $gccExe = 'C:\worktools45_64-w64-mingw32.static.posixin\gcc.exe'
-    Write-Host ("    gcc     : " + (& $gccExe --version | Select-Object -First 1))
-    Write-Host ("    make    : " + (Get-Command make).Source)
+
+    # gcc lives in x86_64-w64-mingw32.static.posix\bin, NOT usr\bin -- and it does
+    # not need to be on PATH at all: R's Makeconf locates it via RTOOLS45_HOME.
+    # Only make.exe has to be reachable. Report gcc by absolute path.
+    $gccExe = Join-Path $env:RTOOLS45_HOME 'x86_64-w64-mingw32.static.posix\bin\gcc.exe'
+
+    Write-Host '  toolchain ON (this session only):' -ForegroundColor Yellow
+    if (Test-Path $gccExe) {
+        Write-Host ("    gcc     : " + ((& $gccExe --version) | Select-Object -First 1))
+    } else {
+        Write-Host "    gcc     : NOT FOUND at $gccExe"
+    }
+    $mk = Get-Command make -ErrorAction SilentlyContinue
+    Write-Host ("    make    : " + $(if ($mk) { $mk.Source } else { 'NOT FOUND' }))
     Write-Host ("    cmdstan : " + $env:CMDSTAN)
-    Write-Host '    NOTE: rtools45\usr\bin is now ahead of Windows sh/find/sort in THIS session.'
+    Write-Host '    NOTE: rtools45\usr\bin now precedes the Windows sh/find/sort in THIS session.'
 } else {
-    Write-Host '  toolchain OFF. Use -WithToolchain to compile R/Stan from source.'
+    Write-Host '  toolchain OFF. Use -WithToolchain to compile R / Stan from source.'
     Write-Host '  (rtools45\usr\bin shadows the built-in sh/find/sort, so it is opt-in.)'
 }
