@@ -98,7 +98,18 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 
   **根本解仍是請 IT 裝 VC++ Redistributable**（進 `System32` 就不需要任何環境層補丁）。
 - **`lightgbm==4.5.0` 配不了新版 scikit-learn**：sklearn 把 `force_all_finite` 改名 `ensure_all_finite` 並移除舊名，lightgbm 4.5.0 還在呼叫舊名 → `TypeError`。依賴求解器看不到，**只有真的 fit 一次才會知道**。用 `lightgbm>=4.6.0`。
-- **PowerShell 5.1 的 `Set-Content -Encoding utf8` 會寫 BOM**，`json.load` 直接拋 `Unexpected UTF-8 BOM`。用 `[System.IO.File]::WriteAllText($p, $s, (New-Object System.Text.UTF8Encoding($false)))`。
+- **BOM 的方向在兩種檔案上剛好相反，兩邊都踩過：**
+
+  | 檔案 | BOM | 踩到的症狀 |
+  |---|---|---|
+  | 資料檔（`kernel.json` 等） | **不可有** | `Set-Content -Encoding utf8` 會寫 BOM，`json.load` 直接拋 `Unexpected UTF-8 BOM` |
+  | **含非 ASCII 的 `.ps1`** | **必須有** | 沒有 BOM 時 PS 5.1 當 ANSI(GBK) 解碼，腳本裡的 `診斷操作系統` 變成 `瑷烘柗鎿嶄綔绯荤当`，路徑全失效 |
+
+  寫資料檔：`[System.IO.File]::WriteAllText($p, $s, (New-Object System.Text.UTF8Encoding($false)))`
+  寫 `.ps1`：同一行但用 `UTF8Encoding($true)`。
+
+  **後者的症狀特別會騙人**：我用 Bash heredoc 寫了一支回歸測試腳本（無 BOM），跑出「14 個失敗、而且完全沒有輸出」。看起來像整個環境崩了，其實腳本連檔案都沒找到。改成有 BOM 後同一支腳本是 **0 失敗**。
+  **凡是「全部都失敗」又「沒有任何輸出」，先懷疑你的 runner，不要懷疑被測物。**
 - **PowerShell 5.1 沒有三元運算子**：`(if(…){…}else{…})` 放在運算式位置會丟 `The term 'if' is not recognized`。
 - **`uv pip freeze` 的提示訊息會汙染鎖版檔**：用 PowerShell 管線收集會把 `Using Python … environment at: …` 一起寫進去，拿去安裝得到 `Couldn't parse requirement … at position 0`。用 `2>$null` 並過濾。**我在同一輪裡先交付了一份這樣的壞鎖版檔，只有真的拿它建第二個環境時才發現。**
 - **Store 版 `python` 代理殼**（`…\WindowsApps\python.exe`）在非互動工作階段會無回應地吊死。一律用絕對解譯器路徑。

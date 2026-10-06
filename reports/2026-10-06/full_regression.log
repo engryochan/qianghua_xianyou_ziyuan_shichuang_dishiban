@@ -1,0 +1,112 @@
+﻿########## 1. Python core ##########
+
+numpy                    PASS   sum=499999500000
+polars                   PASS   v1.44.2 [{'g': 'a', 's': 4.0}, {'g': 'b', 's': 6.0}]
+duckdb                   PASS   concat=abcd sum=5000050000
+pyarrow                  PASS   v25.0.1 rows=100000
+pandas+excel             PASS   pandas2.3.3 roundtrip_rows=3 equal=True
+scikit-learn             PASS   R2=0.9689
+statsmodels              PASS   beta=1.011,2.007,-1.509
+lightgbm                 PASS   v4.6.0 acc=1.0000
+xgboost                  PASS   v2.1.4 acc=1.0000
+torch                    PASS   v2.14.0+cpu cuda=False norm=14661.92
+jax                      PASS   v0.11.2 val=332833504
+numpyro                  PASS   v0.22.0 post_mu=3.008
+pymc                     PASS   v6.3.2 post_mu=2.053
+econml                   PASS   ATE=1.9660 (seeded; unseeded runs drifted 1.82-2.03)
+polars/arrow interop     PASS   polars->arrow rows=3
+PASS 15 / 15
+########## 2. R core ##########
+arrow is absent (required)                 PASS   arrow not installed, as intended
+data.table aggregate                       PASS   rows=2 tot=5000050000
+duckdb parquet round-trip                  PASS   rows=100000 concat=abcd
+fixest high-dim FE regression              PASS   beta_x=1.4975
+tidymodels fit                             PASS   accuracy=0.8233
+ranger + yardstick                         PASS   r2=0.8068
+time series: fable forecast                PASS   horizons=6
+quantmod/PerformanceAnalytics loadable     PASS   sharpe=0.6643
+reticulate -> project venv                 PASS   python=3.13
+duckdb loaded FIRST, then pyarrow via reticulate PASS   pyarrow=25.0.1 polars=1.44.2
+PASS 10 / 10
+########## 3. satellites: imports + constraint guards ##########
+--- fin ---
+  openbb                               PASS  ?
+  pypfopt                              PASS  1.6.0
+  s3fs                                 PASS  2026.9.0
+  fsspec                               PASS  2026.9.0
+  ALL PASS
+--- nlp ---
+  flair                                PASS  0.15.1
+  transformer_smaller_training_vocab   PASS  ?
+  transformers<5 held                  PASS  4.57.6
+  ALL PASS
+powershell :   TextMatch(text_column="description", match_items=r"\b\d{3}-\d{3}-\d{4}\b", match_type="regex")
+At line:1 char:302
++ ... tch {} } }; powershell -NoProfile -ExecutionPolicy Bypass -File C:\wo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  TextMatch(tex...h_type="regex"):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+--- mlops ---
+  evidently                            PASS  0.7.23
+  nannyml                              PASS  0.13.1
+  feast                                PASS  0.66.0
+  plotly<6 held                        PASS  5.24.1
+  ALL PASS
+--- xai ---
+  dalex                                PASS  1.8.0
+  dalex+plotly                         PASS  plotly 7.1.0
+  ALL PASS
+--- rl ---
+  tianshou                             PASS  2.0.1
+  gluonts                              PASS  0.17.0
+  gevent                               PASS  26.9.0
+  cffi                                 PASS  2.1.1
+  ALL PASS
+########## 4. satellites: domain computation ##########
+--- fin ---
+  openbb provider coverage (offline)       PASS           openbb loaded, providers registered=19
+  PyPortfolioOpt max_sharpe                PASS           pypfopt weights sum=1.0000
+  OK
+--- nlp ---
+  flair tokenisation (no model download)   PASS           flair tokenised 7 tokens, first=Taipei
+  flair NER tagging                        SKIP(network)  needs a ~400MB model download; not attempted offline
+  OK
+  TextMatch(text_column="description", match_items=r"\b\d{3}-\d{3}-\d{4}\b", match_type="regex")
+--- mlops ---
+  evidently DataDriftPreset report         PASS           report produced, top-level keys=['metrics', 'tests']
+  nannyml univariate drift                 PASS           nannyml drift computed, rows=20
+  OK
+--- xai ---
+  dalex Explainer + variable importance    PASS           most important var=a
+  OK
+  warnings.warn(
+--- rl ---
+  gluonts SeasonalNaive forecast           PASS           gluonts 0.17.0 forecast len=7 mean0=93.0
+  gevent greenlets                         PASS           greenlets ran, squares=[0, 1, 4, 9, 16]
+  tianshou Batch                           PASS           tianshou 2.0.1 Batch shape=(4, 3) torch=2.14.1+cpu
+  OK
+########## 5. flair NER (real model) ##########
+entities: [('Taipei', 'LOC', 1.0), ('Taiwan', 'LOC', 0.999), ('Lei Ou', 'ORG', 0.666), ('Kuala Lumpur', 'LOC', 0.996)]
+RESULT: PASS
+########## 6. CmdStan (compile + fit) ##########
+posterior mu   = 3.5128  (true 3.5)
+posterior sigma= 1.1557  (true 1.2)
+max rhat       = 1.0032 
+RESULT: PASS 
+########## 7. Quarto render of the repo template ##########
+Output created: regress.html
+python 3.13.16 | polars
+########## 8. Jupyter kernels ##########
+Available kernels:
+  python3    C:\work\envs\ds\share\jupyter\kernels\python3
+  ds         C:\work\jupyter\kernels\ds
+  fin        C:\work\jupyter\kernels\fin
+  mlops      C:\work\jupyter\kernels\mlops
+  nlp        C:\work\jupyter\kernels\nlp
+  rl         C:\work\jupyter\kernels\rl
+  xai        C:\work\jupyter\kernels\xai
+
+################ REGRESSION FAILURES: 0 ################
+
+
