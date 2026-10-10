@@ -1,0 +1,171 @@
+{
+    "collectedAt":  "2026-10-10T14:08:59.5827694+02:00",
+    "os":  {
+               "caption":  "Microsoft Windows 11 专业版",
+               "productName":  "Windows 10 Pro",
+               "displayVersion":  "26H2",
+               "currentBuild":  "26300",
+               "ubr":  9457,
+               "editionID":  "Professional",
+               "isWin11_byBuild":  true,
+               "installDate":  "\/Date(1791631036000)\/",
+               "lastBootUpTime":  "\/Date(1791630877500)\/",
+               "uptimeHours":  0.91
+           },
+    "firmware":  {
+                     "partitionStyle":  "GPT",
+                     "uefiSecureBootEnabled":  0,
+                     "secureBootVerdict":  "未啟用 (registry UEFISecureBootEnabled=0)",
+                     "tpmDevice":  "受信任的平台模块 2.0 / ACPI\\MSFT0101\\1 / Status=OK / ErrorCode=0",
+                     "tpmServiceStatus":  "Running"
+                 },
+    "deviceGuard":  {
+                        "VirtualizationBasedSecurityStatus":  2,
+                        "SecurityServicesConfigured":  [
+                                                           0
+                                                       ],
+                        "SecurityServicesRunning":  [
+                                                        0
+                                                    ],
+                        "AvailableSecurityProperties":  [
+                                                            1,
+                                                            3,
+                                                            5,
+                                                            6,
+                                                            7,
+                                                            8
+                                                        ]
+                    },
+    "rebootPending":  {
+                          "cbs":  true,
+                          "windowsUpdate":  true,
+                          "pendingFileRename":  false,
+                          "rebootedSinceUpgrade":  false
+                      },
+    "storage":  {
+                    "disks":  [
+                                  {
+                                      "Number":  0,
+                                      "FriendlyName":  "HAILAN 256G",
+                                      "SerialNumber":  "2601X1226A002104",
+                                      "SizeGB":  238.47,
+                                      "PartitionStyle":  "GPT",
+                                      "BusType":  "SATA",
+                                      "HealthStatus":  "Healthy"
+                                  }
+                              ],
+                    "unallocatedGB":  0,
+                    "volumesWithLetters":  [
+                                               {
+                                                   "DriveLetter":  "C",
+                                                   "FileSystemLabel":  "系统",
+                                                   "FileSystem":  "NTFS",
+                                                   "SizeGB":  238.16,
+                                                   "FreeGB":  54.71
+                                               }
+                                           ],
+                    "opticalDrives":  0,
+                    "dDriveExists":  false,
+                    "windowsOldGB":  40.29
+                },
+    "security":  {
+                     "avProducts":  [
+                                        {
+                                            "displayName":  "Windows Defender",
+                                            "productState":  397568
+                                        },
+                                        {
+                                            "displayName":  "Kaspersky Endpoint Security for Windows",
+                                            "productState":  266240
+                                        }
+                                    ],
+                     "defender":  {
+                                      "AMServiceEnabled":  true,
+                                      "AntivirusEnabled":  true,
+                                      "RealTimeProtectionEnabled":  true,
+                                      "BehaviorMonitorEnabled":  true,
+                                      "IsTamperProtected":  true,
+                                      "AMEngineVersion":  "1.1.26080.3",
+                                      "AntivirusSignatureLastUpdated":  "\/Date(1791587109000)\/"
+                                  },
+                     "kasperskyServices":  [
+                                               {
+                                                   "Name":  "AVP.KES.14.1",
+                                                   "Status":  "Stopped",
+                                                   "StartType":  "Automatic"
+                                               },
+                                               {
+                                                   "Name":  "avpsus.KES.14.1",
+                                                   "Status":  "Running",
+                                                   "StartType":  "Automatic"
+                                               },
+                                               {
+                                                   "Name":  "klnagent",
+                                                   "Status":  "Running",
+                                                   "StartType":  "Automatic"
+                                               },
+                                               {
+                                                   "Name":  "ksnproxy",
+                                                   "Status":  "Stopped",
+                                                   "StartType":  "Manual"
+                                               }
+                                           ],
+                     "avpProcessRunning":  false,
+                     "dlpProcesses":  [
+                                          {
+                                              "Name":  "CDGRegedit",
+                                              "Count":  1
+                                          },
+                                          {
+                                              "Name":  "CdgTwin32",
+                                              "Count":  2
+                                          },
+                                          {
+                                              "Name":  "CdgTwin64",
+                                              "Count":  2
+                                          },
+                                          {
+                                              "Name":  "CdgUpGrade",
+                                              "Count":  1
+                                          },
+                                          {
+                                              "Name":  "LdTerm",
+                                              "Count":  1
+                                          },
+                                          {
+                                              "Name":  "LdTermDaemon",
+                                              "Count":  2
+                                          },
+                                          {
+                                              "Name":  "LdTermPlug",
+                                              "Count":  1
+                                          },
+                                          {
+                                              "Name":  "LdTermPlug64",
+                                              "Count":  1
+                                          }
+                                      ]
+                 },
+    "problemDevices":  [
+                           {
+                               "FriendlyName":  null,
+                               "InstanceId":  "ACPI\\INTC1070\\2\u0026DABA3FF\u00260",
+                               "Problem":  28
+                           },
+                           {
+                               "FriendlyName":  "SM 总线控制器",
+                               "InstanceId":  "PCI\\VEN_8086\u0026DEV_7AA3\u0026SUBSYS_72708086\u0026REV_11\\3\u002611583659\u00260\u0026FC",
+                               "Problem":  28
+                           },
+                           {
+                               "FriendlyName":  null,
+                               "InstanceId":  "ACPI\\INTC1056\\2\u0026DABA3FF\u00260",
+                               "Problem":  28
+                           },
+                           {
+                               "FriendlyName":  "PCI 设备",
+                               "InstanceId":  "PCI\\VEN_8086\u0026DEV_7AA4\u0026SUBSYS_72708086\u0026REV_11\\3\u002611583659\u00260\u0026FD",
+                               "Problem":  28
+                           }
+                       ]
+}

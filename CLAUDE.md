@@ -2,9 +2,44 @@
 
 ## 2026-10-10 Windows 11 升級後實測（目前狀態）
 
-本機為 MiniPC T1 / Intel H610I / i5-12400（6 核心、12 執行緒）/ 約 32 GB RAM / Intel UHD Graphics 730。已確認升級至 Windows 11 專業版 26H2，26300.9457，系統已啟用。SSD 回報 Healthy；4 個在位設備仍為錯誤碼 28（INTC1070、7AA3、INTC1056、7AA4），且有 CBS 待重啟標記。TPM、安全啟動及 BitLocker 尚未取得可驗證結果。
+本機為 MiniPC T1 / Intel H610I / i5-12400（6 核心、12 執行緒）/ 約 32 GB RAM / Intel UHD Graphics 730。已確認升級至 Windows 11 專業版 26H2，26300.9457，系統已啟用。SSD 回報 Healthy；4 個在位設備仍為錯誤碼 28（INTC1070、7AA3、INTC1056、7AA4），且有 CBS 待重啟標記。
 
 指定 WIM 與 ISO 已刪除，合計約 14.61 GiB。完整設備、驅動、軟體、防護、事件與診斷界限：[升級後診斷](reports/2026-10-10/Windows11升級後診斷.md)。以下較早記錄為歷史內容，舊華碩 / NVIDIA GT 730 資訊不能套用本機；Python 環境復原以 CLAUDE.md 的 2026-10-06 更正為準。
+
+### 14:10 複檢增補（優先於上段）
+
+同日第二輪複檢，證據 `reports/2026-10-10/recheck-1410/recheck.json`，詳述見上列報告的「增補複檢」各節。
+
+**要先處理的一件事：Kaspersky 主服務在本 OS 上起不來。**
+
+| 項目 | 狀態 |
+|---|---|
+| `AVP.KES.14.1` | **Stopped**，啟動類型 Automatic；`avp.exe` / `avpui.exe` 未執行 |
+| 事件日誌 | 13:14:56 與 13:17:00 各一次 **7009 + 7000**，逾時 45,000 / 30,000 ms 後啟動失敗 |
+| 仍在跑的 | `avpsus`、`klnagent`（IT 控制台看得到本機）、`klim6` |
+| Defender | **已接手**：即時防護／行為監控／防篡改皆 True，引擎 1.1.26080.3 |
+
+**本機並非無防護，但公司配發的 Kaspersky 實質未運作。** 這印證了 2026-10-06 對升級失敗的既有假設——**KES 14.1.0.423 與這個 OS 組建不相容**。請 IT 由 Security Center 處置並核對版本支援清單；**不要自行啟停或變更它**。
+
+另有 `LeaderTerm` / `LeaderTermDaemon`（天锐绿盾）被標為互動式服務而系統不允許，事件 7030 明寫「这项服务可能无法正常操作」——**第二層 DLP 也可能未正常運作**。`Hyper-V 主机计算服务` 與 `Microsoft Defender Core 服务` 亦各自逾時啟動失敗。
+
+**上段三項「未驗證」中，兩項已結案：**
+
+- **安全啟動 = 未啟用。** `Confirm-SecureBootUEFI` 需提權，但 `HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\State\UEFISecureBootEnabled = 0` **非提權即可讀**。開機方式為 UEFI（磁碟 0 為 GPT + EFI System 分割區）。
+- **TPM = 存在且正常，TPM 2.0。** `Win32_Tpm` 仍需提權，但設備層已確認：`受信任的平台模块 2.0`、`ACPI\MSFT0101\1`、Status OK、ErrorCode 0、`TPM` 服務 Running。僅 SpecVersion 等細項仍未驗證。
+- **BitLocker 仍未權威確認**（`Get-BitLockerVolume` 需提權）。旁證一致指向未啟用：`BDESVC` Stopped、僅 `C:` 且為純 NTFS、`bitlocker.json` 僅 6 bytes。權威確認需 `manage-bde -status C:`。
+
+**連帶的資安落差**：VBS 本身在跑（`VirtualizationBasedSecurityStatus = 2`），但 `SecurityServicesRunning = {0}` 且 HVCI 機碼不存在 → **記憶體完整性未啟用**，而硬體能力具備。與安全啟動關閉相呼應。
+
+**`D:\` 不存在，也沒有任何功能。** 全機只有一顆 `HAILAN 256G`（238.47 GB、GPT、SATA、Healthy），**未配置空間 0**，有代號的卷只有 `C:`，且**無光碟機**。先前的 `F:` 是手動掛載的 Win11 ISO，該 ISO 已刪，`F:` 也不存在了。要生成 `D:` 只能縮 `C:`（可用僅約 55 GB，其中 40 GB 是 `Windows.old`）或加裝第二顆磁碟。
+
+**`C:\Windows.old` 占 40.29 GB（409,445 檔）**，是目前最大可回收項，但**它是回到 Windows 10 的唯一回滾路徑**。本機失敗三次才升級成功，故刻意不刪；Windows 約 10 天後（約 2026-10-20）自動清除。確認不需回滾再用 `cleanmgr` 處理，**不要手動刪該目錄**。
+
+**待重啟旗標已擴大**：CBS `RebootPending` 仍 True，Windows Update `RebootRequired` **由 false 變 True**，而 `LastBootUpTime` 仍是 13:14:37——**升級後尚未重啟過**。上述服務逾時失敗都在這唯一一次開機之後，**一次正常重啟是應優先做的下一步**，重啟後再複驗。
+
+**四個錯誤碼 28 設備全屬 Intel 晶片組側**，由硬體自報的 class code 可判功能：`DEV_7AA3` 為 `CC_0C0500`（SMBus 控制器）、`DEV_7AA4` 為 `CC_0C8000`（序列匯流排／其他）、`INTC1070` 與 `INTC1056` 為 Intel 平台 ACPI 設備且無 CompatibleIds。四者皆 `VEN_8086` / `VEN_INTC`，**應由同一套 Intel 平台／晶片組驅動覆蓋**，不是四個獨立來源。全機設備：OK 128 / Error 4 / Unknown 1。
+
+**資料分析堆疊完整存活：`Run_Full_Regression.ps1` 八節 0 失敗**（Python 15/15、R 10/10、五衛星、flair NER、CmdStan 編譯擬合、Quarto render、六 kernel）。**上次升級摧毀的是 `%APPDATA%\uv\python`；這次全部資產都在 `C:\work`，一件未失——那個架構決定得到了驗證。**
 
 
 ## 2026-10-06 更正（優先於以下全部紀錄）
@@ -195,7 +230,12 @@ tar -xf 'C:\work\dl\RStudio-2026.09.0-174.zip' -C 'C:\work\RStudio'
 - **Store 版 `python` 代理殼**（`…\WindowsApps\python.exe`）在非互動工作階段會無回應地吊死。一律用絕對解譯器路徑。
 - **R 的 `tempdir()` 不等於 Python 的 `tempfile.gettempdir()`**：R 回每個工作階段的 `…\Temp\RtmpXXXX`，Python 回父目錄。`templates/r-python-template.qmd` 早就用 `r.pq` 橋解掉了——**動既有檔案之前先讀它**，不要重新發明倉庫已解的問題。
 
-### 六、Windows 11 升級仍未完成
+### 六、Windows 11 升級（**已於 2026-10-10 成功，本節轉為歷史**）
+
+> **狀態更新：升級已完成**，現為 Windows 11 專業版 26H2 / 26300.9457。
+> 本節保留的是失敗那三次的診斷過程，仍有參考價值——**其中對 Kaspersky KES 14.1
+> 與本 OS 組建不相容的推測，在升級後得到印證**（主服務逾時起不來，見本檔開頭
+> 「14:10 複檢增補」）。下文的「下一步先試」與 IT 請求已無須執行。
 
 三次嘗試、兩種來源映像（安裝助理 ESD 26200 / 官網 ISO 26300，SHA256 已核對），失敗簽名完全相同：Pre-Finalize、`0x80070057 - 0x50015`。換映像不影響結果。
 
