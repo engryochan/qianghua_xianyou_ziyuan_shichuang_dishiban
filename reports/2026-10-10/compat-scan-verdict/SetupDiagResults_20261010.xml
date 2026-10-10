@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag">
+  <Version>1.7.0.0</Version>
+  <ProfileName>CompatScanOnly</ProfileName>
+  <ProfileGuid>FFDAFD37-DB75-498A-A893-472D49A1311D</ProfileGuid>
+  <FailureData>Warning: Setup was executed with a /Compat ScanOnly command line switch and exited with the appropriate exit code.</FailureData>
+  <FailureData>If you wish to update this system, remove the /Compat ScanOnly switch from the command line.</FailureData>
+  <FailureDetails />
+  <Remediation>For more information about Setup command line switches, see here:
+"https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options"</Remediation>
+</SetupDiag>

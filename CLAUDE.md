@@ -62,7 +62,7 @@ uv 以硬連結共用快取，多開環境的邊際磁碟成本很小。
 
 | 項目 | 版本 | 位置 |
 |---|---|---|
-| Positron | 2026.09.1 build 2（Code OSS 1.130.0） | `C:\work\Positron`（官方 `UserSetup`，`/SILENT /DIR=`） |
+| Positron | 裝入時 2026.09.1 build 2（Code OSS 1.130.0）；**它會自動更新**，2026-10-10 已自行升到 2026.10.0 | `C:\work\Positron`（官方 `UserSetup`，`/SILENT /DIR=`） |
 | RStudio | 2026.09.0+174 | `C:\work\RStudio`（官方 **ZIP** 解壓，免安裝器） |
 
 **開始選單在 `%APPDATA%` 底下，所以我建的捷徑會被 MSIX 容器吃掉**——實測確認
@@ -203,6 +203,29 @@ F:\setup.exe /auto upgrade /DynamicUpdate disable /eula accept
 ```
 
 細節與 IT 交接單：`reports/2026-10-06/Win11升級第三次失敗_根因與IT請求_20261006.md`。
+
+#### 2026-10-10 補：相容性掃描結論乾淨，阻擋項只有 hive 那一個
+
+10-10 跑了兩次 `setup.exe /auto upgrade /compat scanonly /noreboot`（11:20 與 11:30）。
+**這是掃描模式，本來就不升級**，所以系統仍是 19045.7725 不是失敗；
+`setuperr.log` 裡的 `0x800705BB` / `CheckUserInterrupt` 就是 scanonly 的正常收尾。
+**`/DynamicUpdate disable` 至今仍未試過。**
+
+`ScanResult.xml` 的結論：
+
+- 硬體檢查全部 `BlockingType="None"`（BitLocker、Secure Boot、授權、語言包、FoD、flight signing、non-staged build）
+- `<Devices/>` 與 `<Programs/>` 皆空；`diagwrn.xml` / `diagerr.xml` 無任何非 None 的 BlockingType、無硬阻擋標記
+- 唯一被標記的是 `oem0.inf` / `oem1.inf`（`BlockMigration="True"`、未簽署）——實查為 **Microsoft Print To PDF** 與 **Microsoft XPS Document Writer v4**，Windows 自家內建虛擬印表機。這是常見無害產物（新系統會自行重建），**不是**升級阻擋項
+
+**所以相容性層面沒有障礙，唯一真正的阻擋仍是 Pre-Finalize 的 hive 載入失敗。**
+
+> **陷阱：`HKLM\SYSTEM\Setup\SetupDiag\Results` 不是原子性的，它會混不同次執行。**
+> 10-10 查到的內容是 `ProfileName=CompatScanOnly` + `UpgradeStartTime 10/10 11:30`，
+> 卻同時帶著 `FailureDetails = 0x80070057 … SafeOS.Mount`、`LastSetupPhase=Pre-Finalize`、
+> 而那兩個時間戳是 **10/06**——是上一次失敗升級的殘留欄位。
+> 只讀這個機碼會以為「相容性掃描死在 hive bug」。
+> **要信同時間寫出的 `C:\Windows\logs\SetupDiag\SetupDiagResults.xml`**，
+> 它的 `<FailureDetails />` 是空的。
 
 ## 2026-09-21 更正（優先於下方歷史紀錄）
 

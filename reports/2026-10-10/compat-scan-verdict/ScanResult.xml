@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompatReport xmlns="http://www.microsoft.com/ApplicationExperience/UpgradeAdvisor/01012009" MigXmlFile="lBqGIdku+kaMetBM.6.5.0.0_APPRAISER_Migration.xml"><System X64Capable="True" X64Running="True"/><Hardware><HardwareItem HardwareType="Setup_BitlockerNoTargetSupport"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_TargetIsNonStagedBuild"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_LanguagePackDetected"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_LicenseActivation"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_FeaturesOnDemandDetected"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_FlightSigningEnabled"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_SecureBoot"><CompatibilityInfo BlockingType="None"/></HardwareItem></Hardware><SystemInfo UplevelEdition="Windows 11" OSMajorVersion="10" OSMinorVersion="0"/>
+	<Devices/>
+	<DriverPackages>
+		<DriverPackage Inf="oem3.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem4.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem31.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem30.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem1.inf" BlockMigration="True" HasSignedBinaries="False"/>
+		<DriverPackage Inf="oem0.inf" BlockMigration="True" HasSignedBinaries="False"/>
+	</DriverPackages>
+	<Programs/>
+</CompatReport>

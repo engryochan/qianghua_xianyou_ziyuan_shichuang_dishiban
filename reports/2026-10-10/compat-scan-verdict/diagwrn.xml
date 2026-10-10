@@ -1,0 +1,132 @@
+﻿<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="565" Fil="" Fun="SPGetFootprintCapabilities" Uid="50331648" Msg="SPGetFootprintCapabilities: Footprint [Footprint.Basic] incomplete; the platform capability will not be available" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="2" MD="" DT="2026-10-10T11:30:35"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="565" Fil="" Fun="SPGetFootprintCapabilities" Uid="50331648" Msg="SPGetFootprintCapabilities: Footprint [Footprint.Servicing] incomplete; the platform capability will not be available" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="2" MD="" DT="2026-10-10T11:30:35"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="565" Fil="" Fun="SPGetFootprintCapabilities" Uid="50331648" Msg="SPGetFootprintCapabilities: Footprint [Footprint.ICB] incomplete; the platform capability will not be available" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="2" MD="" DT="2026-10-10T11:30:35"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="565" Fil="" Fun="SPGetFootprintCapabilities" Uid="50331648" Msg="SPGetFootprintCapabilities: Footprint [Footprint.Migration] incomplete; the platform capability will not be available" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="2" MD="" DT="2026-10-10T11:30:35"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16998" Fil="" Fun="CSetupPlatform::Initialize" Uid="51150848" Msg="CSetupPlatform::Initialize: Failed to initialize tracing" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="203" MD="" DT="2026-10-10T11:30:36"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="145212" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="87" MD="" DT="2026-10-10T11:30:36"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="145212" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="145212" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2000]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x3000]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16998" Fil="" Fun="CSetupPlatform::Initialize" Uid="51150848" Msg="CSetupPlatform::Initialize: Failed to initialize tracing" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="203" MD="" DT="2026-10-10T11:30:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="761" Fil="" Fun="CDiagnosticsHelper::Merge" Uid="50331648" Msg="Merging diagnostics data fails since not opted-in" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="0" MD="" DT="2026-10-10T11:30:45"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16351" Fil="" Fun="CSetupPlatform::ProcessTelemetry" Uid="51150848" Msg="Input CV is different form existing CV" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="183" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3567" Fil="" Fun="ConX::Compatibility::CCompatibilityController::DeserializeData" Uid="50331648" Msg="ConX::Compatibility::CCompatibilityController::DeserializeData: Failed to load compat scan data from provider wsc:setup: from the compat scan cache." PID="130368" TID="139472" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="CompatCtrl.dll" Err="1168" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="89" Fil="" Fun="IsBypassRegKeySet" Uid="50331648" Msg="IsBypassRegKeySet: Error reading bypass registry key. HRESULT = 0x80070002." PID="130368" TID="139472" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="setupcompat.dll" Err="1168" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3567" Fil="" Fun="ConX::Compatibility::CCompatibilityController::DeserializeData" Uid="50331648" Msg="ConX::Compatibility::CCompatibilityController::DeserializeData: Failed to load compat scan data from provider wsc:wica: from the compat scan cache." PID="130368" TID="19120" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="CompatCtrl.dll" Err="1168" MD="" DT="2026-10-10T11:30:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2001]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:52"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="137" Fil="" Fun="ShouldCheckTPMAndCPU" Uid="50331648" Msg="ShouldCheckTPMAndCPU: Error reading flighting registry key. HRESULT = 0x80070002." PID="130368" TID="146520" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="setupcompat.dll" Err="0" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="89" Fil="" Fun="IsBypassRegKeySet" Uid="50331648" Msg="IsBypassRegKeySet: Error reading bypass registry key. HRESULT = 0x80070002." PID="130368" TID="146520" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="setupcompat.dll" Err="127" MD="" DT="2026-10-10T11:30:55"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16998" Fil="" Fun="CSetupPlatform::Initialize" Uid="51150848" Msg="CSetupPlatform::Initialize: Failed to initialize tracing" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="203" MD="" DT="2026-10-10T11:31:42"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="1891" Fil="" Fun="SPUninitializeNetwork" Uid="51150848" Msg="SPUninitializeNetwork: Not running in Windows PE; will not try to uninitialize network" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="761" Fil="" Fun="CDiagnosticsHelper::Merge" Uid="50331648" Msg="Merging diagnostics data fails since not opted-in" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16351" Fil="" Fun="CSetupPlatform::ProcessTelemetry" Uid="51150848" Msg="Input CV is different form existing CV" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="183" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2001]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="1" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="147552" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="1" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2000]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x3000]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2002]" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16998" Fil="" Fun="CSetupPlatform::Initialize" Uid="51150848" Msg="CSetupPlatform::Initialize: Failed to initialize tracing" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="203" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="19037" Fil="" Fun="CSetupPlatform::ResurrectNewSystem" Uid="51150848" Msg="CSetupPlatform::ResurrectNewSystem: Cannot find new system serialized data." PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="2" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="ImageExit: Unable to resurrect NewSystem object. hr=0x80070002" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="2" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="16351" Fil="" Fun="CSetupPlatform::ProcessTelemetry" Uid="51150848" Msg="Input CV is different form existing CV" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupPlatform.dll" Err="183" MD="" DT="2026-10-10T11:31:46"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:49"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2003]" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:49"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2001]" PID="130368" TID="148264" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:49"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2004]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:49"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x2000]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:49"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="CSetupDiagnostics::ReportData - Not reporting WINDLP data point [0x3000]" PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="0" MD="" DT="2026-10-10T11:31:49"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="686" Fil="" Fun="CSetupDiagnostics::LogString" Uid="51019776" Msg="SetupNotify::ReportEvent - Report ID or Event Reporter not available." PID="130368" TID="139636" Con="" Exe="C:\$WINDOWS.~BT\Sources\SetupHost.exe" Mod="SetupHost.exe" Err="3" MD="" DT="2026-10-10T11:31:49"/>
+</rs:data>
+</xml>
