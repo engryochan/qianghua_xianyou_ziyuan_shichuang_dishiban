@@ -1,0 +1,6 @@
+{
+  "EnableLUA": 1,
+  "ConsentPromptBehaviorAdmin": 5,
+  "ConsentPromptBehaviorUser": 3,
+  "PromptOnSecureDesktop": 0
+}

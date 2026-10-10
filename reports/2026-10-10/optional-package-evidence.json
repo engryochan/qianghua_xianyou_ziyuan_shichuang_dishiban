@@ -1,0 +1,149 @@
+[
+  {
+    "Feature": "Microsoft-Windows-Subsystem-Linux",
+    "Packages": []
+  },
+  {
+    "Feature": "VirtualMachinePlatform",
+    "Packages": [
+      {
+        "PSChildName": "HyperV-Feature-VirtualMachinePlatform-Client-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "HyperV-Feature-VirtualMachinePlatform-Client-Package~31bf3856ad364e35~amd64~~10.0.26100.1742",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "HyperV-Feature-VirtualMachinePlatform-Client-Package~31bf3856ad364e35~amd64~~10.0.26100.9457",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-FOD-Package-Wrapper~31bf3856ad364e35~amd64~~10.0.26100.1742",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-FOD-Package-Wrapper~31bf3856ad364e35~amd64~~10.0.26100.9457",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-FOD-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-FOD-Package~31bf3856ad364e35~amd64~~10.0.26100.1742",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-FOD-Package~31bf3856ad364e35~amd64~~10.0.26100.9457",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.7309",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Client-Disabled-Package~31bf3856ad364e35~amd64~~10.0.26100.1",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Client-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Client-Package~31bf3856ad364e35~amd64~~10.0.26100.1742",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Client-Package~31bf3856ad364e35~amd64~~10.0.26100.9457",
+        "CurrentState": 112
+      }
+    ]
+  },
+  {
+    "Feature": "Microsoft-Hyper-V-All",
+    "Packages": []
+  },
+  {
+    "Feature": "NetFx3",
+    "Packages": [
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-OC-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-OC-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.8457",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-OC-Package~31bf3856ad364e35~amd64~~10.0.26100.1",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-OnDemand-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-OnDemand-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.8457",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-WCF-OC-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-WCF-OC-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.8457",
+        "CurrentState": 112
+      },
+      {
+        "PSChildName": "Microsoft-Windows-NetFx3-WCF-OC-Package~31bf3856ad364e35~amd64~~10.0.26100.1",
+        "CurrentState": 112
+      }
+    ]
+  },
+  {
+    "Feature": "NetFx4-AdvSrvs",
+    "Packages": []
+  },
+  {
+    "Feature": "Containers-DisposableClientVM",
+    "Packages": [
+      {
+        "PSChildName": "Containers-DisposableClientVM-merged-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Containers-DisposableClientVM-merged-Package~31bf3856ad364e35~amd64~~10.0.26100.1591",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Containers-DisposableClientVM-merged-Package~31bf3856ad364e35~amd64~~10.0.26100.9278",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Containers-DisposableClientVM-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.1591",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Containers-DisposableClientVM-Package~31bf3856ad364e35~amd64~zh-CN~10.0.26100.9168",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Containers-DisposableClientVM-Package~31bf3856ad364e35~amd64~~10.0.26100.1742",
+        "CurrentState": 64
+      },
+      {
+        "PSChildName": "Containers-DisposableClientVM-Package~31bf3856ad364e35~amd64~~10.0.26100.9457",
+        "CurrentState": 64
+      }
+    ]
+  },
+  {
+    "Feature": "Printing-PrintToPDFServices-Features",
+    "Packages": []
+  }
+]
