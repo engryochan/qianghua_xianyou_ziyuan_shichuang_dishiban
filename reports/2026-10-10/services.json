@@ -1,0 +1,1790 @@
+[
+  {
+    "Name": "AarSvc_3f8577",
+    "DisplayName": "Agent Activation Runtime_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ADPSvc",
+    "DisplayName": "聚合数据平台服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ALG",
+    "DisplayName": "Application Layer Gateway Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "AppIDSvc",
+    "DisplayName": "Application Identity",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Appinfo",
+    "DisplayName": "Application Information",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "AppMgmt",
+    "DisplayName": "Application Management",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "AppReadiness",
+    "DisplayName": "App Readiness",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "AppVClient",
+    "DisplayName": "Microsoft App-V Client",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "AppXSvc",
+    "DisplayName": "AppX Deployment Service (AppXSVC)",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "ApxSvc",
+    "DisplayName": "Windows 虚拟音频设备代理服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "AssignedAccessManagerSvc",
+    "DisplayName": "AssignedAccessManager 服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "AsusUpdateCheck",
+    "DisplayName": "AsusUpdateCheck",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "AudioEndpointBuilder",
+    "DisplayName": "Windows Audio Endpoint Builder",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "Audiosrv",
+    "DisplayName": "Windows Audio",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "autotimesvc",
+    "DisplayName": "手机网络时间",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "AVP.KES.14.1",
+    "DisplayName": "Kaspersky Endpoint Security 服务 (KES.14.1)",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "avpsus.KES.14.1",
+    "DisplayName": "Kaspersky Seamless Update Service (KES.14.1)",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "AxInstSV",
+    "DisplayName": "ActiveX Installer (AxInstSV)",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "BcastDVRUserService_3f8577",
+    "DisplayName": "GameDVR 和广播用户服务_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "BDESVC",
+    "DisplayName": "BitLocker Drive Encryption Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "BFE",
+    "DisplayName": "Base Filtering Engine",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "BITS",
+    "DisplayName": "Background Intelligent Transfer Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "BluetoothUserService_3f8577",
+    "DisplayName": "蓝牙用户支持服务_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "BrokerInfrastructure",
+    "DisplayName": "Background Tasks Infrastructure Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "BTAGService",
+    "DisplayName": "蓝牙音频网关服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "BthAvctpSvc",
+    "DisplayName": "AVCTP 服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "bthserv",
+    "DisplayName": "蓝牙支持服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "camsvc",
+    "DisplayName": "功能访问管理器服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CaptureService_3f8577",
+    "DisplayName": "CaptureService_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "cbdhsvc_3f8577",
+    "DisplayName": "剪贴板用户服务_3f8577",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CDPSvc",
+    "DisplayName": "连接设备平台服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CDPUserSvc_3f8577",
+    "DisplayName": "连接设备平台用户服务_3f8577",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CertPropSvc",
+    "DisplayName": "Certificate Propagation",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ClickToRunSvc",
+    "DisplayName": "‪Microsoft Office ClickToRun Service‬",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "ClipSVC",
+    "DisplayName": "Client License Service (ClipSVC)",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "CloudBackupRestoreSvc_3f8577",
+    "DisplayName": "云备份和还原服务_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "cloudidsvc",
+    "DisplayName": "Microsoft 云标识服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "CodexSandboxService.OpenAI.Codex",
+    "DisplayName": "ChatGPT",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CommonService",
+    "DisplayName": "Service for common users",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "COMSysApp",
+    "DisplayName": "COM+ System Application",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ConsentUxUserSvc_3f8577",
+    "DisplayName": "ConsentUX 用户服务_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "CoreMessagingRegistrar",
+    "DisplayName": "CoreMessaging",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CoworkVMService",
+    "DisplayName": "Claude",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "cplspcon",
+    "DisplayName": "Intel(R) Content Protection HDCP Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CredentialEnrollmentManagerUserSvc_3f8577",
+    "DisplayName": "CredentialEnrollmentManagerUserSvc_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "CryptSvc",
+    "DisplayName": "Cryptographic Services",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "CscService",
+    "DisplayName": "Offline Files",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DcomLaunch",
+    "DisplayName": "DCOM Server Process Launcher",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "dcsvc",
+    "DisplayName": "已声明的配置(DC)服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "defragsvc",
+    "DisplayName": "Optimize drives",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DeviceAssociationBrokerSvc_3f8577",
+    "DisplayName": "DeviceAssociationBroker_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DeviceAssociationService",
+    "DisplayName": "Device Association Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "DeviceInstall",
+    "DisplayName": "Device Install Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "DevicePickerUserSvc_3f8577",
+    "DisplayName": "DevicePicker_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DevicesFlowUserSvc_3f8577",
+    "DisplayName": "DevicesFlow_3f8577",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "DevQueryBroker",
+    "DisplayName": "DevQuery Background Discovery Broker",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "Dhcp",
+    "DisplayName": "DHCP Client",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "diagsvc",
+    "DisplayName": "Diagnostic Execution Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DiagTrack",
+    "DisplayName": "Connected User Experiences and Telemetry",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "DialogBlockingService",
+    "DisplayName": "DialogBlockingService",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "DispBrokerDesktopSvc",
+    "DisplayName": "显示策略服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "DisplayEnhancementService",
+    "DisplayName": "显示增强服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DmEnrollmentSvc",
+    "DisplayName": "设备管理注册服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "dmwappushservice",
+    "DisplayName": "设备管理无线应用程序协议 (WAP) 推送消息路由服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Dnscache",
+    "DisplayName": "DNS Client",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "DoSvc",
+    "DisplayName": "Delivery Optimization",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "dot3svc",
+    "DisplayName": "Wired AutoConfig",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DPS",
+    "DisplayName": "Diagnostic Policy Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "DsmSvc",
+    "DisplayName": "Device Setup Manager",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DsSvc",
+    "DisplayName": "Data Sharing Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "DusmSvc",
+    "DisplayName": "数据使用量",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "EapHost",
+    "DisplayName": "Extensible Authentication Protocol",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "edgeupdate",
+    "DisplayName": "Microsoft Edge Update Service (edgeupdate)",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "edgeupdatem",
+    "DisplayName": "Microsoft Edge Update Service (edgeupdatem)",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "EFS",
+    "DisplayName": "Encrypting File System (EFS)",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "embeddedmode",
+    "DisplayName": "嵌入模式",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "EntAppSvc",
+    "DisplayName": "Enterprise App Management Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "EventLog",
+    "DisplayName": "Windows Event Log",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "EventSystem",
+    "DisplayName": "COM+ Event System",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "fdPHost",
+    "DisplayName": "Function Discovery Provider Host",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "FDResPub",
+    "DisplayName": "Function Discovery Resource Publication",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "fhsvc",
+    "DisplayName": "File History Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "FileSyncHelper",
+    "DisplayName": "FileSyncHelper",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "FontCache",
+    "DisplayName": "Windows Font Cache Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "FrameServer",
+    "DisplayName": "Windows Camera Frame Server",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "FrameServerMonitor",
+    "DisplayName": "Windows Camera Frame Server Monitor",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "GameInputSvc",
+    "DisplayName": "GameInput Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "GoogleChromeElevationService",
+    "DisplayName": "Google Chrome Elevation Service (GoogleChromeElevationService)",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "GoogleUpdaterInternalService156.0.8067.0",
+    "DisplayName": "Google 更新程序内部服务 (GoogleUpdaterInternalService156.0.8067.0)",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "GoogleUpdaterService156.0.8067.0",
+    "DisplayName": "Google 更新程序服务 (GoogleUpdaterService156.0.8067.0)",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "gpsvc",
+    "DisplayName": "Group Policy Client",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "GraphicsPerfSvc",
+    "DisplayName": "GraphicsPerfSvc",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "hidserv",
+    "DisplayName": "Human Interface Device Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "hns",
+    "DisplayName": "主机网络服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "hpatchmon",
+    "DisplayName": "Hotpatch Monitoring Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "HvHost",
+    "DisplayName": "HV 主机服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "icssvc",
+    "DisplayName": "Windows 移动热点服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "IKEEXT",
+    "DisplayName": "IKE and AuthIP IPsec Keying Modules",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "InstallService",
+    "DisplayName": "Microsoft Store 安装服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "Intel(R) Platform License Manager Service",
+    "DisplayName": "Intel(R) Platform License Manager Service",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "IntelGraphicsSoftwareService",
+    "DisplayName": "Intel® Graphics Software",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "InventorySvc",
+    "DisplayName": "清单和兼容性评估服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "iphlpsvc",
+    "DisplayName": "IP Helper",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "IpxlatCfgSvc",
+    "DisplayName": "IP 转换配置服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "IsoEnvBroker",
+    "DisplayName": "隔离环境代理",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "IsolationSession",
+    "DisplayName": "IsolationSession",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "jhi_service",
+    "DisplayName": "Intel(R) Dynamic Application Loader Host Interface Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "KeyIso",
+    "DisplayName": "CNG Key Isolation",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "klnagent",
+    "DisplayName": "Kaspersky Security Center 网络代理",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "ksnproxy",
+    "DisplayName": "卡巴斯基安全网络代理服务器",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "KtmRm",
+    "DisplayName": "KtmRm for Distributed Transaction Coordinator",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "LanmanServer",
+    "DisplayName": "Server",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "LanmanWorkstation",
+    "DisplayName": "Workstation",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "LeaderTerm",
+    "DisplayName": "LeaderTerm",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "LeaderTermDaemon",
+    "DisplayName": "LeaderTermDaemon",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "lfsvc",
+    "DisplayName": "Geolocation Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "LicenseManager",
+    "DisplayName": "Windows 许可证管理器服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "lltdsvc",
+    "DisplayName": "Link-Layer Topology Discovery Mapper",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "lmhosts",
+    "DisplayName": "TCP/IP NetBIOS Helper",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "LocalKdc",
+    "DisplayName": "Kerberos 本地密钥发行中心",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "LSM",
+    "DisplayName": "Local Session Manager",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "LxpSvc",
+    "DisplayName": "语言体验服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "MapsBroker",
+    "DisplayName": "Downloaded Maps Manager",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "McmSvc",
+    "DisplayName": "移动连接管理服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "McpManagementService",
+    "DisplayName": "McpManagementService",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "MDCoreSvc",
+    "DisplayName": "Microsoft Defender Core 服务",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "MessagingService_3f8577",
+    "DisplayName": "MessagingService_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "MicrosoftEdgeElevationService",
+    "DisplayName": "Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "midisrv",
+    "DisplayName": "Windows MIDI 服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "MozillaMaintenance",
+    "DisplayName": "Mozilla Maintenance Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "mpssvc",
+    "DisplayName": "Windows Defender Firewall",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "MSDTC",
+    "DisplayName": "Distributed Transaction Coordinator",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "MSiSCSI",
+    "DisplayName": "Microsoft iSCSI Initiator Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "msiserver",
+    "DisplayName": "Windows Installer",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "MsKeyboardFilter",
+    "DisplayName": "Microsoft 键盘筛选器",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "NaturalAuthentication",
+    "DisplayName": "自然身份验证",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "NcaSvc",
+    "DisplayName": "Network Connectivity Assistant",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "NcbService",
+    "DisplayName": "Network Connection Broker",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "NcdAutoSetup",
+    "DisplayName": "Network Connected Devices Auto-Setup",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "Netlogon",
+    "DisplayName": "Netlogon",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Netman",
+    "DisplayName": "Network Connections",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "netprofm",
+    "DisplayName": "Network List Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "NetSetupSvc",
+    "DisplayName": "Network Setup Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "NetTcpPortSharing",
+    "DisplayName": "Net.Tcp Port Sharing Service",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "NgcCtnrSvc",
+    "DisplayName": "Microsoft Passport Container",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "NgcSvc",
+    "DisplayName": "Microsoft Passport",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "NlaSvc",
+    "DisplayName": "网络位置感知",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "NPSMSvc_3f8577",
+    "DisplayName": "正在播放会话管理器服务_3f8577",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "nsi",
+    "DisplayName": "Network Store Interface Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "nvagent",
+    "DisplayName": "网络虚拟服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "OfficePLUS Service",
+    "DisplayName": "OfficePLUS Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "OneDrive Updater Service",
+    "DisplayName": "OneDrive Updater Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "OneSyncSvc_3f8577",
+    "DisplayName": "同步主机_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ose",
+    "DisplayName": "Office  Source Engine",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "P9RdrService_3f8577",
+    "DisplayName": "P9RdrService_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PcaSvc",
+    "DisplayName": "Program Compatibility Assistant Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "PeerDistSvc",
+    "DisplayName": "BranchCache",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PenService_3f8577",
+    "DisplayName": "PenService_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "perceptionsimulation",
+    "DisplayName": "Windows 感知模拟服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PerfHost",
+    "DisplayName": "Performance Counter DLL Host",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PhoneSvc",
+    "DisplayName": "Phone Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PimIndexMaintenanceSvc_3f8577",
+    "DisplayName": "Contact Data_3f8577",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "pla",
+    "DisplayName": "Performance Logs & Alerts",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PlugPlay",
+    "DisplayName": "Plug and Play",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "PolicyAgent",
+    "DisplayName": "IPsec Policy Agent",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Power",
+    "DisplayName": "Power",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "PrintDeviceConfigurationService",
+    "DisplayName": "打印设备配置服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PrintNotify",
+    "DisplayName": "Printer Extensions and Notifications",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PrintScanBrokerService",
+    "DisplayName": "PrintScanBrokerService",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "PrintWorkflowUserSvc_3f8577",
+    "DisplayName": "PrintWorkflow_3f8577",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ProfSvc",
+    "DisplayName": "User Profile Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "PushToInstall",
+    "DisplayName": "Windows PushToInstall 服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "QWAVE",
+    "DisplayName": "Quality Windows Audio Video Experience",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "RasAuto",
+    "DisplayName": "Remote Access Auto Connection Manager",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "RasMan",
+    "DisplayName": "Remote Access Connection Manager",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "refsdedupsvc",
+    "DisplayName": "ReFS 重复数据删除服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "RemoteAccess",
+    "DisplayName": "Routing and Remote Access",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "RemoteRegistry",
+    "DisplayName": "Remote Registry",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "RetailDemo",
+    "DisplayName": "零售演示服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "RmSvc",
+    "DisplayName": "无线电管理服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "RpcEptMapper",
+    "DisplayName": "RPC Endpoint Mapper",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "RpcLocator",
+    "DisplayName": "Remote Procedure Call (RPC) Locator",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "RpcSs",
+    "DisplayName": "Remote Procedure Call (RPC)",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "SamSs",
+    "DisplayName": "Security Accounts Manager",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "SCardSvr",
+    "DisplayName": "Smart Card",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "ScDeviceEnum",
+    "DisplayName": "Smart Card Device Enumeration Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Schedule",
+    "DisplayName": "Task Scheduler",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "SCPolicySvc",
+    "DisplayName": "Smart Card Removal Policy",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SDRSVC",
+    "DisplayName": "Windows 备份",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "seclogon",
+    "DisplayName": "Secondary Logon",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "SecurityHealthService",
+    "DisplayName": "Windows 安全中心服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "SEMgrSvc",
+    "DisplayName": "付款和 NFC/SE 管理器",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SENS",
+    "DisplayName": "System Event Notification Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "Sense",
+    "DisplayName": "Windows Defender Advanced Threat Protection Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SensorDataService",
+    "DisplayName": "Sensor Data Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SensorService",
+    "DisplayName": "Sensor Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SensrSvc",
+    "DisplayName": "Sensor Monitoring Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SessionEnv",
+    "DisplayName": "Remote Desktop Configuration",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SharedAccess",
+    "DisplayName": "Internet Connection Sharing (ICS)",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "ShellHWDetection",
+    "DisplayName": "Shell Hardware Detection",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "shpamsvc",
+    "DisplayName": "Shared PC Account Manager",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "smphost",
+    "DisplayName": "Microsoft Storage Spaces SMP",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "SmsRouter",
+    "DisplayName": "Microsoft Windows SMS 路由器服务。",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SNMPTrap",
+    "DisplayName": "SNMP 陷阱",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Spooler",
+    "DisplayName": "Print Spooler",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "sppsvc",
+    "DisplayName": "Software Protection",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "SSDPSRV",
+    "DisplayName": "SSDP Discovery",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "ssh-agent",
+    "DisplayName": "OpenSSH Authentication Agent",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "SstpSvc",
+    "DisplayName": "Secure Socket Tunneling Protocol Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "StateRepository",
+    "DisplayName": "State Repository Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "StiSvc",
+    "DisplayName": "Windows Image Acquisition (WIA)",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "StorSvc",
+    "DisplayName": "Storage Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "svsvc",
+    "DisplayName": "Spot Verifier",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "swprv",
+    "DisplayName": "Microsoft Software Shadow Copy Provider",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "SysMain",
+    "DisplayName": "SysMain",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "SystemEventsBroker",
+    "DisplayName": "System Events Broker",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "TapiSrv",
+    "DisplayName": "Telephony",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "TermService",
+    "DisplayName": "Remote Desktop Services",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "TextInputManagementService",
+    "DisplayName": "Text Input Management Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "Themes",
+    "DisplayName": "Themes",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "TieringEngineService",
+    "DisplayName": "Storage Tiers Management",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "TimeBrokerSvc",
+    "DisplayName": "Time Broker",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "TokenBroker",
+    "DisplayName": "Web 帐户管理器",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "TrkWks",
+    "DisplayName": "Distributed Link Tracking Client",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "TroubleshootingSvc",
+    "DisplayName": "建议疑难解答服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "TrustedInstaller",
+    "DisplayName": "Windows Modules Installer",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "tzautoupdate",
+    "DisplayName": "自动时区更新程序",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "UdkUserSvc_3f8577",
+    "DisplayName": "Udk 用户服务_3f8577",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "UevAgentService",
+    "DisplayName": "User Experience Virtualization Service",
+    "Status": 1,
+    "StartType": 4
+  },
+  {
+    "Name": "UmRdpService",
+    "DisplayName": "Remote Desktop Services UserMode Port Redirector",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "UnistoreSvc_3f8577",
+    "DisplayName": "User Data Storage_3f8577",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "upnphost",
+    "DisplayName": "UPnP Device Host",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "UserDataSvc_3f8577",
+    "DisplayName": "User Data Access_3f8577",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "UserManager",
+    "DisplayName": "User Manager",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "UsoSvc",
+    "DisplayName": "更新 Orchestrator 服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "VaultSvc",
+    "DisplayName": "Credential Manager",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "vds",
+    "DisplayName": "Virtual Disk",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "vmcompute",
+    "DisplayName": "Hyper-V 主机计算服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmicguestinterface",
+    "DisplayName": "Hyper-V Guest Service Interface",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmicheartbeat",
+    "DisplayName": "Hyper-V Heartbeat Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmickvpexchange",
+    "DisplayName": "Hyper-V Data Exchange Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmicrdv",
+    "DisplayName": "Hyper-V 远程桌面虚拟化服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmicshutdown",
+    "DisplayName": "Hyper-V Guest Shutdown Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmictimesync",
+    "DisplayName": "Hyper-V Time Synchronization Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmicvmsession",
+    "DisplayName": "Hyper-V PowerShell Direct Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "vmicvss",
+    "DisplayName": "Hyper-V 卷影复制请求程序",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "VSS",
+    "DisplayName": "Volume Shadow Copy",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "W32Time",
+    "DisplayName": "Windows Time",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WaaSMedicSvc",
+    "DisplayName": "WaaSMedicSvc",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WalletService",
+    "DisplayName": "WalletService",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WarpJITSvc",
+    "DisplayName": "Warp JIT Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "wbengine",
+    "DisplayName": "Block Level Backup Engine Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WbioSrvc",
+    "DisplayName": "Windows Biometric Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "Wcmsvc",
+    "DisplayName": "Windows Connection Manager",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "wcncsvc",
+    "DisplayName": "Windows Connect Now - Config Registrar",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WdiServiceHost",
+    "DisplayName": "Diagnostic Service Host",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WdiSystemHost",
+    "DisplayName": "Diagnostic System Host",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "WdNisSvc",
+    "DisplayName": "Microsoft Defender 防病毒网络检查服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "WebClient",
+    "DisplayName": "WebClient",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "webthreatdefsvc",
+    "DisplayName": "Web 威胁防御服务",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "webthreatdefusersvc_3f8577",
+    "DisplayName": "Web 威胁防御用户服务_3f8577",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "Wecsvc",
+    "DisplayName": "Windows Event Collector",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WEPHOSTSVC",
+    "DisplayName": "Windows Encryption Provider Host Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "wercplsupport",
+    "DisplayName": "Problem Reports Control Panel Support",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WerSvc",
+    "DisplayName": "Windows Error Reporting Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WFDSConMgrSvc",
+    "DisplayName": "WLAN Direct 服务连接管理器服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "whesvc",
+    "DisplayName": "Windows 健康状况和优化体验",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WiaRpc",
+    "DisplayName": "Still Image Acquisition Events",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WinDefend",
+    "DisplayName": "Microsoft Defender 防病毒服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WinHttpAutoProxySvc",
+    "DisplayName": "WinHTTP Web Proxy Auto-Discovery Service",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "Winmgmt",
+    "DisplayName": "Windows Management Instrumentation",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WinRM",
+    "DisplayName": "Windows Remote Management (WS-Management)",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "wisvc",
+    "DisplayName": "Windows 预览体验成员服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WlanSvc",
+    "DisplayName": "WLAN AutoConfig",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "wlidsvc",
+    "DisplayName": "Microsoft Account Sign-in Assistant",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "wlpasvc",
+    "DisplayName": "本地配置文件助手服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WManSvc",
+    "DisplayName": "Windows 管理服务",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "wmiApSrv",
+    "DisplayName": "WMI Performance Adapter",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WMIRegistrationService",
+    "DisplayName": "Intel(R) Management Engine WMI Provider Registration",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WMPNetworkSvc",
+    "DisplayName": "Windows Media Player Network Sharing Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "workfolderssvc",
+    "DisplayName": "Work Folders",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WpcMonSvc",
+    "DisplayName": "家长控制",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WPDBusEnum",
+    "DisplayName": "Portable Device Enumerator Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WpnService",
+    "DisplayName": "Windows 推送通知系统服务",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WpnUserService_3f8577",
+    "DisplayName": "Windows Push Notifications User Service_3f8577",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "wpscloudsvr",
+    "DisplayName": "WPS Office Cloud Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "WSAIFabricSvc",
+    "DisplayName": "Windows AI 组件主机",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "wscsvc",
+    "DisplayName": "Security Center",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WSearch",
+    "DisplayName": "Windows Search",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "WslInstaller",
+    "DisplayName": "适用于 Linux 的 Windows 子系统",
+    "Status": 1,
+    "StartType": 2
+  },
+  {
+    "Name": "WSLService",
+    "DisplayName": "WSL Service",
+    "Status": 4,
+    "StartType": 2
+  },
+  {
+    "Name": "wuauserv",
+    "DisplayName": "Windows 更新",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "wuqisvc",
+    "DisplayName": "Microsoft 使用情况和质量见解",
+    "Status": 4,
+    "StartType": 3
+  },
+  {
+    "Name": "WwanSvc",
+    "DisplayName": "WWAN AutoConfig",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "XblAuthManager",
+    "DisplayName": "Xbox Live 身份验证管理器",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "XblGameSave",
+    "DisplayName": "Xbox Live 游戏保存",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "XboxGipSvc",
+    "DisplayName": "Xbox Accessory Management Service",
+    "Status": 1,
+    "StartType": 3
+  },
+  {
+    "Name": "XboxNetApiSvc",
+    "DisplayName": "Xbox Live 网络服务",
+    "Status": 1,
+    "StartType": 3
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "Path": "reports\\2026-10-05\\Win11源映像只读核验\\professional-integrity-test.wim",
+    "Bytes": 6571929515,
+    "Removed": true,
+    "TimeUtc": "2026-10-10T11:36:14.0526247Z"
+  },
+  {
+    "Path": "reports\\2026-10-05\\Windows11_Client_x64_zh-cn_26300_9457.iso",
+    "Bytes": 9112440832,
+    "Removed": true,
+    "TimeUtc": "2026-10-10T11:36:16.4209559Z"
+  }
+]

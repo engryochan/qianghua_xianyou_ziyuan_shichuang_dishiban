@@ -1,5 +1,12 @@
 # 專案說明（給接手的人與 AI）
 
+## 2026-10-10 Windows 11 升級後實測（目前狀態）
+
+本機為 MiniPC T1 / Intel H610I / i5-12400（6 核心、12 執行緒）/ 約 32 GB RAM / Intel UHD Graphics 730。已確認升級至 Windows 11 專業版 26H2，26300.9457，系統已啟用。SSD 回報 Healthy；4 個在位設備仍為錯誤碼 28（INTC1070、7AA3、INTC1056、7AA4），且有 CBS 待重啟標記。TPM、安全啟動及 BitLocker 尚未取得可驗證結果。
+
+指定 WIM 與 ISO 已刪除，合計約 14.61 GiB。完整設備、驅動、軟體、防護、事件與診斷界限：[升級後診斷](reports/2026-10-10/Windows11升級後診斷.md)。以下較早記錄為歷史內容，舊華碩 / NVIDIA GT 730 資訊不能套用本機；Python 環境復原以 CLAUDE.md 的 2026-10-06 更正為準。
+
+
 ## 2026-10-06 更正（優先於以下全部紀錄）
 
 **本機已換成海兰 MiniPC-T1（i5-12400，有內顯），不是下文的華碩原機（i5-12400F，無內顯）。** 下文關於 GT 730 與 Comet 黑屏的整段，是**舊機**的紀錄，不要套到這台。新機目前 Windows 10 Pro 22H2 build 19045.7725。
@@ -487,3 +494,4 @@ dbExecute(con, sprintf("copy dt to '%s' (format parquet)", pq))
 - 但要講清楚：**git 保護的是倉庫，不是作業系統**。PATH、電源計畫、套件庫都不在版控裡，其還原依據是腳本產生的備份檔（`~\PATH_user_backup_*.txt`、`~\gitconfig_backup_*.txt`、`~\R_packages_backup_*.csv`）與系統還原點。
 - 這台是**公司資產**：亿赛通 CDG（透明加密/DLP）、Kaspersky Endpoint Security、Defender 三層常駐。**不要建議停用任何一個**——違反資安規範且多半被策略鎖定，正解是請 IT 加白名單。
 - session 以一般使用者身分執行，**無法提權**。需要管理員的項目請產出指令交給使用者手動執行。
+

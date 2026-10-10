@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "WLAN",
+    "InterfaceDescription": "Intel(R) Wireless-AC 9560",
+    "Status": "Disconnected",
+    "LinkSpeed": "0 bps",
+    "DriverInformation": "Driver Date 2026-04-13 Version 24.40.0.4 NDIS 6.60"
+  },
+  {
+    "Name": "以太网 2",
+    "InterfaceDescription": "Realtek PCIe GbE Family Controller #2",
+    "Status": "Up",
+    "LinkSpeed": "1 Gbps",
+    "DriverInformation": "Driver Date 2015-03-31 Version 9.1.412.2015 NDIS 6.40"
+  }
+]

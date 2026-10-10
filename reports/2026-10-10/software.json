@@ -1,0 +1,212 @@
+[
+  {
+    "DisplayName": "YeeChat 4.95.20",
+    "DisplayVersion": "4.95.20",
+    "Publisher": null,
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Git",
+    "DisplayVersion": "2.55.0.5",
+    "Publisher": "The Git Development Community",
+    "InstallDate": "20261005"
+  },
+  {
+    "DisplayName": "Mozilla Firefox (x64 zh-CN)",
+    "DisplayVersion": "153.0.1",
+    "Publisher": "Mozilla",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Mozilla Maintenance Service",
+    "DisplayVersion": "153.0.1",
+    "Publisher": "Mozilla",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "微软OfficePLUS",
+    "DisplayVersion": "4.2.0.8924",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Microsoft OneDrive",
+    "DisplayVersion": "26.173.0906.0008",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "PotPlayer-64 bit",
+    "DisplayVersion": "220302",
+    "Publisher": "Kakao Corp.",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Microsoft Office 专业增强版 2016  - zh-cn",
+    "DisplayVersion": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "WinRAR 7.23 (64-位)",
+    "DisplayVersion": "7.23.0",
+    "Publisher": "win.rar GmbH",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Windows Subsystem for Linux",
+    "DisplayVersion": "3.0.1.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20261009"
+  },
+  {
+    "DisplayName": "Microsoft Update Health Tools",
+    "DisplayVersion": "3.74.0.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "GitHub CLI",
+    "DisplayVersion": "2.102.0",
+    "Publisher": "GitHub, Inc.",
+    "InstallDate": "20261006"
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Licensing Component",
+    "DisplayVersion": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20261005"
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Extensibility Component 64-bit Registration",
+    "DisplayVersion": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20261005"
+  },
+  {
+    "DisplayName": "Update for x64-based Windows Systems (KB5001716)",
+    "DisplayVersion": "8.94.0.0",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "Google Chrome",
+    "DisplayVersion": "154.0.8037.99",
+    "Publisher": "Google LLC",
+    "InstallDate": "20261007"
+  },
+  {
+    "DisplayName": "Kaspersky Security Center 网络代理",
+    "DisplayVersion": "16.2.0.1023",
+    "Publisher": "卡巴斯基",
+    "InstallDate": ""
+  },
+  {
+    "DisplayName": "WPS Office 2019 增强版 (11.8.2.12330)",
+    "DisplayVersion": "11.8.2.12330",
+    "Publisher": "Kingsoft Corp.",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Microsoft Edge",
+    "DisplayVersion": "150.0.4078.105",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "Microsoft Edge WebView2 Runtime",
+    "DisplayVersion": "150.0.4078.105",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "Kaspersky Endpoint Security for Windows",
+    "DisplayVersion": "11.26.4.423",
+    "Publisher": null,
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Windows 11 安装助手",
+    "DisplayVersion": "1.4.19041.6448",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "VBA (2627.01)",
+    "DisplayVersion": "6.03.00.9402",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "VBA (2701.04)",
+    "DisplayVersion": "6.03.00.9402",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "亿赛通电子文档安全管理系统-客户端",
+    "DisplayVersion": "5.2.0",
+    "Publisher": "北京亿赛通科技发展有限责任公司",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Extensibility Component",
+    "DisplayVersion": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20261005"
+  },
+  {
+    "DisplayName": "Office 16 Click-to-Run Localization Component",
+    "DisplayVersion": "16.0.19127.20800",
+    "Publisher": "Microsoft Corporation",
+    "InstallDate": "20261005"
+  },
+  {
+    "DisplayName": "Kaspersky Endpoint Security for Windows",
+    "DisplayVersion": "11.26.4.423",
+    "Publisher": null,
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Kaspersky Endpoint Security for Windows",
+    "DisplayVersion": "14.1.0.423",
+    "Publisher": "AO Kaspersky Lab",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "Kaspersky Endpoint Security for Windows",
+    "DisplayVersion": "11.26.4.423",
+    "Publisher": null,
+    "InstallDate": null
+  },
+  {
+    "DisplayName": "Kaspersky Security Center 网络代理",
+    "DisplayVersion": "16.2.0.1023",
+    "Publisher": "卡巴斯基",
+    "InstallDate": "20260730"
+  },
+  {
+    "DisplayName": "GitHub Desktop",
+    "DisplayVersion": "3.6.6",
+    "Publisher": "GitHub, Inc.",
+    "InstallDate": "20261005"
+  },
+  {
+    "DisplayName": "R for Windows 4.6.1",
+    "DisplayVersion": "4.6.1",
+    "Publisher": "R Core Team",
+    "InstallDate": "20261006"
+  },
+  {
+    "DisplayName": "Rtools 4.5 (6768-6492)",
+    "DisplayVersion": "4.5.6768",
+    "Publisher": "The R Foundation",
+    "InstallDate": "20261006"
+  },
+  {
+    "DisplayName": "Positron (User)",
+    "DisplayVersion": "2026.10.0",
+    "Publisher": "Posit Software, PBC",
+    "InstallDate": "20261010"
+  }
+]

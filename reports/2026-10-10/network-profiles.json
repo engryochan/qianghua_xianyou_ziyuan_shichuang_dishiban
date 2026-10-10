@@ -1,0 +1,7 @@
+{
+  "Name": "网络 2",
+  "InterfaceAlias": "以太网 2",
+  "NetworkCategory": 1,
+  "IPv4Connectivity": 4,
+  "IPv6Connectivity": 1
+}

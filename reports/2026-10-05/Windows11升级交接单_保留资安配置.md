@@ -27,3 +27,8 @@
 官方依据：[微软安装介质](https://www.microsoft.com/software-download/windows11)、[Setup 兼容性扫描参数](https://learn.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11)。
 
 目前状态：准备与权限核查已完成；实际升级尚未开始，等待现有管理员现场执行。不能承诺零风险或保证成功。
+
+## 2026-10-10 狀態更新
+
+已實測升至 Windows 11 專業版 26H2 / 26300.9457，LicenseStatus=1。上文未開始升級為 2026-10-05 歷史狀態。完整複驗與未驗證項目見 [升級後診斷](../2026-10-10/Windows11升級後診斷.md)。
+

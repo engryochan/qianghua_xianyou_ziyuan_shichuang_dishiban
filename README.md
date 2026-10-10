@@ -1,5 +1,12 @@
 # Windows 11 資料分析工作站
 
+## 2026-10-10 Windows 11 升級後實測（目前狀態）
+
+本機為 MiniPC T1 / Intel H610I / i5-12400（6 核心、12 執行緒）/ 約 32 GB RAM / Intel UHD Graphics 730。已確認升級至 Windows 11 專業版 26H2，26300.9457，系統已啟用。SSD 回報 Healthy；4 個在位設備仍為錯誤碼 28（INTC1070、7AA3、INTC1056、7AA4），且有 CBS 待重啟標記。TPM、安全啟動及 BitLocker 尚未取得可驗證結果。
+
+指定 WIM 與 ISO 已刪除，合計約 14.61 GiB。完整設備、驅動、軟體、防護、事件與診斷界限：[升級後診斷](reports/2026-10-10/Windows11升級後診斷.md)。以下較早記錄為歷史內容，舊華碩 / NVIDIA GT 730 資訊不能套用本機；Python 環境復原以 CLAUDE.md 的 2026-10-06 更正為準。
+
+
 2026-09-21 已實際盤點本機並補齊 Excel 分析能力。完整本機報告：
 [診斷與強化結果](reports/2026-09-21/RESULTS.md)。報告含設備與軟體資訊，不納入 Git。
 
@@ -38,6 +45,7 @@
 `Analytics_Model_Check.py` 實跑 CPU 模型、Excel 新引擎及 Notebook；`Analytics_R_Check.R` 驗證 R 資料處理與跨語言 Parquet。
 
 GT 730 的本機 PCI ID 為 `10DE:0F02`，不能套用舊文檔的 Kepler 472.xx 建議。系統驅動、企業防護及待更新應用由 IT 核對；未自動重啟。
+
 
 
 

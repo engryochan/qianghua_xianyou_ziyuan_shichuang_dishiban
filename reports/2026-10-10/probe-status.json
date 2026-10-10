@@ -1,0 +1,137 @@
+[
+  {
+    "Probe": "system",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "os",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "version",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "cpu",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "memory",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "board",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "bios",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "gpu",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "disks",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "volumes",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "disk-health",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "devices",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "drivers",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "network",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "network-profiles",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "updates",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "licensing",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "antivirus",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "defender",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "firewall",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "tpm",
+    "Success": false,
+    "Error": "Cmdlet emitted access/error output and returned null values or no volumes; state not verified."
+  },
+  {
+    "Probe": "secure-boot",
+    "Success": false,
+    "Error": "无法设置正确的权限。访问被拒绝。"
+  },
+  {
+    "Probe": "bitlocker",
+    "Success": false,
+    "Error": "Cmdlet emitted access/error output and returned null values or no volumes; state not verified."
+  },
+  {
+    "Probe": "services",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "software",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "recent-system-errors",
+    "Success": true,
+    "Error": null
+  },
+  {
+    "Probe": "reboot",
+    "Success": true,
+    "Error": null
+  }
+]

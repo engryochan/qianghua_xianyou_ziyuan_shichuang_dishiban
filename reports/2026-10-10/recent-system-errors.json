@@ -1,0 +1,116 @@
+[
+  {
+    "TimeCreated": "2026-10-10T13:23:18.2802706+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，Hyper-V 主机计算服务 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:23:18.2802706+02:00",
+    "Id": 7009,
+    "ProviderName": "Service Control Manager",
+    "Message": "等待 Hyper-V 主机计算服务 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:18:18.2680395+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，Hyper-V 主机计算服务 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:18:18.2680395+02:00",
+    "Id": 7009,
+    "ProviderName": "Service Control Manager",
+    "Message": "等待 Hyper-V 主机计算服务 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:18:18.0002242+02:00",
+    "Id": 20,
+    "ProviderName": "Microsoft-Windows-WindowsUpdateClient",
+    "Message": "安装失败: Windows 安装下列更新失败，错误为 0x80240016: Microsoft Corporation AudioProcessingObject Driver Update (1.0.4.7057)。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:17:07.8873374+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，Microsoft Defender Core 服务 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:17:07.8873374+02:00",
+    "Id": 7009,
+    "ProviderName": "Service Control Manager",
+    "Message": "等待 Microsoft Defender Core 服务 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:17:00.6880008+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，Kaspersky Endpoint Security 服务 (KES.14.1) 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:17:00.6880008+02:00",
+    "Id": 7009,
+    "ProviderName": "Service Control Manager",
+    "Message": "等待 Kaspersky Endpoint Security 服务 (KES.14.1) 服务的连接超时(30000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:16:13.0541343+02:00",
+    "Id": 7030,
+    "ProviderName": "Service Control Manager",
+    "Message": "Printer Extensions and Notifications 服务标记为交互服务。但是系统配置成不允许交互服务。这项服务可能无法正常操作。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:14:56.5647918+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，AVP.KES.14.1 服务启动失败: \r\n服务没有及时响应启动或控制请求。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:14:56.5647918+02:00",
+    "Id": 7009,
+    "ProviderName": "Service Control Manager",
+    "Message": "等待 AVP.KES.14.1 服务的连接超时(45000 毫秒)。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:14:49.2720512+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，edgeupdate 服务启动失败: \r\n系统找不到指定的文件。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:14:10.6080472+02:00",
+    "Id": 7030,
+    "ProviderName": "Service Control Manager",
+    "Message": "LeaderTermDaemon 服务标记为交互服务。但是系统配置成不允许交互服务。这项服务可能无法正常操作。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:14:10.606045+02:00",
+    "Id": 7030,
+    "ProviderName": "Service Control Manager",
+    "Message": "LeaderTerm 服务标记为交互服务。但是系统配置成不允许交互服务。这项服务可能无法正常操作。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:13:33.7002276+02:00",
+    "Id": 7023,
+    "ProviderName": "Service Control Manager",
+    "Message": "Network List Service 服务因下列错误而停止: \r\n设备未就绪。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:13:33.5777638+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，edgeupdate 服务启动失败: \r\n系统找不到指定的文件。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:12:40.6333775+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，Kaspersky Anti-Virus NDIS 6 Filter 服务启动失败: \r\n指定的服务不存在。"
+  },
+  {
+    "TimeCreated": "2026-10-10T13:12:40.3264455+02:00",
+    "Id": 7000,
+    "ProviderName": "Service Control Manager",
+    "Message": "由于下列错误，l1vhlwf 服务启动失败: \r\n虚拟机监控程序功能对于该用户来说不可用。"
+  }
+]

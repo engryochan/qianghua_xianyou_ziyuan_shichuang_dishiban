@@ -1,0 +1,22 @@
+[
+  {
+    "HotFixID": "KB5126052",
+    "Description": "Update",
+    "InstalledOn": "2026-09-13T00:00:00"
+  },
+  {
+    "HotFixID": "KB5121794",
+    "Description": "Update",
+    "InstalledOn": "2026-09-13T00:00:00"
+  },
+  {
+    "HotFixID": "KB5129195",
+    "Description": "Security Update",
+    "InstalledOn": "2026-09-13T00:00:00"
+  },
+  {
+    "HotFixID": "KB5124007",
+    "Description": "Security Update",
+    "InstalledOn": "2026-09-13T00:00:00"
+  }
+]

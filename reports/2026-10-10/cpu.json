@@ -1,0 +1,7 @@
+{
+  "Name": "12th Gen Intel(R) Core(TM) i5-12400",
+  "NumberOfCores": 6,
+  "NumberOfLogicalProcessors": 12,
+  "MaxClockSpeed": 2500,
+  "VirtualizationFirmwareEnabled": false
+}
