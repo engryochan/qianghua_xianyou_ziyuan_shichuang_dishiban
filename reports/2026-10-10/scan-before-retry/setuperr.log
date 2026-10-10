@@ -1,0 +1,15 @@
+﻿2026-10-10 11:21:10, Error                        CDeploymentSession::IsRangeRequestSupported(5313): Result = 0x80040154
+2026-10-10 11:21:10, Error                        IsRangeRequestSupported failed with: [80040154 [Error,Facility=FACILITY_ITF,Code=340 (0x0154)]]. Setting RangeRequestSupported to FALSE
+2026-10-10 11:21:12, Error                 MOUPG  CDlpActionImpl<class CDlpErrorImpl<class CDlpObjectInternalImpl<class CUnknownImpl<class IMoSetupDlpAction> > > >::Suspend(1291): Result = 0xC1800104[gle=0x00000002]
+2026-10-10 11:21:12, Error                 MOUPG  CDlpTask::CheckUserInterruptEx(3094): Result = 0x800704D3
+2026-10-10 11:21:12, Error                 MOUPG  CDlpTask::CheckUserInterrupt(3147): Result = 0x800704D3
+2026-10-10 11:21:12, Error                 MOUPG  CSetupManager::ExecuteInstallMode(1249): Result = 0x800705BB
+2026-10-10 11:21:12, Error                 MOUPG  CSetupManager::ExecuteDownlevelMode(690): Result = 0x800705BB
+2026-10-10 11:21:12, Error                 MOUPG  CSetupManager::Execute(394): Result = 0x800705BB[gle=0x0000007f]
+2026-10-10 11:21:12, Error                 MOUPG  CSetupHost::Execute(564): Result = 0x800705BB[gle=0x0000007f]
+2026-10-10 11:21:25, Error                 CONX   hwreqchk: ERROR,Windows::Compat::HardwareRequirements::HardwareInventory::GetProcessorVersionName,1225,Error reading registry value_ swallowing: [0x8007007F].
+
+2026-10-10 11:21:25, Error                 CONX   hwreqchk: ERROR,Windows::Compat::HardwareRequirements::HardwareRequirementSettings::IsMeteredConnection,37,Failed to get NetworkCostType assuming metered network [0x80004005].
+
+2026-10-10 11:22:00, Error                        CDeploymentSession::IsRangeRequestSupported(5313): Result = 0x80040154
+2026-10-10 11:22:00, Error                        IsRangeRequestSupported failed with: [80040154 [Error,Facility=FACILITY_ITF,Code=340 (0x0154)]]. Setting RangeRequestSupported to FALSE
