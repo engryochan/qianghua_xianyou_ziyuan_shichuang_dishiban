@@ -417,3 +417,275 @@ CmdStan 這次的輸出與 10-10 完全相同——`mu 3.5128`、`sigma 1.1557`�
 - Kaspersky 與天锐绿盾的**功能**驗收不在範圍；本節只陳述服務／行程狀態與事件日誌所載。
 - `vmcompute` 失敗的根因未查（與 Kaspersky 是否同源未知）。
 - 未執行壓力測試、SFC/DISM、線上更新搜尋。
+
+---
+
+# 提權複驗（2026-10-11 08:35，先生以管理員身分執行）
+
+先生以管理員跑了 `診斷操作系統/Elevated_Pending_Tasks.ps1` 三次。證據：
+`reports/2026-10-11/elevated-run/`（最後一次 08:35:01 的完整輸出），另附
+`non-elevated-contrast/` 三份同腳本在非提權下的輸出作對照。
+
+**這一輪把上文所有「仍需提權才能權威確認」的項目全部結案，並且查出了升級失敗
+調查三次都缺的那份資料。**
+
+## 一、BitLocker：**權威確認未啟用**
+
+`manage-bde -status C:` 的輸出：
+
+| 欄位 | 值 |
+|---|---|
+| BitLocker 版本 | 无 |
+| 转换状态 | 完全解密 |
+| 已加密百分比 | 0.0% |
+| 加密方法 | 无 |
+| 保护状态 | 保护关闭 |
+| 密钥保护器 | 找不到 |
+
+上文（14:10 複檢）由旁證推出的「未啟用」成立。**但要記得那只是旁證**——
+`BDESVC` Stopped、僅 `C:` 且純 NTFS、`bitlocker.json` 僅 6 bytes，三項都只是
+一致，不是證明。現在是 `manage-bde` 自己說的。
+
+## 二、TPM：補齊全部屬性，且發現一個新欄位
+
+`Get-Tpm` 與 `Win32_Tpm` 的完整結果：
+
+| 欄位 | 值 |
+|---|---|
+| TpmPresent / TpmReady / TpmEnabled / TpmActivated / TpmOwned | 全部 True |
+| ManufacturerIdTxt | `INTC` |
+| ManufacturerVersion | 600.18.30.2264 |
+| SpecVersion | 2.0, 0, 1.38 |
+| PpiVersion | 1.3 |
+| ManagedAuthLevel | Full |
+| AutoProvisioning | Enabled |
+| LockedOut / LockoutCount / LockoutMax | False / 0 / 31 |
+| **RestartPending** | **True** |
+
+兩點值得記：
+
+- **`ManufacturerIdTxt = INTC` 表示這是 Intel PTT（韌體 TPM），不是獨立 TPM 晶片。**
+  上文只說「受信任的平台模块 2.0、ACPI\MSFT0101」，沒分辨是韌體還是離散晶片。
+  這對 IT 有差別：韌體 TPM 的設定在 UEFI 裡，不是一張可插拔的卡。
+- **`RestartPending = True`**，而本機 06:51:52 才開過機、CBS 與 Windows Update
+  的待重啟旗標在 07:30 複驗時都已清除。所以這是 TPM 子系統自己的待重啟狀態，
+  與 OS 層的旗標是兩回事，**不要把它和上文「旗標已全部清除」混為一談**。
+
+## 三、安全啟動：權威介面與登錄檔**互相印證**
+
+`Confirm-SecureBootUEFI = False`。
+
+上文是讀 `HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\State\UEFISecureBootEnabled = 0`
+（非提權可讀）推出同一結論。**兩個獨立來源一致**，這一項可以完全放下了。
+要啟用仍須進 UEFI，屬 IT／先生的決定。
+
+## 四、WinRE：Enabled，且位置解釋了「沒有獨立修復分割區」
+
+```
+Windows RE 状态:  Enabled
+位置:             \\?\GLOBALROOT\device\harddisk0\partition3\Recovery\WindowsRE
+BCD 识别符:       fa1e68ae-8bf9-11f1-9fc7-ac45e65e54e9
+WinRE 版本:       10.0.26100.9545
+```
+
+- **WinRE 在 partition3 的 `\Recovery\WindowsRE` 子目錄裡**，不是獨立分割區。
+  這正好補上 14:10 查 `D:\` 時「磁碟 0 只有 EFI + MSR + C:，未配置空間 0」
+  的那個缺口——修復環境一直都在，只是住在 `C:` 裡面。
+- **WinRE 版本 10.0.26100.9545 落後於 OS 的 26300.9550。** 這在就地升級後很常見
+  （WinRE 映像不隨每次更新同步），但要記下來：真要用修復環境時，它是 26100 代的。
+- 這個 BCD 識別符與下節 A10 的 `recoverysequence` 完全相同，兩處自洽。
+
+## 五、`fltmc`：**三次升級失敗時缺的就是這份清單**
+
+先看對照——同一支腳本在非提權下跑，`A5_fltmc_filters.txt` 的內容只有：
+
+```
+Filter listing failed with error: 0x80070005
+Access is denied.
+```
+
+**所以這份資料在前三次升級失敗的調查裡從來拿不到，不是漏查。**
+
+提權後的篩選器高度表（由高到低）：
+
+| 高度 | 篩選器 | 歸屬 | 群組 |
+|---|---|---|---|
+| **586333** | **Estdlock** | **亿赛通 ESafenet** | FSFilter Activity Monitor |
+| 409800 | bindflt | Microsoft | — |
+| 385250.5 | UCPD | Microsoft | — |
+| **370030** | **FLMonDrv** | **亿赛通 ESafenet** | FSFilter Activity Monitor |
+| 328010 | WdFilter | Microsoft（Defender） | FSFilter Anti-Virus |
+| **320400.17836798641** | **KLIF.KES-14-1** | **Kaspersky** | FSFilter Anti-Virus |
+| **300030** | **LdMFilter** | **天锐绿盾（推定）** | FSFilter Activity Monitor |
+| 244000 | storqosflt | Microsoft | — |
+| 189900 | wcifs | Microsoft | — |
+| 180451 | CldFlt | Microsoft | — |
+| 150000 | bfs | Microsoft | — |
+| **149998.99** | **Filelock `<过时>`** | **亿赛通 ESafenet** | FSFilter Encryption |
+| 141100 | FileCrypt | Microsoft | FSFilter Encryption |
+| 135000 | luafv | Microsoft | — |
+| 130850 | UnionFS | Microsoft | FSFilter HSM |
+| 100800.x | klbackupflt.KES-14-1 | Kaspersky | — |
+| 46000 | npsvctrig | Microsoft | — |
+| 40700 | Wof | Microsoft | — |
+| 40500 | FileInfo | Microsoft | — |
+
+實例（`fltmc instances`）：Estdlock / FLMonDrv / LdMFilter / KLIF 四者都掛在
+`C:` 與 `\Device\Mup`，KLIF 另外還掛 `\Device\NamedPipe`。
+
+### 歸屬是實查簽章得到的，不是照名字猜的
+
+| 驅動 | ProductName | 版本 | 修改日期 | 簽章者 |
+|---|---|---|---|---|
+| estdlock.sys | Data Security Container | 2.0.0.46 | 2021-04-19 | **北京亿赛通科技发展有限责任公司** |
+| FLMonDrv.sys | Windows (R) Win 7 DDK driver | 6.1.7600.16385 | 2021-02-26 | **北京亿赛通科技发展有限责任公司** |
+| FILELOCK.SYS | **SmartSec for Windows** | **7.4.5** | 2021-04-19 | **北京亿赛通科技发展有限责任公司** |
+| LdMFilter.sys | Windows (R) Win 7 DDK driver | 6.0.6000.16384 | 2025-06-26 | Microsoft Windows Hardware Compatibility Publisher |
+
+兩個要點：
+
+- **亿赛通 CDG 貢獻了三個篩選驅動，不是一個。** 上文只盤點到「亿赛通含
+  `CDGRegedit` 登錄檔元件」，低估了它在檔案系統路徑上的佔位。而且它佔住了
+  **全機最高的高度 586333**，在 Defender 的 WdFilter（328010）與 Kaspersky 的
+  KLIF（320400）之上。
+- **`LdMFilter` 的簽章者是 Microsoft WHCP，那只代表它過了 WHQL 認證簽署，
+  不代表微軟寫的。** ProductName 是未改的 DDK 預設字串，所以憑證查不出廠商。
+  判為天锐绿盾是依據檔名 `Ld` 前綴與既知的 `C:\Inetpub\ftproot\Tipray\LdTerm\`
+  一致——**這一項是推定，不是證實**，照實標註。
+
+### `Filelock` 是**傳統篩選器**，而且是開機啟動的加密篩選器
+
+這是本輪最值得交給 IT 的一條。查登錄檔載入設定：
+
+| 驅動 | Start | 群組 | 有 `Instances` 子機碼？ | 模型 |
+|---|---|---|---|---|
+| **Filelock** | **0（Boot）** | **FSFilter Encryption** | **否** | **傳統篩選器，直接掛 device stack** |
+| Estdlock | 1（System） | FSFilter Activity Monitor | 是 | minifilter（走 FltMgr） |
+| FLMonDrv | 2（Auto） | FSFilter Activity Monitor | 是 | minifilter |
+| LdMFilter | 0（Boot） | FSFilter Activity Monitor | 是 | minifilter |
+| KLIF.KES-14-1 | 1（System） | FSFilter Anti-Virus | 是 | minifilter |
+
+`fltmc` 自己把 `Filelock` 標成 `<过时>`（英文版 `<Legacy>`），而它沒有
+`Instances` 子機碼——**這證實它不是 minifilter，是前 FltMgr 時代的傳統檔案系統
+篩選驅動**，靠 `IoAttachDeviceToDeviceStack` 直接掛進裝置堆疊。
+
+**這對升級失敗的 hive 載入問題是目前支持度最高的候選解釋。** 回想既有事證：
+
+- 失敗簽名是 `RegLoadKeyW` 對**所有**離線 hive 回傳 Win32 `87`
+  （`ERROR_INVALID_PARAMETER`），跨 NewOS `SOFTWARE`、SafeOS `SYSTEM`、
+  本機 `elam` 三者皆然，換映像也不變。
+- **關鍵反證是 `elam`：它本身是合法 `regf`、32,768 bytes、一般使用者讀得到。**
+  所以不是檔案損壞，也不是權限不足。
+- 而 Win32 87 正是「檔案開得起來、但內容不被登錄檔子系統接受」的典型回應。
+
+`Filelock` 同時具備四個條件，剛好落在這條路徑上：**開機啟動**（所以在 setup
+掛載離線 hive 的每個階段都在場）、**傳統篩選器**（不走 FltMgr 契約，對現代
+檔案操作的相容性最差）、**加密群組**（透明加解密會改寫讀回的內容）、
+**2021 年的 Win7 DDK 二進位**（比本 OS 組建早四年以上）。
+
+**但必須講清楚界限：這是假設，不是證明。** 要證實只能做對照實驗——停掉它再
+升級一次——而那既違反資安規範、也不是我能做的決定。**正解是把這份清單交給 IT
+與亿赛通原廠，由他們判斷 SmartSec 7.4.5 是否支援 Windows 11 26H2。**
+已另出單子：`reports/2026-10-11/IT請求_篩選驅動堆疊與升級hive失敗_20261011.md`。
+
+> 附帶更正一條推論習慣：上文說「**沒有確定**是哪一個驅動，需管理員列舉
+> `fltmc filters` 與登錄檔回呼」。現在 `fltmc` 列出來了，候選從「三套管控軟體
+> 任一」收斂到「亿赛通的 Filelock 最可疑」，**但『需要列舉登錄檔回呼』那半句仍
+> 未做**——`CDGRegedit` 這類登錄檔篩選元件要用核心除錯器才列得出來，不在本腳本
+> 能力內。所以這一項是**收斂，不是結案**。
+
+## 六、元件存放區：健康
+
+`Dism /Online /Cleanup-Image /CheckHealth` → 「未检测到组件存储损坏」，
+映像版本 10.0.26300.9550。所以升級後的系統映像本身沒有殘留損傷。
+
+## 七、`vmcompute`：根因查明
+
+A8/A9/A10 三項合起來給出了答案。
+
+### A9：**所有 Hyper-V 功能都是 Disabled，只有 WSL 那兩個是 Enabled**
+
+| 功能 | 狀態 |
+|---|---|
+| Microsoft-Hyper-V | Disabled |
+| Microsoft-Hyper-V-Hypervisor | Disabled |
+| **Microsoft-Hyper-V-Services** | **Disabled** |
+| Microsoft-Hyper-V-All | Disabled |
+| HypervisorPlatform | Disabled |
+| Containers、Containers-HNS、Containers-SDN、Containers-DisposableClientVM、Containers-Server-For-Application-Guard | Disabled |
+| **Microsoft-Windows-Subsystem-Linux** | **Enabled** |
+| **VirtualMachinePlatform** | **Enabled** |
+
+**沒有任何一項卡在 `EnablePending`**——這排除了「功能安裝到一半」的假設。
+
+### A8：`vmcompute` 的事件通道**完全是空的**
+
+| 通道 | 內容 |
+|---|---|
+| Hyper-V-Compute-Admin | 「找不到任何与指定的选择条件匹配的事件」 |
+| Hyper-V-Compute-Operational | 同上，空 |
+| Hyper-V-Worker-Admin | 同上，空 |
+| Hyper-V-Hypervisor-Admin | **正常**：Id 155 主機處理器功能遮罩 `0x4058381F`、Id 156 NUMA 政策、Id 39 `IGNOREMEMPART=1` |
+| Containers-Wcifs/Operational | 反覆「WCIFS filter registration succeeded」 |
+
+**對比極清楚：hypervisor 每次開機都正常初始化並寫事件，而 `vmcompute` 一條都沒寫。**
+服務在能寫出第一條日誌之前就死了——這與上文「兩度逾時」的現象一致，也解釋了
+為什麼翻「服務自有日誌」在這裡找不到東西。
+
+### A10：BCD 沒問題
+
+`hypervisorlaunchtype = Auto`、`isolatedcontext = Yes`、`nx = OptIn`，
+`recoverysequence` 與 A4 的 WinRE 識別符相同。**所以不是 BCD 把 hypervisor
+關掉造成的。**
+
+### 結論與誠實界限
+
+**狀態是「半配置」：WSL2 那一組功能開著，Hyper-V 與 Containers 整組關著，
+而 `vmcompute`（Host Compute Service）正好橫跨兩邊——它的服務註冊存在、
+`WSLService` 會在開機時拉它，但它所屬的 Hyper-V-Services 功能並未安裝。**
+
+這是目前證據所能支持的最強敘述。**我不宣稱已證明因果**：`vmcompute.exe` 在
+Win10/11 上同時服務 WSL2、Windows Sandbox 與容器，它究竟是「因為功能未安裝而
+缺元件」還是「別的原因初始化失敗」，用唯讀手段分不出來。
+
+**但實務上這一項可以放下，理由是功能影響為零**：上文已實測 `wsl --version`
+為 3.0.1.0、預設 WSL2，**但沒有任何已安裝的發行版**，所以沒有任何東西真的需要
+HCS。每次開機兩條逾時事件是噪音，不是故障。
+
+三條路，都該由先生或 IT 決定，我不逕行：
+
+1. **什麼都不做**（建議）。沒有發行版，沒有影響。
+2. **要用 WSL2 跑發行版**：屆時才需要處理，可先試
+   `dism /online /enable-feature /featurename:Microsoft-Hyper-V-Services`
+   ——**這是系統變更，需提權，且本機受管理，應先問 IT。**
+3. **確定永不用 WSL**：把 `WSLService` 的啟動類型改為手動，可消掉那兩條事件。
+   同樣是系統變更，且可逆。
+
+## 八、B 段：驅動部分與先前一致，且安全閘門運作正常
+
+- **B1**：WU 仍然只提供一個驅動，就是那個 2015 年的 Realtek 9.1.409.2015。
+  與上文判定一致——**不該裝**，裝了版本號反而退（本機是 9.1.412.2015）。
+- **B2**：同樣四個設備，這次拿到完整硬體 ID 清單（已存檔）。
+- **B3**：`pnputil /scan-devices` 重掃後**仍是 4 個 Error**。第三次複驗，一致。
+- **B4**：第三次執行帶了 `-InstallDrivers` 與一個不存在的 `-DriverPackagePath`，
+  腳本正確拒絕：「警告: 路徑不存在：C:\work\dl\chipset\extracted。略過。」
+  **閘門按設計運作**——沒有下載任何晶片組包，所以它什麼都沒裝。
+
+## 九、順帶證實一件事：`powershell -File` 吃得下中文絕對路徑
+
+先生第一次用相對路徑失敗（提權視窗的工作目錄是 `C:\WINDOWS\system32`，
+那是我給錯路徑），改用倉庫的中文絕對路徑後正常執行。
+
+**所以本倉庫既有的「Rscript 吃中文絕對路徑會亂碼」那條教訓不能外推到
+`powershell.exe`。** 兩者的參數編碼處理不同。我仍保留 `C:\work\admin\` 下那份
+ASCII 路徑副本，但那是便利，不是必要。
+
+## 十、本節界限
+
+全程唯讀（B4 未觸發，故未安裝任何驅動）。未登錄、未修改、未刪除、未新增任何
+網管／資安的 IP 設定，未碰網段內任何帳號與設備，未存取任何博彩網站。未啟停、
+未卸載、未重裝任何資安軟體，未改韌體，未改 Windows Update 策略，未動磁碟分割，
+未刪 `Windows.old`。
+
+**仍未驗證**：登錄檔回呼清單（`CDGRegedit` 等需核心除錯器）；
+`Filelock` 是否確為 hive 載入失敗的成因（需對照實驗，不做）。

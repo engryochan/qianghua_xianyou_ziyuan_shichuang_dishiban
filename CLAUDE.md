@@ -6,7 +6,72 @@
 
 指定 WIM 與 ISO 已刪除，合計約 14.61 GiB。完整設備、驅動、軟體、防護、事件與診斷界限：[升級後診斷](reports/2026-10-10/Windows11升級後診斷.md)。以下較早記錄為歷史內容，舊華碩 / NVIDIA GT 730 資訊不能套用本機；Python 環境復原以 CLAUDE.md 的 2026-10-06 更正為準。
 
-### 2026-10-11 重啟後複驗（**優先於以下兩段**）
+### 2026-10-11 提權複驗（**優先於本檔以下全部**）
+
+先生以管理員跑了 `診斷操作系統/Elevated_Pending_Tasks.ps1`。證據
+`reports/2026-10-11/elevated-run/`，判讀見報告「提權複驗」一節。
+**本輪把所有「需提權才能確認」的項目結案，並查出升級失敗調查三次都缺的資料。**
+
+**最重要的一條：`fltmc` 需要提權，所以前三次升級失敗調查從來拿不到篩選器清單。**
+非提權下它只回 `0x80070005 Access is denied`（對照證物已存
+`elevated-run/non-elevated-contrast/`）。**凡是結論寫著「沒有確定是哪一個驅動」的，
+先確認那是真的查不出來，還是你根本沒權限查。**
+
+拿到清單後的發現：**亿赛通 CDG 在本機有三個檔案系統篩選驅動，不是一個**
+（先前只盤點到它的 `CDGRegedit` 登錄檔元件）：
+
+| 驅動 | 高度 | Start | 群組 | 模型 |
+|---|---|---|---|---|
+| Estdlock | **586333（全機最高，在 Defender 328010 與 Kaspersky 320400 之上）** | 1 | Activity Monitor | minifilter |
+| FLMonDrv | 370030 | 2 | Activity Monitor | minifilter |
+| **Filelock**（SmartSec 7.4.5） | 149998.99 | **0（Boot）** | **Encryption** | **傳統篩選器** |
+
+**`Filelock` 是升級 hive 失敗的最佳候選解釋。** `fltmc` 把它標為 `<过时>`，
+且它**沒有 `Instances` 子機碼**——兩項獨立證據確認它不是 minifilter，而是
+前 FltMgr 時代的傳統篩選驅動。它同時具備開機啟動 + 傳統模型 + 透明加密 +
+2021 年 Win7 DDK 二進位，全部落在「setup 掛載離線 hive」這條路徑上；而失敗碼
+Win32 `87` 正是「檔案開得起來但內容不被登錄檔接受」的典型回應（`elam` 是合法
+`regf` 且一般使用者可讀，已排除損壞與權限）。**這是假設不是證明**，證實需停用
+該驅動再升級一次——違反資安規範，**不做**。已出單：
+`reports/2026-10-11/IT請求_篩選驅動堆疊與升級hive失敗_20261011.md`。
+
+**判讀紀律（踩過）：驅動的簽章者不等於開發者。** `LdMFilter` 的簽章者是
+`Microsoft Windows Hardware Compatibility Publisher`，那只代表它過了 WHQL
+認證簽署；它的 ProductName 是未改的 `Windows (R) Win 7 DDK driver` 預設字串，
+憑證查不出真實廠商。判它為天锐绿盾是靠檔名 `Ld` 前綴與既知路徑一致，**屬推定**。
+
+**四項原本「未驗證」全部結案：**
+
+- **BitLocker 權威確認未啟用**：`manage-bde -status C:` → 版本「无」、完全解密、
+  已加密 0.0%、保護關閉、找不到密鑰保護器。先前的旁證推定正確。
+- **TPM 2.0 就緒，且是 Intel PTT 韌體 TPM**（`ManufacturerIdTxt = INTC`，
+  SpecVersion 2.0, 0, 1.38，Owned/Ready 全 True）。**先前只知「TPM 2.0」，
+  分不出韌體或離散晶片**——韌體 TPM 的設定在 UEFI 裡。
+  另記 `RestartPending = True`，**那是 TPM 子系統自身狀態，與 OS 層那三個已清除的
+  待重啟旗標是兩回事，不要混記。**
+- **安全啟動 `Confirm-SecureBootUEFI = False`**，與非提權讀到的
+  `UEFISecureBootEnabled = 0` 互相印證。
+- **WinRE Enabled**，在 `partition3\Recovery\WindowsRE`（住在 `C:` 內，
+  **這解釋了為何磁碟 0 沒有獨立修復分割區**），版本 10.0.26100.9545
+  落後 OS 的 26300.9550。
+
+**`vmcompute` 查明了，而且不必修。** 所有 Hyper-V 與 Containers 功能皆
+`Disabled`，只有 `Microsoft-Windows-Subsystem-Linux` 與 `VirtualMachinePlatform`
+是 `Enabled`，且**無一卡在 `EnablePending`**。`Hyper-V-Compute-Admin` 與
+`-Operational` **完全沒有事件**，而 `Hypervisor-Admin` 每次開機正常初始化——
+**服務在寫出第一條日誌前就死了**。`hypervisorlaunchtype = Auto`，BCD 無問題。
+結論是「半配置」：WSL2 開著、Hyper-V 關著，而 HCS 橫跨兩邊。
+**不宣稱已證明因果**，但本機 WSL 無任何發行版，**功能影響為零，建議什麼都不做**。
+
+**`powershell -File` 吃得下中文絕對路徑**（先生實測）。先生第一次失敗是因為
+**我給了相對路徑**，而提權視窗的工作目錄是 `C:\WINDOWS\system32`。
+**所以本檔「Rscript 吃中文絕對路徑會亂碼」那條不能外推到 `powershell.exe`。**
+
+**仍未取得（收斂，不是結案）**：登錄檔篩選回呼清單（`CDGRegedit` 等）需核心
+除錯器，不在使用者端腳本能力內。原先那句「需管理員列舉 `fltmc filters`
+**與登錄檔回呼**」，前半做完了，後半沒做。
+
+### 2026-10-11 重啟後複驗（優先於以下兩段，**但次於上段提權複驗**）
 
 已於 10-11 06:51:52 正常重啟。詳見報告「重啟後複驗」各節。
 
@@ -331,7 +396,7 @@ tar -xf 'C:\work\dl\RStudio-2026.09.0-174.zip' -C 'C:\work\RStudio'
 
 **確定的機制**：`RegLoadKeyW` 對所有離線 hive 回傳 Win32 `87`（NewOS `SOFTWARE`、SafeOS `SYSTEM`、本機 `elam`）。`elam` 本身是合法 `regf`、32,768 bytes、一般使用者讀得到，所以不是損壞或權限問題。
 
-本機同時常駐 Kaspersky KES 14.1.0.423（含開機 ELAM `klelam.sys`）、**亿赛通 Cobra DocGuard**（含 `CDGRegedit` 登錄檔元件）、**天锐绿盾 Tipray**。**沒有確定是哪一個驅動**，需管理員列舉 `fltmc filters` 與登錄檔回呼。
+本機同時常駐 Kaspersky KES 14.1.0.423（含開機 ELAM `klelam.sys`）、**亿赛通 Cobra DocGuard**（含 `CDGRegedit` 登錄檔元件）、**天锐绿盾 Tipray**。~~**沒有確定是哪一個驅動**，需管理員列舉 `fltmc filters` 與登錄檔回呼。~~ **2026-10-11 提權後已收斂**：`fltmc` 列出來了，候選縮到**亿赛通的 `Filelock`**（開機啟動的傳統加密篩選器，SmartSec 7.4.5），見本檔開頭「提權複驗」。登錄檔回呼那半句仍未做（需核心除錯器）。
 
 **下一步先試**（前三次都沒用過，失敗點正是 Dynamic Update 的 SSU 注入）：
 
@@ -475,6 +540,7 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 | `診斷操作系統/Win10_Optimize.ps1` | 只負責「更新已安裝的東西」 |
 | `診斷操作系統/Win10_Diagnose_v3.ps1` / `Setup_DataStack_v2.ps1` / `Win10_Optimize_v2.ps1` | 另一輪作者的版本，設計更保守（不改全域 `.Rprofile`、不動 PATH） |
 | `診斷操作系統/Win11_App_RealTest.ps1` | **驗證應用是否真的畫得出畫面**（不是「有沒有裝」）。像素級黑屏判定 + 渲染旗標逐一實測 |
+| `診斷操作系統/Elevated_Pending_Tasks.ps1` | **需管理員才查得到的項目**（`manage-bde`、`Get-Tpm`、`Confirm-SecureBootUEFI`、`reagentc`、**`fltmc filters` / `instances`**、`Dism /CheckHealth`、Hyper-V 事件與選用功能、`bcdedit`）。**含 BOM，必須保留。** A 段全唯讀；B 段僅在明確加 `-InstallDrivers` 並提供存在的 `-DriverPackagePath` 時才安裝自備驅動包 |
 | `env/python-ds-core.in` | **重建核心環境的依據**（698 個 `==` + 28 個 `>=`，已實測可建成） |
 | `env/python-ds-verified.lock.txt` | 重建後 freeze 的 728 行實況，已通過 15/15 驗收 |
 | `env/python-ds-requirements.lock.txt` | ~~重建環境的唯一依據~~ **這份本身無解，不要用**。只留作歷史證物，見本檔開頭 2026-10-06 更正第一節 |
