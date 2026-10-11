@@ -1,0 +1,137 @@
+﻿登錄檔回呼候選驅動的歸屬與載入狀態（唯讀，2026-10-11）
+
+判定依據：PE Import Name Table 的函式名明文 + Authenticode 簽章
+          + 以 ImagePath 反查服務名（**不以檔名猜服務名**） + Win32_SystemDriver。
+
+界限：匯入該 API 只證明「具備能力並已連結」，不證明此刻有活躍回呼；
+      列舉活躍回呼仍需核心除錯器的 !reg querycallbacks。
+
+修正紀錄：本檔第一版以檔名 basename 查服務機碼，把 klif.sys 誤判為「未註冊、未載入」——
+          Kaspersky 的真實服務名帶 .KES-14-1 後綴（KLIF.KES-14-1），是假陰性。
+          已改為 ImagePath 反查。
+============================================================
+
+--- applockerfltr.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : Applocker Filter
+  FileVersion : 10.0.26100.9278 (WinBuild.160101.0800)
+  修改時間    : 09/13/2026 22:25:25
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : applockerfltr  (Start=3 Type=1)
+  載入狀態    : Stopped / StartMode=Manual
+
+--- bfs.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : Bfs 筛选器驱动程序
+  FileVersion : 10.0.26100.8115 (WinBuild.160101.0800)
+  修改時間    : 10/10/2026 15:27:24
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : bfs  (Start=2 Type=2)
+  載入狀態    : Running / StartMode=Auto
+
+--- Filelock.sys
+  ProductName : SmartSec for Windows
+  FileDesc    : Windows x64 Driver for SmartSec
+  FileVersion : 7.4.5
+  修改時間    : 04/19/2021 12:31:51
+  簽章者      : CN=北京亿赛通科技发展有限责任公司, O=北京亿赛通科技发展有限责任公司, L=北京, S=北京, C=CN
+  服務名      : Filelock  (Start=0 Type=2)
+  載入狀態    : Running / StartMode=Boot
+
+--- KES-14-1\klif.sys
+  ProductName : Kaspersky Application
+  FileDesc    : Core System Interceptors [fre_win7_x64]
+  FileVersion : 30.1945.0.24847
+  修改時間    : 07/10/2026 09:38:18
+  簽章者      : CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : KLIF.KES-14-1  (Start=1 Type=2)
+  載入狀態    : Running / StartMode=System
+
+--- klupd_KES-14-1_arkmon.sys
+  ProductName : Kaspersky Bases
+  FileDesc    : Kaspersky Anti-Rootkit Monitor Driver
+  FileVersion : 2.27.2.0
+  修改時間    : 10/08/2026 12:02:19
+  簽章者      : CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : klupd_KES-14-1_arkmon  (Start=0 Type=1)
+  載入狀態    : Running / StartMode=Boot
+
+--- klupd_KES-14-1_klark.sys
+  ProductName : Kaspersky Bases
+  FileDesc    : Kaspersky Anti-Rootkit
+  FileVersion : 4.28.3.0
+  修改時間    : 10/08/2026 12:02:22
+  簽章者      : CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : klupd_KES-14-1_klark  (Start=3 Type=1)
+  載入狀態    : Stopped / StartMode=Manual
+
+--- klupd_KES-14-1_klbg.sys
+  ProductName : Kaspersky Bases
+  FileDesc    : Kaspersky Boot Guard Driver
+  FileVersion : 11.28.3.0
+  修改時間    : 10/08/2026 12:02:22
+  簽章者      : CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : klupd_KES-14-1_klbg  (Start=0 Type=1)
+  載入狀態    : Running / StartMode=Boot
+
+--- klupd_KES-14-1_mark.sys
+  ProductName : Kaspersky Bases
+  FileDesc    : Kaspersky Anti-Rootkit Memory Driver
+  FileVersion : 6.26.2.0
+  修改時間    : 10/08/2026 17:02:21
+  簽章者      : CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : klupd_KES-14-1_mark  (Start=3 Type=1)
+  載入狀態    : Stopped / StartMode=Manual
+
+--- mssecflt.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : Microsoft 安全事件组件文件系统筛选器驱动程序
+  FileVersion : 10.8837.26060.2029
+  修改時間    : 09/13/2026 22:26:24
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : MsSecFlt  (Start=3 Type=1)
+  載入狀態    : Stopped / StartMode=Manual
+
+--- RegLock.sys
+  ProductName : AniSec for Windows
+  FileDesc    : RegLock Driver for Windows x64
+  FileVersion : 1.2.4
+  修改時間    : 02/26/2021 06:56:22
+  簽章者      : E=liangjq@esafenet.com, CN="Beijing Yisaitong Science and Technology Development Co.,Ltd.", O="Beijing Yisaitong Science and Technology Development Co.,Ltd.", L=Beijing, S=Beijing, C=CN
+  服務名      : **無任何服務的 ImagePath 指向它 -> 確實未註冊、未載入**
+
+--- UCPD.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : User Choice Protection Driver
+  FileVersion : 4.8.0.702351
+  修改時間    : 10/10/2026 15:27:36
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : UCPD  (Start=1 Type=2)
+  載入狀態    : Running / StartMode=System
+
+--- VerifierExt.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : 驱动程序验证程序扩展
+  FileVersion : 10.0.19041.4522 (WinBuild.160101.0800)
+  修改時間    : 09/13/2026 22:25:35
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : VerifierExt  (Start=3 Type=1)
+  載入狀態    : Stopped / StartMode=Manual
+
+--- WdFilter.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : Microsoft antimalware file system filter driver
+  FileVersion : 4.18.25080.5 (aec027e97d1d7ab25370672d0fb4548480483a83)
+  修改時間    : 09/13/2026 22:26:23
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : WdFilter  (Start=0 Type=2)
+  載入狀態    : Running / StartMode=Boot
+
+--- wd\WdFilter.sys
+  ProductName : Microsoft® Windows® Operating System
+  FileDesc    : Microsoft antimalware file system filter driver
+  FileVersion : 4.18.26080.4 (ccacee407da609d5c2c557d13db39624e32a0227)
+  修改時間    : 10/10/2026 07:05:50
+  簽章者      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+  服務名      : WdFilter  (Start=0 Type=2)
+  載入狀態    : Running / StartMode=Boot

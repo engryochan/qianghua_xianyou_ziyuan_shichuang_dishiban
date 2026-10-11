@@ -689,3 +689,94 @@ ASCII 路徑副本，但那是便利，不是必要。
 
 **仍未驗證**：登錄檔回呼清單（`CDGRegedit` 等需核心除錯器）；
 `Filelock` 是否確為 hive 載入失敗的成因（需對照實驗，不做）。
+
+---
+
+# 登錄檔回呼靜態查證（2026-10-11 09:30，非提權，唯讀）
+
+上一節把「列舉登錄檔篩選回呼」列為**唯一仍然缺失的資料**，理由是「需核心除錯器
+（`!reg querycallbacks`），不在使用者端腳本能力內」。
+
+**那個結論下得太早。** 活躍回呼的列舉確實需要除錯器，但「**哪些驅動具備註冊
+登錄檔回呼的能力**」可以靜態查出來，而且不需提權。
+
+證據：`reports/2026-10-11/registry-callbacks/`
+（`scan_cm_callbacks.py`、`scan_output.txt`、`drivers_attribution.txt`）
+
+## 一、方法：PE 匯入名稱表是明文
+
+Windows 核心驅動呼叫 `CmRegisterCallbackEx` 之類的 API，是透過 PE 的
+**Import Name Table**，而被匯入的函式名以 **ASCII 明文**存在檔案裡。
+所以直接搜位元組就能判斷某個 `.sys` 有沒有連結這些 API——**純讀檔，
+不載入、不執行任何驅動，也不需要管理員**。
+
+掃 `C:\Windows\System32\drivers`（含子目錄）全部 **476 個 `.sys`**，
+搜六個登錄檔回呼 API，另搜七個對照 API（檔案系統篩選、行程／執行緒／映像通知）
+以分辨各驅動的管控面向。**14 個命中。**
+
+## 二、結果：載入中的第三方驅動裡，只有兩個碰登錄檔
+
+| 驅動（服務名） | 歸屬 | 載入狀態 | 登錄檔回呼 API | 其他關鍵 API |
+|---|---|---|---|---|
+| **`Filelock`** | **亿赛通 SmartSec 7.4.5** | **Running / Boot** | `CmRegisterCallback`、`CmUnRegisterCallback` | **`IoAttachDeviceToDeviceStack`**、`ObRegisterCallbacks`、`PsSetCreateProcessNotifyRoutine`、`PsSetLoadImageNotifyRoutine` |
+| **`KLIF.KES-14-1`** | **Kaspersky** | **Running / System** | `CmRegisterCallback`、`CmUnRegisterCallback` | `FltRegisterFilter`、`IoAttachDeviceToDeviceStack`、`PsSetLoadImageNotifyRoutine` |
+| `klupd_KES-14-1_klbg` | Kaspersky Boot Guard | Running / Boot | `CmRegisterCallback`、`CmUnRegisterCallback` | — |
+| `klupd_KES-14-1_arkmon` | Kaspersky Anti-Rootkit Monitor | Running / Boot | 僅 `CmUnRegisterCallback` | 行程／執行緒／映像通知 |
+| `RegLock` | **亿赛通 AniSec 1.2.4** | **未註冊、未載入** | `CmRegisterCallback` | — |
+| `klupd_*_klark` / `_mark` | Kaspersky | Stopped / Manual | 僅 `CmUnRegisterCallback` | — |
+| `bfs`、`UCPD`、`WdFilter`、`applockerfltr`、`mssecflt`、`VerifierExt` | Microsoft | 見存檔 | 各自不同 | — |
+
+### 兩個關鍵的否證
+
+**`Estdlock`、`FLMonDrv`、`LdMFilter` 三者完全沒有匯入任何 `Cm*` API。**
+它們雖然都在跑（且 `Estdlock` 高度全機最高），**但不是登錄檔篩選器**。
+這把候選範圍大幅縮小——先前只能說「三套管控軟體裡某一個」。
+
+**亿赛通自己那支專職的登錄檔鎖定驅動 `RegLock.sys` 並未載入。**
+它在磁碟上（`AniSec for Windows` 1.2.4，2021-02-26，簽章者
+`E=liangjq@esafenet.com, CN="Beijing Yisaitong..."`），**但沒有任何服務的
+`ImagePath` 指向它**，所以 SCM 無從載入，`Win32_SystemDriver` 也查不到。
+本檔開頭提到的 `CDGRegedit` 登錄檔元件屬同一家族，目前是**休眠**的。
+
+## 三、這讓 `Filelock` 的嫌疑從「最可疑」變成「唯一同時落在兩條路上」
+
+升級失敗是 `RegLoadKeyW` 對所有離線 hive 回傳 Win32 `87`。要讓這件事發生，
+攔截點只有兩種可能：**檔案內容被改寫**（hive 必須逐位元組原樣讀取），
+或**登錄檔操作本身被攔**。
+
+**`Filelock` 是目前載入中的第三方驅動裡，唯一同時站在這兩條路上的：**
+
+| 路徑 | `Filelock` 的身分 |
+|---|---|
+| **檔案** | 開機啟動（`Start=0`）的**傳統**篩選器（`IoAttachDeviceToDeviceStack`、無 `Instances` 子機碼、`fltmc` 標 `<过时>`），且屬 **FSFilter Encryption** 群組——透明加解密會改寫讀回的內容 |
+| **登錄檔** | 匯入 `CmRegisterCallback` / `CmUnRegisterCallback` |
+
+Kaspersky 的 `KLIF` 雖然也兩者皆具，但它是**正規 minifilter**
+（有 `FltRegisterFilter` 與 `Instances`，高度 320400），而 `Filelock` 是
+2021 年 Win7 DDK 的傳統驅動。**兩者都該請原廠確認，但 `Filelock` 的風險面
+明顯更大。**
+
+## 四、界限（這點必須講清楚）
+
+**匯入某個 API 只證明「具備能力並已連結」，不證明此刻真的有活躍的回呼。**
+一支驅動可以連結 `CmRegisterCallback` 卻在特定條件下才註冊，也可能註冊後
+又註銷。**要列舉當下活躍的回呼，仍然只能用核心除錯器的 `!reg querycallbacks`。**
+
+所以 #14 的狀態是**從「完全沒有資料」變成「候選已收斂到兩個具名驅動」**，
+**不是結案**。但對 IT 與原廠來說，這已經足以指名問誰。
+
+## 五、過程中的一次自我檢出
+
+產生歸屬存檔時，我用**檔名的 basename 去查服務機碼**，於是 `klif.sys`
+被報成「服務機碼不存在 → 無法被 SCM 載入、未載入」。
+
+**那是假陰性，而且是本倉庫早已記載過的同一個坑**——Kaspersky 的真實服務名帶
+`.KES-14-1` 後綴（`KLIF.KES-14-1`），上一輪我就因為 `Get-Service` 的查詢寫法
+誤判過「驅動被移除」。
+
+改用**以 `ImagePath` 反查服務名**（不猜檔名對應）後，`klif` 正確顯示
+`KLIF.KES-14-1 / Start=1 / Running`，並與提權那輪 `fltmc` 實測的
+高度 320400 相互印證。`RegLock` 經同一套方法複驗，確實**沒有**任何服務指向它。
+
+**存檔檔案已重寫，並在檔頭留下修正紀錄。** 教訓重述一次：
+**在 Windows 上不要用檔名推服務名，要用 `ImagePath` 反查。**

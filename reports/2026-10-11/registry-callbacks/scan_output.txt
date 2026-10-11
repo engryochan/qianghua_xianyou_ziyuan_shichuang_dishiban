@@ -1,0 +1,41 @@
+掃描 .sys 總數: 476；讀取失敗 0
+匯入登錄檔回呼 API 的驅動: 14
+
+--- applockerfltr.sys
+    Cm   : CmCallbackGetKeyObjectID, CmRegisterCallback, CmUnRegisterCallback
+    其他 : FltRegisterFilter
+--- bfs.sys
+    Cm   : CmRegisterCallback, CmRegisterCallbackEx, CmUnRegisterCallback
+    其他 : FltRegisterFilter
+--- Filelock.sys
+    Cm   : CmRegisterCallback, CmUnRegisterCallback
+    其他 : IoAttachDeviceToDeviceStack, ObRegisterCallbacks, PsSetCreateProcessNotifyRoutine, PsSetLoadImageNotifyRoutine
+--- KES-14-1\klif.sys
+    Cm   : CmRegisterCallback, CmUnRegisterCallback
+    其他 : FltRegisterFilter, IoAttachDeviceToDeviceStack, PsSetLoadImageNotifyRoutine
+--- klupd_KES-14-1_arkmon.sys
+    Cm   : CmUnRegisterCallback
+    其他 : PsSetCreateProcessNotifyRoutine, PsSetCreateThreadNotifyRoutine, PsSetLoadImageNotifyRoutine
+--- klupd_KES-14-1_klark.sys
+    Cm   : CmUnRegisterCallback
+--- klupd_KES-14-1_klbg.sys
+    Cm   : CmRegisterCallback, CmUnRegisterCallback
+--- klupd_KES-14-1_mark.sys
+    Cm   : CmUnRegisterCallback
+--- mssecflt.sys
+    Cm   : CmCallbackGetKeyObjectID, CmCallbackGetKeyObjectIDEx, CmRegisterCallback, CmRegisterCallbackEx, CmUnRegisterCallback
+    其他 : FltRegisterFilter, ObRegisterCallbacks, PsSetCreateProcessNotifyRoutine, PsSetCreateProcessNotifyRoutineEx, PsSetCreateThreadNotifyRoutine, PsSetLoadImageNotifyRoutine
+--- RegLock.sys
+    Cm   : CmRegisterCallback
+--- UCPD.sys
+    Cm   : CmCallbackGetKeyObjectID, CmCallbackGetKeyObjectIDEx, CmRegisterCallback, CmRegisterCallbackEx, CmUnRegisterCallback
+    其他 : FltRegisterFilter, ObRegisterCallbacks, PsSetCreateProcessNotifyRoutine, PsSetCreateProcessNotifyRoutineEx, PsSetLoadImageNotifyRoutine
+--- VerifierExt.sys
+    Cm   : CmRegisterCallback, CmRegisterCallbackEx, CmUnRegisterCallback
+    其他 : PsSetCreateProcessNotifyRoutine, PsSetCreateThreadNotifyRoutine, PsSetLoadImageNotifyRoutine
+--- WdFilter.sys
+    Cm   : CmRegisterCallback, CmRegisterCallbackEx, CmUnRegisterCallback
+    其他 : FltRegisterFilter, PsSetCreateProcessNotifyRoutine, PsSetCreateThreadNotifyRoutine, PsSetLoadImageNotifyRoutine
+--- wd\WdFilter.sys
+    Cm   : CmRegisterCallback, CmRegisterCallbackEx, CmUnRegisterCallback
+    其他 : FltRegisterFilter, PsSetCreateProcessNotifyRoutine, PsSetCreateThreadNotifyRoutine, PsSetLoadImageNotifyRoutine

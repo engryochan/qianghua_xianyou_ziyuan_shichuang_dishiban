@@ -67,9 +67,40 @@ Win32 `87` 正是「檔案開得起來但內容不被登錄檔接受」的典型
 **我給了相對路徑**，而提權視窗的工作目錄是 `C:\WINDOWS\system32`。
 **所以本檔「Rscript 吃中文絕對路徑會亂碼」那條不能外推到 `powershell.exe`。**
 
-**仍未取得（收斂，不是結案）**：登錄檔篩選回呼清單（`CDGRegedit` 等）需核心
-除錯器，不在使用者端腳本能力內。原先那句「需管理員列舉 `fltmc filters`
-**與登錄檔回呼**」，前半做完了，後半沒做。
+**#14 登錄檔回呼：我說「需核心除錯器」是下得太早，靜態就能查一半。**
+活躍回呼的列舉確實需要 `!reg querycallbacks`，但「**哪些驅動具備註冊能力**」
+可以唯讀靜態查出：**PE 的 Import Name Table 把被匯入的函式名以 ASCII 明文存在
+檔案裡**，所以搜位元組即可，不必載入驅動、不必提權。掃 `System32\drivers`
+全部 476 個 `.sys`，14 個命中（`reports/2026-10-11/registry-callbacks/`）。
+
+| 載入中的第三方驅動 | 登錄檔回呼 | 檔案系統掛法 |
+|---|---|---|
+| **`Filelock`（亿赛通 SmartSec 7.4.5）** | **有** `CmRegisterCallback` | **傳統**（`IoAttachDeviceToDeviceStack`） |
+| `KLIF.KES-14-1`（Kaspersky） | 有 | 正規 minifilter |
+| `klupd_KES-14-1_klbg`（Kaspersky Boot Guard） | 有 | — |
+| `Estdlock`／`FLMonDrv`／`LdMFilter` | **完全沒有匯入任何 `Cm*`** | — |
+
+兩個關鍵否證：**`Estdlock`／`FLMonDrv`／`LdMFilter` 都不是登錄檔篩選器**；
+**亿赛通專職的 `RegLock.sys`（AniSec 1.2.4）並未載入**——它在磁碟上，但
+**沒有任何服務的 `ImagePath` 指向它**，SCM 無從載入。`CDGRegedit` 屬同一家族，
+目前休眠。
+
+**所以 `Filelock` 從「最可疑」變成「唯一同時站在兩條路上的」**：它既是開機啟動
+的傳統**加密**篩選器（檔案內容路徑），又匯入登錄檔回呼（登錄檔操作路徑），
+而 `RegLoadKeyW` 回傳 Win32 87 的攔截點正好只有這兩種。**仍是假設不是證明**
+（匯入只證明能力與連結，不證明此刻有活躍回呼）。
+
+**又踩了一次同一個坑，而且是本檔已經記載過的：不要用檔名推服務名。**
+我產生歸屬存檔時用 basename 查服務機碼，`klif.sys` 被報成「服務機碼不存在、
+未載入」——假陰性，因為 Kaspersky 的真實服務名是 `KLIF.KES-14-1`。上一輪我就
+因為 `Get-Service` 的寫法誤判過「驅動被移除」。**正解是以 `ImagePath` 反查服務名**，
+改用後 `klif` 正確顯示 `Running / Start=1`，並與提權那輪 `fltmc` 的高度 320400
+互相印證。存檔已重寫並在檔頭留修正紀錄。
+
+**另記一條：`python -I` 會連帶忽略 `PYTHONIOENCODING`**（`-I` 隱含 `-E`）。
+把輸出重導到檔案時會用地區代碼頁（GBK）寫出，拿 UTF-8 讀就是亂碼。
+在程式內 `sys.stdout.reconfigure(encoding="utf-8")` 才可靠。
+
 
 **磁碟數字已變，下文「可用僅約 55 GB」作廢。** 10-11 09:00 複查：`C:` 可用
 **42.89 GB（18.0%）**，比 10-10 少了約 12 GB，合理推因是 06:52:07 完成安裝的
