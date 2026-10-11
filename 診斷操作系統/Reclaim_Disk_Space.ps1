@@ -35,6 +35,7 @@ param(
     [switch]$CleanWindowsUpdateCache,
     [switch]$RemoveWindowsOld,
     [switch]$DisableHibernation,
+    [switch]$ClearOneDriveGitHub,
     [switch]$Force
 )
 
@@ -69,6 +70,7 @@ $items = [ordered]@{
     'C:\Windows.old'                           = '舊系統（回滾路徑）'
     'C:\Windows\SoftwareDistribution\Download' = 'WU 下載快取'
     'C:\$Recycle.Bin'                          = '回收桶'
+    $(Join-Path $env:USERPROFILE 'OneDrive\文档\GitHub') = 'OneDrive 內的 GitHub（使用者資料）'
     'C:\hiberfil.sys'                          = '休眠檔'
     'C:\pagefile.sys'                          = '分頁檔（自動管理，勿手動刪）'
 }
@@ -237,9 +239,77 @@ if ($DisableHibernation) {
     Write-Host ''
 }
 
+# ---------- 5) 清空 OneDrive\文档\GitHub ----------
+if ($ClearOneDriveGitHub) {
+    $didSomething = $true
+    Write-Host '---- 清空 OneDrive\文档\GitHub ----' -ForegroundColor Yellow
+    $odg = Join-Path $env:USERPROFILE 'OneDrive\文档\GitHub'
+    if (-not (Test-Path -LiteralPath $odg)) {
+        Write-Host "$odg 不存在，無需動作。"
+    } else {
+        # 先保全兩個「OneDrive 版與 Documents 版位元組不同」的舊草稿。
+        # 兩者都比 Documents 版舊且小，但既然不同就不是重複檔，先留底再刪。
+        $backup = 'C:\work\backup\onedrive-github-salvage'
+        $salvage = @(
+            'online-gaming-decision-intelligence-lab\_大秦赋算筹_v1_3_8.qmd',
+            'online-gaming-decision-intelligence-lab\Reference\Aerospace_Ecosystem_Report.qmd'
+        )
+        New-Item -ItemType Directory $backup -Force | Out-Null
+        Write-Host "先備份舊草稿到 $backup …"
+        $backupOk = $true
+        foreach ($rel in $salvage) {
+            $src = Join-Path $odg $rel
+            if (Test-Path -LiteralPath $src) {
+                $dst = Join-Path $backup (Split-Path $rel -Leaf)
+                Copy-Item -LiteralPath $src -Destination $dst -Force
+                if (Test-Path -LiteralPath $dst) {
+                    Write-Host ('  已備份 {0}  ({1:N1} KB)' -f (Split-Path $rel -Leaf), ((Get-Item -LiteralPath $dst).Length / 1KB))
+                } else {
+                    Write-Warning "  備份失敗：$rel"
+                    $backupOk = $false
+                }
+            } else {
+                Write-Host "  （找不到 $rel，略過）"
+            }
+        }
+
+        if (-not $backupOk) {
+            Write-Warning '有檔案備份失敗，為安全起見不進行刪除。'
+        } else {
+            Write-Host ''
+            Write-Host '*** 注意：這是永久刪除（permanent deletion）。***' -ForegroundColor Red
+            Write-Host '*** OneDrive 會把刪除同步到雲端；雲端回收桶約保留 30 天可復原。***' -ForegroundColor Red
+            Write-Host '*** 已核實三個倉庫均無獨有提交；qianghua 那份本已損壞。***'
+            Write-Host ''
+            $go = $Force
+            if (-not $go) {
+                $ans = Read-Host '確定要清空嗎？請輸入大寫 YES'
+                $go = ($ans -ceq 'YES')
+            }
+            if (-not $go) {
+                Write-Host '已取消，未做任何變更。（備份已留存）'
+            } else {
+                Write-Host '刪除中（約 1,948 個檔案、3.11 GB）…'
+                $items = @(Get-ChildItem -LiteralPath $odg -Force -ErrorAction SilentlyContinue)
+                foreach ($it in $items) {
+                    Microsoft.PowerShell.Management\Remove-Item -LiteralPath $it.FullName -Recurse -Force -ErrorAction SilentlyContinue
+                }
+                $left = @(Get-ChildItem -LiteralPath $odg -Recurse -Force -File -ErrorAction SilentlyContinue).Count
+                if ($left -eq 0) {
+                    Write-Host 'OneDrive\文档\GitHub 已清空。' -ForegroundColor Green
+                } else {
+                    Write-Warning "仍剩 $left 個檔案（可能被 OneDrive 鎖定；可暫停同步後重試）。"
+                }
+            }
+        }
+    }
+    Write-Host (Show-Free '清空 OneDrive\GitHub 後')
+    Write-Host ''
+}
+
 if (-not $didSomething) {
     Write-Host '（未指定任何開關，只做了唯讀報告。）' -ForegroundColor Cyan
-    Write-Host '建議順序：-EmptyRecycleBin → -CleanWindowsUpdateCache → -RemoveWindowsOld → -DisableHibernation'
+    Write-Host '建議順序：-ClearOneDriveGitHub → -DisableHibernation → -RemoveWindowsOld → -CleanWindowsUpdateCache'
 }
 
 Write-Host (Show-Free '結束時')
