@@ -1,0 +1,15 @@
+﻿uv.exe : Using Python 3.13.16 environment at: C:\work\envs\xai
+At line:11 char:8
++   $o = & uv pip list --outdated --python $py 2>&1
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Using Python 3....:\work\envs\xai:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Package       Version Latest Type
+------------- ------- ------ -----
+executing     2.2.1   2.3.0  wheel
+narwhals      2.26.0  2.27.1 wheel
+nest-asyncio2 1.7.3   1.7.4  wheel
+numpy         2.5.3   2.5.4  wheel
+pandas        2.3.3   3.0.6  wheel
+platformdirs  4.12.3  4.13.0 wheel
