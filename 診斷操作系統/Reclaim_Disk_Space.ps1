@@ -36,6 +36,7 @@ param(
     [switch]$RemoveWindowsOld,
     [switch]$DisableHibernation,
     [switch]$ClearOneDriveGitHub,
+    [switch]$RemoveSupersededVersions,
     [switch]$Force
 )
 
@@ -307,9 +308,79 @@ if ($ClearOneDriveGitHub) {
     Write-Host ''
 }
 
+# ---------- 6) 移除已被取代的舊版與安裝檔 ----------
+if ($RemoveSupersededVersions) {
+    $didSomething = $true
+    Write-Host '---- 移除已被取代的舊版與安裝檔 ----' -ForegroundColor Yellow
+
+    # 清單是 2026-10-11 實測確認的：每一項都已安裝完成或已被新版取代。
+    # 刻意不含 C:\work\backup（那裡有先生的著作與 R 套件清單還原依據）。
+    $items = @(
+        @{ Path = 'C:\work\tools.bak.1.10.18';                       Note = '舊版 Quarto 1.10.18（1.10.19 已通過八節回歸）' },
+        @{ Path = 'C:\work\dl\quarto-1.10.18-win.zip';               Note = '舊版 Quarto 安裝檔' },
+        @{ Path = 'C:\work\dl\quarto-1.10.19-win.zip';               Note = '現版 Quarto 安裝檔（已解壓安裝，不再需要）' },
+        @{ Path = 'C:\work\dl\RStudio-2026.09.0-174.zip';            Note = 'RStudio 安裝檔（已安裝）' },
+        @{ Path = 'C:\work\dl\Positron-2026.09.1-2-UserSetup-x64.exe'; Note = 'Positron 舊版安裝檔（已自動更新至 2026.10.0）' },
+        @{ Path = 'C:\work\dl\rtools45-6768-6492.exe';               Note = 'Rtools45 安裝檔（已安裝）' },
+        @{ Path = 'C:\work\dl\R-4.6.1-win.exe';                      Note = 'R 安裝檔（已安裝）' }
+    )
+
+    Write-Host '將移除以下項目：'
+    $total = 0
+    foreach ($it in $items) {
+        if (Test-Path -LiteralPath $it.Path) {
+            $o = Get-Item -LiteralPath $it.Path -Force
+            if ($o.PSIsContainer) {
+                $sz = (Get-ChildItem -LiteralPath $it.Path -Recurse -Force -File -ErrorAction SilentlyContinue |
+                       Measure-Object -Property Length -Sum).Sum
+            } else { $sz = $o.Length }
+            $total += $sz
+            Write-Host ('  {0,8:N1} MB  {1}' -f ($sz/1MB), $it.Path)
+            Write-Host ('            {0}' -f $it.Note)
+        } else {
+            Write-Host ('  {0,8}     {1}  （不存在，略過）' -f '-', $it.Path)
+        }
+    }
+    Write-Host ('合計可回收約 {0:N2} GB' -f ($total/1GB))
+    Write-Host ''
+    Write-Host '*** 這是永久刪除。***' -ForegroundColor Red
+    Write-Host '*** 不含 C:\work\backup —— 那裡存著先生的著作與 R 套件還原依據。***'
+    Write-Host ''
+
+    $go = $Force
+    if (-not $go) {
+        $ans = Read-Host '確定要移除嗎？請輸入大寫 YES'
+        $go = ($ans -ceq 'YES')
+    }
+    if (-not $go) {
+        Write-Host '已取消，未做任何變更。'
+    } else {
+        foreach ($it in $items) {
+            if (Test-Path -LiteralPath $it.Path) {
+                Microsoft.PowerShell.Management\Remove-Item -LiteralPath $it.Path -Recurse -Force -ErrorAction SilentlyContinue
+                if (Test-Path -LiteralPath $it.Path) {
+                    Write-Warning ('  仍存在：{0}' -f $it.Path)
+                } else {
+                    Write-Host ('  已移除：{0}' -f $it.Path)
+                }
+            }
+        }
+    }
+
+    # uv 快取修剪：這是 uv 自己的維護指令，只清掉不再被任何環境引用的項目，
+    # 不會動到已安裝的套件。重建環境時會重新下載，故只是速度代價。
+    Write-Host ''
+    Write-Host '修剪 uv 快取（只清無人引用者）…'
+    $env:UV_CACHE_DIR = 'C:\work\uv-cache'
+    & uv cache prune 2>&1 | ForEach-Object { Write-Host ('    ' + $_) }
+
+    Write-Host (Show-Free '移除舊版後')
+    Write-Host ''
+}
+
 if (-not $didSomething) {
     Write-Host '（未指定任何開關，只做了唯讀報告。）' -ForegroundColor Cyan
-    Write-Host '建議順序：-ClearOneDriveGitHub → -DisableHibernation → -RemoveWindowsOld → -CleanWindowsUpdateCache'
+    Write-Host '建議順序：-RemoveSupersededVersions → -DisableHibernation → -RemoveWindowsOld → -CleanWindowsUpdateCache'
 }
 
 Write-Host (Show-Free '結束時')

@@ -1,0 +1,38 @@
+﻿==========================================================================
+環境: rl      過時組件: 14
+==========================================================================
+
+【可安全升級】6 個
+  absl-py                                  2.5.0              -> 2.5.1
+  executing                                2.2.1              -> 2.3.0
+  nest-asyncio2                            1.7.3              -> 1.7.4
+  numpy                                    2.5.3              -> 2.5.4
+  pycparser                                3.0                -> 3.11
+  pydantic                                 2.13.5             -> 2.14.0
+
+【必須 held 住】8 個（升了會違反既有約束）
+  deepdiff                                 7.0.1              -x 9.1.0
+      阻擋者: tianshou                     要求 <8.0.0,>=7.0.1
+  filelock                                 3.32.7             -x 4.1.0
+      阻擋者: virtualenv                   要求 <4,>=3.4.1
+  mpmath                                   1.3.0              -x 1.4.1
+      阻擋者: sympy                        要求 <1.4,>=1.1.0
+  pandas                                   2.3.3              -x 3.0.6
+      阻擋者: gluonts                      要求 <3,>=1.4
+      阻擋者: tianshou                     要求 <3,>=2.0.0
+  platformdirs                             2.6.2              -x 4.13.0
+      阻擋者: virtualenv                   要求 <3,>=2.4
+  pydantic-core                            2.46.5             -x 2.50.0
+      阻擋者: pydantic                     要求 ==2.46.5
+  toolz                                    0.12.1             -x 1.2.0
+      阻擋者: gluonts                      要求 ~=0.10
+  virtualenv                               20.16.3            -x 21.14.6
+      阻擋者: tianshou                     要求 <20.16.4
+      阻擋者: tianshou                     要求 !=20.4.5,!=20.4.6,<21.0.0,>=20.4.3
+
+### SAFE_LIST_BEGIN
+absl-py executing nest-asyncio2 numpy pycparser pydantic
+### SAFE_LIST_END
+### HELD_LIST_BEGIN
+deepdiff filelock mpmath pandas platformdirs pydantic-core toolz virtualenv
+### HELD_LIST_END
