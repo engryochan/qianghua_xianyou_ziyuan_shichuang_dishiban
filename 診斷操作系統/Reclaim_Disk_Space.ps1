@@ -1,0 +1,245 @@
+﻿<#
+    Reclaim_Disk_Space.ps1  —  回收磁碟空間（需管理員）
+
+    產生者：Claude，2026-10-11。交由先生以管理員身分執行。
+
+    嚴格不做的事（依先生 2026-10-11 指示）：
+      * 不登錄、不修改、不刪除、不新增任何網管／資安的 IP 設定
+      * 不碰網段內任何帳號與設備
+      * 不啟停、不卸載、不重裝任何資安軟體（Kaspersky / 亿赛通 CDG / 天锐绿盾 / Defender）
+      * 不改 Windows Update 策略
+      * 不動磁碟分割
+
+    設計原則：**每一項都要明確指定開關才會動作。** 不帶參數時只做唯讀報告。
+    理由：本機可用空間已降至約 12%，而且刪除多為不可復原，寧可多打一次參數。
+
+    用法：
+      # 先只看報告（不刪任何東西）
+      powershell -ExecutionPolicy Bypass -File C:\work\admin\Reclaim_Disk_Space.ps1
+
+      # 分項執行（建議依此順序，每做一項就看一次可用空間）
+      ... -EmptyRecycleBin          # 約 9.55 GB，最安全，且不需要等
+      ... -CleanWindowsUpdateCache  # 約 5.08 GB
+      ... -RemoveWindowsOld         # 約 40.29 GB，**會摧毀回到 Win10 的唯一路徑**
+      ... -DisableHibernation       # 約 12.71 GB，會關閉休眠與快速啟動
+
+    警告（RemoveWindowsOld）：
+      C:\Windows.old 是回到 Windows 10 的唯一回滾路徑，而本機升級失敗三次才成功。
+      一旦清除即無法回滾。先生已於 2026-10-11 明示要清除，故本腳本提供該選項，
+      但仍保留 -Confirm 式的二次確認，除非加上 -Force。
+#>
+
+[CmdletBinding()]
+param(
+    [switch]$EmptyRecycleBin,
+    [switch]$CleanWindowsUpdateCache,
+    [switch]$RemoveWindowsOld,
+    [switch]$DisableHibernation,
+    [switch]$Force
+)
+
+$ErrorActionPreference = 'Continue'
+
+function Show-Free {
+    param([string]$Label)
+    $v = Get-Volume -DriveLetter C
+    '{0,-28} 可用 {1,8:N2} GB （{2,5:N1}%）' -f $Label, ($v.SizeRemaining/1GB), ($v.SizeRemaining/$v.Size*100)
+}
+
+function Test-Admin {
+    $id = [Security.Principal.WindowsIdentity]::GetCurrent()
+    (New-Object Security.Principal.WindowsPrincipal($id)).IsInRole(
+        [Security.Principal.WindowsBuiltInRole]::Administrator)
+}
+
+Write-Host '==== 回收磁碟空間 ====' -ForegroundColor Cyan
+Write-Host (Show-Free '開始前')
+Write-Host ''
+
+$isAdmin = Test-Admin
+if (-not $isAdmin) {
+    Write-Warning '未以管理員身分執行。除了回收桶，其餘項目都會失敗。'
+    Write-Warning '請以管理員開啟 PowerShell 後重跑。'
+    Write-Host ''
+}
+
+# ---------- 唯讀報告 ----------
+Write-Host '---- 現況（唯讀） ----' -ForegroundColor Yellow
+$items = [ordered]@{
+    'C:\Windows.old'                           = '舊系統（回滾路徑）'
+    'C:\Windows\SoftwareDistribution\Download' = 'WU 下載快取'
+    'C:\$Recycle.Bin'                          = '回收桶'
+    'C:\hiberfil.sys'                          = '休眠檔'
+    'C:\pagefile.sys'                          = '分頁檔（自動管理，勿手動刪）'
+}
+# 根目錄的系統檔（pagefile/hiberfil/swapfile）在非提權下 Test-Path 與
+# Get-Item -Force 都會回 False／失敗——它們的 ACL 連中繼資料開啟都擋。
+# 但**列舉 C:\ 目錄**讀得到大小。實測踩過：初版用 Test-Path，把 19 GB 的
+# pagefile 與 12.7 GB 的 hiberfil 都報成「不存在」，報告看起來乾淨卻是錯的。
+$rootFiles = @{}
+Get-ChildItem 'C:\' -Force -File -ErrorAction SilentlyContinue |
+    ForEach-Object { $rootFiles[$_.Name] = $_.Length }
+
+foreach ($k in $items.Keys) {
+    $leaf = Split-Path $k -Leaf
+    if ($rootFiles.ContainsKey($leaf)) {
+        '{0,8:N2} GB  {1,-44} {2}' -f ($rootFiles[$leaf]/1GB), $k, $items[$k]
+        continue
+    }
+    if (Test-Path $k) {
+        $m = Get-ChildItem $k -Recurse -Force -File -ErrorAction SilentlyContinue |
+             Measure-Object -Property Length -Sum
+        '{0,8:N2} GB  {1,-44} {2}' -f ($m.Sum/1GB), $k, $items[$k]
+    } else {
+        '{0,8}     {1,-44} {2}' -f '不存在', $k, $items[$k]
+    }
+}
+Write-Host ''
+
+$didSomething = $false
+
+# ---------- 1) 回收桶 ----------
+if ($EmptyRecycleBin) {
+    $didSomething = $true
+    Write-Host '---- 清空回收桶 ----' -ForegroundColor Yellow
+    Write-Host '注意：這是永久刪除，無法復原。'
+    try {
+        Clear-RecycleBin -DriveLetter C -Force -ErrorAction Stop
+        Write-Host '回收桶已清空。'
+    } catch {
+        Write-Warning "清空回收桶失敗: $($_.Exception.Message)"
+    }
+    Write-Host (Show-Free '清空回收桶後')
+    Write-Host ''
+}
+
+# ---------- 2) Windows Update 下載快取 ----------
+if ($CleanWindowsUpdateCache) {
+    $didSomething = $true
+    Write-Host '---- 清 Windows Update 下載快取 ----' -ForegroundColor Yellow
+    if (-not $isAdmin) {
+        Write-Warning '需要管理員，略過。'
+    } else {
+        # 注意：這裡停的是 Windows Update 服務本身，不是任何資安軟體。
+        # 偵測到有更新正在暫存時先警告——本機 2026-10-11 09:22 仍在寫入。
+        $dl = 'C:\Windows\SoftwareDistribution\Download'
+        $recent = Get-ChildItem $dl -Recurse -Force -File -ErrorAction SilentlyContinue |
+                  Where-Object { $_.LastWriteTime -gt (Get-Date).AddMinutes(-30) }
+        if ($recent -and -not $Force) {
+            Write-Warning "近 30 分鐘內仍有 $($recent.Count) 個檔案被寫入，可能正在下載更新。"
+            Write-Warning '清掉會讓該更新重新下載。要照做請加 -Force。已略過。'
+        } else {
+            Write-Host '停止 wuauserv / bits …'
+            Stop-Service wuauserv, bits -Force -ErrorAction SilentlyContinue
+            Start-Sleep -Seconds 3
+            Write-Host '刪除下載快取內容（保留目錄本身）…'
+            Get-ChildItem $dl -Force -ErrorAction SilentlyContinue |
+                Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+            Write-Host '重新啟動 wuauserv / bits …'
+            Start-Service wuauserv, bits -ErrorAction SilentlyContinue
+            Write-Host '完成。'
+        }
+    }
+    Write-Host (Show-Free '清 WU 快取後')
+    Write-Host ''
+}
+
+# ---------- 3) Windows.old ----------
+if ($RemoveWindowsOld) {
+    $didSomething = $true
+    Write-Host '---- 清除 C:\Windows.old ----' -ForegroundColor Yellow
+    if (-not (Test-Path 'C:\Windows.old')) {
+        Write-Host 'C:\Windows.old 不存在，無需動作。'
+    } elseif (-not $isAdmin) {
+        Write-Warning '需要管理員，略過。'
+    } else {
+        Write-Host ''
+        Write-Host '*** 這會摧毀回到 Windows 10 的唯一回滾路徑。***' -ForegroundColor Red
+        Write-Host '*** 本機升級失敗三次才成功，清除後無法回頭。***' -ForegroundColor Red
+        Write-Host ''
+        $go = $Force
+        if (-not $go) {
+            $ans = Read-Host '確定要清除嗎？請輸入大寫 YES'
+            $go = ($ans -ceq 'YES')
+        }
+        if (-not $go) {
+            Write-Host '已取消，未做任何變更。'
+        } else {
+            # 用受支援的機制：cleanmgr 的「以前的 Windows 安裝」處理常式。
+            # 不手動 Remove-Item——該目錄屬 TrustedInstaller，強刪會留下
+            # 刪一半且無法移除的殘骸。
+            $vc = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches'
+            $handlers = @(
+                'Previous Installations',
+                'Windows Upgrade Log Files',
+                'Update Cleanup',
+                'Temporary Setup Files',
+                'Setup Log Files'
+            )
+            $tag = 77
+            $sf  = 'StateFlags{0:0000}' -f $tag
+
+            Write-Host "設定 cleanmgr 設定檔 /sageset:$tag（只開啟升級殘留相關處理常式）…"
+            # 先把所有處理常式設為 0，避免誤清其他東西
+            Get-ChildItem $vc -ErrorAction SilentlyContinue | ForEach-Object {
+                New-ItemProperty -Path $_.PSPath -Name $sf -Value 0 `
+                    -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+            }
+            foreach ($h in $handlers) {
+                $p = Join-Path $vc $h
+                if (Test-Path $p) {
+                    New-ItemProperty -Path $p -Name $sf -Value 2 `
+                        -PropertyType DWord -Force -ErrorAction SilentlyContinue | Out-Null
+                    Write-Host "  啟用: $h"
+                } else {
+                    Write-Host "  （本機無此處理常式: $h）"
+                }
+            }
+
+            Write-Host ''
+            Write-Host "執行 cleanmgr /sagerun:$tag —— 這會跑一段時間（40 GB / 40 萬檔），請耐心等它結束。"
+            $p = Start-Process -FilePath 'cleanmgr.exe' `
+                               -ArgumentList "/sagerun:$tag" -PassThru -Wait
+            Write-Host "cleanmgr 結束，離開碼 $($p.ExitCode)。"
+
+            if (Test-Path 'C:\Windows.old') {
+                $m = Get-ChildItem 'C:\Windows.old' -Recurse -Force -File `
+                        -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum
+                Write-Warning ('C:\Windows.old 仍存在，剩 {0:N2} GB。' -f ($m.Sum/1GB))
+                Write-Warning 'cleanmgr 有時需要重啟後才完成，或該處理常式未出現。'
+                Write-Warning '若重啟後仍在，請改用「設定 > 系統 > 儲存空間 > 清理建議」勾選「以前的 Windows 安裝」。'
+            } else {
+                Write-Host 'C:\Windows.old 已清除。' -ForegroundColor Green
+            }
+        }
+    }
+    Write-Host (Show-Free '處理 Windows.old 後')
+    Write-Host ''
+}
+
+# ---------- 4) 休眠檔 ----------
+if ($DisableHibernation) {
+    $didSomething = $true
+    Write-Host '---- 關閉休眠以移除 hiberfil.sys ----' -ForegroundColor Yellow
+    Write-Host '副作用：休眠與「快速啟動」都會停用。開機會略慢，但不影響任何功能。'
+    Write-Host '要復原：powercfg /h on'
+    if (-not $isAdmin) {
+        Write-Warning '需要管理員，略過。'
+    } else {
+        & powercfg.exe /h off
+        if (Test-Path 'C:\hiberfil.sys') {
+            Write-Warning 'hiberfil.sys 仍存在（可能需重啟才會釋放）。'
+        } else {
+            Write-Host 'hiberfil.sys 已移除。' -ForegroundColor Green
+        }
+    }
+    Write-Host (Show-Free '關閉休眠後')
+    Write-Host ''
+}
+
+if (-not $didSomething) {
+    Write-Host '（未指定任何開關，只做了唯讀報告。）' -ForegroundColor Cyan
+    Write-Host '建議順序：-EmptyRecycleBin → -CleanWindowsUpdateCache → -RemoveWindowsOld → -DisableHibernation'
+}
+
+Write-Host (Show-Free '結束時')

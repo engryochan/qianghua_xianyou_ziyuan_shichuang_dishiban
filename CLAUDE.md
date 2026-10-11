@@ -6,7 +6,83 @@
 
 指定 WIM 與 ISO 已刪除，合計約 14.61 GiB。完整設備、驅動、軟體、防護、事件與診斷界限：[升級後診斷](reports/2026-10-10/Windows11升級後診斷.md)。以下較早記錄為歷史內容，舊華碩 / NVIDIA GT 730 資訊不能套用本機；Python 環境復原以 CLAUDE.md 的 2026-10-06 更正為準。
 
-### 2026-10-11 提權複驗（**優先於本檔以下全部**）
+### 2026-10-11 驅動最新版查證與磁碟稽核（**優先於本檔以下全部**）
+
+全程唯讀。報告：`reports/2026-10-11/驅動最新版查證與磁碟空間稽核.md`。
+
+**更正本檔兩處既有說法：**
+
+**一、「指定 WIM 與 ISO 已刪除，合計約 14.61 GiB」——那次刪除沒有真正釋放空間。**
+本輪在回收桶找到 `$RG26W6M.iso`（**8.49 GB**）與 `$RNFI5U4.zip`（0.47 GB），
+回收桶合計 **9.55 GB / 608 檔**。那個 ISO 幾乎確定就是當時「刪掉」的 Win11 ISO，
+**它只是進了回收桶，從未離開磁碟。**
+> **教訓：從檔案總管刪除走的是回收桶，不是釋放。宣稱「已釋放 N GB」之前，
+> 要回頭量一次可用空間，不能只看檔案不見了。**
+
+（狀態更新：複查時回收桶已是 0.00 GB，可用空間同步由 29.48 回升到 36.51 GB
+——**是先生或 Storage Sense 清的，不是我**。那 9.55 GB 已經回來了。）
+
+**二、「Intel 顯卡已是最新（32.0.101.7088）」——已落後。**
+
+| | 版本 | 日期 |
+|---|---|---|
+| 本機 | `32.0.101.7088` | 2026-06-17 |
+| **Intel 現行** | **`32.0.101.7092`** | **2026-09-25** |
+
+我早上那句是對照 Intel 頁面當時列示的 2026-06-22 得出的，9/25 已有新版。
+另記：**Intel 已把 11–14 代內顯移入「legacy 軟體支援模式」**。
+**Arc 頁面的 `32.0.101.8993` 不適用本機**（那是 Arc B/A 與 Core Ultra 內顯用的）。
+
+**另查出 Intel Wi-Fi 也落後**：本機 Wireless-AC 9560 為 `24.40.0.4`（2026-04-13），
+Intel 現行 `24.70.0.x`（2026-09-08）。**而同一模組的藍牙已經是 `24.70.0.4`——
+上次只更新了一半。** 這一項風險最低，因為 WLAN 目前 `Disconnected`（走 Realtek 有線）。
+
+**`2006-06-21` 不是舊驅動，是 Microsoft 通用驅動的佔位日期。** 盤點裡 9 項是這個
+日期，版本其實都是當前的 `10.0.26100.x`。**拿它當過時驅動去追會白跑。**
+反過來，WU 判斷誰較新時**先比日期再比版本**（所以它一直提供那個 2015 年的
+Realtek 9.1.409 要取代本機的 9.1.412）。**兩套規則方向相反，特別會騙人。**
+
+**磁碟：可用一度掉到 29.48 GB（12.4%）**，查明是
+`C:\Windows\SoftwareDistribution\Download` 有 **5.09 GB / 622,229 檔**，
+其中近 3 小時寫入 42 萬檔、3.53 GB，`wuauserv` 與 `UsoSvc` 都在跑
+——**又有一個大型更新在暫存**。所以清 WU 快取要挑時機，正在下載時清掉會重抓。
+
+**可安全回收且不影響 OS 的前幾大**：`hiberfil.sys` **12.71 GB**
+（`powercfg /h off`，只停用休眠與快速啟動，可 `/h on` 復原）、WU 快取 5.09 GB、
+Chrome 的 `OptGuideOnDeviceModel\…\weights.bin` 3.98 GB、`C:\work\uv-cache`
+2.15 GB、`C:\work\dl` 1.94 GB（安裝檔，軟體都已裝好）。
+**不可手動刪**：`pagefile.sys` 19.11 GB、`WinSxS` 17.29 GB、`Windows\Installer` 0.60 GB。
+
+**整機最大的非系統佔用在 OneDrive 裡**：`basic-data-analytical-lab\.git` 的 pack
+**7.62 GB**，加上**本倉庫在 OneDrive 的另一份 2.69 GB**（與
+`Documents\GitHub\` 下那份 2.61 GB 重複）。本檔規定工作專案要放
+`C:\work\projects\lab`（純 ASCII、不在 OneDrive）。**屬使用者資料，我不動。**
+
+**`Windows.old` 清除已做成腳本**：`診斷操作系統/Reclaim_Disk_Space.ps1`
+（亦在 `C:\work\admin\`，含 BOM，已過語法檢查並在非提權下實跑兩次）。
+**每項都要明確指定開關**，不帶參數只做唯讀報告。`-RemoveWindowsOld` 走
+`cleanmgr` 的「以前的 Windows 安裝」處理常式（`/sageset` 先把所有處理常式歸零，
+只開升級殘留那幾個，再 `/sagerun`），**不手動刪目錄**——非提權下強刪會刪一半
+卡在權限上，留下既無法回滾、又佔空間、還移不掉的殘骸。
+
+> **我不代為執行永久刪除**（清回收桶、刪檔）**與需提權的動作**，一律交腳本。
+
+**又一個「語法通過但行為錯誤」的實例，而且這次特別陰險。**
+稽核腳本初版用 `Test-Path` 判斷根目錄系統檔，**把 19.11 GB 的 `pagefile.sys`
+與 12.71 GB 的 `hiberfil.sys` 都報成「不存在」**：
+
+| 方式 | pagefile.sys | hiberfil.sys |
+|---|---|---|
+| `Test-Path` | **False** | **False** |
+| `Get-Item -Force` | **失敗** | **失敗** |
+| **列舉 `C:\` 目錄** | **19.11 GB** | **12.71 GB** |
+
+這兩個檔的 ACL 連中繼資料開啟都擋非提權行程，但**父目錄列舉**只讀目錄項，
+所以拿得到大小。**腳本語法正確、排版整齊、零錯誤訊息，只是把兩個最大的回收
+候選標成不存在**——若不是手上剛好有直接量過的數字可對照，那份報告會原封不動
+交出去。**產生完一定要真的跑一次，並跟已知事實對照。**
+
+### 2026-10-11 提權複驗（優先於以下，**但次於上段驅動與磁碟稽核**）
 
 先生以管理員跑了 `診斷操作系統/Elevated_Pending_Tasks.ps1`。證據
 `reports/2026-10-11/elevated-run/`，判讀見報告「提權複驗」一節。
@@ -585,6 +661,7 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 | `診斷操作系統/Win10_Diagnose_v3.ps1` / `Setup_DataStack_v2.ps1` / `Win10_Optimize_v2.ps1` | 另一輪作者的版本，設計更保守（不改全域 `.Rprofile`、不動 PATH） |
 | `診斷操作系統/Win11_App_RealTest.ps1` | **驗證應用是否真的畫得出畫面**（不是「有沒有裝」）。像素級黑屏判定 + 渲染旗標逐一實測 |
 | `診斷操作系統/Elevated_Pending_Tasks.ps1` | **需管理員才查得到的項目**（`manage-bde`、`Get-Tpm`、`Confirm-SecureBootUEFI`、`reagentc`、**`fltmc filters` / `instances`**、`Dism /CheckHealth`、Hyper-V 事件與選用功能、`bcdedit`）。**含 BOM，必須保留。** A 段全唯讀；B 段僅在明確加 `-InstallDrivers` 並提供存在的 `-DriverPackagePath` 時才安裝自備驅動包 |
+| `診斷操作系統/Reclaim_Disk_Space.ps1` | **回收磁碟空間**（需管理員）。**含 BOM，必須保留。** 不帶參數只做唯讀報告；`-EmptyRecycleBin` / `-CleanWindowsUpdateCache` / `-RemoveWindowsOld` / `-DisableHibernation` 各自獨立，`Windows.old` 走 `cleanmgr` 受支援機制並有二次確認 |
 | `env/python-ds-core.in` | **重建核心環境的依據**（698 個 `==` + 28 個 `>=`，已實測可建成） |
 | `env/python-ds-verified.lock.txt` | 重建後 freeze 的 728 行實況，已通過 15/15 驗收 |
 | `env/python-ds-requirements.lock.txt` | ~~重建環境的唯一依據~~ **這份本身無解，不要用**。只留作歷史證物，見本檔開頭 2026-10-06 更正第一節 |
