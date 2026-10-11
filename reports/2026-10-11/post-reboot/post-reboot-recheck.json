@@ -1,0 +1,303 @@
+{
+    "collectedAt":  "2026-10-11T07:39:33.2720289+04:00",
+    "lastBootUpTime":  "2026-10-11T06:51:52.5000000+04:00",
+    "os":  {
+               "caption":  "Microsoft Windows 11 专业版",
+               "build":  "26300",
+               "ubr":  9550,
+               "displayVersion":  "26H2",
+               "ubrBefore":  9457
+           },
+    "rebootFlagsCleared":  {
+                               "cbs":  false,
+                               "windowsUpdate":  false,
+                               "pendingFileRename":  false
+                           },
+    "updatesApplied":  [
+                           {
+                               "HotFixID":  "KB5121794",
+                               "Description":  "Update",
+                               "InstalledOn":  "2026-10-11"
+                           },
+                           {
+                               "HotFixID":  "KB5124010",
+                               "Description":  "Update",
+                               "InstalledOn":  "2026-10-11"
+                           },
+                           {
+                               "HotFixID":  "KB5124009",
+                               "Description":  "Update",
+                               "InstalledOn":  "2026-10-10"
+                           },
+                           {
+                               "HotFixID":  "KB5126052",
+                               "Description":  "Update",
+                               "InstalledOn":  "2026-09-13"
+                           }
+                       ],
+    "kaspersky":  {
+                      "services":  [
+                                       {
+                                           "Name":  "AVP.KES.14.1",
+                                           "Status":  "Stopped",
+                                           "StartType":  "Automatic"
+                                       },
+                                       {
+                                           "Name":  "avpsus.KES.14.1",
+                                           "Status":  "Running",
+                                           "StartType":  "Automatic"
+                                       },
+                                       {
+                                           "Name":  "klnagent",
+                                           "Status":  "Running",
+                                           "StartType":  "Automatic"
+                                       },
+                                       {
+                                           "Name":  "ksnproxy",
+                                           "Status":  "Stopped",
+                                           "StartType":  "Manual"
+                                       }
+                                   ],
+                      "avpProcessRunning":  false,
+                      "avpExeVersion":  "21.3.10.1001",
+                      "ownEventLogRecordCount":  0,
+                      "registeredServiceAndDriverEntries":  [
+                                                                {
+                                                                    "name":  "AVP.KES.14.1",
+                                                                    "type":  16,
+                                                                    "start":  2
+                                                                },
+                                                                {
+                                                                    "name":  "avpsus.KES.14.1",
+                                                                    "type":  16,
+                                                                    "start":  2
+                                                                },
+                                                                {
+                                                                    "name":  "klbackupdisk.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klbackupflt.KES-14-1",
+                                                                    "type":  2,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klelam",
+                                                                    "type":  1,
+                                                                    "start":  0
+                                                                },
+                                                                {
+                                                                    "name":  "klflt.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klgse.KES-14-1",
+                                                                    "type":  2,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klhk.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klids.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  3
+                                                                },
+                                                                {
+                                                                    "name":  "KLIF.KES-14-1",
+                                                                    "type":  2,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klim6",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klnagent",
+                                                                    "type":  16,
+                                                                    "start":  2
+                                                                },
+                                                                {
+                                                                    "name":  "klpnpflt.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "klupd_KES-14-1_arkmon",
+                                                                    "type":  1,
+                                                                    "start":  0
+                                                                },
+                                                                {
+                                                                    "name":  "klupd_KES-14-1_klark",
+                                                                    "type":  1,
+                                                                    "start":  3
+                                                                },
+                                                                {
+                                                                    "name":  "klupd_KES-14-1_klbg",
+                                                                    "type":  1,
+                                                                    "start":  0
+                                                                },
+                                                                {
+                                                                    "name":  "klupd_KES-14-1_mark",
+                                                                    "type":  1,
+                                                                    "start":  3
+                                                                },
+                                                                {
+                                                                    "name":  "klwtp.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                },
+                                                                {
+                                                                    "name":  "kneps.KES-14-1",
+                                                                    "type":  1,
+                                                                    "start":  1
+                                                                }
+                                                            ],
+                      "verdict":  "核心與檔案系統驅動全部在冊且 Start=1；僅 Type=16 使用者模式服務 AVP.KES.14.1 逾時（45000/30000 ms），四次失敗跨兩個開機週期"
+                  },
+    "startFailuresThisBoot":  [
+                                  {
+                                      "time":  "2026-10-11T06:57:07.3287108+04:00",
+                                      "Id":  7000,
+                                      "message":  "由于下列错误，Hyper-V 主机计算服务 服务启动失败: The service did not respond to the start or control request in a timely fashion."
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:57:07.3267042+04:00",
+                                      "Id":  7009,
+                                      "message":  "等待 Hyper-V 主机计算服务 服务的连接超时(30000 毫秒)。"
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:54:11.8304580+04:00",
+                                      "Id":  7000,
+                                      "message":  "由于下列错误，Kaspersky Endpoint Security 服务 (KES.14.1) 服务启动失败: The service did not respond to the start or control request in a timely fashion."
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:54:11.8304580+04:00",
+                                      "Id":  7009,
+                                      "message":  "等待 Kaspersky Endpoint Security 服务 (KES.14.1) 服务的连接超时(30000 毫秒)。"
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:52:07.5255667+04:00",
+                                      "Id":  7000,
+                                      "message":  "由于下列错误，vmcompute 服务启动失败: The service did not respond to the start or control request in a timely fashion."
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:52:07.5255667+04:00",
+                                      "Id":  7009,
+                                      "message":  "等待 vmcompute 服务的连接超时(45000 毫秒)。"
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:52:03.3560333+04:00",
+                                      "Id":  7000,
+                                      "message":  "由于下列错误，AVP.KES.14.1 服务启动失败: The service did not respond to the start or control request in a timely fashion."
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:52:03.3560333+04:00",
+                                      "Id":  7009,
+                                      "message":  "等待 AVP.KES.14.1 服务的连接超时(45000 毫秒)。"
+                                  },
+                                  {
+                                      "time":  "2026-10-11T06:52:02.7404405+04:00",
+                                      "Id":  7000,
+                                      "message":  "由于下列错误，edgeupdate 服务启动失败: The system cannot find the file specified."
+                                  }
+                              ],
+    "defender":  {
+                     "AntivirusEnabled":  true,
+                     "RealTimeProtectionEnabled":  true,
+                     "BehaviorMonitorEnabled":  true,
+                     "IsTamperProtected":  true,
+                     "AMEngineVersion":  "1.1.26080.3",
+                     "SigUpdated":  "2026-10-11T00:34:06.0000000+04:00"
+                 },
+    "dlpProcesses":  [
+                         {
+                             "Name":  "CDGRegedit",
+                             "Count":  1
+                         },
+                         {
+                             "Name":  "CdgTwin32",
+                             "Count":  2
+                         },
+                         {
+                             "Name":  "CdgTwin64",
+                             "Count":  2
+                         },
+                         {
+                             "Name":  "CdgUpGrade",
+                             "Count":  1
+                         },
+                         {
+                             "Name":  "LdTerm",
+                             "Count":  1
+                         },
+                         {
+                             "Name":  "LdTermDaemon",
+                             "Count":  2
+                         },
+                         {
+                             "Name":  "LdTermPlug",
+                             "Count":  1
+                         },
+                         {
+                             "Name":  "LdTermPlug64",
+                             "Count":  1
+                         }
+                     ],
+    "problemDevices":  [
+                           {
+                               "name":  null,
+                               "InstanceId":  "ACPI\\INTC1070\\2\u0026DABA3FF\u00260",
+                               "problem":  "CM_PROB_FAILED_INSTALL"
+                           },
+                           {
+                               "name":  "SM 总线控制器",
+                               "InstanceId":  "PCI\\VEN_8086\u0026DEV_7AA3\u0026SUBSYS_72708086\u0026REV_11\\3\u002611583659\u00260\u0026FC",
+                               "problem":  "CM_PROB_FAILED_INSTALL"
+                           },
+                           {
+                               "name":  null,
+                               "InstanceId":  "ACPI\\INTC1056\\2\u0026DABA3FF\u00260",
+                               "problem":  "CM_PROB_FAILED_INSTALL"
+                           },
+                           {
+                               "name":  "PCI 设备",
+                               "InstanceId":  "PCI\\VEN_8086\u0026DEV_7AA4\u0026SUBSYS_72708086\u0026REV_11\\3\u002611583659\u00260\u0026FD",
+                               "problem":  "CM_PROB_FAILED_INSTALL"
+                           }
+                       ],
+    "deviceStatusCounts":  [
+                               {
+                                   "Name":  "OK",
+                                   "Count":  128
+                               },
+                               {
+                                   "Name":  "Error",
+                                   "Count":  4
+                               },
+                               {
+                                   "Name":  "Unknown",
+                                   "Count":  1
+                               }
+                           ],
+    "firmware":  {
+                     "uefiSecureBootEnabled":  0,
+                     "tpm":  "受信任的平台模块 2.0 / Status OK / ErrorCode 0",
+                     "vbs":  {
+                                 "VirtualizationBasedSecurityStatus":  2,
+                                 "SecurityServicesRunning":  [
+                                                                 0
+                                                             ]
+                             }
+                 },
+    "storage":  {
+                    "cFreeGB":  48.97,
+                    "windowsOldPresent":  true,
+                    "dDriveExists":  false
+                }
+}

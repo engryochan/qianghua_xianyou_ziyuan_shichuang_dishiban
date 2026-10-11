@@ -270,3 +270,150 @@ AMEngineVersion   : 1.1.26080.3
 - BitLocker 權威狀態、TPM 細項屬性、`reagentc /info`（WinRE 位置）仍需提權，保留為未驗證。
 - Kaspersky 與 Tipray 的**功能**驗收不在本輪範圍；本節只陳述服務與行程狀態及事件日誌所載。
 - 未執行壓力測試、SFC/DISM、線上更新搜尋。
+
+---
+
+# 重啟後複驗（2026-10-11 07:30，開機於 06:51:52）
+
+上節把「一次正常重啟」列為應優先做的下一步。先生已重啟，本節逐項複驗。
+
+## 一、待重啟旗標：**全部清除**，且套用了兩個更新
+
+| 旗標 | 10-10 14:10 | **10-11 07:30** |
+|---|---|---|
+| CBS `RebootPending` | True | **False** |
+| Windows Update `RebootRequired` | True | **False** |
+| `PendingFileRenameOperations` | False | **False** |
+
+UBR 隨之推進：**26300.9457 → 26300.9550**。
+
+`Setup` 記錄顯示這兩個套件在 10-10 15:55 已暫存並標記「需重啟」，於本次開機
+**06:52:07** 完成安裝：
+
+- **KB5121794**
+- **KB5124010**
+- `Microsoft-Windows-FodMetadataServicing-Desktop-Metadata`
+
+## 二、Kaspersky：**重啟不是解法**，本次開機又失敗兩次
+
+| 項目 | 狀態 |
+|---|---|
+| `AVP.KES.14.1` | **仍 Stopped**，啟動類型 Automatic |
+| `avp.exe` / `avpui.exe` | **仍未執行** |
+| `avpsus`、`klnagent` | Running |
+
+本次開機的失敗事件：
+
+| 時間 | ID | 內容 |
+|---|---|---|
+| 06:52:03 | 7000 / 7009 | `AVP.KES.14.1` 逾時 **45,000 ms**，啟動失敗 |
+| 06:54:11 | 7000 / 7009 | `Kaspersky Endpoint Security 服务 (KES.14.1)` 逾時 **30,000 ms**，啟動失敗 |
+
+**累計兩個開機週期、四次失敗（10-10 兩次 + 10-11 兩次）。
+這已是可重現的穩定狀態，不是升級後的暫態。**
+
+### 更銳利的定位：驅動層正常，卡的是使用者模式服務
+
+以登錄檔列舉 `HKLM\SYSTEM\CurrentControlSet\Services`，**19 個 Kaspersky 項目全部在冊**，
+`.sys` 檔也都在磁碟上：
+
+| 類型 | 項目 | Start |
+|---|---|---|
+| 檔案系統篩選（Type=2） | `KLIF.KES-14-1`、`klbackupflt.KES-14-1`、`klgse.KES-14-1` | 1 / 1 / 1 |
+| 核心驅動（Type=1） | `klflt`、`klhk`、`klwtp`、`kneps`、`klpnpflt`、`klbackupdisk`、`klids`、`klim6`、`klelam`、4× `klupd_*` | 多為 1（系統啟動） |
+| **使用者模式服務（Type=16）** | **`AVP.KES.14.1`** ← 逾時的就是這一個 | 2（自動） |
+
+旁證：
+
+- `avp.exe` 存在於 `C:\Program Files (x86)\Kaspersky Lab\KES.14.1.0\`，版本 **21.3.10.1001**，`StartName = LocalSystem`
+- `klim6` 實測 **Running**；`klelam` Stopped（ELAM 驅動在開機後卸載屬正常設計）
+- `klupd_*` 定義檔 **2026-10-08** 還在更新 —— `avpsus` 一直在下載病毒庫
+- **Kaspersky 自有事件記錄存在，但 `RecordCount = 0`** —— 產品從未啟動到能寫一條日誌
+
+**結論：核心驅動載得起來，是使用者模式主服務初始化卡死（>45 秒無回應）。**
+這對 IT 有用——問題不在驅動簽署或載入期相容性，而在產品本體在本 OS 組建上的初始化。
+
+> **我要更正自己一處。** 我一度以為驅動在重啟時被移除，那是我查詢寫法造成的誤判：
+> 真實服務名帶 `.KES-14-1` 後綴，而 `Get-Service` 並不可靠地列出所有核心驅動。
+> 改用登錄檔列舉後證實**驅動完整無缺**。
+
+Defender 持續接手，簽章已更新至 **2026-10-11 00:34:06**，即時防護／行為監控／防篡改皆 True。
+
+## 三、兩項重啟後自行消失
+
+| 項目 | 10-10 | 10-11 |
+|---|---|---|
+| `LeaderTerm` / `LeaderTermDaemon`（天锐绿盾）事件 7030「可能无法正常操作」 | 有 | **本次開機未再出現** |
+| `Microsoft Defender Core 服务` 逾時啟動失敗 | 有 | **本次開機未再出現** |
+
+天锐绿盾行程仍齊（`LdTerm`、`LdTermDaemon`×2、`LdTermPlug`、`LdTermPlug64`），
+亿赛通 Cobra DocGuard 亦齊（`CdgTwin32`×2、`CdgTwin64`×2、`CDGRegedit`、`CdgUpGrade`）。
+**所以三層防護中，目前只有 Kaspersky 一層實質未運作。**
+
+## 四、仍失敗的其他服務
+
+| 時間 | 服務 | 現象 |
+|---|---|---|
+| 06:52:07、06:57:07 | `vmcompute`（Hyper-V 主机计算服务） | 7009 / 7000 逾時啟動失敗，兩次 |
+| 06:52:02 | `edgeupdate` | 7000 找不到指定檔案（殘留，影響小） |
+
+`vmcompute` 失敗與第二節的 VBS 情況相關：VBS 本身在跑，但宿主計算服務起不來，
+容器／WSL2 類功能會受影響。目前工作流程不依賴它。
+
+**本次開機沒有任何非 Service Control Manager 的系統層級錯誤。**
+
+## 五、重啟不會改變的三類項目（複驗結果一致）
+
+| 項目 | 狀態 |
+|---|---|
+| 四個錯誤碼 28 設備 | **完全未變**（`INTC1070`、`7AA3`、`INTC1056`、`7AA4`，皆 `CM_PROB_FAILED_INSTALL`）；設備統計仍 **OK 128 / Error 4 / Unknown 1** |
+| 安全啟動 | `UEFISecureBootEnabled = 0`，**仍未啟用**（屬韌體設定） |
+| TPM | `受信任的平台模块 2.0`，Status OK、ErrorCode 0 |
+| VBS / HVCI | `VirtualizationBasedSecurityStatus = 2`，但 `SecurityServicesRunning = {0}`，**記憶體完整性仍未啟用** |
+
+設備錯誤需要驅動、安全啟動需要韌體設定、HVCI 需要策略——**這三類本來就不會被重啟修好**。
+
+## 六、硬體與磁碟覆核
+
+| 項目 | 實測 |
+|---|---|
+| CPU | 12th Gen Intel Core i5-12400，**6 核心 / 12 邏輯處理器** |
+| 記憶體 | **31.77 GB** |
+| GPU | Intel UHD Graphics 730，驅動 32.0.101.7088，1920×1080，Status **OK** |
+| `C:` 可用 | **52.51 GB**（10-10 為 54.97 GB） |
+| `C:\Windows.old` | **仍存在**（回滾路徑，刻意保留） |
+| `D:\` | **仍不存在**（單一磁碟、未配置空間 0、無光碟機，同上節） |
+
+## 七、資料分析堆疊：重啟後再驗一次，仍 0 失敗
+
+`診斷操作系統/Run_Full_Regression.ps1` 全套八節（log：`../2026-10-11/post-reboot/regression_after_reboot.log`）：
+
+| # | 項目 | 結果 |
+|---|---|---|
+| 1 | Python 核心真實計算 | **PASS 15 / 15** |
+| 2 | R 核心真實計算 | **PASS 10 / 10** |
+| 3 | 五個衛星：匯入 + 約束守衛 | **5 × ALL PASS** |
+| 4 | 五個衛星：領域計算 | **5 × OK** |
+| 5 | flair NER（真實模型） | **PASS** |
+| 6 | CmdStan 編譯 + 擬合 | **PASS** |
+| 7 | Quarto render 倉庫原版範本 | **Output created**（`python 3.13.16 \| polars`） |
+| 8 | 六個 Jupyter kernel（真的 `json.load`） | **`kernels bad: 0`** |
+
+```
+################ REGRESSION FAILURES: 0 ################
+```
+
+CmdStan 這次的輸出與 10-10 完全相同——`mu 3.5128`、`sigma 1.1557`、`max rhat 1.0032`。
+**數值逐字一致，正好證明那支驗收是確定性的**（種子已鎖），不是靠運氣過關。
+
+> 所以升級與重啟兩道關卡都沒有動到 `C:\work`。
+> **跨 OS 大版本升級 + 一次重啟，整套堆疊零損失——這是「一切放 `C:\work`、不放 AppData」
+> 這個決定的第二次獨立驗證。**
+
+## 八、本節界限
+
+- **未啟動／停用／重裝任何資安軟體，未提權，未改韌體設定，未安裝驅動，未動磁碟分割，未刪 `Windows.old`。**
+- BitLocker 權威狀態（`manage-bde -status`）、TPM 細項屬性、`reagentc /info` 仍需提權，保留為未驗證。
+- Kaspersky 與天锐绿盾的**功能**驗收不在範圍；本節只陳述服務／行程狀態與事件日誌所載。
+- `vmcompute` 失敗的根因未查（與 Kaspersky 是否同源未知）。
+- 未執行壓力測試、SFC/DISM、線上更新搜尋。
