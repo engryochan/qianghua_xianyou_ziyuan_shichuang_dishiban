@@ -81,6 +81,21 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
 
 腳本開頭明寫它不做的事：不碰網管／資安 IP 設定、不碰網段帳號與設備、不啟停或重裝任何資安軟體、不改 Windows Update 策略。
 
+#### `vmcompute` 根因：已排除三項，目前無功能影響
+
+- **不是升級留下舊版執行檔。** `System32\vmcompute.exe` 的 `VersionInfo.FileVersion` 寫著 `10.0.19041.4522`（Win10 基底），看起來正是「系統跳了元件沒跳」。但它與 WinSxS 的 `26100.9549` 份**SHA256 相同（`AEAFAC80…9388`）、大小相同、`fsutil hardlink list` 確認互為硬連結，是同一個檔案**；而 `FileVersionRaw` 是 **`10.0.26100.9549`**。
+  > **`VersionInfo.FileVersion` 是自由文字資源，可以與真實版本欄位不一致**（這裡來自 `vmcompute.exe.mui`）。判版本要用 `FileVersionRaw`，更可靠的是雜湊與硬連結身分。**只看 `FileVersion` 字串會得出「檔案是舊的」這個錯誤結論——我就先得出過。**
+- **不是依賴失敗**：`rpcss` / `wcifs` / `condrv` / `hvsocketcontrol` 全部 Running。
+- **不是 hypervisor 未載入**：`HypervisorPresent = True`、VBS 狀態 2。
+  （`VirtualizationFirmwareEnabled = False` **不代表韌體虛擬化未啟用**——hypervisor 既已執行就接管了 VT-x，該欄位自然是 False。）
+- **請求者是 `WSLService`**（Running/Automatic，`wsl.exe` 存在；無 `vmms`／Sandbox，即只裝了 WSL2／容器那一組）。實測 `wsl --version` 為 **3.0.1.0**、預設 WSL2，但**「适用于 Linux 的 Windows 子系统没有已安装的分发」**。
+  **所以目前沒有功能影響；一旦裝了發行版就會卡住 WSL2。**
+  > `wsl.exe` 的輸出是 **UTF-16LE**，用單位元組編碼讀會得到字元間夾空白的亂碼，要用 `[System.Text.Encoding]::Unicode` 解碼。
+
+#### 四個缺驅動設備：本機完全沒有 INF 宣告
+
+除「WU 沒有」與「`pnputil /scan-devices` 重掃仍 4 個 Error」之外，再加驗一項：掃 `C:\Windows\INF` 與 `DriverStore\FileRepository`，搜 `DEV_7AA3`／`DEV_7AA4`／`INTC1070`／`INTC1056`，**四個 ID 零宣告**。所以**沒有任何本機手段可補，必須外部廠商包**。候選為 Intel 下載 ID 19347（Chipset Device Software），但**該包是否涵蓋 `7AA3` 無法從公開資料確認**，取得順序仍應整機／板卡廠 OEM 包優先。
+
 ### 14:10 複檢增補（優先於上段）
 
 同日第二輪複檢，證據 `reports/2026-10-10/recheck-1410/recheck.json`，詳述見上列報告的「增補複檢」各節。

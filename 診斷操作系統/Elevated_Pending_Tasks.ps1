@@ -77,6 +77,39 @@ Section 'A7 已載入的核心驅動（供與 Kaspersky 註冊項對照）'
 & driverquery /v /fo csv 2>&1 | Out-File "$out\A7_driverquery.csv" -Encoding utf8
 "已寫出 A7_driverquery.csv"
 
+Section 'A8 Hyper-V / 容器事件通道（一般使用者讀取被拒，這是補上那一項）'
+# 2026-10-11 實測：vmcompute（Hyper-V 主机计算服务）每次開機逾時啟動失敗兩次
+# （45,000 ms 與 30,000 ms）。已排除的：執行檔並非舊版遺留（System32 的
+# vmcompute.exe 與 WinSxS 的 26100.9549 份 SHA256 相同且互為硬連結，只是版本
+# 字串資源寫著 19041.4522），四個依賴 rpcss / wcifs / condrv / hvsocketcontrol
+# 全部 Running。下一個決定性線索就在這些通道裡，而它們需要提權。
+& {
+    foreach ($log in @(
+        'Microsoft-Windows-Hyper-V-Compute-Admin',
+        'Microsoft-Windows-Hyper-V-Compute-Operational',
+        'Microsoft-Windows-Hyper-V-Hypervisor-Admin',
+        'Microsoft-Windows-Hyper-V-Worker-Admin',
+        'Microsoft-Windows-Containers-Wcifs/Operational')) {
+        "--- $log ---"
+        try {
+            Get-WinEvent -LogName $log -MaxEvents 15 -ErrorAction Stop |
+              Select-Object TimeCreated, Id, LevelDisplayName, Message | Format-List
+        } catch { "  讀取失敗: $($_.Exception.Message)" }
+    }
+} 2>&1 | Tee-Object -FilePath "$out\A8_hyperv_events.txt"
+
+Section 'A9 虛擬化相關選用功能狀態'
+& {
+    try {
+        Get-WindowsOptionalFeature -Online -ErrorAction Stop |
+          Where-Object { $_.FeatureName -match 'Hyper-V|VirtualMachinePlatform|Windows-Subsystem|Containers|HypervisorPlatform' } |
+          Select-Object FeatureName, State | Sort-Object FeatureName | Format-Table -AutoSize
+    } catch { "Get-WindowsOptionalFeature 失敗: $($_.Exception.Message)" }
+} | Tee-Object -FilePath "$out\A9_optional_features.txt"
+
+Section 'A10 開機設定裡的 hypervisorlaunchtype'
+& bcdedit /enum '{current}' 2>&1 | Tee-Object -FilePath "$out\A10_bcdedit.txt"
+
 # ==========================================================================
 # B 段：驅動處置
 # ==========================================================================
