@@ -37,6 +37,7 @@ param(
     [switch]$DisableHibernation,
     [switch]$ClearOneDriveGitHub,
     [switch]$RemoveSupersededVersions,
+    [int]$SetPagefileFixed = 0,
     [switch]$Force
 )
 
@@ -375,6 +376,83 @@ if ($RemoveSupersededVersions) {
     & uv cache prune 2>&1 | ForEach-Object { Write-Host ('    ' + $_) }
 
     Write-Host (Show-Free '移除舊版後')
+    Write-Host ''
+}
+
+# ---------- 7) 分頁檔改為固定大小 ----------
+if ($SetPagefileFixed -gt 0) {
+    $didSomething = $true
+    Write-Host '---- 分頁檔改為固定大小 ----' -ForegroundColor Yellow
+
+    $pf = Get-CimInstance Win32_PageFileUsage -ErrorAction SilentlyContinue
+    $cs = Get-CimInstance Win32_ComputerSystem -ErrorAction SilentlyContinue
+    if ($pf) {
+        Write-Host ('  目前配置 {0} MB；目前用量 {1} MB；峰值用量 {2} MB' -f `
+            $pf.AllocatedBaseSize, $pf.CurrentUsage, $pf.PeakUsage)
+    }
+    Write-Host ('  實體記憶體 {0:N2} GB；自動管理 = {1}' -f `
+        ($cs.TotalPhysicalMemory/1GB), $cs.AutomaticManagedPagefile)
+    Write-Host ('  目標固定大小 {0} MB（{1:N1} GB）' -f $SetPagefileFixed, ($SetPagefileFixed/1024))
+
+    if ($pf -and $SetPagefileFixed -lt ($pf.PeakUsage * 1.3)) {
+        Write-Warning ('目標值低於歷史峰值的 1.3 倍（峰值 {0} MB）。' -f $pf.PeakUsage)
+        Write-Warning '本機跑 tensorflow／torch／ray 等大記憶體工作，餘裕不足有風險。'
+        if (-not $Force) {
+            Write-Warning '已略過。確認要照做請加 -Force。'
+            Write-Host (Show-Free '未變更')
+            Write-Host ''
+            return
+        }
+    }
+
+    if (-not $isAdmin) {
+        Write-Warning '需要管理員，略過。'
+    } else {
+        Write-Host ''
+        Write-Host '副作用：' -ForegroundColor Red
+        Write-Host '  * 分頁檔小於實體記憶體時，無法產生「完整記憶體傾印」（核心傾印仍可）。'
+        Write-Host '  * 若日後記憶體吃緊，可能出現分頁檔不足的警告。'
+        Write-Host '  * 復原方式：把自動管理改回開啟（指令見結尾）。'
+        Write-Host ''
+        $go = $Force
+        if (-not $go) {
+            $ans = Read-Host ('確定把分頁檔固定為 {0} MB 嗎？請輸入大寫 YES' -f $SetPagefileFixed)
+            $go = ($ans -ceq 'YES')
+        }
+        if (-not $go) {
+            Write-Host '已取消，未做任何變更。'
+        } else {
+            # 先關閉自動管理，否則固定值設不進去
+            $csw = Get-CimInstance Win32_ComputerSystem
+            Set-CimInstance -InputObject $csw -Property @{ AutomaticManagedPagefile = $false } -ErrorAction Continue
+
+            $ps = Get-CimInstance Win32_PageFileSetting -ErrorAction SilentlyContinue
+            if (-not $ps) {
+                # 自動管理關掉後若無設定物件，建一個
+                New-CimInstance -ClassName Win32_PageFileSetting -Property @{
+                    Name        = 'C:\pagefile.sys'
+                    InitialSize = [uint32]$SetPagefileFixed
+                    MaximumSize = [uint32]$SetPagefileFixed
+                } -ErrorAction Continue | Out-Null
+            } else {
+                Set-CimInstance -InputObject $ps -Property @{
+                    InitialSize = [uint32]$SetPagefileFixed
+                    MaximumSize = [uint32]$SetPagefileFixed
+                } -ErrorAction Continue
+            }
+
+            $ps2 = Get-CimInstance Win32_PageFileSetting -ErrorAction SilentlyContinue
+            if ($ps2) {
+                Write-Host ('  設定後：Initial {0} MB / Maximum {1} MB' -f $ps2.InitialSize, $ps2.MaximumSize)
+            }
+            Write-Host '  **必須重啟才會實際縮小 pagefile.sys 並釋放空間。**' -ForegroundColor Yellow
+            Write-Host ''
+            Write-Host '  要復原為自動管理，以管理員執行：'
+            Write-Host '    $cs = Get-CimInstance Win32_ComputerSystem'
+            Write-Host '    Set-CimInstance -InputObject $cs -Property @{ AutomaticManagedPagefile = $true }'
+        }
+    }
+    Write-Host (Show-Free '設定分頁檔後（重啟前不會變）')
     Write-Host ''
 }
 
