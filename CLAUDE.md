@@ -6,7 +6,78 @@
 
 指定 WIM 與 ISO 已刪除，合計約 14.61 GiB。完整設備、驅動、軟體、防護、事件與診斷界限：[升級後診斷](reports/2026-10-10/Windows11升級後診斷.md)。以下較早記錄為歷史內容，舊華碩 / NVIDIA GT 730 資訊不能套用本機；Python 環境復原以 CLAUDE.md 的 2026-10-06 更正為準。
 
-### 2026-10-11 驅動最新版查證與磁碟稽核（**優先於本檔以下全部**）
+### 2026-10-11 組件升級與兩條關鍵更正（**優先於本檔以下全部**）
+
+依先生指示：**派森解譯器版本一律不動（仍 3.13.16），僅組件升級。**
+結果：**347 個過時中 249 個已升、98 個經證實升了會壞而守住**，
+六環境 `uv pip check` 零不相容，`Run_Full_Regression.ps1` 八節 **0 失敗**。
+報告：`reports/2026-10-11/派森組件升級_249升98守.md`。
+
+**一、`uv pip install --upgrade <名稱>` 不做全域求解——本檔先前寫錯了。**
+我曾寫「uv 的求解器是全域的，衝突會在安裝前就報出來」。那句只對一半：
+
+| 指令 | 對全環境求解？ |
+|---|---|
+| `uv pip install -r <完整需求檔>` | **是** |
+| `uv pip sync <鎖版檔>` | **是** |
+| **`uv pip install --upgrade <套件名>`** | **否**，只求解被指名者及其依賴 |
+
+實測踩兩次、**uv 全程零警告、離開碼 0**：在 `xai` 升 `pandas`→3.0.6 違反
+`dalex` 要 `<3.0.0`；在 `rl` 升 `toolz`→1.2.0 違反 `gluonts` 要 `~=0.10`
+（連帶共 7 項）。更隱蔽的是**傳遞依賴漂移**：`ds` 升 178 個指名套件，
+卻把不在清單裡的 `pandas`／`multidict`／`rich` 順帶拉高，帶出 28 項不相容。
+
+**正解：產生約束檔把安全集合以外的全部釘在現版，只讓該動的動。**
+
+```powershell
+uv pip install --upgrade --constraint <約束檔> --python <解譯器> <安全集合...>
+```
+
+`ds` 重做後：釘住 551 個、升級 178 個、`pandas`／`cffi`／`multidict` 全守住、
+`uv pip check` 731 個套件零不相容。
+
+**二、`import X` 成功，不等於依賴宣告相容。**
+升壞 `rl` 之後 `import gluonts` **照樣成功**（還印出 0.17.0），我一度因此以為
+「`toolz<1` 那條約束已失效」。但 `uv pip check` 說
+`gluonts requires toolz~=0.10, but 1.2.0 is installed`，查 metadata 證實宣告還在。
+
+> **判斷環境一致性要用 `uv pip check`，不要用 `import`。**
+> 本檔「驗收標準是跑出結果」仍然成立，但這一條補在它前面：
+> **連「跑出結果」之前，先確認依賴宣告沒被違反**，否則錯誤會延遲爆發。
+
+**三、新增 `診斷操作系統/Plan_Package_Upgrades.py`**：升級前算出哪些套件升了會
+違反**任何其他已安裝套件**的宣告，並列出**具名阻擋者**。已驗證無誤（抓到的正是
+`uv pip check` 事後才發現的那些）。**檔頭明寫它只做單層靜態檢查、不模擬傳遞依賴
+變動**——那正是我第二個錯的成因，所以它是必要條件而非充分條件。
+
+> **自我更正**：`ds` 出事時我以為是工具誤判，查證後發現**工具其實正確地把
+> `pandas` 歸入 held**（計畫檔第 291 行）。**錯在我的執行方式，不在工具**——
+> 我把「指名清單」當成了「會變動的全集」。
+
+**四、`ccxt` 以 `==` 死釘四個套件**（先前未記載）：
+`certifi==2026.6.17`、`cffi==2.0.0`、`charset-normalizer==3.4.7`、`idna==3.18`。
+另 **`pandas<3` 在核心環境有八個阻擋者**：`pytorch-tabular`、`statsforecast`、
+`mlforecast`、`fugue`、`copulae`、`copulas`、`alphalens-reloaded`、`pyextremes`。
+`huggingface-hub<2.0` 有四個；`antlr4-python3-runtime==4.9.*` 由 `hydra-core`
+與 `omegaconf` 共同釘住。
+
+**五、五個衛星環境的鎖版檔首次進版控**：`env/python-{fin,nlp,mlops,xai,rl}-verified.lock.txt`，
+核心那份更新為 731 行。還原快照在 `C:\work\backup\py-snapshot-20261011\`
+（**實測可用 `uv pip sync` 完整還原，我用它救回過兩次**）。
+
+**六、同批已升並驗證**：R 套件 10 個（`Accept_R_Stack.R` 10/10）、
+**Quarto 1.10.18 → 1.10.19**（舊版留在 `C:\work\tools.bak.1.10.18`）。
+R 的 `old.packages()` **不帶 `type="binary"` 會虛報**——它列 20 個而真正過時只有
+10 個，差的那 5 個只有原始碼版較新。RStudio 2026.09.0+174 查證為最新穩定版。
+
+**七、磁碟已跌破一成：22.62 GB（9.5%）**，升級耗掉約 3.8 GB，
+`pagefile.sys` 自行長到 22.15 GB。`診斷操作系統/Reclaim_Disk_Space.ps1`
+現有**七個開關**，其中 **`-RemoveSupersededVersions`（約 2.57 GB）不需提權**；
+`-DisableHibernation` 12.71 GB、`-RemoveWindowsOld` 40.29 GB、
+`-CleanWindowsUpdateCache` 5.09 GB 皆需管理員。
+**該開關刻意不含 `C:\work\backup`**——那裡存著先生的著作與還原依據。
+
+### 2026-10-11 驅動最新版查證與磁碟稽核（優先於以下，**但次於上段組件升級**）
 
 全程唯讀。報告：`reports/2026-10-11/驅動最新版查證與磁碟空間稽核.md`。
 
@@ -662,6 +733,7 @@ Comet 少掉的全是**瀏覽器專用**模組：`BrowserGuardx64.dll`、`Brower
 | `診斷操作系統/Win11_App_RealTest.ps1` | **驗證應用是否真的畫得出畫面**（不是「有沒有裝」）。像素級黑屏判定 + 渲染旗標逐一實測 |
 | `診斷操作系統/Elevated_Pending_Tasks.ps1` | **需管理員才查得到的項目**（`manage-bde`、`Get-Tpm`、`Confirm-SecureBootUEFI`、`reagentc`、**`fltmc filters` / `instances`**、`Dism /CheckHealth`、Hyper-V 事件與選用功能、`bcdedit`）。**含 BOM，必須保留。** A 段全唯讀；B 段僅在明確加 `-InstallDrivers` 並提供存在的 `-DriverPackagePath` 時才安裝自備驅動包 |
 | `診斷操作系統/Reclaim_Disk_Space.ps1` | **回收磁碟空間**（需管理員）。**含 BOM，必須保留。** 不帶參數只做唯讀報告；`-EmptyRecycleBin` / `-CleanWindowsUpdateCache` / `-RemoveWindowsOld` / `-DisableHibernation` 各自獨立，`Windows.old` 走 `cleanmgr` 受支援機制並有二次確認 |
+| `診斷操作系統/Plan_Package_Upgrades.py` | **升級前算出可升與須 held 的組件集合**，列出具名阻擋者。界限：只做單層靜態檢查，**不**模擬傳遞依賴變動，故升完仍須 `uv pip check` 再跑全套回歸 |
 | `env/python-ds-core.in` | **重建核心環境的依據**（698 個 `==` + 28 個 `>=`，已實測可建成） |
 | `env/python-ds-verified.lock.txt` | 重建後 freeze 的 728 行實況，已通過 15/15 驗收 |
 | `env/python-ds-requirements.lock.txt` | ~~重建環境的唯一依據~~ **這份本身無解，不要用**。只留作歷史證物，見本檔開頭 2026-10-06 更正第一節 |
