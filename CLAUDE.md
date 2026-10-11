@@ -39,6 +39,48 @@
 
 **目前唯一的開放阻塞項是 Kaspersky**，已備可直接交 IT 的單子：`reports/2026-10-11/IT請求_Kaspersky主服務在Win11_26H2啟動逾時.md`。
 
+#### 驅動更新：**「一律交給 Windows Update 更新」在這台機器上是錯的**
+
+詳見 `reports/2026-10-11/驅動更新評估與待定清單.md`。
+
+**WU 總共只提供一個驅動，而它是沒有價值的平移**：
+
+| | 版本 | 日期 | 供應商 |
+|---|---|---|---|
+| 已安裝 | **9.1.412.2015** | 2015-03-31 | **Microsoft 內建** |
+| WU 提供 | 9.1.409.2015 | 2015-04-09 | Realtek |
+
+版本號 412 > 409，但 WU 的日期較新——**Windows 的驅動排序先比日期再比版本**，所以 WU 才認為自己那份較新並提供它。兩者都是 2015 年的驅動，換過去版本號反而退了。**而 WU 完全沒有那四個錯誤碼 28 設備的驅動。**
+
+逐項判定：
+
+| 驅動 | 已安裝 | 判定 |
+|---|---|---|
+| Intel UHD Graphics 730 / Graphics Software | 32.0.101.7088 | **已是最新**（Intel 官方頁面，列示日期 2026-06-22） |
+| **Realtek PCIe GbE（唯一在用的網路連線）** | **9.1.412.2015（2015）** | **落後數世代**；第三方彙整指向 10.79.x/10.80.x（2026），但**無法從原廠直接確認版號** |
+| 4 × Intel 晶片組設備 | 無驅動 | `pnputil /scan-devices` 重掃**仍 4 個 Error**；確定需板卡廠／Intel 平台包 |
+
+> **Realtek 那一項建議交 IT**：它是目前唯一在用的連線（`以太网 2` Up 1 Gbps，WLAN 為 Disconnected），換驅動期間會斷線，不相容則可能完全失去連線，而這是受管理的公司資產。硬體 ID 為 `PCI\VEN_10EC&DEV_8168&SUBSYS_012310EC&REV_2B`，取得順序應為「整機／板卡廠 OEM 包 → Realtek 通用包」。
+
+**另查到一條過時策略（未修改，屬 IT 範圍）**：
+
+```
+HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+    TargetReleaseVersion = 1 / TargetReleaseVersionInfo = 22H2
+    TargetReleaseProductVersion = Windows 10
+```
+
+機器已是 Windows 11 26H2，這條仍釘在 Win10 22H2，狀態矛盾，會影響日後功能更新投放。
+
+#### 需管理員的事項已做成一支腳本
+
+`診斷操作系統/Elevated_Pending_Tasks.ps1`（**含 BOM，必須保留**；已過語法檢查並在非提權下完整試跑）。
+
+- **A 段全唯讀**：`manage-bde -status`、`Get-Tpm`、`Confirm-SecureBootUEFI`、`reagentc /info`、**`fltmc filters`／`instances`**（三次升級失敗時 `RegLoadKeyW` 回傳 87，當時就是缺這份清單）、`Dism /CheckHealth`、`driverquery /v`
+- **B 段預設只列出與掃描**，`-InstallDrivers` 加 `-DriverPackagePath` 才會安裝自備驅動包。**刻意不自動安裝 WU 那個 2015 年的驅動。**
+
+腳本開頭明寫它不做的事：不碰網管／資安 IP 設定、不碰網段帳號與設備、不啟停或重裝任何資安軟體、不改 Windows Update 策略。
+
 ### 14:10 複檢增補（優先於上段）
 
 同日第二輪複檢，證據 `reports/2026-10-10/recheck-1410/recheck.json`，詳述見上列報告的「增補複檢」各節。

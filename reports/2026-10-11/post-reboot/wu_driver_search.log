@@ -1,0 +1,9 @@
+﻿SEARCH_OK count=1
+----
+Title      : Realtek - Net - 4/9/2015 12:00:00 AM - 9.1.409.2015
+DriverClass: Networking
+DriverModel: Realtek PCIe GbE Family Controller
+DriverVer  : 04/09/2015 00:00:00
+HardwareIDs: pci\ven_10ec&dev_8168&rev_2b
+Mandatory  : False
+SizeMB     : 0.22
