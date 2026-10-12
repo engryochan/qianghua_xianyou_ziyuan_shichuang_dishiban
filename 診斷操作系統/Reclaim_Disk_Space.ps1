@@ -315,7 +315,13 @@ if ($RemoveSupersededVersions) {
     $didSomething = $true
     Write-Host '---- 移除已被取代的舊版與安裝檔 ----' -ForegroundColor Yellow
 
-    # 清單是 2026-10-11 實測確認的：每一項都已安裝完成或已被新版取代。
+    # 清單是實測確認的：每一項都已安裝完成或已被新版取代。
+    #
+    # **刻意不含 C:\Users\PPCCpcpc\Downloads\OpenSpace-0.22.0.zip（9.94 GB）。**
+    # 2026-10-12 查證：登錄檔無 OpenSpace 紀錄、全機找不到 OpenSpace.exe
+    # -> 它尚未安裝，是待安裝的來源，刪了得重下近 10 GB。
+    # 該 zip 本身完整（.NET 讀中央目錄：5,218 項、解壓後 13.98 GB、含 OpenSpace.exe）。
+    # 要回收那 9.94 GB，正確順序是先解壓安裝、確認可用，再刪 zip。
     # 刻意不含 C:\work\backup（那裡有先生的著作與 R 套件清單還原依據）。
     $items = @(
         @{ Path = 'C:\work\tools.bak.1.10.18';                       Note = '舊版 Quarto 1.10.18（1.10.19 已通過八節回歸）' },
@@ -324,7 +330,8 @@ if ($RemoveSupersededVersions) {
         @{ Path = 'C:\work\dl\RStudio-2026.09.0-174.zip';            Note = 'RStudio 安裝檔（已安裝）' },
         @{ Path = 'C:\work\dl\Positron-2026.09.1-2-UserSetup-x64.exe'; Note = 'Positron 舊版安裝檔（已自動更新至 2026.10.0）' },
         @{ Path = 'C:\work\dl\rtools45-6768-6492.exe';               Note = 'Rtools45 安裝檔（已安裝）' },
-        @{ Path = 'C:\work\dl\R-4.6.1-win.exe';                      Note = 'R 安裝檔（已安裝）' }
+        @{ Path = 'C:\work\dl\R-4.6.1-win.exe';                      Note = 'R 安裝檔（已安裝）' },
+        @{ Path = 'C:\work\dl\WiFi-24.70.0-Driver64-Win10-Win11.exe'; Note = 'Intel 無線網卡安裝檔（驅動 24.70.0.3 已實測確認安裝，2026-10-12）' }
     )
 
     Write-Host '將移除以下項目：'
