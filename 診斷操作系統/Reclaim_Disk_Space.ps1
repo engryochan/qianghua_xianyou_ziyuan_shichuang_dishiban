@@ -38,6 +38,7 @@ param(
     [switch]$ClearOneDriveGitHub,
     [switch]$RemoveSupersededVersions,
     [int]$SetPagefileFixed = 0,
+    [switch]$RemoveOptionalCaches,
     [switch]$Force
 )
 
@@ -394,8 +395,17 @@ if ($SetPagefileFixed -gt 0) {
         ($cs.TotalPhysicalMemory/1GB), $cs.AutomaticManagedPagefile)
     Write-Host ('  目標固定大小 {0} MB（{1:N1} GB）' -f $SetPagefileFixed, ($SetPagefileFixed/1024))
 
-    if ($pf -and $SetPagefileFixed -lt ($pf.PeakUsage * 1.3)) {
-        Write-Warning ('目標值低於歷史峰值的 1.3 倍（峰值 {0} MB）。' -f $pf.PeakUsage)
+    # 缺陷修正（2026-10-12）：Win32_PageFileUsage.PeakUsage 是「本次開機」的峰值，
+    # 重啟就歸零。2026-10-12 剛開機時它只有 142 MB，拿它當守衛等於形同失效——
+    # 會放行一個危險地小的分頁檔。所以改用「本次峰值 x1.3」與「絕對下限 8192 MB」
+    # 取大者。8192 的依據是 2026-10-11 實測到的跨工作階段峰值 5,498 MB。
+    $floorFromPeak = if ($pf) { [int]($pf.PeakUsage * 1.3) } else { 0 }
+    $floorAbsolute = 8192
+    $floor = [Math]::Max($floorFromPeak, $floorAbsolute)
+    Write-Host ('  守衛下限 {0} MB（本次峰值x1.3 = {1}；絕對下限 {2}）' -f $floor, $floorFromPeak, $floorAbsolute)
+
+    if ($SetPagefileFixed -lt $floor) {
+        Write-Warning ('目標值 {0} MB 低於守衛下限 {1} MB。' -f $SetPagefileFixed, $floor)
         Write-Warning '本機跑 tensorflow／torch／ray 等大記憶體工作，餘裕不足有風險。'
         if (-not $Force) {
             Write-Warning '已略過。確認要照做請加 -Force。'
@@ -453,6 +463,75 @@ if ($SetPagefileFixed -gt 0) {
         }
     }
     Write-Host (Show-Free '設定分頁檔後（重啟前不會變）')
+    Write-Host ''
+}
+
+# ---------- 8) 其他可選快取（皆不需提權，皆不影響 OS） ----------
+if ($RemoveOptionalCaches) {
+    $didSomething = $true
+    Write-Host '---- 其他可選快取 ----' -ForegroundColor Yellow
+
+    # 8a) Chrome 裝置端 AI 模型權重
+    #     這是 Chrome 的「最佳化指南裝置端模型」，刪掉 Chrome 照常運作，
+    #     該功能會改用雲端或自行重抓。屬快取性質，非使用者資料。
+    $chromeModel = Join-Path $env:LOCALAPPDATA 'Google\Chrome\User Data\OptGuideOnDeviceModel'
+    if (Test-Path -LiteralPath $chromeModel) {
+        $sz = (Get-ChildItem -LiteralPath $chromeModel -Recurse -Force -File -ErrorAction SilentlyContinue |
+               Measure-Object -Property Length -Sum).Sum
+        Write-Host ('  Chrome 裝置端 AI 模型：{0:N2} GB' -f ($sz/1GB))
+        Write-Host '    刪掉 Chrome 照常運作；該功能會改用雲端或自行重抓。'
+        $chromeRunning = @(Get-Process -Name chrome -ErrorAction SilentlyContinue).Count
+        if ($chromeRunning -gt 0) {
+            Write-Warning ('    Chrome 正在執行（{0} 個行程），檔案可能被鎖定。建議先關閉 Chrome。' -f $chromeRunning)
+        }
+        $go = $Force
+        if (-not $go) {
+            $ans = Read-Host '  要刪除 Chrome 裝置端 AI 模型嗎？請輸入大寫 YES'
+            $go = ($ans -ceq 'YES')
+        }
+        if ($go) {
+            Microsoft.PowerShell.Management\Remove-Item -LiteralPath $chromeModel -Recurse -Force -ErrorAction SilentlyContinue
+            if (Test-Path -LiteralPath $chromeModel) {
+                Write-Warning '    仍存在（可能被 Chrome 鎖定）。關閉 Chrome 後重試。'
+            } else {
+                Write-Host '    已刪除。' -ForegroundColor Green
+            }
+        } else {
+            Write-Host '    已略過。'
+        }
+    } else {
+        Write-Host '  Chrome 裝置端 AI 模型：不存在。'
+    }
+
+    # 8b) uv 快取修剪
+    #     2026-10-11 與 10-12 兩度實測：Claude 桌面應用會啟動
+    #     `uvx --python 3.12 browser-use@latest --cli-mcp` 作為 MCP 伺服器
+    #     （父行程 claude.exe），它們長駐並持有快取鎖，所以 prune 拿不到獨佔鎖。
+    #     **這一項必須在 Claude 關閉後才做得動。**
+    #     不要用 --force 去搶鎖：其他 uv 行程存活時搶鎖可能損壞快取。
+    Write-Host ''
+    $env:UV_CACHE_DIR = 'C:\work\uv-cache'
+    $uvProcs = @(Get-Process -Name 'uv', 'uvx' -ErrorAction SilentlyContinue)
+    $cacheSz = 0
+    if (Test-Path 'C:\work\uv-cache') {
+        $cacheSz = (Get-ChildItem 'C:\work\uv-cache' -Recurse -Force -File -ErrorAction SilentlyContinue |
+                    Measure-Object -Property Length -Sum).Sum
+    }
+    Write-Host ('  uv 快取：{0:N2} GB' -f ($cacheSz/1GB))
+    if ($uvProcs.Count -gt 0) {
+        Write-Warning ('    有 {0} 個 uv／uvx 行程在執行。' -f $uvProcs.Count)
+        Write-Warning '    若其父行程是 claude.exe，那是 Claude 的 MCP 伺服器，**不要終止**。'
+        Write-Warning '    請改為關閉 Claude 桌面應用後，再單獨執行： uv cache prune'
+        Write-Warning '    不要加 --force 搶鎖——其他 uv 行程存活時搶鎖可能損壞快取。'
+    } else {
+        Write-Host '    無 uv 行程，可以修剪。'
+        & uv cache prune 2>&1 | ForEach-Object { Write-Host ('    ' + $_) }
+        $after = (Get-ChildItem 'C:\work\uv-cache' -Recurse -Force -File -ErrorAction SilentlyContinue |
+                  Measure-Object -Property Length -Sum).Sum
+        Write-Host ('    修剪後 {0:N2} GB（回收 {1:N2} GB）' -f ($after/1GB), (($cacheSz-$after)/1GB))
+    }
+
+    Write-Host (Show-Free '可選快取處理後')
     Write-Host ''
 }
 
