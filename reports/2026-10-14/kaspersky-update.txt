@@ -1,0 +1,35 @@
+﻿2026-10-14 12:55:30	Updater$1943                                  starting     0%         
+; --- Settings ---
+; Update sources:   	
+; 		
+; 		
+; ------------------
+2026-10-14 12:55:30	Updater$1943                                  running      0%         
+2026-10-14 12:55:30	Task started event  
+2026-10-14 12:55:30	Administration Server source is selected  
+2026-10-14 12:55:31	File downloaded updaters/updater.xml 
+2026-10-14 12:55:31	Generate list of files to download  
+2026-10-14 12:55:31	Task started event  
+2026-10-14 12:55:31	Administration Server source is selected  
+2026-10-14 12:55:31	File downloaded index/u1901g.xml 
+2026-10-14 12:55:31	Generate list of files to download  
+2026-10-14 12:55:31	File downloaded updates/upd/upd-1901g.xml 
+2026-10-14 12:55:32	Downloading patches...
+2026-10-14 12:55:32	Task started event  
+2026-10-14 12:55:32	Administration Server source is selected  
+2026-10-14 12:55:32	File downloaded updaters/updater.xml 
+2026-10-14 12:55:32	Generate list of files to download  
+2026-10-14 12:55:32	Task started event  
+2026-10-14 12:55:32	Administration Server source is selected  
+2026-10-14 12:55:32	File downloaded index/u1901g.xml 
+2026-10-14 12:55:32	Generate list of files to download  
+2026-10-14 12:55:37	Updater$1943                                  completed               
+;  --- Statistics ---
+; Current time:  	2026-10-14 12:55:37
+; Time Start:       	2026-10-14 12:55:30
+; Time Finish:      	2026-10-14 12:55:37
+; Update succeeded: 	5dc000a
+; Completion:       	100%
+; Downloaded size:  	28139 bytes
+; Speed:            	4199.22 KB/sec
+;  ------------------
