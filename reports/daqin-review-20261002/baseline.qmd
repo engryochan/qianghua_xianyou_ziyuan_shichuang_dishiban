@@ -12,7 +12,10 @@ lang: zh-CN
 
 format:
   html:
-    theme: cosmo
+    html-math-method: mathml
+    theme:
+      - cosmo
+      - ../../styles/offline.scss
     toc: true
     toc-depth: 3
     toc-location: left

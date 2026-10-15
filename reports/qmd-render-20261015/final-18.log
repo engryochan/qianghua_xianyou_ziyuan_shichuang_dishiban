@@ -1,0 +1,42 @@
+
+
+processing file: baseline.qmd
+1/3                       
+2/3 [crypto-runtime-audit]
+3/3                       
+output file: baseline.knit.md
+
+pandoc 
+  to: html
+  output-file: baseline.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathml
+  wrap: none
+  default-image-extension: png
+  toc: true
+  toc-depth: 3
+  number-sections: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  lang: zh-CN
+  title: 《大秦赋算筹》
+  subtitle: v1.3.0 非退化强化·全对话增量审计版 · 诸子百家量化科技 × GDI-OS × 礼逆袭（Linux）× 操作系统 × 云端服务器 × 半导体/存储 × AI算力 × 人工智能 × 强化学习 × 量化生态 × 脑机接口 × 国安/公安/国防/宇航科研生态 × 数据安全 × 密码学总纲
+  author: 雷歐（Ryo Eng）
+  date: '2026-10-01'
+  date-format: YYYY[年]M[月]D[日]
+  theme:
+    - cosmo
+    - ../../styles/offline.scss
+  toc-location: left
+  page-layout: full
+  code-summary: 查看代碼
+  
+[WARNING] Could not load translations for zh-CN
+  translations/zh.yaml: 
+[WARNING] The term Abstract has no translation defined.
+Output created: baseline.html
+

@@ -1,0 +1,17 @@
+pandoc 
+  to: html
+  output-file: 優化並强化現有資源_視窗10版.html
+  standalone: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  
+Output created: 優化並强化現有資源_視窗10版.html
+

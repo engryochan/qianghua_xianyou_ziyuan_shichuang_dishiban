@@ -1,0 +1,34 @@
+
+
+processing file: r-python-template_rendered-variant.qmd
+1/9           
+2/9 [setup]   
+3/9           
+4/9 [r-write] 
+5/9           
+6/9 [py-read] 
+7/9           
+8/9 [py-check]
+9/9           
+output file: r-python-template_rendered-variant.knit.md
+
+pandoc 
+  to: html
+  output-file: r-python-template_rendered-variant.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathml
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: R + Python 混用範本（已實測 render 成功）
+  
+Output created: r-python-template_rendered-variant.html
+

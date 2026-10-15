@@ -10,7 +10,10 @@ lang: zh-TW
 
 format:
   html:
-    theme: cosmo
+    html-math-method: mathml
+    theme:
+      - cosmo
+      - styles/offline.scss
     toc: true
     toc-depth: 3
     toc-location: left
@@ -3493,8 +3496,8 @@ redteam/ + critic/ + killcritic/ + blindspot/ + actionplan/
 查证后，先给结论：**「返水」并不存在一个跨行业统一的“顶级标准”**。不同业态的经济模型决定了返水的计提基数：
 
 * **赌场 / 体育博彩**：常见的是「有效投注额（eligible/qualifying turnover）」、**净输（net loss / loss-back）**、或两者组合；VIP/rakeback 又可能按游戏收入或手续费计算。
-* **证券行 / CFD / 外汇经纪商**：主流逻辑明显不同，通常是**成交量/名义成交额 + 已支付的佣金/点差**，而不是“客户亏损多少”。IG 和 OANDA 的现行公开方案都属于这一类。([IG][1])
-* **银行 / 信用卡**：通常按**消费金额（spend）**或符合条件的交易金额返现，而不是按客户“亏损”返现。CFPB 对信用卡奖励的描述也是以消费赚取积分/现金回馈为基本结构。([Consumer Financial Protection Bureau][2])
+* **证券行 / CFD / 外汇经纪商**：主流逻辑明显不同，通常是**成交量/名义成交额 + 已支付的佣金/点差**，而不是“客户亏损多少”。IG 和 OANDA 的现行公开方案都属于这一类。([IG][rebate-1])
+* **银行 / 信用卡**：通常按**消费金额（spend）**或符合条件的交易金额返现，而不是按客户“亏损”返现。CFPB 对信用卡奖励的描述也是以消费赚取积分/现金回馈为基本结构。([Consumer Financial Protection Bureau][rebate-2])
 
 因此，如果我们是在设计你现在的 **A168 风控／增利体系**，我不会把「返水」简单设计成一个百分比，而会把它视为一个**客户价值分配函数**。
 
@@ -3571,7 +3574,7 @@ Rebate = 5,000
 
 > **Loss**
 
-公开市场上确实存在这种结构。例如有博彩运营商公开列出 casino instant rebate，按符合资格的 real-money wagering 直接计算；这与 net-loss cashback 是不同模型。([BETTORIAN][3])
+公开市场上确实存在这种结构。例如有博彩运营商公开列出 casino instant rebate，按符合资格的 real-money wagering 直接计算；这与 net-loss cashback 是不同模型。([BETTORIAN][rebate-3])
 
 ---
 
@@ -3615,9 +3618,9 @@ Cashback = 0
 
 这就是典型的 **loss-back / net-loss cashback**。
 
-例如 Rivalry 的公开 VIP 条款就是以促销期间的**净亏损**作为 cashback 基础，而不是每一笔投注分别计算。([Rivalry][4])
+例如 Rivalry 的公开 VIP 条款就是以促销期间的**净亏损**作为 cashback 基础，而不是每一笔投注分别计算。([Rivalry][rebate-4])
 
-theScore Bet 的公开促销条款也采用「total net cash losses」作为 eligible cashback 的基础。([thescorebethelp.zendesk.com][5])
+theScore Bet 的公开促销条款也采用「total net cash losses」作为 eligible cashback 的基础。([thescorebethelp.zendesk.com][rebate-5])
 
 ---
 
@@ -3809,7 +3812,7 @@ Effective Loss
 
 > **Responsible Gambling / Customer Harm / Incentive Design**
 
-英国 Gambling Commission 自 2026 年起对激励与奖励提出了更明确的透明、公平和社会责任要求，包括 wagering requirement 上限及不得把不同博彩产品混入同一激励。([Gambling Commission][6])
+英国 Gambling Commission 自 2026 年起对激励与奖励提出了更明确的透明、公平和社会责任要求，包括 wagering requirement 上限及不得把不同博彩产品混入同一激励。([Gambling Commission][rebate-6])
 
 所以：
 
@@ -3914,9 +3917,9 @@ Volume Tier
 Fee Rebate
 ```
 
-例如 IG 的公开方案就是按照交易名义金额达到不同 volume tier 后，对已经支付的 spread / commission 进行 rebate。([IG][1])
+例如 IG 的公开方案就是按照交易名义金额达到不同 volume tier 后，对已经支付的 spread / commission 进行 rebate。([IG][rebate-1])
 
-OANDA 在 2026 年 9 月公布的 Professional Client cashback 也是按月度交易量及已支付佣金计算，最高档甚至达到佣金的 45% rebate。([OANDA][7])
+OANDA 在 2026 年 9 月公布的 Professional Client cashback 也是按月度交易量及已支付佣金计算，最高档甚至达到佣金的 45% rebate。([OANDA][rebate-7])
 
 这就是：
 
@@ -3936,11 +3939,11 @@ OANDA 在 2026 年 9 月公布的 Professional Client cashback 也是按月度�
 
 交易所根据 broker 的交易量给予 fee/rebate。
 
-SEC 对美国交易所的 volume-based pricing 有非常清楚的描述：交易量越大，broker 获得的价格可能越优惠，从而形成 volume tier。([美国证券交易委员会][8])
+SEC 对美国交易所的 volume-based pricing 有非常清楚的描述：交易量越大，broker 获得的价格可能越优惠，从而形成 volume tier。([美国证券交易委员会][rebate-8])
 
-Nasdaq 2026 年的披露也直接记录了 transaction rebates。([美国证券交易委员会][9])
+Nasdaq 2026 年的披露也直接记录了 transaction rebates。([美国证券交易委员会][rebate-9])
 
-而 Interactive Brokers 2026 年披露中，也可以看到 liquidity rebates 与客户交易量之间的关系。([美国证券交易委员会][10])
+而 Interactive Brokers 2026 年披露中，也可以看到 liquidity rebates 与客户交易量之间的关系。([美国证券交易委员会][rebate-10])
 
 所以证券业的核心是：
 
@@ -3981,7 +3984,7 @@ Cashback 2%
 
 > 给他 2,000。
 
-CFPB 对信用卡 rewards 的监管说明也明确把 rewards 建立在消费/earning rate 等机制上。([Consumer Financial Protection Bureau][2])
+CFPB 对信用卡 rewards 的监管说明也明确把 rewards 建立在消费/earning rate 等机制上。([Consumer Financial Protection Bureau][rebate-2])
 
 因此：
 
@@ -4286,7 +4289,7 @@ Incremental Net Contribution
 什么时候取消
 ```
 
-英国 Gambling Commission 现行规则明确要求 incentive 的条款清晰、透明、公平且容易取得。([Gambling Commission][6])
+英国 Gambling Commission 现行规则明确要求 incentive 的条款清晰、透明、公平且容易取得。([Gambling Commission][rebate-6])
 
 ###### ② 可审计
 
@@ -4422,7 +4425,7 @@ Rebate ↑
 | 证券    | Commission / Volume / Venue rebates |       通常不是 | 流量与成本效率       |
 | 银行信用卡 | Eligible Spend                      |          否 | 消费与客户留存       |
 
-证券方面，SEC/交易所资料尤其能证明「volume-based rebate」是一个真实且成熟的机制；但监管同时关注 rebate 对竞争、订单流及客户利益的影响。([美国证券交易委员会][8])
+证券方面，SEC/交易所资料尤其能证明「volume-based rebate」是一个真实且成熟的机制；但监管同时关注 rebate 对竞争、订单流及客户利益的影响。([美国证券交易委员会][rebate-8])
 
 ---
 
@@ -4494,7 +4497,7 @@ $$
 
 但可以确认一个非常稳定的跨行业规律：
 
-> **博彩更容易围绕“投注活动”或“净输”设计奖励；金融机构更容易围绕“成交量、手续费、点差及消费金额”设计 rebate/cashback，而不是围绕客户投资亏损设计回馈。** ([IG][1])
+> **博彩更容易围绕“投注活动”或“净输”设计奖励；金融机构更容易围绕“成交量、手续费、点差及消费金额”设计 rebate/cashback，而不是围绕客户投资亏损设计回馈。** ([IG][rebate-1])
 
 对于你正在构建的 A168 体系，真正应该成为核心指标的不是 **Rebate Rate**，而是：
 
@@ -4502,16 +4505,16 @@ $$
 
 这样才能把你所说的**止损价值、增效价值、合规价值**从营销口号，变成可以进入 SQL、DolphinScheduler、会员十维能力值和最终风控决策链的可计算指标。
 
-[1]: https://www.ig.com/en/cfd-trading/volume-based-cash-rebates?utm_source=chatgpt.com "Volume-based rebates | IG International"
-[2]: https://www.consumerfinance.gov/compliance/circulars/consumer-financial-protection-circular-2024-07-design-marketing-and-administration-of-credit-card-rewards-programs/?utm_source=chatgpt.com "Consumer Financial Protection Circular 2024-07: Design, marketing, and administration of credit card rewards programs | Consumer Financial Protection Bureau"
-[3]: https://bettorian.com/bonuses/promotions/promo-2?utm_source=chatgpt.com "Automatic Rewards | Instant Casino Rebate & Monthly Sportsbook Cashback | Bettorian"
-[4]: https://www.rivalry.com/terms/vip-terms?utm_source=chatgpt.com "Vip and Loyalty Terms & Conditions | Rivalry"
-[5]: https://thescorebethelp.zendesk.com/hc/en-us/articles/35082448373005-Host-Net-Loss-Offer-Eligible-Cashback?utm_source=chatgpt.com "Host Net Loss Offer (Eligible Cashback) – theScore Bet"
-[6]: https://www.gamblingcommission.gov.uk/consultation-response/autumn-2023-consultation-proposed-changes-to-lccp-and-rts-socially/proposal-3-proposed-changes-to-lccp-sr-code-5-1-1-to-make-the-structure-and?utm_source=chatgpt.com "Autumn 2023 consultation – Proposed changes to LCCP and RTS - Socially responsible incentives: Consultation Response - Proposal 3 - Proposed changes to Licence Conditions and Codes of Practice (LCCP) Social Responsibility (SR) Code 5.1.1 (Rewards and Bonuses) to make the structure and wording clearer"
-[7]: https://www.oanda.com/eu-en/blog/oanda-introduces-a-cashback-scheme-for-professional-clients?utm_source=chatgpt.com "OANDA introduces a cashback scheme for Professional Clients"
-[8]: https://www.sec.gov/newsroom/speeches-statements/gensler-volume-based-rebates-fees-101823?utm_source=chatgpt.com "SEC.gov | Statement on Exchanges’ Volume-Based Rebates and Fees"
-[9]: https://www.sec.gov/Archives/edgar/data/1120193/000112019326000013/ndaq-20260630.htm?utm_source=chatgpt.com "ndaq-20260630"
-[10]: https://www.sec.gov/Archives/edgar/data/1381197/000138119726000147/ibkr-20260630.htm?utm_source=chatgpt.com "10-Q"
+[rebate-1]: https://www.ig.com/en/cfd-trading/volume-based-cash-rebates?utm_source=chatgpt.com "Volume-based rebates | IG International"
+[rebate-2]: https://www.consumerfinance.gov/compliance/circulars/consumer-financial-protection-circular-2024-07-design-marketing-and-administration-of-credit-card-rewards-programs/?utm_source=chatgpt.com "Consumer Financial Protection Circular 2024-07: Design, marketing, and administration of credit card rewards programs | Consumer Financial Protection Bureau"
+[rebate-3]: https://bettorian.com/bonuses/promotions/promo-2?utm_source=chatgpt.com "Automatic Rewards | Instant Casino Rebate & Monthly Sportsbook Cashback | Bettorian"
+[rebate-4]: https://www.rivalry.com/terms/vip-terms?utm_source=chatgpt.com "Vip and Loyalty Terms & Conditions | Rivalry"
+[rebate-5]: https://thescorebethelp.zendesk.com/hc/en-us/articles/35082448373005-Host-Net-Loss-Offer-Eligible-Cashback?utm_source=chatgpt.com "Host Net Loss Offer (Eligible Cashback) – theScore Bet"
+[rebate-6]: https://www.gamblingcommission.gov.uk/consultation-response/autumn-2023-consultation-proposed-changes-to-lccp-and-rts-socially/proposal-3-proposed-changes-to-lccp-sr-code-5-1-1-to-make-the-structure-and?utm_source=chatgpt.com "Autumn 2023 consultation – Proposed changes to LCCP and RTS - Socially responsible incentives: Consultation Response - Proposal 3 - Proposed changes to Licence Conditions and Codes of Practice (LCCP) Social Responsibility (SR) Code 5.1.1 (Rewards and Bonuses) to make the structure and wording clearer"
+[rebate-7]: https://www.oanda.com/eu-en/blog/oanda-introduces-a-cashback-scheme-for-professional-clients?utm_source=chatgpt.com "OANDA introduces a cashback scheme for Professional Clients"
+[rebate-8]: https://www.sec.gov/newsroom/speeches-statements/gensler-volume-based-rebates-fees-101823?utm_source=chatgpt.com "SEC.gov | Statement on Exchanges’ Volume-Based Rebates and Fees"
+[rebate-9]: https://www.sec.gov/Archives/edgar/data/1120193/000112019326000013/ndaq-20260630.htm?utm_source=chatgpt.com "ndaq-20260630"
+[rebate-10]: https://www.sec.gov/Archives/edgar/data/1381197/000138119726000147/ibkr-20260630.htm?utm_source=chatgpt.com "10-Q"
 
 ## 提問十五
 
@@ -5935,6 +5938,8 @@ Proton 是让 Windows 游戏在 Linux 上运行的兼容工具，不是源码转
 ## 提問廿
 
 ### 提問
+
+請先生查證目前禮逆襲操作系統分佈中哪個分佈能兼容最多人工智能與軍工國防宇航生態產業鏈的策略平臺呢？
 
 ### 解答
 

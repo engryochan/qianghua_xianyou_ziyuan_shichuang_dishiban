@@ -10,7 +10,10 @@ lang: zh-CN
 
 format:
   html:
-    theme: cosmo
+    html-math-method: mathml
+    theme:
+      - cosmo
+      - styles/offline.scss
     toc: true
     toc-depth: 3
     toc-location: left
@@ -91,7 +94,7 @@ ECharts 在**静态报表与中等通道数大屏**上没有问题。问题出�
 
 ## 二、全球宇航产业链三段论 — 教科书划分
 
-```mermaid
+```{mermaid}
 flowchart LR
     A[上游 设计与仿真] --> B[中游 制造与供应链]
     B --> C[下游 发射与在轨运营]

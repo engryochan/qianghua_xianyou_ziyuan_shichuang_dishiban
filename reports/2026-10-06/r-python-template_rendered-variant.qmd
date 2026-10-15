@@ -2,6 +2,7 @@
 title: "R + Python 混用範本（已實測 render 成功）"
 format:
   html:
+    html-math-method: mathml
     toc: true
     embed-resources: true
 execute:

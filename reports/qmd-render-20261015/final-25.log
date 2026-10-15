@@ -1,0 +1,37 @@
+pandoc 
+  to: html
+  output-file: 電腦已昇級至視窗11版（工欲善其事必先利其器）.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathml
+  wrap: none
+  default-image-extension: png
+  toc: true
+  toc-depth: 3
+  number-sections: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  lang: zh-TW
+  title: 電腦已昇級至視窗11版（工欲善其事必先利其器）
+  subtitle: 數據分析專員
+  author: Ryo Eng（雷歐）
+  date: September 23, 2026
+  date-format: YYYY[年]M[月]D[日（農曆丙午馬年八月十三，丁酉月・庚子日）]
+  theme:
+    - cosmo
+    - styles/offline.scss
+  toc-location: left
+  page-layout: full
+  code-summary: 查看代碼
+  
+[WARNING] Duplicate link reference '[1]' at line 4473 column 1
+[WARNING] Duplicate link reference '[2]' at line 4474 column 1
+[WARNING] Duplicate link reference '[3]' at line 4475 column 1
+[WARNING] Could not load translations for zh-TW
+  translations/zh.yaml: 
+[WARNING] The term Abstract has no translation defined.
+Output created: 電腦已昇級至視窗11版（工欲善其事必先利其器）.html
+

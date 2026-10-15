@@ -12,7 +12,16 @@ execute:
 # reticulate 只認 RETICULATE_PYTHON。沒設的話它會自己臨時下載一個乾淨的
 # Python（實測看過它抓 cpython-3.12.14 + numpy），於是你的套件全都不在，
 # 錯誤訊息是 ModuleNotFoundError，極容易誤判成環境壞掉。
-Sys.setenv(RETICULATE_PYTHON = file.path(getwd(), ".venv/Scripts/python.exe"))
+python <- Sys.getenv("RETICULATE_PYTHON", unset = "")
+if (!nzchar(python)) {
+  candidates <- c("../.venv/Scripts/python.exe", ".venv/Scripts/python.exe",
+                  "C:/work/envs/ds/Scripts/python.exe")
+  available <- candidates[file.exists(candidates)]
+  if (!length(available)) stop("請設定 RETICULATE_PYTHON 為現有 Python 環境的完整路徑。")
+  python <- available[[1]]
+}
+if (!file.exists(python)) stop("RETICULATE_PYTHON 指向不存在的檔案：", python)
+Sys.setenv(RETICULATE_PYTHON = normalizePath(python, winslash = "/"))
 ```
 
 ## R 端：用 duckdb 讀寫 Parquet
@@ -34,6 +43,7 @@ duckdb_register(con, "dt", dt)
 dbExecute(con, sprintf("copy dt to '%s' (format parquet)", pq))
 dbGetQuery(con, sprintf(
   "select g, count(*) n, sum(v) s from read_parquet('%s') group by g order by g", pq))
+dbDisconnect(con, shutdown = TRUE)
 ```
 
 ## Python 端：讀同一份 Parquet
